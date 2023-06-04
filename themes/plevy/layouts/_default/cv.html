@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="{{ .Params.bodyclass }}" class="overflow-x-hidden md:overflow-x-auto">
+   <main>
+      {{ with index .Site.Data.all .Site.Language.Lang }}
+      <h1 class="frame">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+      <div class="flex flex-col md:flex-row ">
+         <div class="w-full md:w-1/2 flex flex-row flex-wrap frame">
+            <div class="w-1/2"><b>{{ i18n "name" }}</b></div>
+            <div class="w-1/2">{{ .identity.lastname }}</div>
+            <div class="w-1/2"><b>{{ i18n "firstnames" }}</b></div>
+            <div class="w-1/2">{{ .identity.firstname }} {{ .identity.middlename }}</div>
+            <div class="w-full">&nbsp;</div>
+            <div class="w-1/2"><b>{{ i18n "nationality" }}</b></div>
+            <div class="w-1/2">{{ .identity.nationality }}</div>
+            <div class="w-1/2"><b>{{ i18n "birthdate" }}</b></div>
+            <div class="w-1/2">{{ .identity.birthdate }}</div>
+         </div>
+         <div class="w-full md:w-1/2 flex flex-row flex-wrap frame">
+            <div class="w-1/2"><b>{{ i18n "phone" }}</b></div>
+            <div class="w-1/2">{{ .identity.tel }}</div>
+            <div class="w-1/2"><b>{{ i18n "email" }}</b></div>
+            <div class="w-1/2">{{ .identity.email }}</div>
+            <div class="w-full">&nbsp;</div>
+            <div class="w-1/2"><b>{{ i18n "web" }}</b></div>
+            <div class="w-1/2"><a href="{{ .identity.web.url }}" target="_blank"
+                  rel="noreferrer">{{ .identity.web.username }}</a></div>
+            <div class="w-1/2"><b>{{ i18n "linkedin" }}</b></div>
+            <div class="w-1/2"><a href="{{ .identity.social.linkedin.url }}" target="_blank"
+                  rel="noreferrer">{{ .identity.social.linkedin.username }}</a></div>
+         </div>
+      </div>
+      <div class="flex flex-col md:flex-row ">
+         <h2 class="frame">{{ i18n "affiliations" }}</h2>
+         <div class="frame w-full">{{ range .identity.affiliations }}<a href="{{ .url }}" target="_blank"
+               rel="noreferrer" class="">{{ .name }}</a><br />{{ end }}</div>
+      </div>
+      <div class="flex flex-col md:flex-row ">
+         <h2 class="frame">{{ i18n "education" }}</h2>
+         <div class="frame flex flex-row flex-wrap">
+            {{ range sort .studies "date" "desc" }}{{ if .main }}
+            <div class="w-1/6">{{ .date }}</div>
+            <div class="w-5/6"><b>{{ .title |safeHTML }}</b>{{ if isset . "place" }} |
+               {{ .place |safeHTML }} {{ end }}{{ if isset . "comment" }}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+            {{ end }}{{ end }}
+         </div>
+      </div>
+      <div class="flex flex-col md:flex-row">
+         <h2 class="frame">{{ i18n "current-situation" }}</h2>
+         <div class="flex flex-col">{{ range sort .pro "start" "desc" }}{{ if eq .end "none" }}
+            <div class="flex flex-col lg:flex-row">
+               <div class="frame">
+                  <div class="">{{ i18n "Since" }} {{ .start }}</div>
+                  <b>{{ .title }}</b><br />{{ if isset . "institution" }}{{ .institution |safeHTML }}{{ if isset . "country" }},
+                  {{ .country |safeHTML }}{{end }}{{ end }}
+                  {{ if isset . "faculty" }}<br />{{ .faculty |safeHTML }}{{end }}
+                  {{ if isset . "extra" }}<br />{{ .extra |safeHTML }}{{end }}
+               </div>
+               <div class="flex flex-col w-full">
+                  {{ if isset . "associations" }}<div class="frame">
+                     {{ range sort .associations "start" "desc" }}
+                     <div class="mt-3 font-bold ml-20 lg:ml-0">{{ .title |safeHTML }}
+                        ({{ if eq .end "none" }}{{ i18n "since" }}
+                        {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}){{ if isset . "comment" }}<br /><span
+                           class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+                     {{ end }}</div>{{ end }}
+                  {{ if isset . "activities" }}
+                  <div class="">
+                     {{ range sort .activities "start" "desc" }}
+                     <div>{{ if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} -
+                        {{ .end }}{{ end }}
+                     </div>
+                     <div class="mt-3 font-bold">{{ .title |safeHTML }}{{ if isset . "comment" }}<br /><span
+                           class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+                     {{ end }}
+                  </div>
+                  {{ end }}</div>
+            </div>
+            {{ end }}{{ end }}
+         </div>
+      </div>
+      <div class="flex flex-col md:flex-row">
+         <h2 class="frame">{{ i18n "pastPro" }}</h2>
+         <div class="flex flex-col">{{ range sort .pro "start" "desc" }}{{ if ne .end "none" }}
+            <div class="flex flex-row">
+               <div class="frame w-1/4">{{ .start }} - {{ .end }}</div>
+               <div class="frame w-full">
+                  <div class=""><b>{{ .title }}</b><br />{{ .description |safeHTML }}</div>
+                  {{ if isset . "associations" }}<div class="mb-4">
+                     {{ range sort .associations "start" "desc" }}
+                     {{ .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
+                     {{ .start }}{{ else }}{{ .start }} -
+                     {{ .end }}{{ end }}){{ if isset . "comment" }} <span
+                        class="comment">{{ .comment |safeHTML }}</span>{{ end }}<br>
+                     {{ end }}</div>{{ end }}
+                  {{ if isset . "activities" }}
+                  <div class="mb-10">
+                     {{ range sort .activities "start" "desc" }}
+                     <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "Since" }}
+                     {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                        class="comment">{{ .comment |safeHTML }}</span>{{ end }}
+                     {{ end }}
+                  </div>
+                  {{ end }}
+               </div>
+            </div>
+            {{ end }}{{ end }}</div>
+      </div>{{ end }}
+   </main>
+</body>
+
+</html>

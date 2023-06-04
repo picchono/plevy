@@ -1,0 +1,141 @@
+baseURL = "https://plevy.fr"
+languageCode = "en"
+title = "Pierre Lévy"
+theme = "plevy"
+defaultContentLanguage = "en"
+ignoreErrors = ["error-disable-taxonomy"]
+
+DefaultContentLanguage = "en"
+copyright = "plevy.fr"
+
+[Params]
+favicon = "icon.png"
+
+[deployement]
+order = [".webp", ".jpg$", ".gif$"]
+  [deployment.targets]
+  # An arbitrary name for this target.
+  name = "plevydeploy"
+  [deployment.matchers]
+  # Set custom content type for /sitemap.xml 
+  pattern = "^sitemap\\.xml$"
+  contentType = "application/xml"
+  gzip = true
+
+[build]
+  useResourceCacheWhen = "never"
+
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+disable = true
+
+[privacy.instagram]
+disable = true
+
+[privacy.twitter]
+disable = true
+
+[privacy.vimeo]
+disable = true
+privacyEnhanced = true
+
+[privacy.youtube]
+disable = true
+privacyEnhanced = true
+
+[minify]
+minifyOutput = true
+merge = "deep"
+
+[module]
+path= "filterizr"
+
+[languages]
+  [languages.en]
+    languageName = "EN"
+    languageCode = "en"
+    weight = 1
+  [languages.fr]
+    languageName = "FR"
+    languageCode = "fr"
+    weight = 2
+  [languages.jp]
+    languageName = "JP"
+    languageCode = "jp"
+    weight = 3
+
+[menu]
+  [[languages.en.menu.main]]
+    name = "Chair of Design Jean Prouvé"
+    post = "activités "
+    weight = 1
+    identifier = "chair"
+    url = "https://chaire-design.fr/en"
+  [[languages.en.menu.main]]
+    name = "Events and Seminars"
+    post = "events and seminars"
+    weight = 2
+    identifier = "events"
+    url = "/event/"
+  [[languages.en.menu.main]]
+    name = "Projects"
+    post = "projects (research, teaching, supervision&hellip;)"
+    weight = 3
+    identifier = "projects"
+    url = "/projects/"
+  [[languages.en.menu.main]]
+    name = "Teaching"
+    post = "current teaching activities"
+    weight = 4
+    identifier = "teaching"
+    url = "/teaching/"
+  [[languages.en.menu.main]]
+    name = "Publications"
+    post = ""
+    weight = 5
+    identifier = "publis"
+    url = "/publications/"
+  [[languages.en.menu.main]]
+    name = "Everything"
+    post = ""
+    weight = 6
+    identifier = "everything"
+    url = "/everything/"
+  [[languages.fr.menu.main]]
+    name = "Chaire Design Jean Prouvé"
+    post = "activités d'enseignement, de recherche, et de dévelopements sociétaux liées à la Chaire Design Jean Prouvé"
+    weight = 1
+    identifier = "chair"
+    url = "https://chaire-design.fr"
+  [[languages.fr.menu.main]]
+    name = "Événements et Séminaires"
+    post = "événements et seminaires"
+    weight = 2
+    identifier = "events"
+    url = "/event/"
+  [[languages.fr.menu.main]]
+    name = "Projets"
+    post = "projets (recherche, enseignements, supervision&hellip;)"
+    weight = 3
+    identifier = "projects"
+    url = "/projects/"
+  [[languages.fr.menu.main]]
+    name = "Enseignement"
+    post = "activités d'enseignements en cours"
+    weight = 4
+    identifier = "teaching"
+    url = "/teaching/"
+  [[languages.fr.menu.main]]
+    name = "Publications"
+    post = ""
+    weight = 5
+    identifier = "publis"
+    url = "/publications/"
+  [[languages.fr.menu.main]]
+    name = "Tout"
+    post = ""
+    weight = 6
+    identifier = "everything"
+    url = "/everything/"

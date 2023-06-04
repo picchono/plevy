@@ -1,0 +1,182 @@
+{
+	"bachelor": {
+		"PoA": {
+			"title": "Perspectives on Aesthetics",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Creating one's own perspective on design and shaping a manifesto"
+		},
+		"DD": {
+			"title": "Design for Debate",
+			"start": "2016",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Logic (and fallacies) and discourse in design"
+		},
+		"DfHN2": {
+			"title": "Designing for the Here and the Now 2",
+			"start": "2015",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Reflection-in-action focusing on telepresence"
+		},
+		"FItD": {
+			"title": "From Idea to Design",
+			"start": "2015",
+			"end": "2019",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Overview of the entire design process"
+		},
+		"DfHN": {
+			"title": "Designing for the Here and the Now",
+			"start": "2013",
+			"end": "2017",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Exploration of the notion of affordance through prototyping"
+		},
+		"KD": {
+			"title": "Kansei Design: exploring values in experience",
+			"start": "2009",
+			"end": "2012",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "3",
+			"description": "Application of Japanese notions in interaction design"
+		},
+		"voyage": {
+			"title": "A Voyage, provoking a cultural clash to inspire design",
+			"start": "2009",
+			"end": "2012",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "3",
+			"description": "Using a cultural clash as a source of inspiration for design"
+		}
+	},
+	"master": {
+		"MoT": {
+			"title": "Matter of Transformation",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "How the interweaving between design, philosophy and human & social sciences impacts practices, societies and individuals"
+		},
+		"DfSI": {
+			"title": "Design for social innovation",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Introducing the Transformative Practices Innovation framework for social innovation"
+		},
+		"Drituals": {
+			"title": "Designing (for) rituals",
+			"start": "2014",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Exploration the complexity of nested temporality in interaction design through everyday rituals"
+		},
+		"DQI-theory": {
+			"title": "Designing Quality in Interaction (DQI) Theory",
+			"start": "2011",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Introduction to theories and frameworks related to interaction design"
+		},
+		"Glow": {
+			"title": "Glow festival workshop",
+			"start": "2011",
+			"end": "2011",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Creation of an interactive installation for the GLOW light festival"
+		},
+		"SD": {
+			"title": "Sensual dynamics",
+			"start": "2009",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"description": "Behaviour design based on perceptive qualities"
+		},
+		"SPD": {
+			"title": "Service Product Design",
+			"start": "2008",
+			"end": "2009",
+			"place": "Chiba University, Japan",
+			"language": "Japanese",
+			"ects": "",
+			"description": "Coaching projects and teaching tools for service design"
+		},
+		"PD-methods": {
+			"title": "Product design methods",
+			"start": "2007",
+			"end": "2008",
+			"place": "University of Tsukuba, Japan",
+			"language": "Japanese",
+			"ects": "",
+			"description": "Introduction to user-centred design methods"
+		}
+	},
+	"pro": {
+		"TET007-RNCP": {
+			"title": "Approche pratique du numérique et la recherche d'information (RNCP)",
+			"start": "2006",
+			"place": "CNAM",
+			"language": "French",
+			"ects": "4",
+			"description": "Acculturation numérique permettant de s'engager dans des recherches d'information et des synthèses utiles à la vie professionnelle principalement sur le web"
+		}
+	},
+	"doctoral": {
+		"prospective-psychophysio": {
+			"title": "Prospective Psychophysiological Approach for Kansei Design",
+			"start": "2006",
+			"end": "2006",
+			"place": "University of Tsukuba, Japan",
+			"language": "English",
+			"ects": "",
+			"description": "Application of Japanese notions in interaction design"
+		}
+	},
+	"project": {
+		"TUe-coaching": {
+			"title": "Design project coaching",
+			"start": "2009",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "15~45",
+			"description": "Bachelor and Master levels at TU/e"
+		},
+		"ME310": {
+			"title": "Design thinking project coaching for ME310",
+			"start": "2011",
+			"end": "2017",
+			"place": "École des Ponts ParisTech and d.school Paris, France",
+			"language": "French and English",
+			"ects": "",
+			"description": "Lecturing and supervising master-level design thinking projects"
+		}
+	}
+}

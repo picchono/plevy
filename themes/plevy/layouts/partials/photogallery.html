@@ -1,0 +1,12 @@
+{{ $photonb := len .Params.photogallery }}{{ if eq $photonb 1 }}
+<div class="w-full frame"><img loading="lazy" class="rounded-md w-full max-w-4xl mx-auto"
+            src="{{ .Params.photogallery.image1.img }}"></div>{{ else }}
+<div class="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-11 gap-1 spotlight-group pb-16 frame">
+    {{ range sort .Params.photogallery "order" "asc" }}
+    <a class="place-self-center spotlight w-full" href="{{ .img }}" data-title="{{ .name }}"><img class="rounded-sm"
+            loading="lazy" src="{{ .src }}"></a>
+    {{ end }}
+</div>
+{{ end }}
+{{ $spo_js := resources.Get "js/spotl.js" | minify }}
+<script defer src="{{ $spo_js.Permalink }}"></script>

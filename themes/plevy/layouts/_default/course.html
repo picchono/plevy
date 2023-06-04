@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ partial "title.html" . }}
+{{ if .Params.video}}<section>{{ partial "video.html" . }}</section>{{ end }}
+{{ if .Params.photogallery }}<section>{{ partial "photogallery.html" . }}</section>{{ end }}
+<section class="flex flex-col md:flex-row justify-left items-stretch">
+    <div class="w-full md:w-2/3 md:max-w-4xl frame">
+        {{ if .Content}}<div class="">{{ .Content }}</div>{{ end }}
+        {{ if .Params.reference }}<p class="my-12">{{ .Params.reference }}</p>{{ end }}
+    </div>
+    <div class="flex-shrink flex-grow">
+        {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}</div>
+    {{ if .Params.lectures}}
+    <div class="my-10 flex flex-row">
+        <b class="revers w-32 flex-shrink-0">{{ i18n "courses" }}</b>
+        <div class="ml-2">{{ $cod := .Params.code }}
+            {{ range sort .Params.lectures "order" "asc" }}
+            <a class=""
+                href="{{ .link }}"><b>{{ $cod }}.{{ .order }}&nbsp;&middot;&nbsp;</b>{{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>
+            {{ end }}</div>
+    </div>
+    {{ end }}
+</section>
+{{ end }}

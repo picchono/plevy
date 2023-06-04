@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ partial "title.html" . }}
+{{ if .Params.video}}<section>{{ partial "video.html" . }}</section>{{ end }}
+{{ if .Params.photogallery }}<section>{{ partial "photogallery.html" . }}</section>{{ end }}
+{{ end }}

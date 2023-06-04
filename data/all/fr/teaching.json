@@ -1,0 +1,192 @@
+{
+	"bachelor": {
+		"PoA": {
+			"title": "Perspectives on Aesthetics",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Création de sa propre perspective sur le design et élaboration d'un manifeste"
+		},
+		"DD": {
+			"title": "Design for Debate",
+			"start": "2016",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Logique (et sophismes) et discours en design"
+		},
+		"DfHN2": {
+			"title": "Designing for the Here and the Now 2",
+			"start": "2015",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Réflexion-en-action sur la téléprésence"
+		},
+		"FItD": {
+			"title": "From Idea to Design",
+			"start": "2015",
+			"end": "2019",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Parcous sur l'ensemble du processus de conception"
+		},
+		"DfHN": {
+			"title": "Designing for the Here and the Now",
+			"start": "2013",
+			"end": "2017",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Exploration de la notion d'affordance par le biais du prototypage"
+		},
+		"KD": {
+			"title": "Kansei Design: exploring values in experience",
+			"start": "2009",
+			"end": "2012",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "3",
+			"description": "Application des notions japonaises au design d'interaction"
+		},
+		"voyage": {
+			"title": "A Voyage, provoking a cultural clash to inspire design",
+			"start": "2009",
+			"end": "2012",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "3",
+			"description": "Utiliser un choc culturel comme source d'inspiration pour le design"
+		}
+	},
+	"master": {
+		"TET007-RNCP": {
+			"title": "Approche pratique du numérique et la recherche d'information (M1)",
+			"start": "2021",
+			"end": "none",
+			"place": "CNAM",
+			"language": "français",
+			"ects": "4",
+			"description": "Introduction, installation et utilisation aux outils numériques pour une pratique du numérique et de recherche et d'organisation d'information"
+		},
+		"MoT": {
+			"title": "Matter of Transformation",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Comment l'imbrication entre le design, la philosophie et les sciences humaines et sociales influence les pratiques, les sociétés et les individus"
+		},
+		"DfSI": {
+			"title": "Design for social innovation",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Présentation du cadre théorique d'innovation des pratiques transformatrices pour l'innovation sociale"
+		},
+		"Drituals": {
+			"title": "Designing (for) rituals",
+			"start": "2014",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Exploration de la complexité de la temporalité imbriquée dans le design d'interaction à travers les rituels quotidiens"
+		},
+		"DQI-theory": {
+			"title": "Designing Quality in Interaction (DQI) Theory",
+			"start": "2011",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Introduction aux théories et aux cadres de travail liés au design d'interactions."
+		},
+		"Glow": {
+			"title": "Glow festival workshop",
+			"start": "2011",
+			"end": "2011",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Création d'une installation interactive pour le festival de lumière GLOW"
+		},
+		"SD": {
+			"title": "Sensual dynamics",
+			"start": "2009",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "5",
+			"description": "Design liant comportements et qualités perceptives"
+		},
+		"SPD": {
+			"title": "Service Product Design",
+			"start": "2008",
+			"end": "2009",
+			"place": "Chiba University, Japan",
+			"language": "japonais",
+			"ects": "",
+			"description": "Accompagnement de projets et d'outils pédagogiques pour la conception de services"
+		},
+		"PD-methods": {
+			"title": "Product design methods",
+			"start": "2007",
+			"end": "2008",
+			"place": "University of Tsukuba, Japan",
+			"language": "japonais",
+			"ects": "",
+			"description": "Introduction aux méthodes de conception centrées sur l'utilisateur"
+		}
+	},
+	"pro": {
+		"TET007-RNCP": {
+			"title": "Approche pratique du numérique et la recherche d'information (RNCP)",
+			"start": "2021",
+			"end": "none",
+			"place": "CNAM",
+			"language": "français",
+			"ects": "4",
+			"description": "Acculturation numérique permettant de s'engager dans des recherches d'information et des synthèses utiles à la vie professionnelle principalement sur le web"
+		}
+	},
+	"doctoral": {
+		"prospective-psychophysio": {
+			"title": "Prospective Psychophysiological Approach for Kansei Design",
+			"start": "2006",
+			"end": "2006",
+			"place": "University of Tsukuba, Japan",
+			"language": "anglais",
+			"ects": "",
+			"description": "Application de notions de psychophysiologie au design d'interaction"
+		}
+	},
+	"project": {
+		"TUe-coaching": {
+			"title": "Design project coaching",
+			"start": "2009",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "anglais",
+			"ects": "15~45",
+			"description": "Niveaux licence et maaster à TUe"
+		},
+		"ME310": {
+			"title": "Design thinking project coaching for ME310",
+			"start": "2011",
+			"end": "2017",
+			"place": "École des Ponts ParisTech et d.school Paris, France",
+			"language": "français and anglais",
+			"ects": "",
+			"description": "Enseignement et supervision de projets de design thinking au niveau du master"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{{ if .Params.redirect }}
+<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="{{ .Params.bodyclass }}" class="overflow-x-hidden md:overflow-x-auto">
+  {{ if .Params.bckground }}
+  <div class="fixed z-10"><img id="mainbckgimg" loading="lazy" src="{{ .Params.bckground | absURL }}"
+      data-ref="{{ .Params.bckground | absURL }}" alt="Pierre Lévy" class="object-cover h-screen w-screen opacity-40"
+      loading="lazy" width="500" height="500" />
+  </div>{{ end }}
+  <main class="flex flex-col justify-between">{{- block "main" . }}{{- end }}
+    {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1) -}}
+    {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none") -}}{{ end }}
+  </main>
+</body>
+</html>

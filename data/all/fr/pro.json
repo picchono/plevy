@@ -1,0 +1,240 @@
+{
+    "CNAM": {
+        "start": "2021",
+        "end": "none",
+        "title": "Professeur du CNAM (PRCM)",
+        "extra": "Titulaire de la <a href='https://chaire-design.fr' target='_blank' title='Chaire de Design Jean Prouvé' rel='noreferrer'>Chaire de Design Jean Prouvé</a>",
+        "institution": "<a href='https://www.cnam.fr' target='_blank' title='Conservatoire National des Arts et Métiers' rel='noreferrer'>Conservatoire National des Arts et Métiers</a>",
+        "researchgroup": "",
+        "country": "France",
+        "main": true,
+        "associations": {
+            "Hesam": {
+                "order": 1,
+                "start": "2023",
+                "end": "none",
+                "title": "Vice-président Formation de l'<a href='https://hesam.eu' target='_blank' rel='noreferrer' title='HESAM Universite'>HESAM Université</a>",
+                "comment": "HESAM Université est une communauté d’universités et d’établissements qui se construit depuis 2010 grâce à l’action conjuguée de plusieurs établissements français d’enseignement supérieur, de recherche, d’innovation et de réseaux d’entreprises.",
+                "main": true
+            },
+            "EPN16": {
+                "order": 2,
+                "start": "2021",
+                "end": "none",
+                "title": "Membre de l'<a href='https://innovation.cnam.fr' target='_blank' rel='noreferrer' data-tooltip='Équipe pédagogique nationale 16 – Innovation' title='Équipe Pédagogique Nationale EPN16 - Innovation'>EPN16 - Innovation</a>",
+                "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés...",
+                "main": true
+            },
+            "dicenidf": {
+                "order": 3,
+                "start": "2020",
+                "end": "none",
+                "title": "Chercheur au laboratoire <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> (EA 7339)",
+                "comment": "Le laboratoire Dicen-IDF (Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France) est une unité de recherche multi-tutelles (EA 7339) entre le Conservatoire National des Arts et Métiers, l’Université Gustave Eiffel et l’Université Paris-Nanterre.",
+                "main": false
+            },
+            "CF22": {
+                "order": 4,
+                "start": "2022",
+                "end": "none",
+                "title": "Membre élu du Conseil des formations du Cnam",
+                "main": true
+            },
+            "masterDesignCreation": {
+                "order": 5,
+                "start": "2021",
+                "end": "none",
+                "title": "Responsable du <a href='https://formation.cnam.fr/rechercher-par-discipline/master-arts-lettres-langues-mention-design-parcours-creation-projets-transdisciplinarite-1085664.kjsp?RF=' target='_blank' rel='noreferrer' data-tooltip='Master Arts, Lettres, langues - mention Design' title='Master Arts, Lettres, langues - mention Design'>Master Design</a>",
+                "comment": "L'objectif de ce master est de former des créateurs capables de concevoir leur projet professionnel, d’inventer leur pratique de design de manière prospective en intégrant l’évolution des sociétés et des contextes culturels et techniques sans cesse redéfinis.",
+                "main": false
+            },
+            "jhtr": {
+                "order": 6,
+                "start": "2022",
+                "end": "none",
+                "title": "Membre du Comité consultatif de rédaction du <a href='https://ojs.utwente.nl/index.php/jhtr/' target='_blank' rel='noreferrer' data-tooltip='Journal of Human-Technology Relations' title='Journal of Human-Technology Relations'>JHTR</a>",
+                "main": true
+            }
+        },
+        "activities": {}
+    },
+    "TUe": {
+        "start": "2009",
+        "end": "2021",
+        "title": "Maître de conférence (full-time tenured assistant professor)",
+        "description": "Membre du groupe de recherche <i>Designing Quality of Interaction</i> (2009-2017), puis <i>Systemic Change</i> (2018 - 2021)",
+        "institution": "<a href='https://www.tue.nl' target='_blank' title='Eindhoven University of Technology' rel='noreferrer'>Université de Technologie d'Eindhoven</a>",
+        "faculty": "Faculté de Design Industriel",
+        "researchgroup": "Groupe de recherche <i>Systemic Change</i>",
+        "country": "Pays-Bas",
+        "main": false,
+        "associations": {
+            "SystemicChange": {
+                "start": "2018",
+                "end": "2021",
+                "title": "Groupe de recherche <a href='https://www.tue.nl/en/research/research-groups/systemic-change/' target='_blank' title='Systemic Change' rel='noreferrer'><i>Systemic Change</i></a>",
+                "main": true
+            },
+            "DQI": {
+                "start": "2009",
+                "end": "2017",
+                "title": "Groupe de recherche Designing Quality in Interaction ",
+                "main": true
+            }
+        },
+        "activities": {
+            "datalab": {
+                "start": "2019",
+                "end": "2021",
+                "title": "Responsable du <i>DataLab</i>",
+                "comment": "Le DataLab est un lieu de TU/e ouvert pour l’exploration créative de l’interaction avec les données",
+                "main": false
+            },
+            "TP squad": {
+                "start": "2018",
+                "end": "2021",
+                "title": "Directeur du groupe de projets <i>Transforming Practices (TP)</i>",
+                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la transformation des pratiques",
+                "main": false
+            },
+            "ICTcommittee": {
+                "start": "2016",
+                "end": "2021",
+                "title": "Membre du comité ICT",
+                "comment": "Le comité ICT dirige le développement TIC de la faculté en collaboration avec les services centraux de l’université",
+                "main": false
+            },
+            "Vitality squad": {
+                "start": "2016",
+                "end": "2018",
+                "title": "Directeur du groupe de projets <i>Vitality</i>",
+                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la vitalité, du bien-être, et de la vie active",
+                "main": false
+            },
+            "Education committee": {
+                "start": "2015",
+                "end": "2016",
+                "title": "Coordinateur éducatif de la Faculté de Design Industriel, TU/e",
+                "comment": "Les 4 coordinateurs éducatifs assistent le Directeur d’Éducation dans l’élaboration du curriculum pédagogique de la faculté",
+                "main": false
+            },
+            "Examnination committee": {
+                "start": "2010",
+                "end": "2015",
+                "title": "Membre du Conseil des Examinateurs (Board of Examiners) de la Faculté de Design Industriel",
+                "comment": "Vice-président 2013 - 2015",
+                "main": false
+            },
+            "iTi squad": {
+                "start": "2015",
+                "end": "2016",
+                "title": "Directeur du groupe de projets <i>in-Transportation interaction [iTi]</i>",
+                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème de l’interaction passager-véhicule, notamment dans le contexte de l’automobile autonome",
+                "main": false
+            },
+            "WS squad": {
+                "start": "2011",
+                "end": "2014",
+                "title": "Directeur du groupe de projets <i>Wearable Senses</i>",
+                "comment": "DireDirection d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème des textiles intelligents et des ‘technologies près du corps’",
+                "main": false
+            },
+            "dschool": {
+                "start": "2016",
+                "end": "2018",
+                "title": "Fellowship à la d.school Paris, France",
+                "comment": "Le fellowship à la d.school Paris participe au développement des activités éducatives de la d.school Paris",
+                "main": false
+            },
+            "Tsukuba-trip2013": {
+                "start": "2013",
+                "end": "2014",
+                "title": "Chercheur invité à l’École Doctorale des Sciences Humaines Généralisées, Université de Tsukuba, Japon",
+                "main": false
+            }
+        }
+    },
+    "kansei": {
+        "start": "2006",
+        "end": "none",
+        "title": "Contribution à la communauté internationale sur l'étude du kansei",
+        "description": "kansei",
+        "main": false,
+        "associations": {
+            "KEER-steering-coord": {
+                "start": "2014",
+                "end": "none",
+                "title": "Coordinateur du Comité directoire du <a href='https://keer.org' target='_blank' title='keer.org' rel='noreferrer'>Kansei Engineering and Emotion Research (KEER)</a>",
+                "comment": "Ce comité organise les activités communes aux quatre sociétés de recherche sur le kansei (JSKE (Japon), TIK (Taiwan), MAKE (Malaisie), et EKG (Europe))",
+                "main": true
+            },
+            "IJAE": {
+                "start": "2006",
+                "end": "none",
+                "title": "Membre du Comité Editorial de l’International Journal of Affective Engineering (IJAE)",
+                "main": false
+            },
+            "EKG": {
+                "start": "2016",
+                "end": "2018",
+                "title": "Président et co-fondateur de l’European Kansei Group (EKG)",
+                "comment": "L’European Kansei Group vise à développer et promouvoir la recherche sur le kansei en Europe, à la fois un monde académique et un monde industriel",
+                "main": false
+            },
+            "KEER14": {
+                "start": "2012",
+                "end": "2014",
+                "title": "Président du Comité Scientifique de la Conférence Internationale KEER 2014, Linköping, Suède",
+                "main": false
+            },
+            "KEER": {
+                "start": "2009",
+                "end": "none",
+                "title": "Co-organisateur des conférences internationales KEER depuis 2010",
+                "main": false
+            },
+            "JSKE-advis": {
+                "start": "2009",
+                "end": "none",
+                "title": "Conseiller de la Japanese Society of Kansei Engineering (JSKE)",
+                "main": false
+            }
+        }
+    },
+    "Chiba": {
+        "start": "2008",
+        "end": "2009",
+        "title": "Enseignent et chercheur (Lecturer/Researcher)",
+        "description": "Responsable de l'enseignement et des activités du programme de master <i>Service Product Design</i>",
+        "institution": "Université de Chiba",
+        "country": "Japon",
+        "main": false
+    },
+    "postdoc": {
+        "start": "2006",
+        "end": "2008",
+        "title": "Chercheur postdoctoral",
+        "description": "Recherche postdoctorale pour le <i>21st Century COE Program for the Promotion of Kansei Science for Understanding the Mechanism of Mind and Heart</i>, financé by par le Ministère Japonais de l'Éducation, de la Culture, des Sports, de la Science and de la Technologie (MEXT)",
+        "institution": "Université de Tsukuba",
+        "country": "Japon",
+        "main": false
+    },
+    "DKT": {
+        "start": "2000",
+        "end": "2002",
+        "title": "Ingénieur/designer, responsable de la R&D au Japon",
+        "description": "Projets d'innovation en collaboration avec des partenaires japonais",
+        "institution": "Decathlon in Japon (devenu Oxylane)",
+        "country": "Japon",
+        "main": false
+    },
+    "Béghin-Say": {
+        "start": "1999",
+        "end": "2000",
+        "title": "Technicien de maintenance en analyse vibratoire",
+        "description": "Mise en place système de maintenance par l'analyse vibratoire",
+        "institution": "Éridania Béghin-Say (devenu Thereos)",
+        "country": "France",
+        "main": false
+    }
+}

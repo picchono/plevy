@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ partial "title.html" . }}
+{{ if .Params.video}}<section>{{ partial "video.html" . }}</section>{{ end }}
+{{ if .Params.photogallery }}<section>{{ partial "photogallery.html" . }}</section>{{ end }}
+<section class="flex flex-col md:flex-row justify-left items-stretch">
+    <div class="max-w-5xl frame">
+        {{ if .Params.abstract }}<div class="my-10 md:w-2/3">{{ .Params.abstract }}</div>{{ end }}
+        {{ if .Content}}<div class="mt-10">{{ .Content }}</div>{{ end }}
+    </div>
+    <div class="flex-shrink flex-grow frame invisible md:visible h-0 md:h-auto">&nbsp;</div>
+</section>
+{{ end }}

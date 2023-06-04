@@ -1,0 +1,40 @@
+{
+    "project6": {
+        "start": "2017",
+        "end": "2021",
+        "title": "Brabantse Alliance Learning Approach (BAL) for Social Resilience",
+        "place": "Eindhoven University of Technology (TU/e), The Netherlands"
+    },
+    "project5": {
+        "start": "2015",
+        "end": "2019",
+        "title": "Impuls-2 for the Healthcare Flagship - Topic Advanced Peri-Operative Monitoring",
+        "place": "Eindhoven University of Technology (TU/e), The Netherlands",
+        "comment": "#2.2.6. Peri-operative patient engagement and support"
+    },
+    "project4": {
+        "start": "2012",
+        "end": "2014",
+        "title": "Projects with Toyota Motor Corporation (Japan) and Toyota Motor Europe (Belgium)",
+        "place": "Eindhoven University of Technology (TU/e), The Netherlands",
+        "comment": "Projets under non-disclosure aggreement"
+    },
+    "project3": {
+        "start": "2006",
+        "end": "2008",
+        "title": "Postdoctoral scholarship from the 21st Century Center of Excellence (COE), Ministry of Education, Culture, Sports, Science and Technology",
+        "place": "University of Tsukuba, Japan"
+    },
+    "project2": {
+        "start": "2005",
+        "end": "2006",
+        "title": "Student research support from the 21st Century Center of Excellence (COE), Ministry of Education, Culture, Sports, Science and Technology",
+        "place": "University of Tsukuba, Japan"
+    },
+    "project1": {
+        "start": "2002",
+        "end": "2006",
+        "title": "Monbukagakusho scholarship (Ministry of Education, Culture, Sports, Science and Technology)",
+        "place": "University of Tsukuba, Japan"
+    }
+}

@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ partial "title.html" . }}
+{{ if .Params.video}}<section>{{ partial "video.html" . }}</section>{{ end }}
+{{ if .Params.photogallery }}<section>{{ partial "photogallery.html" . }}</section>{{ end }}
+<section class="flex flex-col md:flex-row justify-left items-stretch">
+    <div class="max-w-5xl frame">
+        {{ if .Content}}<div>{{ .Content }}</div>{{ end }}
+        {{ if .Params.reference }}<p class="my-12">{{ .Params.reference }}</p>{{ end }}
+    </div>
+    <div class="flex-shrink flex-grow frame invisible md:visible h-0 md:h-auto">&nbsp;</div>
+</section>
+<section class="flex flex-col md:flex-row justify-left items-stretch">
+    <div class="w-full md:w-1/4 frame">
+        <h2 class="p-0 align-bottom">{{ i18n "projects" }} & {{ i18n "publications" }}</h2>
+        <input class="control-field search-field form-control bg-transparent mt-2 mb-8" type="text" name="search"
+            placeholder='{{ i18n "search" }}...' />
+    </div>
+    <div class="publili w-full min-h-screen bg-epierrot">
+        <div class="muugrid w-full">
+            {{ $targ := .Params.milestone }}
+            {{ $count := 0 }}
+            {{ range where .Site.Pages "Section" "in" (slice "notion" "publications" "projects") }}{{ if isset .Params $targ }}
+            {{ if ne .Params.notEverything true }}{{ if ne .Params.notListed true }}
+            {{ $count = add $count 1 }}
+            {{- partial "box.html"  ( dict "context" . "cou" $count ) -}}
+            {{ end }}{{ end }}{{ end }}{{ end }}
+        </div>
+    </div>
+
+    </div>
+</section>
+{{ $muu_js := resources.Get "js/muu.js" | minify }}
+<script defer src="{{ $muu_js.Permalink }}"></script>{{ end }}
