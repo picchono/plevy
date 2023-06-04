@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+<div class="muugrid w-auto md:w-full">
+    {{ if ne $langu "jp" }}
+    {{ partial "international.html" . }}
+    {{ with index .Site.Data.all .Site.Language.Lang }}
+    <div class="item case w-auto md:px-20 pt-7">
+        <h1 class="text-4xl">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
+        <div class="text-xs -my-2 text-secondary-text">{{ .identity.title }} - HDR</div>
+    </div>
+    <div class="item case w-auto max-w-md justify-start items-start">
+        {{ range .pro }}{{ if .main }}
+        <div class="mb-6">
+            {{ .title | safeHTML }} - {{ .institution |safeHTML }}, {{ .country |safeHTML }}
+            {{ if .extra }}<br />{{ .extra | safeHTML }}{{ end }}
+        </div>{{ end }}{{ end }}
+        {{ range .pro }}{{ if .main }}
+        {{ if .associations }}
+        <div class="mt-6">{{ range sort .associations "order" "asc" }}{{ if .main }}{{ .title | safeHTML }}<br />{{ end }}{{ end }}</div>
+        {{ end }}
+        {{ if .activities }}
+        <div class="mt-3">{{ range sort .activities "order" "asc" }}{{ if .main }}{{ .title | safeHTML }}<br />{{ end }}{{ end }}</div>
+        {{ end }}
+        {{ end }}{{ end }}
+    </div>
+    {{ end }}
+    {{range sort .Params.blocs "order"}}
+    <div class="item case w-auto max-w-md justify-start">
+        <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
+    </div>
+    {{ end }}
+    {{ with index .Site.Data.all .Site.Language.Lang }}
+    <div class="item case w-auto max-w-xl">{{ .identity.description | safeHTML }}</div>
+    {{ end }}
+
+    {{ else }}
+    {{ partial "international.html" . }}
+    {{ with index .Site.Data.all .Site.Language.Lang }}
+    <div class="item case w-auto">
+        <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+        <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
+    </div>
+    <div class="item case w-auto">
+        {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
+        {{if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
+    </div>
+    <div class="item case w-full max-w-xl">
+        <p>{{ .identity.descriptop | safeHTML }}</p>
+    </div>
+    {{ end }}
+    {{ end }}
+    <div class="item case w-full md:max-w-md h-62 p-2"><img src="" data-toset="{{ .Params.pict | absURL }}"
+            data-ref="{{ .Params.pict | absURL }}" alt="Pierre Lévy" class="imag object-cover w-full h-full rounded-sm"
+            style="filter:hue-rotate(318deg);" />
+    </div>
+    {{ with index .Site.Data.all .Site.Language.Lang }}
+    <div class="item case w-auto social px-8 py-4">
+        {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="inline-block mr-4 pt-2 transition-all duration-700 ease-in-out"
+            rel="noreferrer" data-tooltip="{{ .type }}"
+            aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon  "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
+    </div>
+    {{ end }}
+    <a class="item case text-center w-auto social px-8 py-4" href="./about/">{{ i18n "about" |safeHTML }}</a>
+    {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+    {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1 "layout" .Params.layout) -}}
+    {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{ end }}
+</div>
+{{ end }}

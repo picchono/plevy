@@ -1,7 +1,7 @@
 {{ define "main" }}<div class="backButton"><a class="text-primary-text "
         href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>
 <div class="flex flex-col md:flex-row justify-left items-stretch">
-    <div class="w-full md:w-1/4 frame p-10 flex-grow-0 flex-shrink-0" name="event" id="everything">
+    <div class="w-full md:w-1/3 frame p-10 flex-grow-0 flex-shrink-0" name="event" id="everything">
         <h1 class="text-2xl font-bold mt-20 md:mt-10">{{ .Params.title |safeHTML }}</h1>
         {{ if .IsTranslated }}<div id="languageMode" class="mb-10">
             <span class="font-medium">{{ .Language.LanguageName }}</span>{{ range .Translations }}&nbsp;|&nbsp;<a
@@ -32,12 +32,12 @@
             </div>
         </div>
     </div>
-    <div class="publili w-full bg-epierrot">
+    <div class="publili w-full m-0 md:m-4 pt-px pl-px">
         <div class="muugrid w-full">
             {{ $count := 0 }}
             {{ range .Site.Pages }}{{ if ne .Params.notEverything true }}{{ if ne .Page.Type "tags" }}
             {{  $count = add $count 1 }}
-            {{ partial "box.html"  ( dict "context" . "cou" $count ) -}}
+            {{ partial "box.html"  ( dict "context" . "cou" $count "colu" 2) -}}
             {{ end }}{{ end }}{{ end }}
         </div>
     </div>

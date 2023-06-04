@@ -1,0 +1,112 @@
+/* Tailwind base - put variables under: tailwind.config.js */
+@import "node_modules/tailwindcss/base";
+@import "assets/css/base";
+/* Tailwind component classes registered by plugins*/
+@import "node_modules/tailwindcss/components";
+/* Tailwind's utility classes - generated based on config file */
+@import "node_modules/tailwindcss/utilities";
+
+
+@page {
+    margin: 1.5cm 1.5cm 1.5cm 2.5cm;
+
+    @bottom-right {
+        border-top: .25pt solid #666;
+        content: counter(page);
+    }
+}
+
+:root {
+    @apply font-sans bg-white text-black leading-6 box-border;
+}
+
+*,
+html,
+body {
+    @apply bg-white text-black text-base;
+    font-family: 'Avenir', 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 9pt;
+    line-height: 1.4rem;
+    margin: 0;
+    float: none;
+    font-variant-ligatures: common-ligatures;
+}
+
+a[href^="http://"].pdf:after,
+a[href^="https://"].pdf:after {
+    content: " ["attr(href) "]";
+}
+
+b i {
+    @apply font-bold italic;
+}
+
+main,
+.frame {
+    @apply border-none py-0 my-0;
+}
+
+div.level1,
+p {
+    margin-bottom: 0.5rem;
+}
+
+div.level1,
+p,
+i,
+li,
+h1 {
+    page-break-before: auto;
+    page-break-inside: avoid;
+    text-overflow: ellipsis;
+    float: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+.comment {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+h1 {
+    @apply text-4xl mb-20;
+}
+
+h2 {
+    @apply text-lg;
+}
+
+/* fixing base.css for print */ 
+.revers {
+    @apply bg-secondary-bg text-primary-text pb-1 pt-0.5 mr-2 rounded-sm md:rounded transition-all duration-700 ease-in-out inline;
+    box-shadow: none;
+    box-decoration-break: clone;
+}
+
+.revers::after {
+    content: " |";
+}
+
+.filterOption.revers {
+    @apply my-1 mr-8 font-bold pt-1;
+    box-shadow: none;
+}
+
+.filterOption.revers:hover {
+    @apply text-primary-text bg-secondary-bg;
+    box-shadow: 0.75rem 0 0 var(--color-secondary-bg), -0.75rem 0 0 var(--color-secondary-bg);
+}
+
+.backButton, #languageMode {
+    @apply invisible h-0 w-0 p-0 m-0;
+}
+
+.videoFrame {
+    @apply invisible h-0 w-0 p-0 m-0;
+}
+.videoLink {
+    @apply visible h-auto w-auto;
+}

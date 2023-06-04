@@ -5,14 +5,16 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}" class="overflow-x-hidden md:overflow-x-auto">
-  {{ if .Params.bckground }}
-  <div class="fixed z-10"><img id="mainbckgimg" loading="lazy" src="{{ .Params.bckground | absURL }}"
-      data-ref="{{ .Params.bckground | absURL }}" alt="Pierre Lévy" class="object-cover h-screen w-screen opacity-40"
-      loading="lazy" width="500" height="500" />
-  </div>{{ end }}
-  <main class="flex flex-col justify-between">{{- block "main" . }}{{- end }}
-    {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1) -}}
-    {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none") -}}{{ end }}
+<main class="h-full min-h-screen w-screen p-2 pb-8 md:p-0 md:pb-8">
+    {{- block "main" . }}{{- end }}
   </main>
 </body>
+{{ if ne .Params.layout "else" }}
+{{ $muu_js := resources.Get "js/muu.js" | minify }}
+<script defer src="{{ $muu_js.Permalink }}"></script>
+{{ end }}
+{{ if .Params.photogallery }}
+{{ $spo_js := resources.Get "js/spotl.js" | minify }}
+<script defer src="{{ $spo_js.Permalink }}"></script>
+{{ end }}
 </html>

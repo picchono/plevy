@@ -2,23 +2,26 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}" class="my-7 mx-3 md:mx-auto container">
+<body id="cv" class="md:my-7 mx-3">
    {{ with index .Site.Data.all .Site.Language.Lang }}
    
-   <main class="container frame">
-      <h1 class="mb-30">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
-      <div class="grid grid-cols-7 gap-x-6 mb-10">
+   <div class="container mx-auto bg-primary-bg md:px-32 md:py-4">
+      <h1 class="mb-30 mt-22">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+      <div class="grid grid-cols-7 gap-x-6 mb-0">
          <div><b>{{ i18n "name" }}</b></div>
-         <div class="col-span-3">{{ .identity.lastname }}</div>
+         <div class="col-span-2">{{ .identity.lastname }}</div>
+         <div class="">&nbsp;</div>
          <div><b>{{ i18n "nationality" }}</b></div>
          <div class="col-span-2">{{ .identity.nationality }}</div>
          <div><b>{{ i18n "firstnames" }}</b></div>
-         <div class="col-span-3">{{ .identity.firstname }} {{ .identity.middlename }}</div>
+         <div class="col-span-2">{{ .identity.firstname }} {{ .identity.middlename }}</div>
+         <div class="">&nbsp;</div>
          <div><b>{{ i18n "birthdate" }}</b></div>
          <div class="col-span-2">{{ .identity.birthdate }}</div>
          <div class="col-span-7">&nbsp;</div>
          <div class="row-span-4"><b>{{ i18n "address" }}</b></div>
-         <div class="col-span-3 row-span-4">{{ .identity.address | safeHTML }}</div>
+         <div class="col-span-2 row-span-4">{{ .identity.address | safeHTML }}</div>
+         <div class=" row-span-4">&nbsp;</div>
          <div><b>{{ i18n "phone" }}</b></div>
          <div class="col-span-2">{{ .identity.tel }}</div>
          <div><b>{{ i18n "email" }}</b></div>
@@ -30,11 +33,8 @@
          <div class="col-span-2"><a href="{{ .identity.social.linkedin.url }}" target="_blank"
                rel="noreferrer">{{ .identity.social.linkedin.username }}</a></div>
          <div class="col-span-7">&nbsp;</div>
-         <div><b>{{ i18n "affiliations" }}</b></div>
-         <div class="col-span-6">{{ range .identity.affiliations }}<a href="{{ .url }}" target="_blank"
-               rel="noreferrer">{{ .name }}</a><br />{{ end }}</div>
       </div>
-      <div class="grid grid-cols-7 gap-x-6 mb-10">
+      <div class="grid grid-cols-7 gap-x-6 mb-0">
          {{ range sort .studies "date" "desc" }}{{ if .main }}
          <div>{{ .date }}</div>
          <div class="col-span-6 level1"><b>{{ .title |safeHTML }}</b>{{ if isset . "place" }} |
@@ -43,30 +43,27 @@
          {{ end }}{{ end }}
       </div>
       <h2>{{ i18n "current-situation" }}</h2>
-      {{ range sort .pro "start" "desc" }}{{ if eq .end "none" }}
-      <div class="grid grid-cols-7 gap-x-6 mb-10">
+      {{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
+      <div class="grid grid-cols-7 gap-x-6 mb-0">
          <div>{{ i18n "Since" }} {{ .start }}</div>
          <div class="col-span-6 level1">
             <b>{{ .title }}</b><br />{{ if isset . "institution" }}{{ .institution |safeHTML }}{{ if isset . "country" }},
             {{ .country |safeHTML }}{{end }}{{ end }}
             {{ if isset . "faculty" }}<br />{{ .faculty |safeHTML }}{{end }}
             {{ if isset . "extra" }}<br />{{ .extra |safeHTML }}{{end }}</div>
-         {{ if isset . "associations" }}<div class="col-start-2 col-span-6 my-4">{{ range sort .associations "start" "desc" }}
-            <div class="mb-2 font-bold">{{ .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}){{ if isset . "comment" }}<br /><span
-               class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
-         {{ end }}</div>{{ end }}
-         {{ if isset . "activities" }}
-         <div class="col-start-2 col-span-6 my-3">
-            <div class="grid grid-cols-6 gap-x-6">
-               {{ range sort .activities "start" "desc" }}
-               <div>{{ if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}
-               </div>
-               <div class="col-span-5 level2">{{ .title |safeHTML }}{{ if isset . "comment" }}<br /><span
-                     class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+            {{ if isset . "associations" }}<div class="col-start-2 col-span-6 mb-4">{{ range sort .associations "order" "desc" }}
+               {{ .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}){{ if isset . "comment" }} <span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}<br>
+            {{ end }}</div>{{ end }}
+            {{ if isset . "activities" }}
+            <div class="col-start-2 col-span-6 mb-10">
+               {{ range sort .activities "order" "desc" }}
+               <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
+               {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}
                {{ end }}
             </div>
-         </div>
-         {{ end }}
+            {{ end }}
       </div>
       {{ end }}{{ end }}
       <h2>{{ i18n "pastPro" }}</h2>
@@ -81,7 +78,7 @@
             {{ if isset . "activities" }}
             <div class="col-start-2 col-span-6 mb-10">
                {{ range sort .activities "start" "desc" }}
-               <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "Since" }}
+               <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
                {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
                   class="comment">{{ .comment |safeHTML }}</span>{{ end }}
                {{ end }}
@@ -89,7 +86,7 @@
             {{ end }}
          </div>
          {{ end }}{{ end }}</div>
-      <h2> {{ i18n "promotion" }}</h2>
+      <h2 class="pt-6z"> {{ i18n "promotion" }}</h2>
       <div class="grid grid-cols-7 gap-x-6">
          {{ range sort .promotions "year" "desc" }}
          <div>{{ .date }}</div>
@@ -114,7 +111,7 @@
          {{ end }}
       </div>
       <h2>{{ i18n "PHDdirect" }}</h2>
-      <div class="mb-10">{{ range sort .directiontheses "date" "desc" }}
+      <div class="mb-10">{{ range sort .directiontheses.list "date" "desc" }}
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{ if eq .ongoing true }}{{ i18n "Since" }}
                {{ .date }}{{ else }}{{ dateFormat "02/01/2006" .date }}{{ end }}</div>
@@ -126,7 +123,7 @@
          </div>
          {{ end }}</div>
       <h2>{{ i18n "PHDjury"}}</h2>
-      <div class="mb-10">{{ range sort .jurysdoctoraux "date" "desc" }}
+      <div class="mb-10">{{ range sort .jurysdoctoraux.list "date" "desc" }}
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{ dateFormat "02/01/2006" .date }}</div>
             <div class="col-span-6"><b>{{ .type |safeHTML }} {{ i18n "of" }} {{ .candidate }}</b> |
@@ -182,7 +179,7 @@
          </div>
          {{ end }}</div>
       <h2>{{ i18n "finance" }}</h2>
-      <div class="grid grid-cols-7 gap-x-6 mb-10">{{ range sort .finance "start" "desc" }}
+      <div class="grid grid-cols-7 gap-x-6 mb-0">{{ range sort .finance "start" "desc" }}
          <div>{{ if .end }}{{ .start }} - {{ .end }}{{ else }}{{ i18n "Since" }} {{ .start }}{{ end }}</div>
          <div class="col-span-6 level2"><b>{{ .title |safeHTML }}</b> -
             {{ .place }}{{ if isset . "comment"}}<br /><span class="comment">{{ .comment }}</span>{{ end }}
@@ -190,28 +187,28 @@
          {{ end }}{{ end }}
       </div>
       <h2>{{ i18n "publications" }}</h2>
-      <h3>{{ i18n "publijournal"}}</h3>
+      <h3>{{ i18n "publijournal"}}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "journal" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "journal" }}<div class="level1">
          {{ .Params.reference }}</div>{{ end }}{{ end }}
-      <h3>{{ i18n "publiconf" }}</h3>
+      <h3>{{ i18n "publiconf" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "conference" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "conference" }}<div
          class="level1">{{ .Params.reference }}</div>{{ end }}{{ end }}
-      <h3>{{ i18n "books" }}</h3>
+      <h3>{{ i18n "books" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "book" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "book" }}<div
          class="level1">{{ .Params.reference }}</div>{{ end }}{{ end }}
-      <h3>{{ i18n "publichap" }}</h3>
+      <h3>{{ i18n "publichap" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "book-section" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "book-section" }}<div
          class="level1">{{ .Params.reference }}</div>{{ end }}{{ end }}
-      <h3>{{ i18n "edition" }}</h3>
+      <h3>{{ i18n "edition" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "edition" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "edition" }}<div
          class="level1">{{ .Params.reference }}</div>{{ end }}{{ end }}
-      <h3>{{ i18n "publidissertation" }}</h3>
+      <h3>{{ i18n "publidissertation" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "dissertation" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "dissertation" }}<div
          class="level1">{{ .Params.reference }}</div>{{ end }}{{ end }}
-      <h3>{{ i18n "publireport" }}</h3>
+      <h3>{{ i18n "publireport" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "report" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "report" }}<div class="level1">
          {{ .Params.reference }}</div>{{ end }}{{ end }}
-   </main>
+      </div>
 </body>
 
 </html>

@@ -1,7 +1,19 @@
 {
+    "Hesam": {
+        "start": "2023",
+        "end": "none",
+        "order": 3,
+        "title": "Vice-président Formation",
+        "institution": "<a href='https://hesam.eu' target='_blank' rel='noreferrer' title='HESAM Universite'>HESAM Université</a>",
+        "country": "France",
+        "main": true,
+        "activities": {
+        }
+    },
     "CNAM": {
         "start": "2021",
         "end": "none",
+        "order": 2,
         "title": "Professeur du CNAM (PRCM)",
         "extra": "Titulaire de la <a href='https://chaire-design.fr' target='_blank' title='Chaire de Design Jean Prouvé' rel='noreferrer'>Chaire de Design Jean Prouvé</a>",
         "institution": "<a href='https://www.cnam.fr' target='_blank' title='Conservatoire National des Arts et Métiers' rel='noreferrer'>Conservatoire National des Arts et Métiers</a>",
@@ -9,14 +21,6 @@
         "country": "France",
         "main": true,
         "associations": {
-            "Hesam": {
-                "order": 1,
-                "start": "2023",
-                "end": "none",
-                "title": "Vice-président Formation de l'<a href='https://hesam.eu' target='_blank' rel='noreferrer' title='HESAM Universite'>HESAM Université</a>",
-                "comment": "HESAM Université est une communauté d’universités et d’établissements qui se construit depuis 2010 grâce à l’action conjuguée de plusieurs établissements français d’enseignement supérieur, de recherche, d’innovation et de réseaux d’entreprises.",
-                "main": true
-            },
             "EPN16": {
                 "order": 2,
                 "start": "2021",
@@ -26,37 +30,52 @@
                 "main": true
             },
             "dicenidf": {
-                "order": 3,
+                "order": 1,
                 "start": "2020",
                 "end": "none",
                 "title": "Chercheur au laboratoire <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> (EA 7339)",
                 "comment": "Le laboratoire Dicen-IDF (Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France) est une unité de recherche multi-tutelles (EA 7339) entre le Conservatoire National des Arts et Métiers, l’Université Gustave Eiffel et l’Université Paris-Nanterre.",
-                "main": false
-            },
+                "main": true
+            }
+        },
+        "activities": {
             "CF22": {
                 "order": 4,
                 "start": "2022",
                 "end": "none",
                 "title": "Membre élu du Conseil des formations du Cnam",
-                "main": true
+                "main": false
             },
             "masterDesignCreation": {
-                "order": 5,
+                "order": 1,
                 "start": "2021",
                 "end": "none",
                 "title": "Responsable du <a href='https://formation.cnam.fr/rechercher-par-discipline/master-arts-lettres-langues-mention-design-parcours-creation-projets-transdisciplinarite-1085664.kjsp?RF=' target='_blank' rel='noreferrer' data-tooltip='Master Arts, Lettres, langues - mention Design' title='Master Arts, Lettres, langues - mention Design'>Master Design</a>",
                 "comment": "L'objectif de ce master est de former des créateurs capables de concevoir leur projet professionnel, d’inventer leur pratique de design de manière prospective en intégrant l’évolution des sociétés et des contextes culturels et techniques sans cesse redéfinis.",
-                "main": false
+                "main": true
             },
             "jhtr": {
-                "order": 6,
+                "order": 3,
                 "start": "2022",
                 "end": "none",
                 "title": "Membre du Comité consultatif de rédaction du <a href='https://ojs.utwente.nl/index.php/jhtr/' target='_blank' rel='noreferrer' data-tooltip='Journal of Human-Technology Relations' title='Journal of Human-Technology Relations'>JHTR</a>",
                 "main": true
+            },
+            "docschool": {
+                "order": 5,
+                "start": "2022",
+                "end": "none",
+                "title": "Responsable de la mention <i>Arts, Design et Société</i> de l’<a href='https://recherche.cnam.fr/etudes-doctorales-hdr/' target='_blank' rel='noreferrer' title='École doctorale Abbé Grégoire'>École doctorale Abbé Grégoire (ED 546)</a>",
+                "main": true
+            },
+            "agregation":{
+                "order": 3,
+                "start": "2022",
+                "end": "none",
+                "title":"Membre du jury d'agrégation des métiers d'art et du design",
+                "main": true
             }
-        },
-        "activities": {}
+        }
     },
     "TUe": {
         "start": "2009",
@@ -136,7 +155,7 @@
                 "start": "2011",
                 "end": "2014",
                 "title": "Directeur du groupe de projets <i>Wearable Senses</i>",
-                "comment": "DireDirection d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème des textiles intelligents et des ‘technologies près du corps’",
+                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème des textiles intelligents et des ‘technologies près du corps’",
                 "main": false
             },
             "dschool": {
@@ -157,11 +176,12 @@
     "kansei": {
         "start": "2006",
         "end": "none",
+        "order": 1,
         "title": "Contribution à la communauté internationale sur l'étude du kansei",
-        "description": "kansei",
         "main": false,
-        "associations": {
+        "activities": {
             "KEER-steering-coord": {
+                "order": 6,
                 "start": "2014",
                 "end": "none",
                 "title": "Coordinateur du Comité directoire du <a href='https://keer.org' target='_blank' title='keer.org' rel='noreferrer'>Kansei Engineering and Emotion Research (KEER)</a>",
@@ -169,12 +189,14 @@
                 "main": true
             },
             "IJAE": {
+                "order": 4,
                 "start": "2006",
                 "end": "none",
                 "title": "Membre du Comité Editorial de l’International Journal of Affective Engineering (IJAE)",
                 "main": false
             },
             "EKG": {
+                "order": 5,
                 "start": "2016",
                 "end": "2018",
                 "title": "Président et co-fondateur de l’European Kansei Group (EKG)",
@@ -182,18 +204,21 @@
                 "main": false
             },
             "KEER14": {
+                "order": 3,
                 "start": "2012",
                 "end": "2014",
                 "title": "Président du Comité Scientifique de la Conférence Internationale KEER 2014, Linköping, Suède",
                 "main": false
             },
             "KEER": {
+                "order": 2,
                 "start": "2009",
                 "end": "none",
                 "title": "Co-organisateur des conférences internationales KEER depuis 2010",
                 "main": false
             },
             "JSKE-advis": {
+                "order": 1,
                 "start": "2009",
                 "end": "none",
                 "title": "Conseiller de la Japanese Society of Kansei Engineering (JSKE)",

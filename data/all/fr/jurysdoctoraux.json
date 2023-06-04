@@ -1,67 +1,86 @@
 {
-    "Dorian Reunkrilerk": {
-        "date": "2022-04-15",
-        "type": "Président du jury de la défense doctorale",
-        "candidate": "Dorian Reunkrilerk",
-        "place": "Telecom Paris / Strate",
-        "title": "LA FORCE DU SIGNE FAIBLE. Rôle des médias pour lintégration du design au sein des organisations : une contribution sémio-pragmatique de la médiation au design",
-        "language": "français"
-    },
-    "Niklas Henke": {
-        "date": "2021-10-11",
-        "type": "Président du jury de la défense doctorale",
-        "candidate": "Niklas Henke",
-        "place": "Université Grenoble Alpes",
-        "title": "La corporéité des affects selon le design dans les projets d'innovation : approche critique, analyse des pratiques et perspectives",
-        "language": "français"
-    },
-    "Renaud Mignerey": {
-        "date": "2019-07-19",
-        "type": "Membre et rapporteur du jury de la défense doctorale",
-        "candidate": "Renaud Mignerey",
-        "place": "Université de Technologie de Compiègne, France",
-        "title": "Designer Les interactions humain-monde pour susciter des emotions positives / Application à l'automobile",
-        "language": "français"
-    },
-    "Jeroen Peeters": {
-        "date": "2016-04-26",
-        "type": "Rapporteur du séminaire doctoral 90%",
-        "candidate": "Jeroen Peeters",
-        "place": "Université de Umeå, Suède",
-        "title": "Perpetual perspectives: on designing for aesthetic engagement",
-        "language": "anglais",
-        "comment": "Le séminaire doctoral 90 % est une évaluation du travail doctoral effectuée avant la finalisation du travail doctoral, visant à mettre en exergue les points qui restent à développer ou à parfaire avant la soumission de la thèse."
-    },
-    "Xiao Chen": {
-        "date": "2015-03-30",
-        "type": "Membre du jury de la défense doctorale",
-        "candidate": "Xiao Chen",
-        "place": "École Nationale Supérieure des Arts et Industries Textiles(ENSAIT), Roubaix, France",
-        "title": "Contrôle et optimisation de la perception humaine sur les vêtements virtuels par évaluation sensorielle et apprentissage de données expérimentales",
-        "language": "français"
-    },
-    "Oluwafemi Samuel Adelabu Gabrielle": {
-        "date": "2015-01-28",
-        "type": "Membre du jury de la défense doctorale",
-        "candidate": "Oluwafemi Samuel Adelabu Gabrielle",
-        "place": "Université de Tsukuba, Tsukuba, Japon",
-        "title": "An Investigation into the Cross-Cultural Differences of Aesthetic Value Cognition and Visio-Semantic Evaluation of Product Designs, Focus on Japan and Nigeria",
-        "language": "anglais"
-    },
-    "Gabrielle Le Bihan": {
-        "date": "2014-12-04",
-        "type": "Membre du jury de la défense doctorale",
-        "candidate": "Gabrielle Le Bihan",
-        "place": "Université de Technologie de Compiègne, France",
-        "title": "Design d’interaction pour un “contact” à distance : suppléance perceptive du toucher et médiatisation de l’attente conjointe",
-        "language": "français"
-    },
-    "Zhebin Xue": {
-        "date": "2012-12-20",
-        "type": "Membre du jury de la défense doctorale",
-        "candidate": "Zhebin Xue",
-        "place": "École Nationale Supérieure des Arts et Industries Textiles(ENSAIT), Roubaix, France",
-        "title": "Study on relations between visual and haptic perceptions of textile products",
-        "language": "anglais"
+    "description": "Jurys de doctorat",
+    "list": {
+        "Diane Beaulieu": {
+            "date": "2023-02-16",
+            "type": "Président du jury de la défense doctorale",
+            "candidate": "Diane Beaulieu",
+            "place": "École doctorale Abbé Grégoire, Hésam Univerité",
+            "title": "Anticipation par le design. Contributions de l’approche design et de la conception de dispositifs de médiation à la prospective — une approche pour favoriser l’engagement des acteurs vers des futurs souhaitables",
+            "language": "français"
+        },
+        "Dominique Deuff": {
+            "date": "2023-01-24",
+            "type": "Membre du jury de la défense doctorale",
+            "candidate": "Dominique Deuff",
+            "place": "Nantes Université",
+            "title": "Vivre ensemble avec les objets à comportements. Une approche pluridisciplinaire pour questionner, modéliser et proposer une nouvelle écologie pour les jeunes retraités",
+            "language": "français"
+        },
+        "Dorian Reunkrilerk": {
+            "date": "2022-04-15",
+            "type": "Président du jury de la défense doctorale",
+            "candidate": "Dorian Reunkrilerk",
+            "place": "Telecom Paris / Strate",
+            "title": "LA FORCE DU SIGNE FAIBLE. Rôle des médias pour lintégration du design au sein des organisations : une contribution sémio-pragmatique de la médiation au design",
+            "language": "français"
+        },
+        "Niklas Henke": {
+            "date": "2021-10-11",
+            "type": "Président du jury de la défense doctorale",
+            "candidate": "Niklas Henke",
+            "place": "Université Grenoble Alpes",
+            "title": "La corporéité des affects selon le design dans les projets d'innovation : approche critique, analyse des pratiques et perspectives",
+            "language": "français"
+        },
+        "Renaud Mignerey": {
+            "date": "2019-07-19",
+            "type": "Membre et rapporteur du jury de la défense doctorale",
+            "candidate": "Renaud Mignerey",
+            "place": "Université de Technologie de Compiègne, France",
+            "title": "Designer Les interactions humain-monde pour susciter des emotions positives / Application à l'automobile",
+            "language": "français"
+        },
+        "Jeroen Peeters": {
+            "date": "2016-04-26",
+            "type": "Rapporteur du séminaire doctoral 90%",
+            "candidate": "Jeroen Peeters",
+            "place": "Université de Umeå, Suède",
+            "title": "Perpetual perspectives: on designing for aesthetic engagement",
+            "language": "anglais",
+            "comment": "Le séminaire doctoral 90 % est une évaluation du travail doctoral effectuée avant la finalisation du travail doctoral, visant à mettre en exergue les points qui restent à développer ou à parfaire avant la soumission de la thèse."
+        },
+        "Xiao Chen": {
+            "date": "2015-03-30",
+            "type": "Membre du jury de la défense doctorale",
+            "candidate": "Xiao Chen",
+            "place": "École Nationale Supérieure des Arts et Industries Textiles(ENSAIT), Roubaix, France",
+            "title": "Contrôle et optimisation de la perception humaine sur les vêtements virtuels par évaluation sensorielle et apprentissage de données expérimentales",
+            "language": "français"
+        },
+        "Oluwafemi Samuel Adelabu Gabrielle": {
+            "date": "2015-01-28",
+            "type": "Membre du jury de la défense doctorale",
+            "candidate": "Oluwafemi Samuel Adelabu Gabrielle",
+            "place": "Université de Tsukuba, Tsukuba, Japon",
+            "title": "An Investigation into the Cross-Cultural Differences of Aesthetic Value Cognition and Visio-Semantic Evaluation of Product Designs, Focus on Japan and Nigeria",
+            "language": "anglais"
+        },
+        "Gabrielle Le Bihan": {
+            "date": "2014-12-04",
+            "type": "Membre du jury de la défense doctorale",
+            "candidate": "Gabrielle Le Bihan",
+            "place": "Université de Technologie de Compiègne, France",
+            "title": "Design d’interaction pour un “contact” à distance : suppléance perceptive du toucher et médiatisation de l’attente conjointe",
+            "language": "français"
+        },
+        "Zhebin Xue": {
+            "date": "2012-12-20",
+            "type": "Membre du jury de la défense doctorale",
+            "candidate": "Zhebin Xue",
+            "place": "École Nationale Supérieure des Arts et Industries Textiles(ENSAIT), Roubaix, France",
+            "title": "Study on relations between visual and haptic perceptions of textile products",
+            "language": "anglais"
+        }
     }
 }

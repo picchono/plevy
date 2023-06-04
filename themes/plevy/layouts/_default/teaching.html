@@ -1,31 +1,22 @@
-{{ define "main" }}
-{{ partial "title.html" . }}
-{{ if .Params.video}}<section>{{ partial "video.html" . }}</section>{{ end }}
-{{ if .Params.photogallery }}<section>{{ partial "photogallery.html" . }}</section>{{ end }}
-<section>
-    {{ if .Content}}
-    <div class="flex flex-col md:flex-row justify-left items-stretch">
-        <div class="w-full md:w-2/3 md:max-w-4xl frame">{{ .Content }}</div>
-        <div class="flex-shrink flex-grow">
-        {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
-        {{ if .Params.redirectlecture}}
-        <div class="flex flex-row frame h-full">
-            <b class="revers w-32 flex-shrink-0">{{ i18n "courses" }}</b>
-            <div class="ml-2 w-full">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}
-                {{ range sort .Params.redirectlecture "order" "asc" }}
-                <a class="" href="{{ .link }}" target="_blank"
-                    rel="noreferrer"><b>{{ $cod }}.{{ .order }}&nbsp;&middot;&nbsp;</b>{{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>
-                {{ end }}</div>
-        {{ end }}</div>
-        {{ if false }}
-        {{ $co := .Params.code }}
-        {{ range where .Site.Pages.ByDate "Section" "in" (slice "teaching") }}
-        {{ if eq .Params.code $co }}{{ if eq .Params.type "session" }}
-        <a class="" href="{{ .Permalink }}"><b>{{- .Params.code -}}.{{- .Params.serie }}</b> &middot;
-            {{ .Title -}}</a><br>
-        {{ end }}{{ end }}{{ end }}
-        {{ end }}
-    </div>{{ end }}
-</section>
-{{ end }}
 
+
+{{ define "main" }}
+<div class="muugrid w-auto md:w-full">
+{{ partial "title.html" . }}
+{{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1 "layout" .Params.layout) -}}
+{{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{ end }}
+{{ if .Params.video}}{{ partial "video.html" . }}{{ end }}
+{{ if .Params.photogallery }}{{ partial "photogallery.html" . }}{{ end }}
+{{ if .Content}}<div class="item case w-auto md:w-full max-w-xl">{{ .Content }}</div>{{ end }}
+{{ if .Params.redirectlecture}}<div class="item case w-auto md:w-full max-w-xl flex flex-row justify-start items-start">
+    <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
+    <div class="ml-2 w-auto md:w-full py-1">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}
+        {{ range sort .Params.redirectlecture "order" "asc" }}
+        <a class="" href="{{ .link }}" target="_blank"
+            rel="noreferrer"><b>{{ $cod }}.{{ .order }}&nbsp;&middot;&nbsp;</b>{{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+</div>
+{{ end }}

@@ -1,39 +1,38 @@
-<div class="backButton"><a class="text-primary-text cursor-pointer"
-        onclick="window.history.go(-1)">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>
-<section class="flex flex-col md:flex-row justify-start ">
-    <div class="w-full md:w-3/4 max-w-6xl frame">
-        <h1 class="text-2xl font-bold py-20 md:py-0 md:pb-4">{{ .Params.title |safeHTML }}</h1>
-
-        {{if .Params.updating }}<div class="italic my-8">Currently updating</div>{{ end }}
-        {{ if .Params.quote }}<p class="py-2 m-0 rounded my-8">
-            {{ .Params.quote.quoteline |safeHTML}}<br /><span class="text italic"> -
-                {{ .Params.quote.quoteauthor }} ({{ .Params.quote.quotedate }})</span></p>
-        {{else if .Params.diploma}}<div class="flex my-8">
-            <p class="mr-4">{{ range sort .Params.diploma }}<b>{{ .type }}</b><br>{{ end }}</p>
-            <p class="w-full ml-2">{{ range sort .Params.diploma }}{{ .name }}<br>{{ end }}</p>
-        </div>
-        {{else if .Params.reference }}<div class="revers block mt-4">
-            {{ .Params.reference |safeHTML }}</div>
-        {{else if .Params.abstract }}<p class="my-8"><span class="revers"><b>{{ i18n "abstract"}}</b></span>
-            <b>{{ .Params.abstract |safeHTML }}</b></p>{{ end }}
-        {{ if .Params.executive}}<div class="italic text-sm">{{ .Params.executive }}</div>{{ end }}
-        {{ if .IsTranslated }}<div id="languageMode" class="mt-14">
-            <span class="font-medium">{{ .Language.LanguageName }}</span>{{ range .Translations }}&nbsp;|&nbsp;<a
-                href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
-                rel="noreferrer">{{ .Language.LanguageName }}</a>
-        </div>{{ end }}
-        {{ end }}
-    </div>
-    {{ if .Params.collaboration }}<div class="flex-shrink flex-grow frame md:p-auto md:h-auto">
-        <div class="flex md:flex-col flex-wrap items-center justify-center h-full md:pt-8">
-            {{ range sort .Params.collaboration }}
-            <a href="{{ .web }}" target="_blank" class="p-4 md:px-0 md:pb-8">
-                {{ if .colo }}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
-                {{else}}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" "var(--color-primary-text)") -}}{{ end }}
-            </a>{{ end }}
-        </div>
-        {{ else }}
-        <div class="flex-shrink flex-grow frame p-0 md:p-auto invisible md:visible h-0 md:h-auto">&nbsp;</div>
-        {{ end }}
-    </div>
-</section>
+{{if not .IsHome }}<div class="item case p-0 min-h-0 min-w-0 w-auto"><a class="text-primary-text "
+    href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
+{{ partial "international.html" . }}
+<div class="item case w-full md:w-auto">
+    <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
+</div>
+{{if .Params.updating }}<div class="item case w-full md:w-auto">
+    <p class="italic text-epierrot">Currently updating</p>
+</div>{{ end }}
+{{ if ne .Params.layout "simple" }}
+{{ if .Params.quote }}<div class="item case w-full md:w-auto max-w-xl">
+    <p>{{ .Params.quote.quoteline |safeHTML}}<br /><span class="text italic"> -
+            {{ .Params.quote.quoteauthor }} ({{ .Params.quote.quotedate }})</span></p>
+</div>
+{{else if .Params.diploma}}<div class="item case w-full md:w-auto max-w-lg flex flex-row items-start justify-start">
+    <p class="mr-4 flex-grow flex-shrink">{{ range sort .Params.diploma }}<b>{{ .type }}</b><br>{{ end }}</p>
+    <p class="flex-grow">{{ range sort .Params.diploma }}{{ .name }}<br>{{ end }}</p>
+</div>
+{{else if .Params.reference }}<div class="item case w-full md:w-auto max-w-xl">
+    <p>{{ .Params.reference |safeHTML }}</p>
+</div>
+{{else if .Params.abstract }}<div class="item case w-full md:w-auto max-w-xl">
+    <p><span class="revers"><b>{{ i18n "abstract"}}</b></span>
+        <b>{{ .Params.abstract |safeHTML }}</b></p>
+</div>{{ end }}
+{{ end }}
+{{ if .Params.executive}}<div class="item case w-full md:w-auto max-w-xl italic text-sm">
+    <p>{{ .Params.executive }}</p>
+</div>{{ end }}
+{{ if .Params.collaboration }}<div class="item case w-full md:w-auto max-w-sm flex flex-wrap items-center py-6">
+    {{ range sort .Params.collaboration }}
+    <a href="{{ .web }}" target="_blank" class="px-0 py-4">
+        {{ if .colo }}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+        {{else}}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" "var(--color-primary-text)") -}}{{ end }}
+    </a>{{ end }}
+</div>
+{{ end }}
+{{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}

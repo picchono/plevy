@@ -1,86 +1,64 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-
-{{ if not (eq $langu "jp") }}
-<section class="flex flex-col md:flex-row justify-left items-stretch">
-    <div class="w-full md:w-2/3 md:max-w-4xl frame">
-        {{ with index .Site.Data.all .Site.Language.Lang }}
-        <h1 class="text-2xl font-bold pt-12 pb-24 md:pt-0 md:pb-12">{{ .identity.firstname }} {{ .identity.lastname }}
-        </h1>
-        {{ end }}
-        <div>{{ .Content }}</div>
-        {{ if .IsTranslated }}
-        <div id="languageMode" class="inline-block mt-10">
-            <span class="font-bold">{{ .Language.LanguageName }}</span>{{ range .Translations }}&nbsp;|&nbsp;<a
-                href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
-                rel="noreferrer">{{ .Language.LanguageName }}</a>{{ end }}
-        </div>
-        {{ end }}
-    </div>
-    <div class="flex-shrink flex-grow frame invisible md:visible h-0 md:h-auto">&nbsp;</div>
-</section>
-
-{{ $langu := .Site.Language.Lang }}
-<section class="flex flex-col md:flex-row justify-left items-stretch">
+<div class="muugrid w-auto md:w-full">
+    {{ if ne $langu "jp" }}
+    {{ partial "international.html" . }}
     {{ with index .Site.Data.all .Site.Language.Lang }}
-    <div class="order-2 md:order-1 w-full lg:w-3/4 lg:min-w-144 lg:max-w-4xl frame">
-        {{ end }}
-        {{ with index .Site.Data.all .Site.Language.Lang }}
-        <h1 class="text-2xl font-bold py-20 md:py-0">{{ .identity.title }} {{ .identity.firstname }}
-            {{ .identity.lastname }}, HDR</h1>
-        <p class="pt-6 font-bold">
-            {{ range .pro }}{{ if .main }}{{ if ne $langu "jp" }}{{ .title | safeHTML }}
-            {{ i18n "at" }}{{ end }}
-            {{ .institution |safeHTML }}{{ if ne $langu "jp" }},
-            {{ .country |safeHTML }}{{ end }}{{ end }}
-            {{ if .main }}{{if .extra }}<br />{{ .extra | safeHTML }}{{ end }}</p>
-        {{ if .associations }}
-        {{ range sort .associations "order" "asc" }}{{ .title | safeHTML }}<br />{{ end }}{{ end }}{{ end }}
-        </p>{{ end }}
-        <p class="hidden md:block">
-            {{ range .pro}}{{ range .activities }}{{ if .main }}{{ .title | safeHTML }}<br />{{ end }}{{ end }}{{ end }}
-        </p>
-        <p class="mt-10">{{ .identity.description | safeHTML }}</p>
-        <div class="social mt-10">
-            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="inline-block mr-4"
-                rel="noreferrer" data-tooltip="{{ .type }}"
-                aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon  "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
-        </div>{{ end }}
+    <div class="item case w-auto md:px-20 pt-7">
+        <h1 class="text-4xl -mx-0.5">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
+        <div class="text-xs -my-2 text-epierrot">{{ .identity.title }} - HDR</div>
     </div>
-    <div class="flex-shrink flex-grow order-1 md:order-2 flex framebox"><img src=""
-            data-toset="{{ .Params.pict | absURL }}" data-ref="{{ .Params.pict | absURL }}" alt="Pierre Lévy"
-            class="imag object-cover w-full" style="filter:grayscale(0.7);" width="500" height="500" />
-    </div>
-</section>
-
-{{ else }}
-<section class="flex flex-col md:flex-row justify-left items-stretch">
-    <div class="w-full md:w-2/3 md:max-w-4xl frame">
-        {{ with index .Site.Data.all .Site.Language.Lang }}
-        <h1 class="pb-2 text-2xl font-bold">{{ .identity.title }} {{ .identity.firstname }}
-            {{ .identity.lastname }}, HDR</h1>
-        <p class="mt-0 font-bold">{{ .identity.jp |safeHTML }}</p>
-        <p class="pt-6">
-            {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
-            {{if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}</p>
-        <p>{{ .identity.descriptop | safeHTML }}</p>
-        <p>&nbsp;</p>
-        <div class="social self-end col-span-2">
-            <a href="https://goo.gl/maps/ZYqyBnPzKBoFvxVx8" target="_blank" class="inline-block mr-4" rel="noreferrer"
-                data-tooltip="access">{{- partial "icons.html" (dict "ico" "map" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
-            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="inline-block mr-4"
-                rel="noreferrer"
-                data-tooltip="{{ .type }}">{{- partial "icons.html" (dict "ico" .icon "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
-        </div>{{ end }}
-        {{ if .IsTranslated }}
-        <div id="languageMode" class="inline-block mt-8">
-            <span class="font-bold">{{ .Language.LanguageName }}</span>{{ range .Translations }}&nbsp;|&nbsp;<a
-                href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
-                rel="noreferrer">{{ .Language.LanguageName }}</a>{{ end }}
+    <div class="item case w-auto max-w-md justify-start items-start">
+        {{ range .pro }}{{ if .main }}
+        <div class="">
+            {{ .title | safeHTML }}
+            {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
+            {{ if .extra }}<br />{{ .extra | safeHTML }}{{ end }}
         </div>
-        {{ end }}
+        {{ end }}{{ end }}
     </div>
-    <div class="flex-shrink flex-grow frame invisible md:visible h-0 md:h-auto">&nbsp;</div>
-</section>
-{{ end }}
+    {{ end }}
+    {{range sort .Params.blocs "order"}}
+    <div class="item case w-auto max-w-sm justify-start">
+        <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
+    </div>
+    {{ end }}
+    {{ else }}
+    {{ partial "international.html" . }}
+    {{ with index .Site.Data.all .Site.Language.Lang }}
+    <div class="item case w-auto">
+        <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+        <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
+    </div>
+    <div class="item case w-auto">
+        {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
+        {{if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
+    </div>
+    <div class="item case w-full max-w-xl">
+        <p>{{ .identity.descriptop | safeHTML }}</p>
+    </div>
+    {{ end }}
+    {{ end }}
+    <div class="item case w-full md:max-w-md h-62 p-2"><img src="" data-toset="{{ .Params.pict | absURL }}"
+            data-ref="{{ .Params.pict | absURL }}" alt="Pierre Lévy" class="imag object-cover w-full h-full rounded-sm"
+            style="filter:grayscale(0.9);" />
+    </div>
+    {{ with index .Site.Data.all .Site.Language.Lang }}
+    <div class="item case w-auto social px-8 py-4 flex flex-row justify-center items-center">
+        {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank"
+            class="inline-block mr-4  transition-all duration-700 ease-in-out" rel="noreferrer"
+            data-tooltip="{{ .type }}" aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon
+            "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
+    </div>
+    <div class="item case p-0 w-auto"><a class="inline-block text-center px-8 py-4" href="./about/">{{ i18n "about"
+            |safeHTML }}</a></div>
+    <div class="item case w-auto max-w-xl">{{ .identity.description | safeHTML }}</div>
+    {{ end }}
+    {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+    {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti"
+    .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1 "layout"
+    .Params.layout) -}}
+    {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{
+    end }}
+</div>
 {{ end }}

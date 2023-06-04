@@ -47,7 +47,7 @@ body {
 }
 
 .markdown-body a {
-    @apply block rounded text-epierrot py-3 px-4 -ml-4 my-2 no-underline bg-tertiary-bg md:hover:shadow-xl transition-all duration-700 ease-in-out;
+    @apply block rounded text-epierrot py-3 px-4 -ml-4 my-2 no-underline bg-secondary-bg md:hover:shadow-xl transition-all duration-700 ease-in-out;
 }
 
 .markdown-body a:before {
@@ -272,7 +272,7 @@ body {
 }
 
 .markdown-body blockquote {
-    @apply my-12 py-4 pr-4 border-l-4 border-epierrot bg-tertiary-bg rounded-r;
+    @apply my-12 py-4 pr-4 border-l-4 border-epierrot bg-secondary-bg rounded-r;
 }
 
 .markdown-body ul,

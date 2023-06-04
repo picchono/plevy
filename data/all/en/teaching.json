@@ -148,10 +148,28 @@
 		}
 	},
 	"pro": {
+		"DSN202": {
+			"title": "Pratiques réflexives en design, art et création",
+			"start": "2022",
+			"end": "none",
+			"place": "CNAM",
+			"language": "French",
+			"ects": "6",
+			"description": "For a reflexive approach to situated practice, i.e. practice lived in a real context, this course provides tools from the fields of design for the transformative reflection of professional or everyday practices."
+		},
+		"DSN201": {
+			"title": "Research practices in design, art and creation",
+			"start": "2022",
+			"end": "",
+			"place": "CNAM",
+			"language": "French",
+			"ects": "6",
+			"description": "Overview and contextualisation of research practices in design, art and creation. It is about providing resources (knowledge, tools, methodologies, networks...) and putting them into practice."
+		},
 		"TET007-RNCP": {
 			"title": "Approche pratique du numérique et la recherche d'information (RNCP)",
 			"start": "2021",
-			"end": "none",
+			"end": "2023",
 			"place": "CNAM",
 			"language": "French",
 			"ects": "4",

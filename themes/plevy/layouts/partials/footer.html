@@ -1,14 +1,30 @@
-<footer class="flex flex-row justify-left items-stretch">
-    {{ if ne .insti "none" }}<div class="w-full md:w-2/3 md:max-w-4xl frame py-6"><a href="{{ .webs }}"
-            title="{{ .institnam }}" rel="noreferrer" target="_blank"
-            class="inline-block mr-2 align-bottom pb-1">{{ partial "icons.html" (dict "ico" .insti "hei" 1 "colo" "var(--color-primary-text)") -}}</a><span
-            class="inline-block mr-1 text-sm align-bottom pb-px">|</span><span
-            class="inline-block pb-px text-xs place-self-end align-bottom">{{ .dat | time.Format "2 Jan 2006" }}</span></div>
-            {{ end }}
-    <div class="flex-grow frame flex flex-row items-center justify-end py-6 px-4 md:px-10 w-1/2"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="cc inline-block mb-1"
-            title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" rel="noreferrer" class="block w-full">
+{{ if or (eq .layout "event") (eq .layout "presentation") (eq .layout "programme") (eq .layout "project") (eq .layout "publi") (eq .layout "ressearch")  (eq .layout "teaching") }}
+<div class="item case p-8 max-w-3xl w-full md:w-144 min-h-70 overflow-y-auto">
+    <div class=""><script src="https://utteranc.es/client.js" repo="picchono/plevyfr" issue-term="pathname" theme="github-light"
+        crossorigin="anonymous" async>
+        </script></div>
+</div>
+{{ end }}
+<footer class='{{ if ne .layout "list" }}item{{ end }} case px-8 py-4 w-auto flex flex-col justify-center items-center'>
+    <div class="flex flex-row items-center pt-1">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            target="_blank" class="cc inline-block"
+            title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" rel="noreferrer"
+            class="inline" data-tooltip="Creative Commons">
             {{- partial "icons.html" (dict "ico" "cc" "hei" 1 "colo" "var(--color-primary-text)" ) -}}</a>
-        <a href="https://gohugo.io/" target="_blank" title="Made with Hugo" rel="noreferrer" class="pl-2 pb-1.5 inline-block">
+        <a href="https://github.com/picchono/plevyfr/" target="_blank" title="Powered by Github" rel="noreferrer"
+            class="pl-2 pb-1 inline-block" data-tooltip="Powered by Github" aria-label="This links to Github">
+            {{- partial "icons.html" (dict "ico" "github" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
+        </a>
+        <a href="https://gohugo.io/" target="_blank" title="Made with Hugo" rel="noreferrer"
+            class="pl-2 pb-1 inline-block" data-tooltip="Made with Hugo" aria-label="This links to Hugo">
             {{- partial "icons.html" (dict "ico" "hugo" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
-        </a></div>
+        </a>
+    </div>
+    {{ if ne .insti "none" }}<div><a href="{{ .webs }}" title="{{ .institnam }}" rel="noreferrer" target="_blank"
+            class="inline-block mr-2 align-bottom pb-1">{{ partial "icons.html" (dict "ico" .insti "hei" 0.8 "colo"
+            "var(--color-primary-text)") -}}</a><span class="inline-block mr-1 text-sm align-bottom pb-px">|</span><span
+            class="inline-block pb-px text-xs place-self-end align-bottom">{{ .dat | time.Format "2 Jan 2006" }}</span>
+    </div>
+    {{ end }}
 </footer>

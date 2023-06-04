@@ -148,6 +148,24 @@
 		}
 	},
 	"pro": {
+		"DSN202": {
+			"title": "Pratiques réflexives en design, art et création",
+			"start": "2022",
+			"end": "none",
+			"place": "CNAM",
+			"language": "français",
+			"ects": "6",
+			"description": "Pour une approche réflexive sur une pratique située, c'est-à-dire sur une pratique vécue dans un contexte réel, cette UE fournit des outils issus des domaines du design permettant la réflexion transformative des pratiques professionnelles ou du quotidien."
+		},
+		"DSN201": {
+			"title": "Pratiques de recherche en design, art et création",
+			"start": "2022",
+			"end": "none",
+			"place": "CNAM",
+			"language": "français",
+			"ects": "6",
+			"description": "Vue d'ensemble et contextualisation des pratiques de la recherche en design, art et création. Il s’agit de plus de fournir des ressources (connaissances, outils, méthodologies, réseaux...) et des les mettre en pratique."
+		},
 		"TET007-RNCP": {
 			"title": "Approche pratique du numérique et la recherche d'information (RNCP)",
 			"start": "2021",

@@ -14,12 +14,12 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'sans': ['Avenir Next Cyr', 'sans-serif'],
+      'sans': ['Author', 'sans-serif'],
       'mono': ['SFMono-Regular', 'Menlo'],
     },
     fontWeight: {
-      normal: 400,
-      bold: 750,
+      normal: 500,
+      bold: 600,
     },
     extend: {
       width: {
@@ -64,6 +64,7 @@ module.exports = {
         '144': '36rem',
       },
       minWidth: {
+        '58': '14.5rem',
         '72': '18rem',
         '144': '36rem',
       },
@@ -88,13 +89,9 @@ module.exports = {
       colors: {
         'primary-bg': 'var(--color-primary-bg)',
         'secondary-bg': 'var(--color-secondary-bg)',
-        'tertiary-bg': 'var(--color-tertiary-bg)',
         'primary-text': 'var(--color-primary-text)',
         'secondary-text': 'var(--color-secondary-text)',
-        'tertiary-text': 'var(--color-tertiary-text)',
         'epierrot': 'var(--color-epierrot)',
-        'box-img': 'var(--color-box-img)',
-        'imgbg': 'var(--color-imgbg)',
         transparent: 'transparent',
         current: 'currentColor',
         'black': colors.black,

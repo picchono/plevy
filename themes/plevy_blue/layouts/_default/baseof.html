@@ -1,0 +1,22 @@
+{{ if .Params.redirect }}
+<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="{{ .Params.bodyclass }}" class="overflow-x-hidden md:overflow-x-auto">
+  {{if not .IsHome }}<div class="backButton"><a class="text-black"
+    href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.5") -}}</a></div>{{ end }}
+<main class="h-full min-h-screen p-1 md:p-4">
+    {{- block "main" . }}{{- end }}
+  </main>
+</body>
+{{ if ne .Params.layout "else" }}
+{{ $muu_js := resources.Get "js/muu.js" | minify }}
+<script defer src="{{ $muu_js.Permalink }}"></script>
+{{ end }}
+{{ if .Params.photogallery }}
+{{ $spo_js := resources.Get "js/spotl.js" | minify }}
+<script defer src="{{ $spo_js.Permalink }}"></script>
+{{ end }}
+</html>
