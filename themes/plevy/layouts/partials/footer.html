@@ -6,18 +6,18 @@
 </div>
 {{ end }}
 <footer class='{{ if ne .layout "list" }}item{{ end }} case px-8 py-4 w-auto flex flex-col justify-center items-center'>
-    <div class="flex flex-row items-center pt-1">
+    <div class="flex flex-row justify-center items-center py-3">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-            target="_blank" class="cc inline-block"
+            target="_blank"
             title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" rel="noreferrer"
-            class="inline" data-tooltip="Creative Commons">
+            data-tooltip="Creative Commons" class="flex flex-row items-center w-full">
             {{- partial "icons.html" (dict "ico" "cc" "hei" 1 "colo" "var(--color-primary-text)" ) -}}</a>
         <a href="https://github.com/picchono/plevy" target="_blank" title="Powered by Github" rel="noreferrer"
-            class="pl-2 pb-1 inline-block" data-tooltip="Powered by Github" aria-label="This links to Github">
+            class="pl-2 inline-block" data-tooltip="Powered by Github" aria-label="This links to Github">
             {{- partial "icons.html" (dict "ico" "github" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
         </a>
         <a href="https://gohugo.io/" target="_blank" title="Made with Hugo" rel="noreferrer"
-            class="pl-2 pb-1 inline-block" data-tooltip="Made with Hugo" aria-label="This links to Hugo">
+            class="pl-2 inline-block" data-tooltip="Made with Hugo" aria-label="This links to Hugo">
             {{- partial "icons.html" (dict "ico" "hugo" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
         </a>
     </div>
