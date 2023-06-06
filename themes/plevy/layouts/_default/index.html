@@ -34,9 +34,6 @@
         {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
         {{if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
     </div>
-    <div class="item case w-full max-w-xl">
-        <p>{{ .identity.descriptop | safeHTML }}</p>
-    </div>
     {{ end }}
     {{ end }}
     <div class="item case w-full md:max-w-md h-62 p-2"><img src="" data-toset="{{ .Params.pict | absURL }}"
@@ -50,9 +47,9 @@
             data-tooltip="{{ .type }}" aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon
             "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
     </div>
+    <div class="item case w-full max-w-xl"><p>{{ .identity.description | safeHTML }}</p></div>
     <div class="item case p-0 w-auto"><a class="inline-block text-center px-8 py-4" href="./about/">{{ i18n "about"
             |safeHTML }}</a></div>
-    <div class="item case w-auto max-w-xl">{{ .identity.description | safeHTML }}</div>
     {{ end }}
     {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
     {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti"
