@@ -18,7 +18,7 @@ module.exports = {
       'mono': ['SFMono-Regular', 'Menlo'],
     },
     fontWeight: {
-      normal: 500,
+      normal: 400,
       bold: 600,
     },
     extend: {
