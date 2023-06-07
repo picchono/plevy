@@ -1,6 +1,6 @@
 
 {{ define "main" }}
-<div class="flex flex-row justify-left items-stretch w-auto md:w-full max-w-7xl mx-auto mt-12 md:mt-0">
+<div class="flex flex-row justify-left items-stretch w-auto md:w-full mx-auto mt-12 md:mt-0">
     {{if not .IsHome }}<div class="case p-0 min-h-0 h-6 w-auto"><a class="text-primary-text"
         href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
     <div class="case w-auto max-w-xs">
