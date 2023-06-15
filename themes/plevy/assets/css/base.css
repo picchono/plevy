@@ -621,7 +621,7 @@ b.vert:not(:first-child):before {
     position:relative;
 }
 
-.item {
+.item, .permanent {
     display:block;
     position:absolute;
     width:100px;
@@ -629,15 +629,7 @@ b.vert:not(:first-child):before {
     z-index:1;
 }
 
-.item.muuri-item-dragging {
-    z-index:3;
-}
-
-.item.muuri-item-releasing {
-    z-index:2;
-}
-
-.item.muuri-item-hidden {
+.item.muuri-item-hidden, .permanent.muuri-item-hidden {
     z-index:0;
     transform:translateX(0px) translateY(0) !important;
     opacity:0;
@@ -964,4 +956,13 @@ canvas#bgirreg2in {
 /* utterances */
 .utterances-frame  .new-comment-header {
     background-color: #2991f9 !important;
+}
+
+.front-writing {
+    @apply ml-3.5;
+    list-style-type: "&middot;";
+}
+
+.front-writing li {
+    @apply list-outside m-0;
 }

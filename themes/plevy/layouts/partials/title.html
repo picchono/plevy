@@ -1,10 +1,10 @@
 {{if not .IsHome }}<div class="item case p-0 min-h-0 min-w-0 w-auto"><a class="text-primary-text "
     href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
 {{ partial "international.html" . }}
-<div class="item case w-full md:w-auto">
+<div class="permanent case w-full md:w-auto" data-search="permanent">
     <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
 </div>
-{{if .Params.updating }}<div class="item case w-full md:w-auto">
+{{if .Params.updating }}<div class="permanent case w-full md:w-auto">
     <p class="italic text-epierrot">Currently updating</p>
 </div>{{ end }}
 {{ if ne .Params.layout "simple" }}

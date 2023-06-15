@@ -1,5 +1,5 @@
 {{ if .IsTranslated }}
-<div id="languageMode" class='{{ if and (ne .Params.layout "list") (ne .Params.layout "else") }}item {{end}}case w-auto flex flex-row items-center justify-center'>
+<div id="languageMode" class='{{ if and (ne .Params.layout "list") (ne .Params.layout "else") }}permanent {{end}}case w-auto flex flex-row items-center justify-center'>
     <div class="font-bold ">{{ .Language.LanguageName }}</div>
     {{ range .Translations }} <div>&nbsp;|&nbsp;<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
             rel="noreferrer">{{ .Language.LanguageName }}</a></div>{{ end }}
