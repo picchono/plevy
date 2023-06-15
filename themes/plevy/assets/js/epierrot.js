@@ -16,9 +16,7 @@ window.onresize = function(){
   clearTimeout(doit);
   doit = setTimeout(resizedw, 500);
 };
-function resizedw(){
-    if (this.resizeTO) clearTimeout(this.resizeTO);
-  this.resizeTO = setTimeout(function () {
+function resizedw() {
     const vwid = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     var allItems = muugrid.getItems();
       var toShow = [];
@@ -31,7 +29,6 @@ function resizedw(){
           break;
         }
       }
-  }, 1000);
 };
 
 

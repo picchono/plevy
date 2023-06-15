@@ -79,6 +79,7 @@ const options = {
 // muuri init
 if (document.getElementsByClassName("muugrid")) {
   var muugrid = new Muuri('.muugrid', options);
+  resizedw();
 }
 
 // Reset search field values
