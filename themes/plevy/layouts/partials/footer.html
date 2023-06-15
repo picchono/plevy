@@ -1,11 +1,11 @@
 {{ if or (eq .layout "event") (eq .layout "presentation") (eq .layout "programme") (eq .layout "project") (eq .layout "publi") (eq .layout "ressearch")  (eq .layout "teaching") }}
-<div class="permanent case p-8 max-w-3xl w-full md:w-144 min-h-70 overflow-y-auto">
+<div class="item case p-8 max-w-3xl w-full md:w-144 min-h-70 overflow-y-auto">
     <div class=""><script src="https://utteranc.es/client.js" repo="picchono/plevyfr" issue-term="pathname" theme="github-light"
         crossorigin="anonymous" async>
         </script></div>
 </div>
 {{ end }}
-<footer class='permanent case px-8 py-4 w-auto flex flex-col justify-center items-center'>
+<footer class='{{ if ne .layout "list" }}item{{ end }} case px-8 py-4 w-auto flex flex-col justify-center items-center'>
     <div class="flex flex-row justify-center items-center py-3">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
             target="_blank"

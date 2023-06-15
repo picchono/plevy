@@ -5,7 +5,7 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}" class="overflow-x-hidden md:overflow-x-auto">
-<main class="min-h-screen w-screen p-2 pb-8 md:p-0 md:pb-8">
+<main class="h-full min-h-screen w-screen p-2 pb-8 md:p-0 md:pb-8">
     {{- block "main" . }}{{- end }}
   </main>
 </body>
