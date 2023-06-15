@@ -33,7 +33,7 @@
     {{ $count := 0 }}
     {{ range .Site.Pages }}{{ if ne .Params.notEverything true }}{{ if ne .Page.Type "tags" }}
     {{ $count = add $count 1 }}
-    {{ partial "box.html" ( dict "context" . "cou" $count "colu" 3) -}}
+    {{ partial "box.html" ( dict "context" . "cou" $count) -}}
     {{ end }}{{ end }}{{ end }}
 
 </div>

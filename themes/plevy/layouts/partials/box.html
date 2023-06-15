@@ -1,6 +1,6 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
 <div class="
-item it{{- int .cou }} {{ .context.Params.Subsection }} w-full md:w-1/{{ .colu }} 2xl:w-1/4 block py-2 md:p-4"
+item it{{- int .cou }} {{ .context.Params.Subsection }} w-full md:max-w-md py-2 md:p-4"
     data-search='{{ .context.Section }} {{ .context.Params.Subsection }} {{ .context.Content }} {{ .context.Params.abstract }} {{ .context.Params.reference}} {{ dateFormat "2006-01-02T15:04:05-07:00" .context.Date }} {{ range .context.Params.tags }} {{ . }} {{ end }}'>
     <a class="boxA text-primary-text transition-all duration-700 ease-in-out justify-center flex flex-col w-full"
         href="{{ .context.Permalink }}">
