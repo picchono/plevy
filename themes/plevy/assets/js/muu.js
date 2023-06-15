@@ -120,10 +120,8 @@ var hidItems = muugrid.on('hideStart', function (items) {
   for (let i = 0; i < items.length; i++) {
     var inqu = items[i]["_element"]["classList"];
     if (Object.values(inqu).indexOf('permanent') > -1) {
-      var toKeep = items[i];
-      toShow.push(muugrid.getItem(toKeep));
+      toShow.push(muugrid.getItem(items[i]));
     }
-   
   }  
    muugrid.show(toShow, { instant: true });    
 });
