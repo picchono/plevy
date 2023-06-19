@@ -18,13 +18,13 @@
         {{ end }}{{ end }}
     </div>
     {{ end }}
-    <div class="item case w-auto max-w-sm justify-start">
+    <div class="item case w-auto md:max-w-sm justify-start">
         <div><b class='revers'>{{ i18n "Recent-writings" }}</b></div>
         {{ partial "front-writing.html" . }}
         &lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</p>
     </div>
     {{range sort .Params.blocs "order"}}
-    <div class="item case w-auto max-w-sm justify-start">
+    <div class="item case w-auto md:max-w-sm justify-start">
         <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
     </div>
     {{ end }}

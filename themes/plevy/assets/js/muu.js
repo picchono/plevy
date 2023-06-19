@@ -85,7 +85,7 @@ if (document.getElementsByClassName("muugrid")) {
 // Reset search field values
 var searchField = document.querySelector('.search-field');
 var searchFieldValue;
-var itemz = document.querySelector('.item');
+var itemz = document.querySelector('.item, .permanent');
 if (searchField) searchField.value = '';
 
 // Search field binding.

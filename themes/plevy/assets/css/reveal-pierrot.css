@@ -26,7 +26,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  .reveal h4,
  .reveal h5,
  .reveal h6 {
-  @apply text-base md:text-4xl font-bold text-secondary-text;
+  @apply text-base md:text-4xl font-bold text-primary-text;
    line-height: 1.2;
    word-wrap: break-word; }
   
@@ -157,12 +157,11 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
    vertical-align: top; }
  
 .reveal .slide-number {
-    @apply bg-transparent absolute left-0 w-1/5 text-center p-0 z-10;
-    bottom: 3.5rem;
+    @apply bg-transparent absolute right-0 w-1/12 text-center px-10 z-10;
 }
 
 .reveal .slide-number span[class^="slide-number-"] {
-  @apply text-3xl font-bold text-primary-text;
+  @apply text-2xl font-bold text-primary-text text-right;
 }
 
 @media screen and (max-width: 768px) {

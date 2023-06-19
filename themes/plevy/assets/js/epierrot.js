@@ -47,6 +47,7 @@ function showPic() {
         delete elmt[count].dataset.toset;
       };
     };
+    muugrid.layout(true);
   }, 100);
 };
 
@@ -250,6 +251,7 @@ document.addEventListener('click', function (event) {
 
 window.addEventListener('scroll', function () {
   showPic();
+  muugrid.layout(true);
 });
 
 showPic();
