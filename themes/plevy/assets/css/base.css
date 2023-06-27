@@ -1,7 +1,7 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
 
-    --color-primary-bg:rgb(240, 238, 237);
+    --color-primary-bg:rgb(255, 255, 255);
     --color-secondary-bg:rgb(223, 220, 218);
     --color-primary-text:rgb(51, 44, 57);
     --color-secondary-text:rgb(86, 96, 97);
