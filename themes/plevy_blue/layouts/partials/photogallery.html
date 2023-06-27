@@ -1,5 +1,5 @@
 {{ $photonb := len .Params.photogallery }}{{ if eq $photonb 1 }}
-<div class="item case w-auto md:w-96 p-2"><img loading="lazy" class="rounded-sm w-full max-w-4xl mx-auto spotlight"
+<div class="item case w-96"><img loading="lazy" class="rounded-sm w-full max-w-4xl mx-auto spotlight"
             src="{{ .Params.photogallery.image1.img }}"></div>{{ else }}
 <div class="item case w-auto max-w-3xl grid grid-cols-4 sm:grid-cols-{{math.Min $photonb 6}} lg:grid-cols-{{math.Min $photonb 11}} gap-1 spotlight-group">
     {{ range sort .Params.photogallery "order" "asc" }}

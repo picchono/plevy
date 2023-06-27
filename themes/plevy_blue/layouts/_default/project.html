@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="muugrid w-auto md:w-full">
+<div class="muugrid w-full">
     {{ partial "title.html" . }}
-    <div class="item case w-auto md:w-full max-w-xl">
+    <div class="item case w-full max-w-xl">
         {{ if .Content}}<div class="">{{ .Content }}</div>{{ else }}<div>&nbsp;</div>{{ end }}
         {{ if .Params.reference }}<p class="mt-12">{{ .Params.reference }}</p>{{ end }}
     </div>

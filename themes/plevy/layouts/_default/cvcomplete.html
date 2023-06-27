@@ -2,10 +2,10 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="cv" class="md:my-7 mx-3">
+<body id="cv" class="my-7 mx-3">
    {{ with index .Site.Data.all .Site.Language.Lang }}
    
-   <div class="container mx-auto bg-primary-bg md:px-32 md:py-4">
+   <div class="container mx-auto">
       <h1 class="mb-30 mt-22">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
       <div class="grid grid-cols-7 gap-x-6 mb-0">
          <div><b>{{ i18n "name" }}</b></div>

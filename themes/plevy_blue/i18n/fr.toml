@@ -14,16 +14,7 @@ other="de"
 other="en"
 
 [at]
-other="à"
-
-[at_the_f]
-other="à la"
-
-[at_the_m]
 other="au"
-
-[at_the_a]
-other="à l'"
 
 [and]
 other="et"
@@ -361,12 +352,3 @@ other="Poster"
 
 [thanks]
 other="Merci"
-
-[other-data]
-other="Autres données"
-
-[cv]
-other="CV"
-
-[about]
-other="À propos de<br>ce site web"

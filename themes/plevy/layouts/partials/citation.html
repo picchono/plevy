@@ -1,24 +1,10 @@
-<meta name="citation_title" content="{{ .Title }}"/>
-<meta name="DC.URI" content="{{ .Params.link.book }}"/>
-<meta name="dc.description" content="{{ .Params.abstract }}"/>
-<meta name="description" content="{{ .Params.abstract }}"/>
-{{ if .Params.link.paper }}<meta name="citation_pdf_url" content="{{ .Params.link.paper }}"/>{{ end }}
+<meta property="DC.title" content="{{ .Title }}">
+<meta property="DC.URI" content="{{ .Params.link.book }}">
+<meta property="DC.abstract" content="{{ .Params.abstract }}">
+<meta name="DCSext.pn-cat" content="Article">
 {{ with .Params.citation }}
     {{ with .authors }}{{ range . }}
-    <meta name="citation_author" content="{{ . }}"/>
-    <meta name="DC.contributor" content="{{ . }}"/>
+    <meta property="DC.creator" content="{{ . }}" />
     {{ end }}{{ end }}
-    {{ if .type }}<meta name="DC.type" content="{{ .type }}"/>{{ end }}
-    {{ if .date }}<meta name="citation_publication_date" content="{{ .date }}"/>{{ end }}
-    {{ if .publisher }}<meta name="citation_publisher" content="{{ .publisher }}"/>{{ end }}
-    {{ if .contributor }}<meta name="DC.contributor" content="{{ .contributor }}"/>{{ end }}
-    {{ if .identifier }}<meta name="DC.identifier" content="{{ .doi }}"/>{{ end }}
-    {{ if .source }}<meta name="DC.source" content="{{ .source }}"/>{{ end }}
-    {{ if .language }}<meta name="DC.language" content="{{ .language }}"/>{{ end }}
-    {{ if .format }}<meta name="DC.format" content="{{ .format }}"/>{{ end }}
-    {{ if .inbook_title}}<meta name="citation_inbook_title" content="{{ .inbook_title }}"/>{{ end }}
-    {{ if .firstpage}}<meta name="citation_firstpage" content="{{ .firstpage }}"/>{{ end }}
-    {{ if .lastpage}}<meta name="citation_lastpage" content="{{ .lastpage }}"/>{{ end }}
-    {{ if .language}}<meta name="citation_language" content="{{ .language }}"/>{{ end }}
-    {{ if .doi}}<meta name="citation_doi" content="10.1007/978-3-031-05867-7_7"/>{{ end }}
+    {{ if .date }}<meta property="DC.date" content="{{ .date }}">{{ end }}
 {{ end }}
