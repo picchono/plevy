@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
 <div class="muugrid w-auto md:w-full">
-    {{ if ne $langu "jp" }}
     {{ partial "international.html" . }}
+    {{ if ne $langu "jp" }}
     {{ with index .Site.Data.all .Site.Language.Lang }}
     <div class="item case w-auto md:px-20 pt-7">
         <h1 class="text-4xl -mx-0.5">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
@@ -29,7 +29,6 @@
     </div>
     {{ end }}
     {{ else }}
-    {{ partial "international.html" . }}
     {{ with index .Site.Data.all .Site.Language.Lang }}
     <div class="item case w-auto">
         <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>

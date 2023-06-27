@@ -1,6 +1,6 @@
 {{ if .IsTranslated }}
-<div id="languageMode" class='permanent case w-auto flex flex-row items-center justify-center'>
-    <div class="font-bold ">{{ .Language.LanguageName }}</div>
+<div id="languageMode" class='permanent case w-auto inline-flex flex-row items-center justify-center'>
+    <div class="font-bold">{{ .Language.LanguageName }}</div>
     {{ range .Translations }} <div>&nbsp;|&nbsp;<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
             rel="noreferrer">{{ .Language.LanguageName }}</a></div>{{ end }}
 </div>
