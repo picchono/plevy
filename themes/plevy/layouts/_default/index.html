@@ -4,11 +4,11 @@
     {{ partial "international.html" . }}
     {{ if ne $langu "jp" }}
     {{ with index .Site.Data.all .Site.Language.Lang }}
-    <div class="item case w-auto md:px-20 pt-7">
+    <div class="item case md:px-20 pt-7">
         <h1 class="text-4xl -mx-0.5">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
         <div class="text-xs -my-1.5 text-epierrot">{{ .identity.title }} - HDR</div>
     </div>
-    <div class="item case w-auto max-w-md justify-start items-start">
+    <div class="item case max-w-md justify-start items-start">
         {{ range .pro }}{{ if .main }}
         <div class="">
             {{ .title | safeHTML }}
@@ -18,23 +18,23 @@
         {{ end }}{{ end }}
     </div>
     {{ end }}
-    <div class="item case w-auto md:max-w-sm justify-start">
+    <div class="item case md:max-w-sm justify-start">
         <div><b class='revers'>{{ i18n "Recent-writings" }}</b></div>
         {{ partial "front-writing.html" . }}
         &lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</p>
     </div>
     {{range sort .Params.blocs "order"}}
-    <div class="item case w-auto md:max-w-sm justify-start">
+    <div class="item case md:max-w-sm justify-start">
         <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
     </div>
     {{ end }}
     {{ else }}
     {{ with index .Site.Data.all .Site.Language.Lang }}
-    <div class="item case w-auto">
+    <div class="item case">
         <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
         <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
     </div>
-    <div class="item case w-auto">
+    <div class="item case">
         {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
         {{if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
     </div>
@@ -45,7 +45,7 @@
             style="filter:grayscale(0.9);" />
     </div>
     {{ with index .Site.Data.all .Site.Language.Lang }}
-    <div class="item case w-auto social px-8 py-4 flex flex-row justify-center items-center">
+    <div class="item case social px-8 py-4 flex flex-row justify-center items-center">
         {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank"
             class="inline-block mr-4  transition-all duration-700 ease-in-out" rel="noreferrer"
             data-tooltip="{{ .type }}" aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon

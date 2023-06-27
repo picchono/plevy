@@ -24,7 +24,7 @@
     </div>
     <div class="permanent case p-0 min-h-0 min-w-0 w-auto"><a class="text-primary-text "
             href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>
-            <div class="permanent case w-auto h-24 flex justify-center items-center">
+            <div class="permanent case h-24 flex justify-center items-center">
                 <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1></div>
     {{ partial "international.html" . }}
     {{if .Params.updating }}<div class="permanent case w-full md:w-auto">

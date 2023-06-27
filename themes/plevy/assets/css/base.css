@@ -42,7 +42,7 @@ p:last-child {
 }
 
 .case {
-    @apply flex flex-col justify-center items-center p-10 min-h-16 m-1 md:m-4;
+    @apply inline-flex flex-col justify-center items-center w-auto p-10 min-h-16 m-1 md:m-4;
 }
 
 .case, .item a.boxA {

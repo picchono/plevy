@@ -1,9 +1,0 @@
-<meta property="citation_title" content="{{ .Title }}">
-<meta property="citation_public_url" content="{{ .Params.link.book }}">
-<meta property="citation_abstract" content="{{ .Params.abstract }}">
-{{ with .Params.citation }}
-    {{ with .authors }}{{ range . }}
-    <meta property="citation_author" content="{{ . }}" />
-    {{ end }}{{ end }}
-    {{ if .date }}<meta property="citation_date" content="{{ .date }}">{{ end }}
-{{ end }}

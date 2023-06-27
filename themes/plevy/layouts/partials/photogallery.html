@@ -2,7 +2,7 @@
 <div class="item case w-96"><img loading="lazy" class="rounded-sm w-full max-w-4xl mx-auto spotlight"
         src="{{ .Params.photogallery.image1.img }}"></div>
 {{ else }}
-<div class="item case w-auto max-w-3xl">
+<div class="item case max-w-3xl">
     <div
         class="flex flex-row flex-wrap spotlight-group w-full">
         {{ range sort .Params.photogallery "order" "asc" }}

@@ -3,7 +3,7 @@
 <div class="flex flex-row justify-left items-stretch w-auto md:w-full mx-auto mt-12 md:mt-0">
     {{if not .IsHome }}<div class="case p-0 min-h-0 h-6 w-auto"><a class="text-primary-text"
         href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
-    <div class="case w-auto max-w-xs">
+    <div class="case max-w-xs">
         <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
     </div>
     <div class="md:flex md:flex-col md:justify-center items-center bg-primary-bg transition-all duration-700 ease-in-out md:p-10 md:m-4 w-auto max-w-md fixed md:relative top-0 z-40 left-0 md:left-auto">

@@ -5,9 +5,9 @@
     {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{ end }}
     {{ if .Params.video}}{{ partial "video.html" . }}{{ end }}
     {{ if .Params.photogallery }}{{ partial "photogallery.html" . }}{{ end }}
-    {{ if .Content}}<div class="item case w-auto md:w-full max-w-xl">{{ .Content }}</div>{{ end }}
-    {{ if .Params.reference }}<p class="mitem case w-auto md:w-full max-w-xs">{{ .Params.reference }}</p>{{ end }}
-{{ if .Params.lectures}}<div class="item case w-auto md:w-full max-w-xl flex flex-row justify-start items-start">
+    {{ if .Content}}<div class="item case md:w-full max-w-xl">{{ .Content }}</div>{{ end }}
+    {{ if .Params.reference }}<p class="mitem case md:w-full max-w-xs">{{ .Params.reference }}</p>{{ end }}
+{{ if .Params.lectures}}<div class="item case md:w-full max-w-xl flex flex-row justify-start items-start">
     <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
     <div class="ml-2 w-auto md:w-full py-1">{{ $cod := .Params.code }}
         {{ range sort .Params.lectures "order" "asc" }}

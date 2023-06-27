@@ -1,7 +1,7 @@
 {{if not .IsHome }}<div class="permanent case p-0 min-h-0 min-w-0 w-7"><a class="text-primary-text "
     href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
 {{ partial "international.html" . }}
-    <div class="permanent case w-auto">
+    <div class="permanent case max-w-2xl">
         <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
     </div>
     {{if .Params.updating }}<div class="permanent case w-44 italic mb-12 text-red-800">Currently updating</div>{{ end }}
