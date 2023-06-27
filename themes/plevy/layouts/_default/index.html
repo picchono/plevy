@@ -6,7 +6,7 @@
     {{ with index .Site.Data.all .Site.Language.Lang }}
     <div class="item case md:px-20 pt-7">
         <h1 class="text-4xl -mx-0.5">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
-        <div class="text-xs -my-1.5 text-epierrot">{{ .identity.title }} - HDR</div>
+        <div class="w-full text-xs -my-1.5 text-epierrot">{{ .identity.title }} - HDR</div>
     </div>
     <div class="item case max-w-md justify-start items-start">
         {{ range .pro }}{{ if .main }}

@@ -621,10 +621,10 @@ b.vert:not(:first-child):before {
     position:relative;
 }
 
-.item {
+.item, .permanent {
     display:block;
     position:absolute;
-    width:100px;
+    width:auto;
     height:auto;
     z-index:1;
 }
