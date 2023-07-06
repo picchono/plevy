@@ -1,0 +1,42 @@
+{{if not .IsHome }}<div class="absolute top-3 left-3"><a class="text-primary-text "
+    href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
+{{ partial "international.html" . }}
+<div class="case" data-search="permanent">
+    <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
+</div>
+{{ $cnt := 2 }}
+{{ if .Params.updating }}<div class="case">
+    <p class="italic text-epierrot">Currently updating</p>
+</div>{{ add $cnt 1 }}{{ end }}
+{{ if ne .Params.layout "simple" }}
+{{ if .Params.quote }}<div class="case">
+    <p>{{ .Params.quote.quoteline |safeHTML}}<br /><span class="text italic"> -
+            {{ .Params.quote.quoteauthor }} ({{ .Params.quote.quotedate }})</span></p>
+</div>
+{{else if .Params.diploma}}<div class="case flex flex-row items-start justify-start">
+    <p class="mr-4 flex-grow flex-shrink">{{ range sort .Params.diploma }}<b>{{ .type }}</b><br>{{ end }}</p>
+    <p class="flex-grow">{{ range sort .Params.diploma }}{{ .name }}<br>{{ end }}</p>
+</div>
+{{else if .Params.reference }}<div class="case">
+    <p>{{ .Params.reference |safeHTML }}</p>
+</div>
+{{else if .Params.abstract }}<div class="case">
+    <p><span class="revers"><b>{{ i18n "abstract"}}</b></span>
+        <b>{{ .Params.abstract |safeHTML }}</b></p>
+</div>{{ end }}
+{{ end }}
+{{ if .Params.executive}}<div class="case italic text-sm">
+    <p>{{ .Params.executive }}</p>
+</div>{{ add $cnt 1 }}{{ end }}
+{{ if .Params.collaboration }}<div class="case flex flex-wrap items-center py-6">
+    {{ range sort .Params.collaboration }}
+    <a href="{{ .web }}" target="_blank" class="px-0 py-4">
+        {{ if .colo }}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+        {{else}}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" "var(--color-primary-text)") -}}{{ end }}
+    </a>{{ end }}
+</div>
+{{ add $cnt 1 }}{{ end }}
+{{ if .Params.link }}{{ partial "doclink.html" . }}{{ add $cnt 1 }}{{ end }}
+{{ $totcnt := mod $cnt 3 }}<script>console.log({{ $totcnt }})</script>
+{{ if eq $totcnt 2 }}<div class="case bg-warmgray-200">&nbsp;</div>{{ end }}
+{{ if eq $totcnt 1 }}<div class="case row-span-2 w-144 bg-warmgray-200">&nbsp;</div>{{ end }}

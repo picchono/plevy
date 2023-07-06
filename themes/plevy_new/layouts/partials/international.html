@@ -1,0 +1,39 @@
+<div class="case flex flex-col justify-evenly pt-2 md:pt-0 mt-10 md:mt-0">
+    {{ if .IsTranslated }}
+    <div id="languageMode" class=' flex-row'>
+        <div class="inline font-bold">{{ .Language.LanguageName }}</div>
+        {{ range .Translations }} <div class="inline">&nbsp;|&nbsp;<a href="{{ .Permalink }}"
+                title="{{ i18n .Language.LanguageName }}" rel="noreferrer">{{ .Language.LanguageName }}</a></div>{{ end }}
+    </div>
+    {{ end }}
+    {{ if or (eq .Params.insti "none") (.Params.insti) }}
+    <div><a href="{{ .Params.webs }}" title="{{ .Params.institnam }}" rel="noreferrer" target="_blank"
+            class="inline-block mr-2 align-bottom pb-1">{{ partial "icons.html" (dict "ico" .Params.insti "hei" 0.8 "colo" "var(--color-primary-text)") -}}</a><span
+            class="inline-block mr-1 text-sm align-bottom pb-px">|</span><span
+            class="inline-block pb-px text-xs place-self-end align-bottom">{{ .Date | time.Format "2 Jan 2006" }}</span>
+    </div>
+    {{ end }}
+    <div class="flex flex-row justify-center items-center py-3">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" rel="noreferrer"
+                data-tooltip="Creative Commons" class="flex flex-row items-center w-full text-primary-text">
+                {{- partial "icons.html" (dict "ico" "cc" "hei" 1 "colo" "var(--color-primary-text)" ) -}}</a>
+            <a href="https://github.com/picchono/plevy" target="_blank" title="Powered by Github" rel="noreferrer"
+                class="pl-2 inline-block text-primary-text" data-tooltip="Powered by Github" aria-label="This links to Github">
+                {{- partial "icons.html" (dict "ico" "github" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
+            </a>
+            <a href="https://gohugo.io/" target="_blank" title="Made with Hugo" rel="noreferrer"
+                class="pl-2 inline-block text-primary-text" data-tooltip="Made with Hugo" aria-label="This links to Hugo">
+                {{- partial "icons.html" (dict "ico" "hugo" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
+            </a>
+        </div>
+</div>
+{{ if or (eq .Params.layout "event") (eq .Params.layout "presentation") (eq .Params.layout "programme") (eq .Params.layout "project") (eq
+    .Params.layout "publi") (eq .Params.layout "ressearch") (eq .Params.layout "teaching") }}
+        <div class="">
+            <script src="https://utteranc.es/client.js" repo="picchono/plevyfr" issue-term="pathname"
+                theme="github-light" crossorigin="anonymous" async>
+                </script>
+    </div>
+    
+    {{ end }}

@@ -1,0 +1,118 @@
+<section class="text-left h-screen w-screen flex flex-col" data-transition="fade">
+    <div class="flex flex-row flex-shrink flex-grow items-center justify-center">
+        {{ if eq .context.Params.type "fullImg" }}
+        <div class="w-full flex h-full justify-end bg-secondary-bg ">
+            <img class="h-full w-full object-contain noBorder" loading="lazy" src="{{ .context.Params.pict }}">
+        </div>
+        {{ else if eq .context.Params.type "oneBigImage" }}
+        <div class="w-full flex flex-col justify-between">
+            {{ if ne .context.Title "none" }}<h1 class="inline-block font-bold slideframe text-3xl">
+                {{- .context.Title |safeHTML -}}</h1>
+            {{ end }}
+            <div class="slideframe bg-primary-bg mx-10">{{ .context.Content -}}</div>
+        </div>
+        <div class="w-1/2 h-full">
+            <img class="h-full w-full object-cover noBorder" loading="lazy" src="{{ .context.Params.pict }}">
+        </div>
+        {{ else if eq .context.Params.type "center" }}
+        <div class="w-full flex h-full justify-end slideframe">
+            <div class="w-full h-full flex flex-col px-6 justify-center text-center">
+                <div class="slideframe bg-primary-bg mx-10">{{ if ne .context.Title "none" }}<h1 class="inline-block font-bold mb-6">
+                    {{- .context.Title |safeHTML -}}</h1>
+                {{ end }}
+                <div class="slideframe bg-primary-bg mx-10">{{- .context.Content -}}</div></div>
+            </div>
+        </div>
+        {{ else if eq .context.Params.type "left" }}
+        <div class="w-fullflex flex-col h-full justify-start">
+            {{ if ne .context.Title "none" }}<h1 class="inline-block font-bold slideframe">
+                {{- .context.Title |safeHTML -}}</h1>
+            {{ end }}
+            <div class="w-full h-full flex flex-col justify-center slideframe px-60">
+                <div class="slideframe bg-primary-bg mx-10">{{- .context.Content -}}</div>
+                <div class="h-1/3">&nbsp;</div>
+            </div>
+        </div>
+        {{ else if eq .context.Params.type "oneTextLeft" }}
+        <div class="w-full flex-grow px-14 flex flex-row justify-around items-center object-center place-items-center">
+            <div class="w-1/2 h-2/3 flex flex-col justify-center items-center object-center place-items-center">
+                <div class="h-4/5 w-full">
+                    {{ if ne .context.Title "none" }}<h1 class="inline-block font-bold">
+                        {{- .context.Title |safeHTML -}}</h1>
+                    {{ end }}
+                    {{- .context.Content -}}
+                </div>
+            </div>
+            <div class="w-1/2 h-2/3 flex justify-center items-center object-center place-items-center">
+                &nbsp;
+            </div>
+        </div>
+        {{ else if eq .context.Params.type "oneTextRight" }}
+        <div
+            class="w-full flex-grow-0 px-14 flex flex-row justify-around items-center object-center place-items-center">
+            <div class="w-1/2 h-2/3 flex flex-col ">
+                <div class="h-4/5 w-full">
+                    {{ if ne .context.Title "none" }}<h1 class="inline-block font-bold">
+                        {{- .context.Title |safeHTML -}}</h1>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="w-1/2 h-2/3 flex">
+                {{- .context.Content -}}
+            </div>
+        </div>
+        {{ else if eq .context.Params.type "textAndImagCover" }}
+        <div class="w-fullflex-grow flex flex-row justify-start">
+            <div class="w-1/2 ">
+                {{ if .context.Params.pict }}<img class="h-full w-full object-cover noBorder" loading="lazy"
+                    src="{{ .context.Params.pict }}">{{ end }}
+            </div>
+            <div class="w-1/2 h-full flex flex-col">
+                <div class="w-full slideframe">
+                    {{ if ne .context.Title "none" }}<h1 class="inline-block font-bold">
+                        {{- .context.Title |safeHTML -}}</h1>
+                    {{ end }}
+                </div>
+                <div class="h-full w-full self-center slideframe">{{- .context.Content -}}</div>
+            </div>
+        </div>
+        {{ else if eq .context.Params.type "textAndImagContain" }}
+        <div class="w-fullflex-grow flex flex-row justify-start">
+            <div class="w-1/2 ">
+                {{ if .context.Params.pict }}<img class="h-full w-full object-contain noBorder" loading="lazy"
+                    src="{{ .context.Params.pict }}">{{ end }}
+            </div>
+            <div class="w-1/2 h-full flex flex-col">
+                <div class="w-full slideframe">
+                    {{ if ne .context.Title "none" }}<h1 class="inline-block font-bold">
+                        {{- .context.Title |safeHTML -}}</h1>
+                    {{ end }}
+                </div>
+                <div class="h-full w-full self-center slideframe">{{- .context.Content -}}</div>
+            </div>
+        </div>
+        {{ else if eq .context.Params.type "textAndMovie" }}
+        <div class="w-fullflex-grow flex flex-row justify-start">
+            <div class="w-1/2 flex flex-col">
+                <div class="w-full slideframe">
+                    {{ if ne .context.Title "none" }}<h1 class="inline-block font-bold">
+                        {{- .context.Title |safeHTML -}}</h1>
+                    {{ end }}
+                </div>
+                <div class="w-full h-full flex flex-col justify-start slideframe">
+                    {{- .context.Content -}}
+                </div>
+            </div>
+            <div class="w-1/2 h-full flex flex-col justify-between">
+                {{ partial "slide-video.html" .context }}
+            </div>
+        </div>
+        {{ else if eq .context.Params.type "free" }}
+        <div
+            class="w-fullflex-grow-0 flex flex-row justify-around items-center object-center place-items-center slideframe">
+            {{- .context.Content -}}
+        </div>
+        {{ end }}
+    </div>
+    {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration ) }}
+</section>

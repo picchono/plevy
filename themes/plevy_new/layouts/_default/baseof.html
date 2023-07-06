@@ -1,0 +1,16 @@
+{{ if .Params.redirect }}
+<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="{{ .Params.bodyclass }}" class="overflow-x-hidden md:overflow-x-auto">
+  <main class='{{ if ne .Params.layout "list" }}grid grid-cols-1 md:grid-cols-3 {{ end }}min-h-screen'>
+    {{- block "main" . }}{{- end }}
+  </main>
+</body>
+{{ if .Params.photogallery }}
+{{ $spo_js := resources.Get "js/spotl.js" | minify }}
+<script defer src="{{ $spo_js.Permalink }}"></script>
+{{ end }}
+</html>

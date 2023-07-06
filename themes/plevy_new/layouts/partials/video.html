@@ -1,0 +1,41 @@
+{{ range sort .Params.video }}<div class="case flex flex-col flex-wrap w-full md:w-2/5 max-w-4xl">
+    {{ if isset . "youtube" }}
+    <div class="w-full flex-grow md:flex-grow-0 videoFrame">
+        <div class="md:px-1 pt-10 md:py-0 text-xs order-1 md:order-2 italic">By playing this movie, you accept
+            the <a href="https://policies.google.com/" target="_blank" rel="noreferrer" class="text-xs">Policies & Terms
+                of Google</a>.</div>
+        <div class="embed-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="rounded-sm"></iframe></div>
+    </div>
+    <div class="flex flex-col w-full md:w-auto justify-end self-end flex-grow md:flex-grow-0 max-w-xl">
+        {{ if .Title }}
+        <div class="order-2 md:order-1 pb-10 md:p-0">{{ if isset . "title" }}<h2 class="pt-4 leading-8">
+                {{ .Title }}</h2>{{ end }}
+            {{ if isset . "speaker" }}<div class="italic -mt-1 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
+            {{ end }}
+            <div class="videoLink order-3">https://www.youtube.com/watch?v={{ .youtube }}</div></div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{if isset . "vimeo" }}
+    <div class="w-full flex-grow md:flex-grow-0 videoFrame">
+        <div class="md:px-1 pb-10 md:py-0 text-xs order-1 md:order-2 italic">By playing this movie, you accept
+            the <a href="https://vimeo.com/terms" target="_blank" rel="noreferrer" class="text-xs">Terms of
+                Vimeo</a>.
+        </div>
+        <div class="embed-wrapper"><iframe src="https://player.vimeo.com/video/{{ .vimeo }}" width="640" height="360"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="rounded-sm"></iframe></div>
+    </div>
+    <div class="flex flex-col w-full md:w-auto justify-end self-end flex-grow md:flex-grow-0">
+        {{ if .Title }}
+        <div class="order-2 md:order-1 pb-10 md:p-0">{{ if isset . "title" }}<h2 class="pt-4 leading-8">
+                {{ .Title }}</h2>{{ end }}
+            {{ if isset . "speaker" }}<div class="italic -mt-1 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
+            {{ end }}
+            <div class="videoLink order-3">https://vimeo.com/{{ .vimeo }}</div>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>{{ end }}
