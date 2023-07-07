@@ -1,12 +1,20 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
 
-    --color-primary-bg:rgb(255, 255, 255);
-    --color-secondary-bg:rgb(223, 220, 218);
-    --color-primary-text:rgb(51, 44, 57);
-    --color-secondary-text:rgb(86, 96, 97);
-    --color-epierrot: rgb(0, 110, 127);
+    --color-primary-bg: #ffffff;
+    --color-secondary-bg: #e7e5e4;
+    --color-primary-text: #1c1c1c;
+    --color-secondary-text: #f5f5f4;
+    --color-epierrot: #f8003f;
+    --color-bord: #f5f5f4;
 }
+
+/* 
+yellow #fdd935 
+light yellow #f7d568
+light blue-green #C4DFDF
+neutre : #eeeeee
+*/
 
 *,
 html,
@@ -22,10 +30,7 @@ body {
 }
 
 body {
-    background-color:var(--color-primary-bg);
-    background-image:url("data:image/svg+xml,%3Csvg width='10px' height='18px' viewBox='0 0 112 200' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' style='fill:rgb(51, 44, 57);fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(5.55556,0,0,5.55556,0,0)'%3E%3Cg transform='matrix(0.866025,0.5,-0.48453,0.83923,15.742,-6.35692)'%3E%3Crect x='6' y='4' width='1' height='30'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-size:10px 22px;
-    background-repeat:repeat;
+    @apply bg-bord border-l-8 border-t-8 border-bord;
 }
 
 b i {
@@ -41,16 +46,28 @@ p:last-child {
     @apply mb-0;
 }
 
+.revers {
+    @apply bg-primary-text text-primary-bg pb-1 pt-0.5 mr-2 rounded-sm md:rounded transition-all duration-700 ease-in-out inline;
+    box-shadow:0.375rem 0 0 var(--color-primary-text), -0.375rem 0 0 var(--color-primary-text);
+    box-decoration-break:clone;
+}
+
+.filterOption.revers {
+    @apply my-1 mr-8 font-bold pt-1;
+    box-shadow:0.75rem 0 0 var(--color-primary-text), -0.75rem 0 0 var(--color-primary-text);
+}
+
+.filterOption.revers:hover {
+    @apply text-primary-text bg-secondary-bg;
+    box-shadow:0.75rem 0 0 var(--color-secondary-bg), -0.75rem 0 0 var(--color-secondary-bg);
+}
+
 .case {
-    @apply inline-flex flex-col justify-center items-center w-auto p-10 min-h-16 m-1 md:m-4;
+    @apply inline-flex flex-col justify-center items-center w-full h-auto md:h-72 p-8 bg-primary-bg border-r-8 border-b-8 border-bord;
 }
 
-.case, .item a.boxA {
-    @apply bg-primary-bg transition-all duration-700 ease-in-out;
-}
-
-.case:hover, .item:hover a.boxA {
-    @apply border-primary-bg;
+.case:nth-child(even) {
+    @apply bg-secondary-bg;
 }
 
 span.japanese {
@@ -84,22 +101,6 @@ button:focus {
 
 ::selection {
     @apply bg-primary-text text-primary-bg;
-}
-
-.revers {
-    @apply bg-primary-text text-primary-bg pb-1 pt-0.5 mr-2 rounded-sm md:rounded transition-all duration-700 ease-in-out inline;
-    box-shadow:0.375rem 0 0 var(--color-primary-text), -0.375rem 0 0 var(--color-primary-text);
-    box-decoration-break:clone;
-}
-
-.filterOption.revers {
-    @apply my-1 mr-8 font-bold pt-1;
-    box-shadow:0.75rem 0 0 var(--color-primary-text), -0.75rem 0 0 var(--color-primary-text);
-}
-
-.filterOption.revers:hover {
-    @apply text-primary-text bg-secondary-bg;
-    box-shadow:0.75rem 0 0 var(--color-secondary-bg), -0.75rem 0 0 var(--color-secondary-bg);
 }
 
 a {
@@ -193,11 +194,11 @@ button {
 }
 
 .filterOption {
-    @apply cursor-pointer;
+    @apply cursor-pointer transition-all duration-700 ease-in-out;
 }
 
 .menuActive {
-    @apply bg-secondary-bg;
+    @apply text-epierrot;
 }
 
 /* photo gallery */
@@ -616,39 +617,6 @@ b.vert:not(:first-child):before {
     }
 }
 
-/* grid */
-.muugrid {
-    position:relative;
-}
-
-.item, .permanent {
-    display:block;
-    position:absolute;
-    width:auto;
-    height:auto;
-    z-index:1;
-}
-
-.item.muuri-item-dragging {
-    z-index:3;
-}
-
-.item.muuri-item-releasing {
-    z-index:2;
-}
-
-.item.muuri-item-hidden {
-    z-index:0;
-    transform:translateX(0px) translateY(0) !important;
-    opacity:0;
-}
-
-.item-content {
-    position:relative;
-    width:100%;
-    height:100%;
-}
-
 /* duotone */
 
 .gridbox .blend-plevy img {
@@ -700,7 +668,7 @@ section.lectureSession>.main {
 }
 
 .headList:hover p span {
-    background-color:var(--color-epierrot);
+    background-color:var(--color-primary-epierrot);
 }
 
 a.doclinkButton {
@@ -964,4 +932,36 @@ canvas#bgirreg2in {
 /* utterances */
 .utterances-frame  .new-comment-header {
     background-color: #2991f9 !important;
+}
+
+
+/* grid */
+.muugrid {
+    position:relative;
+}
+
+.item, .permanent {
+    display:block;
+    position:absolute;
+    z-index:1;
+}
+
+.item.muuri-item-dragging {
+    z-index:3;
+}
+
+.item.muuri-item-releasing {
+    z-index:2;
+}
+
+.item.muuri-item-hidden {
+    z-index:0;
+    transform:translateX(0px) translateY(0) !important;
+    opacity:0;
+}
+
+.item-content {
+    position:relative;
+    width:100%;
+    height:100%;
 }

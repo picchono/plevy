@@ -1,0 +1,70 @@
+
+<div class="item case flex flex-col flex-grow-0 md:h-screen sticky w-full md:w-84 top-0 md:top-10 md:pl-6 z-50 mb-2">
+    <div
+        class="flex md:hidden flex-row justify-end w-full py-3 px-6 md:pb-6 md:p-6 bg-primary-bg md:bg-secondary-bg border-b-2 border-secondary-bg">
+        <button id="navbox-btn" aria-label="Menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+    </div>
+    <div id="target"
+        class="hidden md:flex flex-row md:flex-col flex-wrap w-full md:w-72 py-4 md:pt-14 md:pb-14 px-6 bg-secondary-bg md:shadow-xl md:rounded-lg">
+        <div data-filter="all" class="mr-10 my-1 cursor-pointer font-bold md:text-lg mainMenu active">
+            {{ i18n "all" }}
+        </div>
+        <div data-filter="research" class="mr-10 my-1 cursor-pointer font-bold md:text-lg mainMenu">
+            {{ i18n "research" }}</div>
+        <div data-filter="publications" class="mr-10 my-1 cursor-pointer font-bold md:text-lg mainMenu">
+            {{ i18n "publications" }}</div>
+        <div data-filter="projects" class="mr-10 my-1 cursor-pointer font-bold md:text-lg mainMenu">
+            {{ i18n "projects" }}</div>
+        <div data-filter="other" class="mr-10 my-1 cursor-pointer font-bold md:text-lg mainMenu">{{ i18n "other" }}
+        </div>
+        <div class="w-full md:w-auto tracking-wide my-4 md:my-14"><input type="text" class="md:text-lg w-full"
+                name="search" placeholder='{{ i18n "search" }}...' data-search></div>
+        <div class="research submenu hidden flex flex-row md:flex-col flex-wrap w-full"></div>
+        <div class="publications submenu hidden flex flex-row md:flex-col flex-wrap w-full">
+            <div data-filter="publications" class="mb-2 mr-6 md:mr-0 md:mb-2 cursor-pointer w-auto">{{ i18n "all" }}
+            </div>
+            <div data-filter="journal" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">{{ i18n "journals" }}</div>
+            <div data-filter="conference" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">{{ i18n "conferences" }}
+            </div>
+            <div data-filter="book-section" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">
+                {{ i18n "book-sections" }}</div>
+            <div data-filter="dissertation" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">
+                {{ i18n "dissertations" }}</div>
+            <div data-filter="edition" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">{{ i18n "editions" }}</div>
+            <div data-filter="presentation" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">
+                {{ i18n "presentations" }}</div>
+            <div data-filter="report" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">{{ i18n "reports" }}</div>
+            <div data-filter="keynote" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">{{ i18n "keynotes" }}</div>
+        </div>
+        <div class="projects submenu hidden flex flex-row md:flex-col flex-wrap w-full">
+            <div data-filter="project" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">{{ i18n "projects" }}</div>
+            <div data-filter="student-project" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">
+                {{ i18n "student-projects" }}</div>
+            <div data-filter="lecture" class="mb-2 mr-6 md:mr-0 md:my-1 cursor-pointer ">{{ i18n "lectures" }}</div>
+        </div>
+        <div class="other submenu hidden flex flex-row md:flex-col flex-wrap w-full"></div>
+        <div class="flex md:hidden flow-col justify-between pt-2 md:pl-0 md:mt-4">
+            {{ if .IsTranslated }}
+            <div id="languageMode">
+                <span class="font-medium">{{ .Language.LanguageName }}</span>{{ range .Translations }}&nbsp;|&nbsp;<a
+                    href="{{ .Permalink }}" title="{{ .Language.LanguageName }}"
+                    data-tooltip="{{ i18n .Language.LanguageName }}"
+                    rel="noreferrer">{{ .Language.LanguageName }}</a>{{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+<div class="flex-grow publili">
+    <div class="filtr-container">
+        {{ $count := 0 }}
+        {{ range where .Site.Pages "Section" "in" (slice "publications" "projects" "other" "research") }}{{ if ne .Params.notEverything true }}
+        {{  $count = add $count 1 }}
+        {{ partial "box.html"  ( dict "context" . "cou" $count ) -}}
+        {{ end }}{{ end }}
+    </div>
+</div>

@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="muugrid w-auto md:w-full mb-10">
+    {{ partial "title.html" . }}
+    <div class="item case max-w-xl">{{ .Content }}</div>
+    {{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}
+</div>
+{{ end }}

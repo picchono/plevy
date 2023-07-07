@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "title.html" . }}
+{{ if .Params.video}}<section class="py-16">{{ partial "video.html" . }}</section>{{ end }}
+{{ if .Params.photogallery }}<section>{{ partial "photogallery.html" . }}</section>{{ end }}
+<section class="flex flex-col md:flex-row justify-left items-stretch">
+    <div class="max-w-4xl frame">
+        {{ if .Content}}<div class="mt-10">{{ .Content }}</div>{{ end }}
+        {{ if .Params.reference }}<p class="my-12">{{ .Params.reference }}</p>{{ end }}
+    </div>
+</section>
+{{ end }}

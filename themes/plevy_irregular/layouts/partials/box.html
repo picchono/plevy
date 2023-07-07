@@ -1,0 +1,67 @@
+{{ if ne (dateFormat "2006" .context.Date) "0001" }}
+<div class="
+item it{{- int .cou }} {{ .context.Params.Subsection }} w-full md:max-w-md py-2 md:p-4"
+    data-search='{{ .context.Section }} {{ .context.Params.Subsection }} {{ .context.Content }} {{ .context.Params.abstract }} {{ .context.Params.reference}} {{ dateFormat "2006-01-02T15:04:05-07:00" .context.Date }} {{ range .context.Params.tags }} {{ . }} {{ end }}'>
+    <a class="boxA text-primary-text transition-all duration-700 ease-in-out justify-center flex flex-col w-full"
+        href="{{ .context.Permalink }}">
+        {{ if .context.Params.bckground }}
+        <div class="fixed z-10 p-2"><img src="" data-toset="{{ .context.Params.bckground | absURL }}" alt="Pierre Lévy"
+                class="object-cover h-screen w-2" width="500" height="500" />
+        </div>{{ end }}
+        <div class="w-full flex flex-row -m-px px-3 pt-3">
+            {{ if isset .context.Params "frontphoto" }}<div class="relative w-1/2 h-36 mb-2 mr-2">
+                <div class="blend-plevy absolute rounded rounded-br w-full h-36 m-2 md:m-5"><img src=""
+                        data-toset="{{ .context.Params.frontphoto | absURL }}"
+                        class="imag imgBox object-cover rounded rounded-br w-full h-36"
+                        alt="{{ .context.Params.title }}" width="500" height="240" />
+
+                </div>
+                {{ if isset .context.Params "photocredit" }}
+                <div class="absolute flex flex-col justify-end w-full h-full m-2 md:m-5">
+                    <div data-target="{{ .context.Params.photocredit.link | absURL }}"
+                        title="{{ .context.Params.photocredit.cred }}"
+                        class="credphoto text-xs text-primary-bg w-full rounded-b bg-warmgray-600 bg-opacity-50 py-0.5 px-2">
+                        &copy;{{ .context.Params.photocredit.cred -}}</div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+            <div class="flex flex-col self-end pl-3 md:pl-6 pt-3 md:pt-8">
+                {{ if isset .context.Params "institution" }}<div class="inline-block pl-px pb-1">
+                    {{ if .context.Params.institution.colo }}{{ partial "icons.html" (dict "ico" .context.Params.institution.logo "hei" 0.8 "colo" .context.Params.institution.colo) -}}
+                    {{else}}{{ partial "icons.html" (dict "ico" .context.Params.institution.logo "hei" 0.8 "colo" "--color-primary-text)") -}}{{ end }}
+                </div>{{ end }}
+                <div class="inline-block text-xs text-warmgray-800"><span
+                        class="text-xs font-bold">{{ i18n .context.Params.Subsection }}</span><br>
+                    {{ dateFormat "02 Jan 2006" .context.Date }}
+                    {{ if .context.Params.Place }}<br><span
+                        class="text-xs italic">{{ .context.Params.Place }}</span>{{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="px-12 py-7">
+            <h5 class="block w-full h-auto font-bold text-base">
+                {{- .context.Title |safeHTML -}}</h5>
+            <p class="block text-sm pt-4 pb-2 overflow-ellipsis overflow-hidden ... text-warmgray-800">
+                {{ if isset .context.Params "reference" }}{{- .context.Params.reference |safeHTML -}}
+                {{ else if isset .context.Params "quote" }}{{ .context.Params.quote.quoteline |safeHTML}}<br />
+                <span class="text text-sm italic">- {{ .context.Params.quote.quoteauthor }}
+                    ({{ .context.Params.quote.quotedate }})</span>
+                {{ else }}<span class="text text-sm italic">{{ .context.Params.abstract |safeHTML }}{{ .context.Params.boxtext |safeHTML }}</span>{{ end }}
+            </p>
+            {{ if .context.Params.collaboration }}{{ $inst := .context.Params.institution.logo }}
+            <p class="flex flex-row flex-wrap">
+                {{ if ne .context.Params.layout "presentation"}}
+                {{ range sort .context.Params.collaboration }}{{ if ne $inst .logo }}<span class="mr-4 mb-2">
+                    {{ partial "icons.html" (dict "ico" .logo "hei" 1.2 "colo" "var(--color-primary-text)") -}}
+                </span>{{ end }}{{ end }}
+                {{ else }}
+                {{ with .context.Params.collaboration}}{{ range . }}{{ if ne $inst ( index . 0 ) }}<span class="mr-4 mb-2">
+                    {{ partial "icons.html" (dict "ico" ( index . 0 ) "hei" 1.2 "colo" "var(--color-primary-text)") }}
+                </span>{{ end }}{{ end }}{{ end }}
+                {{ end }}
+            </p>{{ end }}
+        </div>
+    </a>
+</div>
+{{ end }}

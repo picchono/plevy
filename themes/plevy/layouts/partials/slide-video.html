@@ -1,7 +1,7 @@
 
 {{ range sort .Params.video }}
 {{ if isset . "youtube" }}
-<div class="item case w-full max-w-xl">
+<div class="case w-full max-w-xl">
     <div class="embed-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe></div>
@@ -19,7 +19,7 @@
 </div>
 {{ end }}
 {{if isset . "vimeo" }}
-<div class="item case w-full max-w-xl md:p-0 text-xs order-1 md:order-2 italic">By playing this movie, you accept
+<div class="case w-full max-w-xl md:p-0 text-xs order-1 md:order-2 italic">By playing this movie, you accept
     the <a href="https://vimeo.com/terms" target="_blank" rel="noreferrer" class="text-xs">Terms of Vimeo</a>.
 </div>
 <div class="w-full flex-grow md:flex-grow-0">

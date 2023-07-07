@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="muugrid w-auto md:w-full">
+    {{ partial "title.html" . }}
+    {{ if .Params.video}}{{ partial "video.html" . }}{{ end }}
+    {{ if .Params.photogallery }}{{ partial "photogallery.html" . }}{{ end }}
+    <div class="item case md:w-full max-w-2xl">
+        {{ if .Content}}<div>{{ .Content }}</div>{{ end }}
+        {{ if .Params.reference }}<p class="mt-12">{{ .Params.reference }}</p>{{ end }}
+    </div>
+</div>
+{{ end }}

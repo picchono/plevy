@@ -1,5 +1,5 @@
 
-<div class="item case p-3 flex flex-row flex-wrap flex-grow w-auto">
+<div class="case flex flex-row flex-wrap">
     {{if .Params.link.poster }}<a href='{{ .Params.link.poster }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "poster" ) -}}</span><span class="doclinkText">{{ i18n "poster" }}</span></span></a>{{ end }}
     {{if .Params.link.paper }}<a href='{{ .Params.link.paper }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "paper" ) -}}</span><span class="doclinkText">{{ i18n "paper" }}</span></a>{{ end }}
     {{if .Params.link.transcription }}<a href='{{ .Params.link.transcription }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "paper" ) -}}</span><span class="doclinkText">{{ i18n "transcription" }}</span></a>{{ end }}
@@ -18,4 +18,5 @@
     {{if .Params.link.news }}<a href='{{ .Params.link.news }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "news" ) -}}</span><span class="doclinkText">{{ i18n "news" }}</span></a>{{ end }}
     {{if .Params.link.institutional }}<a href='{{ .Params.link.institutional }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "institutional" ) -}}</span><span class="doclinkText">{{ i18n "institutional-page" }}</span></a>{{ end }}
     {{if .Params.link.course }}<a href='{{ .Params.link.course }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "course" ) -}}</span><span class="doclinkText">{{ i18n "course" }}</span></a>{{ end }}
-    {{if .Params.link.cv }}<a href='{{ .Params.link.cv }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "stack" ) -}}</span><span class="doclinkText">{{ i18n "cv" }}</span></a>{{ end }}</div>
+    {{if .Params.link.cv }}<a href='{{ .Params.link.cv }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "stack" ) -}}</span><span class="doclinkText">{{ i18n "cv" }}</span></a>{{ end }}
+</div>

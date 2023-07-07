@@ -71,8 +71,6 @@
 <script src="{{ $reveal_js.Permalink }}"></script>
 {{ $qr_js := resources.Get "js/qrgen.js" | minify }}
 <script src="{{ $qr_js.Permalink }}"></script>
-{{ $muu_js := resources.Get "js/muu.js" | minify }}
-<script defer src="{{ $muu_js.Permalink }}"></script>
 <script>
     Reveal.initialize({
         controls: false,

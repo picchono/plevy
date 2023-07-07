@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="muugrid w-auto md:w-full">
+    {{ partial "title.html" . }}
+    <div class="item case md:w-full max-w-2xl">
+        {{ if .Content}}<div>{{ .Content }}</div>{{ end }}
+    </div>
+    {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1 "layout" .Params.layout) -}}
+    {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{ end }}
+</div>
+{{ end }}

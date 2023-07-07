@@ -1,13 +1,4 @@
 {{ define "main" }}
-<div class="muugrid w-full">
     {{ partial "title.html" . }}
-    <div class="item case w-full max-w-xl">
-        {{ if .Content}}<div class="">{{ .Content }}</div>{{ else }}<div>&nbsp;</div>{{ end }}
-        {{ if .Params.reference }}<p class="mt-12">{{ .Params.reference }}</p>{{ end }}
-    </div>
-    {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1 "layout" .Params.layout) -}}
-    {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{ end }}
-    {{ if .Params.video}}{{ partial "video.html" . }}{{ end }}
-    {{ if .Params.photogallery }}{{ partial "photogallery.html" . }}{{ end }}
-</div>
+    {{ if .Content}}<div class="case col-span-2 p-8 px-32 h-auto">{{ .Content }}</div>{{ end }}
 {{ end }}

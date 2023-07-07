@@ -1,0 +1,55 @@
+{{if not .IsHome }}<div class="permanent case p-0 min-h-0 min-w-0 w-7"><a class="text-primary-text "
+    href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
+{{ partial "international.html" . }}
+    <div class="permanent case max-w-2xl">
+        <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
+    </div>
+    {{if .Params.updating }}<div class="permanent case w-44 italic mb-12 text-red-800">Currently updating</div>{{ end }}
+    <div class="permanent case navmenu  p-0 fixed md:relative top-0 md:top-auto z-40 md:z-auto m-0 mb-2 md:m-4 left-0 md:left-auto w-auto md:max-w-lg md:h-auto">
+        {{ partial "list-menutop.html" . -}}
+        <div id="target"
+            class="hidden md:flex flex-row md:flex-col flex-wrap w-auto md:m-4 py-4 px-8 md:p-0 bg-primary-bg md:bg-transparent border-b md:border-0 border-primary-text">
+            <nav class="flex-none w-full flex flex-row md:justify-center">
+                <div id="topMenu"
+                    class="p-1 m-3 transition-all flex flex-row flex-wrap publiselect menu button-group">
+                    {{ if .Params.menu }}
+                    <div class="pr-2 pt-1 pb-2">
+                    <div onclick="menuFilter('.')"
+                        class="filterOption px-3 py-2 rounded inline font-bold bg-primary-bg hover:bg-secondary-bg transition-all duration-700">
+                        {{ i18n "all" }}</div>
+                    </div>
+                    {{ range .Params.menu }}
+                    <div class="pr-2 pt-1 pb-2">
+                        <div onclick='menuFilter({{ .filter }})' data-menu='{{ trim .filter "." }}'
+                        class="filterOption px-3 py-2 rounded inline font-bold bg-primary-bg hover:bg-secondary-bg transition-all duration-700">
+                        {{ i18n .txt }}</div>
+                    </div>
+                    {{ end }}
+                    <script>
+                        window.addEventListener('popstate', function (event) {
+                            if (location.href.indexOf("#") != -1) {
+                                document.querySelectorAll('.menuActive').forEach((el, i, arr) => {
+                                    if (el.classList.remove('menuActive'))
+                                        arr.forEach(elArr =>
+                                            elArr.classList.toggle('menuActive', el === elArr)
+                                        )
+                                })
+                                var filt = '[data-menu="' + window.location.hash.substring(1) + '"]';
+                                console.log(filt);
+                                var acti = document.querySelector(filt);
+                                acti.classList.add("menuActive");
+                            }
+                        });
+                    </script>
+                    {{ end }}
+                    <div class="py-0.5
+                    ">
+                        <input class="control-field search-field form-control bg-primary-bg px-3 py-0.5 rounded w-full font-bold" type="text"
+                        name="search" placeholder='{{ i18n "search" }}...' />
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    {{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1 "layout" .Params.layout) -}}
+    {{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{ end }}

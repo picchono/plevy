@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="muugrid publili w-full md:w-auto">
-    {{ partial "list-title.html" . }}
+{{ partial "list-title.html" . }}
+    <div class="muugrid publili w-full md:w-auto">
     {{ $count := 0 }}
     {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
     {{ if ne .Params.notListed true }}
