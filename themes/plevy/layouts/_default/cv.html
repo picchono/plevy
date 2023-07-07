@@ -37,7 +37,7 @@
                   {{ if isset . "activities" }}
                   <div class="pt-4 leading-6 text-sm">
                      {{ range sort .activities "order" "desc" }}
-                     <b class="text-sm leading-6">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
+                     <b class="vert text-sm leading-6">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
                      {{ .start }}{{ else }}{{ .start }} -
                      {{ .end }}{{ end }}){{ if isset . "comment" }} - <span
                         class="text-sm italic">{{ .comment |safeHTML }}</span>{{ end }}

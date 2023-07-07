@@ -71,6 +71,7 @@ module.exports = {
         '72': '18rem',
         '96': '24rem',
         '144': '36rem',
+        '216': '54rem',
       },
       minHeight: {
         '16': '4rem',
@@ -78,6 +79,7 @@ module.exports = {
         '72': '18rem',
         '96': '24rem',
         '144': '36rem',
+        '216': '54rem',
       },
       maxHeight: {
         'doc-sidebar': 'calc(100vh - 4rem - var(--height-doc-title, 4rem))',

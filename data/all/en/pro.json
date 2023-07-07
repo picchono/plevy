@@ -25,7 +25,7 @@
                 "start": "2021",
                 "end": "none",
                 "title": "Member of the <a href='https://innovation.cnam.fr' target='_blank' rel='noreferrer' data-tooltip='Équipe pédagogique nationale 16 – Innovation' title='Équipe Pédagogique Nationale EPN16 - Innovation'>EPN16 - Innovation</a> group",
-                "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés...",
+                "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés, etc",
                 "main": true
             },
             "dicenidf": {
@@ -38,12 +38,19 @@
             }
         },
         "activities": {
+            "DNMADE": {
+                "order": 5,
+                "start": "2022",
+                "end": "none",
+                "title": "Coordinator of the <a href='https://www.francecompetences.fr/recherche/rncp/35518' target='_blank' rel='noreferrer' title='Diplôme national des métiers d'art et du design' data-tooltip='Diplôme national des métiers d'art et du design'>DNMADE</a> pedagogical committee chairmanships for the Academy of Paris",
+                "main": false
+            },
             "CF22": {
                 "order": 4,
                 "start": "2022",
                 "end": "none",
                 "title": "Elected member of the Education Council (Conseil des formations)",
-                "comment": "The Education Council is mainly consulted on the content of the national education offer, applications for accreditation to award national diplomas and projects related to professional certificates, and the pedagogical projects for the coming year.",
+                "comment": "The Education Council is mainly consulted on the content of the national education offer, applications for accreditation to award national diplomas and projects related to professional certificates, and the pedagogical projects for the coming year",
                 "main": false
             },
             "masterDesignCreation": {
@@ -51,7 +58,7 @@
                 "start": "2021",
                 "end": "none",
                 "title": "Responsible for the <a href='https://formation.cnam.fr/rechercher-par-discipline/master-arts-lettres-langues-mention-design-parcours-creation-projets-transdisciplinarite-1085664.kjsp?RF=' target='_blank' rel='noreferrer' data-tooltip='Master Arts, Lettres, langues - mention Design' title='Master Arts, Lettres, langues - mention Design'>Master Design</a>",
-                "comment": "The objective of this Master's degree is to train creators (designers and artisans) to set up their professional project and to reshape their design practice in a prospective manner, by integrating continuously redefined societal, cultural and technical evolutions.",
+                "comment": "The objective of this Master's degree is to train creators (designers and artisans) to set up their professional project and to reshape their design practice in a prospective manner, by integrating continuously redefined societal, cultural and technical evolutions",
                 "main": true
             },
             "jhtr": {
@@ -59,7 +66,7 @@
                 "start": "2022",
                 "end": "none",
                 "title": "Editorial Advisory Board member of the <a href='https://ojs.utwente.nl/index.php/jhtr/' target='_blank' rel='noreferrer' data-tooltip='Journal of Human-Technology Relations' title='Journal of Human-Technology Relations'>JHTR</a>",
-                "comment": "The Journal of Human-Technology Relations investigates human-technology relations from a wide variety of disciplines, with a basis in the Philosophy of Technology and in Science and Technology Studies.",
+                "comment": "The Journal of Human-Technology Relations investigates human-technology relations from a wide variety of disciplines, with a basis in the Philosophy of Technology and in Science and Technology Studies",
                 "main": true
             },
             "docschool": {

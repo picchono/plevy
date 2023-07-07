@@ -1,4 +1,4 @@
-<div class="case flex flex-col justify-evenly pt-2 md:pt-0 mt-10 md:mt-0">
+<div class="case flex flex-col justify-evenly {{ if not .IsHome }}mt-10 md:mt-0{{ end }}">
     {{ if .IsTranslated }}
     <div id="languageMode" class=' flex-row'>
         <div class="inline font-bold">{{ .Language.LanguageName }}</div>

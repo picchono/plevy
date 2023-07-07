@@ -1,58 +1,63 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-{{ partial "international.html" . }}
 {{ if ne $langu "jp" }}
-    {{ with index .Site.Data.all .Site.Language.Lang }}
-    
-    <div class="case items-start p-6 md:px-16">
-        <h1 class="text-4xl -mx-0.5">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
-        <div class="text-xs -my-1.5 text-epierrot pb-6">{{ .identity.title }} - HDR</div>
+{{ with index .Site.Data.all .Site.Language.Lang }}
+<div class="case items-start p-6 md:px-16">
+    <h1 class="text-4xl -mx-0.5">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
+    <div class="text-xs -my-1.5 text-epierrot pb-6">{{ .identity.title }} - HDR</div>
+</div>
+{{ end }}
+{{ partial "international.html" . }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+<div class="case items-start p-6 md:px-16">
+    {{ range .pro }}{{ if .main }}
+    <div class="pt-3">{{ .title | safeHTML }}
+        {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
     </div>
-    <div class="case items-start p-6 md:px-16">
-        {{ range .pro }}{{ if .main }}
-        <div class="pt-3">{{ .title | safeHTML }}
-            {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
-        </div>
-        {{ if .extra }}<div class="pt-3">{{ .extra | safeHTML }}</div>{{ end }}
-        {{ end }}{{ end }}
-    </div>
-    {{ end }}
-    <div class="case p-6 md:px-16 items-start row-span-2 h-144">
-        <div><b class='revers'>{{ i18n "Recent-writings" }}</b></div>
-        {{ partial "front-writing.html" . }}
-        <p>&lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</p>
-    </div>
-    {{range sort .Params.blocs "order"}}
-    <div class="case p-6 md:px-16">
-        <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
-    </div>
-    {{ end }}
-    {{ else }}
-    {{ with index .Site.Data.all .Site.Language.Lang }}
-    <div class="case">
-        <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
-        <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
-    </div>
-    <div class="case">
-        {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
-        {{ if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
-    </div>
-    {{ end }}
-    {{ end }}
-    <div class="case p-0"><img src="" data-toset="{{ .Params.pict | absURL }}"
-            data-ref="{{ .Params.pict | absURL }}" alt="Pierre Lévy" class="imag object-cover w-full h-full"
-            style="filter:grayscale(0.9);" />
-    </div>
-    {{ with index .Site.Data.all .Site.Language.Lang }}
-    <div class="case px-8 row-span-2 h-144"><p>{{ .identity.description | safeHTML }}</p></div>
-    {{ end }}
-    {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
-    {{ with index .Site.Data.all .Site.Language.Lang }}
-    <div class="case social flex flex-row justify-center items-center">
-        {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank"
-            class="inline-block mr-4  transition-all duration-700 ease-in-out" rel="noreferrer"
-            data-tooltip="{{ .type }}" aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon
-            "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
-    </div>
-    {{ end }}
+    {{ if .extra }}<div class="pt-3">{{ .extra | safeHTML }}</div>{{ end }}
+    {{ end }}{{ end }}
+</div>
+{{ end }}
+<div class="case p-6 md:px-16 items-start row-span-2 h-144">
+    <div><b class='revers'>{{ i18n "Recent-writings" }}</b></div>
+    {{ partial "front-writing.html" . }}
+    <p>&lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</p>
+</div>
+{{range sort .Params.blocs "order"}}
+<div class="case p-6 md:px-16">
+    <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
+</div>
+{{ end }}
+{{ else }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+<div class="case">
+    <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+    <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
+</div>
+{{ end }}
+{{ partial "international.html" . }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+<div class="case">
+    {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
+    {{ if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
+</div>
+{{ end }}
+{{ end }}
+<div class="case p-0 h-72"><img src="" data-toset="{{ .Params.pict | absURL }}" data-ref="{{ .Params.pict | absURL }}"
+        alt="Pierre Lévy" class="imag object-cover w-full h-full" style="filter:grayscale(0.9);" />
+</div>
+{{ with index .Site.Data.all .Site.Language.Lang }}
+<div class="case p-8 row-span-2 min-h-144">
+    <p>{{ .identity.description | safeHTML }}</p>
+</div>
+{{ end }}
+{{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+<div class="case social flex flex-row justify-center items-center">
+    {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank"
+        class="inline-block mr-4  transition-all duration-700 ease-in-out" rel="noreferrer" data-tooltip="{{ .type }}"
+        aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon
+        "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
+</div>
+{{ end }}
 {{ end }}

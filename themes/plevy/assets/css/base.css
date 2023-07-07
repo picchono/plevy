@@ -1,12 +1,12 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
 
-    --color-primary-bg: #ffffff;
+    --color-primary-bg: #f5f5f4;
     --color-secondary-bg: #e7e5e4;
     --color-primary-text: #1c1c1c;
     --color-secondary-text: #f5f5f4;
     --color-epierrot: #f8003f;
-    --color-bord: #f5f5f4;
+    --color-bord: #fff;
 }
 
 /* 
@@ -30,7 +30,7 @@ body {
 }
 
 body {
-    @apply bg-bord border-l-8 border-t-8 border-bord;
+    @apply bg-bord md:border-l-8 md:border-t-8 border-bord;
 }
 
 b i {
@@ -63,7 +63,7 @@ p:last-child {
 }
 
 .case {
-    @apply inline-flex flex-col justify-center items-center w-full h-auto md:h-72 p-8 bg-primary-bg border-r-8 border-b-8 border-bord;
+    @apply inline-flex flex-col justify-center items-center w-full min-h-72 p-8 bg-primary-bg md:border-r-8 md:border-b-8 border-bord;
 }
 
 .case:nth-child(even) {
