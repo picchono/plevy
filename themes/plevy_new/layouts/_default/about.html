@@ -1,5 +1,4 @@
 {{ define "main" }}
     {{ partial "title.html" . }}
     <div class="case row-span-3 col-span-2 h-216 px-32">{{ .Content }}</div>
-    {{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}
 {{ end }}

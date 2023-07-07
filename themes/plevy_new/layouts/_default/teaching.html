@@ -1,13 +1,8 @@
 
 
 {{ define "main" }}
-<div class="w-auto md:w-full">
 {{ partial "title.html" . }}
-{{ if isset .Params "institution" }}{{- partial "footer.html" (dict "dat" .Date "langu" .Site.Language.Lang "insti" .Params.institution.logo "webs" .Params.institution.web "institnam" .Params.institution.name "hei" 1 "layout" .Params.layout) -}}
-{{ else }}{{- partial "footer.html" (dict "langu" .Site.Language.Lang "insti" "none" "layout" .Params.layout) -}}{{ end }}
-{{ if .Params.video}}{{ partial "video.html" . }}{{ end }}
-{{ if .Params.photogallery }}{{ partial "photogallery.html" . }}{{ end }}
-{{ if .Content}}<div class="case md:w-full max-w-xl">{{ .Content }}</div>{{ end }}
+{{ if .Content}}<div class="case col-span-2 p-8 px-32 h-auto">{{ .Content }}</div>{{ end }}
 {{ if .Params.redirectlecture}}<div class="case md:w-full max-w-xl flex flex-row justify-start items-start">
     <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
     <div class="ml-2 w-auto md:w-full py-1">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}

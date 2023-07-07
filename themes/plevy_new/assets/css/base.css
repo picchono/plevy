@@ -1,12 +1,20 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
 
-    --color-primary-bg:rgb(255, 255, 255);
-    --color-secondary-bg:#BDCDD6;
-    --color-primary-text:rgb(51, 44, 57);
-    --color-secondary-text:rgb(86, 96, 97);
-    --color-epierrot: #037cb7;
+    --color-primary-bg: #ffffff;
+    --color-secondary-bg: #e7e5e4;
+    --color-primary-text: #1c1c1c;
+    --color-secondary-text: #f5f5f4;
+    --color-epierrot: #f8003f;
+    --color-bord: #f5f5f4;
 }
+
+/* 
+yellow #fdd935 
+light yellow #f7d568
+light blue-green #C4DFDF
+neutre : #eeeeee
+*/
 
 *,
 html,
@@ -22,7 +30,7 @@ body {
 }
 
 body {
-    @apply bg-secondary-bg border-l-8 border-t-8 border-warmgray-100;
+    @apply bg-bord border-l-8 border-t-8 border-bord;
 }
 
 b i {
@@ -55,17 +63,12 @@ p:last-child {
 }
 
 .case {
-    @apply inline-flex flex-col justify-center items-center w-full h-auto md:h-72 bg-primary-bg border-r-8 border-b-8 border-warmgray-100;
+    @apply inline-flex flex-col justify-center items-center w-full h-auto md:h-72 p-8 bg-primary-bg border-r-8 border-b-8 border-bord;
 }
 
-.case:nth-child(odd) {
+.case:nth-child(even) {
     @apply bg-secondary-bg;
 }
-
-.case:nth-child(odd) .revers {
-    @apply text-secondary-bg;
-}
-
 
 span.japanese {
     @apply text-xs;
@@ -191,11 +194,11 @@ button {
 }
 
 .filterOption {
-    @apply cursor-pointer;
+    @apply cursor-pointer transition-all duration-700 ease-in-out;
 }
 
 .menuActive {
-    @apply bg-secondary-bg;
+    @apply text-epierrot;
 }
 
 /* photo gallery */
@@ -665,7 +668,7 @@ section.lectureSession>.main {
 }
 
 .headList:hover p span {
-    background-color:var(--color-epierrot);
+    background-color:var(--color-primary-epierrot);
 }
 
 a.doclinkButton {

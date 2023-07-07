@@ -69,11 +69,15 @@ module.exports = {
       minWidth: {
         '58': '14.5rem',
         '72': '18rem',
+        '96': '24rem',
         '144': '36rem',
       },
       minHeight: {
         '16': '4rem',
         '70': '17.5rem',
+        '72': '18rem',
+        '96': '24rem',
+        '144': '36rem',
       },
       maxHeight: {
         'doc-sidebar': 'calc(100vh - 4rem - var(--height-doc-title, 4rem))',
@@ -95,6 +99,7 @@ module.exports = {
         'primary-text': 'var(--color-primary-text)',
         'secondary-text': 'var(--color-secondary-text)',
         'epierrot': 'var(--color-epierrot)',
+        'bord': 'var(--color-bord)',
         transparent: 'transparent',
         current: 'currentColor',
         'black': colors.black,

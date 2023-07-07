@@ -8,7 +8,6 @@
     {{- partial "box.html" ( dict "context" . "cou" $count) -}}
     {{ end }}{{ end }}
 </div>
-
 {{ $muu_js := resources.Get "js/muu.js" | minify }}
 <script defer src="{{ $muu_js.Permalink }}"></script>
 <script>
