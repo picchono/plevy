@@ -3,7 +3,7 @@
 {{- partial "head.html" . -}}
 {{ $col := .Params.collaboration }}
 
-<body id="presentation" class="reveal">
+<body id="presentation" class="reveal border-8">
     <div class="slides">
         <section class="text-left h-screen w-screen flex flex-col" data-transition="fade">
             <div class="flex flex-row flex-shrink flex-grow p-5">
@@ -19,7 +19,7 @@
                             class="block h-20 md:h-36 w-20 md:w-36 mb-8 md:mb-22"></span></a>
                     <div class="md:text-2xl font-bold mb-1">Pierre Lévy – <a href="mailto:pierre.levy@lecnam.net"
                             title="Le Cnam" rel="noreferrer" target="_blank"
-                            class="inline-block md:text-xl">pierre.levy@lecnam.net</a><br>
+                            class="inline-block md:text-xl text-primary-text">pierre.levy@lecnam.net</a><br>
                         <span class="font-bold text-epierrot md:text-2xl">C</span>onservatoire <span
                             class="font-bold text-epierrot md:text-2xl">N</span>ational des <span 
                             class="font-bold text-epierrot md:text-2xl">A</span>rts et <span
@@ -35,10 +35,10 @@
             </div>
             {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration ) }}
         </section>
-        {{ $bgcol := .Params.bgcol }}{{ $footpict := .Params.frontphoto }}
+        {{ $bgcol := .Params.bgcol }}{{ $footpict := .Params.frontphoto }}{{ $languFold := (print "presentations/slides/" .Params.lang "/") }}
         {{ range .Params.slidelist}}{{ $slidnumb := . }}
         {{ range sort site.Pages "File.BaseFileName" }}
-        {{ if eq .File.Dir "presentations/slides/" }}{{ if eq .File.BaseFileName $slidnumb }}
+        {{ if eq .File.Dir $languFold }}{{ if eq .File.BaseFileName $slidnumb }}
         {{ partial "slide.html" ( dict "context" . "bgcolo" $bgcol "ftpict" $footpict "collab" $col ) }}
         {{ end }}{{ end }}{{ end }}{{ end }}
         <section class="flex flex-row justify-start w-screen h-screen text-left" data-transition="fade">
