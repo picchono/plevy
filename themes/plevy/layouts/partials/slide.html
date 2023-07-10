@@ -1,7 +1,7 @@
 <section class="text-left h-screen w-screen flex flex-col" data-transition="fade">
     <div class="flex flex-row flex-shrink flex-grow items-center justify-center">
         {{ if eq .context.Params.type "fullImg" }}
-        <div class="w-full flex h-full justify-end bg-secondary-bg ">
+        <div class="w-full flex h-full justify-end bg-bord">
             <img class="h-full w-full object-contain noBorder" loading="lazy" src="{{ .context.Params.pict }}">
         </div>
         {{ else if eq .context.Params.type "oneBigImage" }}

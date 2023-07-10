@@ -3,20 +3,10 @@
 {{- partial "head.html" . -}}
 
 <body id="cv" class="overflow-x-hidden md:overflow-x-auto">
-   <main class="md:container md:mx-auto bg-primary-bg mt-16 md:p-14">
+   <main class="md:container md:mx-auto bg-primary-bg my-16 md:p-14">
       {{ with index .Site.Data.all .Site.Language.Lang }}
-      <h1 class="pb-0">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
-      <div class="flex flex-col">
-         <div class="flex flex-row flex-wrap">
-            {{ range sort .studies "date" "desc" }}{{ if .main }}
-            <div class="w-1/6 pr-6">{{ .date }}</div>
-            <div class="w-5/6 pl-6"><b>{{ .title |safeHTML }}</b>{{ if isset . "place" }} -
-               {{ .place |safeHTML }} {{ end }}{{ if isset . "comment" }}<br /><span
-                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
-            {{ end }}{{ end }}
-         </div>
-      </div>
-      <div class="flex flex-col">
+      <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+      <div class="flex flex-col mt-0">
          <h2 class="pt-16">{{ i18n "current-situation" }}</h2>
          <div class="flex flex-col">{{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
             <div class="flex flex-row mb-6">
@@ -49,8 +39,8 @@
             {{ end }}{{ end }}
          </div>
       </div>
-      <div class="flex flex-col">
-         <h2 class="pt-10">{{ i18n "pastPro" }}</h2>
+      <div class="flex flex-col mt-0">
+         <h2 class="">{{ i18n "pastPro" }}</h2>
          <div class="flex flex-col">{{ range sort .pro "start" "desc" }}{{ if ne .end "none" }}
             <div class="flex flex-row mb-6">
                <div class="w-1/6 pr-6">{{ .start }} - {{ .end }}</div>
@@ -82,8 +72,19 @@
             {{ end }}{{ end }}
          </div>
       </div>
-      <div class="flex flex-row mt-10">
-         <div class="w-1/6 p-0 pr-6 font-bold text-xl">{{ i18n "other-data" }}</div>
+      <div class="flex flex-col mt-0">
+         <h2 class="">{{ i18n "education" }}</h2>
+         <div class="flex flex-row flex-wrap">
+            {{ range sort .studies "date" "desc" }}{{ if .main }}
+            <div class="w-1/6 pr-6">{{ .date }}</div>
+            <div class="w-5/6 pl-6"><b>{{ .title |safeHTML }}</b>{{ if isset . "place" }} -
+               {{ .place |safeHTML }} {{ end }}{{ if isset . "comment" }}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+            {{ end }}{{ end }}
+         </div>
+      </div>
+      <div class="flex flex-row mt-24">
+         <h2 class="w-1/6 p-0 pr-6 font-bold text-xl">{{ i18n "other-data" }}</h2>
          <div class="w-5/6 pl-6"><div class="border-l-4 border-epierrot pl-3">
             {{ i18n "web" }}&nbsp;&nbsp;<a href="{{ .identity.web.url }}" target="_blank"
                rel="noreferrer"><b>{{ .identity.web.username }}</b></a><br>
