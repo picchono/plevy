@@ -18,7 +18,7 @@
 {{ if .Params.reference }}<div class="case p-8">
     <p>{{ .Params.reference |safeHTML }}</p>
 </div>{{ end }}
-{{ if .Params.abstract }}<div class="case row-span-3 h-216 p-8">
+{{ if .Params.abstract }}<div class="case row-span-3 h-auto md:h-216 p-8">
     <p><span class="revers"><b>{{ i18n "abstract"}}</b></span>
         <b>{{ .Params.abstract |safeHTML }}</b></p>
 </div>{{ end }}
