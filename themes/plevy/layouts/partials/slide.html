@@ -4,11 +4,11 @@
         <div class="inline-block text-center slideframe">{{- .context.Content |safeHTML -}}</div>
         {{ else if eq .context.Params.type "fullImgContain" }}
         <div class="h-full flex items-center justify-center">
-            <img class="h-full w-full object-contain noBorder" loading="lazy" src="{{ .context.Params.pict }}">
+            <img class="heigSlide w-full object-contain noBorder" loading="lazy" src="{{ .context.Params.pict }}">
         </div>
         {{ else if eq .context.Params.type "fullImgCover" }}
         <div class="h-full w-full flex items-center justify-center">
-            <img class="h-full w-full object-cover noBorder" loading="lazy" src="{{ .context.Params.pict }}">
+            <img class="heigSlide w-full object-cover noBorder" loading="lazy" src="{{ .context.Params.pict }}">
         </div>
         {{ else if eq .context.Params.type "2images" }}
         <div class=" grid grid-cols-2 gap-10 -center slideframe">
@@ -29,7 +29,7 @@
             <div class="slideframe bg-primary-bg mx-10">{{ .context.Content -}}</div>
         </div>
         <div class="w-1/2 h-full">
-            <img class="h-full w-full object-cover noBorder" loading="lazy" src="{{ .context.Params.pict }}">
+            <img class="heigSlide w-full object-cover noBorder" loading="lazy" src="{{ .context.Params.pict }}">
         </div>
         {{ else if eq .context.Params.type "center" }}
         <div class="w-full flex h-full justify-end slideframe">
@@ -83,7 +83,7 @@
         {{ else if eq .context.Params.type "textAndImagCover" }}
         <div class="w-full flex-grow flex flex-row justify-start">
             <div class="w-1/2 ">
-                {{ if .context.Params.pict }}<img class="h-full w-full object-cover noBorder" loading="lazy"
+                {{ if .context.Params.pict }}<img class="heigSlide w-full object-cover noBorder" loading="lazy"
                     src="{{ .context.Params.pict }}">{{ end }}
             </div>
             <div class="w-1/2 h-full flex flex-col">
@@ -98,7 +98,7 @@
         {{ else if eq .context.Params.type "textAndImagContain" }}
         <div class="w-full flex-grow flex flex-row justify-start">
             <div class="w-1/2 ">
-                {{ if .context.Params.pict }}<img class="h-full w-full object-contain noBorder" loading="lazy"
+                {{ if .context.Params.pict }}<img class="heigSlide w-full object-contain noBorder" loading="lazy"
                     src="{{ .context.Params.pict }}">{{ end }}
             </div>
             <div class="w-1/2 h-full flex flex-col">
