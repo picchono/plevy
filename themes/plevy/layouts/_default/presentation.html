@@ -25,14 +25,14 @@
                             class="font-bold text-epierrot md:text-2xl">M</span>étiers, France</div>
                 </div>
             </div>
-            {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration ) }}
+            {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration "sign" false) }}
         </section>
         <section class="text-left h-screen w-screen flex flex-col" data-transition="fade">
             <div class="flex flex-col flex-shrink flex-grow p-5 items-center justify-center">
                 <div id="qrcode2" class="noBorder object-contain p-10 rounded-3xl bg-white" loading="lazy"></div>
-                <div><span class="text-md font-bold">Pierre Lévy</span><span class="text-md"> - {{ .Title |safeHTML }}</span></div>
+                <div class=" text-center"><span class="text-md font-bold">Pierre Lévy</span><span class="text-md"> - {{ .Title |safeHTML }}</span><br>pierre.levy@lecnam.net</div>
             </div>
-            {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration ) }}
+            {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration "sign" false ) }}
         </section>
         {{ $bgcol := .Params.bgcol }}{{ $footpict := .Params.frontphoto }}{{ $languFold := (print "presentations/slides/" .Params.lang "/") }}
         {{ range .Params.slidelist}}{{ $slidnumb := . }}
@@ -59,7 +59,7 @@
                             class="font-bold text-epierrot md:text-2xl">M</span>étiers, France</div>
                 </div>
             </div>
-            {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration ) }}
+            {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration "sign" false ) }}
         </section>
     </div>
 </body>

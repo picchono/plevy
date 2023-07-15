@@ -5,8 +5,8 @@
                 class="inline-block align-bottom mr-7">{{ partial "icons.html" (dict "ico" ( index . 0 ) "hei" (
                 index . 3 ) "colo" "var(--color-primary-text)") }}</a>
             {{ end }}{{ end }}
-            <a href="mailto:pierre.levy@lecnam.net"
-                class="text-base text-primary-text font-bold">pierre.levy@lecnam.net</a>
+            {{ if .sign }}<a href="mailto:pierre.levy@lecnam.net"
+                class="text-base text-primary-text font-bold">pierre.levy@lecnam.net</a>{{ end }}
         </div>
         {{ else }}
         <div class="w-full h-full flex flex-row items-center justify-start px-5">
