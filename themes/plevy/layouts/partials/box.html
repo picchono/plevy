@@ -31,7 +31,7 @@ item it{{- int .cou }} {{ .context.Params.Subsection }} case p-0 h-auto w-full{{
                     {{ if .context.Params.institutiontution.colo }}{{ partial "icons.html" (dict "ico" .context.Params.institutiontution.logo "hei" 0.8 "colo" .context.Params.institutiontution.colo) -}}
                     {{else}}{{ partial "icons.html" (dict "ico" .context.Params.institutiontution.logo "hei" 0.8 "colo" "--color-primary-text)") -}}{{ end }}
                 </div>{{ end }}
-                <div class="inline-block text-xs text-warmgray-800"><span
+                <div class="inline-block text-xs text-secondary-text"><span
                         class="text-xs font-bold">{{ i18n .context.Params.Subsection }}</span><br>
                     {{ dateFormat "02 Jan 2006" .context.Date }}
                     {{ if .context.Params.Place }}<br><span
@@ -42,7 +42,7 @@ item it{{- int .cou }} {{ .context.Params.Subsection }} case p-0 h-auto w-full{{
         <div class="px-12 py-7">
             <h5 class="block w-full h-auto font-bold text-base">
                 {{- .context.Title |safeHTML -}}</h5>
-            <p class="block text-sm pt-4 pb-2 overflow-ellipsis overflow-hidden ... text-warmgray-800">
+            <p class="block text-sm pt-4 pb-2 overflow-ellipsis overflow-hidden ... text-secondary-text">
                 {{ if isset .context.Params "reference" }}{{- .context.Params.reference |safeHTML -}}
                 {{ else if isset .context.Params "quote" }}{{ .context.Params.quote.quoteline |safeHTML}}<br />
                 <span class="text text-sm italic">- {{ .context.Params.quote.quoteauthor }}

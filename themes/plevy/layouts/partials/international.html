@@ -1,11 +1,13 @@
 <div class="case flex flex-col justify-evenly">
-    {{ if .IsTranslated }}
-    <div id="languageMode" class=' flex-row'>
-        <div class="inline font-bold">{{ .Language.LanguageName }}</div>
-        {{ range .Translations }} <div class="inline">&nbsp;|&nbsp;<a href="{{ .Permalink }}"
+    <div class="flex flex-row justify-center items-center w-full">
+        {{ if .IsTranslated }}
+        <div id="languageMode" class='flex flex-row'>
+            <div class="inline font-bold">{{ .Language.LanguageName }}</div>
+            {{ range .Translations }} <div class="inline">&nbsp;|&nbsp;<a href="{{ .Permalink }}"
                 title="{{ i18n .Language.LanguageName }}" rel="noreferrer">{{ .Language.LanguageName }}</a></div>{{ end }}
+        </div>
+        {{ end }}
     </div>
-    {{ end }}
     {{ if or (eq .Params.institution "none") (.Params.institution) }}
     <div><a href="{{ .Params.institution.web }}" title="{{ .Params.institutiontnam }}" rel="noreferrer" target="_blank"
             class="inline-block mr-2 align-bottom pb-1">{{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" 0.8

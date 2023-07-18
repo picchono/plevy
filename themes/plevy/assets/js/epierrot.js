@@ -248,6 +248,14 @@ document.addEventListener('click', function (event) {
 })();
 */
 
+/* light change */
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.body.classList.add("dark");
+}
+function lightChange() {
+  document.body.classList.toggle("dark");
+}
+
 
 window.addEventListener('scroll', function () {
   showPic();
