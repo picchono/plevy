@@ -47,7 +47,8 @@ function showPic() {
         delete elmt[count].dataset.toset;
       };
     };
-    muugrid.layout(true);
+    const muuCheck = document.getElementsByClassName('muugrid').length > 0;
+    if (muuCheck) muugrid.layout(true);
   }, 100);
 };
 
@@ -259,7 +260,8 @@ function lightChange() {
 
 window.addEventListener('scroll', function () {
   showPic();
-  muugrid.layout(true);
+  const muuCheck = document.getElementsByClassName('muugrid').length > 0;
+  if (muuCheck) muugrid.layout(true);
 });
 
 showPic();
