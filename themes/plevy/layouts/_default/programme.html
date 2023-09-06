@@ -1,12 +1,12 @@
 {{ define "main" }}
 {{ partial "title.html" . }}
 {{ if .Content }}<div class="case col-span-2 h-auto w-full p-2 md:p-16">{{ .Content }}</div>{{ end }}
-<div class="col-span-1">
+<div class="col-span-3">
 <div class="case flex justify-center items-center">
     <input class="control-field search-field form-control bg-transparent text-center w-full font-bold" type="text"
         name="search" placeholder='{{ i18n "search" }}...' />
 </div>
-<div class="case p-0 col-span-full">
+<div class="case p-0 col-span-full bg-bord">
     <div class="muugrid publili w-full">
         {{ $targ := .Params.milestone }}
         {{ $count := 0 }}
