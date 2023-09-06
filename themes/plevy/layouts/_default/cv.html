@@ -3,9 +3,9 @@
 {{- partial "head.html" . -}}
 
 <body id="cv" class="overflow-x-hidden md:overflow-x-auto">
-   <main class="md:container md:mx-auto bg-primary-bg my-16 md:p-14">
+   <main class="md:container md:mx-auto bg-primary-bg md:my-16 py-6 px-2 md:p-14">
       {{ with index .Site.Data.all .Site.Language.Lang }}
-      <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+      <h1 class="pt-6">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
       <div class="flex flex-col mt-0">
          <h2 class="pt-16">{{ i18n "current-situation" }}</h2>
          <div class="flex flex-col">{{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
