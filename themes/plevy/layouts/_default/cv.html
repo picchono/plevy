@@ -2,8 +2,8 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="cv" class="overflow-x-hidden md:overflow-x-auto">
-   <main class="md:container md:mx-auto bg-primary-bg md:my-16 py-6 px-2 md:p-14">
+<body id="cv" class="overflow-x-hidden lg:overflow-x-auto">
+   <main class="md:container lg:mx-auto bg-primary-bg lg:my-16 py-6 px-2 lg:p-14">
       {{ with index .Site.Data.all .Site.Language.Lang }}
       <h1 class="pt-6">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
       <div class="flex flex-col mt-0">

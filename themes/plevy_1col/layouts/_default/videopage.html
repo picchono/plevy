@@ -1,0 +1,4 @@
+{{ define "main" }}
+    {{ partial "title.html" . }}
+    {{ if .Params.video}}{{ partial "video.html" . }}{{ end }}
+{{ end }}

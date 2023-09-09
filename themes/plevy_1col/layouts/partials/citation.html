@@ -1,0 +1,10 @@
+<meta property="DC.title" content="{{ .Title }}">
+<meta property="DC.URI" content="{{ .Params.link.book }}">
+<meta property="DC.abstract" content="{{ .Params.abstract }}">
+<meta name="DCSext.pn-cat" content="Article">
+{{ with .Params.citation }}
+    {{ with .authors }}{{ range . }}
+    <meta property="DC.creator" content="{{ . }}" />
+    {{ end }}{{ end }}
+    {{ if .date }}<meta property="DC.date" content="{{ .date }}">{{ end }}
+{{ end }}

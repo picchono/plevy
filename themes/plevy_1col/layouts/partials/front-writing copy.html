@@ -1,0 +1,4 @@
+<div class="front-writing">
+    {{ range where .Site.Pages "Section" "writings" }}
+        {{ if eq .Params.front true }}<a class="inline-block py-2" href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+    {{ end }}</div>

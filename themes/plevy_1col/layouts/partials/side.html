@@ -1,0 +1,30 @@
+<div class="absolute md:fixed z-50 top-0 left-0 md:h-screen flex flex-col items-start justify-between">
+    <div class="flex flex-row md:flex-col">
+        {{if not .IsHome }}<a
+            class="border-r border-b px-1 font-bold w-9 h-9 flex items-center justify-center text-primary-text" 
+            href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back"
+                "hei" "1") -}}</a>
+        {{ end }}
+        {{ if .IsTranslated }}
+        <div id="languageMode" class='flex flex-row md:flex-col items-center justify-items-center'>
+            <div
+                class="border-r border-b px-1 font-bold w-9 h-9 flex items-center justify-center">
+                {{ .Language.LanguageName }}</div>
+            {{ range .Translations }} <a
+                class="border-r border-b px-1 font-bold w-9 h-9 flex items-center justify-center"
+                href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer">{{
+                    .Language.LanguageName }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ if .Params.collaboration }}<div class="case flex flex-wrap items-center md:items-start p-16 md:p-4">
+        {{ range sort .Params.collaboration }}
+        <a href="{{ .web }}" target="_blank" class="px-0 py-4">
+            {{ if .colo }}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+            {{else}}{{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" "var(--color-primary-text)") -}}{{ end
+            }}
+        </a>{{ end }}
+    </div>
+    {{ end }}
+</div>

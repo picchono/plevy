@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ partial "title.html" . }}
-{{ if .Content}}<div class="case col-span-2 p-8 px-32 h-auto">{{ .Content }}</div>{{ end }}
-{{ if .Params.lectures}}<div class="case flex flex-row justify-start items-start">
+{{ if .Content}}<div class="permanent case large">{{ .Content }}</div>{{ end }}
+{{ if .Params.lectures}}<div class="permanent case flex flex-row justify-start items-start">
     <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
-    <div class="ml-2 w-auto md:w-full py-1">{{ $cod := .Params.code }}
+    <div class="ml-2 w-auto lg:w-full py-1">{{ $cod := .Params.code }}
         {{ range sort .Params.lectures "order" "asc" }}
         <a class=""
             href="{{ .link }}"><b>{{ $cod }}.{{ .order }}&nbsp;&middot;&nbsp;</b>{{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>

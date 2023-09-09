@@ -1,0 +1,14 @@
+{{ $photonb := len .Params.photogallery }}
+{{ if eq $photonb 1 }}
+<div class="case"><img loading="lazy" class="imag object-cover w-full h-full spotlight cursor-pointer"
+        src="{{ .Params.photogallery.image1.img }}"></div>
+{{ else }}
+<div class="case h-auto min-h-72 p-8">
+    <div class="flex flex-row flex-wrap spotlight-group w-full">
+        {{ range sort .Params.photogallery "order" "asc" }}
+        <div class="w-1/4 sm:w-1/6 md:w-1/12 p-0.5 md:p-px"><a class="place-self-center spotlight w-full" href="{{ .img }}" data-title="{{ .name }}"><img class="rounded-sm"
+                loading="lazy" src="{{ .src }}"></a></div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

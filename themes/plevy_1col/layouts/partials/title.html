@@ -1,0 +1,30 @@
+<div class="case px-8">
+    <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
+</div>
+{{ if .Params.updating }}<div class="case p-8">
+    <p class="italic text-epierrot">Currently updating</p>
+</div>{{ end }}
+{{ if .Params.quote }}<div class="case p-8">
+    <p>{{ .Params.quote.quoteline |safeHTML}}<br /><span class="text italic"> -
+            {{ .Params.quote.quoteauthor }} ({{ .Params.quote.quotedate }})</span></p>
+</div>{{ end }}
+{{ if .Params.diploma}}<div class="case flex flex-row items-start justify-start">
+    <p class="mr-4 flex-grow flex-shrink">{{ range sort .Params.diploma }}<b>{{ .type }}</b><br>{{ end }}</p>
+    <p class="flex-grow">{{ range sort .Params.diploma }}{{ .name }}<br>{{ end }}</p>
+</div>{{ end }}
+{{ if .Params.reference }}<div class="case p-8">
+    <p>{{ .Params.reference |safeHTML }}</p>
+</div>{{ end }}
+{{ if .Params.abstract }}<div class="case p-8">
+    <p><span class="revers"><b>{{ i18n "abstract"}}</b></span>
+        <b>{{ .Params.abstract |safeHTML }}</b></p>
+</div>{{ end }}
+{{ if .Params.schedule }}<div class="case row-span-2 h-144 p-8">
+    <p>{{ .Params.schedule |safeHTML }}</p>
+</div>{{ end }}
+{{ if .Params.executive}}<div class="case italic text-sm p-8">
+    <p>{{ .Params.executive }}</p>
+</div>{{ end }}
+{{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+{{ if .Params.photogallery }}{{ partial "photogallery.html" . }}{{ end }}
+{{ if .Params.video}}{{ partial "video.html" . }}{{ end }}

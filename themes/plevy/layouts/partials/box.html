@@ -1,6 +1,6 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
 <div class='
-item it{{- int .cou }} {{ .context.Params.Subsection }} case p-0 h-auto w-full {{ if .everyt }} md:w-1/2{{ else }} md:w-1/3{{ end }}'
+item it{{- int .cou }} {{ .context.Params.Subsection }} case p-0 h-auto w-full {{ if .everyt }} lg:w-1/2{{ else }} lg:w-1/3{{ end }}'
     data-search='{{ .context.Section }} {{ .context.Params.Subsection }} {{ .context.Content }} {{ .context.Params.abstract }} {{ .context.Params.reference}} {{ dateFormat "2006-01-02T15:04:05-07:00" .context.Date }} {{ range .context.Params.tags }} {{ . }} {{ end }}'>
     <a class="boxA text-primary-text transition-all duration-700 ease-in-out justify-center flex flex-col w-full"
         href="{{ .context.Permalink }}">
@@ -10,14 +10,14 @@ item it{{- int .cou }} {{ .context.Params.Subsection }} case p-0 h-auto w-full {
         </div>{{ end }}
         <div class="w-full flex flex-row -m-px px-3 pt-3">
             {{ if isset .context.Params "frontphoto" }}<div class="relative w-1/2 h-36 mb-2 mr-2">
-                <div class="blend-plevy absolute rounded rounded-br w-full h-36 m-2 md:m-5"><img src=""
+                <div class="blend-plevy absolute rounded rounded-br w-full h-36 m-2 lg:m-5"><img src=""
                         data-toset="{{ .context.Params.frontphoto | absURL }}"
                         class="imag imgBox object-cover rounded rounded-br w-full h-36"
                         alt="{{ .context.Params.title }}" width="500" height="240" />
 
                 </div>
                 {{ if isset .context.Params "photocredit" }}
-                <div class="absolute flex flex-col justify-end w-full h-full m-2 md:m-5">
+                <div class="absolute flex flex-col justify-end w-full h-full m-2 lg:m-5">
                     <div data-target="{{ .context.Params.photocredit.link | absURL }}"
                         title="{{ .context.Params.photocredit.cred }}"
                         class="credphoto text-xs text-primary-bg w-full rounded-b bg-warmgray-600 bg-opacity-50 py-0.5 px-2">
@@ -26,7 +26,7 @@ item it{{- int .cou }} {{ .context.Params.Subsection }} case p-0 h-auto w-full {
                 {{ end }}
             </div>
             {{ end }}
-            <div class="flex flex-col self-end pl-3 md:pl-6 pt-3 md:pt-8">
+            <div class="flex flex-col self-end pl-3 lg:pl-6 pt-3 lg:pt-8">
                 {{ if isset .context.Params "institution" }}<div class="inline-block pl-px pb-1">
                     {{ if .context.Params.institutiontution.colo }}{{ partial "icons.html" (dict "ico" .context.Params.institutiontution.logo "hei" 0.8 "colo" .context.Params.institutiontution.colo) -}}
                     {{else}}{{ partial "icons.html" (dict "ico" .context.Params.institutiontution.logo "hei" 0.8 "colo" "--color-primary-text)") -}}{{ end }}

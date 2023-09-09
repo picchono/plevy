@@ -1,11 +1,11 @@
-{{ range sort .Params.video }}<div class="case col-span-2 flex flex-col md:flex-row flex-wrap p-0">
+{{ range sort .Params.video }}<div class="permanent case flex flex-col lg:flex-row flex-wrap p-0">
     {{ if isset . "youtube" }}
-    <div class="videoFrame w-full md:w-1/2 md:pl-4">
+    <div class="videoFrame w-full lg:w-1/2 lg:pl-4">
                 <div class="embed-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen class="rounded-sm"></iframe></div>
     </div>
-    <div class="w-full md:w-1/2 flex-grow flex-shrink flex flex-col justify-end self-end max-w-xl p-8">
+    <div class="w-full lg:w-1/2 flex-grow flex-shrink flex flex-col justify-end self-end max-w-xl p-8">
         {{ if .Title }}
         <div class="">{{ if isset . "title" }}<h2 class="pt-4 leading-8">
                 {{ .Title }}</h2>{{ end }}
@@ -19,13 +19,13 @@
     </div>
     {{ end }}
     {{if isset . "vimeo" }}
-    <div class="videoFrame w-full md:w-1/2">
+    <div class="videoFrame w-full lg:w-1/2">
         <div class="embed-wrapper"><iframe src="https://player.vimeo.com/video/{{ .vimeo }}" width="640" height="360"
                 frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="rounded-sm"></iframe></div>
     </div>
-    <div class="w-full md:w-1/2 flex flex-col justify-end self-end flex-grow md:flex-grow-0 max-w-xl p-8">
+    <div class="w-full lg:w-1/2 flex flex-col justify-end self-end flex-grow lg:flex-grow-0 max-w-xl p-8">
         {{ if .Title }}
-        <div class="pb-10 md:p-0">{{ if isset . "title" }}<h2 class="pt-4 leading-8">
+        <div class="pb-10 lg:p-0">{{ if isset . "title" }}<h2 class="pt-4 leading-8">
                 {{ .Title }}</h2>{{ end }}
             {{ if isset . "speaker" }}<div class="italic -mt-1 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
             {{ end }}

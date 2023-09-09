@@ -6,7 +6,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   *********************************************/
  
  .reveal {
-  @apply font-normal text-primary-text text-sm md:text-lg bg-primary-bg;
+  @apply font-normal text-primary-text text-sm lg:text-lg bg-primary-bg;
  }
   
  .reveal .slides > section,
@@ -15,7 +15,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
    font-weight: inherit; }
 
  .reveal p, .reveal div, .reveal span {
-  @apply text-sm md:text-xl md:leading-8;
+  @apply text-sm lg:text-xl lg:leading-8;
  }
  /*********************************************
   * HEADERS
@@ -26,7 +26,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  .reveal h4,
  .reveal h5,
  .reveal h6 {
-  @apply text-base md:text-4xl font-bold text-primary-text;
+  @apply text-base lg:text-4xl font-bold text-primary-text;
    line-height: 1.2;
    word-wrap: break-word; }
   

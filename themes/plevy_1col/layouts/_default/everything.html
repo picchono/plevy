@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="case px-0">
+    <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
+</div>
+    <div class="case navevery h-auto">
+        {{ partial "list-menutop.html" . -}}
+        <div id="target"
+            class="hidden md:flex flex-row md:flex-col flex-wrap w-full py-4 md:pt-0 md:pb-10 px-8 md:px-0 bg-primary-bg md:bg-transparent border-b md:border-0 border-primary-text overflow-y-scroll">
+            <nav class="flex-none w-full flex flex-row md:justify-center">
+                <div id="topMenu"
+                    class="h-full transition-all md:w-full flex flex-col md:flex-row flex-wrap content-start publiselect menu button-group"
+                    id="filters">
+                    <div class="">
+                        <span onclick="tagfilter('.');"
+                            class="filterOption tagcloud-item cursor-pointer hover:text-epierrot transition-all duration-700 ease-in-out text-sm capitalize font-bold">{{
+                            i18n "all" }}</span>
+                        {{ partial "tagfront.html" . -}}
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="case px-8 py-0 items-start justify-start">
+        <input class="control-field search-field form-control bg-transparent text-left w-full font-bold" type="text"
+            name="search" placeholder='{{ i18n "search" }}...' />
+    </div>
+    <div class="case p-0 border rounded-lg">
+        <div class="muugrid publili w-full">
+    {{ $count := 0 }}
+    {{ range .Site.Pages }}{{ if ne .Params.notEverything true }}{{ if ne .Page.Type "tags" }}
+    {{ $count = add $count 1 }}
+    {{ partial "box.html" ( dict "context" . "cou" $count "everyt" true) -}}
+    {{ end }}{{ end }}{{ end }}
+    </div>
+    </div>
+    {{ $muu_js := resources.Get "js/muu.js" | minify }}
+    <script defer src="{{ $muu_js.Permalink }}"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        switchBurger();
+    });
+</script>
+{{ end }}

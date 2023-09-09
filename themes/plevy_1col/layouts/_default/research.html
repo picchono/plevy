@@ -1,0 +1,50 @@
+{{ define "main" }}
+    <div class="case flex-initial tracking-wide px-2.5"><input type="text" class="w-full" name="search" placeholder='{{ i18n "search" }}...' data-search></div>
+    <div class="case italic mb-8 px-2.5"><span class="font-medium text-epierrot">{{ i18n "programmes" }}</span> {{i18n "and" }} {{ i18n "main-ressource" }}</div>
+    <div class="mb-20">
+        <div class="grid">
+            {{ $rresearch := where .Site.Pages "Section" "research" }}{{range $rresearch}}{{ if ne .Params.bodyclass "Research" }}
+            <div class="w-full py-1 px-2.5" data-category="1" data-sort="value"><a class="py-1 rounded bg-primary-bg"
+                    href="{{ .Permalink }}">
+                    <span class="font-medium text-xl text-epierrot">{{- .Title -}}&nbsp;</span>{{ if isset .Params
+                    "quote" }}<span class="italic text-epierrot">{{- .Params.quote.quoteline -}}&nbsp;&mdash;&nbsp;{{- .Params.quote.quoteauthor -}}&nbsp;({{- .Params.quote.quotedate -}})</span>{{ end }}
+                    <div class="hidden invisible h-0 w-0">{{ .Content }} {{ .Section }} {{ dateFormat "02 January 2006" .Date }} {{ dateFormat "2006-01-02T15:04:05-07:00" .Date }} {{ .Params.abstract }}</div>
+                </a></div>
+            {{ $targ := .Params.milestone }}
+            {{ $rcontent := where .Site.Pages "Section" "notions" }}{{ range $rcontent }}
+            {{ $lin := .Permalink }}{{ $titl := .Title }}{{ $yea := dateFormat "2006" .Date }}{{ $:= .Content }}{{ $sec := .Section }}{{ $dat1 := dateFormat "02 January 2006" .Date}}{{ $dat2 := dateFormat
+            "2006-01-02T15:04:05-07:00" .Date}}{{ $abst := .Params.abstract }}
+            {{ range .Params.research }}{{ if eq . $targ }}<div class="inline pl-0.5 pr-1 py-0.5" data-category="2"
+                data-sort="value"><a
+                    class="py-1 px-2.5 rounded bg-primary-bg hover:bg-secodnary-bg transition-all duration-700 ease-in-out"
+                    href="{{ $lin }}">
+                    <span
+                        class="font-medium border-r text-sm border-indigo-700 pr-1 rounded-l text-indigo-700">Notion</span><span
+                        class="pl-1 rounded-r font-medium text-indigo-700">{{- $titl -}}</span>
+                    <div class="hidden invisible h-0 w-0">{{ $}} {{ $sec }} {{ $dat1 }} {{ $dat2 }} {{ $abst }}</div>
+                </a></div>{{ end }}{{ end }}
+            {{ end }}
+            {{ $rcontent := where .Site.Pages "Section" "projects" }}{{ range $rcontent }}
+            {{ $lin := .Permalink }}{{ $titl := .Title }}{{ $yea := dateFormat "2006" .Date }}{{ $:= .Content }}{{ $sec := .Section }}{{ $dat1 := dateFormat "02 January 2006" .Date}}{{ $dat2 := dateFormat "2006-01-02T15:04:05-07:00" .Date}}{{ $abst := .Params.abstract }}
+            {{ range .Params.research }}{{ if eq . $targ }}<div class="inline pl-0.5 pr-1 py-0.5" data-category="2"
+                data-sort="value"><a
+                    class="py-1 px-2.5 rounded bg-primary-bg hover:bg-secodnary-bg transition-all duration-700 ease-in-out"
+                    href="{{ $lin }}">
+                    <span class="font-medium text-sm border-r border-primary-text pr-1 rounded-l">Project {{ $yea }}</span><span class="pl-1 rounded-r">{{- $titl -}}</span>
+                    <div class="hidden invisible h-0 w-0">{{ $}} {{ $sec }} {{ $dat1 }} {{ $dat2 }} {{ $abst }}</div>
+                </a></div>{{ end }}{{ end }}
+            {{ end }}
+            {{ $rcontent := where .Site.Pages "Section" "publications" }}{{ range $rcontent }}
+            {{ $lin := .Permalink }}{{ $titl := .Title }}{{ $yea := dateFormat "2006" .Date }}{{ $:= .Content }}{{ $sec := .Section }}{{ $dat1 := dateFormat "02 January 2006" .Date}}{{ $dat2 := dateFormat
+            "2006-01-02T15:04:05-07:00" .Date}}{{ $abst := .Params.abstract }}{{ $ref := .Params.reference}}
+            {{ range .Params.research }}{{ if eq . $targ }}<div class="inline pl-0.5 pr-1 py-0.5" data-category="3"
+                data-sort="value"><a
+                    class="py-1 px-2.5 rounded bg-primary-bg hover:bg-secodnary-bg transition-all duration-700 ease-in-out"
+                    href="{{ $lin }}">
+                    <span class="font-medium text-sm border-r border-primary-text pr-1 rounded-l">Publi {{ $yea }}</span><span class="pl-1 rounded-r">{{- $titl -}}</span>
+                    <div class="hidden invisible h-0 w-0">{{ $}} {{ $sec }} {{ $dat1 }} {{ $dat2 }} {{ $abst }} {{ $ref }}</div>
+                </a></div>{{ end }}{{ end }}
+            {{ end }}
+            {{ end }}{{ end }}
+        </div>
+    {{ end }}

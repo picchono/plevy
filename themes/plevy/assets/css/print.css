@@ -81,7 +81,7 @@ h2 {
 
 /* fixing base.css for print */ 
 .revers {
-    @apply bg-secondary-bg text-primary-text pb-1 pt-0.5 mr-2 rounded-sm md:rounded transition-all duration-700 ease-in-out inline;
+    @apply bg-secondary-bg text-primary-text pb-1 pt-0.5 mr-2 rounded-sm lg:rounded transition-all duration-700 ease-in-out inline;
     box-shadow: none;
     box-decoration-break: clone;
 }

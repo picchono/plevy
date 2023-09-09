@@ -1,0 +1,3 @@
+{{ range where .Site.Pages "Section" "writings" }}
+{{ if eq .Params.front true }}<a class="" href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+{{ end }}

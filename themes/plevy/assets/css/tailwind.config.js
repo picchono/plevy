@@ -101,7 +101,6 @@ module.exports = {
         'primary-text': 'var(--color-primary-text)',
         'secondary-text': 'var(--color-secondary-text)',
         'epierrot': 'var(--color-epierrot)',
-        'bord': 'var(--color-bord)',
         transparent: 'transparent',
         current: 'currentColor',
         'black': colors.black,

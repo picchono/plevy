@@ -15,14 +15,14 @@
                     {{ if ne .Title "none" }}<h1 class=" font-bold">
                         {{ .Title |safeHTML }}</h1>{{ end }}
                     <div class="my-6"><span id="qrcode"
-                            class="block h-20 md:h-36 w-20 md:w-36 mb-8 md:mb-22 p-3 bg-white rounded-lg"></div>
+                            class="block h-20 lg:h-36 w-20 lg:w-36 mb-8 lg:mb-22 p-3 bg-white rounded-lg"></div>
                     <div class="md:text-2xl font-bold mb-1">Pierre Lévy – <a href="mailto:pierre.levy@lecnam.net"
                             title="Le Cnam" rel="noreferrer" target="_blank"
-                            class="inline-block md:text-xl text-primary-text">pierre.levy@lecnam.net</a><br>
-                        <span class="font-bold text-epierrot md:text-2xl">C</span>onservatoire <span
-                            class="font-bold text-epierrot md:text-2xl">N</span>ational des <span 
-                            class="font-bold text-epierrot md:text-2xl">A</span>rts et <span
-                            class="font-bold text-epierrot md:text-2xl">M</span>étiers, France</div>
+                            class="inline-block lg:text-xl text-primary-text">pierre.levy@lecnam.net</a><br>
+                        <span class="font-bold text-epierrot lg:text-2xl">C</span>onservatoire <span
+                            class="font-bold text-epierrot lg:text-2xl">N</span>ational des <span 
+                            class="font-bold text-epierrot lg:text-2xl">A</span>rts et <span
+                            class="font-bold text-epierrot lg:text-2xl">M</span>étiers, France</div>
                 </div>
             </div>
             {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration "sign" false) }}
@@ -52,11 +52,11 @@
                         <div class="text-2xl font-bold flex items-center slideframe">{{ .Params.merci }}</div>
                     <div class="md:text-2xl font-bold mb-1">Pierre Lévy – <a href="mailto:pierre.levy@lecnam.net"
                             title="Le Cnam" rel="noreferrer" target="_blank"
-                            class="inline-block md:text-xl text-primary-text">pierre.levy@lecnam.net</a><br>
-                        <span class="font-bold text-epierrot md:text-2xl">C</span>onservatoire <span
-                            class="font-bold text-epierrot md:text-2xl">N</span>ational des <span 
-                            class="font-bold text-epierrot md:text-2xl">A</span>rts et <span
-                            class="font-bold text-epierrot md:text-2xl">M</span>étiers, France</div>
+                            class="inline-block lg:text-xl text-primary-text">pierre.levy@lecnam.net</a><br>
+                        <span class="font-bold text-epierrot lg:text-2xl">C</span>onservatoire <span
+                            class="font-bold text-epierrot lg:text-2xl">N</span>ational des <span 
+                            class="font-bold text-epierrot lg:text-2xl">A</span>rts et <span
+                            class="font-bold text-epierrot lg:text-2xl">M</span>étiers, France</div>
                 </div>
             </div>
             {{ partial "slide-collab.html" ( dict "context" . "colla" .Params.collaboration "sign" false ) }}
