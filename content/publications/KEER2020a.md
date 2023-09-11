@@ -26,4 +26,6 @@ link:
 video:
     video1:
         youtube: "ZCthJ5UqpfA"
+        title: Artefactual emptiness – On appropriation in kansei design
+        speaker: Pierre Lévy
 ---

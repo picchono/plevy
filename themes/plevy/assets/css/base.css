@@ -6,10 +6,10 @@
 *,
 html,
 body {
-    font-size:17px;
+    font-size:15px;
     font-stretch:100%;
-    letter-spacing:0.02rem;
-    line-height:1.5rem;
+    letter-spacing:0.01rem;
+    line-height:1.7rem;
     font-display:swap;
     font-weight:normal;
     scroll-behavior:smooth;
@@ -69,7 +69,7 @@ p:last-child {
 }
 
 .case {
-    @apply inline-flex flex-col justify-center items-center w-full md:w-1/2 xl:w-1/3 min-h-16 md:min-h-72 h-auto px-2 py-14 md:p-2 bg-gradient-to-br from-white to-warmgray-100;
+    @apply inline-flex flex-col justify-center items-center w-full md:w-1/2 xl:w-1/3 min-h-16 md:min-h-72 h-auto px-2 py-14 md:p-10 bg-gradient-to-br from-white to-warmgray-100;
 }
 
 .case.large {

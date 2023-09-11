@@ -1,4 +1,4 @@
-{{if not .IsHome }}<div class="absolute top-3 left-3"><a class="text-primary-text "
+{{if not .IsHome }}<div class="absolute z-50 top-3 left-3"><a class="text-primary-text "
     href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
 {{ partial "international.html" . }}
 <div class="permanent case px-8">

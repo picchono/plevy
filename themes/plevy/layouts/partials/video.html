@@ -1,6 +1,6 @@
-{{ range sort .Params.video }}<div class="permanent case flex flex-col lg:flex-row flex-wrap p-0">
+{{ range sort .Params.video }}<div class="permanent case large flex flex-col lg:flex-row flex-wrap p-0">
     {{ if isset . "youtube" }}
-    <div class="videoFrame w-full lg:w-1/2 lg:pl-4">
+    <div class="videoFrame w-full lg:w-1/2">
                 <div class="embed-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen class="rounded-sm"></iframe></div>

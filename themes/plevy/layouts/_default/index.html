@@ -4,7 +4,7 @@
 {{ with index .Site.Data.all .Site.Language.Lang }}
 <div class="permanent case items-start px-6 lg:px-16">
     <h1 class="text-4xl -mx-0.5">{{ .identity.firstname }} {{ .identity.lastname }}</h1>
-    <div class="text-xs -my-1.5 text-epierrot pb-6">{{ .identity.title }} - HDR</div>
+    <div class="text-xs -my-0.5 text-epierrot pb-6">{{ .identity.title }} - HDR</div>
 </div>
 {{ end }}
 {{ partial "international.html" . }}
@@ -47,7 +47,7 @@
         alt="Pierre Lévy" class="imag object-cover w-full h-full" style="filter:grayscale(0.9);" />
 </div>
 {{ with index .Site.Data.all .Site.Language.Lang }}
-<div class="permanent case p-6 lg:p-8">
+<div class="permanent case">
     <p>{{ .identity.description | safeHTML }}</p>
 </div>
 {{ end }}

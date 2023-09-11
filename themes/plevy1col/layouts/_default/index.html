@@ -18,9 +18,9 @@
 </div>
 {{ end }}
 <div class="case block py-32">
-    <b class='revers'>{{ i18n "Recent-writings" }}</b> {{ partial "front-writing.html" . }} &lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;&nbsp;&nbsp;
+    <a class="transpaLink" href="/writings/">{{ i18n "Recent-writings" }} {{ partial "front-writing.html" . }}</a>
 {{range sort .Params.blocs "order"}}
-<span class="inline-block ml-4"></span><b class='revers'>{{ .title }}</b><span class="inline-block mr-1"></span>{{ .text |safeHTML }}
+    <span class="inline-block mr-1"></span>{{ .text |safeHTML }}
 {{ end }}
 </div>
 {{ else }}

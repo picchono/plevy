@@ -5,7 +5,7 @@
 
 <body id="{{ .Params.bodyclass }}" class="overflow-x-hidden md:overflow-x-auto">
   {{ partial "side.html" . }}
-  <main class='w-screen md:w-132 md:m-auto min-h-screen'>
+  <main class='w-screen'>
     {{- block "main" . }}{{- end }}
     {{ if or (eq .Params.layout "event") (eq .Params.layout "presentation") (eq .Params.layout "programme") (eq .Params.layout "project") (eq .Params.layout "publi") (eq .Params.layout "ressearch") (eq .Params.layout "teaching") }}
       <div class="case">

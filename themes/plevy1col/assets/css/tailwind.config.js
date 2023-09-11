@@ -14,7 +14,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'sans': ['Author', 'sans-serif'],
+      'sans': ['Excon', 'sans-serif'],
       'mono': ['SFMono-Regular', 'Menlo'],
     },
     fontWeight: {
