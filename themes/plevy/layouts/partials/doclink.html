@@ -1,5 +1,5 @@
 
-<div class="permament case"><p>
+<div class="permanent case"><p>
     {{if .Params.link.poster }}<a href='{{ .Params.link.poster }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "poster" ) -}}</span><span class="doclinkText">{{ i18n "poster" }}</span></span></a>{{ end }}
     {{if .Params.link.paper }}<a href='{{ .Params.link.paper }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "paper" ) -}}</span><span class="doclinkText">{{ i18n "paper" }}</span></a>{{ end }}
     {{if .Params.link.transcription }}<a href='{{ .Params.link.transcription }}' target="_blank" class="doclinkButton" rel="noreferrer"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "paper" ) -}}</span><span class="doclinkText">{{ i18n "transcription" }}</span></a>{{ end }}

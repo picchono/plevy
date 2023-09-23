@@ -30,14 +30,14 @@
 {{ end }}
 {{ else }}
 {{ with index .Site.Data.all .Site.Language.Lang }}
-<div class="case">
+<div class="permanent case">
     <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
     <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
 </div>
 {{ end }}
 {{ partial "international.html" . }}
 {{ with index .Site.Data.all .Site.Language.Lang }}
-<div class="case">
+<div class="permanent case">
     {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
     {{ if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
 </div>
