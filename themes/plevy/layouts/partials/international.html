@@ -7,6 +7,7 @@
                 title="{{ i18n .Language.LanguageName }}" rel="noreferrer">{{ .Language.LanguageName }}</a></div>{{ end }}
         </div>
         {{ end }}
+        &nbsp;|&nbsp;<span class="cursor-pointer" onclick="darklight()">{{ partial "icons.html" (dict "ico" "lightdark" "hei" 0.9 "colo" "--color-primary-text)") -}}</span>
     </div>
     {{ if or (eq .Params.institution "none") (.Params.institution) }}
     <div><a href="{{ .Params.institution.web }}" title="{{ .Params.institutiontnam }}" rel="noreferrer" target="_blank"

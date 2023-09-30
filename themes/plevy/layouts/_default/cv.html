@@ -43,7 +43,7 @@
          <h2 class="">{{ i18n "pastPro" }}</h2>
          <div class="flex flex-col">{{ range sort .pro "start" "desc" }}{{ if ne .end "none" }}
             <div class="flex flex-row mb-6">
-               <div class="w-1/6 pr-6">{{ .start }} - {{ .end }}</div>
+               <div class="w-1/6 pr-6">{{ if eq .start .end }}{{- .start -}}{{ else }}{{- .start }} - {{ .end -}}{{ end }}</div>
                <div class="w-5/6 pl-6">
                   <div class="border-l-4 border-epierrot pl-3"><b>{{ .title }}</b>
                      {{ if isset . "institution" }} - {{ .institution |safeHTML }}{{ if isset . "country" }},

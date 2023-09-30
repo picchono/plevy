@@ -8,6 +8,22 @@
         "country": "France",
         "main": true,
         "activities": {
+            "NCUHESAM2030": {
+                "order": 1,
+                "start": "2023",
+                "end": "none",
+                "title": "Member of the Steering Committee of <a href='https://www.hesam.eu/hesam2030' target='_blank' rel='noreferrer' title='NCU - HESAM 2030' data-tooltip='ESAM 2030 - Construisons nos Métiers !'>NCU - HESAM 2030</a>",
+                "comment": "The 'HESAM 2030 - Construisons nos Métiers!' program aims to roll out new, 1-year and 3-year modular diplomas, open to all, with priority given to vocational and technological baccalaureate holders, and adaptable to everyone, everywhere and throughout life.",
+                "main": false
+            },
+            "ENSAPLV": {
+                "order": 1,
+                "start": "2023",
+                "end": "none",
+                "title": "Member of the Steering Committee of the <a href='http://www.paris-lavillette.archi.fr/index.php?page=dpea-recherche' target='_blank' rel='noreferrer' title='NCU - HESAM 2030' data-tooltip='Post-master Recherches en Architecture - HESAM Université'>Post-master in Architecture research - HESAM Université at ENSAPLV</a>",
+                "comment": "This post-master's program is a post-graduate course preparing students to enroll in a doctorate in architecture, or to enter new fields of practice in architecture, urban planning and landscape design. The aim of this transitional year is to learn how to produce a research dissertation.",
+                "main": false
+            }
         }
     },
     "CNAM": {

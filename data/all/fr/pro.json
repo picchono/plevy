@@ -8,6 +8,22 @@
         "country": "France",
         "main": true,
         "activities": {
+            "NCUHESAM2030": {
+                "order": 1,
+                "start": "2023",
+                "end": "none",
+                "title": "Membre du Comité de Pilotage de <a href='https://www.hesam.eu/hesam2030' target='_blank' rel='noreferrer' title='NCU - HESAM 2030' data-tooltip='ESAM 2030 - Construisons nos Métiers !'>NCU - HESAM 2030</a>",
+                "comment": "Le programme « HESAM 2030 - Construisons nos Métiers ! » vise à déployer des diplômes inédits et modulaires à un niveau Bac+1 et Bac+3, ouverts à tous, avec une priorité accordée aux bacheliers professionnels et technologiques, adaptables à chacun, partout et tout au long de la vie.",
+                "main": false
+            },
+            "ENSAPLV": {
+                "order": 1,
+                "start": "2023",
+                "end": "none",
+                "title": "Membre du Comité de Pilotage du <a href='http://www.paris-lavillette.archi.fr/index.php?page=dpea-recherche' target='_blank' rel='noreferrer' title='NCU - HESAM 2030' data-tooltip='Post-master Recherches en Architecture - HESAM Université'>Post-master Recherches en Architecture - HESAM Université à l'ENSAPLV</a>",
+                "comment": "Ce post-master est un enseignement de troisième cycle préparant à l’inscription en doctorat d’architecture ou à de nouvelles pratiques de l’architecture, de l’urbanisme et du paysage. Le but de cette année « transitoire » est d’apprendre à produire un mémoire de recherche.",
+                "main": false
+            }
         }
     },
     "CNAM": {

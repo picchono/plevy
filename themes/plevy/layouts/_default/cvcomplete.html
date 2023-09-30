@@ -52,7 +52,7 @@
             {{ if isset . "faculty" }}<br />{{ .faculty |safeHTML }}{{end }}
             {{ if isset . "extra" }}<br />{{ .extra |safeHTML }}{{end }}</div>
             {{ if isset . "associations" }}<div class="col-start-2 col-span-6 mb-4">{{ range sort .associations "order" "desc" }}
-               {{ .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}){{ if isset . "comment" }} <span
+               {{ .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }} {{ .start }}{{ else }}{{ if eq .start .end }}{{- .start -}}{{ else }}{{- .start }} - {{ .end -}}{{ end }}{{ end }}){{ if isset . "comment" }} <span
                   class="comment">{{ .comment |safeHTML }}</span>{{ end }}<br>
             {{ end }}</div>{{ end }}
             {{ if isset . "activities" }}
