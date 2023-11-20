@@ -8,6 +8,14 @@
         "country": "France",
         "main": true,
         "activities": {
+            "Compagnons": {
+                "order": 1,
+                "start": "2023",
+                "end": "none",
+                "title": "Membre du Comité stratégique de l'<a href='https://compagnons-du-devoir.com/formations-en-alternance/executive-master-responsable-de-projets/' target='_blank' rel='noreferrer' title='Executive Master Responsable de projets' data-tooltip='Executive Master Responsable de projets'>Executive Master Responsable de projets des Compagnons du Devoir</a>",
+                "comment": "L'Executive master « Responsable de projets, mention Métiers des technologies associées » est un diplôme équivalent Bac+5, en alternance. Objectif : former des pilotes de projets pluritechnologiques dans les métiers des technologies associées : l'électrotechnique, la mécanique et la mécanique d'outillage et de précision, afin de leur permettre d'accéder à des missions d'encadrement.",
+                "main": false
+            },
             "NCUHESAM2030": {
                 "order": 1,
                 "start": "2023",
@@ -21,7 +29,7 @@
                 "start": "2023",
                 "end": "none",
                 "title": "Membre du Comité de Pilotage du <a href='http://www.paris-lavillette.archi.fr/index.php?page=dpea-recherche' target='_blank' rel='noreferrer' title='NCU - HESAM 2030' data-tooltip='Post-master Recherches en Architecture - HESAM Université'>Post-master Recherches en Architecture - HESAM Université à l'ENSAPLV</a>",
-                "comment": "Ce post-master est un enseignement de troisième cycle préparant à l’inscription en doctorat d’architecture ou à de nouvelles pratiques de l’architecture, de l’urbanisme et du paysage. Le but de cette année « transitoire » est d’apprendre à produire un mémoire de recherche.",
+                "comment": "Ce post-master est un enseignement de troisième cycle préparant à l'inscription en doctorat d'architecture ou à de nouvelles pratiques de l'architecture, de l'urbanisme et du paysage. Le but de cette année « transitoire » est d'apprendre à produire un mémoire de recherche.",
                 "main": false
             }
         }
@@ -49,8 +57,8 @@
                 "order": 1,
                 "start": "2020",
                 "end": "none",
-                "title": "Chercheur au laboratoire <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> (EA 7339)",
-                "comment": "Le laboratoire Dicen-IDF (Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France) est une unité de recherche multi-tutelles (EA 7339) entre le Conservatoire National des Arts et Métiers, l’Université Gustave Eiffel et l’Université Paris-Nanterre",
+                "title": "Chercheur au laboratoire <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> (EA 7339)",
+                "comment": "Le laboratoire Dicen-IDF (Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France) est une unité de recherche multi-tutelles (EA 7339) entre le Conservatoire National des Arts et Métiers, l'Université Gustave Eiffel et l'Université Paris-Nanterre",
                 "main": true
             }
         },
@@ -74,7 +82,7 @@
                 "start": "2021",
                 "end": "none",
                 "title": "Responsable du <a href='https://formation.cnam.fr/rechercher-par-discipline/master-arts-lettres-langues-mention-design-parcours-creation-projets-transdisciplinarite-1085664.kjsp?RF=' target='_blank' rel='noreferrer' data-tooltip='Master Arts, Lettres, langues - mention Design' title='Master Arts, Lettres, langues - mention Design'>Master Design</a>",
-                "comment": "L'objectif de ce master est de former des créateurs capables de concevoir leur projet professionnel, d’inventer leur pratique de design de manière prospective en intégrant l’évolution des sociétés et des contextes culturels et techniques sans cesse redéfinis",
+                "comment": "L'objectif de ce master est de former des créateurs capables de concevoir leur projet professionnel, d'inventer leur pratique de design de manière prospective en intégrant l'évolution des sociétés et des contextes culturels et techniques sans cesse redéfinis",
                 "main": true
             },
             "jhtr": {
@@ -88,7 +96,7 @@
                 "order": 5,
                 "start": "2022",
                 "end": "none",
-                "title": "Responsable de la mention <i>Arts, Design et Société</i> de l’<a href='https://recherche.cnam.fr/etudes-doctorales-hdr/' target='_blank' rel='noreferrer' title='École doctorale Abbé Grégoire'>École doctorale Abbé Grégoire (ED 546)</a>",
+                "title": "Responsable de la mention <i>Arts, Design et Société</i> de l'<a href='https://recherche.cnam.fr/etudes-doctorales-hdr/' target='_blank' rel='noreferrer' title='École doctorale Abbé Grégoire'>École doctorale Abbé Grégoire (ED 546)</a>",
                 "main": true
             },
             "agregation":{
@@ -129,35 +137,35 @@
                 "start": "2019",
                 "end": "2021",
                 "title": "Responsable du <i>DataLab</i>",
-                "comment": "Le DataLab est un lieu de TU/e ouvert pour l’exploration créative de l’interaction avec les données",
+                "comment": "Le DataLab est un lieu de TU/e ouvert pour l'exploration créative de l'interaction avec les données",
                 "main": false
             },
             "TP squad": {
                 "start": "2018",
                 "end": "2021",
                 "title": "Directeur du groupe de projets <i>Transforming Practices (TP)</i>",
-                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la transformation des pratiques",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la transformation des pratiques",
                 "main": false
             },
             "ICTcommittee": {
                 "start": "2016",
                 "end": "2021",
                 "title": "Membre du comité ICT",
-                "comment": "Le comité ICT dirige le développement TIC de la faculté en collaboration avec les services centraux de l’université",
+                "comment": "Le comité ICT dirige le développement TIC de la faculté en collaboration avec les services centraux de l'université",
                 "main": false
             },
             "Vitality squad": {
                 "start": "2016",
                 "end": "2018",
                 "title": "Directeur du groupe de projets <i>Vitality</i>",
-                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la vitalité, du bien-être, et de la vie active",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la vitalité, du bien-être, et de la vie active",
                 "main": false
             },
             "Education committee": {
                 "start": "2015",
                 "end": "2016",
                 "title": "Coordinateur éducatif de la Faculté de Design Industriel, TU/e",
-                "comment": "Les 4 coordinateurs éducatifs assistent le Directeur d’Éducation dans l’élaboration du curriculum pédagogique de la faculté",
+                "comment": "Les 4 coordinateurs éducatifs assistent le Directeur d'Éducation dans l'élaboration du curriculum pédagogique de la faculté",
                 "main": false
             },
             "Examnination committee": {
@@ -171,14 +179,14 @@
                 "start": "2015",
                 "end": "2016",
                 "title": "Directeur du groupe de projets <i>in-Transportation interaction [iTi]</i>",
-                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème de l’interaction passager-véhicule, notamment dans le contexte de l’automobile autonome",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème de l'interaction passager-véhicule, notamment dans le contexte de l'automobile autonome",
                 "main": false
             },
             "WS squad": {
                 "start": "2011",
                 "end": "2014",
                 "title": "Directeur du groupe de projets <i>Wearable Senses</i>",
-                "comment": "Direction d’un groupe ayant des charges éducatives, de recherche et administrative autour du thème des textiles intelligents et des ‘technologies près du corps’",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème des textiles intelligents et des ‘technologies près du corps'",
                 "main": false
             },
             "dschool": {
@@ -191,60 +199,7 @@
             "Tsukuba-trip2013": {
                 "start": "2013",
                 "end": "2014",
-                "title": "Chercheur invité à l’École Doctorale des Sciences Humaines Généralisées, Université de Tsukuba, Japon",
-                "main": false
-            }
-        }
-    },
-    "kansei": {
-        "start": "2006",
-        "end": "none",
-        "order": 1,
-        "title": "Contribution à la communauté internationale sur l'étude du kansei",
-        "main": false,
-        "activities": {
-            "KEER-steering-coord": {
-                "order": 6,
-                "start": "2014",
-                "end": "none",
-                "title": "Coordinateur du Comité directoire du <a href='https://keer.org' target='_blank' title='keer.org' rel='noreferrer'>Kansei Engineering and Emotion Research (KEER)</a>",
-                "comment": "Ce comité organise les activités communes aux quatre sociétés de recherche sur le kansei (JSKE (Japon), TIK (Taiwan), MAKE (Malaisie), et EKG (Europe))",
-                "main": true
-            },
-            "IJAE": {
-                "order": 4,
-                "start": "2006",
-                "end": "none",
-                "title": "Membre du Comité Editorial de l’International Journal of Affective Engineering (IJAE)",
-                "main": false
-            },
-            "EKG": {
-                "order": 5,
-                "start": "2016",
-                "end": "2018",
-                "title": "Président et co-fondateur de l’European Kansei Group (EKG)",
-                "comment": "L’European Kansei Group vise à développer et promouvoir la recherche sur le kansei en Europe, à la fois un monde académique et un monde industriel",
-                "main": false
-            },
-            "KEER14": {
-                "order": 3,
-                "start": "2012",
-                "end": "2014",
-                "title": "Président du Comité Scientifique de la Conférence Internationale KEER 2014, Linköping, Suède",
-                "main": false
-            },
-            "KEER": {
-                "order": 2,
-                "start": "2009",
-                "end": "none",
-                "title": "Co-organisateur des conférences internationales KEER depuis 2010",
-                "main": false
-            },
-            "JSKE-advis": {
-                "order": 1,
-                "start": "2009",
-                "end": "none",
-                "title": "Conseiller de la Japanese Society of Kansei Engineering (JSKE)",
+                "title": "Chercheur invité à l'École Doctorale des Sciences Humaines Généralisées, Université de Tsukuba, Japon",
                 "main": false
             }
         }
