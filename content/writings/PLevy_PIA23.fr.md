@@ -4,12 +4,12 @@ title: "La diversité dans l'enseignement du design et des métiers d'art doit f
 layout: writing
 subsection: writing
 front: true
-date: 2022-05-20T13:38:26+02:00
+date: 2023-05-20T13:38:26+02:00
+authors: "Pierre Lévy"
 abstract: "Une réflexion sur l'enseignement du design et des métiers d'art, présent et à venir. Texte pour PIA 4 Diagnostic Culture et création en mutations (2CM) - Compétences et métiers d'avenir France 2030"
 frontphoto: "https://live.staticflickr.com/65535/52973013075_ba1a01105f_z.jpg"
 ---
 
-x
 *Une réflexion sur l’enseignement du design et des métiers d’art, écrite dans le cadre du PIA 4 Compétences et métiers d’avenir - Culture et création en mutations (2CM), dirigé Par Lucie Marinier*
 
 L'enseignement du design et des métiers d'art a significativement évolué ces dernières années. Si la création du DNMADE en est probablement le porte-drapeau, l'augmentation des thèses et des HDRs liées à la recherche en design, le développement de masters dans plusieurs institutions en sont d'autres éléments significatifs. L'évolution du public apprenant est aussi remarquable. Depuis la création du DNMADE, il semble par exemple y avoir une augmentation importante du nombre relatif d'étudiant.e.s venant du baccalauréat général par rapport au celui venant baccalauréat ST2A pourtant dédié à ces études. On note aussi l'accroissement statistiquement non-négligeable et sociologiquement bruyant des premiers de la classe (pour reprendre l'expression de Jean-Laurent Cassely), c'est-à-dire des diplômés de filières plus classiques, qui reprennent une formation dans un métiers d'art. Il est donc bon de réfléchir régulièrement sur ces évolutions et d'inviter l'ensemble des perspectives engagées de le faire.
@@ -44,5 +44,3 @@ Cela passe également par l'internationalisation des formations. L'ouverture cul
 Cela passe enfin par des parcours mutualisés de formation. Un apprenants en métiers d'art travaillant sur du métal et souhaitant recevoir une formation technique sur les différant métaux devrait pouvoir le faire là où le savoir technique est central, e.g., dans une école d'ingénieur. Et du fait que cette formation vient enrichir sa formation initiale, elle devrait être comptabilisée dans sa formation d'artisan, dans son école d’origine pour le diplôme qu’elle délivre. Inversement, un étudiant en ingénierie textile devrait pouvoir suivre une formation en art textile ou mode qui serait intégré dans sa formation technique. Cela implique un effort d’ouverture et de mutualisation des ressources de formation, au service de l’apprenant et de son développement professionnel, intellectuel et culturel.
 
 À un moment où l'effort d'une réindustrialisation doit se conjuguer avec des enjeux écologiques et des défis de vitalité culturelle, les métiers du savoir-faire ont le double défi de contribuer aux enjeux économiques, écologiques et culturels d'une part, et de revaloriser le savoir de la main et la connaissance technique et matérielle d'autre part. Là où l'éclatement de ces formations pourrait être considéré comme une faiblesse, autant dans leur structure administrative que dans leurs formes pédagogiques, je le soutiens comme une force potentielle entretenir et travailler. La pluralité des disciplines engagées dans ces pratiques, la pluralité des pratiques et de leur contexte de déploiement, et la complexité dans laquelle elles évoluent sont tous autant d'arguments pour revendiquer la multiplicité des formations et des formes de formations, et pour promouvoir une cohérence de cette multiplicité au travers de parcours riches verticalement (du CAP au doctorat) et horizontalement (entre formations artistiques et techniques). L'harmonisation est un danger pour les formations aux métiers d'arts et au design. C'est une intelligence collective entre les institutions, permettant la richesse d'une diversité cohérente et entrelacée, qui donnera toute la place aux formations aux métiers d'arts et du design, lesquelles joueront alors un rôle significatif dans les défis industriels, économiques, écologiques et culturels de notre temps.
-
-Pierre Lévy - 10 May 2023

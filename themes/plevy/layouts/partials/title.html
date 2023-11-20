@@ -1,8 +1,9 @@
 {{if not .IsHome }}<div class="absolute z-50 top-3 left-3"><a class="text-primary-text "
     href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
 {{ partial "international.html" . }}
-<div class="permanent case px-8">
+<div class="permanent case px-8  text-left items-start">
     <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
+    {{ if .Params.authors }}<p class="mt-3 italic">{{ .Params.authors }}, {{ dateFormat "02 Jan 2006" .Date }}</p>{{ end }}
 </div>
 {{ if .Params.updating }}<div class="permanent case p-8">
     <p class="italic text-epierrot">Currently updating</p>

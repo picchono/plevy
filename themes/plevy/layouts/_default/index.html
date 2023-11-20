@@ -19,9 +19,11 @@
 </div>
 {{ end }}
 <div class="permanent case px-6 lg:px-16 items-start">
-    <div><b class='revers'>{{ i18n "Recent-writings" }}</b></div>
-    {{ partial "front-writing.html" . }}
-    <p>&lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</p>
+    <div><b class='revers'>{{ i18n "Recent-writings" }}</b>
+    {{ range where .Site.Pages "Section" "writings" }}
+        {{ if eq .Params.front true }}<a href="{{ .Permalink }}">{{ .Title }}</a> · {{ end }}
+    {{ end }} 
+    &lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</div>
 </div>
 {{range sort .Params.blocs "order"}}
 <div class="permanent case px-6 lg:px-16">
