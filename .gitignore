@@ -1,0 +1,2 @@
+# Add below lines to exclude OS settings and caches
+.DS_Store
