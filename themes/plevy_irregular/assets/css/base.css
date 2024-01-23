@@ -557,11 +557,6 @@ input::placeholder {
     animation-fill-mode:forwards;
     animation-timing-function:ease-out;
 }
-
-html.dark .line::after {
-    background:linear-gradient(to bottom, rgba(10, 10, 10, 1) 0%, #32353a 75%, #32353a 100%);
-}
-
 .line:nth-child(1) {
     margin-left:0%;
 }

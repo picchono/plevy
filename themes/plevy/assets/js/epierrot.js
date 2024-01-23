@@ -10,11 +10,6 @@ function switchBurger() {
   }
 }
 
-/* dark-light switch */
-function darklight() {
-  document.body.classList.toggle("dark");
-}
-
 /* place menu at the top when phone for muuri */
 var doit;
 window.onresize = function(){
