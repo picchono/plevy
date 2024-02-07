@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "list-title.html" . }}
+    {{ $count := 0 }}
+    {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+    {{ if ne .Params.notListed true }}
+    {{ $count = add $count 1 }}
+    {{- partial "box.html" ( dict "context" . "cou" $count) -}}
+    {{ end }}{{ end }}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        switchBurger();
+    });
+</script>
+{{ end }}

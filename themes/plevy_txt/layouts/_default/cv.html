@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="cv" class="overflow-x-hidden lg:overflow-x-auto">
+   <main class="md:container lg:mx-auto bg-primary-bg lg:my-16 py-6 px-2 lg:p-14">
+      {{ with index .Site.Data.all .Site.Language.Lang }}
+      <h1 class="pt-6">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+      <div class="flex flex-col mt-0">
+         <h2 class="pt-16">{{ i18n "current-situation" }}</h2>
+         <div class="flex flex-col">{{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
+            <div class="flex flex-row mb-6">
+               <div class="w-1/6 pr-6">{{ i18n "Since" }} {{ .start }}</div>
+               <div class="w-5/6 pl-6">
+                  <div class="border-l-4 border-epierrot pl-3"><b>{{ .title }}</b>
+                     {{ if isset . "institution" }} - {{ .institution |safeHTML }}{{ if isset . "country" }},
+                     {{ .country |safeHTML }}{{end }}{{ end }}
+                     {{ if isset . "faculty" }}{{ .faculty |safeHTML }}{{end }}
+                     {{ if isset . "extra" }}<br />{{ .extra |safeHTML }}{{end }}
+                     {{ if isset . "description" }}<br />{{ .description |safeHTML }}{{ end }}
+                     {{ if isset . "associations" }}
+                     {{ range sort .associations "order" "desc" }}
+                     <div class="">{{ .title |safeHTML }}
+                        ({{ if eq .end "none" }}{{ i18n "since" }}
+                        {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }})</div>
+                     {{ end }}{{ end }}</div>
+                  {{ if isset . "activities" }}
+                  <div class="pt-4 leading-6 text-sm">
+                     {{ range sort .activities "order" "desc" }}
+                     <b class="vert text-sm leading-6">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
+                     {{ .start }}{{ else }}{{ .start }} -
+                     {{ .end }}{{ end }}){{ if isset . "comment" }} - <span
+                        class="text-sm italic">{{ .comment |safeHTML }}</span>{{ end }}
+                     {{ end }}
+                  </div>
+                  {{ end }}
+               </div>
+            </div>
+            {{ end }}{{ end }}
+         </div>
+      </div>
+      <div class="flex flex-col mt-0">
+         <h2 class="">{{ i18n "pastPro" }}</h2>
+         <div class="flex flex-col">{{ range sort .pro "start" "desc" }}{{ if ne .end "none" }}
+            <div class="flex flex-row mb-6">
+               <div class="w-1/6 pr-6">{{ if eq .start .end }}{{- .start -}}{{ else }}{{- .start }} - {{ .end -}}{{ end }}</div>
+               <div class="w-5/6 pl-6">
+                  <div class="border-l-4 border-epierrot pl-3"><b>{{ .title }}</b>
+                     {{ if isset . "institution" }} - {{ .institution |safeHTML }}{{ if isset . "country" }},
+                     {{ .country |safeHTML }}{{end }}{{ end }}
+                     {{ if isset . "description" }}<br />{{ .description |safeHTML }}{{ end }}
+                  </div>
+                  {{ if isset . "associations" }}<div class="mb-4">
+                     {{ range sort .associations "start" "desc" }}
+                     <div class="border-l-4 border-epierrot m-0 pl-3">{{ .title |safeHTML }}
+                        ({{ if eq .end "none" }}{{ i18n "since" }}
+                        {{ .start }}{{ else }}{{ .start }} -
+                        {{ .end }}{{ end }})</div>{{ if isset . "comment" }} <span
+                        class="text-sm italic">{{ .comment |safeHTML }}</span>{{ end }}
+                     {{ end }}</div>{{ end }}
+                  {{ if isset . "activities" }}
+                  <div class="leading-6 text-sm">
+                     {{ range sort .activities "start" "desc" }}
+                     <b class="vert text-sm">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "Since" }}
+                     {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                        class="text-sm italic">{{ .comment |safeHTML }}</span>{{ end }}
+                     {{ end }}
+                  </div>
+                  {{ end }}
+               </div>
+            </div>
+            {{ end }}{{ end }}
+         </div>
+      </div>
+      <div class="flex flex-col mt-0">
+         <h2 class="">{{ i18n "ParralPro" }}</h2>
+         <div class="flex flex-col">{{ range sort .proParallel "start" "desc" }}{{ if ne .end "none" }}
+            <div class="flex flex-row mb-6">
+               <div class="w-1/6 pr-6">{{ if eq .start .end }}{{- .start -}}{{ else }}{{- .start }} - {{ .end -}}{{ end }}</div>
+               <div class="w-5/6 pl-6">
+                  <div class="border-l-4 border-epierrot pl-3"><b>{{ .title }}</b>
+                     {{ if isset . "institution" }} - {{ .institution |safeHTML }}{{ if isset . "country" }},
+                     {{ .country |safeHTML }}{{end }}{{ end }}
+                     {{ if isset . "description" }}<br />{{ .description |safeHTML }}{{ end }}
+                  </div>
+                  {{ if isset . "associations" }}<div class="mb-4">
+                     {{ range sort .associations "start" "desc" }}
+                     <div class="border-l-4 border-epierrot m-0 pl-3">{{ .title |safeHTML }}
+                        ({{ if eq .end "none" }}{{ i18n "since" }}
+                        {{ .start }}{{ else }}{{ .start }} -
+                        {{ .end }}{{ end }})</div>{{ if isset . "comment" }} <span
+                        class="text-sm italic">{{ .comment |safeHTML }}</span>{{ end }}
+                     {{ end }}</div>{{ end }}
+                  {{ if isset . "activities" }}
+                  <div class="leading-6 text-sm">
+                     {{ range sort .activities "start" "desc" }}
+                     <b class="vert text-sm">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "Since" }}
+                     {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                        class="text-sm italic">{{ .comment |safeHTML }}</span>{{ end }}
+                     {{ end }}
+                  </div>
+                  {{ end }}
+               </div>
+            </div>
+            {{ end }}{{ end }}
+         </div>
+      </div>
+      <div class="flex flex-col mt-0">
+         <h2 class="">{{ i18n "education" }}</h2>
+         <div class="flex flex-row flex-wrap">
+            {{ range sort .studies "date" "desc" }}{{ if .main }}
+            <div class="w-1/6 pr-6">{{ .date }}</div>
+            <div class="w-5/6 pl-6"><b>{{ .title |safeHTML }}</b>{{ if isset . "place" }} -
+               {{ .place |safeHTML }} {{ end }}{{ if isset . "comment" }}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+            {{ end }}{{ end }}
+         </div>
+      </div>
+      <div class="flex flex-row mt-24">
+         <h2 class="w-1/6 p-0 pr-6 font-bold text-xl">{{ i18n "other-data" }}</h2>
+         <div class="w-5/6 pl-6"><div class="border-l-4 border-epierrot pl-3">
+            {{ $list := (where site.Pages "Section" "publications") }}
+            {{ $len := (len $list) }}
+            {{ i18n "publications" }} & {{ i18n "editions" }}&nbsp;&nbsp;<b>{{ $len }}</b><br/>
+            {{ .directiontheses.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directiontheses.list }}</b><br/>
+            {{ .jurysdoctoraux.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .jurysdoctoraux.list }}</b><br/>
+            <br/>
+            {{ i18n "web" }}&nbsp;&nbsp;<a href="{{ .identity.web.url }}" target="_blank"
+               rel="noreferrer"><b>{{ .identity.web.username }}</b></a><br/>
+            HAL&nbsp;&nbsp;<a href="https://hal.science/search/index/?q=*&authIdPerson_i={{ .identity.registration.hal }}" target="_blank" rel="noreferrer">{{ .identity.registration.hal }}</a><br/>
+            ORCID&nbsp;&nbsp;<a href="https://orcid.org/{{ .identity.registration.orcid }}" target="_blank" rel="noreferrer">{{ .identity.registration.orcid }}</a><br/>
+            Google scholar&nbsp;&nbsp;<a href="https://scholar.google.com/citations?user={{ .identity.registration.scholar }}" target="_blank" rel="noreferrer">{{ .identity.registration.scholar }}</a><br/>
+         </div>
+      </div>
+      </div></div>
+      {{ end }}
+   </main>
+</body>
+
+</html>

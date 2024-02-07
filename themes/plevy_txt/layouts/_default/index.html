@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+{{ if ne $langu "jp" }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+    <h1>{{ .identity.firstname }} {{ .identity.lastname }}</h1>
+    <div class="text-xs -my-0.5 text-epierrot pb-6">{{ .identity.title }} - HDR</div>
+{{ end }}
+{{ partial "international.html" . }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+    {{ range .pro }}{{ if .main }}
+    <div class="pt-3">{{ .title | safeHTML }}
+        {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
+    </div>
+    {{ if .extra }}<div class="pt-3">{{ .extra | safeHTML }}</div>{{ end }}
+    {{ end }}{{ end }}
+{{ end }}
+    <div><b class='revers'>{{ i18n "Recent-writings" }}</b>
+    {{ range where .Site.Pages "Section" "writings" }}
+        {{ if eq .Params.front true }}<a href="{{ .Permalink }}">{{ .Title }}</a> · {{ end }}
+    {{ end }} 
+    &lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</div>
+{{range sort .Params.blocs "order"}}
+    <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
+{{ end }}
+{{ else }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+    <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+    <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
+{{ end }}
+{{ partial "international.html" . }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+    {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
+    {{ if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
+{{ end }}
+{{ end }}
+<img src="" data-toset="{{ .Params.pict | absURL }}" data-ref="{{ .Params.pict | absURL }}"
+        alt="Pierre Lévy" class="imag object-cover w-full h-full" style="filter:grayscale(0.9);" />
+{{ with index .Site.Data.all .Site.Language.Lang }}
+    <p>{{ .identity.description | safeHTML }}</p>
+{{ end }}
+{{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+{{ with index .Site.Data.all .Site.Language.Lang }}
+    {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank"
+        class="inline-block mr-4  transition-all duration-700 ease-in-out" rel="noreferrer" data-tooltip="{{ .type }}"
+        aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon
+        "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
+{{ end }}
+{{ end }}

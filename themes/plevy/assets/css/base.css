@@ -1,12 +1,11 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
-
 }
 
 *,
 html,
 body {
-    font-size:18px;
+    font-size: 20px;
     font-stretch:100%;
     letter-spacing:0.01rem;
     line-height:1.7rem;
@@ -27,6 +26,7 @@ body {
     --color-secondary-text: #3c3a3a;
     --color-epierrot: #f8003f;
 }
+
 box {
     @apply transition-all duration-700 ease-in-out;
 }
@@ -384,15 +384,15 @@ h6 {
 }
 
 h1 {
-    @apply font-bold;
-    font-size:1.6rem;
+    @apply font-bold text-3xl mt-20 mb-10 -mx-0.5;
     line-height:3.5rem;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
 }
 
 h1 i {
-    font-size:1.5rem;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 h2 {
