@@ -1,12 +1,11 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
-
 }
 
 *,
 html,
 body {
-    font-size:18px;
+    font-size:20px;
     font-stretch:100%;
     letter-spacing:0.01rem;
     line-height:1.7rem;
@@ -45,10 +44,21 @@ p:last-child {
 }
 
 .revers {
-    @apply bg-primary-text text-primary-bg pb-1 pt-0.5 mr-2 rounded-sm lg:rounded transition-all duration-700 ease-in-out inline;
-    box-shadow:0.375rem 0 0 var(--color-primary-text), -0.375rem 0 0 var(--color-primary-text);
-    box-decoration-break:clone;
+    @apply font-bold;
 }
+
+.revers::before, .revers::after {
+    content: " / ";
+}
+
+a.revers {
+    @apply text-primary-text border-0;
+}
+
+a.revers:hover {
+    @apply text-epierrot;
+}
+
 
 .filterOption.revers {
     @apply my-1 mr-1 font-bold pt-1;
@@ -107,13 +117,13 @@ button:focus {
 }
 
 a {
-    @apply text-epierrot;
+    @apply text-primary-text border-b border-primary-text transition-all duration-500 ease-in-out;
     transition:color 500ms;
     font-weight:inherit;
 }
 
 a:hover {
-    @apply text-primary-text;
+    @apply text-epierrot border-epierrot;
     transition:color 500ms;
 }
 
@@ -384,8 +394,7 @@ h6 {
 }
 
 h1 {
-    @apply font-bold;
-    font-size:1.6rem;
+    @apply font-bold mt-20 mb-10 text-3xl;
     line-height:3.5rem;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;

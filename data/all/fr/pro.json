@@ -6,7 +6,7 @@
         "title": "Vice-président",
         "institution": "<a href='https://hesam.eu' target='_blank' rel='noreferrer' title='HESAM Universite'>HESAM Université</a>",
         "country": "France",
-        "main": true,
+        "main": false,
         "activities": {
             "Compagnons": {
                 "order": 1,

@@ -3,24 +3,22 @@
 {{ if ne $langu "jp" }}
 {{ with index .Site.Data.all .Site.Language.Lang }}
     <h1>{{ .identity.firstname }} {{ .identity.lastname }}</h1>
-    <div class="text-xs -my-0.5 text-epierrot pb-6">{{ .identity.title }} - HDR</div>
 {{ end }}
 {{ partial "international.html" . }}
 {{ with index .Site.Data.all .Site.Language.Lang }}
-    {{ range .pro }}{{ if .main }}
-    <div class="pt-3">{{ .title | safeHTML }}
-        {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
-    </div>
-    {{ if .extra }}<div class="pt-3">{{ .extra | safeHTML }}</div>{{ end }}
+<span class="revers">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</span>    
+{{ range .pro }}{{ if .main }}
+    {{ .title | safeHTML }}
+    {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
+    {{ if .extra }} & {{ .extra | safeHTML }}{{ end }}
     {{ end }}{{ end }}
 {{ end }}
-    <div><b class='revers'>{{ i18n "Recent-writings" }}</b>
+    <a class='revers' href="/writings/">{{ i18n "Recent-writings" }}</a>
     {{ range where .Site.Pages "Section" "writings" }}
         {{ if eq .Params.front true }}<a href="{{ .Permalink }}">{{ .Title }}</a> · {{ end }}
-    {{ end }} 
-    &lceil;<a href="/writings/"><b>{{ i18n "writings" }}</b></a>&rfloor;</div>
+    {{ end }}
 {{range sort .Params.blocs "order"}}
-    <p><b class='revers'>{{ .title }}</b> {{ .text |safeHTML }}</p>
+    <a class='revers' href="/{{ .lien }}/">{{ .title }}</a> {{ .text |safeHTML }}
 {{ end }}
 {{ else }}
 {{ with index .Site.Data.all .Site.Language.Lang }}
