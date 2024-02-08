@@ -3,7 +3,7 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}" class="overflow-x-hidden lg:overflow-x-auto max-w-screen-lg mx-auto">
+<body id="{{ .Params.bodyclass }}">
   <main class='w-full lg:w-auto'>
     {{- block "main" . }}{{- end }}
     {{ if or (eq .Params.layout "event") (eq .Params.layout "presentation") (eq .Params.layout "programme") (eq .Params.layout "project") (eq .Params.layout "publi") (eq .Params.layout "ressearch") (eq .Params.layout "teaching") }}

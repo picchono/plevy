@@ -37,9 +37,10 @@ blocs:
         lien: everything
     beyond:
         order: 6
-        title: Beyond
-        text:  'Other places worth checking'
+        title: and beyond
         lien: elsewhere
 link:
     cv: "/cv"
 ---
+**/ [Recent writings](/writings) /** aaa
+**/ [Researching](/research/) /** My main focus is the creation of a [Japanese philosophy-inspired design framework](/research/japanese_philosophy-inspired_design_framework/) to think further the relation between [design and appropriation](/research/design-appropriation/), contributing to [Transforming Practices](/research/transformingpractices)</a>.

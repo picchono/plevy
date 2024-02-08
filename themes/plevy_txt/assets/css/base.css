@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    @apply bg-primary-bg text-primary-text;
+    @apply bg-primary-bg text-primary-text overflow-x-hidden lg:overflow-x-auto max-w-2xl mx-auto;
 }
 
 body {
@@ -394,7 +394,7 @@ h6 {
 }
 
 h1 {
-    @apply font-bold mt-20 mb-10 text-3xl;
+    @apply font-bold mt-30 mb-6 text-4xl;
     line-height:3.5rem;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
