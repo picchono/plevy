@@ -1,9 +1,9 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
     <div class='it{{- int .cou }} {{ .context.Params.Subsection }} h-auto w-full m-4'>
         <a class="boxA text-primary-text transition-all duration-700 ease-in-out justify-center flex flex-col w-full p-4" href="{{ .context.Permalink }}">
-            <div class="w-full flex flex-col lg:flex-row">
+            <div class="w-full flex flex-col lg:flex-row pb-1">
                 <div class="w-0 lg:w-1/6">&nbsp;</div>
-                <h5 class="block w-full lg:w-5/6 font-bold text-base">{{- .context.Title |safeHTML -}}</h5>
+                <h5 class="block w-full lg:w-5/6 font-bold text-base">{{ if isset .context.Params "frontphoto" }}&nbsp;{{ end }}{{- .context.Title |safeHTML -}}</h5>
             </div>
             <div class="w-full flex flex-col lg:flex-row">
                 <div class="flex flex-col h-36 pr-3 justify-between w-full lg:w-1/6">
