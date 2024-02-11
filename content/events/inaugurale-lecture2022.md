@@ -51,7 +51,7 @@ video:
 
 *Inaugural lecture of the Jean Prouvé Design Chair, May 18, 2022*
 
-<p>Thank you Ruedi for this warm introduction. Your mentorship of the Chair can only be a good omen for what it can and will become.
+Thank you Ruedi for this warm introduction. Your mentorship of the Chair can only be a good omen for what it can and will become.
 
 Dear General Administrator, dear Marc, dear Jean-Claude, dear colleagues, dear friends, dear family, dear listeners present here or somewhere online, it is a great pleasure to be able to start this inaugural lecture today at CNAM.
 
