@@ -1,6 +1,6 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
-    --st-dropshadow: 14px 14px 15px #00000044;
+    --st-dropshadow: 7px 7px 8px #00000044;
 }
 
 *,
@@ -340,7 +340,8 @@ a.titlePL:hover,
 a.collab:hover,
 a.doclinkButton:hover,
 a.boxA:hover {
-    @apply bg-primary-bg shadow-lg;
+    @apply bg-primary-bg;
+    filter: drop-shadow(var(--st-dropshadow));
 }
 
 .mainMenu.active,

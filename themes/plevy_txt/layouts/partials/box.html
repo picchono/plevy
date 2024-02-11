@@ -31,7 +31,7 @@
                 <div class="w-full lg:w-5/6 flex flex-col lg:flex-row">
                     {{ if isset .context.Params "frontphoto" }}
                         <div class="w-full lg:w-1/4 py-4 lg:py-0">
-                            <div class="blend-plevy rounded rounded-br h-36"><img src="" data-toset="{{ .context.Params.frontphoto | absURL }}" class="imag imgBox object-cover rounded rounded-br w-full h-36" alt="{{ .context.Params.title }}" width="500" height="240"/></div>
+                            <div class="blend-plevy h-36"><img src="" data-toset="{{ .context.Params.frontphoto | absURL }}" class="imag imgBox object-cover rounded w-full h-36" alt="{{ .context.Params.title }}" width="500" height="240"/></div>
                         </div>
                         <div class="w-full lg:w-3/4 lg:pl-6">
                         {{ else }}
