@@ -1,52 +1,21 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-{{ if ne $langu "jp" }}
-{{ with index .Site.Data.all .Site.Language.Lang }}
-    <h1>{{ .identity.firstname }} {{ .identity.lastname }}</h1>
-{{ end }}
-{{ with index .Site.Data.all .Site.Language.Lang }}
-<h2 class="inline text-base"><a class='revers' href="/pierre/">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</a></h2>    
-{{ range .pro }}{{ if .main }}
-    {{ .title | safeHTML }}
-    {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
-    {{ if .extra }} & {{ .extra | safeHTML }}{{ end }}
-    {{ end }}{{ end }}
-{{ end }}
-<p>&nbsp;</p>
-    <h2 class="inline text-base"><a class='revers' href="/writings/">{{ i18n "Recent-writings" }}</a></h2>
-    {{ range where .Site.Pages "Section" "writings" }}
-        {{ if eq .Params.front true }}<a href="{{ .Permalink }}">{{ .Title }}</a> · {{ end }}
-    {{ end }}
-{{range sort .Params.blocs "order"}}
-    <h2 class="inline text-base"><a class='revers' href="/{{ .lien }}/">{{ .title }}</a></h2> {{ .text |safeHTML }}
-{{ end }}
-{{ else }}
-{{ with index .Site.Data.all .Site.Language.Lang }}
-    <h1 class="">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
-    <p class="text-xs mb-4">{{ .identity.jp |safeHTML }}</p>
-{{ end }}
-{{ partial "international.html" . }}
-{{ with index .Site.Data.all .Site.Language.Lang }}
-    {{ range .pro }}{{ if .main }}{{ .institution |safeHTML }}
-    {{ if .extra }}<br />{{ .extra | safeHTML }}{{ end }}{{ end }}{{ end }}
-{{ end }}
-{{ end }}
-
-<p>&nbsp;</p>
-{{ .Content }}
-
-<img src="" data-toset="{{ .Params.pict | absURL }}" data-ref="{{ .Params.pict | absURL }}"
-        alt="Pierre Lévy" class="imag object-cover w-full h-full" style="filter:grayscale(0.9);" />
-{{ with index .Site.Data.all .Site.Language.Lang }}
-    <p>{{ .identity.description | safeHTML }}</p>
-{{ end }}
-{{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
-{{ with index .Site.Data.all .Site.Language.Lang }}
-    {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank"
-        class="inline-block mr-4  transition-all duration-700 ease-in-out" rel="noreferrer" data-tooltip="{{ .type }}"
-        aria-label="This links to {{ .type }}">{{- partial "icons.html" (dict "ico" .icon
-        "hei" 1 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
-{{ end }}
-{{ partial "international.html" . }}
+<div class="w-full overflow-hidden flex flex-col md:flex-row min-h-screen">
+    <div class="w-1/4 pl-5 pr-20 self-end">&nbsp;</div>
+    <div class="max-w-3xl w-full px-5">
+        {{ partial "international.html" . }}
+        {{ with index .Site.Data.all .Site.Language.Lang }}
+            <h1>{{ .identity.firstname }} {{ .identity.lastname }}</h1>
+        <h2 class="inline text-base"><a href="/pierre/" class="border-0">/ {{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR /</a> {{ if eq $langu "jp" }}{{ .identity.jp |safeHTML }} / {{ end }}</h2>&nbsp;    
+        {{ range .pro }}{{ if .main }}
+            {{ .title | safeHTML }}
+            {{ i18n "at" }} {{ .institution |safeHTML }}, {{ .country |safeHTML }}
+            {{ if .extra }} & {{ .extra | safeHTML }}{{ end }}
+        {{ end }}{{ end }}
+        {{ end }}      
+        <div class="intro mt-6">{{ .Content }}</div>
+    </div>
+    <div class="w-1/4 pl-20 pr-5">&nbsp;</div>
+</div>
 {{ end }}
 

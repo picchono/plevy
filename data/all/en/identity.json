@@ -16,29 +16,36 @@
 		"url": "https://plevy.fr"
 	},
 	"social": {
-		"vcard": {
+		"cv": {
 			"order": 1,
-			"type": "vCard",
+			"type": "Curriculum vitae",
+			"username": "Pierre Levy",
+			"url": "../cv/",
+			"icon": "cv"
+		},
+		"photo": {
+			"order": 2,
+			"type": "PHoto",
 			"username": "PLevy",
-			"url": "/PLevy_contact.vcf",
-			"icon": "address-card"
+			"url": "/PLevy_front22.webp",
+			"icon": "photo"
 		},
 		"linkedin": {
-			"order": 2,
+			"order": 3,
 			"type": "linkedIn",
 			"username": "levypier",
 			"url": "https://www.linkedin.com/in/levypier",
 			"icon": "linkedin"
 		},
 		"researchgate": {
-			"order": 3,
+			"order": 34,
 			"type": "researchgate",
 			"username": "Pierre-Levy-4",
 			"url": "https://www.researchgate.net/profile/Pierre-Levy-4",
 			"icon": "researchgate"
 		},
 		"youtube": {
-			"order": 4,
+			"order": 5,
 			"type": "youtube",
 			"username": "pierrelevy7915",
 			"url": "https://www.youtube.com/channel/UCm6PefM2jvYGCCRnO9KaWsw",

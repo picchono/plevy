@@ -264,4 +264,15 @@ window.addEventListener('scroll', function () {
   if (muuCheck) muugrid.layout(true);
 });
 
+//open external link in new tab
+function externalLinks() {
+  for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+    var b = c[a];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") && (b.rel = "noreferrer")
+  }
+}
+;
+
+externalLinks();
+
 showPic();

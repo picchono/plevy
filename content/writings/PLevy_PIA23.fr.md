@@ -6,11 +6,9 @@ subsection: writing
 front: true
 date: 2023-05-20T13:38:26+02:00
 authors: "Pierre Lévy"
-abstract: "Une réflexion sur l'enseignement du design et des métiers d'art, présent et à venir. Texte pour PIA 4 Diagnostic Culture et création en mutations (2CM) - Compétences et métiers d'avenir France 2030"
+abstract: "Une réflexion sur l’enseignement du design et des métiers d’art, présent et à venir, écrite dans le cadre du PIA 4 Diagnostic Culture et création en mutations (2CM) - Compétences et métiers d'avenir France 2030, dirigé par Lucie Marinier."
 frontphoto: "https://live.staticflickr.com/65535/52973013075_ba1a01105f_z.jpg"
 ---
-
-*Une réflexion sur l’enseignement du design et des métiers d’art, écrite dans le cadre du PIA 4 Compétences et métiers d’avenir - Culture et création en mutations (2CM), dirigé Par Lucie Marinier*
 
 L'enseignement du design et des métiers d'art a significativement évolué ces dernières années. Si la création du DNMADE en est probablement le porte-drapeau, l'augmentation des thèses et des HDRs liées à la recherche en design, le développement de masters dans plusieurs institutions en sont d'autres éléments significatifs. L'évolution du public apprenant est aussi remarquable. Depuis la création du DNMADE, il semble par exemple y avoir une augmentation importante du nombre relatif d'étudiant.e.s venant du baccalauréat général par rapport au celui venant baccalauréat ST2A pourtant dédié à ces études. On note aussi l'accroissement statistiquement non-négligeable et sociologiquement bruyant des premiers de la classe (pour reprendre l'expression de Jean-Laurent Cassely), c'est-à-dire des diplômés de filières plus classiques, qui reprennent une formation dans un métiers d'art. Il est donc bon de réfléchir régulièrement sur ces évolutions et d'inviter l'ensemble des perspectives engagées de le faire.
 

@@ -1,4 +1,19 @@
 {{ define "main" }}
-    {{ partial "title.html" . }}
-    <div class="permanent case lg:h-216 px-32">{{ .Content }}</div>
+{{ partial "title.html" . }}
+<div class="w-full overflow-hidden flex flex-col md:flex-row">
+    <div class="w-1/4 pl-5 pr-20 self-end">&nbsp;</div>
+    <div class="max-w-3xl w-full px-5">
+        {{ if .Content}}{{ .Content }}{{ end }}
+        {{ with index .Site.Data.all .Site.Language.Lang }}
+        <div class="social flex flex-row justify-start items-center w-full my-10">
+        {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank"
+            class="inline-block p-2 mr-4" rel="noreferrer">{{- partial "icons.html" (dict "ico" .icon
+            "hei" 0.8 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+    <div class="w-1/4 pl-20 pr-5">&nbsp;</div>
+</div>
+
+{{ partial "footer.html" . }}
 {{ end }}

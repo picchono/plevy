@@ -2,7 +2,7 @@
 slug: design-apocalypse-manifesto
 title: "Design apocalypse, a manifesto"
 projecttype: general
-layout: project
+layout: single
 subsection: project
 projecttype: general
 institution:

@@ -1,5 +1,6 @@
 :root {
     @apply font-sans text-primary-text leading-6 box-border;
+    --st-dropshadow: 14px 14px 15px #00000044;
 }
 
 *,
@@ -16,7 +17,7 @@ body {
 }
 
 body {
-    @apply bg-primary-bg text-primary-text overflow-x-hidden lg:overflow-x-auto max-w-2xl mx-auto;
+    @apply bg-primary-bg text-primary-text overflow-x-hidden lg:overflow-x-auto ;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
     --color-primary-text: #1c1c1c;
     --color-secondary-text: #3c3a3a;
     --color-epierrot: #f8003f;
+    background-image: linear-gradient(to bottom right,var(--tw-gradient-stops));
+    --tw-gradient-from: #fff;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+    --tw-gradient-to: #f5f5f4;
 }
 box {
     @apply transition-all duration-700 ease-in-out;
@@ -35,30 +40,26 @@ b i {
 }
 
 main {
-    overflow-y:auto;
-    overflow-x:hidden;
+    @apply overflow-x-hidden overflow-y-auto;
 }
 
 p:last-child {
     @apply mb-0;
 }
 
-.revers {
-    @apply font-bold;
+a {
+    @apply text-primary-text border-b border-primary-text transition-all duration-200 ease-in-out;
+    font-weight:inherit;
+    font-size:inherit;
 }
 
-.revers::before, .revers::after {
-    content: " / ";
+a:hover {
+    @apply text-primary-bg bg-primary-text;
 }
 
-a.revers {
-    @apply text-primary-text border-0;
+strong>a {
+    @apply border-0;
 }
-
-a.revers:hover {
-    @apply text-epierrot;
-}
-
 
 .filterOption.revers {
     @apply my-1 mr-1 font-bold pt-1;
@@ -114,17 +115,6 @@ button:focus {
 
 ::selection {
     @apply bg-primary-text text-primary-bg;
-}
-
-a {
-    @apply text-primary-text border-b border-primary-text transition-all duration-500 ease-in-out;
-    transition:color 500ms;
-    font-weight:inherit;
-}
-
-a:hover {
-    @apply text-epierrot border-epierrot;
-    transition:color 500ms;
 }
 
 sup {
@@ -265,12 +255,12 @@ footer svg {
 
 
 img.imgBox {
-    filter:grayscale(0.8) brightness(1.1);
-    transition:all 1s;
+    filter:grayscale(1) brightness(1) saturate(2) contrast(2) drop-shadow(var(--st-dropshadow));
+    transition:all 500ms ease-in-out;
 }
 
 a:hover img.imgBox {
-    filter:grayscale(0) brightness(1);
+    filter:grayscale(0) brightness(1) saturate(1) contrast(1);
 }
 
 a.gridbox p {
@@ -320,10 +310,9 @@ a:hover .titlefront {
 .boxproject:hover .boxcontent {
     opacity:0;
     filter:alpha(opacity=0);
-    /* For IE */
 }
 
-/* reverse a coloring */
+/* small links */
 #home .frontPosts a,
 #Research a,
 .publili a,
@@ -332,9 +321,11 @@ a.cc svg,
 a.hugo svg,
 .mainMenu,
 .submenu div,
-a.titlePL {
-    @apply text-primary-text;
-    transition:color 1s;
+a.titlePL,
+a.collab,
+a.doclinkButton,
+a.boxA  {
+    @apply text-primary-text border-none rounded transition-all duration-700 ease-in-out;
 }
 
 #home .frontPosts a:hover,
@@ -345,8 +336,11 @@ a.cc:hover svg,
 a.hugo:hover svg,
 .mainMenu:hover,
 .submenu div:hover,
-a.titlePL:hover {
-    @apply text-epierrot;
+a.titlePL:hover,
+a.collab:hover,
+a.doclinkButton:hover,
+a.boxA:hover {
+    @apply bg-primary-bg shadow-lg;
 }
 
 .mainMenu.active,
@@ -376,10 +370,6 @@ strong {
 
 i, em {
     @apply italic;
-    font-size: inherit;
-}
-
-a {
     font-size: inherit;
 }
 
@@ -693,14 +683,6 @@ a.doclinkButton span.doclinkIcon {
 
 a.doclinkButton span.doclinkText {
     @apply inline-block py-3 pr-5 pl-0.5 rounded-r transition-all duration-700 ease-in-out;
-}
-
-a.doclinkButton:hover span.doclinkIcon {
-    @apply bg-secondary-bg text-primary-text;
-}
-
-a.doclinkButton:hover span.doclinkText {
-    @apply bg-secondary-bg text-primary-text;
 }
 
 .backButton {
