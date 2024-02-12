@@ -1,7 +1,7 @@
 ---
 slug: an-approach-on-functional-analysis-in-developing-guideline-for-designing-service-embedded-product
 title: "An Approach on Functional Analysis in Developing Guideline for Designing Service-embedded Product"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 institution:

@@ -1,7 +1,7 @@
 ---
 slug: holism-and-kansei-design-kansei-beyond-borders
 title: "Holism and kansei design, kansei beyond borders"
-layout: publi
+layout: single
 publitype: presentation
 subsection: lecture
 kansei: true

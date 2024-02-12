@@ -2,7 +2,7 @@
 slug: beaute-du-motif-japonais
 title: The beauty of the Japanese pattern
 tags: ['japanese', 'Japan', 'pattern', 'kamon', 'Boulle']
-layout: publi
+layout: single
 publitype: presentation
 subsection: lecture
 jpphilo: true

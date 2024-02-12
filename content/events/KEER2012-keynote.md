@@ -2,7 +2,7 @@
 slug: the-multi-disciplinary-nature-of-kansei-research-an-historical-approach
 title: "The multi-disciplinary nature of kansei research: an historical approach"
 tags: ['kansei', 'interdisciplinarity']
-layout: publi
+layout: single
 publitype: keynote
 kansei: true
 researchpage: true

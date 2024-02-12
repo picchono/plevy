@@ -1,7 +1,7 @@
 ---
 slug: perception-theories-and-kansei-design
 title: Perception Theories and Kansei Design
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 kansei: true

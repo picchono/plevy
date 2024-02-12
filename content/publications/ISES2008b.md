@@ -1,7 +1,7 @@
 ---
 slug: kansei-physiological-measurements-and-constructivist-psychological-explorations-for-approaching-users-subjective-experience-during-and-after-the-product-use
 title: "Kansei-Physiological Measurements and Constructivist, Psychological Explorations for Approaching User’s Subjective Experience during and after the Product Use"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 institution:

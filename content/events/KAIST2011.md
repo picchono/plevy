@@ -1,7 +1,7 @@
 ---
 slug: the-origin-of-experience
 title: "The origin of experience"
-layout: publi
+layout: single
 publitype: presentation
 subsection: lecture
 tags: ['experience', 'KAIST']

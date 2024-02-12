@@ -1,7 +1,7 @@
 ---
 slug: reinventing-the-steering-wheel
 title: Reinventing the (steering) wheel, A kansei design approach for novel driving experience
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 kansei: true

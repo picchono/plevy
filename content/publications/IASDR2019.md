@@ -1,7 +1,7 @@
 ---
 slug: designing-for-the-everyday-through-thusness-and-irregularity
 title: Designing for the everyday through thusness and irregularity
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 main: true

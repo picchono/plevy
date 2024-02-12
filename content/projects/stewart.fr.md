@@ -53,11 +53,12 @@ video:
         speaker: "Felix Ross"
 ---
 
-<p>Stewart has received:</p>
-<ul><li>the Core77 award for best interaction design student work</li>
-<li>the Golden A’ design award in engineering and technical design</li></ul>
-<p>Stewart is a tactile interface designed for a fully autonomous car. Self-driving cars offer obvious benefits such as faster travel and enhanced safety. However, they also eliminate a sense of freedom, expression, and control while driving.</p>
-<p>Stewart’s objective is to accommodate a healthy relation between man and machine, to be achieved by an intuitive and expressive form of interaction.</p>
-<p>Stewart provides you with constant updates about the car’s behaviour and its intentions. If you don’t agree on the car’s next course of action, you can manipulate Stewart to change this. Stewart will learn from you as you can learn from Stewart, hopefully resulting in a mutually trustful relation.</p>
-<p>Interaction through Stewart will bring about a haptic discussion about what the car’s next move will be. Who will win this discussion? Who knows best?</p>
-<p>Stewart is on: core77 | Design News | BBC | Creative Applications Network | and many other places…</p>
+Stewart has received:
+- the Core77 award for best interaction design student work
+- the Golden A’ design award in engineering and technical design
+
+Stewart is a tactile interface designed for a fully autonomous car. Self-driving cars offer obvious benefits such as faster travel and enhanced safety. However, they also eliminate a sense of freedom, expression, and control while driving.  
+Stewart’s objective is to accommodate a healthy relation between man and machine, to be achieved by an intuitive and expressive form of interaction.  
+Stewart provides you with constant updates about the car’s behaviour and its intentions. If you don’t agree on the car’s next course of action, you can manipulate Stewart to change this. Stewart will learn from you as you can learn from Stewart, hopefully resulting in a mutually trustful relation.  
+Interaction through Stewart will bring about a haptic discussion about what the car’s next move will be. Who will win this discussion? Who knows best?  
+Stewart is on: core77 | Design News | BBC | Creative Applications Network | and many other places…

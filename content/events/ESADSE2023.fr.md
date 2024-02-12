@@ -1,7 +1,7 @@
 ---
 slug: irregularite_une_opportunite_societale
 title: "L'irrégularité, une opportunité sociétale"
-layout: publi
+layout: single
 publitype: presentation
 subsection: lecture
 tags: ['ESADSE', 'irrégularité', 'société', 'appropriation']

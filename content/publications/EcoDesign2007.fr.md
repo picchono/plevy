@@ -1,7 +1,7 @@
 ---
 slug: interdisciplinary-design-method-for-ecodesign-introducing-kansei-research-for-design-to-ecodesign
 title: "Interdisciplinary Design Method for EcoDesign, Introducing Kansei research for design to EcoDesign"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 institution:

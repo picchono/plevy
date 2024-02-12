@@ -1,7 +1,7 @@
 ---
 slug: development-of-competences-for-service-design
 title: "Development of Competences for Service Design"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 institution:

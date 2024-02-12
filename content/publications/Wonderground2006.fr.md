@@ -1,7 +1,7 @@
 ---
 slug: towards-a-definition-of-kansei
 title: "Towards a definition of Kansei"
-layout: publi
+layout: single
 kansei: true
 researchpage: true
 research: 

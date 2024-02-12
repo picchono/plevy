@@ -1,7 +1,7 @@
 ---
 slug: designing-for-transforming-practices-maps-and-journeys
 title: "Designing for Transforming Practices: Maps and Journeys"
-layout: publi
+layout: single
 publitype: book
 subsection: book
 transformpractices: true

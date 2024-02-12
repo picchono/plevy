@@ -1,7 +1,7 @@
 ---
 slug: exploring-the-challenge-of-designing-rituals
 title: Exploring the challenge of designing rituals
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 everyday: true

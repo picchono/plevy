@@ -1,7 +1,7 @@
 ---
 slug: what-matters-for-ritual-visualization-towards-a-design-tool-for-the-description-and-the-composition-of-rituals
 title: "What matters for ritual visualization, towards a design tool for the description and the composition of rituals"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 everyday: true

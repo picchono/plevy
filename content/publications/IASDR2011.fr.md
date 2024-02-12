@@ -1,7 +1,7 @@
 ---
 slug: ohlala-exploring-the-relation-between-content-completeness-and-emotional-experience
 title: "Ohlala: Exploring the Relation between Content Completeness and Emotional Experience"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 institution:

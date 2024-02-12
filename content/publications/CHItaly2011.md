@@ -1,7 +1,7 @@
 ---
 slug: luciole-lighting-up-the-design-process
 title: "Luciole, lighting up the design process"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 perceiving-the-invisible: true

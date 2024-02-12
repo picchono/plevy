@@ -1,7 +1,7 @@
 ---
 slug: kansei-studies-description-and-mapping-through-kansei-studies-keywords
 title: "Kansei Studies Description and Mapping through Kansei Studies Keywords"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 institution:

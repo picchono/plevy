@@ -1,7 +1,7 @@
 ---
 slug: users-appreciation-of-engagement-in-service-design-the-case-of-food-service-design
 title: "User’s appreciation of engagement in service design: The case of food service design"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 institution:

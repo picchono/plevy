@@ -23,4 +23,4 @@ video:
         speaker: "Kevin N. Andersen"
 ---
 
-<p>The prototype was inspired by the moment of perceptual crossing that occurs when you meet a stray cat in the street, and a moment of anticipation makes time stand still, as you and the cat try to figure each other out.<br/>Using a single sheet of folded paper and embedding it with motors and custom-built touch-capacitive sensors, an object which breathes and responds to the presence of human touch was designed, creating the perception that the Kinetic Fold is alive.</p>
+The prototype was inspired by the moment of perceptual crossing that occurs when you meet a stray cat in the street, and a moment of anticipation makes time stand still, as you and the cat try to figure each other out.<br/>Using a single sheet of folded paper and embedding it with motors and custom-built touch-capacitive sensors, an object which breathes and responds to the presence of human touch was designed, creating the perception that the Kinetic Fold is alive.

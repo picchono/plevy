@@ -2,7 +2,7 @@
 slug: direct-interaction-design
 title: "Direct interaction design"
 tags: ['interaction', 'musashino-AU']
-layout: publi
+layout: single
 publitype: presentation
 subsection: lecture
 institution:

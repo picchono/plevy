@@ -1,7 +1,7 @@
 ---
 slug: prospective-psychophysiological-approach-for-kansei-design-knowledge-sharing-between-psychophysiology-and-design
 title: "Prospective psychophysiological approach for Kansei design: knowledge sharing between psychophysiology and design"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 kansei: true

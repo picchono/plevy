@@ -1,7 +1,7 @@
 ---
 slug: ProVi-a-transforming-vision-emerging-from-reflective-practice
 title: "ProVi – a transforming vision emerging from reflective practice"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 main: true

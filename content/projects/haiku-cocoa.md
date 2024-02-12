@@ -1,7 +1,7 @@
 ---
 slug: haiku-cocoa
 title: "Barely out of bed"
-layout: simple
+layout: single
 projecttype: general
 everyday: true
 researchpage: true
@@ -13,9 +13,14 @@ frontphoto: "https://live.staticflickr.com/65535/50588234511_901c2a5e0e.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/50588234511_901c2a5e0e_q.jpg"
 ---
 
-<div class="flex flex-col justify-between h-full w-1/2 md:w-full">
-    <div class="h-0"></div>
-    <div class="my-44"><p>床を抜け<br/>匙にて点てる<br/>ココアの茶</p></div>
-    <div><p class="text-sm">Barely out of bed, &middot; performing at the spoon &middot; the brown of the hot chocolate</p>
-        <p>Lévy (レヴィ)</p></div>
-</div>
+床を抜け  
+匙にて点てる  
+ココアの茶
+
+&nbsp;
+
+&nbsp;
+
+
+Barely out of bed, &middot; performing at the spoon &middot; the brown of the hot chocolate  
+*- Lévy (レヴィ) -*

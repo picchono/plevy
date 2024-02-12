@@ -7,7 +7,7 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2020-08-30T17:03:37+02:00
-layout: publi
+layout: single
 main: true
 publitype: conference
 subsection: conference

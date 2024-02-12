@@ -1,7 +1,7 @@
 ---
 slug: matter-of-transformation-designing-an-alternative-tomorrow-inspired-by-phenomenology
 title: "Matter of transformation, designing an alternative tomorrow inspired by phenomenology"
-layout: publi
+layout: single
 publitype: journal
 subsection: journal
 transformpractices: true

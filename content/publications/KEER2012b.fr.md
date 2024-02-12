@@ -1,7 +1,7 @@
 ---
 slug: developing-a-design-approach-exploring-resistance-and-ambiguity
 title: "Developing a design approach, exploring resistance and ambiguity"
-layout: publi
+layout: single
 publitype: conference
 subsection: conference
 kansei: true

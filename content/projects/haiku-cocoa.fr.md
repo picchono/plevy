@@ -1,7 +1,7 @@
 ---
 slug: haiku-cocoa
 title: "À peine hors du lit"
-layout: simple
+layout: single
 subsection: project
 projecttype: general
 everyday: true
@@ -13,9 +13,15 @@ abstract: "布団抜け匙にて点てるココアの茶"
 frontphoto: "https://live.staticflickr.com/65535/50588234511_901c2a5e0e.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/50588234511_901c2a5e0e_q.jpg"
 ---
-<div class="flex flex-col justify-between h-full w-1/2 md:w-full">
-    <div class="h-0"></div>
-    <div class="my-44"><p>床を抜け<br/>匙にて点てる<br/>ココアの茶</p></div>
-    <div><p class="text-sm">À peine hors du lit, &middot; la performance à la cuillère &middot; du marron du chocolat chaud</p>
-        <p>Lévy (レヴィ)</p></div>
-</div>
+
+床を抜け  
+匙にて点てる  
+ココアの茶
+
+&nbsp;
+
+&nbsp;
+
+
+À peine hors du lit, &middot; la performance à la cuillère &middot; du marron du chocolat chaud  
+*- Lévy (レヴィ) -*

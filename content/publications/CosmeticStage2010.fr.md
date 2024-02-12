@@ -1,7 +1,7 @@
 ---
 slug: kansei-science-and-kansei-value-creation-through-kansei-behavioral and Brain Sciences
 title: "感性価値の高い化粧品開発にむけた手法と考え方感性認知脳科学的視点から考える感性価値創造"
-layout: publi
+layout: single
 publitype: journal
 subsection: journal
 kansei: true

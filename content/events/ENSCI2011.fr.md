@@ -1,7 +1,7 @@
 ---
 slug: kansei-et-kansei-design
 title: "Kansei et kansei design"
-layout: publi
+layout: single
 publitype: presentation
 subsection: lecture
 tags: ['ENSCI', 'kansei', 'design_kansei', 'ingénierie_kansei']
