@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <div class="permanent case navevery bg-primary-bg h-auto lg:h-216">
+    <div class="navevery bg-primary-bg h-auto lg:h-216">
         {{ partial "list-menutop.html" . -}}
         <div id="target"
             class="hidden lg:flex flex-row lg:flex-col flex-wrap w-full py-4 lg:pt-0 lg:pb-10 px-8 lg:px-0 bg-primary-bg lg:bg-transparent border-b lg:border-0 border-primary-text overflow-y-scroll">
@@ -26,7 +26,7 @@
     <div class="case">
         <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
     </div>
-    {{if .Params.updating }}<div class="permanent case large lg:w-auto"><p class="italic text-epierrot">Currently updating</p></div>{{ end }}
+    {{if .Params.updating }}<div class="large lg:w-auto"><p class="italic text-epierrot">Currently updating</p></div>{{ end }}
     <div class="muugrid publili">
     {{ $count := 0 }}
     {{ range .Site.Pages }}{{ if ne .Params.notEverything true }}{{ if ne .Page.Type "tags" }}
@@ -34,11 +34,5 @@
     {{ partial "box.html" ( dict "context" . "cou" $count "everyt" true) -}}
     {{ end }}{{ end }}{{ end }}
     </div>
-    {{ $muu_js := resources.Get "js/muu.js" | minify }}
-    <script defer src="{{ $muu_js.Permalink }}"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        switchBurger();
-    });
 </script>
 {{ end }}

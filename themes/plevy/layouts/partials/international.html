@@ -1,34 +1,39 @@
-<div class="permanent case flex flex-col justify-evenly">
-    <div class="flex flex-row justify-center items-center w-full">
-        {{ if .IsTranslated }}
+<div class="flex flex-row justify-start items-start w-full py-3">
+    {{ if .IsTranslated }}
         <div id="languageMode" class='flex flex-row'>
-            <div class="inline font-bold">{{ .Language.LanguageName }}</div>
-            {{ range .Translations }} <div class="inline">&nbsp;|&nbsp;<a href="{{ .Permalink }}"
-                title="{{ i18n .Language.LanguageName }}" rel="noreferrer">{{ .Language.LanguageName }}</a></div>{{ end }}
+            <div class="inline text-sm">
+                <b>{{ .Language.LanguageName }}</b>
+                {{ range .Translations }}
+                    |
+                    <a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer">{{ .Language.LanguageName }}</a>
+                {{ end }}
+            </div>
         </div>
-        {{ end }}
-    </div>
-    {{ if or (eq .Params.institution "none") (.Params.institution) }}
-    <div><a href="{{ .Params.institution.web }}" title="{{ .Params.institutiontnam }}" rel="noreferrer" target="_blank"
-            class="inline-block mr-2 align-bottom pb-1">{{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" 0.8
-            "colo" "var(--color-primary-text)") -}}</a><span
-            class="inline-block mr-1 text-sm align-bottom pb-px">|</span><span
-            class="inline-block pb-px text-xs place-self-end align-bottom">{{ .Date | time.Format "2 Jan 2006" }}</span>
-    </div>
     {{ end }}
-    <div class="flex flex-row justify-center items-center py-3">
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-            title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" rel="noreferrer"
-            data-tooltip="Creative Commons" class="flex flex-row items-center w-full text-primary-text">
-            {{- partial "icons.html" (dict "ico" "cc" "hei" 1 "colo" "var(--color-primary-text)" ) -}}</a>
-        <a href="https://github.com/picchono/plevy" target="_blank" title="Powered by Github" rel="noreferrer"
-            class="pl-2 inline-block text-primary-text" data-tooltip="Powered by Github"
-            aria-label="This links to Github">
-            {{- partial "icons.html" (dict "ico" "github" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
-        </a>
-        <a href="https://gohugo.io/" target="_blank" title="Made with Hugo" rel="noreferrer"
-            class="pl-2 inline-block text-primary-text" data-tooltip="Made with Hugo" aria-label="This links to Hugo">
-            {{- partial "icons.html" (dict "ico" "hugo" "hei" 1 "colo" "var(--color-primary-text)") -}}</a>
-        </a>
-    </div>
 </div>
+<div class="block w-full text-red-700 font-bold">Site under maintenance</div>
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({element: "#search", showSubResults: true});
+    });
+</script>
+{{ if false }}
+    {{ if or (eq .Params.institution "none") (.Params.institution) }}
+        <div>
+            <a href="{{ .Params.institution.web }}" title="{{ .Params.institutiontnam }}" rel="noreferrer" target="_blank" class="inline-block mr-2 align-bottom pb-1">{{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" 0.8
+            "colo" "var(--color-primary-text)") -}}</a>
+            <span class="inline-block mr-1 text-sm align-bottom pb-px">|</span>
+            <span class="inline-block pb-px text-xs place-self-end align-bottom">{{ .Date | time.Format "2 Jan 2006" }}</span>
+        </div>
+    {{ end }}
+    <div class="flex flex-row justify-start items-start py-3">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" rel="noreferrer" data-tooltip="Creative Commons" class="flex flex-row items-center text-primary-text border-b-0">
+            {{- partial "icons.html" (dict "ico" "cc" "hei" 0.7 "colo" "var(--color-primary-text)" ) -}}</a>
+        <a href="https://github.com/picchono/plevy" target="_blank" title="Powered by Github" rel="noreferrer" class="pl-2 inline-block text-primary-text border-b-0" data-tooltip="Powered by Github" aria-label="This links to Github">
+            {{- partial "icons.html" (dict "ico" "github" "hei" 0.7 "colo" "var(--color-primary-text)") -}}</a>
+    </a>
+    <a href="https://gohugo.io/" target="_blank" title="Made with Hugo" rel="noreferrer" class="pl-2 inline-block text-primary-text border-b-0" data-tooltip="Made with Hugo" aria-label="This links to Hugo">
+        {{- partial "icons.html" (dict "ico" "hugo" "hei" 0.7 "colo" "var(--color-primary-text)") -}}</a>
+</a></div>{{ end }}

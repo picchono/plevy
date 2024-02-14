@@ -1,0 +1,12 @@
+    <div class="w-full overflow-hidden flex flex-col md:flex-row mb-20">
+        <div class="w-1/6 pl-5 pr-20 self-end">&nbsp;</div>
+        <div class="max-w-3xl w-full px-5">
+            {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+            {{ if or (eq .Params.layout "event") (eq .Params.layout "presentation") (eq .Params.layout "programme") (eq .Params.layout "project") (eq .Params.layout "publi") (eq .Params.layout "ressearch") (eq .Params.layout "teaching") (eq .Params.layout "writing")}}
+      <div class="my-10">
+        <script src="https://utteranc.es/client.js" repo="picchono/plevyfr" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script>
+      </div>
+    {{ end }}        
+        </div>
+        <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
+    </div>

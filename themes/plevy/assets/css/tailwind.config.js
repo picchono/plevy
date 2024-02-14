@@ -14,7 +14,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'sans': ['author', 'sans-serif'],
+      'sans': ['author', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'],
       'mono': ['SFMono-Regular', 'Menlo'],
     },
     fontWeight: {

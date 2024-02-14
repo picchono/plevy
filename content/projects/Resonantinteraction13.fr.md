@@ -1,7 +1,7 @@
 ---
 slug: resonnant-interaction
 title: "Resonnant interaction"
-layout: videopage
+layout: single
 subsection: other
 projecttype: general
 institution:

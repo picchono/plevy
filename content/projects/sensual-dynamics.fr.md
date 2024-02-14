@@ -10,7 +10,7 @@ date: 2013-09-03T16:27:15+02:00
 start: 2011
 end: 2013
 draft: false
-layout: teaching
+layout: single
 subsection: lecture
 perceptq: true
 researchpage: true
