@@ -1,8 +1,8 @@
 ---
-title: "Welcome"
+title: "Pierre Lévy"
 date: 2020-10-24T00:55:28+02:00
 draft: false
-layout: index
+layout: single
 bodyclass: home
 pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
@@ -39,8 +39,6 @@ blocs:
         order: 6
         title: and beyond
         lien: elsewhere
-link:
-    cv: "/cv"
 ---
 **[/ Recent writings /](/writings/)**&nbsp;[La diversité dans l'enseignement du design et des métiers d'art doit faire école](writings/la-diversité-dans-lenseignement-du-design-et-des-métiers-dart-doit-faire-école/)
 **[/ Researching /](/research/)**&nbsp;My main focus is the creation of a [Japanese philosophy-inspired design framework](/research/japanese_philosophy-inspired_design_framework/) to think further the relation between [design and appropriation](/research/design-appropriation/), contributing to [Transforming Practices](/research/transformingpractices).

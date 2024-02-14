@@ -1,6 +1,5 @@
 {{ define "main" }}
-{{ partial "title.html" . }}
-<div class="w-full overflow-hidden flex flex-col md:flex-row">
+<div class="w-full overflow-hidden flex flex-col md:flex-row" data-pagefind-ignore="all">
     <div class="w-1/6 pl-5 pr-20 self-end">&nbsp;</div>
     <div class="max-w-3xl w-full px-5">
     {{ $count := 0 }}
@@ -12,5 +11,4 @@
     </div>
     <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
 </div>
-{{ partial "footer.html" . }}
 {{ end }}

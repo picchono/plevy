@@ -1,4 +1,4 @@
-<div class="flex flex-row justify-start items-start w-full py-3">
+<div class="flex flex-row justify-start items-start w-full py-3 {{if not .IsHome }}px-6 md:px-0 {{ end }}">
     {{ if .IsTranslated }}
         <div id="languageMode" class='flex flex-row'>
             <div class="inline text-sm">
@@ -11,7 +11,6 @@
         </div>
     {{ end }}
 </div>
-<div class="block w-full text-red-700 font-bold">Site under maintenance</div>
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="search"></div>
 <script>

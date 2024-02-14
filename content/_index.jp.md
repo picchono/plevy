@@ -1,8 +1,8 @@
 ---
-title: "いらっしゃい!"
+title: "レヴィ・ピエール"
 date: 2020-10-24T00:55:28+02:00
 draft: false
-layout: index
+layout: single
 bodyclass: home
 pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'eindhoven', 'transforming_practices']

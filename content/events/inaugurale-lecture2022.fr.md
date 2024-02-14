@@ -285,7 +285,7 @@ Marche doucement, car tu marches sur mes rêves.
 
 Je vous remercie.
 
-## 6. Bibliographie<
+## 6. Bibliographie
 - Peters, N. Prouvé. (Taschen, 2017).  
 - Hancock, T. & Bezold, C. Possible futures, preferable futures. Healthc. Forum J. 37, 23&mdash;29 (1994).  
 - Blackler, A. et al. Can We Define Design? Analyzing Twenty Years of Debate on a Large Email Discussion List. She Ji J. Des. Econ. Innov. 7, 41&mdash;70 (2021).  

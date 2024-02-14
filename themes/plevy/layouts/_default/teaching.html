@@ -1,7 +1,6 @@
 
 
 {{ define "main" }}
-{{ partial "title.html" . }}
 {{ if .Content}}<div class="p-8 lg:p-32 h-auto">{{ .Content }}</div>{{ end }}
 {{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start">
     <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>

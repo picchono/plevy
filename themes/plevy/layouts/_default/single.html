@@ -1,11 +1,18 @@
 {{ define "main" }}
-{{ partial "title.html" . }}
+{{ $langu := .Site.Language.Lang }}
 <div class="w-full overflow-hidden flex flex-col md:flex-row">
     <div class="w-1/6 pl-5 pr-20 self-end">&nbsp;</div>
     <div class="max-w-3xl w-full px-5">
+        {{if .IsHome }}{{ with index .Site.Data.all .Site.Language.Lang }}
+        <div class="mb-6"><h2 class="inline text-base"><a href="/pierre/" class="border-0">/ {{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR /</a> {{ if eq $langu "jp" }}{{ .identity.jp |safeHTML }} / {{ end }}</h2>&nbsp;    
+        {{ range .pro }}{{ if .main }}
+            {{ if ne $langu "jp" }} {{ .title | safeHTML }} {{ i18n "at" }} {{ end }}
+            {{ .institution |safeHTML }}, {{ .country |safeHTML }}
+            {{ if .extra }} & {{ .extra | safeHTML }}{{ end }}
+        {{ end }}{{ end }}</div>
+        {{ end }}{{ end }}
         {{ if .Content}}{{ .Content }}{{ end }}           
     </div>
     <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
 </div>
-{{ partial "footer.html" . }}
 {{ end }}

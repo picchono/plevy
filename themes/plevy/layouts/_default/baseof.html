@@ -3,9 +3,11 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}">
-  <main class='w-full lg:w-auto min-h-screen'>
+<body id="{{ .Params.bodyclass }}" class="min-h-screen">
+  <main class='w-full lg:w-auto' data-pagefind-body>  
+    {{ partial "title.html" . }}
     {{- block "main" . }}{{- end }}
+    {{ partial "footer.html" . }}
   </main>
 </body>
 {{ if .Params.photogallery }}
