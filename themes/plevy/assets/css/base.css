@@ -22,12 +22,12 @@ body {
 
 body {
   --color-primary-bg: rgb(255, 255, 255);
-  --color-secondary-bg: rgb(231, 229, 228);
+  --color-secondary-bg: rgb(244, 244, 245);
   --color-primary-text: #1c1c1c;
   --color-secondary-text: #3c3a3a;
   --color-epierrot: #f8003f;
   --tw-gradient-from: #fff;
-  --tw-gradient-to: #e7e7e7;
+  --tw-gradient-to: var(--color-secondary-bg);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
