@@ -2,10 +2,12 @@
 slug: methods-and-means-for-kansei-design
 title: "Methods and Means for Kansei Design"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: Chiba
+    short: 'Chiba U.'
     name: "Chiba University"
     web: "https://www.chiba-u.ac.jp/"
 kansei: true

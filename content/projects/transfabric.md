@@ -2,16 +2,19 @@
 slug: transfabric
 title: "TransFabriC - Institute of Circular Transfabrication"
 layout: single
+searchFilter: Project
 subsection: project
 projecttype: general
 institution:
     logo: cnam
+    short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
     colo: "#c1002a"
 collaboration:
     partner1:
         logo: cnam
+        short: Cnam
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
         heig: 1.2
@@ -22,6 +25,7 @@ collaboration:
         heig: 2
     partner3:
         logo: atelier-mutualise
+        short: Cnam
         name: "Atelier mutualisé"
         web: "#"
         heig: 2

@@ -2,6 +2,7 @@
 slug: lecon-inaugurale
 title: "Inaugural lecture of the Chair of design Jean Prouvé"
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 transformpractices: true
@@ -10,18 +11,21 @@ tags: ['inaugural', 'Jean_Prouvé', 'appropriation', 'moment']
 front: true
 institution:
     logo: cnam
+    short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
     colo: "#c1002a"
 collaboration:
     partner1:
         logo: cnam
+        short: Cnam
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
         colo: "#c1002a"
         heig: 1
     partner2:
         logo: jprouve
+        short: 'Chaire of Design'
         name: "Chaire de Design Jean Prouvé"
         web: "https://www.chaire-design.fr"
         heig: 2.5

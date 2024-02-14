@@ -2,12 +2,14 @@
 slug: users-appreciation-of-engagement-in-service-design-the-case-of-food-service-design
 title: "User’s appreciation of engagement in service design: The case of food service design"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 everyday: true
 researchpage: true
 institution:
     logo: Tsukuba
+    short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
 research: 

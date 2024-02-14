@@ -3,7 +3,12 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}" class="min-h-screen">
+<body id="{{ .Params.bodyclass }}" class="min-h-screen"{{ if .Params.noPagesearch }} data-pagefind-ignore="all">{{ else }}>
+  <div class="invisible h-0 w-0">
+    <span data-pagefind-filter="Type">{{ .Params.searchFilter }}</span>
+    <span data-pagefind-filter="Institution">{{ .Params.institution.short}}</span>
+    {{ range .Params.collaboration -}}<span data-pagefind-filter="Collaboration">{{ .short }}</span>{{- end -}}
+  </div>{{ end }}
   <main class='w-full lg:w-auto' data-pagefind-body>  
     {{ partial "title.html" . }}
     {{- block "main" . }}{{- end }}

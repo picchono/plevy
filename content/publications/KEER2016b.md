@@ -2,6 +2,7 @@
 slug: reinventing-the-steering-wheel
 title: Reinventing the (steering) wheel, A kansei design approach for novel driving experience
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 kansei: true
@@ -10,6 +11,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

@@ -2,6 +2,7 @@
 slug: transforming-practices-squad
 title: "Transforming Practices squad"
 layout: single
+searchFilter: Project
 subsection: project
 projecttype: general
 transformpractices: true
@@ -10,6 +11,7 @@ research:
     -  transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

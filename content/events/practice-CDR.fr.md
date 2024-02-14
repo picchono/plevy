@@ -3,6 +3,7 @@ slug: practice-CDR
 title: "The Practice of Constructive Design Research"
 tags: ['Recherche_au_travers_du_design', 'CDR', 'RtD', 'Umeå']
 layout: single
+searchFilter: Event
 subsection: symposium
 projecttype: general
 transformpractices: true
@@ -11,6 +12,7 @@ research:
     -  transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

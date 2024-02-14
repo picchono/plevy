@@ -2,22 +2,26 @@
 slug: irregularite_une_opportunite_societale
 title: "L'irrégularité, une opportunité sociétale"
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 tags: ['ESADSE', 'irregularity', 'society', 'appropriation']
 institution:
     logo: cnam
+    short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
     colo: "#c1002a"
 collaboration:
     partner1:
         logo: esadse
+        short: ESADSE
         name: "École Supérieure d'Art et Design de Saint-Étienne"
         web: "https://www.citedudesign.com/"
         heig: 2
     partner2:
         logo: cnam
+        short: Cnam
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
         heig: 1

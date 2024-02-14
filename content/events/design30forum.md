@@ -2,11 +2,13 @@
 slug: design-30-forum
 title: "Design 3.0 Forum"
 layout: single
+searchFilter: Event
 subsection: symposium
 projecttype: general
 tags: ['KAIST', 'interaction', 'society', 'policy']
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

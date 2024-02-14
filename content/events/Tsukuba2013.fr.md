@@ -2,6 +2,7 @@
 slug: holism-and-kansei-design-kansei-beyond-borders
 title: "Holism and kansei design, kansei beyond borders"
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 kansei: true
@@ -9,6 +10,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

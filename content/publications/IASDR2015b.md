@@ -2,11 +2,13 @@
 slug: the-chatter-door-designing-for-in-between-spaces
 title: The Chatter Door, designing for in-between spaces
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 Perceiving: true
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

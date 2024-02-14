@@ -3,6 +3,7 @@ slug: kees-overbeeke-symposium
 tags: ['interaction', 'Kees_Overbeeke']
 title: "Kees Overbeeke symposium"
 layout: single
+searchFilter: Event
 subsection: symposium
 projecttype: general
 transformpractices: true
@@ -11,6 +12,7 @@ research:
     -  transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

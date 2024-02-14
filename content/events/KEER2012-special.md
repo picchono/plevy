@@ -3,6 +3,7 @@ slug: Special-issue-kansei-research-in-europe
 title: "Special issue: kansei research in Europe"
 tags: ['kansei', 'kansei_research']
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 kansei: true
@@ -10,6 +11,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

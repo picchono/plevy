@@ -2,7 +2,7 @@
 slug: La-diversité-dans-lenseignement-du-design-et-des-métiers-dart-doit-faire-école
 title: "La diversité dans l'enseignement du design et des métiers d'art doit faire école"
 layout: writing
-subsection: writing
+searchFilter: Writing
 front: true
 date: 2023-05-20T13:38:26+02:00
 authors: "Pierre Lévy"

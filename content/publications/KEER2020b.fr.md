@@ -3,11 +3,13 @@ slug: studying-requirements-for-designing-a-vitality-data-sharing-platform-from-
 title: "Studying requirements for designing a vitality data sharing platform from a multi-stakeholder perspective"
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2020-08-29T16:39:07+02:00
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 reference: "Wada, K., van Renswouw, L. M., Wallner, G., Levy, P. D., & Vos, S. B. (2020). Studying requirements for designing a vitality data sharing platform from a multi-stakeholder perspective. Paper presented at 8th International Conference on Kansei Engineering and Emotion Research (KEER 2020), Tokyo, Japan."

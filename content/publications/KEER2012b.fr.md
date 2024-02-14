@@ -2,6 +2,7 @@
 slug: developing-a-design-approach-exploring-resistance-and-ambiguity
 title: "Developing a design approach, exploring resistance and ambiguity"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 kansei: true
@@ -11,6 +12,7 @@ topic:
     - transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

@@ -2,11 +2,13 @@
 slug: the-origin-of-experience
 title: "The origin of experience"
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 tags: ['experience', 'KAIST']
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

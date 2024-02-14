@@ -2,6 +2,7 @@
 slug: exploring-the-challenge-of-designing-rituals
 title: Exploring the challenge of designing rituals
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 everyday: true
@@ -10,6 +11,7 @@ research:
     -  everyday
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

@@ -2,10 +2,12 @@
 slug: introducing-MATiK-service-proposition-for-a-new-IT-communication-system-through-an-approach-in-kansei
 title: "Introducing MATiK service, Proposition for a new IT communication system through an approach in Kansei"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: Tsukuba
+    short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
 kansei: true

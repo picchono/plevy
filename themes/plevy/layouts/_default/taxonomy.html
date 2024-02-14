@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="w-full overflow-hidden flex flex-col md:flex-row" data-pagefind-ignore="all">
+    <div class="w-1/6 pl-5 pr-20 self-end">&nbsp;</div>
+    <div class="max-w-3xl w-full px-5">
+        {{ $t := .Title }}
+        {{ $count := 0 }}
+        {{ range (index .Site.Taxonomies.tags $t) }}
+        {{ if ne .Params.notListed true }}
+        {{ $count = add $count 1 }}
+        {{- partial "box.html" ( dict "context" . "cou" $count) -}}
+        {{ end }}
+        {{ end }}
+    </div>
+    <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
+</div>
+{{ end }}

@@ -11,28 +11,3 @@
         </div>
     {{ end }}
 </div>
-<script src="/pagefind/pagefind-ui.js"></script>
-<div id="search"></div>
-<script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({element: "#search", showSubResults: true});
-    });
-</script>
-{{ if false }}
-    {{ if or (eq .Params.institution "none") (.Params.institution) }}
-        <div>
-            <a href="{{ .Params.institution.web }}" title="{{ .Params.institutiontnam }}" rel="noreferrer" target="_blank" class="inline-block mr-2 align-bottom pb-1">{{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" 0.8
-            "colo" "var(--color-primary-text)") -}}</a>
-            <span class="inline-block mr-1 text-sm align-bottom pb-px">|</span>
-            <span class="inline-block pb-px text-xs place-self-end align-bottom">{{ .Date | time.Format "2 Jan 2006" }}</span>
-        </div>
-    {{ end }}
-    <div class="flex flex-row justify-start items-start py-3">
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" rel="noreferrer" data-tooltip="Creative Commons" class="flex flex-row items-center text-primary-text border-b-0">
-            {{- partial "icons.html" (dict "ico" "cc" "hei" 0.7 "colo" "var(--color-primary-text)" ) -}}</a>
-        <a href="https://github.com/picchono/plevy" target="_blank" title="Powered by Github" rel="noreferrer" class="pl-2 inline-block text-primary-text border-b-0" data-tooltip="Powered by Github" aria-label="This links to Github">
-            {{- partial "icons.html" (dict "ico" "github" "hei" 0.7 "colo" "var(--color-primary-text)") -}}</a>
-    </a>
-    <a href="https://gohugo.io/" target="_blank" title="Made with Hugo" rel="noreferrer" class="pl-2 inline-block text-primary-text border-b-0" data-tooltip="Made with Hugo" aria-label="This links to Hugo">
-        {{- partial "icons.html" (dict "ico" "hugo" "hei" 0.7 "colo" "var(--color-primary-text)") -}}</a>
-</a></div>{{ end }}

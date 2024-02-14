@@ -2,6 +2,7 @@
 slug: rights-through-making
 title: "Rights through Making - Skills for Pervasive Ethics"
 layout: single
+searchFilter: Event
 subsection: phd
 projecttype: general
 transformpractices: true
@@ -10,6 +11,7 @@ research:
     -  transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

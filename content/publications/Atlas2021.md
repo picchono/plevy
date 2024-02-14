@@ -2,11 +2,13 @@
 slug: designing-for-transforming-practices-maps-and-journeys
 title: "Designing for Transforming Practices: Maps and Journeys"
 layout: single
+searchFilter: Publication
 publitype: book
 subsection: book
 transformpractices: true
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

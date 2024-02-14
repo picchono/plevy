@@ -2,6 +2,7 @@
 slug: haiku-cocoa
 title: "À peine hors du lit"
 layout: single
+searchFilter: Project
 subsection: project
 projecttype: general
 everyday: true

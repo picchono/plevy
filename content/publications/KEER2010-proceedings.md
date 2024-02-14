@@ -2,6 +2,7 @@
 slug: kansei-engineering-and-emotion-research-2010
 title: The Proceedings of the Kansei Engineering and Emotion Research International Conference 2010, KEER 2010
 layout: single
+searchFilter: Publication
 publitype: edition
 subsection: edition
 kansei: true
@@ -9,6 +10,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

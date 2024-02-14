@@ -2,6 +2,7 @@
 slug: haiku-cocoa
 title: "Barely out of bed"
 layout: single
+searchFilter: Project
 projecttype: general
 everyday: true
 researchpage: true

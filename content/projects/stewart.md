@@ -2,6 +2,7 @@
 slug: stewart
 title: "Stewart"
 layout: single
+searchFilter: Project
 subsection: project
 projecttype: general
 perceptq: true
@@ -10,6 +11,7 @@ research:
     -  perceptq
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

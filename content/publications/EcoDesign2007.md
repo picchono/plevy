@@ -2,10 +2,12 @@
 slug: interdisciplinary-design-method-for-ecodesign-introducing-kansei-research-for-design-to-ecodesign
 title: "Interdisciplinary Design Method for EcoDesign, Introducing Kansei research for design to EcoDesign"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: Tsukuba
+    short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
 kansei: true

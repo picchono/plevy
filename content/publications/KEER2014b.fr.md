@@ -2,6 +2,7 @@
 slug: rite-de-transition
 title: "Rite de transition – a design choreographic exploration of cultural value exchange, through development of intercultural ritual artefacts"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 kansei: true
@@ -9,6 +10,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

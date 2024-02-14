@@ -2,6 +2,7 @@
 slug: passage
 title: "Passage"
 layout: single
+searchFilter: Project
 subsection: project
 projecttype: general
 kansei: true
@@ -10,6 +11,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

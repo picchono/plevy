@@ -2,6 +2,7 @@
 slug: designing-for-the-everyday-through-thusness-and-irregularity
 title: Designing for the everyday through thusness and irregularity
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 main: true
@@ -12,6 +13,7 @@ research:
 jpphilo: true
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

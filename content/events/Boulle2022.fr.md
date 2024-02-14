@@ -3,23 +3,27 @@ slug: beaute-du-motif-japonais
 title: La beauté du motif japonais
 tags: ['Japon', 'motif', 'kamon', 'Boulle']
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 jpphilo: true
 researchpage: true
 institution:
     logo: cnam
+    short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
     colo: "#c1002a"
 collaboration:
     partner1:
         logo: boulle
+        short: 'École Boule'
         name: "École Boulle"
         web: "https://ecole-boulle.org/"
         heig: 2
     partner2:
         logo: cnam
+        short: Cnam
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
         heig: 1

@@ -3,6 +3,7 @@ slug: light-through-culture
 title: "Light through Culture - Experience Human Rights"
 tags: ['light', 'interaction', 'experience', 'culture', 'exhibition', 'human_rights', 'Sienna']
 layout: single
+searchFilter: Event
 subsection: exhibition
 projecttype: general
 transformpractices: true
@@ -11,6 +12,7 @@ research:
     -  transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

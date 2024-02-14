@@ -2,10 +2,12 @@
 slug: ohlala-exploring-the-relation-between-content-completeness-and-emotional-experience
 title: "Ohlala: Exploring the Relation between Content Completeness and Emotional Experience"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

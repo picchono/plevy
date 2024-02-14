@@ -2,10 +2,12 @@
 slug: users-appreciation-of-engagement-in-service-design-the-case-of-food-service-design
 title: "User’s appreciation of engagement in service design: The case of food service design"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: Chiba
+    short: 'Chiba U.'
     name: "Chiba University"
     web: "https://www.chiba-u.ac.jp/"
 everyday: true

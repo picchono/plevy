@@ -2,6 +2,7 @@
 slug: kansei-et-kansei-design
 title: "Kansei et kansei design"
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 tags: ['ENSCI', 'kansei', 'design_kansei', 'ingénierie_kansei']
@@ -10,6 +11,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

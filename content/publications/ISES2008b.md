@@ -2,10 +2,12 @@
 slug: kansei-physiological-measurements-and-constructivist-psychological-explorations-for-approaching-users-subjective-experience-during-and-after-the-product-use
 title: "Kansei-Physiological Measurements and Constructivist, Psychological Explorations for Approaching User’s Subjective Experience during and after the Product Use"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: Tsukuba
+    short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
 date: 2008-02-25T19:44:09+01:00

@@ -2,6 +2,7 @@
 slug: Education-as-a-transforming-practice-designing-together-for-complex-sustainable-living
 title: "Education as a transforming practice: designing together for complex, sustainable living"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 transformpractices: true
@@ -10,6 +11,7 @@ research:
     -  transformingpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

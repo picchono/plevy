@@ -3,7 +3,7 @@ title: "prof.dr.ing. Pierre Lévy, HDR"
 date: 2020-10-24T00:55:28+02:00
 draft: false
 layout: about
-bodyclass: about
+searchFilter: about
 pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "Pierre Lévy's webpage, professor at CNAM and researcher in design through reflective practices."

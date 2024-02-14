@@ -2,6 +2,7 @@
 slug: people-place-process
 title: "People Place Process: A self-reflection tool to become a professional in design thinking, based on pedagogical action research"
 layout: single
+searchFilter: Event
 subsection: phd
 projecttype: general
 transformpractices: true
@@ -10,6 +11,7 @@ research:
     -  transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

@@ -3,10 +3,12 @@ slug: design-apocalypse-manifesto
 title: "Design et apocalypse, un manifesto"
 projecttype: general
 layout: single
+searchFilter: Project
 subsection: project
 projecttype: general
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

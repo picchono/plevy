@@ -2,6 +2,7 @@
 slug: perceptive-qualities
 title: "Perceptive Qualities in System of Interactive Products"
 layout: single
+searchFilter: Event
 subsection: phd
 projecttype: general
 perceptq: true
@@ -10,6 +11,7 @@ research:
     -  perceptq
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

@@ -3,7 +3,7 @@ title: "Elsewhere"
 date: 2023-01-24T00:55:28+02:00
 draft: false
 layout: else
-bodyclass: else
+searchFilter: else
 tags: ['elsewhere', 'projects', 'media', 'lectures']
 topics: 
     topic1:

@@ -2,10 +2,12 @@
 slug: data-resonance
 title: "Data Resonance"
 layout: single
+searchFilter: Project
 subsection: project
 projecttype: general
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

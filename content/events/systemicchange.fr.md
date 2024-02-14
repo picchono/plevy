@@ -2,6 +2,7 @@
 slug: designing-for-systemic-change
 title: "Designing for Systemic Change"
 layout: single
+searchFilter: Event
 subsection: symposium
 projecttype: general
 transformpractices: true
@@ -10,6 +11,7 @@ research:
     -  transformpractices
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

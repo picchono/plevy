@@ -1162,11 +1162,12 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   clip: rect(0 0 0 0);
 }
 .pagefind-ui__filter-panel.svelte-1v2r7ls.svelte-1v2r7ls {
-  min-width: min(calc(260px * var(--pagefind-ui-scale)), 100%);
+  min-width: 30%;
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-top: calc(20px * var(--pagefind-ui-scale));
+  margin-top: 4rem;
+  padding: 0 1rem;
 }
 .pagefind-ui__filter-group.svelte-1v2r7ls.svelte-1v2r7ls {
   border: 0;
@@ -1211,8 +1212,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
 .pagefind-ui__filter-group.svelte-1v2r7ls.svelte-1v2r7ls {
   display: flex;
   flex-direction: column;
-  gap: calc(20px * var(--pagefind-ui-scale));
-  padding-top: calc(30px * var(--pagefind-ui-scale));
+  gap: 0;
+  padding-top: 0.5rem;
 }
 .pagefind-ui__filter-value.svelte-1v2r7ls.svelte-1v2r7ls {
   position: relative;

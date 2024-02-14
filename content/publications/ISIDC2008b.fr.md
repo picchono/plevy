@@ -2,10 +2,12 @@
 slug: an-approach-on-functional-analysis-in-developing-guideline-for-designing-service-embedded-product
 title: "An Approach on Functional Analysis in Developing Guideline for Designing Service-embedded Product"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: Chiba
+    short: 'Chiba U.'
     name: "Chiba University"
     web: "https://www.chiba-u.ac.jp/"
 date: 2008-10-22T20:55:44+02:00

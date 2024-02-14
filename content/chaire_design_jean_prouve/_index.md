@@ -2,7 +2,7 @@
 title: "Chaire Design Jean Prouvé"
 date: 2021-09-20100:55:28+02:00
 layout: single
-bodyclass: chaire
+searchFilter: chaire
 description: "Chair of Design Jean Prouvé at The National Conservatory of Arts and Crafts"
 notEverything: true
 notListed: true

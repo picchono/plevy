@@ -4,22 +4,25 @@ title: "Mediums in design"
 tags: ['seminar', 'mediums', 'mediality', 'symetrical_anthropology']
 date: 2021-12-11T20:04:12+02:00
 draft: false
-bodyclass: MediumsDesign
+searchFilter: MediumsDesign
 front: true
 frontdescription: "A collaborative seminar between the CNAM Chair of Design Jean Prouvé and CY Design Research"
 milestone: event
 subsection: seminar
 layout: single
+searchFilter: Event
 main: true
 current: true
 institution:
     logo: cnam
+    short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
     colo: "#c1002a"
 collaboration:
     partner1:
         logo: cnam
+        short: Cnam
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
         colo: "#c1002a"

@@ -2,6 +2,7 @@
 slug: exploring-constituents-for-kansei-design-towards-a-framework
 title: "Exploring constituents for kansei design, towards a framework"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 kansei: true
@@ -10,6 +11,7 @@ research:
     -  kansei
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

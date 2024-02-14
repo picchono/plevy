@@ -3,10 +3,12 @@ slug: direct-interaction-design
 title: "Direct interaction design"
 tags: ['interaction', 'musashino-AU']
 layout: single
+searchFilter: Event
 publitype: presentation
 subsection: lecture
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

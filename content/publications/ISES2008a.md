@@ -2,10 +2,12 @@
 slug: kansei-studies-description-and-mapping-through-kansei-studies-keywords
 title: "Kansei Studies Description and Mapping through Kansei Studies Keywords"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 institution:
     logo: Tsukuba
+    short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
 kansei: true

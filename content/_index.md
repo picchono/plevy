@@ -3,12 +3,19 @@ title: "Pierre Lévy"
 date: 2020-10-24T00:55:28+02:00
 draft: false
 layout: single
-bodyclass: home
+searchFilter: home
+institution:
+    logo: cnam
+    short: Cnam
+    name: "Conservatoire national des Arts et Métiers"
+    web: "https://www.cnam.fr/"
+    colo: "#c1002a"
 pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "Pierre Lévy's webpage, professor at CNAM and researcher in design through reflective practices."
 notEverything: true
 notListed: true
+noPagesearch: true
 blocs:
     research:
         order: 1

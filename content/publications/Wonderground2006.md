@@ -2,6 +2,7 @@
 slug: towards-a-definition-of-kansei
 title: "Towards a definition of Kansei"
 layout: single
+searchFilter: Publication
 kansei: true
 researchpage: true
 research: 
@@ -10,6 +11,7 @@ publitype: conference
 subsection: conference
 institution:
     logo: Tsukuba
+    short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
 date: 2006-09-29T19:13:29+02:00

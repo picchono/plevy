@@ -2,11 +2,13 @@
 slug: luciole-lighting-up-the-design-process
 title: "Luciole, lighting up the design process"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 perceiving-the-invisible: true
 institution:
     logo: TUe
+    short: 'TU/e'
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"

@@ -2,12 +2,14 @@
 slug: ProVi-a-transforming-vision-emerging-from-reflective-practice
 title: "ProVi – a transforming vision emerging from reflective practice"
 layout: single
+searchFilter: Publication
 publitype: conference
 subsection: conference
 main: true
 researchpage: true
 institution:
     logo: cnam
+    short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr"
     colo: "#c1002a"
