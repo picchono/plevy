@@ -1054,7 +1054,7 @@ canvas#bgirreg2in {
   align-items: flex-start;
   gap: min(calc(40px * var(--pagefind-ui-scale)), 3%);
   padding: 1rem 0;
-  border-top: 1px var(--color-secondary-bg) dotted;
+  border-top: 1px rgb(231, 229, 228) solid;
 }
 .pagefind-ui__result.svelte-4xnkmf.svelte-4xnkmf:last-of-type {
   border-bottom: solid var(--pagefind-ui-border-width) var(--pagefind-ui-border);
@@ -1396,12 +1396,12 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   border-radius: var(--pagefind-ui-border-radius);
 }
 .pagefind-ui__drawer.svelte-e9gkc3 {
-    @apply bg-gray-100 border border-gray-200 rounded-md;
+  @apply bg-white;
   gap: calc(60px * var(--pagefind-ui-scale));
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  filter: drop-shadow(var(--st-dropshadow));  
+  flex-wrap: wrap; 
+  border-bottom: 2px solid var(--color-primary-text);
 }
 
 .pagefind-ui__results-area.svelte-e9gkc3 {
