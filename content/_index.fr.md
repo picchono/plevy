@@ -10,6 +10,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
     colo: "#c1002a"
+bgpic: "PLevy_front.webp"
 pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'eindhoven', 'pratiques_transformatives']
 description: "Page web de Pierre Lévy, professeur du CNAM et chercheur en design au travers de la pratique réflexive."

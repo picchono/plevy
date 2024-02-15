@@ -14,12 +14,12 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'sans': ['author', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'],
+      'sans': ['Amulya', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'],
       'mono': ['SFMono-Regular', 'Menlo'],
     },
     fontWeight: {
       normal: 400,
-      bold: 600,
+      bold: 700,
     },
     extend: {
       width: {
