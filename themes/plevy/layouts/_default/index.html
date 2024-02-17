@@ -12,8 +12,7 @@
             {{ .institution |safeHTML }}, {{ .country |safeHTML }}
             {{ if .extra }} & {{ .extra | safeHTML }}{{ end }}
         {{ end }}{{ end }}
-        {{ end }}      
-        <div class="intro mt-6">{{ .Content }}</div>
+        {{ end }}      {{ .Content }}
     </div>
     <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
 </div>

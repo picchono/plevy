@@ -3,7 +3,6 @@ slug: La-diversité-dans-lenseignement-du-design-et-des-métiers-dart-doit-faire
 title: "La diversité dans l'enseignement du design et des métiers d'art doit faire école"
 layout: writing
 searchFilter: Writing
-front: true
 date: 2023-05-20T13:38:26+02:00
 authors: "Pierre Lévy"
 abstract: "Une réflexion sur l’enseignement du design et des métiers d’art, présent et à venir, écrite dans le cadre du PIA 4 Diagnostic Culture et création en mutations (2CM) - Compétences et métiers d'avenir France 2030, dirigé par Lucie Marinier."
