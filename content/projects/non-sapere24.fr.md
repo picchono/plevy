@@ -38,6 +38,23 @@ reference: "L'École du non-savoir repose sur la conviction que le dialogue entr
 frontphoto: "https://civic-city.org/nonsapere/wp-content/uploads/2024/01/post-HOME-ESTIENNE5.jpg"
 link:
     website: "https://civic-city.org/nonsapere/"
+photogallery:
+    image4:
+        order: 4
+        src: "https://live.staticflickr.com/65535/53535808910_0d268b560d_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535808910_591b866830_h.jpg"
+    image3:
+        order: 3
+        src: "https://live.staticflickr.com/65535/53535701174_463a215aa6_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535701174_91127944f1_h.jpg"
+    image2:
+        order: 2
+        src: "https://live.staticflickr.com/65535/53535809215_44e44f1a97_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535809215_572ae644ec_h.jpg"
+    image1:
+        order: 1
+        src: "https://live.staticflickr.com/65535/53535702119_9960dec251_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535702119_a83735db72_h.jpg"
 ---
 
 ![nonsapere at Cnam](https://civic-city.org/nonsapere/wp-content/uploads/2024/01/post-HOME-ESTIENNE5.jpg "Poster pour la session au Cnam")

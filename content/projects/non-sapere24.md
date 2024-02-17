@@ -38,6 +38,23 @@ reference: "The School of not-knowing is based on the conviction that dialogue b
 frontphoto: "https://civic-city.org/nonsapere/wp-content/uploads/2024/01/post-HOME-ESTIENNE5.jpg"
 link:
     website: "https://civic-city.org/nonsapere/"
+photogallery:
+    image4:
+        order: 4
+        src: "https://live.staticflickr.com/65535/53535808910_0d268b560d_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535808910_591b866830_h.jpg"
+    image3:
+        order: 3
+        src: "https://live.staticflickr.com/65535/53535701174_463a215aa6_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535701174_91127944f1_h.jpg"
+    image2:
+        order: 2
+        src: "https://live.staticflickr.com/65535/53535809215_44e44f1a97_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535809215_572ae644ec_h.jpg"
+    image1:
+        order: 1
+        src: "https://live.staticflickr.com/65535/53535702119_9960dec251_n.jpg"
+        img: "https://live.staticflickr.com/65535/53535702119_a83735db72_h.jpg"
 ---
 
 ![nonsapere at Cnam](https://civic-city.org/nonsapere/wp-content/uploads/2024/01/post-HOME-ESTIENNE5.jpg "Poster for the Cnam session")
@@ -53,7 +70,7 @@ It will be accompanied from February 1 to March 30 by an exhibition of panels fr
 
 &nbsp;
 
-The **[/ Seminar of the School of not-knowing /](/event/seminar-school-of-not-knowing)** was help at Cnam on Oct. 16th 2023.
+The **[/ Seminar of the School of not-knowing /](/events/seminar-school-of-not-knowing)** was help at Cnam on Oct. 16th 2023.
 
 &nbsp;
 
