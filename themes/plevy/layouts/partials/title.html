@@ -1,6 +1,6 @@
 {{if not .IsHome }}
-    <div class="absolute z-50 top-3 left-3">
-        <a class="text-primary-text " href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.8") -}}</a>
+    <div class="logosign absolute z-50 top-3 left-5 lg:top-3">
+        <a class="text-primary-text " href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo" "var(--color-epierrot)") -}}</a>
     </div>
 {{ end }}
 <div class="w-full overflow-hidden flex flex-col md:flex-row">
@@ -8,7 +8,6 @@
     <div class="max-w-3xl w-full px-5">
         {{ partial "international.html" . }}
         {{ partial "search.html" . }}
-        <div class="my-5 text-red-700 font-bold italic">Maintenance is currently in progress... sorry for the trouble.</div>
         <div class="text-left items-start">
             <h1 class="text-4xl font-bold">{{ .Params.title |safeHTML }}</h1>
             {{ if .Params.authors }}
@@ -59,6 +58,11 @@
                             {{ .Params.abstract |safeHTML }}</p>
                     </div>
                 {{ end }}
+                {{ if .Params.description }}
+                    <div class="h-auto my-10">
+                        <p><b>{{ .Params.description |safeHTML }}</b></p>
+                    </div>
+                {{ end }}
                 {{ if .Params.schedule }}
                     <div class="h-144 my-10">
                         <p>{{ .Params.schedule |safeHTML }}</p>
@@ -82,7 +86,7 @@
                         {{ end }}
                     </div>
                 {{ end }}
-                {{ if .Params.link }}<div class="max-w-3xl w-full px-5">{{ partial "doclink.html" . }}</div>{{ end }}
+                {{ if .Params.link }}<div class="max-w-3xl w-full pr-5">{{ partial "doclink.html" . }}</div>{{ end }}
                 {{ if .Params.photogallery }}
                     {{ partial "photogallery.html" . }}
                 {{ end }}

@@ -1,15 +1,16 @@
 :root {
   @apply font-sans text-primary-text leading-6 box-border;
   --st-dropshadow: 7px 7px 8px #00000044;
+  --lineHeight: 1.8;
 }
 
 *,
 html,
 body {
-  font-size: 16px;
+  font-size: 17px;
   font-stretch: 100%;
   letter-spacing: 0.01rem;
-  line-height: 1.7rem;
+  line-height: var(--lineHeight);
   font-display: swap;
   font-weight: normal;
   scroll-behavior: smooth;
@@ -24,8 +25,8 @@ body {
   --color-primary-bg: rgb(255, 255, 255);
   --color-secondary-bg: rgb(244, 244, 245);
   --color-primary-text: #1c1c1c;
-  --color-secondary-text: #3c3a3a;
-  --color-epierrot: #f8003f;
+  --color-secondary-text: rgba(87, 83, 78);
+  --color-epierrot: #1f73a8;
   --tw-gradient-from: #fff;
   --tw-gradient-to: var(--color-secondary-bg);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -54,7 +55,7 @@ a {
 }
 
 a:hover {
-  @apply text-primary-bg bg-primary-text;
+  @apply text-primary-bg bg-epierrot border-epierrot;
 }
 
 strong > a {
@@ -193,7 +194,7 @@ button {
 .menu a {
   text-transform: capitalize;
   font-size: 1.1rem;
-  line-height: 2rem;
+  line-height: var(--lineHeight);
   font-weight: normal;
 }
 
@@ -265,7 +266,7 @@ a:hover img.imgBox {
 
 a.gridbox p {
   font-size: 15px;
-  line-height: 1.6;
+  line-height: var(--lineHeight);
 }
 
 a .titlefront {
@@ -360,7 +361,7 @@ a.gridbox:hover {
 
 p {
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 b,
@@ -386,7 +387,7 @@ h6 {
 }
 
 h1 {
-  @apply font-bold mt-30 mb-6 text-4xl;
+  @apply font-bold mt-24 mb-12 text-4xl;
   line-height: 3.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -964,6 +965,19 @@ canvas#bgirreg2in {
   height: 100%;
 }
 
+.logosign>a{
+  @apply border-primary-bg;
+  filter:grayscale(1)opacity(0.5);
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logosign>a:hover{
+  @apply bg-primary-bg;
+  filter:grayscale(0);
+}
+
 /* pagefind */
 .pagefind-ui__result.svelte-j9e30.svelte-j9e30 {
   list-style-type: none;
@@ -1440,4 +1454,85 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   border-color: var(--pagefind-ui-primary);
   color: var(--pagefind-ui-primary);
   background: var(--pagefind-ui-background);
+}
+
+
+/* Table of content */
+.sidenav, .sidenav__item, li:last-child {
+  @apply list-none mb-0 text-sm;
+}
+
+.sidenav {
+  @apply border-l border-epierrot pl-2
+}
+
+.sidenav__sublist .current::after {
+    display: none;
+}
+
+.sidenav a {
+  @apply block border-0 pl-2 no-underline rounded;
+}
+
+.sidenav__sublist {
+  @apply list-none;
+}
+
+.sidenav__sublist .sidenav__sublist a {
+    padding-left: 1.5rem;
+}
+
+.sidenav__sublist .sidenav__sublist .sidenav__sublist a {
+    padding-left: 2.5rem;
+}
+
+/* pre */
+
+pre {
+}
+div.highlight {
+  @apply rounded-md p-4;
+  background-color: var(--color-primary-text) !important;
+}
+
+div.highlight pre {
+  background-color: var(--color-primary-text) !important;
+  white-space: normal !important;
+}
+
+.copy-code-button {
+  color: var(--color-primary-bg);
+  background-color: transparent;
+  border-radius: 3px 3px 0px 0px;
+
+  /* right-align */
+  display: block;
+  margin-left: auto;
+  margin-right: 6px;
+
+  margin-bottom: -34px;
+  padding: 3px 8px;
+  font-size: 0.8em;
+}
+
+.copy-code-button:hover {
+  cursor: pointer;
+  background-color: #F2F2F2;
+}
+
+.copy-code-button:focus {
+  /* Avoid an ugly focus outline on click in Chrome,
+     but darken the button for accessibility.
+     See https://stackoverflow.com/a/25298082/1481479 */
+  background-color: #E6E6E6;
+  outline: 0;
+}
+
+.copy-code-button:active {
+  background-color: #D9D9D9;
+}
+
+.highlight pre {
+  /* Avoid pushing up the copy buttons. */
+  margin: 0;
 }

@@ -14,11 +14,11 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'sans': ['Amulya', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'],
+      'sans': ['Roundo', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'],
       'mono': ['SFMono-Regular', 'Menlo'],
     },
     fontWeight: {
-      normal: 400,
+      normal: 500,
       bold: 700,
     },
     extend: {

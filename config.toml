@@ -21,7 +21,7 @@ order = [".webp", ".jpg$", ".gif$"]
   pattern = "^sitemap\\.xml$"
   contentType = "application/xml"
   gzip = true
-
+  
 [build]
   useResourceCacheWhen = "never"
 
@@ -48,9 +48,6 @@ privacyEnhanced = true
 [minify]
 minifyOutput = true
 merge = "deep"
-
-[module]
-path= "filterizr"
 
 [languages]
   [languages.en]

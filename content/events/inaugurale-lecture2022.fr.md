@@ -7,8 +7,8 @@ publitype: presentation
 subsection: lecture
 transformpractices: true
 researchpage: true
+tablecontent: true
 tags: ['inaugurale', 'Jean_Prouvé', 'appropriation', 'moment']
-front: true
 institution:
     logo: cnam
     short: Cnam
@@ -48,8 +48,6 @@ video:
         title: "Inaugural lecture - Les moments du design"
         speaker: "Pierre Lévy"
 ---
-
-***Transcription de la leçon inaugurale***
 
 # Le moment du design</h1>
 

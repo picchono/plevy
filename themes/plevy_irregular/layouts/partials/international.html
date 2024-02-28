@@ -1,7 +1,0 @@
-{{ if .IsTranslated }}
-<div id="languageMode" class='permanent case flex-row'>
-    <div class="inline font-bold">{{ .Language.LanguageName }}</div>
-    {{ range .Translations }} <div class="inline">&nbsp;|&nbsp;<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
-            rel="noreferrer">{{ .Language.LanguageName }}</a></div>{{ end }}
-</div>
-{{ end }}

@@ -81,7 +81,7 @@ Le **[/ Séminaire de l'École du non-savoir /](/fr/events/seminaire-ecole-du-no
 
 &nbsp;
 
-### Some pannels
+### Quelques panneaux
 
 &nbsp;
 
@@ -95,4 +95,4 @@ What is the common language of minakind? - **Polish-Japanese Academy of Informat
 
 &nbsp;
 
-[*And some much more here*](https://civic-city.org/nonsapere/topics-2/)
+[*Et plus ici*](https://civic-city.org/nonsapere/topics-2/)

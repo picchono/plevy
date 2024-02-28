@@ -5,6 +5,8 @@
 <meta property="og:image" content="{{ $img.Permalink }}" />
 {{ else if .Params.featuredImage -}}
 <meta property="og:image" content="{{ .Params.featuredImage | absURL }}" />
+{{ else if .Params.frontphoto -}}
+<meta property="og:image" content="{{ .Params.frontphoto | absURL }}" />
 {{ end -}}
 
 <meta property="og:url" content="{{ .Permalink }}" />

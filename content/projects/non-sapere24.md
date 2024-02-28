@@ -88,4 +88,4 @@ What is the common language of minakind? - **Polish-Japanese Academy of Informat
 
 &nbsp;
 
-[*And some much more here*](https://civic-city.org/nonsapere/topics-2/)
+[*And some more here*](https://civic-city.org/nonsapere/topics-2/)
