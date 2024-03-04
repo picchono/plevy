@@ -1,4 +1,0 @@
-Contact: mailto: pierre_levy [at] outlook.com
-Expires: 2022-12-30T22:59:00.000Z
-Preferred-Languages: en, fr
-Canonical: https://plevy.fr/security.txt
