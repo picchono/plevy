@@ -6,6 +6,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href='{{ (partial "get_icon" (dict "icon" . "size" 180)).Permalink }}'>
 {{ end }}
 
+{{ if .Params.redirect }}
+<meta http-equiv="refresh" content="5; URL={{- .Params.redirect -}}">
+{{ end }}
+
 {{ if .Params.nofollow}}
 <meta name="robots" content="noindex" />
 {{ end }}
@@ -38,9 +42,6 @@
 {{ $epierrot_css := $epierrot_css | minify }}
 <link rel="stylesheet" href="{{ $epierrot_css.Permalink }}" media="screen">
 {{ end }}
-{{ $print_css := resources.Get "css/print.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
-{{ $print_css := $print_css | minify }}
-<link rel="stylesheet" href="{{ $print_css.Permalink }}" media="print">
 
 {{ if $js.epierrot.url }}
 {{ if $js.epierrot.version }}

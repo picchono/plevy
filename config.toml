@@ -4,8 +4,6 @@ title = "Pierre Lévy"
 theme = "plevy"
 defaultContentLanguage = "en"
 ignoreErrors = ["error-disable-taxonomy"]
-
-DefaultContentLanguage = "en"
 copyright = "plevy.fr"
 
 [Params]
@@ -48,17 +46,3 @@ privacyEnhanced = true
 [minify]
 minifyOutput = true
 merge = "deep"
-
-[languages]
-  [languages.en]
-    languageName = "EN"
-    languageCode = "en"
-    weight = 1
-  [languages.fr]
-    languageName = "FR"
-    languageCode = "fr"
-    weight = 2
-  [languages.jp]
-    languageName = "JP"
-    languageCode = "jp"
-    weight = 3

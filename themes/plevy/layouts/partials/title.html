@@ -1,98 +1,16 @@
-{{if not .IsHome }}
-    <div class="logosign absolute z-50 top-3 left-5 lg:top-3">
-        <a class="text-primary-text " href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo" "var(--color-epierrot)") -}}</a>
-    </div>
+<h1 class = "text-4xl font-bold" > {{ .Params.title |safeHTML }} </h1>
+{{ if .Params.description }}
+<div class="h-auto my-10">{{ .Params.description |safeHTML }}</div >
 {{ end }}
-<div class="w-full overflow-hidden flex flex-col md:flex-row">
-    <div class="w-1/6 pl-5 pr-20 self-start"></div>
-    <div class="max-w-3xl w-full px-5">
-        {{ partial "international.html" . }}
-        {{ partial "search.html" . }}
-        <div class="text-left items-start">
-            <h1 class="text-4xl font-bold">{{ .Params.title |safeHTML }}</h1>
-            {{ if .Params.authors }}
-                <p class="mt-3 italic">{{ .Params.authors }},
-                    {{ dateFormat "02 Jan 2006" .Date }}</p>
-            {{ end }}
-        </div>
-        {{ if .Params.updating }}
-            <div class="my-10">
-                <p class="italic text-epierrot">Currently updating</p>
-            </div>
+{{ if .Params.collaboration }} 
+<div class="flex flex-wrap items-center my-10">
+    {{ range sort .Params.collaboration }}
+    <a href="{{ .web }}" target="_blank" class="collab mr-4 my-8 p-4">{
+        {{ if .colo }}
+            {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+        {{else}}
+            {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" "var(--color-primary-text)") -}}
         {{ end }}
-        {{ if .Params.quote }}
-            <div class="my-10">
-                <p>{{ .Params.quote.quoteline |safeHTML}}<br/><span class="text italic">
-                        -
-                        {{ .Params.quote.quoteauthor }}
-                        ({{ .Params.quote.quotedate }})</span>
-                </p>
-            </div>
-        {{ end }}
-        {{ if .Params.diploma}}
-            <div class="flex flex-row items-start justify-start my-10">
-                <p class="mr-4 flex-grow flex-shrink">
-                    {{ range sort .Params.diploma }}
-                        <b>{{ .type }}</b>
-                        <br>
-                        {{ end }}
-                    </p>
-                    <p class="flex-grow">
-                        {{ range sort .Params.diploma }}
-                            {{ .name }}<br>
-                            {{ end }}
-                        </p>
-                    </div>
-                {{ end }}
-                {{ if .Params.reference }}
-                    <div class="my-10">
-                        <p>{{ .Params.reference |safeHTML }}</p>
-                    </div>
-                {{ end }}
-                {{ if .Params.abstract }}
-                    <div class="h-auto my-10">
-                        <p>
-                            <b>/
-                                {{ i18n "abstract"}}
-                                /</b>
-                            {{ .Params.abstract |safeHTML }}</p>
-                    </div>
-                {{ end }}
-                {{ if .Params.description }}
-                    <div class="h-auto my-10">
-                        <p><b>{{ .Params.description |safeHTML }}</b></p>
-                    </div>
-                {{ end }}
-                {{ if .Params.schedule }}
-                    <div class="h-144 my-10">
-                        <p>{{ .Params.schedule |safeHTML }}</p>
-                    </div>
-                {{ end }}
-                {{ if .Params.executive}}
-                    <div class="italic text-sm my-10">
-                        <p>{{ .Params.executive }}</p>
-                    </div>
-                {{ end }}
-                {{ if .Params.collaboration }}
-                    <div class="flex flex-wrap items-center my-10">
-                        {{ range sort .Params.collaboration }}
-                            <a href="{{ .web }}" target="_blank" class="collab mr-4 my-8 p-4">
-                                {{ if .colo }}
-                                    {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
-                                {{else}}
-                                    {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" "var(--color-primary-text)") -}}
-                                {{ end }}
-                            </a>
-                        {{ end }}
-                    </div>
-                {{ end }}
-                {{ if .Params.link }}<div class="max-w-3xl w-full pr-5">{{ partial "doclink.html" . }}</div>{{ end }}
-                {{ if .Params.photogallery }}
-                    {{ partial "photogallery.html" . }}
-                {{ end }}
-                {{ if .Params.video}}
-                    {{ partial "video.html" . }}
-                {{ end }}
-            </div>
-            <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
-        </div>
+    </a>
+    {{ end }}
+</div >{{ end }}

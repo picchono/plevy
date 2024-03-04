@@ -3,20 +3,12 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}" class="min-h-screen"{{ if .Params.noPagesearch }} data-pagefind-ignore="all">{{ else }}>
-  <div class="invisible h-0 w-0">
-    <span data-pagefind-filter="Type">{{ .Params.searchFilter }}</span>
-    <span data-pagefind-filter="Institution">{{ .Params.institution.short}}</span>
-    {{ range .Params.collaboration -}}<span data-pagefind-filter="Collaboration">{{ .short }}</span>{{- end -}}
-  </div>{{ end }}
-  <main class='w-full lg:w-auto' data-pagefind-body>  
+<body style='background-image: url({{absURL "/PLevy_front.webp"}});'>
+  <main class='w-screen h-screen flex justify-center items-center' data-pagefind-body>  
+    <div class="fleex flex-col max-w-lg h-auto">
     {{ partial "title.html" . }}
     {{- block "main" . }}{{- end }}
-    {{ partial "footer.html" . }}
+    </div>
   </main>
 </body>
-{{ if .Params.photogallery }}
-{{ $spo_js := resources.Get "js/spotl.js" | minify }}
-<script defer src="{{ $spo_js.Permalink }}"></script>
-{{ end }}
 </html>
