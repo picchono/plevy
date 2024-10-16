@@ -18,6 +18,11 @@ frontphoto: "https://live.staticflickr.com/65535/53987531454_961dc14fbe_o.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/53987531454_efb0ab05e7_w.jpg"
 code: USMC85
 lectures:
+lectures:
+    Introduction:
+        order: o
+        link: "introduction"
+        title: "Introduction"
     HTML:
         order: 1
         link: "rhetoric"

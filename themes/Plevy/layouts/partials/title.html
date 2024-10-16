@@ -1,9 +1,7 @@
 <section class="pb-0 flex flex-col justify-between min-h-screen">
     <div class="p-5">
-        <div class="text-4xl font-bold p-0 m-0 -ml-1">
-            <a class="logohome" href="{{ .Site.BaseURL | absURL }}"
+            <a class="logohome flex flex-row justify-start items-center p-0 m-0 -ml-1 text-4xl font-bold" href="{{ .Site.BaseURL | absURL }}"
                 aria-label="Pierre Lévy">Pierre Lévy</a>
-        </div>
         {{ partial "international.html" . }}
         {{ partial "search.html" . }}
     </div>
