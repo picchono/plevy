@@ -1,0 +1,8 @@
+{{ define "main" }}
+<section class="large p-5" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}"{{ end }}>
+    {{ range .Params.topics }}
+    <iframe width="100%" height="100%" src="https://padlet.com/pierre_levy/{{- .ref -}}" title="Padlet" frameborder="0"
+        allowfullscreen class="min-h-96"></iframe>
+    {{ end }}
+</section>
+{{ end }}

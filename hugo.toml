@@ -1,0 +1,65 @@
+baseURL = "https://plevy.fr"
+languageCode = "fr-FA"
+title = "Pierre Lévy"
+theme = "Plevy"
+defaultContentLanguage = "fr"
+ignoreErrors = ["error-disable-taxonomy"]
+
+DefaultContentLanguage = "fr"
+copyright = "plevy.fr"
+
+[Params]
+favicon = "icon.png"
+removePathAccents = true
+
+[deployement]
+order = [".webp", ".jpg$", ".gif$"]
+  [deployment.targets]
+  # An arbitrary name for this target.
+  name = "plevy-deploy"
+  [deployment.matchers]
+  # Set custom content type for /sitemap.xml 
+  pattern = "^sitemap\\.xml$"
+  contentType = "application/xml"
+  gzip = true
+  
+[build]
+  useResourceCacheWhen = "never"
+
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+disable = true
+
+[privacy.instagram]
+disable = true
+
+[privacy.twitter]
+disable = true
+
+[privacy.vimeo]
+disable = true
+privacyEnhanced = true
+
+[privacy.youtube]
+disable = true
+privacyEnhanced = true
+
+[minify]
+minifyOutput = true
+merge = "deep"
+
+[languages]
+  [languages.fr]
+    languageName = "FR"
+    languageCode = "fr-FA"
+    weight = 1
+  [languages.en]
+    languageName = "EN"
+    languageCode = "en-GB"
+    weight = 2
+  [languages.jp]
+    languageName = "JP"
+    languageCode = "jp-JA "
+    weight = 3

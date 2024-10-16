@@ -1,0 +1,288 @@
+{
+    "CNAM": {
+        "start": "2021",
+        "end": "none",
+        "order": 2,
+        "title": "Professeur du CNAM (PRCM)",
+        "extra": "Titulaire de la <a href='https://chaire-design.fr' target='_blank' title='Chaire de Design Jean Prouvé' rel='noreferrer'>Chaire de Design Jean Prouvé</a>",
+        "institution": "<a href='https://www.cnam.fr' target='_blank' title='Conservatoire National des Arts et Métiers' rel='noreferrer'>Conservatoire National des Arts et Métiers</a>",
+        "researchgroup": "",
+        "country": "France",
+        "main": true,
+        "associations": {
+            "EPN05": {
+                "order": 2,
+                "start": "2024",
+                "end": "none",
+                "title": "Membre du <a href='https://informatique.cnam.fr/' target='_blank' rel='noreferrer' data-tooltip='Équipe pédagogique nationale 05 – Informatique' title='Équipe pédagogique nationale 05 – Informatique'>département d'informatique (EPN05)</a>",
+                "comment": "L'Équipe Pédagogique Nationale Innovation (EPN05) se spécialise dans tous les domaines de l'informatique, tels que la programmation, les réseaux, les systèmes d'information, l'intelligence artificielle, l'algorithmique et l'optimisation combinatoire.",
+                "main": true
+            },
+            "EPN16": {
+                "order": 3,
+                "start": "2021",
+                "end": "2024",
+                "title": "Membre du <a href='https://innovation.cnam.fr' target='_blank' rel='noreferrer' data-tooltip='Équipe pédagogique nationale 16 – Innovation' title='Équipe Pédagogique Nationale EPN16 - Innovation'>département d'innovation (EPN16)</a>",
+                "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés.",
+                "main": true
+            },
+            "dicenidf": {
+                "order": 1,
+                "start": "2020",
+                "end": "none",
+                "title": "Chercheur au laboratoire <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> (EA 7339)",
+                "comment": "Le laboratoire Dicen-IDF (Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France) est une unité de recherche multi-tutelles (EA 7339) entre le Conservatoire National des Arts et Métiers, l'Université Gustave Eiffel et l'Université Paris-Nanterre",
+                "main": true
+            }
+        },
+        "activities": {
+            "ecoletransition": {
+                "order": 6,
+                "start": "2024",
+                "end": "none",
+                "title": "Membre des comités pédagogique et scientifique de l'<a href='https://formation.cnam.fr/actualites-de-la-formation/ecole-des-transitions-ecologiques-1427875.kjsp' target='_blank' rel='noreferrer' title='École des transitions écologiques'>École des transitions écologiques</a> du Cnam",
+                "comment": "L’École des transitions écologiques propose une expertise de haut niveau sur les enjeux de la transition écologique et du développement durable, et une offre de formation multidisciplinaire.",
+                "main": false
+            },
+            "DNMADE": {
+                "order": 5,
+                "start": "2022",
+                "end": "none",
+                "title": "Coordinateur des présidences de commission pédagogique <a href='https://www.francecompetences.fr/recherche/rncp/35518' target='_blank' rel='noreferrer' title='Diplôme national des métiers d'art et du design' data-tooltip='Diplôme national des métiers d'art et du design'>DNMADe</a> pour l'Académie de Paris",
+                "comment": "La commission pédagogique se prononce sur l'organisation de la formation et les modalités d'évaluation des étudiants. Elle se réunit également en jury afin de valider les unités d'enseignement, les stages et les résultats de chaque semestre des étudiants.",
+                "main": false
+            },
+            "CF22": {
+                "order": 4,
+                "start": "2022",
+                "end": "none",
+                "title": "Membre élu du Conseil des formations du Cnam",
+                "comment": "Le Conseil des Formations du Cnam détermine et met en œuvre l’offre de formation du Cnam.",
+                "main": false
+            },
+            "masterDesignCreation": {
+                "order": 1,
+                "start": "2021",
+                "end": "none",
+                "title": "Responsable du <a href='https://formation.cnam.fr/rechercher-par-discipline/master-arts-lettres-langues-mention-design-parcours-creation-projets-transdisciplinarite-1085664.kjsp?RF=' target='_blank' rel='noreferrer' data-tooltip='Master Arts, Lettres, langues - mention Design' title='Master Arts, Lettres, langues - mention Design'>Master Design</a>",
+                "comment": "L'objectif de ce master est de former des créateurs capables de concevoir leur projet professionnel, d'inventer leur pratique de design de manière prospective en intégrant l'évolution des sociétés et des contextes culturels et techniques sans cesse redéfinis.",
+                "main": true
+            },
+            "docschool": {
+                "order": 5,
+                "start": "2022",
+                "end": "none",
+                "title": "Responsable de la mention <i>Arts, Design et Société</i> de l'<a href='https://recherche.cnam.fr/etudes-doctorales-hdr/' target='_blank' rel='noreferrer' title='École doctorale Abbé Grégoire'>École doctorale Abbé Grégoire (ED 546)</a>",
+                "comment": "Cette spécialité s’inscrit à la fois dans la tradition multiséculaire du CNAM autour des métiers d’arts et techniques, de la conception et de l’innovation, de la culture et de la création, et dans l’évolution contemporaine de ces domaines liée à l’attention grandissante portée sur l’innovation sociale et écologique en France et à l’international.",
+                "main": true
+            },
+            "confluences":{
+                "order": 6,
+                "start": "2024",
+                "end": "none",
+                "title": "Correspondant scientifique du projet ANR <a href='https://anr.fr/fr/france-2030/france2030/call/excellence-sous-toutes-ses-formes-excellences-appel-a-projets-2022-vague-3/' target='_blank' rel='noreferrer' title='ExcellencES'>EXCELLENCES</a> 'ConflucES' pour le Cnam",
+                "comment": "Cette spécialité s’inscrit à la fois dans la tradition multiséculaire du CNAM autour des métiers d’arts et techniques, de la conception et de l’innovation, de la culture et de la création, et dans l’évolution contemporaine de ces domaines liée à l’attention grandissante portée sur l’innovation sociale et écologique en France et à l’international.",
+                "main": true
+            }
+        },
+        "minors": {
+            "CY-chaire-decision": {
+                "order": 1,
+                "start": "2024",
+                "end": "none",
+                "title": "Parrain de la chaire industrielle <i>Design de la décision</i> de CY école de design"
+            },
+            "agregation":{
+                "order": 3,
+                "start": "2022",
+                "end": "none",
+                "title":"Membre du jury d'<a href='https://www.devenirenseignant.gouv.fr/les-epreuves-de-l-agregation-externe-section-design-et-metiers-d-arts-865' target='_blank' rel='noreferrer' title='agrégation des métiers d'art et du design'>agrégation des métiers d'art et du design</a>",
+                "main": true
+            },
+            "jhtr": {
+                "order": 3,
+                "start": "2022",
+                "end": "none",
+                "title": "Membre du Comité consultatif de rédaction du <a href='https://ojs.utwente.nl/index.php/jhtr/' target='_blank' rel='noreferrer' data-tooltip='Journal of Human-Technology Relations' title='Journal of Human-Technology Relations'>JHTR</a>",
+                "main": true
+            }
+        }
+    },
+    "Hesam": {
+        "start": "2023",
+        "end": "2024",
+        "order": 3,
+        "title": "Vice-président",
+        "institution": "<a href='https://hesam.eu' target='_blank' rel='noreferrer' title='HESAM Universite'>HESAM Université</a>",
+        "country": "France",
+        "main": false,
+        "activities": {
+            "Conseildoctoral": {
+                "order": 1,
+                "start": "2023",
+                "end": "2024",
+                "title": "Membre du Bureau du Collège doctoral HESAM Université",
+                "comment": "Le Collège doctoral est l’instance interne d’HESAM Université, qui fédère les structures volontaires concourant à la formation doctoral: l'<a href='https://recherche.cnam.fr/ecole-doctorale-abbe-gregoire/ecole-doctorale-abbe-gregoire-ed-546--470086.kjsp?RH=rech_eco' target='_blank' rel='noreferrer' title='École doctorale Abbé-Grégoire - ED 546'>École doctorale Abbé-Grégoire (ED 546)</a> et l'<a href='https://edsmi.hesam.eu/' target='_blank' rel='noreferrer' title='École doctorale Sciences des Métiers de l'Ingénieur, SMI - ED432'>École doctorale Sciences des Métiers de l'Ingénieur, SMI (ED 432)</a>.",
+                "main": false
+            },
+            "Compagnons": {
+                "order": 4,
+                "start": "2023",
+                "end": "2024",
+                "title": "Membre du Comité stratégique de l'<a href='https://compagnons-du-devoir.com/formations-en-alternance/executive-master-responsable-de-projets/' target='_blank' rel='noreferrer' title='Executive Master Responsable de projets' data-tooltip='Executive Master Responsable de projets'>Executive Master Responsable de projets des Compagnons du Devoir</a>",
+                "comment": "L'Executive master « Responsable de projets, mention Métiers des technologies associées » est un diplôme équivalent Bac+5, en alternance. Objectif : former des pilotes de projets pluritechnologiques dans les métiers des technologies associées : l'électrotechnique, la mécanique et la mécanique d'outillage et de précision, afin de leur permettre d'accéder à des missions d'encadrement.",
+                "main": false
+            },
+            "NCUHESAM2030": {
+                "order": 2,
+                "start": "2023",
+                "end": "2024",
+                "title": "Membre du Comité de Pilotage de <a href='https://www.hesam.eu/hesam2030' target='_blank' rel='noreferrer' title='NCU - HESAM 2030' data-tooltip='ESAM 2030 - Construisons nos Métiers !'>NCU - HESAM 2030</a>",
+                "comment": "Le programme « HESAM 2030 - Construisons nos Métiers ! » vise à déployer des diplômes inédits et modulaires à un niveau Bac+1 et Bac+3, ouverts à tous, avec une priorité accordée aux bacheliers professionnels et technologiques, adaptables à chacun, partout et tout au long de la vie.",
+                "main": false
+            },
+            "ENSAPLV": {
+                "order": 3,
+                "start": "2023",
+                "end": "2024",
+                "title": "Membre du Comité de Pilotage du <a href='http://www.paris-lavillette.archi.fr/index.php?page=dpea-recherche' target='_blank' rel='noreferrer' title='NCU - HESAM 2030' data-tooltip='Post-master Recherches en Architecture - HESAM Université'>Post-master Recherches en Architecture - HESAM Université à l'ENSAPLV</a>",
+                "comment": "Ce post-master est un enseignement de troisième cycle préparant à l'inscription en doctorat d'architecture ou à de nouvelles pratiques de l'architecture, de l'urbanisme et du paysage. Le but de cette année « transitoire » est d'apprendre à produire un mémoire de recherche.",
+                "main": false
+            }
+        }
+    },
+    "TUe": {
+        "start": "2009",
+        "end": "2021",
+        "title": "Maître de conférence (full-time tenured assistant professor)",
+        "comment": "Membre du groupe de recherche <i>Designing Quality of Interaction</i> (2009-2017), puis <i>Systemic Change</i> (2018 - 2021)",
+        "institution": "<a href='https://www.tue.nl' target='_blank' title='Eindhoven University of Technology' rel='noreferrer'>Université de Technologie d'Eindhoven</a>",
+        "faculty": "Faculté de Design Industriel",
+        "researchgroup": "Groupe de recherche <i>Systemic Change</i>",
+        "country": "Pays-Bas",
+        "main": false,
+        "associations": {
+            "SystemicChange": {
+                "start": "2018",
+                "end": "2021",
+                "title": "Groupe de recherche <a href='https://www.tue.nl/en/research/research-groups/systemic-change/' target='_blank' title='Systemic Change' rel='noreferrer'><i>Systemic Change</i></a>",
+                "main": true
+            },
+            "DQI": {
+                "start": "2009",
+                "end": "2017",
+                "title": "Groupe de recherche Designing Quality in Interaction ",
+                "main": true
+            }
+        },
+        "activities": {
+            "datalab": {
+                "start": "2019",
+                "end": "2021",
+                "title": "Responsable du <i>DataLab</i>",
+                "comment": "Le DataLab est un lieu de TU/e ouvert pour l'exploration créative de l'interaction avec les données",
+                "main": false
+            },
+            "TP squad": {
+                "start": "2018",
+                "end": "2021",
+                "title": "Directeur du groupe de projets <i>Transforming Practices (TP)</i>",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la transformation des pratiques",
+                "main": false
+            },
+            "ICTcommittee": {
+                "start": "2016",
+                "end": "2021",
+                "title": "Membre du comité ICT",
+                "comment": "Le comité ICT dirige le développement TIC de la faculté en collaboration avec les services centraux de l'université",
+                "main": false
+            },
+            "Vitality squad": {
+                "start": "2016",
+                "end": "2018",
+                "title": "Directeur du groupe de projets <i>Vitality</i>",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème de la vitalité, du bien-être, et de la vie active",
+                "main": false
+            },
+            "Education committee": {
+                "start": "2015",
+                "end": "2016",
+                "title": "Coordinateur éducatif de la Faculté de Design Industriel, TU/e",
+                "comment": "Les 4 coordinateurs éducatifs assistent le Directeur d'Éducation dans l'élaboration du curriculum pédagogique de la faculté",
+                "main": false
+            },
+            "Examnination committee": {
+                "start": "2010",
+                "end": "2015",
+                "title": "Membre du Conseil des Examinateurs (Board of Examiners) de la Faculté de Design Industriel",
+                "comment": "Vice-président 2013 - 2015",
+                "main": false
+            },
+            "iTi squad": {
+                "start": "2015",
+                "end": "2016",
+                "title": "Directeur du groupe de projets <i>in-Transportation interaction [iTi]</i>",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème de l'interaction passager-véhicule, notamment dans le contexte de l'automobile autonome",
+                "main": false
+            },
+            "WS squad": {
+                "start": "2011",
+                "end": "2014",
+                "title": "Directeur du groupe de projets <i>Wearable Senses</i>",
+                "comment": "Direction d'un groupe ayant des charges éducatives, de recherche et administrative autour du thème des textiles intelligents et des ‘technologies près du corps'",
+                "main": false
+            }
+        },
+        "minors": {
+            "dschool": {
+                "start": "2016",
+                "end": "2018",
+                "title": "Fellowship à la d.school Paris, France",
+                "comment": "Le fellowship à la d.school Paris participe au développement des activités éducatives de la d.school Paris",
+                "main": false
+            },
+            "Tsukuba-trip2013": {
+                "start": "2013",
+                "end": "2014",
+                "title": "Chercheur invité à l'École Doctorale des Sciences Humaines Généralisées, Université de Tsukuba, Japon",
+                "main": false
+            }
+        }
+    },
+    "Chiba": {
+        "start": "2008",
+        "end": "2009",
+        "title": "Enseignent et chercheur",
+        "comment": "Responsable de l'enseignement et des activités du programme de master <i>Service Product Design</i>",
+        "institution": "Université de Chiba",
+        "country": "Japon",
+        "main": false
+    },
+    "postdoc": {
+        "start": "2006",
+        "end": "2008",
+        "title": "Chercheur postdoctoral",
+        "comment": "Recherche postdoctorale pour le <i>21st Century COE Program for the Promotion of Kansei Science for Understanding the Mechanism of Mind and Heart</i>, financé by par le Ministère Japonais de l'Éducation, de la Culture, des Sports, de la Science and de la Technologie (MEXT)",
+        "institution": "Université de Tsukuba",
+        "country": "Japon",
+        "main": false
+    },
+    "DKT": {
+        "start": "2000",
+        "end": "2002",
+        "title": "Ingénieur/designer, responsable de la R&D au Japon",
+        "comment": "Mise en place d'une antenne japnoaise d'innovation et projets d'innovation en collaboration avec des partenaires japonais",
+        "institution": "Decathlon in Japon (devenu Oxylane)",
+        "country": "Japon",
+        "main": false
+    },
+    "Béghin-Say": {
+        "start": "1999",
+        "end": "2000",
+        "title": "Technicien de maintenance en analyse vibratoire",
+        "comment": "Mise en place système de maintenance par l'analyse vibratoire",
+        "institution": "Éridania Béghin-Say (devenu Thereos)",
+        "country": "France",
+        "main": false
+    }
+}

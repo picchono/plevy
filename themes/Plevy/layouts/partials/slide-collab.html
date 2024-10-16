@@ -1,0 +1,19 @@
+<div class="h-10 mb-6 flex-grow-0 flex-shrink-0 bg-primary-bg">{{ if .colla }}
+        <div class="w-full h-full flex flex-row items-center justify-start px-5">
+            {{ with .colla}}{{ range . }}
+            <a href="{{ index . 2 }}" title="{{ index . 1 }}" rel="noreferrer" target="_blank" aria-label="Go to partner's website"
+                class="inline-block align-bottom mr-7">{{ partial "icons.html" (dict "ico" ( index . 0 ) "hei" (
+                index . 3 ) "colo" "var(--color-primary-text)") }}</a>
+            {{ end }}{{ end }}
+            {{ if .sign }}<a href="mailto:pierre.levy@lecnam.net"
+                class="text-base text-primary-text font-bold">pierre.levy@lecnam.net</a>{{ end }}
+        </div>
+        {{ else }}
+        <div class="w-full h-full flex flex-row items-center justify-start px-5">
+            <a href="https://www.cnam.fr" title="Le Cnam" rel="noreferrer" target="_blank" aria-label="Go to cnam website"
+                class="inline-block align-bottom mr-7">{{ partial "icons.html" (dict "ico" "cnam" "hei" 1 "colo"
+                "var(--color-primary-text)") }}</a>
+            <a href="mailto:pierre.levy@lecnam.net"
+                class="text-base text-primary-text font-bold">pierre.levy@lecnam.net</a>
+        </div>{{ end }}
+</div>

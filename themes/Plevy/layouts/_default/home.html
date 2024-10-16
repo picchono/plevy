@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="justify-start flex flex-col p-5 flex-grow" {{if .Params.searchWeight
+    }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    <div class="max-w-3xl w-full px-5">
+        {{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
+        {{ with index .Site.Data.plevy .Site.Language.Lang }}
+        <div class="social flex flex-row justify-start items-center w-full my-10">
+            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="inline-block p-2 mr-4"
+                rel="noreferrer" aria-label="{{ .icon }}">{{- partial "icons.html" (dict "ico" .icon
+                "hei" 0.8 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{$memb := .Params.member}}
+</section>
+{{ range $fold := slice "events" "teaching" "courses" "projects"  "research" "publications" "writings" }}
+{{ range readDir "content" }}
+{{ if eq .Name $fold }}
+{{ range where $.Site.Pages "Section" "in" ($fold) }}
+{{ if eq .Params.zone $fold }}
+<section class="flex flex-col" id="{{- lower .Title -}}">
+    <h1>{{ .Title }}</h1>
+    {{ $count := 0 }}
+    {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+    {{ if ne .Params.notListed true }}
+    {{ if isset .Params "members" }}
+    {{ if ne .Params.notListed true }}
+    {{ if in .Params.members $memb }}
+    {{ $count = add $count 1 }}
+    {{- partial "box.html" ( dict "context" . "cou" $count) -}}
+    {{ end }}{{ end }}{{ end }}
+    {{ end }}
+    {{ end }}
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

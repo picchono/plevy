@@ -1,0 +1,43 @@
+{
+    "HDR18": {
+        "date": "2018",
+        "title": "Habilitation à Diriger des Recherches en Sciences de l’Information de la Communication (infocom)",
+        "place": "UTC Compiègne, France",
+        "comment": "Section 71 - Sciences de l'information et de la communication",
+        "type": "diploma",
+        "manuscript": "Le temps de l’expérience, enchanter le quotidien par le design",
+        "main": true
+    },
+    "Qualif13": {
+        "date": "2013",
+        "title": "Qualification aux fonctions de Maître de Conférence",
+        "comment": "Section 60 - Mécanique, génie mécanique, génie civil",
+        "type": "qualification",
+        "main": false
+    },
+    "BKO13": {
+        "date": "2013",
+        "title": "Qualification d’Enseignement Universitaire (University Teaching Qualification - BKO)",
+        "place": "Eindhoven University of Technology (TU/e), Pays-Bas",
+        "comment": "Diplôme néerlandais de compétence d’enseignement en milieu universitaire",
+        "type": "qualification",
+        "main": true
+    },
+    "PhD06": {
+        "date": "2006",
+        "title": "Doctorat en Science du Kansei",
+        "place": "Université of Tsukuba, Japon",
+        "comment": "Prix de la meilleure dissertation (plus haute distinction possible délivrée par l’école doctorale)",
+        "type": "diploma",
+        "manuscript": "Interdisciplinary design for the cyberspace by an approach in kansei information, Methodology and Workgroup Communication Tool Design Approach in Kansei",
+        "main": true
+    },
+    "Ing01": {
+        "date": "2001",
+        "title": "Diplôme d'Ingénierie Mécanique, spécialité de Design Industriel",
+        "place": "UTC Compiègne, France",
+        "comment": "Université de Technologie de Compiègne, France",
+        "type": "diploma",
+        "main": true
+    }
+}

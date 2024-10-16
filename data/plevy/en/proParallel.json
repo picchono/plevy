@@ -1,0 +1,57 @@
+{
+    "kansei": {
+        "start": "2006",
+        "end": "2023",
+        "order": 1,
+        "title": "Contribution to the international kansei research community",
+        "main": false,
+        "activities": {
+            "KEER steering coord": {
+                "order": 6,
+                "start": "2014",
+                "end": "none",
+                "title": "<a href='https://keer.org' target='_blank' title='keer.org' rel='noreferrer'>Kansei Engineering and Emotion Research (KEER)</a> Steering Board coordinator",
+                "comment": "This board organises common activities of the four kansei research communities (JSKE (Japan), TIK (Taiwan), MAKE (Malaysia) and EKG (Europe))",
+                "main": true
+            },
+            "EKG": {
+                "order": 5,
+                "start": "2016",
+                "end": "2018",
+                "title": "Co-founder and President of the European Kansei Group (EKG)",
+                "comment": "The European Kansei Group (EKG) aims at developing and promoting kansei research in Europe, in both the academic and the industrial worlds",
+                "main": false
+            },
+            "IJAE": {
+                "order": 4,
+                "start": "2006",
+                "end": "none",
+                "title": "Editorial Board member of the International Journal of Affective Engineering (IJAE)",
+                "main": false
+            },
+            "KEER14": {
+                "order": 3,
+                "start": "2012",
+                "end": "2014",
+                "title": "Chair of the Scientific Committee of KEER2014",
+                "comment": "International Conference of Kansei Engineering and Emotion Research 2014, Linköping, Sweden",
+                "main": false
+            },
+            "KEER10": {
+                "order": 2,
+                "start": "2009",
+                "end": "none",
+                "title": "Co-organiser of the KEER international conferences",
+                "comment": "International Conference of Kansei Engineering and Emotion Research 2010, Paris, France",
+                "main": false
+            },
+            "JSKE-advis": {
+                "order": 1,
+                "start": "2009",
+                "end": "none",
+                "title": "Councilor for the Japanese Society of Kansei Engineering (JSKE)",
+                "main": false
+            }
+        }
+    }
+}

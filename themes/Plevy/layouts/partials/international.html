@@ -1,0 +1,11 @@
+<div id="international" class="flex flex-row justify-start items-start w-full">
+    {{ if .IsTranslated }}
+        <div id="languageMode" class='flex flex-row'>
+            <div class="inline text-sm">
+                <b>{{ .Language.LanguageName }}</b>
+                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}">&lceil;{{ .Language.LanguageName }}&rfloor;</a>
+                {{ end }}
+            </div>
+        </div>
+   {{ end }}
+</div>

@@ -1,0 +1,97 @@
+{
+	"firstname": "Pierre",
+	"middlename": "Denis",
+	"lastname": "Lévy",
+	"title": "prof.dr.ing.",
+	"nationality": "France",
+	"birthdate": "04 Oct. 1977",
+	"address": "Conservatoire National des Arts & Métiers<br/>2 Rue Conté<br/>75003 Paris<br/>France",
+	"tel": "+33.(0)7.5458.7794",
+	"email": "pierre_levy@outlook.com",
+	"proemail": "pierre.levy@lecnam.net",
+	"photoSmall": "https://live.staticflickr.com/65535/51393282608_d943089e8d_c.jpg",
+	"photoBig": "https://live.staticflickr.com/65535/51393282608_fcf0a2528a_o.jpg",
+	"cvupdate": "12 Dec 2021",
+	"web": {
+		"username": "chaire-design.fr",
+		"url": "https://chaire-design.fr"
+	},
+	"social": {
+		"cv": {
+			"order": 1,
+			"type": "Curriculum vitae",
+			"username": "Pierre Levy",
+			"url": "/plevy/cv/",
+			"icon": "cv"
+		},
+		"photo": {
+			"order": 2,
+			"type": "PHoto",
+			"username": "PLevy",
+			"url": "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg",
+			"icon": "photo"
+		},
+		"linkedin": {
+			"order": 3,
+			"type": "linkedIn",
+			"username": "levypier",
+			"url": "https://www.linkedin.com/in/levypier",
+			"icon": "linkedin"
+		},
+		"researchgate": {
+			"order": 34,
+			"type": "researchgate",
+			"username": "Pierre-Levy-4",
+			"url": "https://www.researchgate.net/profile/Pierre-Levy-4",
+			"icon": "researchgate"
+		},
+		"youtube": {
+			"order": 5,
+			"type": "youtube",
+			"username": "pierrelevy7915",
+			"url": "https://www.youtube.com/channel/UCm6PefM2jvYGCCRnO9KaWsw",
+			"icon": "youtube"
+		}
+	},
+	"affiliations": {
+		"aff1a": {
+			"name": "Conservatoire National des Arts et Métiers",
+			"url": "https://www.cnam.fr"
+		},
+		"aff1b": {
+			"name": "HESAM Université",
+			"url": "https://www.hesam.eu/"
+		},
+		"aff1c": {
+			"name": "Laboratoire Dicen-IDF (EA 7339)",
+			"url": "https://www.dicen-idf.org/"
+		},
+		"aff2a": {
+			"name": "Eindhoven University of Technology",
+			"url": "https://www.tue.nl/en/our-university/departments/industrial-design/"
+		},
+		"aff3a": {
+			"name": "Design Research Society (DRS)",
+			"url": "https://www.tue.nl/en"
+		},
+		"aff4a": {
+			"name": "Kansei Engineering and Emotion Research (KEER - Steering committee coordinator)",
+			"url": "https://www.keer.org"
+		},
+		"aff4b": {
+			"name": "European Kansei Group (EKG – former president)",
+			"url": "#"
+		},
+		"aff4c": {
+			"name": "Japan Society of Kansei Engineering",
+			"url": "https://jske.jp"
+		}
+	},
+	"registration": {
+		"orcid": "0000-0003-2801-0588",
+		"scholar": "bfRUiJwAAAAJ",
+		"hal": "751380"
+	},
+	"comment": "<p>Pierre Lévy is a professor at the Conservatoire National des Arts et Métiers, holder of the Chair of design Jean Prouvé, vice-president Education at HESAM Université, and member of the Dicen-IDF laboratory (EA 7339). He holds an engineering degree in mechanical engineering (UT Compiègne, France), a Ph.D in kansei (affective) science (University of Tsukuba, Japan) and an HDR in information and communication sciences (UT Compiègne, France). He has lived for nearly 10 years in Japan (where he worked in industry and then in several Japanese universities) and 12 years in the Netherlands (at the Eindhoven University of Technology).</p><p>His work focuses on the relationship between the creative moments that are the design practice and the appropriation in everyday practices. This work is based on theories related to embodiment, reflexive practices, and Japanese philosophy and thinking. Through this research, Pierre Lévy discusses the posture and societal role of design, and more generally of reflexive practices, in the service of transforming everyday life.</p>",
+	"descripshort": "I am a professor at the <a href='https://www.cnam.fr' target='_blank' rel='noreferrer'>Conservatoire National des Arts et Métiers</a>, holder of the <a href='https://www.chaire-design.fr' target='_blank' rel='noreferrer'>Chair of design Jean Prouvé</a>, and member of the <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer'>Dicen-IDF laboratory (EA 7339)</a>.<br>My work focuses on the relationship between the creative moments that are the design practice and the appropriation in everyday practices. This work is based on theories related to embodiment, reflexive practices, and Japanese philosophy and thinking. Through this research, I discuss the posture and societal role of design, and more generally of reflexive practices, in the service of transforming everyday life"
+}
