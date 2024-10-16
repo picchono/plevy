@@ -1,6 +1,0 @@
-[[redirects]]
-    from = "https://plevy.fr/*"
-    to = "https://chaire-design.fr/"
-    status = 301
-    force = true
-    headers = {X-From = "Netlify"}
