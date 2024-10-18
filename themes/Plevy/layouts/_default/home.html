@@ -27,8 +27,8 @@
       {{ if .Params.members }}
       {{ range .Params.members }}
       <div class="h-24 w-full p-4 mb-4"><a class="flex flex-row boxA text-primary-text transition-all duration-700 ease-in-out justify-start w-full p-1" href="{{ index . 3 }}">
-        <img class="object-cover rounded-sm h-16 w-16 mr-4" src="{{ index . 2 }}">
-        <div><span class="font-bold">{{ index . 0 }}</span><br/><span class="">{{ index . 1 }}</span></div>
+        <img class="flex-grow-0 flex-shrink-0 object-cover rounded-sm h-20 w-20 mr-4" src="{{ index . 2 }}">
+        <div><span class="font-bold">{{ index . 0 }}</span><br/><span class="">{{ index . 1 |safeHTML}}</span></div>
       </a></div>
       {{ end }}
       {{ end }}

@@ -1,4 +1,5 @@
 ---
+redirect: "/en/"
 member: PLevy
 title: "Pierre Lévy"
 slug: "pierre-levy"

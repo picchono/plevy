@@ -23,7 +23,7 @@ video:
         title: "Inaugural lecture - Les moments du design"
         speaker: "Pierre Lévy"
 members:
-    1: ["Pierre Lévy", "professor, chair holder", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
+    1: ["Pierre Lévy", "Professeur du Cnam,<br/>Titulaire de la chaire", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
 ---
 {{<slashLink "Écrits récents" "/writings/">}}[La diversité dans l'enseignement du design et des métiers d'art doit faire école]({{< ref "/writings/PLevy_PIA23" >}})
 {{<slashLink "Formations" "/courses/">}}[Master design Cnam·CESAAP]({{< ref "/courses/Master-CESAAP.md" >}}) en résidence à l'Académie du climat à Paris

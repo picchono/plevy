@@ -23,7 +23,7 @@ video:
         title: "Inaugural lecture - Les moments du design"
         speaker: "Pierre Lévy"
 members:
-    1: ["Pierre Lévy", "professor, chair holder", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
+    1: ["Pierre Lévy", "Professor of Cnam<br/>Design chair holder", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
 ---
 
 {{<slashLink "Inaugural lecture" "/events/lecon-inaugurale/">}}

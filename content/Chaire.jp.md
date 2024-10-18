@@ -23,7 +23,7 @@ video:
         title: "Inaugural lecture - Les moments du design"
         speaker: "Pierre Lévy"
 members:
-    1: ["Pierre Lévy", "professor, chair holder", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
+    1: ["レヴィ・ピエール", "国立工芸院教授<br/>デザインチェア", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
 ---
 
 {{<slashLink "Leçon inaugurale" "/events/lecon-inaugurale/">}}
