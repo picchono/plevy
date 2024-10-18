@@ -1,7 +1,10 @@
 {{ define "main" }}
-<section class="justify-start flex flex-col p-5 flex-grow" {{if .Params.searchWeight
+<section class="justify-start flex flex-col flex-grow" {{if .Params.searchWeight
     }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
-    <div class="max-w-3xl w-full px-5">
+    {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
+    {{ with $page }}
+    <h1>{{ .Title }}</h1>
+    <div class="px-5">
         {{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
         {{ with index .Site.Data.plevy .Site.Language.Lang }}
         <div class="social flex flex-row justify-start items-center w-full my-10">
@@ -11,7 +14,26 @@
         </div>
         {{ end }}
     </div>
+    {{ end }}
     {{$memb := .Params.member}}
+</section>
+<section {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    {{ $page := $.Site.GetPage "page" "chaire.md" }}
+    {{ with $page }}
+      <h1 class="block mr-10">{{ .Title }}</h1>
+      <div class="p-5">{{ .Params.description }}</div>
+      <div class="p-5 text-center"><a href='/chaire' target="_blank" class="doclinkButton" rel="noreferrer" aria-label="Get chaire page"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
+      <h2>{{ i18n "members"}}</h2>
+      {{ if .Params.members }}
+      {{ range .Params.members }}
+      <div class="h-24 w-full p-4 mb-4"><a class="flex flex-row boxA text-primary-text transition-all duration-700 ease-in-out justify-start w-full p-1" href="{{ index . 3 }}">
+        <img class="object-cover rounded-sm h-16 w-16 mr-4" src="{{ index . 2 }}">
+        <div><span class="font-bold">{{ index . 0 }}</span><br/><span class="">{{ index . 1 }}</span></div>
+      </a></div>
+      {{ end }}
+      {{ end }}
+    {{ end }}
+{{$memb := .Params.member}}
 </section>
 {{ range $fold := slice "events" "teaching" "courses" "projects"  "research" "publications" "writings" }}
 {{ range readDir "content" }}

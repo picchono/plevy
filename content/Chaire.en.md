@@ -17,6 +17,13 @@ description: "The Chaire of Design Jean Prouvé is a benevolent place dedicated 
 notEverything: true
 notListed: true
 noPagesearch: true
+video:
+    video1:
+        youtube: "2iE0PFu51CM"
+        title: "Inaugural lecture - Les moments du design"
+        speaker: "Pierre Lévy"
+members:
+    1: ["Pierre Lévy", "professor, chair holder", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
 ---
 
 {{<slashLink "Inaugural lecture" "/events/lecon-inaugurale/">}}

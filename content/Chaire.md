@@ -17,10 +17,14 @@ description: "La Chaire de Design Jean Prouvé est un lieu bienveillant consacr�
 notEverything: true
 notListed: true
 noPagesearch: true
+video:
+    video1:
+        youtube: "2iE0PFu51CM"
+        title: "Inaugural lecture - Les moments du design"
+        speaker: "Pierre Lévy"
+members:
+    1: ["Pierre Lévy", "professor, chair holder", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
 ---
-{{<slashLink "Leçon inaugurale" "/events/lecon-inaugurale/">}}
-
-&nbsp;
 {{<slashLink "Écrits récents" "/writings/">}}[La diversité dans l'enseignement du design et des métiers d'art doit faire école]({{< ref "/writings/PLevy_PIA23" >}})
 {{<slashLink "Formations" "/courses/">}}[Master design Cnam·CESAAP]({{< ref "/courses/Master-CESAAP.md" >}}) en résidence à l'Académie du climat à Paris
 {{<slashLink "Enseignements" "/teaching/">}}[Pratiques de recherche en design, arts et création (DSN201)]({{< ref "/teaching/DSN201.md" >}}) · [Pratiques reflexives (DSN202)]({{< ref "/teaching/DSN202.md" >}}) · [Structurer l'information (TET007)]({{< ref "/teaching/TET007-M1.md" >}}) · [Dialoguer (USMC85)]({{< ref "/teaching/USMC85.md" >}})
