@@ -23,7 +23,7 @@ citation:
     booktitle: "The Next Renaissance - Culture and Creativity shaping Europe"
     publisher: ["Odile Jacob", "Paris, France"]
     isbn: "978-2-4150-0199-5"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inbook

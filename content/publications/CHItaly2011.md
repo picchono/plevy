@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: luciole-lighting-up-the-design-process
 title: "Luciole, lighting up the design process"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

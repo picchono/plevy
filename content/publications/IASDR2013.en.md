@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: exploring-constituents-for-kansei-design-towards-a-framework
 title: "Exploring constituents for kansei design, towards a framework"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

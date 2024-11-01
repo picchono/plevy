@@ -26,4 +26,8 @@ teacher:
 frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
 link:
     1: ["miro", "miro", "https://miro.com/app/board/uXjVNJOhJSM=/?share_link_id=922944164425"]
+playlist:
+    pl1:
+        youtube: "si=WR7Q-nzHsbAnAJ_c&amp;list=PLmiHe0R4hbzSkOo2FWVaBQE9WlHRr3a92"
+        title: "Miro tutorial"
 ---

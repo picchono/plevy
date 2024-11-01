@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: development-of-competences-for-service-design
 title: "Development of Competences for Service Design"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

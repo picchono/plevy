@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: education-as-a-transforming-practice-designing-together-for-complex-sustainable-living
 title: "Education as a transforming practice: designing together for complex, sustainable living"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

@@ -1,6 +1,6 @@
 {{ if ne .Params.layout "list" }}
 <section>
-    {{ if .Params.abstract }}
+    {{ if and (.Params.abstract) (ne .Params.layout "publi") }}
     <div class="h-auto my-5 px-5">
         <b class="text-epierrot">{{ partial "slash.html" (dict "txt" (i18n "abstract")) }}</b>
         {{ .Params.abstract |safeHTML }}
@@ -32,6 +32,9 @@
     {{ end }}
     {{ if .Params.video}}
     {{ partial "video.html" . }}
+    {{ end }}
+    {{ if .Params.playlist}}
+    {{ partial "playlist.html" . }}
     {{ end }}
     {{ if .Params.calendar }}
     <div class="p-5">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />

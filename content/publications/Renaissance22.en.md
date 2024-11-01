@@ -11,7 +11,7 @@ institution:
     colo: "#c1002a"
 chaire: true
 date: 2022-04-01T17:03:37+02:00
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inbook

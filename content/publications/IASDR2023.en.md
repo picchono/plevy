@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: ProVi-a-transforming-vision-emerging-from-reflective-practice
 title: "ProVi – a transforming vision emerging from reflective practice"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

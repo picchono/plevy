@@ -11,7 +11,7 @@ institution:
     colo: "#c72125"
 chaire: false
 date: 2020-08-30T17:03:37+02:00
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 main: true

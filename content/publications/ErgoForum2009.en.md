@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: methods-and-means-for-kansei-design
 title: "Methods and Means for Kansei Design"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

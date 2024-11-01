@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: prospective-psychophysiological-approach-for-kansei-design-knowledge-sharing-between-psychophysiology-and-design
 title: "Prospective psychophysiological approach for Kansei design: knowledge sharing between psychophysiology and design"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

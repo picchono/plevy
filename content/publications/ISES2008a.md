@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: kansei-studies-description-and-mapping-through-kansei-studies-keywords
 title: "Kansei Studies Description and Mapping through Kansei Studies Keywords"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

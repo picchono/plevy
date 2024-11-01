@@ -1,4 +1,10 @@
 {{ define "main" }}
-    {{ partial "title.html" . }}
-    {{ if .Content}}<section id="content" class="large p-5" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}"{{ end }}>{{ .Content }}</section>{{ end }}
+{{ $langu := .Site.Language.Lang }}
+<section class="large justify-start flex flex-col flex-grow" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    <h1>{{ i18n "abstract" }}</h1>
+    <div class="px-5" id="content">{{ .Params.abstract |safeHTML }}</div>
+    {{ if .Content}}<div class="px-5" id="content">{{ .Content }}</div>{{ end }}
+
+    </div>
+</section>
 {{ end }}

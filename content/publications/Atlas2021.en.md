@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: designing-for-transforming-practices-maps-and-journeys
 title: "Designing for Transforming Practices: Maps and Journeys"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: book

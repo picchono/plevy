@@ -2,7 +2,7 @@
 {{ range sort .Params.video }}
 {{ if isset . "youtube" }}
 <div class="w-full max-w-xl border-0">
-    <div class="embed-wrapper h-full w-full"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" frameborder="0"
+    <div class="embed-wrapper h-full w-full"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube | safeURL }}" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe></div>
     <div class="text-xs italic h-full p-2">By playing this movie, you accept

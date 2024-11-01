@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: towards-a-definition-of-kansei
 title: "Towards a definition of Kansei"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 kansei: true

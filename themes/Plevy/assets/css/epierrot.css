@@ -52,12 +52,12 @@ body {
 }
 
 body {
-  --color-primary-bg: #f1faee;
-  --color-secondary-bg: #f8fff5;
-  --color-tertiary-bg: #dae2d7;
+  --color-primary-bg: #d1dedb;
+  --color-secondary-bg: #d7e9e5;
+  --color-tertiary-bg: #c3cfcf ;
   --color-primary-text: #1c1c1c;
   --color-secondary-text: rgb(166, 152, 135);
-  --color-epierrot: #03618f;
+  --color-epierrot: #60707a;
 }
 
 section {

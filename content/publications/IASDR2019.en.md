@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: designing-for-the-everyday-through-thusness-and-irregularity
 title: Designing for the everyday through thusness and irregularity
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings

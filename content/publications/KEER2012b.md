@@ -2,7 +2,7 @@
 members: ["PLevy"]
 slug: developing-a-design-approach-exploring-resistance-and-ambiguity
 title: "Developing a design approach, exploring resistance and ambiguity"
-layout: single
+layout: publi
 searchFilter: Publication
 searchWeight: 8
 publitype: inproceedings
