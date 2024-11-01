@@ -33,9 +33,6 @@
     {{ if .Params.video}}
     {{ partial "video.html" . }}
     {{ end }}
-    {{ if .Params.playlist}}
-    {{ partial "playlist.html" . }}
-    {{ end }}
     {{ if .Params.calendar }}
     <div class="p-5">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
         <ul>{{ range .Params.calendar }}

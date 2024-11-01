@@ -8,7 +8,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen></iframe></div>
     </div>
-    <div class="w-full flex-grow flex-shrink flex flex-col justify-end self-end max-w-xl p-1">
+    <div class="w-full flex-grow flex-shrink flex flex-col justify-end self-end p-1">
         {{ if .Title }}
         <div class="">{{ if isset . "title" }}<h2 class="pt-0 leading-8">
                 {{ .Title }}</h2>{{ end }}
@@ -19,4 +19,3 @@
         {{ end }}
     </div>
 </div>{{ end }}
-tset

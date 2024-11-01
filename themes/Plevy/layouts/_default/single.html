@@ -1,9 +1,12 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-{{ if .Content}}
-<section class="large p-5 justify-start flex flex-col flex-grow" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
-        <div class="p-5" id="content">{{ .Content }}</div>
+<section class="large p-5 justify-start flex flex-col flex-grow" {{if .Params.searchWeight}}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    {{ if .Params.playlist}}
+    {{ partial "playlist.html" . }}
+    {{ end }}
+    {{ if .Content}}
+    <div class="p-5" id="content">{{ .Content }}</div>
+    {{ end }}
     </div>
 </section>
-{{ end }}
 {{ end }}
