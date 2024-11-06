@@ -39,17 +39,6 @@ Cela permet non seulement de légitimer l'activité du design comme recherche, s
 
 Le portfolio annoté "offre une façon de présenter les livrables du design en respectant simultanément la particularité et la multidimensionnalité du travail de design, tout en répondant à de nombreuses exigences de la théorie généralisable."
 
-Le portfolio annoté vise à *examiner des exemples spécifiques de pratiques pour trouver des orientations pour le travail et, en discutant de la manière dont ces exemples étaient pertinents pour nous, de commencer à développer un  réflexion au travers du design*.
-
-Il se différentie d’approches plus classiques dont le point de départ est une considération théorique (parmi tant de possibilités) pour expliquer des choix, pouvant amener une multitude de solutions. Bien que la théorie aide à structurer la pratique et la reflexion de cette pratique, la relation "imprécise" entre théorie et pratique (d'une théorie peut émerger plusieurs pratiques et une pratique peut être expliquée par plusieurs théories) ne permet pas de se pencher avec attention sur les détails d'une pratique.
-De plus, la théorie risque de proposer une description de ce que la pratique est, de ce que le design est, au lieu de ce qui devrait ou pourrait être.
-
-Cette perspective questionne donc le design comme une forme de recherche. Comment peut-il structurer une recherche solide? De quoi a-t-il besoin? Au lieu d'aller chercher un n-ième élément d'une discipline voisine, Gaver et alii proposent de se saisir directement de ce que la pratique du design propose.
-
-Cela permet non seulement de légitimer l'activité du design comme recherche, sans la changer pour ce qui correspondrait plus à l'activité d'autres domaines, mais par une approche plus élaboré de leurs propres approches afin qu'elle apparaisse légitime du point de vue des autres disciplines.
-
-Le portfolio annoté "offre une façon de présenter les livrables du design en respectant simultanément la particularité et la multidimensionnalité du travail de design, tout en répondant à de nombreuses exigences de la théorie généralisable."
-
 {{<linkBox "Gaver, B., & Bowers, J. (2012). Annotated Portfolios. Interactions, 19(4), 40–49. https://doi.org/10.1145/2212877.2212889" "https://doi.org/10.1145/2212877.2212889">}}
 
 {{<linkBox "Bowers, J. (2012). The logic of annotated portfolios. Proceedings of the Designing Interactive Systems Conference, 68–77. https://doi.org/10.1145/2317956.2317968" "https://doi.org/10.1145/2317956.2317968">}}
@@ -69,7 +58,7 @@ De ce point de vue les artefacts forment déjà une sorte de prise de position o
 
 Les perspectives autres que celle correspondantes à celles empruntées par les designers n'en sont toutefois pas moins importantes et pertinentes, puisqu'elle soulève des considérations (eg culturelles) qui peuvent avoir été ignorée par les designers, ou incluent dans des considérations inconscientes.
 
-Dans la pratique du design, qu'elle soit entrepreunariale ou académique, l'explication et la justification d'un design se fait également et significativement par les problèmes rencontrés et les choix faits tout au long du processus. On rend donc compte des détails les plus important, qu’ils soient  issus du livrable final ou du processus de design pour l'argument à construire et la perspective à justifier. 
+Dans la pratique du design, qu'elle soit entrepreneuriale ou académique, l'explication et la justification d'un design se fait également et significativement par les problèmes rencontrés et les choix faits tout au long du processus. On rend donc compte des détails les plus important, qu’ils soient  issus du livrable final ou du processus de design pour l'argument à construire et la perspective à justifier. 
 
 *Le récit textuel (papier, rapport, descriptions de toute sorte) dans la recherche en design a un caractère indexical* : il indique des aspects du design qui mérite une attention au-delà du projet, une attention pertinente pour la recherche, faisant de ces aspects autant de sujets de discussions dans la communauté. Les récits textuels des artefacts, incluant les aspects théoriques, sont considérés ici comme **des annotations,** par leur capacité d'indexation de l'artefact. Elles obtiennent leur sens et leur pertinence en vertu de leur  lien indiciel avec un artefact. Ce sont donc dans leur relation que du sens est produit.
 
@@ -99,7 +88,7 @@ Nous pensons que l'assemblage d'un ensemble de travaux dans un portfolio annoté
 
 - rendre compte du style de design d'un projet particulier, d'un studio ou d'une institution.
 - découvrir leurs valeurs esthétiques et sociopolitiques sous-jacentes au design d’un dispositif.
-- faire ressortir des caractéristiques qui n'ont peut-être pas été couvertes dans les analyises d'artefacts uniques. Cela peut faciliter l'évaluation de la valeur de la contribution scientifique et esthétique d'un ensemble de travaux.
+- faire ressortir des caractéristiques qui n'ont peut-être pas été couvertes dans les analyses d'artefacts uniques. Cela peut faciliter l'évaluation de la valeur de la contribution scientifique et esthétique d'un ensemble de travaux.
 
 Enfin, les traits caractéristiques des portfolios annotés sont que:
 
