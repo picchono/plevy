@@ -1,7 +1,7 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
 <div class='it{{- int .cou }} h-auto w-full p-3 my-3 {{- if eq .context.Params.Subsection "ended" }} bg-tertiary-bg{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}">
-    <a class="boxA text-primary-text transition-all duration-700 ease-in-out justify-center flex flex-col w-full p-4"
+    <a class="boxA"
         href="{{ .context.Permalink }}">
         <div class="flex flex-row">
             {{ if isset .context.Params "frontphoto" }}
