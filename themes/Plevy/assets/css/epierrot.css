@@ -47,24 +47,25 @@ body {
 }
 
 body {
-  @apply bg-slate-200 text-primary-text overflow-x-hidden md:overflow-x-auto;
+  @apply bg-primary-bg text-primary-text overflow-x-hidden md:overflow-x-auto;
   scrollbar-width: none;
 }
 
 body {
-  --color-primary-bg: #e2e8f0;
-  --color-secondary-bg: #f1f5f9;
-  --color-tertiary-bg: #64748b ;
+  --color-primary-bg: #e5e7eb;
+  --color-secondary-bg: #f3f4f6;
+  --color-tertiary-bg: #d1d5db;
+  --color-quaternary-bg: #6b7280 ;
   --color-primary-text: #1c1c1c;
-  --color-secondary-text: #64748b;
-  --color-epierrot: #0891b2;
+  --color-secondary-text: #9ca3af;
+  --color-epierrot: #0e7490;
 }
 
 section {
-  @apply max-w-3xl border-r border-tertiary-bg border-dotted flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll w-full md:w-96;
-  scrollbar-color: var(--color-tertiary-bg) var(--color-primary-bg);
+  @apply max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll w-full md:w-96 bg-primary-bg border-r-2 border-tertiary-bg;
+  scrollbar-color: var(--color-quaternary-bg) var(--color-primary-bg);
   scrollbar-width: none;
-  webkit-scrollbar-color: var(--color-tertiary-bg) var(--color-primary-bg);
+  webkit-scrollbar-color: var(--color-quaternary-bg) var(--color-primary-bg);
   webkit-scrollbar-width: none;
 }
 section>h1 {
@@ -92,7 +93,7 @@ p:last-child {
 }
 
 a {
-  @apply text-primary-text border-b border-primary-text border-dotted transition-all duration-200 ease-in-out;
+  @apply text-primary-text border-b border-secondary-bg border-solid transition-all duration-200 ease-in-out;
   font-size: inherit;
   font-weight: inherit;
 }
@@ -110,7 +111,7 @@ a:hover {
 
 /*basic table */
 table {
-  @apply border-spacing-2 border-4 border-primary-text my-7;
+  @apply border-spacing-2 border-4 border-secondary-bg my-7;
 }
 table td, table th {
   @apply p-3 border align-top;
@@ -129,11 +130,11 @@ a.titlePL,
 a.collab,
 a.doclinkButton,
 a.boxA {
-  @apply text-primary-text border-0 rounded transition-all duration-500 ease-in-out;
+  @apply text-primary-text border-0 bg-primary-bg rounded-lg transition-all duration-500 ease-in-out;
 }
 
 a.boxA {
-  @apply justify-center flex flex-col w-full p-4 bg-gradient-to-br from-slate-100 to-slate-300 ;
+  @apply justify-center flex flex-col w-full p-4;
 }
 
 #home .frontPosts a:hover,
@@ -148,11 +149,17 @@ a.titlePL:hover,
 a.collab:hover,
 a.doclinkButton:hover,
 a.boxA:hover {
-  @apply bg-secondary-bg shadow-xl;
+  @apply bg-primary-bg shadow-xl;
 }
-a.boxA:hover {
- @apply from-slate-300 to-slate-100
+
+div.ended a.boxA {
+  @apply  bg-quaternary-bg; 
 }
+
+div.ended a.boxA:hover {
+  @apply  bg-tertiary-bg; 
+}
+
 #home .frontPosts a::before,
 #Research a::before,
 #CDJPlogo a::before,
@@ -328,8 +335,8 @@ button {
 }
 
 .open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
-  transform: rotate(-45deg) translate(-5px, 4px);
+  -webkit-transform: rotate(-45deg) tranzinc(-5px, 4px);
+  transform: rotate(-45deg) tranzinc(-5px, 4px);
 }
 
 .open .bar2 {
@@ -337,8 +344,8 @@ button {
 }
 
 .open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-5px, 4px);
-  transform: rotate(45deg) translate(-5px, -4px);
+  -webkit-transform: rotate(45deg) tranzinc(-5px, 4px);
+  transform: rotate(45deg) tranzinc(-5px, -4px);
 }
 
 /* menu */
@@ -619,10 +626,10 @@ input:placeholder {
 
 /* tooltips */
 [data-tooltip]::before {
-  @apply text-primary-text bg-primary-bg border border-primary-text text-sm rounded-sm;
+  @apply text-primary-text bg-primary-bg border border-secondary-bg text-sm rounded-sm;
   position: absolute;
   content: attr(data-tooltip);
-  transform: translate(-10.125rem, 1rem);
+  transform: tranzinc(-10.125rem, 1rem);
   transition: opacity 500ms ease-in-out;
   display: inline-block;
   max-width: 25rem;
@@ -635,7 +642,7 @@ input:placeholder {
 }
 
 [data-tooltip]:hover::before {
-  transform: translate(-10.125rem, 1.8rem);
+  transform: tranzinc(-10.125rem, 1.8rem);
   padding: 6px 12px;
   width: auto;
   height: auto;
@@ -802,11 +809,11 @@ a.doclinkButton {
 }
 
 a.doclinkButton span.doclinkIcon {
-  @apply inline-block py-3 pl-5 pr-0.5 border-t border-l border-b border-dotted border-primary-text rounded-l transition-all duration-700 ease-in-out;
+  @apply inline-block py-3 pl-5 pr-0.5 border-t border-l border-b border-solid border-tertiary-bg rounded-l transition-all duration-700 ease-in-out;
 }
 
 a.doclinkButton span.doclinkText {
-  @apply inline-block py-3 pr-5 pl-0.5 border-t border-r border-b border-dotted border-primary-text rounded-r transition-all duration-700 ease-in-out;
+  @apply inline-block py-3 pr-5 pl-0.5 border-t border-r border-b border-solid border-tertiary-bg rounded-r transition-all duration-700 ease-in-out;
 }
 
 .backButton {
@@ -1069,7 +1076,7 @@ canvas#bgirreg2in {
 
 .item.muuri-item-hidden {
   z-index: 0;
-  transform: translateX(0px) translateY(0) !important;
+  transform: tranzincX(0px) tranzincY(0) !important;
   opacity: 0;
 }
 
@@ -1106,7 +1113,7 @@ canvas#bgirreg2in {
   display: block;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  transform: tranzinc(-50%);
   font-size: 0;
   width: auto;
   height: auto;
@@ -1227,7 +1234,7 @@ canvas#bgirreg2in {
   display: block;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  transform: tranzinc(-50%);
   font-size: 0;
   width: auto;
   height: auto;
@@ -1342,11 +1349,11 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   border: solid calc(2px * var(--pagefind-ui-scale)) currentColor;
   border-right: 0;
   border-top: 0;
-  transform: translateY(-70%) rotate(-45deg);
+  transform: tranzincY(-70%) rotate(-45deg);
 }
 
 .pagefind-ui__filter-block[open].svelte-1v2r7ls .pagefind-ui__filter-name.svelte-1v2r7ls::after {
-  transform: translateY(-70%) rotate(-225deg);
+  transform: tranzincY(-70%) rotate(-225deg);
 }
 
 .pagefind-ui__filter-group.svelte-1v2r7ls.svelte-1v2r7ls {
@@ -1372,7 +1379,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   height: 0px;
   border: solid 1px #fff;
   opacity: 0;
-  transform: translate(calc(4.5px * var(--pagefind-ui-scale) * -1),
+  transform: tranzinc(calc(4.5px * var(--pagefind-ui-scale) * -1),
       calc(0.8px * var(--pagefind-ui-scale))) skew(-5deg) rotate(-45deg);
   transform-origin: top left;
   border-top: 0;
@@ -1655,7 +1662,7 @@ pre {
 }
 
 div.highlight {
-  @apply border border-dotted border-tertiary-bg rounded-md p-4;
+  @apply border border-solid border-quaternary-bg rounded-md p-4;
   background-color: var(--color-primary-text) !important;
 }
 
@@ -1702,16 +1709,20 @@ div.highlight pre {
 
 /* linkBox */
 a.linkBox {
-  @apply flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded border border-dotted border-tertiary-bg text-primary-text transition-all duration-700 ease-in-out;
+  @apply flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded bg-gradient-to-br from-secondary-bg to-tertiary-bg border-tertiary-bg border transition-all duration-500 ease-in-out;
 }
 
 a.linkBox:hover {
-  @apply bg-secondary-bg;
+  @apply from-primary-bg to-primary-bg;
   filter: drop-shadow(var(--st-dropshadow));
 }
 
 .linkBox .titleLink {
   @apply font-bold leading-tight px-3 py-2;
+}
+
+a.linkBox:hover .titleLink {
+  @apply text-primary-text;
 }
 
 .linkBox .imgLink {

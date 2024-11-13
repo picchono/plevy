@@ -93,7 +93,8 @@ module.exports = {
       colors: {
         'primary-bg': 'var(--color-primary-bg)',
         'secondary-bg': 'var(--color-secondary-bg)',
-        'tertiary-bg': 'var(--color-tertiary-bg)',
+        'tertiary-bg': 'var(--color-tertiary-bg)', 
+        'quaternary-bg': 'var(--color-quaternary-bg)',
         'primary-text': 'var(--color-primary-text)',
         'secondary-text': 'var(--color-secondary-text)',
         'epierrot': 'var(--color-epierrot)',
