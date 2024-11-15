@@ -62,7 +62,7 @@ body {
 }
 
 section {
-  @apply max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll w-full md:w-96 bg-primary-bg border-r-2 border-tertiary-bg;
+  @apply bg-primary-bg max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll w-full md:w-118 md:pr-20;
   scrollbar-color: var(--color-quaternary-bg) var(--color-primary-bg);
   scrollbar-width: none;
   webkit-scrollbar-color: var(--color-quaternary-bg) var(--color-primary-bg);
