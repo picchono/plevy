@@ -48,7 +48,7 @@ Dans le cadre de ce cours, il va permettre de styliser nos pages HTML. Le code C
 
 ```css
 html, body {
-	backgroud-color: rgb(28, 28, 28);
+	background-color: rgb(28, 28, 28);
 	color: lightcoral;
 	font-size: 15px;
 	line-height: 1.5rem;

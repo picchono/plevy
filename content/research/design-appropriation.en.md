@@ -184,6 +184,12 @@ photogallery:
         src: "https://live.staticflickr.com/65535/50589556267_e45c9c7661_q.jpg"
         img: "https://live.staticflickr.com/65535/50589556267_056135335f_h.jpg"
         link: "https://www.flickr.com/photos/27221668@N05/50589556267/in/datetaken-public"
+    image29:
+        order: 29
+        name: "test"
+        src: "https://1drv.ms/i/s!AnQx_v88q65Qga3_Z6n9crE705tQjUc?embed=1&width=4000&height=3000"
+        img: "https://1drv.ms/i/s!AnQx_v88q65Qga3_Z6n9crE705tQjUc?embed=1&width=4000&height=3000"
+        link: "https://1drv.ms/i/s!AnQx_v88q65Qga3_Z6n9crE705tQjUc?embed=1&width=4000&height=3000"
 ---
 
 La question du quotidien est remarquable le sujet du quotidien n’étant que très peu, et souvent assez mal traité en design. Le terme quotidien est beaucoup utilisé dans la littérature en design (e.g., (Hallnäs & Redström, 2002; Norman, 2013; Saito, 2007; Wakkary & Maestri, 2007)), mais la notion elle-même est très peu traitée. Pour illustrer cela, on pointera par exemple la simple omission de la description de cette notion dans l’ouvrage classique du Design de tous les jours de Don Norman (2013) ou encore dans celui sur l’Esthétique de tous les jours de Yuriko Saito (2007). Utilisant ces exemples, j’ai initié une discussion sur la liste de diffusion PhD-Design mailing list (P. Levy, personal communication, April 4, 2017) faisant appel à la communauté de la recherche en design pour déterminer les directions possibles en vue de clarifier le concept de quotidien. Cette discussion a permis à la fois de confirmer le flou entourant la notion du quotidien en design, et de désigner des directions pour une telle clarification, et nous en emprunterons certaines par la suite. Mais au-delà de ces deux points, elle a également contenu une remarque qui a retenu mon attention. Un chercheur émérite a indiqué que tout en ayant cherché à comprendre la façon dont le design interroge le quotidien, il a en même temps renoncé à essayer de le définir. Pour lui, ce terme fait partie d’un ensemble de termes tellement constitutifs du design qu’il varie avec la perspective prise sur le design. Définir le quotidien nécessiterait de définir le design.
