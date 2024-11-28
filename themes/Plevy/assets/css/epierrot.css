@@ -62,7 +62,7 @@ body {
 }
 
 section {
-  @apply bg-primary-bg max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll w-full md:w-118 md:pr-20;
+  @apply max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll w-full md:w-118 md:pr-20;
   scrollbar-color: var(--color-quaternary-bg) var(--color-primary-bg);
   scrollbar-width: none;
   webkit-scrollbar-color: var(--color-quaternary-bg) var(--color-primary-bg);
@@ -109,6 +109,30 @@ a:hover {
   @apply rounded;
 }
 
+a.logohome svg {
+  @apply w-44 ml-1;
+  fill: var(--color-primary-bg);
+  stroke: var(--color-primary-text);
+  stroke-width: 0.04;
+  stroke-linejoin: round;
+  animation: logoAnim 3s ease-in-out;
+}
+
+@keyframes logoAnim {
+  0% {
+    fill:var(--color-primary-text);
+    stroke: var(--color-primary-text);
+  }
+  50% {
+    fill:var(--color-epierrot);
+    stroke: var(--color-epierrot);
+  }
+  100% {
+    fill:var(--color-primary-bg);
+    stroke: var(--color-primary-text);
+  }
+}
+
 /*basic table */
 table {
   @apply border-spacing-2 border-4 border-secondary-bg my-7;
@@ -134,7 +158,31 @@ a.boxA {
 }
 
 a.boxA {
-  @apply justify-center flex flex-col w-full p-4;
+  @apply relative bg-primary-bg justify-center flex flex-col w-full p-4;
+}
+
+a.boxA::after, a.boxA::before, a.doclinkButton::after, a.doclinkButton::before {
+  content: ' ';
+  height: calc(100% + 3px);
+  width: calc(100% + 3px);
+  position: absolute;
+  background: conic-gradient(var(--color-primary-text), var(--color-primary-bg),var(--color-primary-text),var(--color-primary-text), var(--color-primary-bg),var(--color-primary-text), var(--color-primary-bg),var(--color-primary-text));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 11px;
+  opacity: 0.1;
+  transition: all 500ms ease-in-out;
+}
+
+a.boxA::before, a.doclinkButton::before {
+  filter: blur(0.3rem);
+}
+
+a.boxA:hover::after, a.boxA:hover::before, a.doclinkButton:hover::after, a.doclinkButton:hover::before {
+  opacity: 0.25;
+  background: conic-gradient(var(--color-primary-text), var(--color-primary-bg),var(--color-primary-text),var(--color-primary-bg),var(--color-primary-text),var(--color-primary-text), var(--color-primary-bg),var(--color-primary-text), var(--color-primary-bg),var(--color-primary-text));
 }
 
 #home .frontPosts a:hover,
@@ -146,9 +194,7 @@ a.hugo:hover svg,
 .mainMenu:hover,
 .submenu div:hover,
 a.titlePL:hover,
-a.collab:hover,
-a.doclinkButton:hover,
-a.boxA:hover {
+a.collab:hover {
   @apply bg-primary-bg shadow-xl;
 }
 
@@ -170,10 +216,8 @@ a.cc::before,
 a.hugo::before,
 .mainMenu::before,
 a.collab::before,
-a.doclinkButton::before,
 .submenu div::before,
 a.titlePL::before,
-a.boxA::before,
 a.linkBox::before,
 .tablecontent a::before,
 a.floatImg::before {
@@ -192,8 +236,6 @@ a.hugo::after,
 .submenu div::after,
 a.titlePL::after,
 a.collab::after,
-a.doclinkButton::after,
-a.boxA::after,
 a.linkBox::after,
 .tablecontent a::after,
 a.floatImg::after {
@@ -407,7 +449,7 @@ footer svg {
 /* box image */
 
 img.imgBox {
-  filter: grayscale(0.7) drop-shadow(var(--st-dropshadow));
+  filter: grayscale(0.8);
   transition: all 500ms ease-in-out;
 }
 
@@ -805,15 +847,15 @@ section.lectureSession>.main {
 }
 
 a.doclinkButton {
-  @apply inline-block mb-4 mr-4;
+  @apply relative inline-block mb-4 mr-4;
 }
 
 a.doclinkButton span.doclinkIcon {
-  @apply inline-block py-3 pl-5 pr-0.5 border-t border-l border-b border-solid border-tertiary-bg rounded-l transition-all duration-700 ease-in-out;
+  @apply inline-block py-3 pl-5 pr-0.5 rounded-l transition-all duration-700 ease-in-out;
 }
 
 a.doclinkButton span.doclinkText {
-  @apply inline-block py-3 pr-5 pl-0.5 border-t border-r border-b border-solid border-tertiary-bg rounded-r transition-all duration-700 ease-in-out;
+  @apply inline-block py-3 pr-5 pl-0.5 border-t rounded-r transition-all duration-700 ease-in-out;
 }
 
 .backButton {

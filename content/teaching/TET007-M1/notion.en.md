@@ -27,4 +27,4 @@ frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
 ---
 
 ## Notion
-{{<linkBox "Notion for education" "https://www.notion.so/product/notion-for-education" "https://imgs.search.brave.com/zn5wQbpOqpSioIjrDR78yhZPlh8Jll2BJ3Qa-NrogbU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2U5L05vdGlvbi1s/b2dvLnN2Zw.svg" >}}
+{{<linkBox "Notion for education" "https://www.notion.so/product/notion-for-education" "https://www.notion.so/cdn-cgi/image/format=webp,width=1920/https://images.ctfassets.net/spoqsaf9291f/7K4ABTnW9zHRzHXpdJhKq6/5f0828bc15d26a2fe1437affc2e9de34/front_main_hero_together.png" >}}

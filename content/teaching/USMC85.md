@@ -49,6 +49,7 @@ calendar:
     h: "06 January 2024 · 09:00-12:00 (IOT)<br/><b>Presenting</b>"
     i: "07 January 2024 · 09:00-12:00 (TLC)<br/><b>Presenting</b>"
     j: "10 January 2024 · 09:00-12:00 (MECA)<br/><b>Presenting</b>"
+    k: "16 January 2024 · 13:30-16:45 (MECA)<br/><b>Reviewing</b>"
 encapsulation:
     MR11601C: 
         title: "MR11601C · Master Informatique, Computer Networks and IoT Systems"
