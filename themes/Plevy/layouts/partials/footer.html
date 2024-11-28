@@ -21,7 +21,7 @@
 {{ if or (compare.Gt ($related | len) 1) (ne .Params.comment false) }}
 
 {{ if compare.Gt ($related | len) 1}}
-<h1>{{ i18n "backlinks" }}</h1>
+<h1><svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">{{ i18n "backlinks" }}</text></svg></h1>
 {{ $count := 0}}
 {{ range sort $related "Date" "desc" }}
 {{ if ne .Permalink (.Site.BaseURL | absURL ) }}

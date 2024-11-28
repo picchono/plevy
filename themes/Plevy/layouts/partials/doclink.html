@@ -2,6 +2,6 @@
 <p class="inline py-10 mb-5">
    {{ $icon := index . 1 }}
    {{ $text := index . 0 }}
-   <a href='{{ index . 2 }}' target="_blank" class="doclinkButton" rel="noreferrer" aria-label="Get {{ index . 0 }}"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" $icon ) -}}</span><span class="doclinkText">{{ $text }}</span></span></a>
+   <a href='{{ index . 2 }}' target="_blank" class="doclinkButton cadre" rel="noreferrer" aria-label="Get {{ index . 0 }}"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" $icon ) -}}</span><span class="doclinkText">{{ $text }}</span></span></a>
 </p>
 {{ end }}
