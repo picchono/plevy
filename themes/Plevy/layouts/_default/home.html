@@ -10,7 +10,7 @@
         <div class="social flex flex-row justify-start items-center w-full my-10">
             {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="inline-block p-2 mr-4"
                 rel="noreferrer" aria-label="{{ .icon }}">{{- partial "icons.html" (dict "ico" .icon
-                "hei" 0.8 "colo" "var(--color-primary-text)") -}}</a>{{ end }}
+                "hei" 0.8) -}}</a>{{ end }}
         </div>
         {{ end }}
     </div>
@@ -22,7 +22,7 @@
     {{ with $page }}
       <h1><svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">{{ .Title }}</text></svg></h1>
       <div class="px-5">{{ .Params.description }}</div>
-      <div class="p-5 text-center"><a href='/chaire' target="_blank" class="doclinkButton cadre" rel="noreferrer" aria-label="Get chaire page"><span class="doclinkIcon">{{- partial "icons.html" (dict "hei" 1 "colo" "var(--color-primary-text)" "ico" "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
+      <div class="p-5 text-center"><a href='/chaire' target="_blank" class="doclinkButton cadre" rel="noreferrer" aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico" "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
       <h2>{{ i18n "members"}}</h2>
       {{ if .Params.members }}
       {{ range .Params.members }}

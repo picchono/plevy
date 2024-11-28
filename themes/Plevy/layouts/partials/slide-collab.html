@@ -3,7 +3,7 @@
             {{ with .colla}}{{ range . }}
             <a href="{{ index . 2 }}" title="{{ index . 1 }}" rel="noreferrer" target="_blank" aria-label="Go to partner's website"
                 class="inline-block align-bottom mr-7">{{ partial "icons.html" (dict "ico" ( index . 0 ) "hei" (
-                index . 3 ) "colo" "var(--color-primary-text)") }}</a>
+                index . 3 )) }}</a>
             {{ end }}{{ end }}
             {{ if .sign }}<a href="mailto:pierre.levy@lecnam.net"
                 class="text-base text-primary-text font-bold">pierre.levy@lecnam.net</a>{{ end }}

@@ -114,6 +114,11 @@ a:hover svg {
   fill:var(--color-epierrot);
 }
 
+.collabicon svg {
+  transition: all 300ms ease-in-out;
+}
+
+
 /*basic table */
 table {
   @apply border-spacing-2 border-4 border-secondary-bg my-7;
