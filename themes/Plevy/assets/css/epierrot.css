@@ -626,7 +626,7 @@ a.logohome:hover .lh {
 }
 
 svg.h1 {
-  @apply relative h-11;
+  @apply relative h-11 w-full;
 }
 
 svg.h1 text {
@@ -644,7 +644,7 @@ svg.h1 text {
 }
 
 svg.h3 {
-  @apply relative h-12;
+  @apply relative h-12 w-full;
 }
 
 svg.h3 text {
