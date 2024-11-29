@@ -61,7 +61,7 @@ encapsulation:
         title: "MR15101A · Master Structural Mechanics and Coupled Systems"
         link: "https://formation.cnam.fr/rechercher-par-discipline/master-informatique-parcours-traitement-de-l-information-et-exploitation-des-donnees-tried--813201.kjsp"
 ---
-{{< slash "Description" >}} 
+{{< slash "Description" >}}
 The major aim of this course is to improve students' scientific or technical presentation skills, focusing on the roles and the effects of involved media in presenting a project (e.g., a poster, an artefact, a video...). First, a few theoretical guidelines a provided for understanding the practical and rhetorical use of media in presentation. Second, this understanding is used in presenting projects carried out or chosen by students in their own specialties. Third and last, presentations are analysed to point out how they can highlight the key aspects of a project, and how the elements produced for the project can structure a presentation and serve its objectives.Therefore, the aim of this course is to develop students' abilities to understand and present scientific and technical projects.
 
 {{< slash "Objectifs pédagogiques" >}}
