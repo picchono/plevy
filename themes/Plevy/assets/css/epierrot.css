@@ -6,6 +6,7 @@
   @apply font-sans text-primary-text leading-6 box-border;
   --st-dropshadow: 7px 7px 8px #00000044;
   --lineHeight: 1.75;
+  color-scheme: light dark;
 }
 
  /* width */
@@ -52,13 +53,13 @@ body {
 }
 
 body {
-  --color-primary-bg: #e5e7eb;
-  --color-secondary-bg: #f3f4f6;
-  --color-tertiary-bg: #d1d5db;
-  --color-quaternary-bg: #9ca3af;
-  --color-primary-text: #1c1c1c;
-  --color-secondary-text: #6b7280;
-  --color-epierrot: #0e7490;
+  --color-primary-bg: light-dark(#e5e7eb,#1c1c1c);
+  --color-secondary-bg: light-dark(#f3f4f6,#6b7280);
+  --color-tertiary-bg: light-dark(#d1d5db, #d1d5db);
+  --color-quaternary-bg: light-dark(#9ca3af, #9ca3af);
+  --color-primary-text: light-dark(#1c1c1c, #e5e7eb);
+  --color-secondary-text: light-dark(#6b7280, #f3f4f6);
+  --color-epierrot: light-dark(#0e7490, #70b1c3);
 }
 
 section {
