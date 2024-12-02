@@ -20,7 +20,8 @@
 <section {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
     {{ $page := $.Site.GetPage "page" "chaire.md" }}
     {{ with $page }}
-      <h1><svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">{{ .Title }}</text></svg></h1>
+      <h1><svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">Chaire Design</text></svg>
+        <svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">Jean Prouvé</text></svg></h1>
       <div class="px-5">{{ .Params.description }}</div>
       <div class="p-5 text-center"><a href='/chaire' target="_blank" class="doclinkButton cadre" rel="noreferrer" aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico" "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
       <h2>{{ i18n "members"}}</h2>
