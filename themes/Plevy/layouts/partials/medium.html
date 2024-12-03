@@ -69,7 +69,7 @@
     <div class="mt-20 px-5">
         {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
         {{ range .Params.encapsulation }}
-        <a class="linkBox" href="{{ .link }}">
+        <a class="linkBox class" href="{{ .link }}">
             <div class="titleLink">{{ .title }}</div>
             {{ if .img }}<div class="imgLink"><img src="{{ .img }}" alt="{{ .title }}"></div>{{ end }}
         </a>
