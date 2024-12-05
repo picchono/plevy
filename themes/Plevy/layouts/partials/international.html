@@ -1,11 +1,7 @@
-<div id="international" class="flex flex-row justify-start items-start w-full">
-    {{ if .IsTranslated }}
-        <div id="languageMode" class='flex flex-row'>
-            <div class="inline text-sm">
-                <b>{{ .Language.LanguageName }}</b>
-                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}">&lceil;{{ .Language.LanguageName }}&rfloor;</a>
+{{ if .IsTranslated }}<div id="international" class="w-full">
+        <div id="languageMode" class='flex flex-row mt-2 text-sm'>
+                <b class="relative bg-primary-bg text-epierrot rounded-lg inline-block px-2 mr-2 cadre">{{ .Language.LanguageName }}</b>
+                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu cadre">{{ .Language.LanguageName }}</a>
                 {{ end }}
-            </div>
         </div>
-   {{ end }}
-</div>
+</div>{{ end }}

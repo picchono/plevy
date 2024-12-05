@@ -3,12 +3,12 @@
     }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
     {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
     {{ with $page }}
-    <h1><svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">{{ .Title }}</text></svg></h1>
+    <h1>{{ .Title }}</h1>
     <div class="px-5">
         {{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
         {{ with index .Site.Data.plevy .Site.Language.Lang }}
         <div class="social flex flex-row justify-start items-center w-full my-10">
-            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="inline-block p-2 mr-4"
+            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink cadre"
                 rel="noreferrer" aria-label="{{ .icon }}">{{- partial "icons.html" (dict "ico" .icon
                 "hei" 0.8) -}}</a>{{ end }}
         </div>
@@ -20,14 +20,13 @@
 <section {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
     {{ $page := $.Site.GetPage "page" "chaire.md" }}
     {{ with $page }}
-      <h1><svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">Chaire Design</text></svg>
-        <svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">Jean Prouvé</text></svg></h1>
+      <h1>{{ .Title }}</h1>
       <div class="px-5">{{ .Params.description }}</div>
       <div class="p-5 text-center"><a href='/chaire' target="_blank" class="doclinkButton cadre" rel="noreferrer" aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico" "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
       <h2>{{ i18n "members"}}</h2>
       {{ if .Params.members }}
       {{ range .Params.members }}
-      <div class="h-24 w-full p-4 mb-4"><a class="flex flex-row boxA cadre text-primary-text transition-all duration-700 ease-in-out justify-start w-full p-1" href="{{ index . 3 }}">
+      <div class="h-24 w-full p-4 mb-4"><a class="boxA cadre flex-row justify-start p-1" href="{{ index . 3 }}">
         <img class="flex-grow-0 flex-shrink-0 object-cover rounded-md h-20 w-20 mr-4" src="{{ index . 2 }}" alt="{{ index . 0 }}" >
         <div class="flex flex-col justify-center leading-none"><div class="font-bold">{{ index . 0 }}</div><div class="leading-tight">{{ index . 1 |safeHTML }}</div></div>
       </a></div>
@@ -42,7 +41,7 @@
 {{ range where $.Site.Pages "Section" "in" ($fold) }}
 {{ if eq .Params.zone $fold }}
 <section class="flex flex-col" id="{{- lower .Title -}}">
-    <h1><svg class="h1" xmlns="http://www.w3.org/2000/svg"><text x="0" y="2.25rem">{{ .Title }}</text></svg></h1>
+    <h1>{{ .Title }}</h1>
     {{ $count := 0 }}
     {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
     {{ if ne .Params.notListed true }}

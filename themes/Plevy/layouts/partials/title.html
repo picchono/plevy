@@ -64,7 +64,7 @@
         {{ if .Params.collaboration }}
         <div class="flex flex-wrap items-center p-5">
             {{ range sort .Params.collaboration }}
-            <a href="{{ .web }}" target="_blank" class="collab appear mr-4 my-8 p-4">
+            <a href="{{ .web }}" target="_blank" class="collab cadre">
                 {{ if .colo }}
                 {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
                 {{else}}
@@ -75,7 +75,7 @@
         </div>
         {{ else if .Params.institution }}
         <div class="flex flex-wrap items-center py-5">
-            <a href="{{ .Params.institution.web }}" target="_blank" class="collab my-4">
+            <a href="{{ .Params.institution.web }}" target="_blank" class="collab cadre">
                 {{ if .Params.institution.colo }}
                 {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig "colo" .Params.institution.colo) -}}
                 {{else}}
@@ -85,13 +85,13 @@
         </div>
         {{ end }}
         {{ else }}
-        <div class="my-7 py-4 text-center">
+        <div class="m-7 py-4 text-left">
             {{ range $fold := slice "events" "teaching" "courses" "projects"  "research" "publications" "writings" }}
             {{ range readDir "content" }}
             {{ if eq .Name $fold }}
             {{ range where $.Site.Pages "Section" "in" ($fold) }}
             {{ if eq .Params.zone $fold }}
-            <a href="#{{- lower .Title -}}">/ {{ .Title }} /</a><br />
+            <a href="#{{- lower .Title -}}" class="homemenu cadre">{{ .Title }}</a><br />
             {{ end }}
             {{ end }}
             {{ end }}
