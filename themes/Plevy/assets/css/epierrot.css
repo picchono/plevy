@@ -227,16 +227,31 @@ a.langu {
   @apply relative bg-transparent rounded-lg inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
 }
 
+a.homemenu, a.listcourse {
+  @apply relative block bg-transparent px-2 py-0.5 my-2 text-primary-text rounded-sm hover:text-epierrot;
+}
+
 a.homemenu {
-  @apply relative inline-block bg-transparent px-2 py-0.5 my-2 text-primary-text text-lg rounded-sm hover:text-epierrot;
+  @apply text-lg
+}
+
+a.linkBox {
+  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-lg border-0 transition-all duration-500 ease-in-out;
+}
+
+a.linkBox {
+  @apply relative bg-transparent flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-lg border-0 transition-all duration-500 ease-in-out;
+}
+
+a.linkBox:hover {
+  @apply bg-transparent;
 }
 
 .cadre::after, .cadre::before {
-  @apply rounded-lg;
+  @apply absolute rounded-lg;
   content: ' ';
   height: 100%;
   width: 100%;
-  position: absolute;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -1827,9 +1842,6 @@ div.highlight pre {
 
 /* linkBox */
 
-a.linkBox {
-  @apply relative bg-primary-bg flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-lg border-0 transition-all duration-500 ease-in-out;
-}
 
 .linkBox .titleLink {
   @apply font-bold leading-tight px-3 py-2;

@@ -35,23 +35,22 @@
     {{ end }}
     {{ if .Params.calendar }}
     <div class="p-5">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
-        <ul>{{ range .Params.calendar }}
-            <li class="list-outside pb-3">{{ . | safeHTML }}</li>
-            {{ end }}
-        </ul>
+        {{ range .Params.calendar }}
+            <div class="listoutside pb-3">{{ . | safeHTML }}</div>
+        {{ end }}
     </div>
     {{ end }}
     {{ if .Params.lectures}}
     <div class="mt-20 px-5">
         {{ partial "slash.html" (dict "txt" (i18n "courses")) }}<br />
         {{ $cod := .Params.code }}
-        <ul>{{ range sort .Params.lectures "order" "asc" }}
-            <li class="list-outside pb-3"><a class="uppercase list-outside"
+        {{ range sort .Params.lectures "order" "asc" }}
+            <div class=""><a class="listcourse cadre"
                     href="{{if .redirect }}{{ .redirect }}{{ else }}../{{ $cod }}/{{ .link }}{{ end -}}">
                     <b>{{ $cod }}/{{ .order }}&nbsp;&middot;&nbsp;</b>
-                    {{- replace .Title " | " "&middot;" |safeHTML -}}</a></li>
+                    {{- replace .Title " | " "&middot;" |safeHTML -}}</a></div>
             {{ end }}
-        </ul>
+        
     </div>
     {{ end }}
     {{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start" {{if
@@ -69,7 +68,7 @@
     <div class="mt-20 px-5">
         {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
         {{ range .Params.encapsulation }}
-        <a class="linkBox class" href="{{ .link }}">
+        <a class="linkBox cadre" href="{{ .link }}">
             <div class="titleLink">{{ .title }}</div>
             {{ if .img }}<div class="imgLink"><img src="{{ .img }}" alt="{{ .title }}"></div>{{ end }}
         </a>
