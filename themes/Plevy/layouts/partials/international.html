@@ -1,4 +1,4 @@
-{{ if .IsTranslated }}<div id="international" class="w-full">
+{{ if .IsTranslated }}<div id="international" class="w-ful p-2 pb-3">
         <div id="languageMode" class='flex flex-row mt-2 text-sm'>
                 <b class="relative bg-primary-bg text-epierrot rounded-lg inline-block px-2 mr-2 cadre">{{ .Language.LanguageName }}</b>
                 {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu cadre">{{ .Language.LanguageName }}</a>

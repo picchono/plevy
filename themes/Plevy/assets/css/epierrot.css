@@ -661,34 +661,33 @@ a.logohome {
  @apply flex flex-col relative bg-transparent border-0 items-start;
 }
 
-a.logohome .lh {
-  @apply inline-block bg-transparent pb-2;
-  content: ' ';
-  stroke-width: 0.03;
-  stroke: var(--color-primary-text);
-  stroke-dasharray: 2.7;
-  stroke-dashoffset: 0;
-  animation: logoanim 3.5s ease-out;
-  fill: transparent;
-  transition: all 0.7s ease-in-out;
+a.logohome .lh, a.logohome .lh2 {
+@apply inline-block bg-transparent pb-4 w-40;
+content: ' ';
+stroke: var(--color-primary-text);
+stroke-dashoffset: 0;
+fill: transparent;
+transition: all 0.7s ease-in-out;
 }
+
+a.logohome .lh {
+  stroke-width: 0.03;
+  stroke-dasharray: 2.7;
+  animation: logoanim 3.5s ease-out;
+  margin-left: 1rem;
+}
+
+a.logohome .lh2 {
+  stroke-width: 2;
+  stroke-dasharray: 452;
+  animation: logoanim2 3.5s ease-out;
+}
+
 @keyframes logoanim {
   0% {stroke-dashoffset: 2.7;fill: transparent;stroke: var(--color-epierrot);}
   40% {fill: transparent;}
   70% {stroke-dashoffset: 0;fill: #FFFFFFAA;stroke: var(--color-epierrot);}
   100% {stroke-dashoffset: 0; fill: transparent;stroke: var(--color-primary-text);}
-}
-
-a.logohome .lh2 {
-  @apply inline-block bg-transparent pb-2;
-  content: ' ';
-  stroke-width: 3;
-  stroke: var(--color-primary-text);
-  stroke-dasharray: 452;
-  stroke-dashoffset: 0;
-  animation: logoanim2 3.5s ease-out;
-  fill: transparent;
-  transition: all 0.7s ease-in-out;
 }
 
 @keyframes logoanim2 {
