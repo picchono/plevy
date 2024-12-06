@@ -6,12 +6,12 @@
   @apply font-sans text-primary-text leading-6 box-border;
   --st-dropshadow: 7px 7px 8px #00000044;
   --lineHeight: 1.75;
-  color-scheme: light dark;
+/*  color-scheme: light dark; */
 }
 
  /* width */
  ::-webkit-scrollbar {
-  width: 5px;
+  width: 0;
   height: 5px;
 }
 
@@ -58,6 +58,7 @@ body {
   font-weight: normal;
   scroll-behavior: smooth;
   font-variant-ligatures: common-ligatures;
+  
 }
 
 body {
@@ -66,17 +67,30 @@ body {
 }
 
 body {
-  --color-primary-bg: light-dark(#FCFAF2,rgba(69,103,131,1));
-  --color-secondary-bg: light-dark(#A0C8C6,rgba(44,62,78,1));
-  --color-tertiary-bg: light-dark(#628C8A, rgb(124, 145, 164));
-  --color-quaternary-bg: light-dark(#01566955, rgb(21, 34, 45));
+  --color-primary-bg: #292929;
+  --color-secondary-bg: #1c1c1c;
+  --color-tertiary-bg: #737c84;
+  --color-quaternary-bg: #000000;
+  --color-primary-text: #e5e7eb;
+  --color-secondary-text: #e3ddd3;
+  --color-epierrot: #e6ca89;
+  --color-borders: #FFFA;
+}
+/*
+body {
+  --color-primary-bg: light-dark(#FFFFFF,#292929);
+  --color-secondary-bg: light-dark(#efede8,#1c1c1c);
+  --color-tertiary-bg: light-dark(#006284, #737c84);
+  --color-quaternary-bg: light-dark(#d7d5d1, #000000);
   --color-primary-text: light-dark(#1c1c1c, #e5e7eb);
   --color-secondary-text: light-dark(#6b7280, #f3f4f6);
-  --color-epierrot: light-dark(#006284, #70b1c3);
+  --color-epierrot: light-dark(#006284, #608eaa);
+  --color-borders: light-dark(#a69f8f, #FFFA);
 }
-
+*/
 section {
-  @apply max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll w-full md:w-132 md:pr-24;
+  @apply max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll overflow-x-hidden w-full md:w-132 md:pr-24;
+  scrollbar-width: none;
 }
 section>h1 {
   margin: 4rem 0 4rem -0.5rem;
@@ -188,18 +202,11 @@ a.floatImg::after {
 }
 
 a.boxA {
-  @apply relative rounded-lg text-primary-text justify-center flex flex-col w-full p-4;
-  border-radius: 10px;
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-a.boxA:hover {
-  @apply bg-transparent;
+  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-4 rounded-md;
 }
 
 a.collab {
-  @apply relative bg-transparent mr-4 my-8 p-4 rounded-lg transition-all duration-700 ease-in-out;
+  @apply relative bg-secondary-bg mr-4 my-8 p-4 rounded-md transition-all duration-700 ease-in-out;
 }
 
 a.collab svg {
@@ -216,7 +223,7 @@ a.collab:hover svg {
 }
 
 a.smalllink {
-  @apply relative bg-transparent rounded-lg inline-block p-2 mr-4;
+  @apply relative bg-secondary-bg rounded-md inline-block p-2 mr-4;
 }
 
 a.smalllink:last-child {
@@ -224,48 +231,49 @@ a.smalllink:last-child {
 } 
 
 a.langu { 
-  @apply relative bg-transparent rounded-lg inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
+  @apply relative bg-secondary-bg rounded-md inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
 }
 
 a.homemenu, a.listcourse {
-  @apply relative block bg-transparent px-2 py-0.5 my-2 text-primary-text rounded-sm hover:text-epierrot;
+  @apply relative inline-block bg-primary-bg px-2 py-0.5 my-2 text-primary-text rounded-md hover:text-epierrot;
 }
 
 a.homemenu {
-  @apply text-lg
+  @apply text-lg;
 }
 
 a.linkBox {
-  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-lg border-0 transition-all duration-500 ease-in-out;
+  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-md border-0 transition-all duration-500 ease-in-out;
 }
 
 a.linkBox {
-  @apply relative bg-transparent flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-lg border-0 transition-all duration-500 ease-in-out;
+  @apply relative bg-secondary-bg flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-md border-0 transition-all duration-500 ease-in-out;
 }
 
 a.linkBox:hover {
-  @apply bg-transparent;
+  @apply bg-secondary-bg;
 }
 
 .cadre::after, .cadre::before {
-  @apply absolute rounded-lg;
+  @apply absolute;
   content: ' ';
-  height: 100%;
-  width: 100%;
+  height: calc(100% + 1px);
+  width: calc(100% + 1px);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  opacity:0.7;
+  opacity: 0.7;
+  border-radius: 7px;
   transition: opacity 1s ease-in-out;
-  background-image: linear-gradient(225deg, #FFF0, #FFF0, #FFF0, #FFFA);
+  background-image: linear-gradient(45deg, var(--color-borders), #FFF0, #FFF0, #FFF0, #FFF0);
 }
 
 .cadre::before {
   z-index: -2;
   opacity: 0;
-  filter: blur(1px);
-  background-image: linear-gradient(225deg, #FFFA, #FFF2, #FFF2, #FFF2, #FFFA);
+  filter: blur(2px);
+  background-image: linear-gradient(45deg, var(--color-borders), #FFF0, #FFF0, #FFF0, var(--color-borders));
 }
 
 .cadre:hover::before {
@@ -292,11 +300,11 @@ a.linkBox:hover {
 }*/
 
 div.ended a.boxA {
-  @apply  bg-quaternary-bg; 
+  @apply  opacity-50; 
 }
 
 div.ended a.boxA:hover {
-  @apply  bg-quaternary-bg; 
+  @apply  opacity-100; 
 }
 
 a.slashLink {
@@ -307,14 +315,27 @@ a.slashLink:hover {
   @apply bg-epierrot text-primary-bg border-secondary-bg;
 }
 
+#lightgallery {
+  @apply w-full h-auto grid grid-rows-6 grid-flow-col gap-0.5;
+}
+
 #lightgallery>a {
-  @apply border-0;
+  @apply border-0 w-auto;
+  aspect-ratio: 1;
 }
 
 #lightgallery>a:hover {
   @apply bg-transparent;
 }
 
+#lightgallery img {
+  @apply object-cover w-full h-full cursor-pointer;
+  aspect-ratio: 1;
+}
+
+#lightgallery .imag {
+  @apply rounded
+}
 strong>a {
   @apply border-0;
 }
@@ -637,24 +658,20 @@ h5 {
 }
 
 a.logohome {
- @apply block relative bg-transparent border-0 h-8;
+ @apply flex flex-col relative bg-transparent border-0 items-start;
 }
 
 a.logohome .lh {
-  @apply h-8 bg-transparent absolute;
+  @apply inline-block bg-transparent pb-2;
   content: ' ';
   stroke-width: 0.03;
   stroke: var(--color-primary-text);
   stroke-dasharray: 2.7;
   stroke-dashoffset: 0;
-  top:0;
-  left: 0;
-  z-index: -1;
   animation: logoanim 3.5s ease-out;
   fill: transparent;
   transition: all 0.7s ease-in-out;
 }
- 
 @keyframes logoanim {
   0% {stroke-dashoffset: 2.7;fill: transparent;stroke: var(--color-epierrot);}
   40% {fill: transparent;}
@@ -662,7 +679,26 @@ a.logohome .lh {
   100% {stroke-dashoffset: 0; fill: transparent;stroke: var(--color-primary-text);}
 }
 
-a.logohome:hover .lh {
+a.logohome .lh2 {
+  @apply inline-block bg-transparent pb-2;
+  content: ' ';
+  stroke-width: 3;
+  stroke: var(--color-primary-text);
+  stroke-dasharray: 452;
+  stroke-dashoffset: 0;
+  animation: logoanim2 3.5s ease-out;
+  fill: transparent;
+  transition: all 0.7s ease-in-out;
+}
+
+@keyframes logoanim2 {
+  0% {stroke-dashoffset: 452;fill: transparent;stroke: var(--color-epierrot);}
+  40% {fill: transparent;}
+  70% {stroke-dashoffset: 0;fill: #FFFFFFAA;stroke: var(--color-epierrot);}
+  100% {stroke-dashoffset: 0; fill: transparent;stroke: var(--color-primary-text);}
+}
+
+a.logohome:hover .lh, a.logohome:hover .lh2 {
   fill: var(--color-epierrot);
   stroke: var(--color-epierrot);
 }
@@ -711,9 +747,8 @@ input:placeholder {
 
 /* embed iframe */
 .embed-wrapper {
-  overflow: hidden;
+  @apply overflow-hidden relative rounded;
   padding-top: 56.25%;
-  position: relative;
 }
 
 .embed-wrapper iframe {
@@ -921,8 +956,7 @@ section.lectureSession>.main {
 }
 
 a.doclinkButton {
-  @apply relative text-primary-text bg-transparent inline-block mb-4 mr-4;
-  border-radius: 10px;
+  @apply relative text-primary-text bg-secondary-bg rounded-md inline-block mb-4 mr-4;
 }
 
 a.doclinkButton:hover {
@@ -943,15 +977,23 @@ a.doclinkButton span.doclinkText {
 }
 
 .iconhome, .iconhome:hover {
-  @apply bg-transparent;
+  @apply bg-transparent inline-block mr-2 w-auto;
 }
 
 .iconhome svg {
   fill: var(--color-primary-text);
 }
 
+.strok svg {
+  stroke: var(--color-primary-text);
+}
+
 .iconhome:hover svg {
   fill: var(--color-epierrot);
+}
+
+.strok:hover svg {
+  stroke: var(--color-primary-text);
 }
 
 /* fix docSlider phone */

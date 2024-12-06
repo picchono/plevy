@@ -1,6 +1,5 @@
 {{ define "main" }}
-<section class="justify-start flex flex-col flex-grow" {{if .Params.searchWeight
-    }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+<section class="justify-start flex flex-col flex-grow" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
     {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
     {{ with $page }}
     <h1>{{ .Title }}</h1>

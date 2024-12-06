@@ -1,11 +1,10 @@
 {{ $photonb := len .Params.photogallery }}
 {{ if eq $photonb 1 }}
-<div class="p-0" id="lightgallery"><img loading="lazy" class="imag object-cover w-full h-full cursor-pointer"
-        src="{{ .Params.photogallery.image1.img }}"></div>
+<div class="p-0" id="lightgallery"><img loading="lazy" class="imag" src="{{ .Params.photogallery.image1.img }}"></div>
 {{ else }}
-<div class="flex flex-row flex-wrap w-full py-8" id="lightgallery">
+<div id="lightgallery" class="py-8">
         {{ range sort .Params.photogallery "order" "asc" }}
-        <a class="place-self-center w-1/4 sm:w-1/3 lg:w-1/6 p-0.5" href="{{ .img }}" aria-label="See image"><img class="rounded-sm object-cover h-14" loading="lazy" src="{{ .src }}" alt="{{ .name }}"></a>
+        <a class="place-self-center w-auto" href="{{ .img }}" aria-label="See image"><img loading="lazy" src="{{ .src }}" alt="{{ .name }}"></a>
         {{ end }}
 </div>
 {{ end }}
