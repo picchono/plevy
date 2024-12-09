@@ -6,7 +6,7 @@
   @apply font-sans text-primary-text leading-6 box-border;
   --st-dropshadow: 7px 7px 8px #00000044;
   --lineHeight: 1.75;
-/*  color-scheme: light dark; */
+  color-scheme: light dark;
 }
 
  /* width */
@@ -63,31 +63,20 @@ body {
 
 body {
   @apply text-primary-text overflow-x-hidden md:overflow-x-auto;
-  background-image: linear-gradient( 75deg, var(--color-primary-bg) 12.6%, var(--color-secondary-bg) 82.8% );
+  background-image: linear-gradient( 120deg, var(--color-primary-bg) 20%, var(--color-secondary-bg) 70% );
 }
 
 body {
-  --color-primary-bg: #292929;
-  --color-secondary-bg: #1c1c1c;
-  --color-tertiary-bg: #737c84;
-  --color-quaternary-bg: #000000;
-  --color-primary-text: #e5e7eb;
-  --color-secondary-text: #e3ddd3;
-  --color-epierrot: #e6ca89;
-  --color-borders: #FFFA;
-}
-/*
-body {
-  --color-primary-bg: light-dark(#FFFFFF,#292929);
-  --color-secondary-bg: light-dark(#efede8,#1c1c1c);
-  --color-tertiary-bg: light-dark(#006284, #737c84);
-  --color-quaternary-bg: light-dark(#d7d5d1, #000000);
+  --color-primary-bg: light-dark(#fff,#1c1c1c);
+  --color-secondary-bg: light-dark(#fff,#1c1c1c);
+  --color-tertiary-bg: light-dark(#fff, #737c84);
+  --color-quaternary-bg: light-dark(#000000, #000000);
   --color-primary-text: light-dark(#1c1c1c, #e5e7eb);
-  --color-secondary-text: light-dark(#6b7280, #f3f4f6);
-  --color-epierrot: light-dark(#006284, #608eaa);
-  --color-borders: light-dark(#a69f8f, #FFFA);
+  --color-secondary-text: light-dark(#e3ddd3, #f3f4f6);
+  --color-epierrot: light-dark(#0089A7, #33A6B8);
+  --color-borders: light-dark(#1c1c1c, #FFFA);
 }
-*/
+
 section {
   @apply max-w-3xl flex flex-col pb-20 relative h-auto md:h-screen flex-shrink-0 flex-grow-0 overflow-y-scroll overflow-x-hidden w-full md:w-132 md:pr-24;
   scrollbar-width: none;
@@ -202,11 +191,11 @@ a.floatImg::after {
 }
 
 a.boxA {
-  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-4 rounded-md;
+  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-4 rounded;
 }
 
 a.collab {
-  @apply relative bg-secondary-bg mr-4 my-8 p-4 rounded-md transition-all duration-700 ease-in-out;
+  @apply relative bg-secondary-bg mr-4 my-8 p-4 rounded transition-all duration-700 ease-in-out;
 }
 
 a.collab svg {
@@ -223,7 +212,7 @@ a.collab:hover svg {
 }
 
 a.smalllink {
-  @apply relative bg-secondary-bg rounded-md inline-block p-2 mr-4;
+  @apply relative bg-secondary-bg rounded inline-block p-2 mr-4;
 }
 
 a.smalllink:last-child {
@@ -231,11 +220,11 @@ a.smalllink:last-child {
 } 
 
 a.langu { 
-  @apply relative bg-secondary-bg rounded-md inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
+  @apply relative bg-secondary-bg rounded inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
 }
 
 a.homemenu, a.listcourse {
-  @apply relative inline-block bg-primary-bg px-2 py-0.5 my-2 text-primary-text rounded-md hover:text-epierrot;
+  @apply relative inline-block bg-primary-bg px-2 py-0.5 my-2 text-primary-text rounded hover:text-epierrot;
 }
 
 a.homemenu {
@@ -243,11 +232,11 @@ a.homemenu {
 }
 
 a.linkBox {
-  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-md border-0 transition-all duration-500 ease-in-out;
+  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded border-0 transition-all duration-500 ease-in-out;
 }
 
 a.linkBox {
-  @apply relative bg-secondary-bg flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded-md border-0 transition-all duration-500 ease-in-out;
+  @apply relative bg-secondary-bg flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded border-0 transition-all duration-500 ease-in-out;
 }
 
 a.linkBox:hover {
@@ -263,8 +252,8 @@ a.linkBox:hover {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  opacity: 0.7;
-  border-radius: 7px;
+  opacity: 0.9;
+  border-radius: 5px;
   transition: opacity 1s ease-in-out;
   background-image: linear-gradient(45deg, var(--color-borders), #FFF0, #FFF0, #FFF0, #FFF0);
 }
@@ -272,12 +261,12 @@ a.linkBox:hover {
 .cadre::before {
   z-index: -2;
   opacity: 0;
-  filter: blur(2px);
+  filter: blur(0px);
   background-image: linear-gradient(45deg, var(--color-borders), #FFF0, #FFF0, #FFF0, var(--color-borders));
 }
 
 .cadre:hover::before {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .cadre:hover::after {
@@ -678,23 +667,21 @@ a.logohome .lh {
 }
 
 a.logohome .lh2 {
-  stroke-width: 2;
-  stroke-dasharray: 452;
+  stroke-width: 4;
+  stroke-dasharray: 569;
   animation: logoanim2 3s ease-out;
 }
 
 @keyframes logoanim {
-  0% {stroke-dashoffset: 2.7;fill: transparent;stroke: var(--color-epierrot);}
-  30% {fill: var(--color-epierrot);}
-  70% {stroke-dashoffset: 0; stroke: var(--color-epierrot);}
-  100% {stroke-dashoffset: 0; fill: transparent;stroke: var(--color-primary-text);}
+  0% {stroke-dashoffset: 2.7; stroke: var(--color-epierrot);}
+  80% {stroke-dashoffset: 0; stroke: var(--color-epierrot);}
+  100% {stroke-dashoffset: 0; stroke: var(--color-primary-text);}
 }
 
 @keyframes logoanim2 {
-  0% {stroke-dashoffset: 452;fill: transparent;stroke: var(--color-epierrot);}
-  30% {fill: var(--color-epierrot);}
-  70% {stroke-dashoffset: 0;stroke: var(--color-epierrot);}
-  100% {stroke-dashoffset: 0; fill: transparent;stroke: var(--color-primary-text);}
+  0% {stroke-dashoffset: 569; stroke: var(--color-epierrot);}
+  80% {stroke-dashoffset: 0; stroke: var(--color-epierrot);}
+  100% {stroke-dashoffset: 0; stroke: var(--color-primary-text);}
 }
 
 a.logohome:hover .lh, a.logohome:hover .lh2 {
@@ -955,7 +942,7 @@ section.lectureSession>.main {
 }
 
 a.doclinkButton {
-  @apply relative text-primary-text bg-secondary-bg rounded-md inline-block mb-4 mr-4;
+  @apply relative text-primary-text bg-secondary-bg rounded mb-4 mr-4 flex flex-row items-center justify-start w-64;
 }
 
 a.doclinkButton:hover {
@@ -963,7 +950,7 @@ a.doclinkButton:hover {
 }
 
 a.doclinkButton span.doclinkIcon {
-  @apply inline-block py-3 pl-5 pr-0.5 rounded-l transition-all duration-700 ease-in-out;
+  @apply inline-block py-3 px-5 rounded-l transition-all duration-700 ease-in-out;
 }
 
 a.doclinkButton span.doclinkText {
