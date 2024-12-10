@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ range $fold := slice "events" "teaching" "courses" "projects" "writings" "research" "publications" "team" }}
+{{ range readDir "content" }}
+{{ if eq .Name $fold }}
+{{ range where $.Site.Pages "Section" "in" ($fold) }}
+{{ if eq .Params.zone $fold }}
+<section id="{{- lower .Title -}}">
+    <h1>{{ .Title }}</h1>
+    {{ $count := 0 }}
+    {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+    {{ if ne .Params.notListed true }}
+    {{ if .Params.chaire }}
+    {{ $count = add $count 1 }}
+    {{- partial "box.html" ( dict "context" . "cou" $count) -}}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

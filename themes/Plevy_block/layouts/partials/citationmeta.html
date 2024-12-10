@@ -1,0 +1,58 @@
+{{ with .Params.citation }}
+<meta property="DC.type" content="{{- $.Params.subsection -}}" />
+{{ if .doi }}<meta property="DC.identifier" content="{{- .doi -}}" />
+<meta property="citation_doi" content="{{- .doi -}}" />{{ end }}
+{{ if .authors }}
+    {{ $auth := .authors }}
+    {{ range $auth }}
+        <meta property="DC.creator" content="{{- index . 0 -}}, {{ index . 1 -}}" />
+    {{ end }}
+    {{ range $auth }}
+        <meta property="citation_author" content="{{- index . 0 -}}, {{ index . 1 -}}" />
+    {{ end }}
+    {{ range $auth }}
+        <meta name="bepress_citation_author" content="{{- index . 0 -}}, {{ index . 1 -}}" />
+    {{ end }}
+{{ end }}
+{{ if .editors }}
+    {{ $edi := .editors }}
+    {{ range $edi }}
+        <meta property="DC.editor" content="{{- index . 0 -}}, {{ index . 1 -}}" />
+        <meta property="citation_editor" content="{{- index . 0 -}}, {{ index . 1 -}}" />
+        <meta property="bepress_citation_editor" content="{{- index . 0 -}}, {{ index . 1 -}}" />
+    {{ end }}
+{{ end }}
+{{ if .year }}<meta property="DC.date" content="{{- .year -}}" />
+<meta property="citation_date" content="{{- .year -}}" />
+<meta name="bepress_citation_date" content="{{- .year -}}" />{{- end -}}
+{{ if .title }}<meta property="DC.title" content="{{- .title -}}" />
+<meta property="citation_title" content="{{- .title -}}" />
+<meta name="bepress_citation_title" content="{{- .title -}}" />{{- end -}}
+{{ if $.Params.abstract }}<meta property="citation_abstract" content="{{- $.Params.abstract -}}" />{{- end -}}
+{{ if .proceedings }}<meta property="citation_conference_title" content="{{- .proceedings -}}" />
+<meta property="citation_inbook_title" content="{{- .proceedings -}}" />{{- end -}}
+{{ if .journal }}<meta property="citation_journal_title" content="{{- .journal -}}" />{{- end -}}
+{{ if .publisher }}<meta property="DC.publisher" content="{{- index .publisher 0 -}}" />
+<meta property="citation_publisher" content="{{- index .publisher 0 -}}" />{{- end -}}
+<meta property="DC.language" content="{{ if .language }}{{- .language -}}{{ else }}en-GB{{- end -}}" />
+<meta property="citation_language" content="{{ if .language }}{{- .language -}}{{ else }}en-GB{{- end -}}" />
+<meta property="DC.relation" content="{{- $.Permalink -}}" />
+<meta property="citation_public_url" content="{{- $.Permalink -}}" />
+<meta name="bepress_citation_abstract_html_url" content="{{- $.Permalink -}}" />
+{{ if .pubmed }}<meta property="citation_pmid" content="{{- .pubmed -}}" />{{- end -}}
+{{ if .issn }}<meta property="citation_isbn" content="{{- .isbn -}}" />{{- end -}}
+{{ if .issn }}<meta property="citation_issn" content="{{- .issn -}}" />{{- end -}}
+{{ if .number }}<meta property="citation_issue" content="{{- .number -}}" />{{- end -}}
+{{ if .volume }}<meta property="citation_volume" content="{{- .volume -}}" />{{- end -}}
+{{ if .firstpage }}<meta property="citation_firstpage" content="{{- .firstpage -}}" />{{- end -}}
+{{ if .lastpage }}<meta property="citation_lastpage" content="{{- .lastpage -}}" />{{- end -}}
+{{ if .dissertation_institution }}<meta property="citation_dissertation_institution" content="{{- .dissertation_institution -}}" />{{- end -}}
+{{ if .technical_report_institution }}<meta property="citation_technical_report_institution" content="{{- .technical_report_institution -}}" />{{- end -}}
+{{ if .technical_report_number }}<meta property="citation_technical_report_number" content="{{- .technical_report_number -}}" />{{- end -}}
+{{ end }}
+{{ if .Params.link }}
+    {{ range .Params.link }}
+        {{ if eq (index . 0) "paper" }}<meta property="citation_pdf_url" content="{{- index . 2 -}}" />
+        <meta name="bepress_citation_pdf_url" content="{{- index . 2 -}}" />{{- end -}}
+    {{ end }}
+{{ end }}

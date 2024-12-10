@@ -1,0 +1,72 @@
+{{ if ne (dateFormat "2006" .context.Date) "0001" }}
+<div class='it{{- int .cou }} h-auto w-full p-3 my-3 {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
+    aria-label="{{- .context.Title |safeHTML -}}">
+    <a class="boxA cadre"
+        href="{{ .context.Permalink }}">
+        <div class="flex flex-row">
+            {{ if isset .context.Params "frontphoto" }}
+            <div class='blend-plevy flex-grow-0 flex-shrink-0 mr-2'><img src="" data-toset="
+                    {{- if .context.Params.frontphotomini }}{{ .context.Params.frontphotomini | absURL }}
+                    {{ else }}{{ .context.Params.frontphoto | absURL }}{{ end -}}"
+                    class="imag imgBox object-cover rounded h-16 w-16" alt="{{ .context.Params.title }}" width="500"
+                    height="240" />
+            </div>
+            {{ end}}
+            <h5
+                class='block w-full font-bold text-base m-0 {{ if isset .context.Params "frontphoto" }}px-3{{ else }}px-2{{ end }}'>
+                {{- .context.Title |safeHTML -}}</h5>
+        </div>
+        {{ if isset .context.Params "photocredit" }}
+                <div data-target="{{ .context.Params.photocredit.link | absURL }}"
+                    title="{{ .context.Params.photocredit.cred }}" class="credphoto text-xs py-1">
+                    &copy;{{ .context.Params.photocredit.cred -}}</div>
+                {{ end }}
+        <div class="w-full flex flex-col">
+            <p class="block p-2 m-0 mb-2 text-sm overflow-ellipsis overflow-hidden ...">
+                {{ if .context.Params.citation }}
+                {{ partial "box-citation.html" .context }}
+                {{ else }}
+                {{ if .context.Params.reference }}
+                {{- .context.Params.reference |safeHTML -}}
+                {{ else if .context.Params.quote }}
+                {{ .context.Params.quote.quoteline |safeHTML}}<br />
+                <span class="text text-sm italic">-
+                    {{ .context.Params.quote.quoteauthor }}
+                    ({{ .context.Params.quote.quotedate }})</span>
+                {{ else }}
+                <span class="text text-sm">{{if .context.Params.abstract }}
+                    {{ .context.Params.abstract |safeHTML }}{{ else }}{{ .context.Params.description }}
+                    {{ end }}{{ .context.Params.boxtext |safeHTML }}</span>
+                {{ end }}
+                {{ end }}
+            </p>
+            {{ if .context.Params.collaboration }}
+            {{ $inst := .context.Params.institutiontution.logo }}
+            <p class="flex flex-row flex-wrap p-2">
+                {{ if ne .context.Params.layout "presentation"}}
+                {{ range sort .context.Params.collaboration }}
+                {{ if ne $inst .logo }}
+                <span class="mr-4 mb-2 collabicon">
+                    {{ partial "icons.html" (dict "ico" .logo "hei" 0.8) -}}
+                </span>
+                {{ end }}
+                {{ end }}
+                {{ else }}
+                {{ with .context.Params.collaboration}}
+                {{ range . }}
+                {{ if ne $inst ( index . 0 ) }}
+                <span class="p-2 collabicon">
+                    {{ partial "icons.html" (dict "ico" ( index . 0 ) "hei" 1.2)
+                    }}
+                </span>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </p>
+            {{ end }}
+        </div>
+        <div class="inline-block text-xs px-2">{{ dateFormat "02 Jan 2006" .context.Date }}</div>
+    </a>
+</div>
+{{ end }}

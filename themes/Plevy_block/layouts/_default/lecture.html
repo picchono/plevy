@@ -1,0 +1,3 @@
+{{ define "main" }}
+{{ if .Content}}<section id="content"class="large p-5" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}"{{ end }}>{{ .Content }}</section>{{ end }}
+{{ end }}

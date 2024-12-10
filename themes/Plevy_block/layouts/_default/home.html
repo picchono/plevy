@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="justify-start flex flex-col flex-grow" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
+    {{ with $page }}
+    <h1>{{ .Title }}</h1>
+    <div class="px-5">
+        {{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
+        {{ with index .Site.Data.plevy .Site.Language.Lang }}
+        <div class="social flex flex-row justify-start items-center w-full my-10">
+            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink cadre"
+                rel="noreferrer" aria-label="{{ .icon }}">{{- partial "icons.html" (dict "ico" .icon
+                "hei" 0.8) -}}</a>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{$memb := .Params.member}}
+</section>
+<section {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    {{ $page := $.Site.GetPage "page" "chaire.md" }}
+    {{ with $page }}
+      <h1>{{ .Title }}</h1>
+      <div class="px-5">{{ .Params.description }}</div>
+      <div class="p-5 text-center"><a href='/chaire' target="_blank" class="doclinkButton cadre" rel="noreferrer" aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico" "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
+      <h2>{{ i18n "members"}}</h2>
+      {{ if .Params.members }}
+      {{ range .Params.members }}
+      <div class="h-24 w-full p-4 mb-4"><a class="boxA cadre flex-row justify-start p-1" href="{{ index . 3 }}">
+        <img class="flex-grow-0 flex-shrink-0 object-cover rounded-md h-20 w-20 mr-4" src="{{ index . 2 }}" alt="{{ index . 0 }}" >
+        <div class="flex flex-col justify-center leading-none"><div class="font-bold">{{ index . 0 }}</div><div class="leading-tight">{{ index . 1 |safeHTML }}</div></div>
+      </a></div>
+      {{ end }}
+      {{ end }}
+    {{ end }}
+{{$memb := .Params.member}}
+</section>
+{{ range $fold := slice "events" "teaching" "courses" "projects"  "research" "publications" "writings" }}
+{{ range readDir "content" }}
+{{ if eq .Name $fold }}
+{{ range where $.Site.Pages "Section" "in" ($fold) }}
+{{ if eq .Params.zone $fold }}
+<section class="flex flex-col" id="{{- lower .Title -}}">
+    <h1>{{ .Title }}</h1>
+    {{ $count := 0 }}
+    {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+    {{ if ne .Params.notListed true }}
+    {{ if isset .Params "members" }}
+    {{ if ne .Params.notListed true }}
+    {{ if in .Params.members $memb }}
+    {{ $count = add $count 1 }}
+    {{- partial "box.html" ( dict "context" . "cou" $count) -}}
+    {{ end }}{{ end }}{{ end }}
+    {{ end }}
+    {{ end }}
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,39 @@
+
+{{ range sort .Params.video }}
+{{ if isset . "youtube" }}
+<div class="w-full max-w-xl border-0">
+    <div class="embed-wrapper h-full w-full"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube | safeURL }}" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></div>
+    <div class="text-xs italic h-full p-2">By playing this movie, you accept
+        the <a href="https://policies.google.com/" target="_blank" rel="noreferrer" aria-label="Policies and terms of Google" class="text-xs">Policies & Terms
+            of Google</a>.</div>
+</div>
+<div class="flex flex-col h-full w-full justify-center slideframe">
+    {{ if .Title }}
+    <div class="pb-10 lg:p-0">{{ if isset . "title" }}<h2 class="pt-4 text-xl font-bold">
+            {{ .Title }}</h2>{{ end }}
+        {{ if isset . "speaker" }}<div class="text-base italic -mt-1 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
+        {{ end }}</div>
+    {{ end }}
+</div>
+{{ end }}
+{{if isset . "vimeo" }}
+<div class="border-0 w-full max-w-xl lg:p-0 text-xs order-1 lg:order-2 italic">By playing this movie, you accept
+    the <a href="https://vimeo.com/terms" target="_blank" rel="noreferrer" aria-label="Policies and terms of Vimeo" class="text-xs">Terms of Vimeo</a>.
+</div>
+<div class="w-full flex-grow lg:flex-grow-0">
+    <div class="embed-wrapper h-full w-full"><iframe src="https://player.vimeo.com/video/{{ .vimeo }}" width="640" height="360"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
+</div>
+<div class="flex flex-col w-full justify-between">
+    {{ if .Title }}
+    <div class="pb-10 lg:p-0">{{ if isset . "title" }}<h2 class="pt-4 text-xl font-bold">
+            {{ .Title }}</h2>{{ end }}
+        {{ if isset . "speaker" }}<div class="text-base italic -mt-1 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
+        {{ end }}</div>
+    {{ end }}
+</div>
+{{ end }}
+{{ end }}

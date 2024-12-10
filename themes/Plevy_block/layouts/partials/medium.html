@@ -1,0 +1,86 @@
+{{ if ne .Params.layout "list" }}
+<section>
+    {{ if and (.Params.abstract) (ne .Params.layout "publi") }}
+    <div class="h-auto my-5 px-5">
+        <b class="text-epierrot">{{ partial "slash.html" (dict "txt" (i18n "abstract")) }}</b>
+        {{ .Params.abstract |safeHTML }}
+    </div>
+    {{ end }}
+    {{ if eq .Params.layout "about" }}{{- if .Params.frontphoto }}
+    <img src="" data-toset="{{ .Params.frontphoto | absURL }}" class="imag object-cover w-full py-5"
+        alt="{{ .Params.title }}" width="500" height="240" />
+    {{ end }}{{ end -}}
+    {{ if .Params.schedule }}
+    <div class="h-144 p-5">
+        <p>{{ .Params.schedule |safeHTML }}</p>
+    </div>
+    {{ end }}
+    {{ if .Params.executive}}
+    <div class="italic text-sm p-5">
+        <p>{{ .Params.executive }}</p>
+    </div>
+    {{ end }}
+    {{ if .Params.tablecontent }}
+    <div class="px-5">
+        <div class="tablecontent max-w-sm" id="toc">
+            <h2>{{ i18n "tableOfContent"}}</h2>
+        </div>
+    </div>
+    {{ end }}
+    {{ if .Params.photogallery }}
+    {{ partial "photogallery.html" . }}
+    {{ end }}
+    {{ if .Params.video}}
+    {{ partial "video.html" . }}
+    {{ end }}
+    {{ if .Params.calendar }}
+    <div class="p-5">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
+        {{ range .Params.calendar }}
+            <div class="listoutside pb-3">{{ . | safeHTML }}</div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ if .Params.lectures}}
+    <div class="mt-20 px-5">
+        {{ partial "slash.html" (dict "txt" (i18n "courses")) }}<br />
+        {{ $cod := .Params.code }}
+        {{ range sort .Params.lectures "order" "asc" }}
+            <div class=""><a class="listcourse cadre"
+                    href="{{if .redirect }}{{ .redirect }}{{ else }}../{{ $cod }}/{{ .link }}{{ end -}}">
+                    <b>{{ $cod }}/{{ .order }}&nbsp;&middot;&nbsp;</b>
+                    {{- replace .Title " | " "&middot;" |safeHTML -}}</a></div>
+            {{ end }}
+        
+    </div>
+    {{ end }}
+    {{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start" {{if
+        .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+        <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
+        <div class="ml-2 w-auto lg:w-full py-1">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}
+            {{ range sort .Params.redirectlecture "order" "asc" }}
+            <a class="" href="{{ .link }}" target="_blank" rel="noreferrer"><b>{{ $cod }}.{{ .order
+                    }}&nbsp;&middot;&nbsp;</b>{{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+    {{ if .Params.encapsulation }}
+    <div class="mt-20 px-5">
+        {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
+        {{ range .Params.encapsulation }}
+        <a class="linkBox cadre" href="{{ .link }}">
+            <div class="titleLink">{{ .title }}</div>
+            {{ if .img }}<div class="imgLink"><img src="{{ .img }}" alt="{{ .title }}"></div>{{ end }}
+        </a>
+    {{ end }}
+    </div>{{ end }}
+    {{ if .Params.link }}
+    <div class="mt-20 px-5">
+        {{ partial "slash.html" (dict "txt" (i18n "links")) }}
+        <div class="block">
+            {{ partial "doclink.html" . }}
+        </div>
+    </div>
+    {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+<section class="large justify-start flex flex-col p-5 flex-grow" {{if .Params.searchWeight
+    }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    {{ if .Params.Parcours }}
+    <div class="mb-20">
+        <h2>{{ i18n "parcours" }}</h2>
+        <div class="max-w-3xl w-full">
+            {{ $teach := where .Site.Pages "Section" "in" (slice "courses") }}
+            {{ $count := 0 }}
+            {{ range .Params.Parcours }}
+            {{ $parc := .code }}
+            <script>console.log("2", {{ $parc }})</script>
+            {{ range $teach }}
+            <script>console.log("1", {{ .Params.code }})</script>
+            {{ if eq .Params.code $parc }}
+            {{ $count = add $count 1 }}
+            {{- partial "box.html" ( dict "context" . "cou" $count ) -}}
+            {{ end }}{{ end }}
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+    {{ if .Content}}
+    <div id="content">{{ .Content }}</div>
+    {{ end }}
+    </div>
+    <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
+</section>
+{{ end }}
