@@ -62,8 +62,7 @@ body {
 }
 
 body {
-  @apply text-primary-text overflow-x-hidden md:overflow-x-auto;
-  background-image: linear-gradient( 120deg, var(--color-primary-bg) 20%, var(--color-secondary-bg) 70% );
+  @apply text-primary-text overflow-x-hidden md:overflow-x-auto bg-primary-bg;
 }
 
 body {
@@ -1025,7 +1024,7 @@ a.doclinkButton span.doclinkText {
   background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0) 0%,
       var(--color-primary-text) 75%,
-      var(--color-primary-text) 100%);
+      var(--color-primary-text) 100%);    
   -webkit-animation: drop 7s 0s infinite;
   animation: drop 7s 0s infinite;
   -webkit-animation-fill-mode: forwards;
