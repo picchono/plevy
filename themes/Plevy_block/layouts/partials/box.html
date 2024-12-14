@@ -1,5 +1,5 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
-<div class='it{{- int .cou }} pack-item w-104 {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
+<div class='it{{- int .cou }} pack-item w-96 {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}">
     <a class="boxA cadre"
         href="{{ .context.Permalink }}">
@@ -8,7 +8,7 @@
             <div class='blend-plevy flex-grow-0 flex-shrink-0 mr-2'><img src="" data-toset="
                     {{- if .context.Params.frontphotomini }}{{ .context.Params.frontphotomini | absURL }}
                     {{ else }}{{ .context.Params.frontphoto | absURL }}{{ end -}}"
-                    class="imag imgBox object-cover rounded h-16 w-16" alt="{{ .context.Params.title }}" width="500"
+                    class="imag imgBox object-cover h-16 w-16" alt="{{ .context.Params.title }}" width="500"
                     height="240" />
             </div>
             {{ end}}
