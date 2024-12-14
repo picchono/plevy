@@ -3,7 +3,7 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}" class="min-h-screen"{{ if .Params.noPagesearch }} data-pagefind-ignore="all">{{ else }}>
+<body id="{{ .Params.bodyclass }}"{{ if .Params.noPagesearch }} data-pagefind-ignore="all">{{ else }}>
   <div class="invisible h-0 w-0">
     <span data-pagefind-filter="Type">{{ .Params.searchFilter }}</span>
     <span data-pagefind-filter="Institution">{{ .Params.institution.short}}</span>

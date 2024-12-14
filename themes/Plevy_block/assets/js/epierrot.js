@@ -224,6 +224,6 @@ var iso = new Isotope( elem, {
   itemSelector: '.pack-item',
   layoutMode: 'packery',
   packery: {
-    gutter: 10
+    gutter: 30
   }
 });

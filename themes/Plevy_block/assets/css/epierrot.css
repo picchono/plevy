@@ -58,11 +58,10 @@ body {
   font-weight: normal;
   scroll-behavior: smooth;
   font-variant-ligatures: common-ligatures;
-  
 }
 
 body {
-  @apply bg-primary-bg text-primary-text overflow-x-hidden md:overflow-x-auto p-1;
+  @apply bg-primary-bg text-primary-text w-auto mx-auto min-h-screen overflow-x-hidden md:overflow-x-auto p-1;
 }
 
 body {
@@ -107,8 +106,8 @@ a:hover svg {
   fill:var(--color-epierrot);
 }
 
-.pack-item>* {
-  @apply bg-primary-bg;
+.pack-item {
+  @apply bg-primary-bg transition-all duration-300 ease-in-out;
   border-radius: 4px;
 }
 
@@ -120,8 +119,8 @@ a:hover svg {
 .pack-item::after, .pack-item::before {
   @apply absolute;
   content: ' ';
-  height: calc(100% + 2px);
-  width: calc(100% + 2px);
+  height: calc(100% + 1px);
+  width: calc(100% + 1px);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -277,7 +276,7 @@ a.linkBox:hover {
 }*/
 
 div.ended a.boxA {
-  @apply  opacity-50; 
+  @apply  opacity-30; 
 }
 
 div.ended a.boxA:hover {
@@ -931,11 +930,11 @@ section.lectureSession>.main {
 }
 
 a.doclinkButton {
-  @apply relative text-primary-text bg-secondary-bg rounded mb-4 mr-4 flex flex-row items-center justify-start w-64;
+  @apply relative text-primary-text bg-secondary-bg rounded border border-zinc-500 flex flex-row items-center justify-center w-64 p-4 transition-all duration-700 ease-in-out;
 }
 
-a.doclinkButton:hover {
-  @apply text-primary-text;
+.pack-item:hover a.doclinkButton {
+  @apply text-primary-text border-primary-text;
 }
 
 a.doclinkButton span.doclinkIcon {

@@ -1,5 +1,5 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
-<div class='it{{- int .cou }} pack-item w-118 {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
+<div class='it{{- int .cou }} pack-item w-104 {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}">
     <a class="boxA cadre"
         href="{{ .context.Permalink }}">

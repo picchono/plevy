@@ -1,27 +1,32 @@
 {{ define "main" }} {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
 {{ with $page }}
-<h1 class="pack-item m-0 p-10">{{ .Title }}</h1>
-{{ if .Content}}<div class="pack-item w-144" id="content">{{ .Content }}</div>{{ end }}
+<div class="pack-item w-144 p-5">
+<h1 class="m-0">{{ .Title }}</h1>
+{{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
 {{ with index .Site.Data.plevy .Site.Language.Lang }}
-{{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink cadre pack-item"
+<div class="mt-5">
+{{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink"
     rel="noreferrer" aria-label="{{ .icon }}">{{- partial "icons.html" (dict "ico" .icon
-    "hei" 0.8) -}}</a>{{ end }}
+    "hei" 0.8) -}}</a>{{ end }}</div>
 {{ end }}
+</div>
 {{ end }}
-{{$memb := .Params.member}}
 
+{{$memb := .Params.member}}
 {{ $page := $.Site.GetPage "page" "chaire.md" }}
 {{ with $page }}
-<h1 class="pack-item m-0 p-10">{{ .Title }}</h1>
-<div class="pack-item w-144">{{ .Params.description }}</div>
-<div class="pack-item"><a href='/chaire' target="_blank" class="doclinkButton cadre" rel="noreferrer"
+<div class="pack-item w-144">
+<h1 class="m-0 p-5">{{ .Title }}</h1>
+<div class="p-5">{{ .Params.description }}</div>
+<div class="p-5"><a href='/chaire' target="_blank" class="doclinkButton" rel="noreferrer"
         aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico"
             "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
-<h2>{{ i18n "members"}}</h2>
+
+<h2 class="px-5">{{ i18n "members"}}</h2>
 {{ if .Params.members }}
 {{ range .Params.members }}
-<div class="pack-item w-118">
-<a class="boxA cadre flex-row justify-start p-1 pack-item" href="{{ index . 3 }}">
+<div class="w-118 p-5">
+<a class="boxA flex-row justify-start p-1" href="{{ index . 3 }}">
     <img class="flex-grow-0 flex-shrink-0 object-cover rounded-md h-20 w-20 mr-4" src="{{ index . 2 }}"
         alt="{{ index . 0 }}">
     <div class="flex flex-col justify-center leading-none">
@@ -32,7 +37,9 @@
 </div>
 {{ end }}
 {{ end }}
+</div>
 {{ end }}
+
 {{$memb := .Params.member}}
 {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings" }}
 {{ range readDir "content" }}
