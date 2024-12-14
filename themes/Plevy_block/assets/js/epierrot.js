@@ -216,3 +216,14 @@ sect.forEach((section) => {
     showPic();
   });
 });
+
+
+var elem = document.querySelector('.pack');
+var iso = new Isotope( elem, {
+  // options
+  itemSelector: '.pack-item',
+  layoutMode: 'packery',
+  packery: {
+    gutter: 10
+  }
+});

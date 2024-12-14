@@ -10,8 +10,8 @@
     {{ if eq .Params.searchFilter "Publication"}}<span data-pagefind-filter="Publication">{{ .Params.subsection }}</span>{{ end }}
     {{ range .Params.collaboration -}}<span data-pagefind-filter="Collaboration">{{ .short }}</span>{{- end -}}
   </div>{{ end }}
-  {{ if not .IsHome }}<div class="progress"><div class="progressBar" id="progressBar"></div></div>{{ end }}
-  <main class='flex flex-col lg:flex-row flex-nowrap flex-grow overflow-x-scroll w-full' data-pagefind-body>  
+  <main class='pack' data-pagefind-body> 
+    <div class="w-px fixed top-0 left-0 -z-40"></div>
     {{ partial "title.html" . }}
     {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
     {{- block "main" . }}{{- end }}

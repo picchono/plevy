@@ -1,122 +1,117 @@
-<section class="pb-0 flex flex-col justify-between min-h-screen">
-    <div class="py-5 pl-2">
-            <div class="flex flex-row md:flex-col items--center md:items-start justify-start">
-            {{ if ne .Params.layout "chaire" }}<a class="logohome strok" href="{{ .Site.BaseURL | absURL }}" aria-label="Pierre Lévy">
-                <svg class="lh" viewBox="0 0 181 31"><g transform="matrix(1,0,0,1,-251.351,-325.762)"><g transform="matrix(0.0390322,0,0,0.0390322,231.127,319.423)"><g transform="matrix(825.56,0,0,825.56,494.621,800.97)"><path d="M0.202,-0l0,-0.232l0.099,0c0.173,0 0.303,-0.043 0.303,-0.218c-0,-0.175 -0.13,-0.218 -0.303,-0.218l-0.257,0l-0,0.668l0.158,-0Zm-0,-0.535l0.104,0c0.073,0 0.131,0.015 0.131,0.085c-0,0.071 -0.058,0.087 -0.131,0.087l-0.104,0l-0,-0.172Z"/></g><g transform="matrix(825.56,0,0,825.56,1046.92,800.97)"><path d="M0.024,-0.38l0.094,0l0,0.38l0.153,-0l0,-0.496l-0.247,0l-0,0.116Zm0.171,-0.198c0.05,0 0.09,-0.041 0.09,-0.09c0,-0.05 -0.04,-0.09 -0.09,-0.09c-0.05,0 -0.09,0.04 -0.09,0.09c-0,0.049 0.04,0.09 0.09,0.09Z"/></g><g transform="matrix(825.56,0,0,825.56,1335.87,800.97)"><path d="M0.024,-0.251c0,0.164 0.111,0.263 0.272,0.263c0.081,-0 0.165,-0.035 0.217,-0.111l-0.121,-0.044c-0.019,0.022 -0.053,0.037 -0.1,0.037c-0.056,-0 -0.11,-0.034 -0.115,-0.104l0.367,0c0.01,-0.175 -0.091,-0.3 -0.254,-0.3c-0.145,0 -0.266,0.101 -0.266,0.259Zm0.27,-0.146c0.059,0 0.107,0.033 0.109,0.097l-0.226,0c0.009,-0.068 0.06,-0.097 0.117,-0.097Z"/></g><g transform="matrix(825.56,0,0,825.56,1832.03,800.97)"><path d="M0.202,-0l0,-0.25c0,-0.079 0.04,-0.111 0.114,-0.111c0.014,0 0.025,0.001 0.041,0.003l0,-0.152c-0.076,-0.004 -0.129,0.025 -0.16,0.105l-0.027,-0.091l-0.12,0l0,0.496l0.152,-0Z"/></g><g transform="matrix(825.56,0,0,825.56,2168.03,800.97)"><path d="M0.202,-0l0,-0.25c0,-0.079 0.04,-0.111 0.114,-0.111c0.014,0 0.025,0.001 0.041,0.003l0,-0.152c-0.076,-0.004 -0.129,0.025 -0.16,0.105l-0.027,-0.091l-0.12,0l0,0.496l0.152,-0Z"/></g><g transform="matrix(825.56,0,0,825.56,2504.04,800.97)"><path d="M0.024,-0.251c0,0.164 0.111,0.263 0.272,0.263c0.081,-0 0.165,-0.035 0.217,-0.111l-0.121,-0.044c-0.019,0.022 -0.053,0.037 -0.1,0.037c-0.056,-0 -0.11,-0.034 -0.115,-0.104l0.367,0c0.01,-0.175 -0.091,-0.3 -0.254,-0.3c-0.145,0 -0.266,0.101 -0.266,0.259Zm0.27,-0.146c0.059,0 0.107,0.033 0.109,0.097l-0.226,0c0.009,-0.068 0.06,-0.097 0.117,-0.097Z"/></g><g transform="matrix(825.56,0,0,825.56,3293.27,800.97)"><path d="M0.202,-0.139l0,-0.529l-0.158,0l-0,0.668l0.478,-0l0,-0.139l-0.32,0Z"/></g><g transform="matrix(825.56,0,0,825.56,3765.49,800.97)"><path d="M0.024,-0.251c0,0.164 0.111,0.263 0.272,0.263c0.081,-0 0.165,-0.035 0.217,-0.111l-0.121,-0.044c-0.019,0.022 -0.053,0.037 -0.1,0.037c-0.056,-0 -0.11,-0.034 -0.115,-0.104l0.367,0c0.01,-0.175 -0.091,-0.3 -0.254,-0.3c-0.145,0 -0.266,0.101 -0.266,0.259Zm0.153,-0.049c0.009,-0.068 0.06,-0.097 0.117,-0.097c0.059,0 0.107,0.033 0.109,0.097l-0.226,0Zm0.056,-0.274l0.114,0l0.075,-0.055c0.012,-0.01 0.019,-0.025 0.019,-0.042c-0,-0.032 -0.024,-0.056 -0.056,-0.056c-0.024,0 -0.037,0.013 -0.041,0.018l-0.111,0.135Z"/></g><g transform="matrix(825.56,0,0,825.56,4251.75,800.97)"><path d="M0.177,-0l0.171,-0l0.178,-0.496l-0.157,0l-0.106,0.338l-0.106,-0.338l-0.157,0l0.177,0.496Z"/></g><g transform="matrix(825.56,0,0,825.56,4714.89,800.97)"><path d="M0,-0.496l0.19,0.493l-0.005,0.013c-0.015,0.038 -0.026,0.041 -0.09,0.041l-0.03,0l0,0.11l0.049,0c0.129,0 0.166,-0.035 0.214,-0.161l0.19,-0.496l-0.163,0l-0.095,0.31l-0.097,-0.31l-0.163,0Z"/></g></g></g></svg>
-            </a>{{ end }}
-            <a class="logohome strok ml-3" href="{{ .Site.BaseURL | absURL }}/chaire" aria-label="Pierre Lévy">
-                {{ partial "icons.html" (dict "ico" "jprouve" "hei" 4 "colo" "var(--color-primary-text)" "cla" "lh2") -}}
-            </a>
-            </div>
-        {{ partial "international.html" . }}
-        {{ partial "search.html" . }}
-    </div>
-    {{ if not .IsHome }}
-    <div class="px-5">
-        <div class="text-left items-start">
-            <h1 class="text-4xl font-bold mt-10" {{if .Params.searchWeight }}
-                data-pagefind-weight="{{- .Params.searchWeight -}}" {{ end }}>{{ .Params.title |safeHTML }}</h1>
-            {{ if .Params.authors }}
-            <p class="italic">{{ .Params.authors }},
-                {{ dateFormat "02 Jan 2006" .Date }}</p>
-            {{ end }}
-        </div>
-        {{ if .Params.updating }}
-        <div class="my-10">
-            <p class="italic text-epierrot">Currently updating</p>
-        </div>
-        {{ end }}
-        {{ if .Params.quote }}
-        <div class="py-5">
-            <p>{{ .Params.quote.quoteline |safeHTML}}<br /><span class="text italic">
-                    -
-                    {{ .Params.quote.quoteauthor }}
-                    ({{ .Params.quote.quotedate }})</span>
-            </p>
-        </div>
-        {{ end }}
+{{ if ne .Params.layout "chaire" }}<a class="logohome strok pack-item" href="{{ .Site.BaseURL | absURL }}"
+    aria-label="Pierre Lévy">
+    <svg class="lh" viewBox="0 0 181 31"><g transform="matrix(1,0,0,1,-251.351,-325.762)"><g transform="matrix(0.0390322,0,0,0.0390322,231.127,319.423)"><g transform="matrix(825.56,0,0,825.56,494.621,800.97)"><path d="M0.202,-0l0,-0.232l0.099,0c0.173,0 0.303,-0.043 0.303,-0.218c-0,-0.175 -0.13,-0.218 -0.303,-0.218l-0.257,0l-0,0.668l0.158,-0Zm-0,-0.535l0.104,0c0.073,0 0.131,0.015 0.131,0.085c-0,0.071 -0.058,0.087 -0.131,0.087l-0.104,0l-0,-0.172Z" /></g><g transform="matrix(825.56,0,0,825.56,1046.92,800.97)"><path d="M0.024,-0.38l0.094,0l0,0.38l0.153,-0l0,-0.496l-0.247,0l-0,0.116Zm0.171,-0.198c0.05,0 0.09,-0.041 0.09,-0.09c0,-0.05 -0.04,-0.09 -0.09,-0.09c-0.05,0 -0.09,0.04 -0.09,0.09c-0,0.049 0.04,0.09 0.09,0.09Z" /></g><g transform="matrix(825.56,0,0,825.56,1335.87,800.97)"><path d="M0.024,-0.251c0,0.164 0.111,0.263 0.272,0.263c0.081,-0 0.165,-0.035 0.217,-0.111l-0.121,-0.044c-0.019,0.022 -0.053,0.037 -0.1,0.037c-0.056,-0 -0.11,-0.034 -0.115,-0.104l0.367,0c0.01,-0.175 -0.091,-0.3 -0.254,-0.3c-0.145,0 -0.266,0.101 -0.266,0.259Zm0.27,-0.146c0.059,0 0.107,0.033 0.109,0.097l-0.226,0c0.009,-0.068 0.06,-0.097 0.117,-0.097Z" /></g><g transform="matrix(825.56,0,0,825.56,1832.03,800.97)"><path d="M0.202,-0l0,-0.25c0,-0.079 0.04,-0.111 0.114,-0.111c0.014,0 0.025,0.001 0.041,0.003l0,-0.152c-0.076,-0.004 -0.129,0.025 -0.16,0.105l-0.027,-0.091l-0.12,0l0,0.496l0.152,-0Z" /></g><g transform="matrix(825.56,0,0,825.56,2168.03,800.97)"><path d="M0.202,-0l0,-0.25c0,-0.079 0.04,-0.111 0.114,-0.111c0.014,0 0.025,0.001 0.041,0.003l0,-0.152c-0.076,-0.004 -0.129,0.025 -0.16,0.105l-0.027,-0.091l-0.12,0l0,0.496l0.152,-0Z" /></g><g transform="matrix(825.56,0,0,825.56,2504.04,800.97)"><path d="M0.024,-0.251c0,0.164 0.111,0.263 0.272,0.263c0.081,-0 0.165,-0.035 0.217,-0.111l-0.121,-0.044c-0.019,0.022 -0.053,0.037 -0.1,0.037c-0.056,-0 -0.11,-0.034 -0.115,-0.104l0.367,0c0.01,-0.175 -0.091,-0.3 -0.254,-0.3c-0.145,0 -0.266,0.101 -0.266,0.259Zm0.27,-0.146c0.059,0 0.107,0.033 0.109,0.097l-0.226,0c0.009,-0.068 0.06,-0.097 0.117,-0.097Z" /></g><g transform="matrix(825.56,0,0,825.56,3293.27,800.97)"><path d="M0.202,-0.139l0,-0.529l-0.158,0l-0,0.668l0.478,-0l0,-0.139l-0.32,0Z" /></g><g transform="matrix(825.56,0,0,825.56,3765.49,800.97)"><path d="M0.024,-0.251c0,0.164 0.111,0.263 0.272,0.263c0.081,-0 0.165,-0.035 0.217,-0.111l-0.121,-0.044c-0.019,0.022 -0.053,0.037 -0.1,0.037c-0.056,-0 -0.11,-0.034 -0.115,-0.104l0.367,0c0.01,-0.175 -0.091,-0.3 -0.254,-0.3c-0.145,0 -0.266,0.101 -0.266,0.259Zm0.153,-0.049c0.009,-0.068 0.06,-0.097 0.117,-0.097c0.059,0 0.107,0.033 0.109,0.097l-0.226,0Zm0.056,-0.274l0.114,0l0.075,-0.055c0.012,-0.01 0.019,-0.025 0.019,-0.042c-0,-0.032 -0.024,-0.056 -0.056,-0.056c-0.024,0 -0.037,0.013 -0.041,0.018l-0.111,0.135Z" /></g><g transform="matrix(825.56,0,0,825.56,4251.75,800.97)"><path d="M0.177,-0l0.171,-0l0.178,-0.496l-0.157,0l-0.106,0.338l-0.106,-0.338l-0.157,0l0.177,0.496Z" /></g><g transform="matrix(825.56,0,0,825.56,4714.89,800.97)"><path d="M0,-0.496l0.19,0.493l-0.005,0.013c-0.015,0.038 -0.026,0.041 -0.09,0.041l-0.03,0l0,0.11l0.049,0c0.129,0 0.166,-0.035 0.214,-0.161l0.19,-0.496l-0.163,0l-0.095,0.31l-0.097,-0.31l-0.163,0Z" /></g></g></g></svg>
+</a>{{ end }}
+<a class="logohome strok pack-item" href="{{ .Site.BaseURL | absURL }}/chaire" aria-label="Pierre Lévy">
+    {{ partial "icons.html" (dict "ico" "jprouve" "hei" 4 "colo" "var(--color-primary-text)" "cla" "lh2") -}}
+</a>
+{{ partial "international.html" . }}
+{{ partial "search.html" . }}
+</div>
+{{ if not .IsHome }}
+<div class="text-left items-start pack-item">
+    <h1 class="text-4xl font-bold mt-10" {{if .Params.searchWeight }}
+        data-pagefind-weight="{{- .Params.searchWeight -}}" {{ end }}>{{ .Params.title |safeHTML }}</h1>
+    {{ if .Params.authors }}
+    <p class="italic">{{ .Params.authors }},
+        {{ dateFormat "02 Jan 2006" .Date }}</p>
+    {{ end }}
+</div>
+{{ if .Params.updating }}
+<div class="pack-item">
+    <p class="italic text-epierrot">Currently updating</p>
+</div>
+{{ end }}
+{{ if .Params.quote }}
+<div class="pack-item">
+    <p>{{ .Params.quote.quoteline |safeHTML}}<br /><span class="text italic">
+            -
+            {{ .Params.quote.quoteauthor }}
+            ({{ .Params.quote.quotedate }})</span>
+    </p>
+</div>
+{{ end }}
 
-        {{ if .Params.citation }}
-        <div class="py-5">
-            {{ partial "citation.html" . }}
-        </div>
+{{ if .Params.citation }}
+<div class="pack-item">
+    {{ partial "citation.html" . }}
+</div>
+{{ end }}
+{{ if .Params.diploma}}
+<div class="flex flex-row items-start justify-start p-5 pack-item">
+    <p class="mr-4 flex-grow flex-shrink">
+        {{ range sort .Params.diploma }}
+        <b>{{ .type }}</b>
+        <br>
         {{ end }}
-        {{ if .Params.diploma}}
-        <div class="flex flex-row items-start justify-start p-5">
-            <p class="mr-4 flex-grow flex-shrink">
-                {{ range sort .Params.diploma }}
-                <b>{{ .type }}</b>
-                <br>
-                {{ end }}
-            </p>
-            <p class="flex-grow">
-                {{ range sort .Params.diploma }}
-                {{ .name }}<br>
-                {{ end }}
-            </p>
-        </div>
+    </p>
+    <p class="flex-grow">
+        {{ range sort .Params.diploma }}
+        {{ .name }}<br>
         {{ end }}
-        {{ if .Params.description }}
-        <div class="py-5">
-            <p>{{ .Params.description |safeHTML }}</p>
-        </div>
+    </p>
+</div>
+{{ end }}
+{{ if .Params.description }}
+<div class=" pack-item">
+    <p>{{ .Params.description |safeHTML }}</p>
+</div>
+{{ end }}
+{{ if and (.Params.reference) (ne .File.Section "publications") }}
+<div class=" pack-item">
+    <p>{{ .Params.reference |safeHTML }}</p>
+</div>
+{{ end }}
+{{ if .Params.collaboration }}
+<div class="flex flex-wrap items-center pack-item">
+    {{ range sort .Params.collaboration }}
+    <a href="{{ .web }}" target="_blank" class="collab cadre">
+        {{ if .colo }}
+        {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+        {{else}}
+        {{ partial "icons.html" (dict "ico" .logo "hei" .heig) -}}
         {{ end }}
-        {{ if and (.Params.reference) (ne .File.Section "publications") }}
-        <div class="py-5">
-            <p>{{ .Params.reference |safeHTML }}</p>
-        </div>
+    </a>
+    {{ end }}
+</div>
+{{ else if .Params.institution }}
+<div class="flex flex-wrap items-center pack-item">
+    <a href="{{ .Params.institution.web }}" target="_blank" class="collab cadre">
+        {{ if .Params.institution.colo }}
+        {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig "colo"
+        .Params.institution.colo) -}}
+        {{else}}
+        {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig) -}}
         {{ end }}
-        {{ if .Params.collaboration }}
-        <div class="flex flex-wrap items-center p-5">
-            {{ range sort .Params.collaboration }}
-            <a href="{{ .web }}" target="_blank" class="collab cadre">
-                {{ if .colo }}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
-                {{else}}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig) -}}
-                {{ end }}
-            </a>
-            {{ end }}
-        </div>
-        {{ else if .Params.institution }}
-        <div class="flex flex-wrap items-center py-5">
-            <a href="{{ .Params.institution.web }}" target="_blank" class="collab cadre">
-                {{ if .Params.institution.colo }}
-                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig "colo" .Params.institution.colo) -}}
-                {{else}}
-                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig) -}}
-                {{ end }}
-            </a>
-        </div>
-        {{ end }}
-        {{ else }}
-        <div class="mx-7 py-4 text-left">
-            {{ range $fold := slice "events" "teaching" "courses" "projects"  "research" "publications" "writings" }}
-            {{ range readDir "content" }}
-            {{ if eq .Name $fold }}
-            {{ range where $.Site.Pages "Section" "in" ($fold) }}
-            {{ if eq .Params.zone $fold }}
-            <a href="#{{- lower .Title -}}" class="homemenu cadre">{{ .Title }}</a><br />
-            {{ end }}
-            {{ end }}
-            {{ end }}
-            {{ end }}
-            {{ end }}
-        </div>
-        {{ end }}
-    </div>
-    <div class="flex flex-col p-5">
-        <div class="flex flex-row w-full">
-            <a class="iconhome strok" href="https://gohugo.io/" aria-label="Go to cnam website">{{ partial "icons.html" (dict "ico" "hugo"
-                "hei" 1) -}}</a>
-            <a class="iconhome" href="https://github.com/picchono/CDJP" aria-label="Go to github">{{ partial "icons.html" (dict
-                "ico" "github" "hei" 1) -}}</a>
-            <a class="iconhome" href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" aria-label="Go to cc">{{
-                partial "icons.html" (dict "ico" "cc" "hei" 1) -}}</a>
-        </div>
-        {{ if .IsHome }}
-        <a class="iconhome mt-3" href="https://www.cnam.fr" aria-label="Go to cnam website">{{ partial "icons.html" (dict "ico" "cnam"
-            "hei" 1) -}}</a>
-        {{ end }}
-    </div>
+    </a>
+</div>
+{{ end }}
+{{ else }}
+{{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings" }}
+{{ range readDir "content" }}
+{{ if eq .Name $fold }}
+{{ range where $.Site.Pages "Section" "in" ($fold) }}
+{{ if eq .Params.zone $fold }}
+<a href="#{{- lower .Title -}}" class="homemenu cadre pack-item">{{ .Title }}</a><br />
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+<div class="flex flex-row w-full pack-item">
+    <a class="iconhome strok" href="https://gohugo.io/" aria-label="Go to cnam website">{{ partial "icons.html" (dict
+        "ico" "hugo"
+        "hei" 1) -}}</a>
+    <a class="iconhome" href="https://github.com/picchono/CDJP" aria-label="Go to github">{{ partial "icons.html" (dict
+        "ico" "github" "hei" 1) -}}</a>
+    <a class="iconhome" href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+        aria-label="Go to cc">{{
+        partial "icons.html" (dict "ico" "cc" "hei" 1) -}}</a>
+</div>
+{{ if .IsHome }}
+<a class="iconhome pack-item" href="https://www.cnam.fr" aria-label="Go to cnam website">{{ partial "icons.html" (dict
+    "ico" "cnam"
+    "hei" 1) -}}</a>
+{{ end }}
 </section>

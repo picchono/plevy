@@ -216,3 +216,4 @@ sect.forEach((section) => {
     showPic();
   });
 });
+
