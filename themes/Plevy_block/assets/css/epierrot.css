@@ -9,8 +9,8 @@
   color-scheme: light dark;
 }
 
- /* width */
- ::-webkit-scrollbar {
+/* width */
+::-webkit-scrollbar {
   width: 0;
   height: 5px;
 }
@@ -32,7 +32,7 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-epierrot);
-} 
+}
 
 @supports (scrollbar-color: red blue) {
   * {
@@ -42,8 +42,11 @@
   }
 }
 
-input::-moz-placeholder,textarea::-moz-placeholder, input::placeholder,textarea::placeholder{
-  opacity:1;
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
   color: var(--color-primary-text);
 }
 
@@ -65,9 +68,9 @@ body {
 }
 
 body {
-  --color-primary-bg: light-dark(#fff,#1c1c1c);
-  --color-secondary-bg: light-dark(#fff,#1c1c1c);
-  --color-tertiary-bg: light-dark(#fff, #737c84);
+  --color-primary-bg: light-dark(#fff, #1c1c1c);
+  --color-secondary-bg: light-dark(#fff, #1c1c1c);
+  --color-tertiary-bg: light-dark(rgb(250, 250, 250), #737c84);
   --color-quaternary-bg: light-dark(#000000, #000000);
   --color-primary-text: light-dark(#1c1c1c, #e5e7eb);
   --color-secondary-text: light-dark(#e3ddd3, #f3f4f6);
@@ -98,23 +101,97 @@ a:hover {
   @apply rounded;
 }
 
-a svg, svg {
-  fill:var(--color-primary-text);
+a svg,
+svg {
+  fill: var(--color-primary-text);
 }
 
 a:hover svg {
-  fill:var(--color-epierrot);
+  fill: var(--color-epierrot);
 }
 
+/* logohome */
+
+a.logohome {
+  @apply bg-primary-bg items-start w-10/12 md:w-auto py-5 px-2 transition-all duration-700 ease-in-out;
+}
+
+a.logohome .lh,
+a.logohome .lh2 {
+  @apply inline-block bg-transparent;
+  content: ' ';
+  stroke: var(--color-primary-text);
+  stroke-dashoffset: 0;
+  fill: transparent;
+  transition: all 0.7s ease-in-out;
+}
+
+a.logohome .lh {
+  @apply h-auto w-32;
+  stroke-width: 0.03;
+  stroke-dasharray: 2.7;
+  animation: logoanim 3s ease-out;
+}
+
+a.logohome .lh2 {
+  @apply h-auto w-28;
+  stroke-width: 4;
+  stroke-dasharray: 569;
+  animation: logoanim2 3s ease-out;
+}
+
+@keyframes logoanim {
+  0% {
+    stroke-dashoffset: 2.7;
+    stroke: var(--color-epierrot);
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+    stroke: var(--color-epierrot);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke: var(--color-primary-text);
+  }
+}
+
+@keyframes logoanim2 {
+  0% {
+    stroke-dashoffset: 569;
+    stroke: var(--color-epierrot);
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+    stroke: var(--color-epierrot);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke: var(--color-primary-text);
+  }
+}
+
+a.logohome:hover .lh,
+a.logohome:hover .lh2 {
+  fill: var(--color-epierrot);
+  stroke: var(--color-epierrot);
+}
+
+/* Pack items*/
 .pack-item {
   @apply bg-primary-bg transition-all duration-300 ease-in-out;
 }
 
-.pack-item:hover, .pack-item:hover>* {
-  @apply bg-zinc-50;
+.pack-item:hover,
+.pack-item:hover>* {
+  @apply bg-tertiary-bg;
 }
 
-.pack-item::after, .pack-item::before {
+.pack-item::after,
+.pack-item::before {
   @apply absolute;
   content: ' ';
   height: calc(100% + 2px);
@@ -125,30 +202,52 @@ a:hover svg {
   z-index: -1;
   opacity: 0.9;
   transition: opacity 1s ease-in-out;
-  background-image: linear-gradient(45deg,var(--color-borders), #FFF0 10%,#FFF0 90%, var(--color-borders));
+  background-image: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
 }
 
 .pack-item::before {
   z-index: -2;
   opacity: 0;
   filter: blur(0px);
-  background-color: var(--color-borders);
+  background-image: linear-gradient(45deg, var(--color-borders), var(--color-borders) 30%, #FFF0, var(--color-borders) 70%, var(--color-borders));
 }
 
 .pack-item:hover::before {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .pack-item:hover::after {
   opacity: 0;
 }
 
+/* buttons */
+.pack-item #languageMode {
+  @apply bg-transparent;
+}
+
+.pack-item:hover a.logohome {
+  @apply bg-tertiary-bg;
+}
+
+.pack-item #languageMode a {
+  @apply bg-primary-bg border border-primary-bg border-solid rounded transition-all duration-700 ease-in-out;
+}
+
+.pack-item:hover #languageMode a {
+  @apply bg-tertiary-bg border border-primary-text;
+}
+
+.pack-item:hover #languageMode a:hover {
+  @apply bg-epierrot text-primary-bg border border-epierrot;
+}
 
 /*basic table */
 table {
   @apply border-spacing-2 border-4 border-secondary-bg my-7;
 }
-table td, table th {
+
+table td,
+table th {
   @apply p-3 border align-top;
 }
 
@@ -213,12 +312,12 @@ a.collab {
 }
 
 a.collab svg {
-  fill:var(--color-primary-text);
+  fill: var(--color-primary-text);
   transition: all 300ms ease-in-out;
 }
 
 a.collab:hover svg {
-  fill:var(--color-epierrot);
+  fill: var(--color-epierrot);
 }
 
 .collabicon svg {
@@ -231,13 +330,14 @@ a.smalllink {
 
 a.smalllink:last-child {
   @apply mr-0;
-} 
+}
 
-a.langu { 
+a.langu {
   @apply relative bg-secondary-bg inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
 }
 
-a.homemenu, a.listcourse {
+a.homemenu,
+a.listcourse {
   @apply relative inline-block bg-primary-bg px-2 py-0.5 my-2 text-primary-text hover:text-epierrot;
 }
 
@@ -273,11 +373,11 @@ a.linkBox:hover {
 }*/
 
 div.ended a.boxA {
-  @apply  opacity-30; 
+  @apply opacity-30;
 }
 
 div.ended a.boxA:hover {
-  @apply  opacity-100; 
+  @apply opacity-100;
 }
 
 a.slashLink {
@@ -309,6 +409,7 @@ a.slashLink:hover {
 #lightgallery .imag {
   @apply rounded
 }
+
 strong>a {
   @apply border-0;
 }
@@ -630,50 +731,6 @@ h5 {
   margin-bottom: 0.5rem;
 }
 
-a.logohome {
- @apply bg-primary-bg items-start w-10/12 md:w-auto p-3;
-}
-
-a.logohome .lh, a.logohome .lh2 {
-@apply inline-block bg-transparent;
-content: ' ';
-stroke: var(--color-primary-text);
-stroke-dashoffset: 0;
-fill: transparent;
-transition: all 0.7s ease-in-out;
-}
-
-a.logohome .lh {
-  @apply h-auto w-32;
-  stroke-width: 0.03;
-  stroke-dasharray: 2.7;
-  animation: logoanim 3s ease-out;
-}
-
-a.logohome .lh2 {
-  @apply h-auto w-28;
-  stroke-width: 4;
-  stroke-dasharray: 569;
-  animation: logoanim2 3s ease-out;
-}
-
-@keyframes logoanim {
-  0% {stroke-dashoffset: 2.7; stroke: var(--color-epierrot);}
-  80% {stroke-dashoffset: 0; stroke: var(--color-epierrot);}
-  100% {stroke-dashoffset: 0; stroke: var(--color-primary-text);}
-}
-
-@keyframes logoanim2 {
-  0% {stroke-dashoffset: 569; stroke: var(--color-epierrot);}
-  80% {stroke-dashoffset: 0; stroke: var(--color-epierrot);}
-  100% {stroke-dashoffset: 0; stroke: var(--color-primary-text);}
-}
-
-a.logohome:hover .lh, a.logohome:hover .lh2 {
-  fill: var(--color-epierrot);
-  stroke: var(--color-epierrot);
-}
-
 /* home */
 #home .frontPosts a {
   line-height: 1.3rem;
@@ -703,7 +760,8 @@ span.listComma:first-child::before {
   content: "";
 }
 
-span.listVertical:not(:last-child)::after, span.minor:not(:last-child)::after {
+span.listVertical:not(:last-child)::after,
+span.minor:not(:last-child)::after {
   content: " | ";
 }
 
@@ -947,7 +1005,8 @@ a.doclinkButton span.doclinkText {
   z-index: 1000;
 }
 
-.iconhome, .iconhome:hover {
+.iconhome,
+.iconhome:hover {
   @apply bg-transparent inline-block mr-2 w-auto;
 }
 
@@ -1801,10 +1860,14 @@ li:last-child {
 pre {
   white-space: pre-wrap;
   overflow-x: auto;
-  white-space: -moz-pre-wrap; /* Firefox */
-  white-space: -pre-wrap; /* Opera */
-  white-space: -o-pre-wrap; /* Opera */
-  word-wrap: break-word; /* Internet Explorer */
+  white-space: -moz-pre-wrap;
+  /* Firefox */
+  white-space: -pre-wrap;
+  /* Opera */
+  white-space: -o-pre-wrap;
+  /* Opera */
+  word-wrap: break-word;
+  /* Internet Explorer */
 }
 
 div.highlight {
