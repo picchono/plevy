@@ -45,7 +45,7 @@
         {{ partial "slash.html" (dict "txt" (i18n "courses")) }}<br />
         {{ $cod := .Params.code }}
         {{ range sort .Params.lectures "order" "asc" }}
-            <div class=""><a class="listcourse cadre"
+            <div class=""><a class="listcourse"
                     href="{{if .redirect }}{{ .redirect }}{{ else }}../{{ $cod }}/{{ .link }}{{ end -}}">
                     <b>{{ $cod }}/{{ .order }}&nbsp;&middot;&nbsp;</b>
                     {{- replace .Title " | " "&middot;" |safeHTML -}}</a></div>
@@ -68,7 +68,7 @@
     <div class="mt-20 px-5">
         {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
         {{ range .Params.encapsulation }}
-        <a class="linkBox cadre" href="{{ .link }}">
+        <a class="linkBox" href="{{ .link }}">
             <div class="titleLink">{{ .title }}</div>
             {{ if .img }}<div class="imgLink"><img src="{{ .img }}" alt="{{ .title }}"></div>{{ end }}
         </a>

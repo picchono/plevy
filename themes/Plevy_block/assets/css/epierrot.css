@@ -117,26 +117,26 @@ a:hover svg {
 .pack-item::after, .pack-item::before {
   @apply absolute;
   content: ' ';
-  height: calc(100% + 1px);
-  width: calc(100% + 1px);
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
   opacity: 0.9;
   transition: opacity 1s ease-in-out;
-  background-image: linear-gradient(45deg, var(--color-borders), #FFF0, #FFF0, #FFF0, #FFF0);
+  background-image: linear-gradient(45deg,var(--color-borders), #FFF0 10%,#FFF0 90%, var(--color-borders));
 }
 
 .pack-item::before {
   z-index: -2;
   opacity: 0;
   filter: blur(0px);
-  background-image: linear-gradient(45deg, var(--color-borders), var(--color-borders));
+  background-color: var(--color-borders);
 }
 
 .pack-item:hover::before {
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .pack-item:hover::after {
@@ -234,11 +234,11 @@ a.smalllink:last-child {
 } 
 
 a.langu { 
-  @apply relative bg-secondary-bg rounded inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
+  @apply relative bg-secondary-bg inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
 }
 
 a.homemenu, a.listcourse {
-  @apply relative inline-block bg-primary-bg px-2 py-0.5 my-2 text-primary-text rounded hover:text-epierrot;
+  @apply relative inline-block bg-primary-bg px-2 py-0.5 my-2 text-primary-text hover:text-epierrot;
 }
 
 a.homemenu {
@@ -246,11 +246,11 @@ a.homemenu {
 }
 
 a.linkBox {
-  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded border-0 transition-all duration-500 ease-in-out;
+  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 border-0 transition-all duration-500 ease-in-out;
 }
 
 a.linkBox {
-  @apply relative bg-secondary-bg flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 rounded border-0 transition-all duration-500 ease-in-out;
+  @apply relative bg-secondary-bg flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 border-0 transition-all duration-500 ease-in-out;
 }
 
 a.linkBox:hover {
@@ -631,7 +631,7 @@ h5 {
 }
 
 a.logohome {
- @apply bg-transparent items-start w-10/12 md:w-auto p-3;
+ @apply bg-primary-bg items-start w-10/12 md:w-auto p-3;
 }
 
 a.logohome .lh, a.logohome .lh2 {

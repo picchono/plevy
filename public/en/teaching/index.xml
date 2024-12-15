@@ -3,7 +3,7 @@ The major aim of this course is to improve students&amp;rsquo; scientific or tec
 &lt;p>Cette UE propose une vue d&amp;rsquo;ensemble des pratiques de la recherche en design, art et création, afin d’atteindre deux objectifs pédagogiques. Il s’agit d’abord de contextualiser l&amp;rsquo;implication de la pratique du design, de l’art ou de la création en recherche, et de développer une approche de recherche au travers de ces pratiques. Il s’agit ensuite de fournir des ressources (connaissances, outils, méthodologies, réseaux&amp;hellip;) utiles à la recherche au travers d’une pratique, et de permettre un développement en autonomie des ressources utiles à la pratique de la recherche.&lt;/p></description></item><item><title>DSN201 · L'article</title><link>http://localhost:1313/en/teaching/dsn201/article/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/dsn201/article/</guid><description>&lt;h2 id="formes-des-articles">Formes des articles&lt;/h2>
 &lt;h3 id="le-format-imrad">Le format IMRaD&lt;/h3>
 &lt;p>Le format IMRAD est le format classique d&amp;rsquo;un article, à la fois le format le plus répandu et la base de tous les autres. Il se compose d&amp;rsquo;une &lt;strong>I&lt;/strong>ntroduction, d&amp;rsquo;une &lt;strong>M&lt;/strong>éthode, de &lt;strong>R&lt;/strong>ésultats et (&lt;em>&lt;strong>a&lt;/strong>nd&lt;/em>) d&amp;rsquo;une &lt;strong>D&lt;/strong>iscussion.&lt;/p>
-&lt;a class="linkBox cadre" href="http://dx.doi.org/10.1007/s10980-011-9674-3">
+&lt;a class="linkBox" href="http://dx.doi.org/10.1007/s10980-011-9674-3">
  &lt;div class="titleLink">Wu, Jianguo. “Improving the writing of research papers: IMRAD and beyond.” Landscape Ecology 26, no. 10 (November 2011): 1345–1349. http://dx.doi.org/10.1007/s10980-011-9674-3&lt;/div>
  
 &lt;/a>
@@ -68,7 +68,7 @@ Une introduction se doit d&amp;rsquo;être engageante et convaincante, claire et
  
  
 &lt;/div>
-&lt;a class="linkBox cadre" href="https://www.lexpress.fr/sciences-sante/arretons-de-confondre-les-sciences-avec-la-recherche-scientifique-par-etienne-klein-PZ7B7JEWYRHPRCMVQWCDNAHAQ4">
+&lt;a class="linkBox" href="https://www.lexpress.fr/sciences-sante/arretons-de-confondre-les-sciences-avec-la-recherche-scientifique-par-etienne-klein-PZ7B7JEWYRHPRCMVQWCDNAHAQ4">
  &lt;div class="titleLink">Arrêtons de confondre les sciences avec la recherche scientifique, par Etienne Klein&lt;/div>
  
 &lt;/a>
@@ -96,11 +96,11 @@ Une telle approche de l&amp;rsquo;éducation en design exige une pratique du des
 &lt;p>Il se différentie d’approches plus classiques dont le point de départ est une considération théorique (parmi tant de possibilités) pour expliquer des choix, pouvant amener une multitude de solutions. Bien que la théorie aide à structurer la pratique et la reflexion de cette pratique, la relation &amp;ldquo;imprécise&amp;rdquo; entre théorie et pratique (d&amp;rsquo;une théorie peut émerger plusieurs pratiques et une pratique peut être expliquée par plusieurs théories) ne permet pas de se pencher avec attention sur les détails d&amp;rsquo;une pratique.
 De plus, la théorie risque de proposer une description de ce que la pratique est, de ce que le design est, au lieu de ce qui devrait ou pourrait être.&lt;/p></description></item><item><title>DSN202 · Vision projetée</title><link>http://localhost:1313/en/teaching/dsn202/vision-projetee/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/dsn202/vision-projetee/</guid><description>&lt;h2 id="la-vision-projetée">La vision projetée&lt;/h2>
 &lt;p>La vision projetée est basée sur les travaux de Caroline Hummels et Diane Vinke et du portfolio annoté (cf. cours précédent).&lt;/p>
-&lt;a class="linkBox cadre" href="https://www.researchgate.net/publication/224002816_Competency-centered_Education_for_Designing_Interactive_and_Intelligent_Products">
+&lt;a class="linkBox" href="https://www.researchgate.net/publication/224002816_Competency-centered_Education_for_Designing_Interactive_and_Intelligent_Products">
  &lt;div class="titleLink">Hummels, C. C. M., Vinke, D., Frens, J. W., &amp;amp; Hu, J. (2011). Competency-centered Education for Designing Interactive and Intelligent Products. Creation and Design, 13(2), 4–17.&lt;/div>
  
 &lt;/a>
-&lt;a class="linkBox cadre" href="https://1drv.ms/b/s!AnQx_v88q65QgY_uORHG99xvXetFpTw?e=ak6UOh">
+&lt;a class="linkBox" href="https://1drv.ms/b/s!AnQx_v88q65QgY_uORHG99xvXetFpTw?e=ak6UOh">
  &lt;div class="titleLink">Hummels, C. C. M., &amp;amp; Vinke, D. (2009). Eindhoven designs v2 — Developing the competence of designing intelligent systems. Eindhoven University of Technology.&lt;/div>
  
 &lt;/a>
@@ -109,23 +109,23 @@ De plus, la théorie risque de proposer une description de ce que la pratique es
 &lt;h3 id="css3">CSS3&lt;/h3>
 &lt;p>Le CSS (cascade style sheet) est un language transformant l&amp;rsquo;apparence d&amp;rsquo;une page écrite dans un language de balisage. La version actuelle est le CSS3.&lt;/p>
 &lt;p>Dans le cadre de ce cours, il va permettre de styliser nos pages HTML. Le code CSS peut se mettre soit entre les balises &amp;lt;style&amp;gt;&amp;hellip;&amp;lt;/style&amp;gt; elles-mêmes placées entre les balises &amp;lt;head&amp;gt;&amp;hellip;&amp;lt;/head&amp;gt;, soit dans un autre fichier (e.g., style.css) que le fichier html doit appeler. C&amp;rsquo;est cette deuxième approche que nous utilisons.&lt;/p></description></item><item><title>TET007 · HTML</title><link>http://localhost:1313/en/teaching/tet007-m1/html/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/tet007-m1/html/</guid><description>&lt;h2 id="la-structure-du-html-les-balises">La structure du HTML: les balises&lt;/h2>
-&lt;a class="linkBox cadre" href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started">
+&lt;a class="linkBox" href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started">
  &lt;div class="titleLink">Commencer avec le HTML - Apprendre le développement web | MDN&lt;/div>
  &lt;div class="imgLink">&lt;img src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png" alt="Commencer avec le HTML - Apprendre le développement web | MDN">&lt;/div>
 &lt;/a>
-&lt;a class="linkBox cadre" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document">
+&lt;a class="linkBox" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document">
  &lt;div class="titleLink">Tryit Editor v3.7&lt;/div>
  &lt;div class="imgLink">&lt;img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="Tryit Editor v3.7">&lt;/div>
 &lt;/a>
 &lt;p>&lt;a href="">&lt;/a>&lt;/p>
 &lt;p>Le HTML (HyperText Markup Language) est, pour faire simple, le language informatique qui indique au navigateur ce qui doit être affiché (texte, image, video&amp;hellip;) et comment. C&amp;rsquo;est ensuite le rôle du navigateur de &amp;ldquo;traduire&amp;rdquo; le HTML en une forme intelligible pour l&amp;rsquo;utilisateur.&lt;/p></description></item><item><title>TET007 · Internet</title><link>http://localhost:1313/en/teaching/tet007-m1/internet/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/tet007-m1/internet/</guid><description>&lt;h2 id="linternet-le-web">L&amp;rsquo;internet, le web&lt;/h2>
-&lt;a class="linkBox cadre" href="https://www.youtube.com/watch?v=scWj1BMRHUA">
+&lt;a class="linkBox" href="https://www.youtube.com/watch?v=scWj1BMRHUA">
  &lt;div class="titleLink">The Web Is Not The Net&lt;/div>
  &lt;div class="imgLink">&lt;img src="http://i3.ytimg.com/vi/scWj1BMRHUA/hqdefault.jpg" alt="The Web Is Not The Net">&lt;/div>
 &lt;/a>
 &lt;p>Internet signifie International Network (un réseau international), un réseau sur quel des ordinateurs peuvent échanger des informations entre eux. C’est un réseau global sur lequel il est possible de faire des visioconférences, télécharger de la musique et des films, etc.&lt;/p>
 &lt;p>Mais nous utilisons internet à travers le web : ça correspond à une sous-partie d’internet, il s’agit de vaste ensemble de données auxquelles vous pouvez accéder depuis votre navigateur.&lt;/p></description></item><item><title>TET007 · Miro</title><link>http://localhost:1313/en/teaching/tet007-m1/miro/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/tet007-m1/miro/</guid><description/></item><item><title>TET007 · Notion</title><link>http://localhost:1313/en/teaching/tet007-m1/notion/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/tet007-m1/notion/</guid><description>&lt;h2 id="notion">Notion&lt;/h2>
-&lt;a class="linkBox cadre" href="https://www.notion.so/product/notion-for-education">
+&lt;a class="linkBox" href="https://www.notion.so/product/notion-for-education">
  &lt;div class="titleLink">Notion for education&lt;/div>
  &lt;div class="imgLink">&lt;img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1920/https://images.ctfassets.net/spoqsaf9291f/7K4ABTnW9zHRzHXpdJhKq6/5f0828bc15d26a2fe1437affc2e9de34/front_main_hero_together.png" alt="Notion for education">&lt;/div>
 &lt;/a></description></item><item><title>TET007 · Obsidian</title><link>http://localhost:1313/en/teaching/tet007-m1/obsidian/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/tet007-m1/obsidian/</guid><description>&lt;p>Obsidian&lt;/p></description></item><item><title>TET007 · Wordpress</title><link>http://localhost:1313/en/teaching/tet007-m1/wordpress/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/tet007-m1/wordpress/</guid><description>&lt;h2 id="wordpress">Wordpress&lt;/h2>
@@ -143,12 +143,12 @@ De plus, la théorie risque de proposer une description de ce que la pratique es
 &lt;li>&lt;/li>
 &lt;/ol>
 &lt;h2 id="localwp">LocalWP&lt;/h2>
-&lt;a class="linkBox cadre" href="https://localwp.com">
+&lt;a class="linkBox" href="https://localwp.com">
  &lt;div class="titleLink">Local app&lt;/div>
  &lt;div class="imgLink">&lt;img src="https://localwp.com/wp-content/uploads/2021/08/local-sharing.png" alt="Local app">&lt;/div>
 &lt;/a>
 &lt;p>Le logiciel Local permet d&amp;rsquo;installer et gérer automatiquement et localement une multitude de site wordpress.&lt;/p></description></item><item><title>USMC85 · Internet</title><link>http://localhost:1313/en/teaching/usmc85/internet/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>http://localhost:1313/en/teaching/usmc85/internet/</guid><description>&lt;h2 id="linternet-le-web">L&amp;rsquo;internet, le web&lt;/h2>
-&lt;a class="linkBox cadre" href="https://www.youtube.com/watch?v=scWj1BMRHUA">
+&lt;a class="linkBox" href="https://www.youtube.com/watch?v=scWj1BMRHUA">
  &lt;div class="titleLink">The Web Is Not The Net&lt;/div>
  &lt;div class="imgLink">&lt;img src="http://i3.ytimg.com/vi/scWj1BMRHUA/hqdefault.jpg" alt="The Web Is Not The Net">&lt;/div>
 &lt;/a>
@@ -167,7 +167,7 @@ De plus, la théorie risque de proposer une description de ce que la pratique es
 &lt;/ul>
 &lt;p> &lt;/p>
 &lt;h3>Encapsulation&lt;/h3>
-&lt;a class="linkBox cadre" href="https://communication-culture.cnam.fr/master-information-communication/master-transition-numerique-et-innovation-collaborative-mr05901a--867672.kjsp">
+&lt;a class="linkBox" href="https://communication-culture.cnam.fr/master-information-communication/master-transition-numerique-et-innovation-collaborative-mr05901a--867672.kjsp">
  &lt;div class="titleLink">MR05901A · Master Transition numérique responsable et co-design&lt;/div>
  &lt;div class="imgLink">&lt;img src="https://communication-culture.cnam.fr/medias/photo/20180209-165350_1522355437789-jpg" alt="MR05901A · Master Transition numérique responsable et co-design">&lt;/div>
 &lt;/a></description></item><item><title>TET007-RNCP · Approche pratique du numérique et la recherche d'information</title><link>http://localhost:1313/en/teaching/tet007-rncp-approche_pratique_du_numerique_et_la_recherche_d_information/</link><pubDate>Wed, 01 Sep 2021 16:27:15 +0200</pubDate><guid>http://localhost:1313/en/teaching/tet007-rncp-approche_pratique_du_numerique_et_la_recherche_d_information/</guid><description>&lt;h3>Compétences visées&lt;/h3>
