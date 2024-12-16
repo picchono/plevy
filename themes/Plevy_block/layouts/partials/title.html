@@ -9,12 +9,10 @@
     </a>
     </div>
 {{ partial "international.html" . }}
-{{ partial "search.html" . }}
 </div>
 {{ if not .IsHome }}
 <div class="text-left items-start">
-    <h1 class="text-4xl font-bold mt-10" {{if .Params.searchWeight }}
-        data-pagefind-weight="{{- .Params.searchWeight -}}" {{ end }}>{{ .Params.title |safeHTML }}</h1>
+    <h1 class="text-4xl font-bold mt-10">{{ .Params.title |safeHTML }}</h1>
     {{ if .Params.authors }}
     <p class="italic">{{ .Params.authors }},
         {{ dateFormat "02 Jan 2006" .Date }}</p>

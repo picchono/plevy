@@ -225,7 +225,7 @@ var iso = new Isotope( elem, {
   layoutMode: 'packery',
   stamp: '.stamp',
   packery: {
-    gutter: 1
+    gutter: 30
   },
   getSortData: {
     weight: '[data-cat-sort]',
@@ -260,11 +260,18 @@ filtersElem.addEventListener( 'click', function( event ) {
   var filterValue = event.target.getAttribute('data-filter');
   // use matching filter function
   filterValue = filterFns[ filterValue ] || filterValue;
+  var addIsot = document.getElementsByClassName('pack-item');
+  for (var i = 0; i < addIsot.length; i++) {
+    addIsot[i].classList.add('isot');
+  }
   iso.arrange({ filter: filterValue });
 });
 
 // vanilla JS, no event argument
 iso.on( 'arrangeComplete', function( filteredItems ) {
-  console.log( filteredItems.length );
+  var removIsot = document.getElementsByClassName('pack-item');
+  for (var i = 0; i < removIsot.length; i++) {
+    removIsot[i].classList.remove('isot');
+  }
   showPic();
 });

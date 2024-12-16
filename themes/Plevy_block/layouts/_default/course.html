@@ -1,7 +1,6 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-<section class="large justify-start flex flex-col p-5 flex-grow" {{if .Params.searchWeight
-    }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+<section class="large justify-start flex flex-col p-5 flex-grow" >
     {{ if .Params.Parcours }}
     <div class="mb-20">
         <h2>{{ i18n "parcours" }}</h2>
