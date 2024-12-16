@@ -1,6 +1,7 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
-<div class='it{{- int .cou }} pack-item w-96 {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
-    aria-label="{{- .context.Title |safeHTML -}}">
+<div class='{{ .context.Section  }} it{{- int .cou }} pack-item w-full md:w-1/3 md:max-w-96{{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}' aria-label="{{- .context.Title |safeHTML -}}" 
+    data-date="{{ .context.Date }}" data-cat-sort="1" {{if eq .context.Params.front 1 }}data-front="1"{{ else }}data-front="0"{{ end }}
+    data-section="{{ .context.Section  }}">
     <a class="boxA"
         href="{{ .context.Permalink }}">
         <div class="flex flex-row">
@@ -66,7 +67,7 @@
             </p>
             {{ end }}
         </div>
-        <div class="inline-block text-xs px-2">{{ dateFormat "02 Jan 2006" .context.Date }}</div>
+        <div class="inline-block text-xs px-2">{{ dateFormat "02 Jan 2006" .context.Date }} | <b>{{ .context.Section  }}</b></div>
     </a>
 </div>
 {{ end }}

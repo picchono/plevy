@@ -113,7 +113,7 @@ a:hover svg {
 /* logohome */
 
 a.logohome {
-  @apply bg-primary-bg items-start w-10/12 md:w-auto py-5 px-2 transition-all duration-700 ease-in-out;
+  @apply bg-primary-bg items-start w-10/12 md:w-auto py-5 transition-all duration-700 ease-in-out;
 }
 
 a.logohome .lh,
@@ -182,7 +182,7 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply bg-primary-bg transition-all duration-300 ease-in-out;
+  @apply bg-primary-bg transition-all duration-300 ease-in-out w-full p-5;
 }
 
 .pack-item:hover,
@@ -304,7 +304,7 @@ a.floatImg::after {
 }
 
 a.boxA {
-  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-10;
+  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-3 md:p-10;
 }
 
 a.collab {

@@ -223,7 +223,48 @@ var iso = new Isotope( elem, {
   // options
   itemSelector: '.pack-item',
   layoutMode: 'packery',
+  stamp: '.stamp',
   packery: {
     gutter: 1
+  },
+  getSortData: {
+    weight: '[data-cat-sort]',
+    front: '[data-front]',
+    date: '[data-date]'
+  },
+  sortBy: ['weight', 'front', 'date'],
+  sortAscending: false
+});
+
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function( itemElem ) {
+    var number = itemElem.querySelector('.number').textContent;
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function( itemElem ) {
+    var name = itemElem.querySelector('.name').textContent;
+    return name.match( /ium$/ );
   }
+};
+
+// bind filter button click
+var filtersElem = document.querySelector('.filters-button-group');
+filtersElem.addEventListener( 'click', function( event ) {
+  // only work with buttons
+  if ( !matchesSelector( event.target, 'button' ) ) {
+    return;
+  }
+  var filterValue = event.target.getAttribute('data-filter');
+  // use matching filter function
+  filterValue = filterFns[ filterValue ] || filterValue;
+  iso.arrange({ filter: filterValue });
+});
+
+// vanilla JS, no event argument
+iso.on( 'arrangeComplete', function( filteredItems ) {
+  console.log( filteredItems.length );
+  showPic();
 });
