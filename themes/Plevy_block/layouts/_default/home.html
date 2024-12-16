@@ -1,6 +1,6 @@
 {{ define "main" }} {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
 {{ with $page }}
-<div class="pack-item w-144 p-5">
+<div class="pack-item w-144 p-10">
 <h1 class="m-0">{{ .Title }}</h1>
 {{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
 {{ with index .Site.Data.plevy .Site.Language.Lang }}
@@ -16,16 +16,16 @@
 {{ $page := $.Site.GetPage "page" "chaire.md" }}
 {{ with $page }}
 <div class="pack-item w-144">
-<h1 class="m-0 p-5">{{ .Title }}</h1>
-<div class="p-5">{{ .Params.description }}</div>
-<div class="p-5"><a href='/chaire' target="_blank" class="doclinkButton" rel="noreferrer"
+<h1 class="m-0 p-10">{{ .Title }}</h1>
+<div class="p-10">{{ .Params.description }}</div>
+<div class="p-10"><a href='/chaire' target="_blank" class="doclinkButton" rel="noreferrer"
         aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico"
             "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
 
 <h2 class="px-5">{{ i18n "members"}}</h2>
 {{ if .Params.members }}
 {{ range .Params.members }}
-<div class="w-118 p-5">
+<div class="w-118 p-10">
 <a class="boxA flex-row justify-start p-1" href="{{ index . 3 }}">
     <img class="flex-grow-0 flex-shrink-0 object-cover rounded-md h-20 w-20 mr-4" src="{{ index . 2 }}"
         alt="{{ index . 0 }}">

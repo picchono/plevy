@@ -304,11 +304,11 @@ a.floatImg::after {
 }
 
 a.boxA {
-  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-4 rounded;
+  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-10;
 }
 
 a.collab {
-  @apply relative bg-secondary-bg mr-4 my-8 p-4 rounded transition-all duration-700 ease-in-out;
+  @apply relative bg-secondary-bg mr-4 my-8 p-4 transition-all duration-700 ease-in-out;
 }
 
 a.collab svg {
@@ -601,6 +601,7 @@ footer svg {
 /* box image */
 
 img.imgBox {
+  @apply object-cover h-16 w-16 rounded-sm;
   filter: grayscale(0.8);
   transition: all 500ms ease-in-out;
 }

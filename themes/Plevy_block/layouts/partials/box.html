@@ -5,10 +5,10 @@
         href="{{ .context.Permalink }}">
         <div class="flex flex-row">
             {{ if isset .context.Params "frontphoto" }}
-            <div class='blend-plevy flex-grow-0 flex-shrink-0 mr-2'><img src="" data-toset="
+            <div class='blend-plevy flex-grow-0 flex-shrink-0'><img src="" data-toset="
                     {{- if .context.Params.frontphotomini }}{{ .context.Params.frontphotomini | absURL }}
                     {{ else }}{{ .context.Params.frontphoto | absURL }}{{ end -}}"
-                    class="imag imgBox object-cover h-16 w-16" alt="{{ .context.Params.title }}" width="500"
+                    class="imag imgBox" alt="{{ .context.Params.title }}" width="500"
                     height="240" />
             </div>
             {{ end}}
