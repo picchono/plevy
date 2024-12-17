@@ -182,7 +182,7 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply bg-primary-bg w-full p-5;
+  @apply relative bg-primary-bg w-full p-5 transition-all duration-700 ease-in-out;
 }
 
 .pack-item:hover,
@@ -191,7 +191,7 @@ a.logohome:hover .lh2 {
 }
 
 .pack-item::after{
-  @apply absolute;
+  @apply absolute transition-all duration-700 ease-in-out;
   content: ' ';
   height: calc(100% + 2px);
   width: calc(100% + 2px);
@@ -200,8 +200,7 @@ a.logohome:hover .lh2 {
   translate: -50% -50%;
   z-index: -2;
   opacity: 0.8;
-  transition: all 1s ease-in-out;
-  background-image: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
+  background: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
 }
 
 .pack-item::before {
@@ -215,26 +214,26 @@ a.logohome:hover .lh2 {
 
 .pack-item:hover::after {
   opacity: 0.3;
-  background-image: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
-  animation: pack-border 1s ease-out;
+  background: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
+  animation: pack-border 700s ease-out;
 }
 
 @keyframes pack-border {
   0% {
     opacity: 0.8;
-    background-image: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
+    background: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
   }
-  49% {
+  45% {
     opacity: 0;
-    background-image: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
+    background: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
   }
-  51% {
+  55% {
     opacity: 0;
-    background-image: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
+    background: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
   }
-  80% {
+  100% {
     opacity: 0.3;
-    background-image: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
+    background: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
   }
 }
 
