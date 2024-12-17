@@ -190,8 +190,7 @@ a.logohome:hover .lh2 {
   @apply bg-tertiary-bg;
 }
 
-.pack-item::after,
-.pack-item::before {
+.pack-item::after{
   @apply absolute;
   content: ' ';
   height: calc(100% + 2px);
@@ -199,29 +198,44 @@ a.logohome:hover .lh2 {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  z-index: -1;
-  opacity: 0.9;
+  z-index: -2;
+  opacity: 0.8;
   transition: all 1s ease-in-out;
   background-image: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
 }
 
 .pack-item::before {
-  z-index: -2;
-  opacity: 0;
-  filter: blur(0px);
-  background-image: linear-gradient(45deg, var(--color-borders), var(--color-borders) 40%, #FFF0, var(--color-borders) 60%, var(--color-borders));
-}
-
-.pack-item:hover::before {
-  opacity: 0.3;
+  @apply absolute h-full w-full bg-primary-bg;
+  content: ' ';
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
 }
 
 .pack-item:hover::after {
-  opacity: 0;
+  opacity: 0.3;
+  background-image: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
+  animation: pack-border 1s ease-out;
 }
 
-.pack-item.isot::after, .pack-item.isot::before {
-  opacity: 0;
+@keyframes pack-border {
+  0% {
+    opacity: 0.8;
+    background-image: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
+  }
+  49% {
+    opacity: 0;
+    background-image: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
+  }
+  51% {
+    opacity: 0;
+    background-image: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
+  }
+  80% {
+    opacity: 0.3;
+    background-image: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
+  }
 }
 
 /* buttons */
@@ -360,21 +374,6 @@ a.linkBox {
 a.linkBox:hover {
   @apply bg-secondary-bg;
 }
-
-/*
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 225deg;
-  inherits: false;
-}
-@keyframes borderShift {
-  from {
-    --angle: 225deg;
-  }
-  to {
-    --angle: 585deg;
-  }
-}*/
 
 div.ended a.boxA {
   @apply opacity-30;
