@@ -13,7 +13,7 @@
   {{ if not .IsHome }}<div class="progress"><div class="progressBar" id="progressBar"></div></div>{{ end }}
   <main class='flex flex-col lg:flex-row flex-nowrap flex-grow overflow-x-scroll w-full' data-pagefind-body>  
     {{ partial "title.html" . }}
-    {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
+    {{ if and (not .IsHome) (ne .Params.layout "presentation") }}{{ partial "medium.html" . }}{{ end }}
     {{- block "main" . }}{{- end }}
     {{ partial "footer.html" . }}
   </main>

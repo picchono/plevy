@@ -17,6 +17,7 @@
 {{ end }}
 {{ end }}
 
+{{ if ne .Params.layout "presentation"}}
 {{ $related := append $backlinks $forwardlinks }}
 {{ if or (compare.Gt ($related | len) 1) (ne .Params.comment false) }}
 
@@ -32,4 +33,5 @@
 {{ end }}
 {{ end }}
 </section>
+{{ end }}
 {{ end }}

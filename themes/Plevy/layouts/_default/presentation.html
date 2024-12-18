@@ -1,6 +1,6 @@
 {{ define "main" }}
     {{ $langu := .Site.Language.Lang }}
-    <div class="w-full overflow-hidden flex flex-col md:flex-row" {{if .Params.searchWeight }} data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+    <section class="large p-5 my-4 justify-start flex flex-col flex-grow" {{if .Params.searchWeight}}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
         <div class="max-w-3xl w-full px-5" id="content">
             <div class="flex flex-row flex-wrap mb-8 md:mb-22">
                 <div class="invisible md:visible md:mr-4 flex-shrink-0 flex-grow-0 h-0 md:h-40 w-0 md:w-40">
@@ -23,7 +23,7 @@
                             <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 1 }}&width=600" alt="image {{ $ord }}"></a>
                     {{ else if eq $typ "mov"}}
                         <a  data-lg-size="1280-720"
-                            data-src="//vimeo.com/129643275"
+                            data-src="{{ index . 1 }}"
                             data-poster="{{ index . 2 }}"
                             class="place-self-center w-full lg:w-44 mr-4 mb-4">
                     <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 2 }}" alt="video {{ $ord }}">
@@ -34,8 +34,7 @@
             </div>
             {{ end }}
         </div>
-        <div class="md:w-2/6 px-5 md:pl-20 self-start">&nbsp;</div>
-    </div>
+    </section>
 
 {{ $qr_js := resources.Get "js/qrgen.js" | minify }}
 <script src="{{ $qr_js.Permalink }}"></script>
