@@ -1,6 +1,6 @@
 ---
 members: ["PLevy"]
-slug: design
+slug: du-design
 title: "Du design"
 layout: presentation
 institution:
@@ -25,3 +25,4 @@ slides: [
     ["mov", "//youtu.be/hn51850hNvo", "https://i9.ytimg.com/vi_webp/hn51850hNvo/mq3.webp?sqp=COiZjbsG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgVChTMA8=&rs=AOn4CLDvKgNof4aczkmpmpXxB5fwMdkUCQ"]
 ]
 ---
+interactions irrésistibles
