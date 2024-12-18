@@ -210,13 +210,9 @@ window.addEventListener("scroll", function () {
   showPic();
 });
 
-const sect = document.querySelectorAll('section');
-sect.forEach((section) => {
-  section.addEventListener('scroll', function() {
-    showPic();
-  });
-});
-
+/* isotope */
+var qsRegex;
+var buttonValue;
 
 var elem = document.querySelector('.pack');
 var iso = new Isotope( elem, {
@@ -225,7 +221,7 @@ var iso = new Isotope( elem, {
   layoutMode: 'packery',
   stamp: '.stamp',
   packery: {
-    gutter: 30
+    gutter: 1
   },
   getSortData: {
     weight: '[data-cat-sort]',
@@ -233,39 +229,48 @@ var iso = new Isotope( elem, {
     date: '[data-date]'
   },
   sortBy: ['weight', 'front', 'date'],
-  sortAscending: false
+  sortAscending: false,
+  filter: function( itemElem ) {
+    var searchResult = qsRegex ? itemElem.textContent.match( qsRegex ) : true;
+    var buttonResult = buttonValue ? itemElem.textContent.match( buttonValue ) : true;
+      return searchResult && buttonResult;
+  }
 });
 
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function( itemElem ) {
-    var number = itemElem.querySelector('.number').textContent;
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function( itemElem ) {
-    var name = itemElem.querySelector('.name').textContent;
-    return name.match( /ium$/ );
-  }
-};
+// use value of search field to filter
+var quicksearch = document.querySelector('.quickSearch');
+quicksearch.addEventListener( 'keyup', debounce( function() {
+  qsRegex = new RegExp( quicksearch.value, 'gi' );
+  console.log(qsRegex);
+  iso.arrange();
+}, 200 ) );
 
-// bind filter button click
-var filtersElem = document.querySelector('.filters-button-group');
-filtersElem.addEventListener( 'click', function( event ) {
-  // only work with buttons
-  if ( !matchesSelector( event.target, 'button' ) ) {
-    return;
-  }
-  var filterValue = event.target.getAttribute('data-filter');
-  // use matching filter function
-  filterValue = filterFns[ filterValue ] || filterValue;
-  var addIsot = document.getElementsByClassName('pack-item');
-  for (var i = 0; i < addIsot.length; i++) {
-    addIsot[i].classList.add('isot');
-  }
-  iso.arrange({ filter: filterValue });
+//menu selection
+var buttons = document.querySelectorAll(".homemenu");
+var buttonsArr = Array.from(buttons);
+// Add event listener to each button
+buttonsArr.forEach(function(element) {
+  element.addEventListener('click', function() {
+    // Get the data attribute of the clicked button
+    buttonValue = this.dataset.filter;
+    iso.arrange();
+  });
 });
+
+// debounce so filtering doesn't happen every millisecond
+function debounce( fn, threshold ) {
+  var timeout;
+  threshold = threshold || 100;
+  return function debounced() {
+    clearTimeout( timeout );
+    var args = arguments;
+    var _this = this;
+    function delayed() {
+      fn.apply( _this, args );
+    }
+    timeout = setTimeout( delayed, threshold );
+  };
+}
 
 // vanilla JS, no event argument
 iso.on( 'arrangeComplete', function( filteredItems ) {
@@ -273,5 +278,7 @@ iso.on( 'arrangeComplete', function( filteredItems ) {
   for (var i = 0; i < removIsot.length; i++) {
     removIsot[i].classList.remove('isot');
   }
+
+  console.log('filtered');
   showPic();
 });
