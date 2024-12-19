@@ -1,7 +1,7 @@
-{{ if .IsTranslated }}<div id="international" class="w-ful p-2 pb-3">
-        <div id="languageMode" class='flex flex-row mt-2 text-sm'>
-                <b class="relative bg-primary-bg text-epierrot rounded inline-block px-2 mr-2 cadre">{{ .Language.LanguageName }}</b>
-                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu cadre">{{ .Language.LanguageName }}</a>
+{{ if .IsTranslated }}
+        <div id="languageMode" class='text-sm mb-8'>
+                <b class="relative bg-transparent text-epierrot inline-block mr-2">{{ .Language.LanguageName }}</b>
+                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu">{{ .Language.LanguageName }}</a>
                 {{ end }}
         </div>
-</div>{{ end }}
+{{ end }}

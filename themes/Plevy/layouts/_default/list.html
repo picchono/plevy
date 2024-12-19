@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}"{{ end }}>
+<section>
     {{ $count := 0 }}
     {{ if .Params.listchaire}}
         {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}

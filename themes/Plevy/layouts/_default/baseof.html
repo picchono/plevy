@@ -3,19 +3,12 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}" class="min-h-screen"{{ if .Params.noPagesearch }} data-pagefind-ignore="all">{{ else }}>
-  <div class="invisible h-0 w-0">
-    <span data-pagefind-filter="Type">{{ .Params.searchFilter }}</span>
-    <span data-pagefind-filter="Institution">{{ .Params.institution.short}}</span>
-    {{ if eq .Params.searchFilter "Publication"}}<span data-pagefind-filter="Publication">{{ .Params.subsection }}</span>{{ end }}
-    {{ range .Params.collaboration -}}<span data-pagefind-filter="Collaboration">{{ .short }}</span>{{- end -}}
-  </div>{{ end }}
-  {{ if not .IsHome }}<div class="progress"><div class="progressBar" id="progressBar"></div></div>{{ end }}
-  <main class='flex flex-col lg:flex-row flex-nowrap flex-grow overflow-x-scroll w-full' data-pagefind-body>  
+<body id="{{ .Params.bodyclass }}">
+  <main class='pack'>
+    <div class="w-px fixed top-0 left-0 -z-40"></div>
     {{ partial "title.html" . }}
-    {{ if and (not .IsHome) (ne .Params.layout "presentation") }}{{ partial "medium.html" . }}{{ end }}
+    {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
     {{- block "main" . }}{{- end }}
-    {{ partial "footer.html" . }}
   </main>
 </body>
 </html>

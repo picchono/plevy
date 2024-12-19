@@ -1,7 +1,0 @@
-{{ range .Params.link }}
-<p class="inline py-10 mb-5">
-   {{ $icon := index . 1 }}
-   {{ $text := index . 0 }}
-   <a href='{{ index . 2 }}' target="_blank" class="doclinkButton" rel="noreferrer" aria-label="Get {{ index . 0 }}"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico" $icon ) -}}</span><span class="doclinkText">{{ $text }}</span></span></a>
-</p>
-{{ end }}

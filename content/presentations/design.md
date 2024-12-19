@@ -9,10 +9,25 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
+collaboration:
+    partner1:
+        logo: jad
+        short: JAD
+        name: "JAD"
+        web: "https://le-jad.fr/"
+        colo: "#000000"
+        heig: 1.5
+    partner2:
+        logo: cnam
+        short: Cnam
+        name: "Conservatoire national des Arts et Métiers"
+        web: "https://www.cnam.fr/"
+        colo: "#c1002a"
+        heig: 1.5
 chaire: true
-date: 2024-03-14T16:27:15+02:00
+date: 2024-12-19T16:27:15+02:00
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgbqGMqg8M0Hv9MA9k2M?embed=1&width=660"
-description: "Une proposition de description du design et de sa pratique."
+description: "La pratique du design au travers de ses enjeux et de son histoire."
 slides: [
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGMqg8M0Hv9MA9k2M?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGNIkIl9SFDS058Yw?embed=1"],
@@ -41,4 +56,4 @@ slides: [
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqSe8pPoSDf082yJJ8?embed=1"]
 ]
 ---
-interactions irrésistibles
+&nbsp;

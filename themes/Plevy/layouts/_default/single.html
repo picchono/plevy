@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-<section class="large p-5 my-4 justify-start flex flex-col flex-grow" {{if .Params.searchWeight}}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+<div class="pack-item w-full md:w-192 justify-start flex flex-col flex-grow">
     {{ if .Params.playlist}}
     {{ partial "playlist.html" . }}
     {{ end }}
@@ -8,5 +8,5 @@
     <div id="content">{{ .Content }}</div>
     {{ end }}
     </div>
-</section>
+</div>
 {{ end }}

@@ -1,13 +1,16 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
-<div class='it{{- int .cou }} h-auto w-full p-3 my-3 {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
-    aria-label="{{- .context.Title |safeHTML -}}">
-    <a class="boxA cadre" href="{{ .context.Permalink }}">
+<div class='{{ .context.Section  }} it{{- int .cou }} pack-item w-full md:w-1/3 md:max-w-96{{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}' aria-label="{{- .context.Title |safeHTML -}}" 
+    data-date="{{ .context.Date }}" data-cat-sort="1" {{if eq .context.Params.front 1 }}data-front="1"{{ else }}data-front="0"{{ end }}
+    data-section="{{ .context.Section  }}">
+    <div class="invisible abolute h-0 w-0">{{ .context.Section }} {{ htmlUnescape (plainify .context.Content) }} {{ .context.Params.Date }}</div>
+    <a class="boxA"
+        href="{{ .context.Permalink }}">
         <div class="flex flex-row">
             {{ if isset .context.Params "frontphoto" }}
-            <div class='blend-plevy flex-grow-0 flex-shrink-0 mr-2'><img src="" data-toset="
+            <div class='blend-plevy flex-grow-0 flex-shrink-0'><img src="" data-toset="
                     {{- if .context.Params.frontphotomini }}{{ .context.Params.frontphotomini | absURL }}
                     {{ else }}{{ .context.Params.frontphoto | absURL }}{{ end -}}"
-                    class="imag imgBox object-cover rounded h-16 w-16" alt="{{ .context.Params.title }}" width="500"
+                    class="imag imgBox" alt="{{ .context.Params.title }}" width="500"
                     height="240" />
             </div>
             {{ end}}
@@ -65,7 +68,7 @@
             </p>
             {{ end }}
         </div>
-        <div class="inline-block text-xs px-2">{{ dateFormat "02 Jan 2006" .context.Date }}</div>
+        <div class="inline-block text-xs px-2">{{ dateFormat "02 Jan 2006" .context.Date }} | <b>{{ i18n .context.Section  }}</b></div>
     </a>
 </div>
 {{ end }}
