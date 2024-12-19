@@ -1,4 +1,4 @@
 {{ define "main" }}
     {{ partial "title.html" . }}
-    {{ if .Content}}<section id="content" class="large p-5">{{ .Content }}</section>{{ end }}
+    {{ if .Content}}<div id="content" class="pack-item w-full md:w-192">{{ .Content }}</div>{{ end }}
 {{ end }}

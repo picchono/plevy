@@ -391,7 +391,7 @@ a.slashLink:hover {
 }
 
 #lightgallery {
-  @apply w-full h-auto grid grid-rows-6 grid-flow-col gap-0.5;
+  @apply w-full h-auto flex flex-row flex-wrap;
 }
 
 #lightgallery>a {
