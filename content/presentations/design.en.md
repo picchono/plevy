@@ -51,6 +51,7 @@ slides: [
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGP4bLDZXjpSiK8ek?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHXOKxQsBHBGCjFaI?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHW4ePhm82N7kLaxI?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHXX8bfJE47ZfUgYY?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHX1p4fQdvA25V2nY?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqSe8pPoSDf082yJJ8?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHWZwAL0A3S95S5rs?embed=1"]
