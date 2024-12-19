@@ -11,18 +11,34 @@ institution:
     web: "https://www.cnam.fr/"
 chaire: true
 date: 2024-03-14T16:27:15+02:00
-frontphoto: "https://onedrive.live.com/embed?resid=50aeab3cfffe3174%212422141&authkey=%21AOk7cIPg0B9cAew&width=660"
+frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgbqGMqg8M0Hv9MA9k2M?embed=1&width=660"
 description: "Une proposition de description du design et de sa pratique."
 slides: [
-    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgZP-QUuiK_fWqjVNifE?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGMqg8M0Hv9MA9k2M?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGNIkIl9SFDS058Yw?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbnWbhipO7PsWtMLSjs?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbnWa-JUT45Gd1qrjWU?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGMwjblpySkr66K10?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbnWasMMGrpvHj8F4do?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbnWaMLjQVAAgbvxa84?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbncVk_3w_PEvVMNEvw?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbnXI7u56W5BiHadnl4?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbncV4kykLGHjHmCTbk?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHYpJCcn63idhEVlg?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqPUEL7rBiptvxj81o?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHXpqjDnesbmXkCoI?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHYOldYUlIRpeivF4?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHYf4uxj3XeQyoOIM?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbncVTwBAxwhCebrXjA?embed=1"],
-    ["mov", "//youtu.be/hn51850hNvo", "https://i9.ytimg.com/vi_webp/hn51850hNvo/mq3.webp?sqp=COiZjbsG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgVChTMA8=&rs=AOn4CLDvKgNof4aczkmpmpXxB5fwMdkUCQ"]
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGO9-h6ATZIK8m-48?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGPh3o3fxiG4jRntE?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGPW7pfRQwG008AMw?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGPBRIbGzrsNNCaB4?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGP4bLDZXjpSiK8ek?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHXOKxQsBHBGCjFaI?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHW4ePhm82N7kLaxI?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHX1p4fQdvA25V2nY?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqSe8pPoSDf082yJJ8?embed=1"]
 ]
 ---
 interactions irrésistibles

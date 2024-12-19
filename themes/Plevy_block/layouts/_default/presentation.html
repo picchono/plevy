@@ -20,7 +20,7 @@
                     {{ $typ := index . 0 }}
                     {{ if eq $typ "img" }}
                         <a class="place-self-center w-full lg:w-44 mr-4 mb-4" href="{{ index . 1 }}&width=3840&height=2160" aria-label="See image {{ $ord }}">
-                            <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 1 }}&width=600" alt="image {{ $ord }}"></a>
+                            <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 1 }}&width=200" alt="image {{ $ord }}"></a>
                     {{ else if eq $typ "mov"}}
                         <a  data-lg-size="1280-720"
                             data-src="//vimeo.com/129643275"
