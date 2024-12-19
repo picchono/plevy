@@ -44,7 +44,6 @@ slides: [
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHXpqjDnesbmXkCoI?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHYOldYUlIRpeivF4?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHYf4uxj3XeQyoOIM?embed=1"],
-    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbncVTwBAxwhCebrXjA?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGO9-h6ATZIK8m-48?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGPh3o3fxiG4jRntE?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGPW7pfRQwG008AMw?embed=1"],
@@ -53,7 +52,8 @@ slides: [
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHXOKxQsBHBGCjFaI?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHW4ePhm82N7kLaxI?embed=1"],
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHX1p4fQdvA25V2nY?embed=1"],
-    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqSe8pPoSDf082yJJ8?embed=1"]
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqSe8pPoSDf082yJJ8?embed=1"],
+    ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqHWZwAL0A3S95S5rs?embed=1"]
 ]
 ---
 &nbsp;
