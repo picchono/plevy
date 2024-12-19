@@ -325,7 +325,7 @@ a.boxA {
 }
 
 a.collab {
-  @apply relative bg-secondary-bg mr-4 my-8 p-4 transition-all duration-700 ease-in-out;
+  @apply relative bg-secondary-bg mr-4 my-8 transition-all duration-700 ease-in-out;
 }
 
 a.collab svg {

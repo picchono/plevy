@@ -213,6 +213,7 @@ window.addEventListener("scroll", function () {
 /* isotope */
 var qsRegex;
 var buttonValue;
+var checksearch = document.getElementById("inputSearch");
 
 var elem = document.querySelector('.pack');
 var iso = new Isotope( elem, {
@@ -232,18 +233,24 @@ var iso = new Isotope( elem, {
   sortAscending: false,
   filter: function( itemElem ) {
     var searchResult = qsRegex ? itemElem.textContent.match( qsRegex ) : true;
-    var buttonResult = buttonValue ? itemElem.textContent.match( buttonValue ) : true;
+    if (checksearch) {
+      var buttonResult = buttonValue ? itemElem.textContent.match( buttonValue ) : true;
       return searchResult && buttonResult;
+    } else {
+      return searchResult;
+    }
   }
 });
 
 // use value of search field to filter
+if (checksearch) {
 var quicksearch = document.querySelector('.quickSearch');
 quicksearch.addEventListener( 'keyup', debounce( function() {
   qsRegex = new RegExp( quicksearch.value, 'gi' );
   console.log(qsRegex);
   iso.arrange();
 }, 200 ) );
+}
 
 //menu selection
 var buttons = document.querySelectorAll(".homemenu");

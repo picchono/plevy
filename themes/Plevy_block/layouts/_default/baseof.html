@@ -9,7 +9,6 @@
     {{ partial "title.html" . }}
     {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
     {{- block "main" . }}{{- end }}
-    {{ partial "footer.html" . }}
   </main>
 </body>
 </html>

@@ -1,29 +1,25 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-<section class="large justify-start flex flex-col p-5 flex-grow" >
-    {{ if .Params.Parcours }}
-    <div class="mb-20">
-        <h2>{{ i18n "parcours" }}</h2>
-        <div class="max-w-3xl w-full">
-            {{ $teach := where .Site.Pages "Section" "in" (slice "courses") }}
-            {{ $count := 0 }}
-            {{ range .Params.Parcours }}
-            {{ $parc := .code }}
-            <script>console.log("2", {{ $parc }})</script>
-            {{ range $teach }}
-            <script>console.log("1", {{ .Params.code }})</script>
-            {{ if eq .Params.code $parc }}
-            {{ $count = add $count 1 }}
-            {{- partial "box.html" ( dict "context" . "cou" $count ) -}}
-            {{ end }}{{ end }}
-            {{ end }}
-        </div>
+{{ if .Params.Parcours }}
+<div class="pack-item w-full md:w-1/3 md:max-w-96">
+    <h2>{{ i18n "parcours" }}</h2>
+    <div class="max-w-3xl w-full">
+        {{ $teach := where .Site.Pages "Section" "in" (slice "courses") }}
+        {{ $count := 0 }}
+        {{ range .Params.Parcours }}
+        {{ $parc := .code }}
+        <script>console.log("2", {{ $parc }})</script>
+        {{ range $teach }}
+        <script>console.log("1", {{ .Params.code }})</script>
+        {{ if eq .Params.code $parc }}
+        {{ $count = add $count 1 }}
+        {{- partial "box.html" ( dict "context" . "cou" $count ) -}}
+        {{ end }}{{ end }}
+        {{ end }}
     </div>
-    {{ end }}
-    {{ if .Content}}
-    <div id="content">{{ .Content }}</div>
-    {{ end }}
-    </div>
-    <div class="w-2/6 pl-20 pr-5">&nbsp;</div>
-</section>
+</div>
+{{ end }}
+{{ if .Content}}
+<div id="content" class="pack-item w-full md:w-192">{{ .Content }}</div>
+{{ end }}
 {{ end }}
