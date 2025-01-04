@@ -182,60 +182,9 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply relative bg-primary-bg w-full p-5 transition-all duration-700 ease-in-out;
+  @apply relative bg-transparent w-full p-1 md:px-4 transition-all duration-700 ease-in-out;
 }
 
-.pack-item:hover,
-.pack-item:hover>* {
-  @apply bg-tertiary-bg;
-}
-
-.pack-item::after{
-  @apply absolute transition-all duration-700 ease-in-out;
-  content: ' ';
-  height: calc(100% + 2px);
-  width: calc(100% + 2px);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -2;
-  opacity: 0.8;
-  background: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
-}
-
-.pack-item::before {
-  @apply absolute h-full w-full bg-primary-bg;
-  content: ' ';
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-}
-
-.pack-item:hover::after {
-  opacity: 0.3;
-  background: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
-  animation: packBorder 700s ease-out 1;
-}
-
-@keyframes packBorder {
-  0% {
-    opacity: 0.8;
-    background: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
-  }
-  45% {
-    opacity: 0;
-    background: linear-gradient(45deg, var(--color-borders), #FFF0 10%, #FFF0 90%, var(--color-borders));
-  }
-  55% {
-    opacity: 0;
-    background: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
-  }
-  100% {
-    opacity: 0.3;
-    background: linear-gradient(45deg, var(--color-borders) 40%, #FFF0, var(--color-borders) 60%);
-  }
-}
 
 /* buttons */
 .pack-item #languageMode {
@@ -320,8 +269,56 @@ a.floatImg::after {
   content: none !important;
 }
 
-a.boxA {
-  @apply relative bg-secondary-bg text-primary-text justify-center flex flex-col w-full p-3 md:p-10;
+a.boxIso, .dynCadre, .doclinkButton {
+  @apply relative cursor-pointer bg-transparent text-primary-text justify-center flex flex-col w-full p-3 rounded;
+}
+
+a.boxIso {
+  @apply md:p-10;
+}
+
+a.boxIso:hover, .dynCadre:hover, .doclinkButton:hover {
+  background: #00000007;
+}
+
+a.boxIso::after, .dynCadre::after, .doclinkButton::after {
+  @apply absolute;
+  content: ' ';
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -2;
+  background:
+  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p, 25%) 0,
+  repeating-linear-gradient(180deg,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-y 0 var(--_p,125%),
+  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p,125%) 100%,
+  repeating-linear-gradient(180deg,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-y 100% var(--_p, 25%);
+  background-size: 200% 1px,1px 200%;
+  transition: .7s ease-in-out;
+  opacity: 0.5;
+}
+
+a.boxIso:hover::after, .dynCadre:hover::after, .doclinkButton:hover::after {
+  --_p: 75%;
+  opacity: 0.5;
+}
+
+a.doclinkButton {
+  @apply flex-row items-center justify-center w-64 p-4 transition-all duration-700 ease-in-out;
+}
+
+.pack-item:hover a.doclinkButton {
+  @apply text-primary-text;
+}
+
+a.doclinkButton span.doclinkIcon {
+  @apply inline-block py-3 px-5 transition-all duration-700 ease-in-out;
+}
+
+a.doclinkButton span.doclinkText {
+  @apply inline-block py-3 pr-5 pl-0.5 transition-all duration-700 ease-in-out;
 }
 
 a.collab {
@@ -374,11 +371,11 @@ a.linkBox:hover {
   @apply bg-secondary-bg;
 }
 
-div.ended a.boxA {
+div.ended a.boxIso {
   @apply opacity-30;
 }
 
-div.ended a.boxA:hover {
+div.ended a.boxIso:hover {
   @apply opacity-100;
 }
 
@@ -981,22 +978,6 @@ section.lectureSession>.main {
 
 .headList:hover p span {
   background-color: var(--color-primary-epierrot);
-}
-
-a.doclinkButton {
-  @apply relative text-primary-text bg-secondary-bg rounded border border-zinc-500 flex flex-row items-center justify-center w-64 p-4 transition-all duration-700 ease-in-out;
-}
-
-.pack-item:hover a.doclinkButton {
-  @apply text-primary-text border-primary-text;
-}
-
-a.doclinkButton span.doclinkIcon {
-  @apply inline-block py-3 px-5 rounded-l transition-all duration-700 ease-in-out;
-}
-
-a.doclinkButton span.doclinkText {
-  @apply inline-block py-3 pr-5 pl-0.5 border-t rounded-r transition-all duration-700 ease-in-out;
 }
 
 .backButton {

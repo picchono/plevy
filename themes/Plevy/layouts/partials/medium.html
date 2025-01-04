@@ -1,27 +1,27 @@
 {{ if ne .Params.layout "list" }}
 
 {{ if and (.Params.abstract) (ne .Params.layout "publi") }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96">
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96" data-cat-sort="1">
     <b class="text-epierrot">{{ partial "slash.html" (dict "txt" (i18n "abstract")) }}</b>
     {{ .Params.abstract |safeHTML }}
 </div>
 {{ end }}
 {{ if eq .Params.layout "about" }}{{- if .Params.frontphoto }}
-<img src="" data-toset="{{ .Params.frontphoto | absURL }}" class="pack-item w-full md:w-1/3 md:max-w-96 imag object-cover"
-    alt="{{ .Params.title }}" width="500" height="240" />
+<img src="" data-toset="{{ .Params.frontphoto | absURL }}" class="pack-item dynCadre w-full md:w-1/3 md:max-w-96 imag object-cover"
+    alt="{{ .Params.title }}" width="500" height="240" data-cat-sort="1" />
 {{ end }}{{ end -}}
 {{ if .Params.schedule }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96">
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96" data-cat-sort="1">
     <p>{{ .Params.schedule |safeHTML }}</p>
 </div>
 {{ end }}
 {{ if .Params.executive}}
-<div class="pack-item w-full md:w-1/3 md:max-w-96 italic text-sm">
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96 italic text-sm" data-cat-sort="1">
     <p>{{ .Params.executive }}</p>
 </div>
 {{ end }}
 {{ if .Params.tablecontent }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96 tablecontent" id="toc">
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96 tablecontent" id="toc" data-cat-sort="1">
     <h2>{{ i18n "tableOfContent"}}</h2>
 </div>
 {{ end }}
@@ -32,14 +32,14 @@
 {{ partial "video.html" . }}
 {{ end }}
 {{ if .Params.calendar }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96" data-cat-sort="1">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
     {{ range .Params.calendar }}
     <div class="listoutside pb-3">{{ . | safeHTML }}</div>
     {{ end }}
 </div>
 {{ end }}
 {{ if .Params.lectures}}
-<div class="pack-item w-full md:w-1/3 md:max-w-96">
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96" data-cat-sort="1">
     {{ partial "slash.html" (dict "txt" (i18n "courses")) }}<br />
     {{ $cod := .Params.code }}
     {{ range sort .Params.lectures "order" "asc" }}
@@ -51,8 +51,7 @@
 
 </div>
 {{ end }}
-{{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start" {{if
-    .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}" {{ end }}>
+{{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start">
     <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
     <div class="ml-2 w-auto lg:w-full py-1">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}
         {{ range sort .Params.redirectlecture "order" "asc" }}
@@ -63,7 +62,7 @@
 </div>
 {{ end }}
 {{ if .Params.encapsulation }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96">
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96" data-cat-sort="1">
     {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
     {{ range .Params.encapsulation }}
     <a class="linkBox" href="{{ .link }}">
@@ -73,7 +72,7 @@
     {{ end }}
 </div>{{ end }}
 {{ if .Params.link }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96">
+<div class="pack-item dynCadre w-full md:w-1/3 md:max-w-96" data-cat-sort="1">
     {{ partial "slash.html" (dict "txt" (i18n "links")) }}
     <div class="block">
         {{ partial "doclink.html" . }}

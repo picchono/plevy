@@ -50,8 +50,9 @@
 <script defer src="{{ $epierrot_js.Permalink }}"></script>
 {{ end }}
 
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet" media="all" />
+{{ $atkinson_css := resources.Get "css/atkinson.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $atkinson_css := $atkinson_css | minify }}
+<link rel="stylesheet" href="{{ $atkinson_css.Permalink }}" media="all">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-392XHYQXG7"></script>
 <script>
@@ -62,9 +63,10 @@
   gtag('config', 'G-392XHYQXG7');
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/isotope-packery/2.0.1/packery-mode.pkgd.min.js" integrity="sha512-76zYP8p3l0eyuqOmksU8GGbeVhNhvw1FTIT90+qZpdynbBJrqOU1Y9tM721oGcM3KLrgqmZQiGlIiO93oi3Geg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+{{ $isotope_js := resources.Get "js/isotope.pkgd.min.js" | minify }}
+<script src="{{ $isotope_js.Permalink }}"></script>
+{{ $packery_js := resources.Get "js/packery-mode.pkgd.min.js" | minify }}
+<script src="{{ $packery_js.Permalink }}"></script>
 
 {{ if .Params.citation }}{{ partial "citationmeta.html" . }}{{ end }}
 

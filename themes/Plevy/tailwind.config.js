@@ -71,7 +71,9 @@ module.exports = {
         '216': '54rem'
       },
       maxWidth: {
-        '3block': '75rem'
+        '96': '24rem',
+        '192': '48rem',
+        '122': '122rem',
       },
       minHeight: {
         '16': '4rem',

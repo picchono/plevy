@@ -3,7 +3,7 @@
     data-date="{{ .context.Date }}" data-cat-sort="1" {{if eq .context.Params.front 1 }}data-front="1"{{ else }}data-front="0"{{ end }}
     data-section="{{ .context.Section  }}">
     <div class="invisible abolute h-0 w-0">{{ .context.Section }} {{ htmlUnescape (plainify .context.Content) }} {{ .context.Params.Date }}</div>
-    <a class="boxA"
+    <a class="boxIso"
         href="{{ .context.Permalink }}">
         <div class="flex flex-row">
             {{ if isset .context.Params "frontphoto" }}

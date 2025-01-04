@@ -1,6 +1,7 @@
 {{ define "main" }} {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
 {{ with $page }}
 <div class="pack-item md:w-192" data-cat-sort="101">
+    <div class="dynCadre">
 <h1 class="m-0 md:p-10">{{ .Title }}</h1>
 {{ if .Content}}<div id="content" class="md:p-10">{{ .Content }}</div>{{ end }}
 {{ with index .Site.Data.plevy .Site.Language.Lang }}
@@ -10,12 +11,14 @@
     "hei" 0.8) -}}</a>{{ end }}</div>
 {{ end }}
 </div>
+</div>
 {{ end }}
 
 {{$memb := .Params.member}}
 {{ $page := $.Site.GetPage "page" "chaire.md" }}
 {{ with $page }}
 <div class="pack-item md:w-192" data-cat-sort="100">
+    <div class="dynCadre">
 <h1 class="m-0 md:p-10">{{ .Title }}</h1>
 <div class="md:p-10">{{ .Params.description }}</div>
 <div class="md:p-10"><a href='/chaire' target="_blank" class="doclinkButton" rel="noreferrer"
@@ -26,7 +29,7 @@
 {{ if .Params.members }}
 {{ range .Params.members }}
 <div class="md:p-10">
-<a class="boxA flex-row justify-start" href="{{ index . 3 }}">
+<a class="boxIso flex-row justify-start" href="{{ index . 3 }}">
     <img class="flex-grow-0 flex-shrink-0 object-cover rounded-md h-20 w-20 mr-4" src="{{ index . 2 }}"
         alt="{{ index . 0 }}">
     <div class="flex flex-col justify-center leading-none">
@@ -37,6 +40,7 @@
 </div>
 {{ end }}
 {{ end }}
+</div>
 </div>
 {{ end }}
 

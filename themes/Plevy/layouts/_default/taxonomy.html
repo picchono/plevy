@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="large p-5" {{if .Params.searchWeight }}data-pagefind-weight="{{.Params.searchWeight }}"{{ end }}>
+<div class="large p-5">
         {{ $t := .Title }}
         {{ $count := 0 }}
         {{ range (index .Site.Taxonomies.tags $t) }}
