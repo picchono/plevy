@@ -182,7 +182,7 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply relative bg-transparent w-full p-1 md:px-4 transition-all duration-700 ease-in-out;
+  @apply relative bg-transparent w-full py-4 md:p-4 transition-all duration-700 ease-in-out;
 }
 
 
