@@ -291,9 +291,9 @@ a.boxIso::after, .dynCadre::after, .doclinkButton::after {
   translate: -50% -50%;
   z-index: -2;
   background:
-  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p, 25%) 0,
-  repeating-linear-gradient(180deg,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-y 0 var(--_p,125%),
-  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p,125%) 100%,
+  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p, 125%) 0,
+  repeating-linear-gradient(180deg,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-y 0 var(--_p, 125%),
+  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p, 25%) 100%,
   repeating-linear-gradient(180deg,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-y 100% var(--_p, 25%);
   background-size: 200% 1px,1px 200%;
   transition: .7s ease-in-out;
