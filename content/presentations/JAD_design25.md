@@ -22,7 +22,7 @@ collaboration:
         short: Cnam
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
-        colo: "#c1002a"
+        colo: "rgb(185 28 28)"
         heig: 1
 chaire: true
 date: 2025-01-25T16:27:15+02:00
