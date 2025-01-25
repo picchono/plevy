@@ -70,11 +70,11 @@ body {
 body {
   --color-primary-bg: light-dark(#fff, #1c1c1c);
   --color-secondary-bg: light-dark(#fff, #1c1c1c);
-  --color-tertiary-bg: light-dark(rgb(250, 250, 250), #737c84);
-  --color-quaternary-bg: light-dark(#000000, #000000);
-  --color-primary-text: light-dark(#1c1c1c, #e5e7eb);
+  --color-tertiary-bg: light-dark(#fafafa, #2e2e2e);
+  --color-quaternary-bg: light-dark(#000000, #fff);
+  --color-primary-text: light-dark(#1c1c1c, #f4f4f4);
   --color-secondary-text: light-dark(#e3ddd3, #f3f4f6);
-  --color-epierrot: light-dark(#0089A7, #33A6B8);
+  --color-epierrot: light-dark(#0089A7, #2abac4);
   --color-borders: light-dark(#1c1c1c, #FFFA);
 }
 
@@ -182,7 +182,7 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply relative bg-transparent w-full py-4 md:p-4 transition-all duration-700 ease-in-out;
+  @apply relative bg-transparent w-full py-3 md:p-1 transition-all duration-700 ease-in-out;
 }
 
 
@@ -270,17 +270,33 @@ a.floatImg::after {
 }
 
 a.boxIso, .dynCadre, .doclinkButton {
-  @apply relative cursor-pointer bg-transparent text-primary-text justify-center flex flex-col w-full p-3 rounded;
+  @apply relative cursor-pointer bg-primary-bg text-primary-text justify-center flex flex-col w-full p-3 transition-all duration-700 ease-in-out;
+  border-radius: 0px;
 }
 
 a.boxIso {
-  @apply md:p-10;
+  @apply p-7 md:p-10;
 }
 
 a.boxIso:hover, .dynCadre:hover, .doclinkButton:hover {
-  background: #00000007;
+  background: light-dark(#00000007, #FFFFFF07);
+  border-radius: 4px;
 }
 
+a.boxIso::after, .dynCadre::after {
+  @apply absolute rounded;
+  content: ' ';
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -2;
+  transition: 0.7s ease-in-out;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+/*
 a.boxIso::after, .dynCadre::after, .doclinkButton::after {
   @apply absolute;
   content: ' ';
@@ -291,19 +307,18 @@ a.boxIso::after, .dynCadre::after, .doclinkButton::after {
   translate: -50% -50%;
   z-index: -2;
   background:
-  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p, 125%) 0,
-  repeating-linear-gradient(180deg,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-y 0 var(--_p, 125%),
-  repeating-linear-gradient(90deg ,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-x var(--_p, 25%) 100%,
-  repeating-linear-gradient(180deg,#0000 0 50%, var(--color-primary-text) 0 75%) repeat-y 100% var(--_p, 25%);
-  background-size: 200% 1px,1px 200%;
-  transition: .7s ease-in-out;
-  opacity: 0.5;
+  repeating-linear-gradient(90deg ,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-x var(--_p, 125%) 0,
+  repeating-linear-gradient(180deg,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-y 0 var(--_p, 25%),
+  repeating-linear-gradient(90deg ,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-x var(--_p, 25%) 100%,
+  repeating-linear-gradient(180deg,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-y 100% var(--_p, 125%);
+  background-size: 200% 2px, 2px 200%;
+  transition: 1s ease-in-out;
 }
 
 a.boxIso:hover::after, .dynCadre:hover::after, .doclinkButton:hover::after {
   --_p: 75%;
-  opacity: 0.5;
 }
+*/
 
 a.doclinkButton {
   @apply flex-row items-center justify-center w-64 p-4 transition-all duration-700 ease-in-out;
@@ -322,7 +337,7 @@ a.doclinkButton span.doclinkText {
 }
 
 a.collab {
-  @apply relative inline-block w-full bg-secondary-bg my-3 transition-all duration-700 ease-in-out;
+  @apply relative inline-block w-full my-3 transition-all duration-700 ease-in-out;
 }
 
 a.collab svg {
@@ -726,6 +741,11 @@ h5 {
   font-size: 1.1rem;
   margin: 0 0 0.2rem -1px;
 }
+
+#content>h1:first-child, #content>h2:first-child, #content>h3:first-child, #content>h4:first-child, #content>h5:first-child,
+.dynCadre>h1:first-child, .dynCadre>h2:first-child, .dynCadre>h3:first-child, .dynCadre>h4:first-child, .dynCadre>h5:first-child {
+  @apply pt-0 mt-0;
+} 
 
 .comment {
   @apply text-sm italic;
@@ -2450,4 +2470,71 @@ body {
   #CDJPlogo {
     @apply invisible h-0 w-0 p-0 m-0;
   }
+}
+
+.Cnamletters>span {
+  @apply text-red-700 font-bold capitalize;
+  letter-spacing: 0.05rem;
+}
+/* Prez */
+
+div.splide {
+  --splide-padding: 1.25rem;
+}
+
+div.splide * {
+  font-size: 1.5rem;
+}
+
+div.splide h1 {
+  @apply m-0 p-0 pb-20;
+  font-size: 3rem;
+}
+
+div.splide .splide__arrow svg {
+  height: 1.2rem;
+}
+
+div.splide .splide__slide {
+  @apply relative flex flex-row justify-start items-center rounded-lg;
+  height: calc(100vh - 2*var(--splide-padding));
+}
+
+div.splide .splide__slide .backg {
+  @apply absolute rounded-lg;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  filter: blur(2px) brightness(1.2) grayscale(0.6) hue-rotate(188deg) saturate(0.8) sepia(0.22);
+}
+
+div.splide .splide__slide .slide_sid {
+  @apply px-24 flex-grow-0 flex-shrink-0;
+}
+
+div.splide .splide__slide .slide_main {
+  @apply px-6 pb-20 max-w-screen-2xl flex-grow-0 flex-shrink;
+}
+
+div.splide .splide__slide::after {
+  @apply absolute rounded-lg;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  background-image: linear-gradient(135deg, #f5f7faaa 0%, #c3cfe2 50%);
+}
+
+div.splide .splide__arrow {
+  background: transparent !important;
+}
+div.splide .splide__arrow:disabled {
+  opacity: 0 !important;
 }

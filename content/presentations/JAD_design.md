@@ -26,7 +26,7 @@ collaboration:
         heig: 1.5
 chaire: true
 date: 2024-12-19T16:27:15+02:00
-frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgbqGMqg8M0Hv9MA9k2M?embed=1&width=660"
+frontphoto: "https://images.unsplash.com/photo-1680813999409-b6109c96e554?q=80&w=600"
 description: "La pratique du design au travers de ses enjeux et de son histoire."
 slides: [
     ["img", "https://1drv.ms/i/s!AnQx_v88q65QgbqGMqg8M0Hv9MA9k2M?embed=1"],

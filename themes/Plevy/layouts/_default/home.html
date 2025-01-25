@@ -1,8 +1,8 @@
 {{ define "main" }} {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
 {{ with $page }}
-<div class="pack-item md:w-192" data-cat-sort="101">
+<div class="pack-item w-full md:w-144" data-cat-sort="101">
     <div class="dynCadre">
-<h1 class="m-0 md:p-10">{{ .Title }}</h1>
+<h2 class="m-0 md:p-6 md:px-10">{{ .Title }}</h2>
 {{ if .Content}}<div id="content" class="md:p-10">{{ .Content }}</div>{{ end }}
 {{ with index .Site.Data.plevy .Site.Language.Lang }}
 <div class="md:p-10">
@@ -17,19 +17,18 @@
 {{$memb := .Params.member}}
 {{ $page := $.Site.GetPage "page" "chaire.md" }}
 {{ with $page }}
-<div class="pack-item md:w-192" data-cat-sort="100">
+<div class="pack-item w-full md:w-144" data-cat-sort="100">
     <div class="dynCadre">
-<h1 class="m-0 md:p-10">{{ .Title }}</h1>
+<h2 class="m-0 md:p-6 md:px-10">{{ .Title }}</h2>
 <div class="md:p-10">{{ .Params.description }}</div>
 <div class="md:p-10"><a href='/chaire' target="_blank" class="doclinkButton" rel="noreferrer"
         aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico"
             "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
-
-<h2 class="px-5">{{ i18n "members"}}</h2>
+<h2 class="md:px-10">{{ i18n "members"}}</h2>
 {{ if .Params.members }}
 {{ range .Params.members }}
 <div class="md:p-10">
-<a class="boxIso flex-row justify-start" href="{{ index . 3 }}">
+<a class="doclinkButton flex-row justify-start" href="{{ index . 3 }}">
     <img class="flex-grow-0 flex-shrink-0 object-cover rounded-md h-20 w-20 mr-4" src="{{ index . 2 }}"
         alt="{{ index . 0 }}">
     <div class="flex flex-col justify-center leading-none">

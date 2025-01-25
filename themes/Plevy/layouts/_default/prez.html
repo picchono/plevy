@@ -1,0 +1,159 @@
+{{ if .Params.redirect }}
+<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+{{ $mainphoto := .Params.frontphoto }}
+
+<body id="{{ .Params.bodyclass }}" class="bg-primary-text">
+    <div class="splide">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev h-2">
+                {{ partial "icons.html" (dict "ico" "arrow" "hei" 1 "colo" "var(--color-primary-text)" "cla" "lh2") -}}
+            </button>
+            <button class="splide__arrow splide__arrow--next h-2">
+                {{ partial "icons.html" (dict "ico" "arrow" "hei" 1 "colo" "var(--color-primary-text)" "cla" "lh2") -}}
+            </button>
+        </div>
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <div class="backg"><img
+                            src="{{ $mainphoto }}"
+                            class="h-full w-full">
+                    </div>
+                    <div class="pl-10 pr-24">
+                        {{ if .Params.collaboration }}
+                        <div class="flex flex-wrap items-center">
+                            {{ range sort .Params.collaboration }}
+                            <a href="{{ .web }}" target="_blank" class="collab">
+                                {{ if .colo }}
+                                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+                                {{else}}
+                                {{ partial "icons.html" (dict "ico" .logo "hei" .heig) -}}
+                                {{ end }}
+                            </a>
+                            {{ end }}
+                        </div>
+                        {{ else if .Params.institution }}
+                        <div class="flex flex-wrap items-center">
+                            <a href="{{ .Params.institution.web }}" target="_blank" class="collab">
+                                {{ if .Params.institution.colo }}
+                                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei"
+                                .Params.institution.heig "colo"
+                                .Params.institution.colo) -}}
+                                {{else}}
+                                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei"
+                                .Params.institution.heig) -}}
+                                {{ end }}
+                            </a>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <div class="px-6 pb-20">
+                        <h1>{{ .Title }}</h1>
+                        <p class="m-0 font-bold">Pierre Lévy</p>
+                        <p class="Cnamletters"><span>C</span>onservatoire <span>n</span>ational des <span>a</span>rts et
+                            <span>m</span>étiers
+                        </p>
+                        <div id="qrcode" class="h-40 w-40 p-2 bg-white rounded-lg absolute bottom-10"></div>
+                    </div>
+                </div>
+                {{ if .Params.slides }}
+                {{ $slid := .Params.slides }}
+                {{ range $slid }}
+                {{ $has := index . 0 }}
+                {{ $sli := print "presentations/slides/" $has }}
+                {{ if eq (index . 1) "img" }}
+                <div class="splide__slide bg-primary-text" data-splide-hash="{{ index . 0 }}">
+                    <img class="h-full w-full object-contain border-0 rounded-lg" loading="lazy" src="{{ index . 2 }}" title="{{ index . 0 }}">
+                </div>
+                {{ else if eq (index . 1) "youtube" }}
+                <div class="splide__slide bg-primary-text" data-splide-hash="{{ index . 0 }}">
+                    <iframe src="https://www.youtube-nocookie.com/embed/{{ (index . 0) | safeURL }}"
+                        class="w-full h-full object-contain" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                {{ else if eq (index . 1) "vimeo" }}
+                <div class="splide__slide bg-primary-text" data-splide-hash="{{ index . 0 }}">
+                    <iframe src="https://player.vimeo.com/video/{{ index . 2 }}" class="w-full h-full object-contain"
+                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                {{ else if eq (index . 1) "title" }}
+                <div class="splide__slide" data-splide-hash="{{ $has }}">
+                    <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
+                    <div class="slide_sid">
+                        <div class="py-5">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo"
+                            "var(--color-primary-text)" "cla" "lh2") -}}</div>
+                    </div>
+                    <div class="slide_main p-0">
+                        <h1>{{ index . 0 }}</h1>
+                    </div>
+                </div>
+                {{ else if eq (index . 1) "normal" }}
+                {{ with $.Site.GetPage $sli }}
+                <div class="splide__slide" data-splide-hash="{{ $has }}">
+                    <div class="backg"><img src="{{ .Params.backphoto }}" class="h-full w-full"></div>
+                    <div class="slide_sid">
+                        <div class="py-5">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo"
+                            "var(--color-primary-text)" "cla" "lh2") -}}</div>
+                    </div>
+                    <div class="slide_main">
+                        <h1>{{ .Title }}</h1>
+                        {{ .Content | safeHTML }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    {{ $splide_js := resources.Get "js/splide.js" | minify }}
+    <script src="{{ $splide_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {{ $splideurl_js := resources.Get "js/splide-url.js" | minify }}
+    <script src="{{ $splideurl_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {{ $splide_css := resources.Get "css/splide.css" | postCSS (dict "config" "./postcss.config.js") }}
+    {{ $splide_css := $splide_css | minify }}
+    <link rel="stylesheet" href="{{ $splide_css.Permalink }}" media="all">
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://www.youtube.com/player_api"></script>
+
+    {{ $qr_js := resources.Get "js/qrgen.js" | minify }}
+
+    <script src="{{ $qr_js.Permalink }}"></script>
+    <script defer="defer">
+        const qrcode = new QRCode(document.getElementById('qrcode'), {
+            text: {{ .Page.Permalink }},
+        width: 500,
+            height: 500,
+                colorDark: '#000',
+                    colorLight: '#fff',
+                        correctLevel: QRCode.CorrectLevel.H
+        });
+
+        var splide = new Splide('.splide', {
+            perPage: 1,
+            focus: 0,
+            omitEnd: true,
+            height: 'calc(100vh - 2*var(--splide-padding))',
+            width: 'calc(100wh - 2*var(--splide-padding))',
+            gap: 'var(--splide-padding)',
+            drag: true,
+            snap: true,
+            paginationDirection: 'ltr',
+            keyboard: 'global',
+            wheel: true,
+            releaseWheel: true,
+            speed: 700,
+            autoplay: false
+        }).mount(window.splide.Extensions);
+    </script>
+</body>
+
+</html>

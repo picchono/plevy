@@ -1,12 +1,13 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-<div class="pack-item dynCadre w-2/3" id="content">
+<div class="pack-item w-2/3" id="content">
+    <div class="dynCadre">
     <div class="flex flex-row flex-wrap mb-8 md:mb-22">
         <div class="invisible md:visible flex-shrink-0 flex-grow-0 h-0 md:h-48 w-0 md:w-48">
             <span id="qrcode" class="block h-0 md:h-44 w-0 md:w-44 md:mb-8 md:p-2 bg-white rounded-lg"></span>
         </div>
         {{ if .Content}}
-        <div id="content" class="flex-shrink flex-grow w-52">
+        <div id="content" class="flex-shrink flex-grow w-52 md:p-10">
             {{ .Content }}
         </div>
         {{ end }}
@@ -20,11 +21,11 @@
         {{ if eq $typ "img" }}
         <a class="place-self-center w-full lg:w-44 mr-4 mb-4" href="{{ index . 1 }}&width=3840&height=2160"
             aria-label="See image {{ $ord }}">
-            <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 1 }}&width=200"
+            <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 1 }}&width=400"
                 alt="image {{ $ord }}"></a>
         {{ else if eq $typ "mov"}}
-        <a data-lg-size="1280-720" data-src="//vimeo.com/129643275" data-poster="{{ index . 2 }}"
-            class="place-self-center w-full lg:w-44 mr-4 mb-4">
+        <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}" 
+            class="place-self-center w-full lg:w-44 mr-4 mb-4"> 
             <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 2 }}" alt="video {{ $ord }}">
         </a>
         {{ end }}
@@ -32,6 +33,7 @@
         {{ end }}
     </div>
     {{ end }}
+    </div>
 </div>
 
 {{ $qr_js := resources.Get "js/qrgen.js" | minify }}
@@ -61,6 +63,7 @@
 <link rel="stylesheet" href="{{ $lg_css.Permalink }}" media="all">
 
 <script src="https://player.vimeo.com/api/player.js"></script>
+<script src="https://www.youtube.com/player_api"></script>
 
 {{ $lgvideo_js := resources.Get "js/lgvideo.js" | minify }}
 <script src="{{ $lgvideo_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -99,10 +102,13 @@
             portrait: 0,
             color: 'CCCCCC'
         },
+        loadYoutubeThumbnail: true,
         youTubePlayerParams: {
             modestbranding: 1,
+            autoplay: 1,
             showinfo: 0,
-            controls: 0
+            controls: 1,
+            rel: 0
         },
         loadYouTubePoster: true
     });

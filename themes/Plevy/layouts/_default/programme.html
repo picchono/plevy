@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ if .Content }}
-<div class="pack-item dynCadre w-full md:w-192 justify-start flex flex-col flex-grow" data-cat-sort="2">{{ .Content }}</div>
+<div class="pack-item w-full md:w-192 justify-start flex flex-col flex-grow" data-cat-sort="2"><div class="dynCadre md:p-10">{{ .Content }}</div></div>
 {{ end }}
 {{ $targ := .Params.milestone }}
 {{ $count := 0 }}

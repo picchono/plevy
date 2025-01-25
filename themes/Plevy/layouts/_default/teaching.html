@@ -1,3 +1,4 @@
 {{ define "main" }}
-{{ if .Content}}<section id="content" class="large" >{{ .Content }}</section>{{ end }}
+{{ if .Content}}<div class="pack-item md:w-192" data-cat-sort="101">
+    <div class="dynCadre" class="md:p-10" >{{ .Content }}</div>
 {{ end }}
