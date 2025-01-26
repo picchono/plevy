@@ -2503,11 +2503,10 @@ div.splide .splide__slide {
 div.splide .splide__slide .backg {
   @apply absolute rounded-lg;
   content: ' ';
-  height: 100%;
   width: 100%;
-  top: 50%;
+  top: 0;
   left: 50%;
-  translate: -50% -50%;
+  translate: -50% 0;
   z-index: -1;
   filter: blur(2px) brightness(1.2) grayscale(0.6) hue-rotate(188deg) saturate(0.8) sepia(0.22);
 }
