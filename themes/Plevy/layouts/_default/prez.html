@@ -5,6 +5,9 @@
 {{- partial "head.html" . -}}
 
 {{ $mainphoto := .Params.frontphoto }}
+{{ $grad1 := "#f5f7faaa 0%"}}
+{{ $grad2 := "#c3cfe2 40%"}}
+
 
 <body id="{{ .Params.bodyclass }}" class="bg-primary-text">
     <div class="splide">
@@ -19,41 +22,13 @@
         <div class="splide__track">
             <div class="splide__list">
                 <div class="splide__slide">
-                    <div class="backg"><img
-                            src="{{ $mainphoto }}"
-                            class="h-full w-full">
-                    </div>
-                    <div class="pl-10 pr-24">
-                        {{ if .Params.collaboration }}
-                        <div class="flex flex-wrap items-center">
-                            {{ range sort .Params.collaboration }}
-                            <a href="{{ .web }}" target="_blank" class="collab">
-                                {{ if .colo }}
-                                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
-                                {{else}}
-                                {{ partial "icons.html" (dict "ico" .logo "hei" .heig) -}}
-                                {{ end }}
-                            </a>
-                            {{ end }}
-                        </div>
-                        {{ else if .Params.institution }}
-                        <div class="flex flex-wrap items-center">
-                            <a href="{{ .Params.institution.web }}" target="_blank" class="collab">
-                                {{ if .Params.institution.colo }}
-                                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei"
-                                .Params.institution.heig "colo"
-                                .Params.institution.colo) -}}
-                                {{else}}
-                                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei"
-                                .Params.institution.heig) -}}
-                                {{ end }}
-                            </a>
-                        </div>
-                        {{ end }}
-                    </div>
+                    <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});"></div>
+                    {{ partial "slide-side.html" . }}
                     <div class="px-6 pb-20">
                         <h1>{{ .Title }}</h1>
-                        <p class="m-0 font-bold">Pierre Lévy</p>
+                        <p class="m-0 font-bold">Pierre Lévy - <a href="mailto:pierre.levy@lecnam.net"
+                                class="font-normal">pierre.levy@lecnam.net</a></p>
                         <p class="Cnamletters"><span>C</span>onservatoire <span>n</span>ational des <span>a</span>rts et
                             <span>m</span>étiers
                         </p>
@@ -66,24 +41,26 @@
                 {{ $has := index . 0 }}
                 {{ $sli := print "presentations/slides/" $has }}
                 {{ if eq (index . 1) "img" }}
-                <div class="splide__slide bg-primary-text" data-splide-hash="{{ index . 0 }}">
-                    <img class="h-full w-full object-contain border-0 rounded-lg" loading="lazy" src="{{ index . 2 }}" title="{{ index . 0 }}">
+                <div class="splide__slide" data-splide-hash="{{ index . 0 }}">
+                    <img class="h-full w-full object-contain border-0 rounded-lg" loading="lazy" src="{{ index . 2 }}"
+                        title="{{ index . 0 }}">
                 </div>
                 {{ else if eq (index . 1) "youtube" }}
-                <div class="splide__slide bg-primary-text" data-splide-hash="{{ index . 0 }}">
+                <div class="splide__slide" data-splide-hash="{{ index . 0 }}">
                     <iframe src="https://www.youtube-nocookie.com/embed/{{ (index . 0) | safeURL }}"
                         class="w-full h-full object-contain" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 {{ else if eq (index . 1) "vimeo" }}
-                <div class="splide__slide bg-primary-text" data-splide-hash="{{ index . 0 }}">
+                <div class="splide__slide" data-splide-hash="{{ index . 0 }}">
                     <iframe src="https://player.vimeo.com/video/{{ index . 2 }}" class="w-full h-full object-contain"
                         frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
                 {{ else if eq (index . 1) "title" }}
                 <div class="splide__slide" data-splide-hash="{{ $has }}">
                     <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});"></div>
                     <div class="slide_sid">
                         <div class="py-5">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo"
                             "var(--color-primary-text)" "cla" "lh2") -}}</div>
@@ -92,27 +69,60 @@
                         <h1>{{ index . 0 }}</h1>
                     </div>
                 </div>
-                {{ else if eq (index . 1) "normal" }}
+                {{ else if eq (index . 1) "slide" }}
                 {{ with $.Site.GetPage $sli }}
                 <div class="splide__slide" data-splide-hash="{{ $has }}">
                     <div class="backg"><img src="{{ .Params.backphoto }}" class="h-full w-full"></div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ if .Params.gradient }}
+                        {{range .Params.gradient }}{{ (index . 0) }}, {{ (index . 1) }}{{ end }}
+                        {{ else }}{{ $grad1 }}, {{ $grad2 }}{{ end }}); ">
+                    </div>
                     <div class="slide_sid">
                         <div class="py-5">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo"
                             "var(--color-primary-text)" "cla" "lh2") -}}</div>
                     </div>
                     <div class="slide_main">
+                        {{ if eq .Params.slide "normal"}}
                         <h1>{{ .Title }}</h1>
                         {{ .Content | safeHTML }}
+                        {{ else if eq .Params.slide "image-right"}}
+                        <h1>{{ .Title }}</h1>
+                        <div class="flex flex-row w-full justify-between">
+                            <div class="w-2/3 pr-10 flex-grow">
+                                {{ .Content | safeHTML }}
+                            </div>
+                            {{ $photos := .Params.photos }}
+                            {{ range $photos }}
+                            {{ $sr := index . 0 }}
+                            <div class="imgright w-1/3 flex-shrink flex-grow-0">
+                                <img class="" src="{{ $sr }}">
+                            </div>
+                            {{ end }}
+                        </div>
+                        {{ end}}
                     </div>
                 </div>
                 {{ end }}
                 {{ end }}
                 {{ end }}
                 {{ end }}
+                <div class="splide__slide">
+                    <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});"></div>
+                    {{ partial "slide-side.html" . }}
+                    <div class="px-6 pb-20">
+                        <h1 class="pb-0">Merci !</h1>
+                        <p class="text-2xl font-bold pb-20">{{ .Title }}</p>
+                        <p class="m-0 font-bold">Pierre Lévy - <a href="mailto:pierre.levy@lecnam.net"
+                                class="font-normal">pierre.levy@lecnam.net</a></p>
+                        <p class="Cnamletters"><span>C</span>onservatoire <span>n</span>ational des <span>a</span>rts et
+                            <span>m</span>étiers
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     {{ $splide_js := resources.Get "js/splide.js" | minify }}
     <script src="{{ $splide_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     {{ $splideurl_js := resources.Get "js/splide-url.js" | minify }}

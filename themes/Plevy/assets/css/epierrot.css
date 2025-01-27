@@ -2486,9 +2486,21 @@ div.splide * {
   font-size: 1.5rem;
 }
 
+div.splide div.slide_main {
+  @apply w-full;
+}
+
+div.splide a, div.splide a:visited  {
+  @apply text-epierrot;
+}
+
+div.splide a:hover  {
+  @apply bg-epierrot text-primary-bg cursor-pointer;
+}
+
 div.splide h1 {
   @apply m-0 p-0 pb-20;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 div.splide .splide__arrow svg {
@@ -2496,7 +2508,7 @@ div.splide .splide__arrow svg {
 }
 
 div.splide .splide__slide {
-  @apply relative flex flex-row justify-start items-center rounded-lg;
+  @apply relative flex flex-row justify-start items-center rounded-lg bg-transparent;
   height: calc(100vh - 2*var(--splide-padding));
 }
 
@@ -2507,7 +2519,7 @@ div.splide .splide__slide .backg {
   top: 0;
   left: 50%;
   translate: -50% 0;
-  z-index: -1;
+  z-index: -2;
   filter: blur(2px) brightness(1.2) grayscale(0.6) hue-rotate(188deg) saturate(0.8) sepia(0.22);
 }
 
@@ -2519,7 +2531,7 @@ div.splide .splide__slide .slide_main {
   @apply px-6 pb-20 max-w-screen-2xl flex-grow-0 flex-shrink;
 }
 
-div.splide .splide__slide::after {
+div.splide .splide__slide .grad {
   @apply absolute rounded-lg;
   content: ' ';
   height: 100%;
@@ -2528,7 +2540,6 @@ div.splide .splide__slide::after {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  background-image: linear-gradient(135deg, #f5f7faaa 0%, #c3cfe2 50%);
 }
 
 div.splide .splide__arrow {
@@ -2536,4 +2547,12 @@ div.splide .splide__arrow {
 }
 div.splide .splide__arrow:disabled {
   opacity: 0 !important;
+}
+
+div.splide .imgright {
+  @apply rounded-lg p-2 bg-black text-right;
+}
+
+div.splide .imgright img {
+  @apply rounded h-full object-contain;
 }

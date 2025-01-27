@@ -29,6 +29,14 @@ date: 2025-01-25T16:27:15+02:00
 frontphoto: "https://images.unsplash.com/photo-1504972090022-6edb81e4e534?q=80&w=600"
 description: "La pratique du design au travers de ses enjeux et de son histoire."
 slides: [
-    ["birth_of_design", "normal"]
+    ["design/naissance_du_design", "slide"],
+    ["design/evolution_du_design", "slide"],
+    ["Designs", "title"],
+    ["designs/wassily-armchair", "slide"],
+    ["designs/bialetti-moka", "slide"],
+    ["designs/sony-walkman", "slide"],
+    ["designs/imac-g3", "slide"],
+    ["designs/kikkoman", "slide"],
+    ["designs/google-map", "slide"]
 ]
 ---
