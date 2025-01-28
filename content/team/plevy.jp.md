@@ -1,18 +1,24 @@
 ---
-redirect: "/jp/"
+members: ["PLevy"]
 member: PLevy
 title: "Pierre Lévy"
 slug: "pierre-levy"
 chaire: true
-date: 2020-10-24T00:55:28+02:00
+date: 2025-01-28T00:55:28+02:00
 draft: false
-layout: home
+layout: member
 searchFilter: about
 pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
-description: "Pierre Lévy is a professor at the National Conservatory of Arts & Crafts, holder of the Chair of design Jean Prouvé, and member of the Dicen-IDF laboratory."
+description: "フランス・国立工芸院教授"
 frontphoto: "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg"
+photogallery:
+    image1:
+        order: 1
+        name: "Pierre Lévy"
+        src: "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg"
+        img: "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg"
 ---
 
 **レヴィ・ピエール**

@@ -1,4 +1,5 @@
 {{ define "main" }} {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
+{{if false }}
 {{ with $page }}
 <div class="pack-item w-full md:w-144" data-cat-sort="101">
     <div class="dynCadre">
@@ -42,9 +43,16 @@
 </div>
 </div>
 {{ end }}
+{{ end }}
+
+{{ $count := 0 }}
+{{ $page := $.Site.GetPage "page" "chaire.md" }}
+{{ with $page }}
+{{- partial "box.html" ( dict "context" . "cou" $count "sort" 100) -}}
+{{ end }}
 
 {{$memb := .Params.member}}
-{{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
+{{ range $fold := slice "team" "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
 {{ range readDir "content" }}
 {{ if eq .Name $fold }}
 {{ range where $.Site.Pages "Section" "in" ($fold) }}
