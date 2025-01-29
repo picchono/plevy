@@ -79,11 +79,11 @@
                         {{range .Params.gradient }}{{ (index . 0) }}, {{ (index . 1) }}{{ end }}
                         {{ else }}{{ $grad1 }}, {{ $grad2 }}{{ end }}); ">
                     </div>
-                    <div class="slide_sid">
+                    {{ if false }}<div class="slide_sid">
                         <div class="py-5">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo"
                             "var(--color-primary-text)" "cla" "lh2") -}}</div>
-                    </div>
-                    <div class="slide_main">
+                    </div>{{ end }}
+                    <div class="slide_main p-20">
                         {{ if eq .Params.slide "normal"}}
                         <h1>{{ .Title }}</h1>
                         {{ .Content | safeHTML }}
