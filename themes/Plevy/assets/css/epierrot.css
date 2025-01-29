@@ -113,16 +113,16 @@ a:hover svg {
 /* logohome */
 
 a.logohome {
-  @apply bg-primary-bg items-start w-10/12 md:w-auto py-5 transition-all duration-700 ease-in-out;
+  @apply inline-block bg-primary-bg items-start w-10/12 md:w-auto py-5 transition-all duration-700 ease-in-out;
 }
 
 a.logohome .lh,
 a.logohome .lh2 {
   @apply inline-block bg-transparent;
   content: ' ';
-  stroke: var(--color-primary-text);
+  stroke: transparent;
   stroke-dashoffset: 0;
-  fill: transparent;
+  fill: var(--color-primary-text);
   transition: all 0.7s ease-in-out;
 }
 
@@ -144,16 +144,19 @@ a.logohome .lh2 {
   0% {
     stroke-dashoffset: 2.7;
     stroke: var(--color-epierrot);
+    fill: transparent;
   }
 
   80% {
     stroke-dashoffset: 0;
     stroke: var(--color-epierrot);
+    fill: transparent;
   }
 
   100% {
     stroke-dashoffset: 0;
-    stroke: var(--color-primary-text);
+    stroke: transparent;
+    fill: var(--color-primary-text);
   }
 }
 
@@ -161,16 +164,19 @@ a.logohome .lh2 {
   0% {
     stroke-dashoffset: 569;
     stroke: var(--color-epierrot);
+    fill: transparent;
   }
 
   80% {
     stroke-dashoffset: 0;
     stroke: var(--color-epierrot);
+    fill: transparent;
   }
 
   100% {
     stroke-dashoffset: 0;
-    stroke: var(--color-primary-text);
+    stroke: transparent;
+    fill: var(--color-primary-text);
   }
 }
 
@@ -278,7 +284,7 @@ a.boxIso {
   @apply p-7 md:p-10;
 }
 
-a.boxIso:hover, .dynCadre:hover, .doclinkButton:hover {
+a.boxIso:hover, .dynCadre:hover {
   background: light-dark(#00000007, #FFFFFF07);
   border-radius: 4px;
 }
@@ -296,36 +302,12 @@ a.boxIso::after, .dynCadre::after {
   box-shadow: rgba(9,30,66,.25)0px 0 5px -2px;
 }
 
-/*
-a.boxIso::after, .dynCadre::after, .doclinkButton::after {
-  @apply absolute;
-  content: ' ';
-  height: calc(100% + 4px);
-  width: calc(100% + 4px);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -2;
-  background:
-  repeating-linear-gradient(90deg ,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-x var(--_p, 125%) 0,
-  repeating-linear-gradient(180deg,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-y 0 var(--_p, 25%),
-  repeating-linear-gradient(90deg ,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-x var(--_p, 25%) 100%,
-  repeating-linear-gradient(180deg,#0000 0 50%, light-dark(var(--color-primary-text), #1c1c1c) 0 75%) repeat-y 100% var(--_p, 125%);
-  background-size: 200% 2px, 2px 200%;
-  transition: 1s ease-in-out;
-}
-
-a.boxIso:hover::after, .dynCadre:hover::after, .doclinkButton:hover::after {
-  --_p: 75%;
-}
-*/
-
 a.doclinkButton {
-  @apply flex-row items-center justify-center w-64 p-4 transition-all duration-700 ease-in-out;
+  @apply flex-row items-center justify-center transition-all duration-700 ease-in-out;
 }
 
-.pack-item:hover a.doclinkButton {
-  @apply text-primary-text;
+a.doclinkButton:hover {
+  @apply text-epierrot bg-transparent;
 }
 
 a.doclinkButton span.doclinkIcon {
@@ -2476,14 +2458,20 @@ body {
   @apply text-red-700 font-bold capitalize;
   letter-spacing: 0.05rem;
 }
+
+
+
 /* Prez */
 
 div.splide {
   --splide-padding: 1.25rem;
+  background-color: #1c1c1c;
 }
 
 div.splide * {
   font-size: 1.5rem;
+  color: #1c1c1c;
+  fill: #1c1c1c;
 }
 
 div.splide div.slide_main {

@@ -73,10 +73,7 @@
 </div></div>{{ end }}
 {{ if .Params.link }}
 <div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="1"><div class="dynCadre">
-    {{ partial "slash.html" (dict "txt" (i18n "links")) }}
-    <div class="block">
-        {{ partial "doclink.html" . }}
-    </div>
-</div></div>
+    {{ partial "doclink.html" . }}
+</div>
 {{ end }}
 {{ end }}

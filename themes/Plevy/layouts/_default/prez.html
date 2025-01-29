@@ -9,7 +9,7 @@
 {{ $grad2 := "#c3cfe2 40%"}}
 
 
-<body id="{{ .Params.bodyclass }}" class="bg-primary-text">
+<body id="{{ .Params.bodyclass }}" style="background-color: #1c1c1c;">
     <div class="splide">
         <div class="splide__arrows">
             <button class="splide__arrow splide__arrow--prev h-2">
@@ -23,7 +23,8 @@
             <div class="splide__list">
                 <div class="splide__slide">
                     <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
-                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});"></div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});">
+                    </div>
                     {{ partial "slide-side.html" . }}
                     <div class="px-6 pb-20">
                         <h1>{{ .Title }}</h1>
@@ -60,7 +61,8 @@
                 {{ else if eq (index . 1) "title" }}
                 <div class="splide__slide" data-splide-hash="{{ $has }}">
                     <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
-                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});"></div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});">
+                    </div>
                     <div class="slide_sid">
                         <div class="py-5">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo"
                             "var(--color-primary-text)" "cla" "lh2") -}}</div>
@@ -91,11 +93,12 @@
                             <div class="w-2/3 pr-10 flex-grow">
                                 {{ .Content | safeHTML }}
                             </div>
-                            {{ $photos := .Params.photos }}
-                            {{ range $photos }}
-                            {{ $sr := index . 0 }}
-                            <div class="imgright w-1/3 flex-shrink flex-grow-0">
-                                <img class="" src="{{ $sr }}">
+                            {{ range .Params.photos }}
+                            <div class="w-1/3 flex-shrink flex-grow-0 flex flex-col">
+                                <div class="imgright">
+                                    <img class="" src="{{ index . 0 }}" title="{{ index . 1 }}">
+                                </div>
+                                <div class="text-xs px-3 py-0.5 self-start">{{ index . 1 }}</div>
                             </div>
                             {{ end }}
                         </div>
@@ -108,7 +111,8 @@
                 {{ end }}
                 <div class="splide__slide">
                     <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
-                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});"></div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});">
+                    </div>
                     {{ partial "slide-side.html" . }}
                     <div class="px-6 pb-20">
                         <h1 class="pb-0">Merci !</h1>
