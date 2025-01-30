@@ -2501,7 +2501,7 @@ div.splide .splide__slide {
 }
 
 div.splide .splide__slide .backg {
-  @apply absolute rounded-lg;
+  @apply block absolute rounded-lg;
   content: ' ';
   width: 100%;
   top: 0;
@@ -2543,4 +2543,8 @@ div.splide .imgright {
 
 div.splide .imgright img {
   @apply rounded h-full object-contain;
+}
+
+button.splide__pagination__page {
+  @apply bg-secondary-text;
 }

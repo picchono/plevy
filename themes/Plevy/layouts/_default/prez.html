@@ -7,6 +7,7 @@
 {{ $mainphoto := .Params.frontphoto }}
 {{ $grad1 := "#f5f7faaa 0%"}}
 {{ $grad2 := "#c3cfe2 40%"}}
+{{ $titl := .Title }}
 
 
 <body id="{{ .Params.bodyclass }}" style="background-color: #1c1c1c;">
@@ -23,8 +24,7 @@
             <div class="splide__list">
                 <div class="splide__slide">
                     <div class="backg"><img src="{{ $mainphoto }}" class="h-full w-full"></div>
-                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});">
-                    </div>
+                    <div class="grad" style="background-image: linear-gradient(135deg, {{ $grad1 }}, {{ $grad2 }});"></div>
                     {{ partial "slide-side.html" . }}
                     <div class="px-6 pb-20">
                         <h1>{{ .Title }}</h1>
@@ -70,11 +70,12 @@
                     <div class="slide_main p-0">
                         <h1>{{ index . 0 }}</h1>
                     </div>
+                    <div class="absolute bottom-1 left-7 text-sm">Pierre Lévy · {{ partial "icons.html" (dict "ico" "cnam" "hei" 0.8 "colo" "var(--color-primary-text)" "cla" "inline pb-0.5") -}} · <a href="mailto:pierre.levy@lecnam.net" class="text-sm">pierre.levy@lecnam.net</a> - {{ $titl }}</div>
                 </div>
                 {{ else if eq (index . 1) "slide" }}
                 {{ with $.Site.GetPage $sli }}
                 <div class="splide__slide" data-splide-hash="{{ $has }}">
-                    <div class="backg"><img src="{{ .Params.backphoto }}" class="h-full w-full"></div>
+                    <div class="backg"><img src="{{ .Params.backphoto }}" class="h-full w-full object-contain"></div>
                     <div class="grad" style="background-image: linear-gradient(135deg, {{ if .Params.gradient }}
                         {{range .Params.gradient }}{{ (index . 0) }}, {{ (index . 1) }}{{ end }}
                         {{ else }}{{ $grad1 }}, {{ $grad2 }}{{ end }}); ">
@@ -104,6 +105,7 @@
                         </div>
                         {{ end}}
                     </div>
+                    <div class="absolute bottom-1 left-7 text-sm">Pierre Lévy · {{ partial "icons.html" (dict "ico" "cnam" "hei" 0.8 "colo" "var(--color-primary-text)" "cla" "inline pb-0.5") -}} · <a href="mailto:pierre.levy@lecnam.net" class="text-sm">pierre.levy@lecnam.net</a> - {{ $titl }}</div>
                 </div>
                 {{ end }}
                 {{ end }}
@@ -144,11 +146,11 @@
     <script defer="defer">
         const qrcode = new QRCode(document.getElementById('qrcode'), {
             text: {{ .Page.Permalink }},
-        width: 500,
+            width: 500,
             height: 500,
-                colorDark: '#000',
-                    colorLight: '#fff',
-                        correctLevel: QRCode.CorrectLevel.H
+            colorDark: '#000',
+            colorLight: '#fff',
+            correctLevel: QRCode.CorrectLevel.H
         });
 
         var splide = new Splide('.splide', {
