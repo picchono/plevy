@@ -2573,3 +2573,13 @@ button.splide__pagination__page {
   @apply object-contain rounded-lg p-2 bg-primary-bg;
   height: 15vh;
 }
+
+ul.splide__pagination {
+  @apply flex-row;
+  left: auto;
+}
+button.splide__pagination__page {
+  font-size: 0.6vw;
+  text-align: right;
+  margin: 0 !important;
+}
