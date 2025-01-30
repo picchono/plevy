@@ -10,7 +10,7 @@
 {{ $titl := .Title }}
 
 
-<body id="{{ .Params.bodyclass }}" style="background-color: #1c1c1c;">
+<body id="prez" style="background-color: #1c1c1c;">
     <div class="splide">
         <div class="splide__arrows">
             <button class="splide__arrow splide__arrow--prev h-2">
@@ -33,7 +33,7 @@
                         <p class="Cnamletters"><span>C</span>onservatoire <span>n</span>ational des <span>a</span>rts et
                             <span>m</span>étiers
                         </p>
-                        <div id="qrcode" class="h-40 w-40 p-2 bg-white rounded-lg absolute bottom-10"></div>
+                        <div id="qrcode" class="p-2 bg-white rounded-lg absolute bottom-10"></div>
                     </div>
                 </div>
                 {{ if .Params.slides }}
@@ -70,7 +70,7 @@
                     <div class="slide_main p-0">
                         <h1>{{ index . 0 }}</h1>
                     </div>
-                    <div class="absolute bottom-1 left-7 text-sm">Pierre Lévy · {{ partial "icons.html" (dict "ico" "cnam" "hei" 0.8 "colo" "var(--color-primary-text)" "cla" "inline pb-0.5") -}} · <a href="mailto:pierre.levy@lecnam.net" class="text-sm">pierre.levy@lecnam.net</a> - {{ $titl }}</div>
+                    <div class="absolute bottom-1 left-7 petitTxt">Pierre Lévy | Cnam · <a href="mailto:pierre.levy@lecnam.net" class="petitTxt">pierre.levy@lecnam.net</a> - {{ $titl }}</div>
                 </div>
                 {{ else if eq (index . 1) "slide" }}
                 {{ with $.Site.GetPage $sli }}
@@ -84,7 +84,7 @@
                         <div class="py-5">{{ partial "icons.html" (dict "ico" "jprouve" "hei" 2 "colo"
                             "var(--color-primary-text)" "cla" "lh2") -}}</div>
                     </div>{{ end }}
-                    <div class="slide_main p-20">
+                    <div class="slide_main">
                         {{ if eq .Params.slide "normal"}}
                         <h1>{{ .Title }}</h1>
                         {{ .Content | safeHTML }}
@@ -99,13 +99,13 @@
                                 <div class="imgright">
                                     <img class="" src="{{ index . 0 }}" title="{{ index . 1 }}">
                                 </div>
-                                <div class="text-xs px-3 py-0.5 self-start">{{ index . 1 }}</div>
+                                <div class="petitTxt px-3 py-0.5 self-start">{{ index . 1 }}</div>
                             </div>
                             {{ end }}
                         </div>
                         {{ end}}
                     </div>
-                    <div class="absolute bottom-1 left-7 text-sm">Pierre Lévy · {{ partial "icons.html" (dict "ico" "cnam" "hei" 0.8 "colo" "var(--color-primary-text)" "cla" "inline pb-0.5") -}} · <a href="mailto:pierre.levy@lecnam.net" class="text-sm">pierre.levy@lecnam.net</a> - {{ $titl }}</div>
+                    <div class="absolute bottom-1 left-7 petitTxt">Pierre Lévy | Cnam · <a href="mailto:pierre.levy@lecnam.net" class="petitTxt">pierre.levy@lecnam.net</a> - {{ $titl }}</div>
                 </div>
                 {{ end }}
                 {{ end }}

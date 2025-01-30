@@ -165,9 +165,9 @@
       {{ end }}
       <div class="flex flex-row flex-wrap mt-10">
          <div class="w-1/6 p-0 pr-6">&nbsp;</div>
-         <div class="w-5/6 pl-6 italic text-xs">{{- i18n "Updates" }}: <a href="{{- .Permalink -}}" rel="noreferrer">{{ .Permalink }}</a></div>
+         <div class="w-5/6 pl-6 italic petitTxt">{{- i18n "Updates" }}: <a href="{{- .Permalink -}}" rel="noreferrer">{{ .Permalink }}</a></div>
          <div class="w-1/6 p-0 pr-6">&nbsp;</div>
-         <div class="w-5/6 pl-6 italic text-xs">{{- i18n "CvComplete" }}: {{ with .Site.GetPage "cvcomplete" }}<a href='{{- .Permalink -}}' rel="noreferrer">{{- .Permalink -}}</a></div></div>{{ end }}
+         <div class="w-5/6 pl-6 italic petitTxt">{{- i18n "CvComplete" }}: {{ with .Site.GetPage "cvcomplete" }}<a href='{{- .Permalink -}}' rel="noreferrer">{{- .Permalink -}}</a></div></div>{{ end }}
       </div>
    </main>
 </body>

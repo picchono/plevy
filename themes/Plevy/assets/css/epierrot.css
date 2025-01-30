@@ -435,7 +435,7 @@ strong>a {
 }
 
 span.japanese {
-  @apply text-xs;
+  @apply petitTxt;
 }
 
 .framebox {
@@ -1383,7 +1383,7 @@ a.linkBox:hover .titleLink {
 }
 
 .linkBox .imgLink img {
-  @apply w-28 h-full object-cover rounded grayscale text-xs;
+  @apply w-28 h-full object-cover rounded grayscale petitTxt;
 }
 
 .linkBox:hover .imgLink img {
@@ -2463,19 +2463,33 @@ body {
 
 /* Prez */
 
+#prez body {
+  aspect-ratio: 16 / 9;
+  margin: auto;
+}
 div.splide {
-  --splide-padding: 1.25rem;
+  --splide-padding: 2vw;
   background-color: #1c1c1c;
 }
 
-div.splide * {
-  font-size: 1.3rem;
+div.splide *, div.splide p  {
+  font-size: 1.2vw;
   color: #1c1c1c;
   fill: #1c1c1c;
 }
 
+div.splide .petitTxt {
+  font-size: 0.9vw;
+}
+
+div.splide .miniTxt {
+  font-size: 0.6vw;
+}
+
 div.splide div.slide_main {
   @apply w-full;
+  max-width: none !important;
+  padding: 5vw !important;
 }
 
 div.splide a, div.splide a:visited  {
@@ -2488,11 +2502,11 @@ div.splide a:hover  {
 
 div.splide h1 {
   @apply m-0 p-0 pb-20;
-  font-size: 1.8rem;
+  font-size: 2vw;
 }
 
 div.splide .splide__arrow svg {
-  height: 1.2rem;
+  height: 0.8vw;
 }
 
 div.splide .splide__slide {
@@ -2547,4 +2561,15 @@ div.splide .imgright img {
 
 button.splide__pagination__page {
   @apply bg-secondary-text;
+}
+
+#prez  #qrcode {
+  width: 12vw;
+  height: 12vw;
+  margin-bottom: 3vw;
+}
+
+#prez .petiteImg {
+  @apply object-contain rounded-lg p-2 bg-primary-bg;
+  height: 15vh;
 }

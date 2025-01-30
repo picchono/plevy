@@ -16,7 +16,7 @@
             {{ end}}
             <div class='{{ if isset .context.Params "frontphoto" }}pl-3{{ else }}pl-2{{ end }}'>
                 <h5 class='block w-full font-bold text-base m-0'>{{- .context.Title |safeHTML -}}</h5>
-                <div class="inline-block text-xs">{{ if eq .context.Params.layout "member" }}
+                <div class="inline-block petitTxt">{{ if eq .context.Params.layout "member" }}
                     {{ $parts := .context.Params.description }}{{ $splitParts := split $parts "," }}{{ range $index, $part := $splitParts }}{{ if eq $index 0 }}{{ $part }}{{ end }}{{ end }}
                 {{ else }}{{ dateFormat "02 Jan 2006" .context.Date }} | <b>
                     {{ $str := replaceRE "(s)$" "" (i18n .context.Section) }}{{ $str }}
@@ -25,7 +25,7 @@
         </div>
         {{ if isset .context.Params "photocredit" }}
                 <div data-target="{{ .context.Params.photocredit.link | absURL }}"
-                    title="{{ .context.Params.photocredit.cred }}" class="credphoto text-xs py-1">
+                    title="{{ .context.Params.photocredit.cred }}" class="credphoto petitTxt py-1">
                     &copy;{{ .context.Params.photocredit.cred -}}</div>
                 {{ end }}
         <div class="w-full flex flex-col">

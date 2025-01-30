@@ -1,9 +1,9 @@
 <div class="flex flex-col p-0 my-10">
     {{ if eq (.Get 0) "youtube" }}
     <div class="videoFrame w-full">
-        <div class="py-0 px-1 text-xs italic">By playing this movie, you accept
+        <div class="py-0 px-1 petitTxt italic">By playing this movie, you accept
             the <a href="https://policies.google.com/" target="_blank" rel="noreferrer"
-                aria-label="Policies and terms of Google" class="text-xs">Policies & Terms
+                aria-label="Policies and terms of Google" class="petitTxt">Policies & Terms
                 of Google</a>.</div>
         <div class="embed-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/{{ .Get 1 }}" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -20,9 +20,9 @@
     {{ end }}
     {{if eq (.Get 0) "vimeo" }}
     <div class="videoFrame w-full">
-        <div class="py-0 px-1 text-xs italic">By playing this movie, you accept
+        <div class="py-0 px-1 petitTxt italic">By playing this movie, you accept
             the <a href="https://vimeo.com/terms" target="_blank" rel="noreferrer"
-                aria-label="Policies and terms of Vimeo" class="text-xs">Terms of
+                aria-label="Policies and terms of Vimeo" class="petitTxt">Terms of
                 Vimeo</a>.</div>
         <div class="embed-wrapper"><iframe src="https://player.vimeo.com/video/{{ .Get 1 }}" width="640" height="360"
                 frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="rounded"></iframe></div>

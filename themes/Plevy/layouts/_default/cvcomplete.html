@@ -62,9 +62,9 @@
             {{ if isset . "minors" }}
             <div class="col-start-2 col-span-6 mt-4 mb-10">
                {{ range sort .minors "start" "desc" }}
-               <span class="text-xs minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
+               <span class="petitTxt minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
                {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
-                  class="comment text-xs">{{ .comment |safeHTML }}</span>{{ end }}</span>
+                  class="comment petitTxt">{{ .comment |safeHTML }}</span>{{ end }}</span>
                {{ end }}
             </div>
             {{ end }}
@@ -94,9 +94,9 @@
             {{ if isset . "minors" }}
             <div class="col-start-2 col-span-6 mt-4 mb-10">
                {{ range sort .minors "start" "desc" }}
-               <span class="text-xs minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
+               <span class="petitTxt minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
                {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
-                  class="comment text-xs">{{ .comment |safeHTML }}</span>{{ end }}</span>
+                  class="comment petitTxt">{{ .comment |safeHTML }}</span>{{ end }}</span>
                {{ end }}
             </div>
             {{ end }}
