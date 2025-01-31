@@ -2483,7 +2483,7 @@ div.splide .petitTxt {
 }
 
 div.splide .miniTxt {
-  font-size: 0.6vw;
+  font-size: 0.4vw;
 }
 
 div.splide div.slide_main {
@@ -2553,6 +2553,8 @@ div.splide .splide__arrow:disabled {
 
 div.splide .imgright {
   @apply rounded-lg p-2 bg-black text-right;
+  max-height: 70vh;
+  width: auto;
 }
 
 div.splide .imgright img {

@@ -29,7 +29,7 @@ date: 2025-01-25T16:27:15+02:00
 frontphoto: "https://images.unsplash.com/photo-1504972090022-6edb81e4e534?q=80&w=600"
 description: "La pratique du design au travers de ses enjeux et de son histoire."
 slides: [
-    ["Une histoire du design", "title"],
+    ["Au début...", "title"],
     ["design-histoire/naissance_du_design", "slide"],
     ["design-histoire/design-grandes-epoques", "slide"],
     ["design-histoire/design-revolution_industrielle", "slide"],
