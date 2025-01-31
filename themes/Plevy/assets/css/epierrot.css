@@ -2454,7 +2454,7 @@ body {
   }
 }
 
-.Cnamletters>span {
+p.cnamletters span {
   @apply text-red-700 font-bold capitalize;
   letter-spacing: 0.05rem;
 }
