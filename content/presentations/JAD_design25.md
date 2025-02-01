@@ -47,7 +47,6 @@ slides: [
     ["design-epoques/design-pop", "slide"],
     ["design-epoques/design-alternatif", "slide"],
     ["design-epoques/design-revolution_numerique", "slide"],
-    ["design-epoques/design-global", "slide"],
     ["design-epoques/design-services", "slide"],
     ["design-epoques/design-beyond", "slide"],
     ["design-histoire/reflecting_on_design_history", "slide"],

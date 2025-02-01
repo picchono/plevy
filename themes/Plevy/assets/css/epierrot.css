@@ -2573,12 +2573,13 @@ div.splide .splide__arrow:disabled {
 }
 
 div.splide .imgright {
-  @apply rounded-lg p-2 bg-black text-right w-fit;
+  @apply rounded-lg p-1 text-right w-fit;
   max-height: 50vh;
+  box-shadow: #000 0px 0px 5px 4px;
 }
 
 div.splide .imgright img {
-  @apply rounded h-full object-contain;
+  @apply rounded-md h-full object-contain;
 }
 
 button.splide__pagination__page {
@@ -2586,8 +2587,9 @@ button.splide__pagination__page {
 }
 
 #prez .petiteImg {
-  @apply object-contain rounded-lg p-2 bg-primary-bg;
+  @apply object-contain rounded-lg p-1 bg-primary-bg;
   height: 15vh;
+  box-shadow: #000 0 0 4px 2px;
 }
 
 ul.splide__pagination {
