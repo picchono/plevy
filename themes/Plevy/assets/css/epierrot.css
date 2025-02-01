@@ -2481,7 +2481,7 @@ div.splide .splide__slide {
 }
 
 div.splide .splide__slide .slideContent {
-  @apply relative w-full h-full flex flex-col justify-around px-20 py-10 rounded-lg;
+  @apply relative w-full h-full flex flex-col justify-start px-20 py-10 rounded-lg;
 }
 
 div.splide .splide__slide .backg {
@@ -2508,8 +2508,12 @@ div.splide .splide__slide .grad {
 }
 
 div.splide .splide__slide .slideFooter {
-  @apply w-full flex-grow-0 flex-shrink-0 text-white px-2;
-  height: 2vh;
+  @apply w-full flex-grow-0 flex-shrink-0 px-2;
+}
+
+div.splide .splide__slide .slideFooter, div.splide .splide__slide .slideFooter * {
+  @apply text-white;
+  font-size: 1.5vh;
 }
 
 .slideFooter>a, .slideFooter>a:visited {
@@ -2523,8 +2527,9 @@ div.splide *, div.splide p  {
 }
 
 div.splide h1 {
-  @apply m-0 p-0 pb-20;
   font-size: 2vw;
+  padding: 0 !important;
+  margin: 3vh 0 7vh 0 !important;
 }
 
 div.splide a, div.splide a:visited  {
@@ -2537,15 +2542,11 @@ div.splide a:hover  {
 
 
 div.splide .petitTxt, div.splide .petitTxt * {
-  font-size: 0.8vw;
+  font-size: 1.6vh;
 }
 
 div.splide .miniTxt, div.splide .miniTxt * {
-  font-size: 0.7vw;
-}
-
-div.splide .footTxt {
-  font-size: 0.9vw;
+  font-size: 1.2vh;
 }
 
 #prez #qrcode {
@@ -2568,9 +2569,8 @@ div.splide .splide__arrow:disabled {
 }
 
 div.splide .imgright {
-  @apply rounded-lg p-2 bg-black text-right;
+  @apply rounded-lg p-2 bg-black text-right w-fit;
   max-height: 50vh;
-  width: auto;
 }
 
 div.splide .imgright img {
@@ -2591,7 +2591,11 @@ ul.splide__pagination {
   left: auto;
 }
 button.splide__pagination__page {
-  font-size: 0.6vw;
+  width: 0.6vh;
+  height: 0.6vh;
   text-align: right;
   margin: 0 !important;
+}
+button.splide__arrow {
+  width: 0.7vw;
 }

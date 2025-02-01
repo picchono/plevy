@@ -28,10 +28,24 @@
                             <p class="cnamletters"><span>C</span>onservatoire <span>n</span>ational des
                                 <span>a</span>rts et <span>m</span>étiers
                             </p>
+                            {{ if .Params.collaboration }}
+                            <div class="flex flex-row flex-wrap justify-start mt-10">
+                                {{ range sort .Params.collaboration }}
+                                <a href="{{ .web }}" target="_blank" class="collab">
+                                    {{ if .colo }}
+                                    {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+                                    {{else}}
+                                    {{ partial "icons.html" (dict "ico" .logo "hei" .heig) -}}
+                                    {{ end }}
+                                </a>
+                                {{ end }}
+                            </div>
+                            {{ end }}
                             <div id="qrcode" class="p-2 bg-white rounded-lg absolute bottom-10"></div>
                         </div>
+
                     </div>
-                    <div class="slideFooter footTxt">{{ $pagNumb }}|<span class="opacity-50 footTxt">{{ $slid | len }}</span> · Pierre
+                    <div class="slideFooter">{{ $pagNumb }}|<span class="opacity-50">{{ $slid | len }}</span> · Pierre
                         Lévy |
                         Cnam · <a href="mailto:pierre.levy@lecnam.net" class="footTxt">pierre.levy@lecnam.net</a> · {{
                         $titl }}
@@ -68,15 +82,15 @@
                         {{ else if eq .Params.slide "image-right"}}
                         <h1>{{ .Title }}</h1>
                         <div class="flex flex-row w-full justify-between">
-                            <div class="w-2/3 pr-10 flex-grow">
+                            <div class="w-2/3 flex-grow pr-10">
                                 {{ .Content | safeHTML }}
                             </div>
                             {{ range .Params.photos }}
-                            <div class="w-1/3 flex-shrink flex-grow-0 flex flex-col">
+                            <div class="w-1/3 flex-shrink flex flex-col">
                                 <div class="imgright">
-                                    <img class="" src="{{ index . 0 }}" title="{{ index . 1 }}">
+                                    <img class="object-contain" src="{{ index . 0 }}" title="{{ index . 1 }}">
                                 </div>
-                                <div class="footTxt px-3 py-0.5 self-start">{{ index . 1 }}</div>
+                                <div class="miniTxt px-3 py-0.5 self-start">{{ index . 1 }}</div>
                             </div>
                             {{ end }}
                         </div>
@@ -84,8 +98,9 @@
                         {{ end }}
                         {{ end }}
                     </div>
-                    <div class="slideFooter footTxt">{{ $pagNumb }}|<span class="opacity-50 footTxt">{{ $slid | len }}</span> · Pierre
-                        Lévy | Cnam · <a href="mailto:pierre.levy@lecnam.net" class="footTxt">pierre.levy@lecnam.net</a> · {{ $titl }}
+                    <div class="slideFooter">{{ $pagNumb }}|<span class="opacity-50">{{ $slid | len }}</span> · Pierre
+                        Lévy | Cnam · <a href="mailto:pierre.levy@lecnam.net" class="footTxt">pierre.levy@lecnam.net</a>
+                        · {{ $titl }}
                     </div>
                 </div>
                 {{ end }}
@@ -105,8 +120,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="slideFooter footTxt">{{ $pagNumb }}|<span class="opacity-50 footTxt">{{ $slid | len }}</span> · Pierre
-                        Lévy | Cnam · <a href="mailto:pierre.levy@lecnam.net" class="footTxt">pierre.levy@lecnam.net</a> · {{ $titl }}
+                    <div class="slideFooter">{{ $pagNumb }}|<span class="opacity-50">{{ $slid | len }}</span> · Pierre
+                        Lévy | Cnam · <a href="mailto:pierre.levy@lecnam.net" class="footTxt">pierre.levy@lecnam.net</a>
+                        · {{ $titl }}
                     </div>
                 </div>
                 {{ end }}
