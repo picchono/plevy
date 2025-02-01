@@ -2521,13 +2521,17 @@ div.splide .splide__slide .slideFooter, div.splide .splide__slide .slideFooter *
 }
 
 div.splide *, div.splide p  {
-  font-size: 1.2vw;
+  font-size: 2.2vh;
   color: #1c1c1c;
   fill: #1c1c1c;
 }
 
+div.splide p  {
+  margin-bottom: 1.8vh;
+}
+
 div.splide h1 {
-  font-size: 2vw;
+  font-size: 3vh;
   padding: 0 !important;
   margin: 3vh 0 7vh 0 !important;
 }
