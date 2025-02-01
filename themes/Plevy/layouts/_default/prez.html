@@ -73,7 +73,7 @@
                             class="w-full h-full object-contain" frameborder="0" allow="autoplay; fullscreen"
                             allowfullscreen></iframe>
                         {{ else if eq (index . 1) "title" }}
-                        <h1>{{ index . 0 }}</h1>
+                        <div class="w-full h-full flex justify-center items-center"><h1>{{ index . 0 }}</h1></div>
                         {{ else if eq (index . 1) "slide" }}
                         {{ with $.Site.GetPage $sli }}
                         {{ if eq .Params.slide "normal"}}
