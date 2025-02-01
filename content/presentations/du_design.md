@@ -9,6 +9,21 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
+collaboration:
+    partner1:
+        logo: jad
+        short: JAD
+        name: "JAD"
+        web: "https://le-jad.fr/"
+        colo: "#000000"
+        heig: 1.5
+    partner2:
+        logo: cnam
+        short: Cnam
+        name: "Conservatoire national des Arts et Métiers"
+        web: "https://www.cnam.fr/"
+        colo: "#c1002a"
+        heig: 1
 chaire: true
 date: 2024-12-19T16:27:15+02:00
 frontphoto: "https://images.unsplash.com/photo-1680813999409-b6109c96e554?q=80&w=600"

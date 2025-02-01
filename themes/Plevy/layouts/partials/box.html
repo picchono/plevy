@@ -50,24 +50,11 @@
             {{ if .context.Params.collaboration }}
             {{ $inst := .context.Params.institutiontution.logo }}
             <p class="flex flex-row flex-wrap pt-10 px-2">
-                {{ if ne .context.Params.layout "presentation"}}
                 {{ range sort .context.Params.collaboration }}
                 {{ if ne $inst .logo }}
                 <span class="mr-4 mb-2 collabicon">
                     {{ partial "icons.html" (dict "ico" .logo "hei" 0.8) -}}
                 </span>
-                {{ end }}
-                {{ end }}
-                {{ else }}
-                {{ with .context.Params.collaboration}}
-                {{ range . }}
-                {{ if ne $inst ( index . 0 ) }}
-                <span class="p-2 collabicon">
-                    {{ partial "icons.html" (dict "ico" ( index . 0 ) "hei" 1.2)
-                    }}
-                </span>
-                {{ end }}
-                {{ end }}
                 {{ end }}
                 {{ end }}
             </p>

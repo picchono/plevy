@@ -2463,74 +2463,37 @@ p.cnamletters span {
 
 /* Prez */
 
-#prez body {
-  aspect-ratio: 16 / 9;
-  margin: auto;
-}
-div.splide {
-  --splide-padding: 2vw;
+body#prez {
+  width: 100vw;
+  height: 100vh;
   background-color: #1c1c1c;
+  --splide-padding: 2vw;
 }
 
-div.splide *, div.splide p  {
-  font-size: 1.2vw;
-  color: #1c1c1c;
-  fill: #1c1c1c;
-}
-
-div.splide .petitTxt {
-  font-size: 0.9vw;
-}
-
-div.splide .miniTxt {
-  font-size: 0.4vw;
-}
-
-div.splide div.slide_main {
-  @apply w-full;
-  max-width: none !important;
-  padding: 5vw !important;
-}
-
-div.splide a, div.splide a:visited  {
-  @apply text-epierrot;
-}
-
-div.splide a:hover  {
-  @apply bg-epierrot text-primary-bg cursor-pointer;
-}
-
-div.splide h1 {
-  @apply m-0 p-0 pb-20;
-  font-size: 2vw;
-}
-
-div.splide .splide__arrow svg {
-  height: 0.8vw;
+div.splide {
+  height: 100%;
 }
 
 div.splide .splide__slide {
-  @apply relative flex flex-row justify-start items-center rounded-lg bg-transparent;
-  height: calc(100vh - 2*var(--splide-padding));
+  @apply relative flex flex-col rounded-lg;
+  height: 100%;
+  width: 100%;
+}
+
+div.splide .splide__slide .slideContent {
+  @apply relative w-full h-full flex flex-col justify-around px-20 py-10 rounded-lg;
 }
 
 div.splide .splide__slide .backg {
   @apply block absolute rounded-lg;
   content: ' ';
   width: 100%;
-  top: 0;
+  height: 100%;
+  top: 50%;
   left: 50%;
-  translate: -50% 0;
+  translate: -50% -50%;
   z-index: -2;
   filter: blur(2px) brightness(1.2) grayscale(0.6) hue-rotate(188deg) saturate(0.8) sepia(0.22);
-}
-
-div.splide .splide__slide .slide_sid {
-  @apply px-24 flex-grow-0 flex-shrink-0;
-}
-
-div.splide .splide__slide .slide_main {
-  @apply px-6 pb-20 max-w-screen-2xl flex-grow-0 flex-shrink;
 }
 
 div.splide .splide__slide .grad {
@@ -2544,6 +2507,59 @@ div.splide .splide__slide .grad {
   z-index: -1;
 }
 
+div.splide .splide__slide .slideFooter {
+  @apply w-full flex-grow-0 flex-shrink-0 text-white px-2;
+  height: 2vh;
+}
+
+.slideFooter>a, .slideFooter>a:visited {
+  @apply text-white;
+}
+
+div.splide *, div.splide p  {
+  font-size: 1.2vw;
+  color: #1c1c1c;
+  fill: #1c1c1c;
+}
+
+div.splide h1 {
+  @apply m-0 p-0 pb-20;
+  font-size: 2vw;
+}
+
+div.splide a, div.splide a:visited  {
+  @apply text-epierrot;
+}
+
+div.splide a:hover  {
+  @apply bg-epierrot text-primary-bg cursor-pointer;
+}
+
+
+div.splide .petitTxt, div.splide .petitTxt * {
+  font-size: 0.8vw;
+}
+
+div.splide .miniTxt, div.splide .miniTxt * {
+  font-size: 0.7vw;
+}
+
+div.splide .footTxt {
+  font-size: 0.9vw;
+}
+
+#prez #qrcode {
+  width: 15vh;
+}
+
+div.splide .splide__slide .slide_sid {
+  @apply px-24 flex-grow-0 flex-shrink-0;
+}
+
+div.splide .splide__slide .slide_main {
+  @apply px-6 pb-20 max-w-screen-2xl flex-grow-0 flex-shrink;
+}
+
 div.splide .splide__arrow {
   background: transparent !important;
 }
@@ -2553,7 +2569,7 @@ div.splide .splide__arrow:disabled {
 
 div.splide .imgright {
   @apply rounded-lg p-2 bg-black text-right;
-  max-height: 70vh;
+  max-height: 50vh;
   width: auto;
 }
 
@@ -2563,12 +2579,6 @@ div.splide .imgright img {
 
 button.splide__pagination__page {
   @apply bg-secondary-text;
-}
-
-#prez  #qrcode {
-  width: 12vw;
-  height: 12vw;
-  margin-bottom: 3vw;
 }
 
 #prez .petiteImg {
