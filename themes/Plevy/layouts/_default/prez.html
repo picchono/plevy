@@ -5,8 +5,8 @@
 {{- partial "head.html" . -}}
 
 {{ $mainphoto := .Params.frontphoto }}
-{{ $grad1 := "#abbaabdd 0%"}}
-{{ $grad2 := "#ffffff 50%"}}
+{{ $grad1 := "#C9D6FFCF 0%"}}
+{{ $grad2 := "#FFFFFF 50%"}}
 
 {{ $titl := .Title }}
 {{ $pagNumb := 0 }}
@@ -91,7 +91,7 @@
                                 <div class="imgright">
                                     <img class="object-contain" src="{{ index . 0 }}" title="{{ index . 1 }}">
                                 </div>
-                                <div class="miniTxt px-3 py-0.5 self-start">{{ index . 1 }}</div>
+                                <div class="miniTxt px-3 py-1 self-start">{{ index . 1 }}</div>
                             </div>
                             {{ end }}
                         </div>
