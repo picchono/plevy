@@ -53,7 +53,7 @@ textarea::placeholder {
 *,
 html,
 body {
-  font-size: 18px;
+  font-size: 1rem;
   font-stretch: 100%;
   letter-spacing: 0.01rem;
   line-height: var(--lineHeight);
@@ -64,7 +64,7 @@ body {
 }
 
 body {
-  @apply bg-primary-bg text-primary-text w-auto mx-auto min-h-screen overflow-x-hidden md:overflow-x-auto p-5;
+  @apply bg-primary-bg text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden md:overflow-x-auto p-5;
 }
 
 body {
@@ -286,14 +286,14 @@ a.boxIso {
 
 a.boxIso:hover, .dynCadre:hover {
   background: light-dark(#00000007, #FFFFFF07);
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 a.boxIso::after, .dynCadre::after {
   @apply absolute rounded;
   content: ' ';
-  height: calc(100% + 4px);
-  width: calc(100% + 4px);
+  height: calc(100% + .25rem);
+  width: calc(100% + .25rem);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -530,8 +530,8 @@ button {
 }
 
 .open .bar1 {
-  -webkit-transform: rotate(-45deg) tranzinc(-5px, 4px);
-  transform: rotate(-45deg) tranzinc(-5px, 4px);
+  -webkit-transform: rotate(-45deg) tranzinc(-5px, .25rem);
+  transform: rotate(-45deg) tranzinc(-5px, .25rem);
 }
 
 .open .bar2 {
@@ -539,8 +539,8 @@ button {
 }
 
 .open .bar3 {
-  -webkit-transform: rotate(45deg) tranzinc(-5px, 4px);
-  transform: rotate(45deg) tranzinc(-5px, -4px);
+  -webkit-transform: rotate(45deg) tranzinc(-5px, .25rem);
+  transform: rotate(45deg) tranzinc(-5px, -.25rem);
 }
 
 /* menu */
@@ -1212,7 +1212,7 @@ canvas#bgirreg2in {
   left: 15px;
   bottom: 10px;
   width: 22px;
-  height: 4px;
+  height: .25rem;
   background: #8d8d8d;
 }
 
@@ -1922,7 +1922,7 @@ body {
 
 .markdown-body .anchor {
   float: left;
-  padding-right: 4px;
+  padding-right: .25rem;
   margin-left: -20px;
   line-height: 1;
 }
