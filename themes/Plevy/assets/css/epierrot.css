@@ -2511,19 +2511,6 @@ div.splide .splide__slide .grad {
   z-index: -1;
 }
 
-div.splide .splide__slide .slideFooter {
-  @apply w-full flex-grow-0 flex-shrink-0 px-2;
-}
-
-div.splide .splide__slide .slideFooter, div.splide .splide__slide .slideFooter * {
-  @apply text-white;
-  font-size: 1.5vh;
-}
-
-.slideFooter>a, .slideFooter>a:visited {
-  @apply text-white;
-}
-
 div.splide *, div.splide p  {
   font-size: 2.2vh;
   color: #1c1c1c;
@@ -2548,6 +2535,22 @@ div.splide a:hover  {
   @apply bg-epierrot text-primary-bg cursor-pointer;
 }
 
+div.splide .splide__slide .slideFooter {
+  @apply w-full flex-grow-0 flex-shrink-0 px-2;
+}
+
+div.splide .splide__slide .slideFooter, div.splide .splide__slide .slideFooter * {
+  @apply text-white;
+  font-size: 1.5vh;
+}
+
+.slideFooter>a, .slideFooter>a:visited {
+  @apply text-white;
+}
+
+div.splide .splide__slide .slideFooter>span {
+  @apply opacity-50;
+}
 
 div.splide .petitTxt, div.splide .petitTxt * {
   font-size: 1.6vh;
