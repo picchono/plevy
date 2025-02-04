@@ -2536,7 +2536,7 @@ div.splide a:hover  {
 }
 
 div.splide .splide__slide .slideFooter {
-  @apply w-full flex-grow-0 flex-shrink-0 px-2;
+  @apply w-full flex-grow-0 flex-shrink-0 px-2 flex justify-between w-full;
 }
 
 div.splide .splide__slide .slideFooter, div.splide .splide__slide .slideFooter * {
@@ -2544,12 +2544,18 @@ div.splide .splide__slide .slideFooter, div.splide .splide__slide .slideFooter *
   font-size: 1.5vh;
 }
 
-.slideFooter>a, .slideFooter>a:visited {
+div.splide .splide__slide .slideFooter>a, div.splide .splide__slide .slideFooter>a:visited {
   @apply text-white;
 }
 
-div.splide .splide__slide .slideFooter>span {
+div.splide .splide__slide .slideFooter span {
   @apply opacity-50;
+}
+
+div.splide .splide__slide .slideFooter .closeIcon {
+  @apply pb-0.5 inline mb-2;
+  fill: white;
+  stroke: white;
 }
 
 div.splide .petitTxt, div.splide .petitTxt * {
