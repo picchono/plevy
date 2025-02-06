@@ -82,11 +82,11 @@
                         <div class="backg"><img src="{{ .Params.backphoto }}" class="h-full w-full"></div>
                         {{ if eq .Params.slide "normal"}}
                         <h1>{{ .Title }}</h1>
-                        <div>{{ .Content | safeHTML }}</div>
+                        <div style="padding-right:20vw">{{ .Content | safeHTML }}</div>
                         {{ else if eq .Params.slide "image-right"}}
                         <h1>{{ .Title }}</h1>
                         <div class="flex flex-row w-full justify-between">
-                            <div class="w-2/3 flex-grow pr-10">
+                            <div class="w-2/3 flex-grow" style="padding-right:10vw">
                                 {{ .Content | safeHTML }}
                             </div>
                             {{ range .Params.photos }}

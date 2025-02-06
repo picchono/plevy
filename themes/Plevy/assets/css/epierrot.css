@@ -2482,7 +2482,7 @@ div.splide .splide__slide {
 
 div.splide .splide__slide .slideContent {
   @apply relative w-full h-full flex flex-col justify-start rounded-lg;
-  padding: 6vh 4vw;
+  padding: 6vh 6vw;
 }
 
 div.splide .splide__slide .backg {
