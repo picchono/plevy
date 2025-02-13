@@ -3,29 +3,29 @@
     data-date="{{ .context.Date }}"{{if eq .context.Params.front 1 }} data-front="1"{{ else }} data-front="0"{{ end }}
     data-section="{{ .context.Section  }}">
     <div class="invisible abolute h-0 w-0">{{ .context.Section }} {{ htmlUnescape (plainify .context.Content) }} {{ .context.Params.Date }}</div>
-    <a class="boxIso"
-        href="{{ .context.Permalink }}">
+    <a class="boxIso{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}">
+        <div class="boxBgd"></div>
         <div class="flex flex-row">
             {{ if isset .context.Params "frontphoto" }}
-            <div class='blend-plevy flex-grow-0 flex-shrink-0'><img src="" data-toset="
+            <div class='blendPhoto flex-grow-0 flex-shrink-0'><img src="" data-toset="
                     {{- if .context.Params.frontphotomini }}{{ .context.Params.frontphotomini | absURL }}
                     {{ else }}{{ .context.Params.frontphoto | absURL }}{{ end -}}"
                     class="imag imgBox" alt="{{ .context.Params.title }}" width="500"
                     height="240" />
+                    <div class="imagFront"></div>
             </div>
             {{ end}}
             <div class='{{ if isset .context.Params "frontphoto" }}pl-3{{ else }}pl-2{{ end }}'>
                 <h5 class='block w-full font-bold text-base m-0'>{{- .context.Title |safeHTML -}}</h5>
-                <div class="inline-block petitTxt">{{ if eq .context.Params.layout "member" }}
+                <div class="inline-block text-sm">{{ if eq .context.Params.layout "member" }}
                     {{ $parts := .context.Params.description }}{{ $splitParts := split $parts "," }}{{ range $index, $part := $splitParts }}{{ if eq $index 0 }}{{ $part }}{{ end }}{{ end }}
-                {{ else }}{{ dateFormat "02 Jan 2006" .context.Date }} | <b>
-                    {{ $str := replaceRE "(s)$" "" (i18n .context.Section) }}{{ $str }}
+                {{ else }}{{ dateFormat "02 Jan 2006" .context.Date }} | <b class="sectionTitle">{{ $str := replaceRE "(s)$" "" (i18n .context.Section) }}{{ $str }}
                 </b>{{ end }}</div>
             </div>
         </div>
         {{ if isset .context.Params "photocredit" }}
                 <div data-target="{{ .context.Params.photocredit.link | absURL }}"
-                    title="{{ .context.Params.photocredit.cred }}" class="credphoto petitTxt py-1">
+                    title="{{ .context.Params.photocredit.cred }}" class="credphoto text-xs py-1">
                     &copy;{{ .context.Params.photocredit.cred -}}</div>
                 {{ end }}
         <div class="w-full flex flex-col">

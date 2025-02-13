@@ -1,8 +1,24 @@
 {
     "description": "Projets",
-    "totalfinance": "~3m€",
+    "totalfinance": "~4m€",
     "list": {
         "TransFabriC24": {
+            "start": "2024",
+            "end": "2030",
+            "title": "Institut de la transfabrication circulaire (TranFabriC)",
+            "comment": "Institut de la transfabrication circulaire matérialise l’ambition du Conservatoire national des Arts et Métiers d’accompagner le développement des pratiques sociales et citoyennes pour l’émergence d’une économie sociale, solidaire et circulaire (ESSC). Il s’agit de créer un éco-système opérant, des formations et un programme de recherche, capables ensemble de faire émerger une ESSC répondant aux missions historiques du Cnam.",
+            "place": "Conservatoire national des Arts et Métiers (CNAM), France",
+            "amount": "640k€"
+        },
+        "LaboCouleurs": {
+            "start": "2024",
+            "end": "2030",
+            "title": "Institut de la transfabrication circulaire (TranFabriC)",
+            "comment": "Institut de la transfabrication circulaire matérialise l’ambition du Conservatoire national des Arts et Métiers d’accompagner le développement des pratiques sociales et citoyennes pour l’émergence d’une économie sociale, solidaire et circulaire (ESSC). Il s’agit de créer un éco-système opérant, des formations et un programme de recherche, capables ensemble de faire émerger une ESSC répondant aux missions historiques du Cnam.",
+            "place": "Conservatoire national des Arts et Métiers (CNAM), France",
+            "amount": "640k€"
+        },
+        "IFMdoc": {
             "start": "2024",
             "end": "2030",
             "title": "Institut de la transfabrication circulaire (TranFabriC)",

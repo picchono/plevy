@@ -51,6 +51,17 @@
                      {{ end }}
                   </div>
                   {{ end }}
+                  {{ if isset . "projects" }}
+                  <div class="pt-4 leading-6 text-sm">
+                     {{ range sort .projects "order" "asc" }}
+                     <b class="vert text-sm leading-6">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n
+                     "since" }}
+                     {{ .start }}{{ else }}{{ .start }} -
+                     {{ .end }}{{ end }}){{ if isset . "comment" }} - <span class="text-sm italic">{{ .comment |safeHTML
+                        }}</span>{{ end }}
+                     {{ end }}
+                  </div>
+                  {{ end }}
                </div>
             </div>
             {{ end }}{{ end }}

@@ -51,7 +51,7 @@
                   class="comment">{{ .comment |safeHTML }}</span>{{ end }}<br>
             {{ end }}</div>{{ end }}
             {{ if isset . "activities" }}
-            <div class='col-start-2 col-span-6 {{ if not (isset . "minors") }}mb-10{{ end }}'>
+            <div class='col-start-2 col-span-6 {{ if not (isset . "projects") }}mb-10{{ end }}'>
                {{ range sort .activities "order" "asc" }}
                <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
                {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
@@ -59,9 +59,9 @@
                {{ end }}
             </div>
             {{ end }}
-            {{ if isset . "minors" }}
+            {{ if isset . "projects" }}
             <div class="col-start-2 col-span-6 mt-4 mb-10">
-               {{ range sort .minors "start" "desc" }}
+               {{ range sort .projects "start" "desc" }}
                <span class="petitTxt minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
                {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
                   class="comment petitTxt">{{ .comment |safeHTML }}</span>{{ end }}</span>
@@ -83,7 +83,7 @@
                   class="comment">{{ .comment |safeHTML }}</span>{{ end }}<br>
             {{ end }}</div>{{ end }}
             {{ if isset . "activities" }}
-            <div class='col-start-2 col-span-6 {{ if not (isset . "minors") }}mb-10{{ end }}'>
+            <div class='col-start-2 col-span-6 {{ if not (isset . "projects") }}mb-10{{ end }}'>
                {{ range sort .activities "start" "desc" }}
                <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
                {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
@@ -91,9 +91,9 @@
                {{ end }}
             </div>
             {{ end }}
-            {{ if isset . "minors" }}
+            {{ if isset . "projects" }}
             <div class="col-start-2 col-span-6 mt-4 mb-10">
-               {{ range sort .minors "start" "desc" }}
+               {{ range sort .projects "start" "desc" }}
                <span class="petitTxt minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
                {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
                   class="comment petitTxt">{{ .comment |safeHTML }}</span>{{ end }}</span>

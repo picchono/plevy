@@ -39,24 +39,15 @@
 </div></div>
 {{ end }}
 {{ if .Params.diploma}}
-<div class="flex flex-row items-start justify-start p-5">
-    <p class="mr-4 flex-grow flex-shrink">
-        {{ range sort .Params.diploma }}
-        <b>{{ .type }}</b>
-        <br>
-        {{ end }}
-    </p>
-    <p class="flex-grow">
-        {{ range sort .Params.diploma }}
-        {{ .name }}<br>
-        {{ end }}
-    </p>
+<div class="mb-6">
+    {{ range sort .Params.diploma }}
+        <b>{{ .type }}</b><br/>
+        {{ .name }}<br/>
+    {{ end }}
 </div>
 {{ end }}
 {{ if .Params.description }}
-<div class="">
-    <p>{{ .Params.description |safeHTML }}</p>
-</div>
+<p class="mb-6">{{ .Params.description |safeHTML }}</p>
 {{ end }}
 {{ if and (.Params.reference) (ne .File.Section "publications") }}
 <div class="">

@@ -26,6 +26,9 @@ link:
 Parcours:
     MR15001A:
         code: MR15001A
+        order: 2
+    MR15001B:
+        code: MR15001B
         order: 1
 RNCP: 39314
 ---

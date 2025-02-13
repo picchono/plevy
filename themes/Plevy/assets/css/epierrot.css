@@ -65,6 +65,22 @@ body {
 
 body {
   @apply bg-primary-bg text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden md:overflow-x-auto p-5;
+  background: linear-gradient(-45deg, #ffffff 30%, #fbfcfc 45%, #f4f5f5 55%, #eceeef 70%);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 body {
@@ -113,8 +129,13 @@ a:hover svg {
 /* logohome */
 
 a.logohome {
-  @apply inline-block bg-primary-bg items-start w-10/12 md:w-auto py-5 transition-all duration-700 ease-in-out;
+  @apply inline-block items-start w-10/12 md:w-auto py-5 transition-all duration-700 ease-in-out;
 }
+
+a.logohome:hover {
+  @apply bg-transparent;
+}
+
 
 a.logohome .lh,
 a.logohome .lh2 {
@@ -168,10 +189,11 @@ a.logohome .lh2 {
   }
 
   80% {
-    stroke-dashoffset:179;
+    stroke-dashoffset: 179;
     stroke: var(--color-epierrot);
     fill: transparent;
   }
+
   100% {
     stroke-dashoffset: 0;
     stroke: transparent;
@@ -274,17 +296,50 @@ a.floatImg::after {
   content: none !important;
 }
 
-a.boxIso, .dynCadre, .doclinkButton {
-  @apply relative cursor-pointer bg-primary-bg text-primary-text justify-center flex flex-col w-full p-3 transition-all duration-700 ease-in-out;
-  border-radius: 0px;
+a.boxIso,
+.dynCadre,
+.doclinkButton {
+  @apply relative cursor-pointer bg-primary-bg text-primary-text justify-center flex flex-col w-full p-3 rounded transition-all duration-700 ease-in-out;
 }
 
 a.boxIso {
-  @apply p-7 md:p-10;
+  @apply p-7;
+}
+
+/*
+a.boxIso .boxBgd {
+  @apply absolute rounded;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  translate: -50% -50%;
+  transition: 0.5s ease-in-out;
+}
+a.boxIso.presentations .boxBgd {
+  background: linear-gradient(135deg, rgba(255,255,255, 0.1) 0%, rgba(213, 198, 166, 0.2) 30%);
+}
+a.boxIso.projects .boxBgd {
+  background: linear-gradient(135deg, rgba(255,255,255, 0.1) 0%, rgba(179, 155, 204, 0.2) 30%);
+}
+a.boxIso.events .boxBgd {
+  background: linear-gradient(135deg, rgba(255,255,255, 0.1) 0%, rgba(209, 197, 175, 0.2) 30%);
+}
+a.boxIso.teaching .boxBgd, a.boxIso.courses.boxBgd {
+  background: linear-gradient(135deg, rgba(255,255,255, 0.1) 0%, rgba(206, 178, 178, 0.2) 30%);
+}
+a.boxIso.publications .boxBgd, a.boxIso.research .boxBgd, a.boxIso.writings .boxBgd  {
+  background: linear-gradient(135deg, rgba(255,255,255, 0.1) 0%, rgba(164, 189, 203, 0.2) 30%);
+}
+*/
+.boxBgd:hover{
+  opacity: 0;
 }
 
 a.boxIso:hover, .dynCadre:hover {
-  background: light-dark(#00000007, #FFFFFF07);
+  background: linear-gradient(135deg, light-dark(#FFF, #1c1c1c) 0%, light-dark(#FFF, #1c1c1c) 100%);
   border-radius: 0.25rem;
 }
 
@@ -297,8 +352,14 @@ a.boxIso::after, .dynCadre::after {
   left: 50%;
   translate: -50% -50%;
   z-index: -2;
-  transition: 0.7s ease-in-out;
-  box-shadow: rgba(9,30,66,.25)0px 0 5px -2px;
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(9, 30, 66, 0.3) 0 0 4px -2px;
+}
+a.boxIso:hover::after {
+  box-shadow: rgba(0,0,0, 0.5) 0 0 4px 0;
+}
+.dynCadre::after{
+  box-shadow: rgba(9, 30, 66, 0.3) 0 0 7px -2px;
 }
 
 a.doclinkButton {
@@ -343,7 +404,7 @@ a.smalllink:last-child {
 }
 
 a.langu {
-  @apply relative bg-secondary-bg inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
+  @apply relative bg-transparent inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
 }
 
 a.homemenu,
@@ -434,7 +495,7 @@ strong>a {
 }
 
 span.japanese {
-  @apply petitTxt;
+  @apply text-sm;
 }
 
 .framebox {
@@ -510,7 +571,7 @@ li:last-child {
 
 /* inputSearch */
 #inputSearch input {
-  @apply flex-grow w-full bg-transparent placeholder:text-secondary-text text-primary-text text-sm border border-blue-700 rounded-sm p-1 transition-all duration-700 ease-in-out focus:outline-none focus:border-gray-500 hover:border-yellow-700;
+  @apply flex-grow w-full bg-transparent placeholder:text-primary-text placeholder:opacity-60 text-primary-text text-sm border border-blue-700 rounded-sm p-1 transition-all duration-700 ease-in-out focus:outline-none focus:border-gray-500 hover:border-yellow-700;
 }
 
 /* hamburger */
@@ -600,15 +661,60 @@ footer svg {
 
 /* box image */
 
+div.blendPhoto {
+  position: relative;
+}
+
 img.imgBox {
-  @apply object-cover h-16 w-16 rounded-sm;
-  filter: grayscale(0.4);
+  @apply object-cover h-16 w-16 rounded-md relative;
+  filter: grayscale(1) brightness(1.6);
   transition: all 500ms ease-in-out;
 }
 
 a:hover img.imgBox {
-  filter: grayscale(0);
+  filter: grayscale(0) brightness(1);
+  mix-blend-mode: normal;
 }
+
+.boxIso div.imagFront {
+  @apply h-16 w-16 rounded-md;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border: 2px rgba(0, 0, 0, 0.2) solid;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  transition: all 500ms ease-in-out;
+}
+
+.boxIso:hover div.imagFront {
+  opacity: 0;
+}
+
+a.boxIso.presentations div.imagFront {
+  border: 2px rgba(171, 157, 130, 0.2) solid;
+  background-color: rgba(118, 106, 82, 0.6);
+}
+a.boxIso.projects div.imagFront {
+  border: 2px rgba(158, 129, 188, 0.2) solid;
+  background-color: rgba(104, 87, 122, 0.6);
+}
+a.boxIso.events div.imagFront {
+  border: 2px rgba(171, 157, 130, 0.2) solid;
+  background-color: rgba(90, 122, 90, 0.6);
+}
+a.boxIso.teaching div.imagFront, a.boxIso.courses div.imagFront {
+  border: 2px rgba(209, 172, 172, 0.2) solid;
+  background-color: rgba(119, 92, 92, 0.6);
+}
+a.boxIso.publications div.imagFront, a.boxIso.research div.imagFront, a.boxIso.writings div.imagFront  {
+  border: 2px rgba(140, 172, 190, 0.2) solid;
+  background-color: rgba(86, 104, 114, 0.6);
+}
+
 
 a.gridbox p {
   font-size: 15px;
@@ -723,10 +829,18 @@ h5 {
   margin: 0 0 0.2rem -1px;
 }
 
-#content>h1:first-child, #content>h2:first-child, #content>h3:first-child, #content>h4:first-child, #content>h5:first-child,
-.dynCadre>h1:first-child, .dynCadre>h2:first-child, .dynCadre>h3:first-child, .dynCadre>h4:first-child, .dynCadre>h5:first-child {
+#content>h1:first-child,
+#content>h2:first-child,
+#content>h3:first-child,
+#content>h4:first-child,
+#content>h5:first-child,
+.dynCadre>h1:first-child,
+.dynCadre>h2:first-child,
+.dynCadre>h3:first-child,
+.dynCadre>h4:first-child,
+.dynCadre>h5:first-child {
   @apply pt-0 mt-0;
-} 
+}
 
 .comment {
   @apply text-sm italic;
@@ -801,7 +915,7 @@ span.minor:not(:last-child)::after {
   opacity: 0;
 }
 
-/* tooltips */
+/* tooltips
 [data-tooltip]::before {
   @apply text-primary-text bg-primary-bg border border-secondary-bg text-sm rounded-sm;
   position: absolute;
@@ -826,7 +940,7 @@ span.minor:not(:last-child)::after {
   opacity: 1;
   transition: opacity 500ms ease-in-out;
 }
-
+*/
 /* icon */
 .fas,
 .fa,
@@ -925,22 +1039,6 @@ span.minor:not(:last-child)::after {
   to {
     top: 110%;
   }
-}
-
-/* duotone */
-
-.gridbox .blend-plevy img {
-  mix-blend-mode: hard-light;
-  filter: brightness(0.6) grayscale(1);
-  transition: all 500ms ease-in-out;
-}
-
-.gridbox:hover .blend-plevy img {
-  filter: brightness(0.5) grayscale(0);
-}
-
-.gridbox .blend-plevy::after {
-  mix-blend-mode: color-burn;
 }
 
 /* lecture session */
@@ -1382,7 +1480,7 @@ a.linkBox:hover .titleLink {
 }
 
 .linkBox .imgLink img {
-  @apply w-28 h-full object-cover rounded grayscale petitTxt;
+  @apply w-28 h-full object-cover rounded grayscale text-sm;
 }
 
 .linkBox:hover .imgLink img {
@@ -2493,15 +2591,17 @@ div.splide .splide__slide .backg {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  z-index: -2;
+  z-index: -3;
   filter: blur(2px) brightness(1.2) grayscale(0.6) hue-rotate(188deg) saturate(0.8) sepia(0.22);
 }
+
 div.splide .splide__slide .backg img {
   @apply rounded-lg;
 }
 
 div.splide .splide__slide .grad {
   @apply absolute rounded-lg;
+  --colbck: 0;
   content: ' ';
   height: 100%;
   width: 100%;
@@ -2509,15 +2609,46 @@ div.splide .splide__slide .grad {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
+  background-image: linear-gradient(135deg, #FFFFFF00 0%, #FFFFFF 40%);
+  transition: all 30s;
 }
 
-div.splide *, div.splide p  {
+div.splide .splide__slide .gradcol {
+  @apply absolute rounded-lg;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -2;
+  opacity: 0.9;
+  overflow: auto;
+  background-attachment: fixed !important;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+div.splide *,
+div.splide p {
   font-size: 2.2vh;
   color: #1c1c1c;
   fill: #1c1c1c;
 }
 
-div.splide p  {
+div.splide p {
   margin-bottom: 1.8vh;
 }
 
@@ -2527,11 +2658,12 @@ div.splide h1 {
   margin: 3vh 0 7vh 0 !important;
 }
 
-div.splide a, div.splide a:visited  {
+div.splide a,
+div.splide a:visited {
   @apply text-epierrot;
 }
 
-div.splide a:hover  {
+div.splide a:hover {
   @apply bg-epierrot text-primary-bg cursor-pointer;
 }
 
@@ -2539,12 +2671,14 @@ div.splide .splide__slide .slideFooter {
   @apply w-full flex-grow-0 flex-shrink-0 px-2 flex justify-between w-full;
 }
 
-div.splide .splide__slide .slideFooter, div.splide .splide__slide .slideFooter * {
+div.splide .splide__slide .slideFooter,
+div.splide .splide__slide .slideFooter * {
   @apply text-white;
   font-size: 1.5vh;
 }
 
-div.splide .splide__slide .slideFooter>a, div.splide .splide__slide .slideFooter>a:visited {
+div.splide .splide__slide .slideFooter>a,
+div.splide .splide__slide .slideFooter>a:visited {
   @apply text-white;
 }
 
@@ -2558,11 +2692,13 @@ div.splide .splide__slide .slideFooter .closeIcon {
   stroke: white;
 }
 
-div.splide .petitTxt, div.splide .petitTxt * {
+div.splide .petitTxt,
+div.splide .petitTxt * {
   font-size: 1.6vh;
 }
 
-div.splide .miniTxt, div.splide .miniTxt * {
+div.splide .miniTxt,
+div.splide .miniTxt * {
   font-size: 1.2vh;
 }
 
@@ -2581,6 +2717,7 @@ div.splide .splide__slide .slide_main {
 div.splide .splide__arrow {
   background: transparent !important;
 }
+
 div.splide .splide__arrow:disabled {
   opacity: 0 !important;
 }
@@ -2609,12 +2746,14 @@ ul.splide__pagination {
   @apply flex-row;
   left: auto;
 }
+
 button.splide__pagination__page {
   width: 0.6vh;
   height: 0.6vh;
   text-align: right;
   margin: 0 !important;
 }
+
 button.splide__arrow {
   width: 0.7vw;
 }
