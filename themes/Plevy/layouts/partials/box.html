@@ -4,7 +4,7 @@
     data-section="{{ .context.Section  }}">
     <div class="invisible abolute h-0 w-0">{{ .context.Section }} {{ htmlUnescape (plainify .context.Content) }} {{ .context.Params.Date }}</div>
     <a class="boxIso{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}">
-        <div class="boxBgd"></div>
+        <div class="boxBord"></div>
         <div class="flex flex-row">
             {{ if isset .context.Params "frontphoto" }}
             <div class='blendPhoto flex-grow-0 flex-shrink-0'><img src="" data-toset="
