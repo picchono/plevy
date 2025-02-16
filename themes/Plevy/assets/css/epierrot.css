@@ -63,28 +63,35 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
+html,body {
+  @apply bg-primary-bg;
+}
+
 body {
-  @apply bg-primary-bg text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden md:overflow-x-auto p-5;
-  background: linear-gradient(-45deg, #ffffff 30%, #fafafa 70%);
-	background-size: 400% 400%;
-	animation: gradient 60s ease infinite;
+  @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden md:overflow-x-auto p-5;
+}
+/*
+body::before {
+  background:#000;
+  animation: gradient 6s ease infinite;
 	height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top:0;
+  left: 0;
 }
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
+		opacity: 0;
 	}
 	100% {
-		background-position: 0% 50%;
+		opacity: 1;
 	}
 }
-
+*/
 body {
-  --color-primary-bg: light-dark(#fff, #1c1c1c);
+  --color-primary-bg: light-dark(#f7f7f7, #1c1c1c);
   --color-secondary-bg: light-dark(#fff, #1c1c1c);
   --color-tertiary-bg: light-dark(#fafafa, #2e2e2e);
   --color-quaternary-bg: light-dark(#000000, #fff);
@@ -209,7 +216,7 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply relative bg-transparent w-full py-3 md:p-2 transition-all duration-700 ease-in-out;
+  @apply relative bg-transparent w-full py-3 md:p-1 transition-all duration-700 ease-in-out;
 }
 
 
@@ -299,13 +306,14 @@ a.floatImg::after {
 a.boxIso,
 .dynCadre,
 .doclinkButton {
-  @apply relative cursor-pointer text-primary-text justify-center flex flex-col w-full p-3 rounded transition-all duration-700 ease-in-out;
+  @apply relative bg-secondary-bg cursor-pointer text-primary-text justify-center flex flex-col w-full p-3 rounded transition-all duration-700 ease-in-out;
 }
 
 a.boxIso {
   @apply p-7;
 }
 
+/*
 a.boxIso .boxBord {
   @apply absolute rounded;
   content: ' ';
@@ -314,12 +322,13 @@ a.boxIso .boxBord {
   top: 50%;
   left: 50%;
   z-index: -1;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-image: linear-gradient(125deg,#adadad,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #adadad) 1;
   translate: -50% -50%;
   transition: all 0.2s ease-in-out;
 }
+
 a.boxIso.presentations .boxBord {
   border-image: linear-gradient(125deg,#efc364,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #efc364) 1;
 }
@@ -336,12 +345,12 @@ a.boxIso.publications .boxBord, a.boxIso.research .boxBord, a.boxIso.writings .b
   border-image: linear-gradient(125deg,#ca9acb,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #ca9acb) 1;
 }
 
+*/
 a.boxIso:hover .boxBord{
   opacity: 0;
 }
 
 a.boxIso:hover, .dynCadre:hover {
-  @apply bg-transparent;
   border-radius: 0.25rem;
 }
 
@@ -357,14 +366,10 @@ a.boxIso::after, .dynCadre::after {
   transition: 0.5s ease-in-out;
 }
 
-.dynCadre::after {
-  box-shadow: rgba(9, 30, 66, 0.3) 0 0 4px -2px;
+.dynCadre:hover::after, a.boxIso:hover::after {
+  box-shadow: rgba(0,0,0, 0.8) 0 0 4px 0;
 }
-
-a.boxIso:hover::after {
-  box-shadow: rgba(0,0,0, 0.5) 0 0 4px 0;
-}
-
+/*
 a.boxIso.presentations:hover::after {
   box-shadow: #efc364 0 0 4px 0;
 }
@@ -380,11 +385,8 @@ a.boxIso.teaching:hover::after, a.boxIso.courses:hover::after {
 a.boxIso.publications:hover::after, a.boxIso.research:hover::after, a.boxIso.writings:hover::after  {
   box-shadow: #ca9acb 0 0 4px 0;
 }
+*/
 
-
-.dynCadre::after{
-  box-shadow: rgba(9, 30, 66, 0.3) 0 0 7px -2px;
-}
 
 a.doclinkButton {
   @apply flex-row items-center justify-center transition-all duration-700 ease-in-out;
@@ -433,7 +435,7 @@ a.langu {
 
 a.homemenu,
 a.listcourse {
-  @apply relative inline-block bg-primary-bg px-2 py-0.5 my-2 text-primary-text hover:text-epierrot;
+  @apply relative inline-block px-2 py-0.5 my-2 text-primary-text hover:text-epierrot;
 }
 
 a.homemenu {
@@ -708,7 +710,7 @@ a:hover img.imgBox {
   top: 0;
   left: 0;
   z-index: 10;
-  border: 2px rgba(0, 0, 0, 0.2) solid;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 0.9;
   transition: all 500ms ease-in-out;
@@ -717,7 +719,8 @@ a:hover img.imgBox {
 .boxIso:hover div.imagFront {
   opacity: 0;
 }
-
+  
+/*
 a.boxIso.presentations div.imagFront {
   border: 1px #efc36499 solid;
   background-color: #efc36455;
@@ -738,7 +741,7 @@ a.boxIso.publications div.imagFront, a.boxIso.research div.imagFront, a.boxIso.w
   border: 1px #ca9acb99 solid;
   background-color: #ca9acb55;
 }
-
+*/
 a.gridbox p {
   font-size: 15px;
   line-height: var(--lineHeight);
