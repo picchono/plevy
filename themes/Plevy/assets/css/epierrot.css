@@ -409,6 +409,10 @@ a.collab {
   @apply relative inline-block w-full my-3 transition-all duration-700 ease-in-out;
 }
 
+a.collab:hover {
+  @apply bg-transparent;
+}
+
 a.collab svg {
   fill: var(--color-primary-text);
   transition: all 300ms ease-in-out;
@@ -1113,7 +1117,7 @@ section.lectureSession>.main {
 
 .iconhome,
 .iconhome:hover {
-  @apply bg-transparent inline-block mr-2 w-auto;
+  @apply bg-transparent inline-block mr-2 w-auto transition-all duration-700 ease-in-out;
 }
 
 .iconhome svg {
