@@ -97,7 +97,7 @@ body {
   --color-quaternary-bg: #000000;
   --color-primary-text: #1c1c1c;
   --color-secondary-text: #e3ddd3;
-  --color-epierrot: #3b8fc6;
+  --color-epierrot: #cb6465;
   --color-borders: #1c1c1c;
 }
 
@@ -364,11 +364,11 @@ a.boxIso::after, .dynCadre::after {
   translate: -50% -50%;
   z-index: -2;
   opacity: 0;
-  border: #000000 1px solid;
+  border: var(--color-epierrot) 2px solid;
 }
 
 .dynCadre:hover::after, a.boxIso:hover::after {
-  opacity: 0.4;
+  opacity: 1;
 }
 /*
 a.boxIso.presentations:hover::after {
