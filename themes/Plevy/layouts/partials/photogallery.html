@@ -1,10 +1,10 @@
 {{ $photonb := len .Params.photogallery }}
 {{ if eq $photonb 1 }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96" id="lightgallery" data-cat-sort="2"><div class="dynCadre"><img loading="lazy" class="imag" src="{{ .Params.photogallery.image1.img }}"></div></div>
+<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="2"><div class="dynCadre photoItem" id="lightgallery" data-src="{{ .Params.photogallery.image1.img }}"><img loading="lazy" class="imag" src="{{ .Params.photogallery.image1.img }}"></div></div>
 {{ else }}
-<div id="lightgallery" class="pack-item w-full md:w-192" data-cat-sort="2"><div class="dynCadre flex flex-row">
+<div class="pack-item w-full md:w-192" data-cat-sort="2"><div class="dynCadre flex flex-row" id="lightgallery" >
         {{ range sort .Params.photogallery "order" "asc" }}
-        <a class="place-self-center h-32 p-0.5 w-auto" href="{{ .img }}" aria-label="See image"><img loading="lazy" src="{{ .src }}" alt="{{ .name }}" class="rounded"></a>
+        <div class="place-self-center h-32 p-0.5 w-auto photoItem" data-src="{{ .img }}" aria-label="See image"><img loading="lazy" src="{{ .src }}" alt="{{ .name }}" class="rounded"></div>
         {{ end }}
 </div></div>
 {{ end }}
@@ -37,7 +37,8 @@
 <script type="text/javascript">
         lightGallery(document.getElementById('lightgallery'), {
             licenseKey: "86E42556-05764516-9C2C8B36-B8B2858F",
-            plugins: [lgVideo, lgFullscreen, lgHash], //
+            plugins: [lgVideo, lgFullscreen, lgHash],
+            selector: '.photoItem',
             speed: 500,
             download: false,
             loop: true,

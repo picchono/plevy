@@ -64,11 +64,12 @@ body {
 }
 
 html,body {
-  @apply bg-primary-bg;
+  /*background: linear-gradient(135deg, var(--color-primary-bg) 30%, var(--color-quaternary-bg));*/
+  background-color: var(--color-primary-bg);
 }
 
 body {
-  @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden md:overflow-x-auto p-5;
+  @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden p-5;
 }
 /*
 body::before {
@@ -94,7 +95,7 @@ body {
   --color-primary-bg: #f7f7f7;
   --color-secondary-bg: #fff;
   --color-tertiary-bg: #fafafa;
-  --color-quaternary-bg: #000000;
+  --color-quaternary-bg: #e7e2dd;
   --color-primary-text: #1c1c1c;
   --color-secondary-text: #e3ddd3;
   --color-epierrot: #cb6465;
@@ -216,7 +217,7 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply relative bg-transparent w-full py-3 md:p-1 transition-all duration-700 ease-in-out;
+  @apply relative bg-transparent w-full py-3 md:p-2 transition-all duration-700 ease-in-out;
 }
 
 
@@ -230,7 +231,7 @@ a.logohome:hover .lh2 {
 }
 
 .pack-item #languageMode a {
-  @apply bg-primary-bg border border-primary-bg border-solid rounded transition-all duration-700 ease-in-out;
+  @apply bg-primary-bg border border-primary-bg border-solid rounded-xl transition-all duration-700 ease-in-out;
 }
 
 .pack-item:hover #languageMode a {
@@ -306,11 +307,12 @@ a.floatImg::after {
 a.boxIso,
 .dynCadre,
 .doclinkButton {
-  @apply relative bg-secondary-bg cursor-pointer text-primary-text justify-center flex flex-col w-full p-3 rounded transition-all duration-700 ease-in-out;
+  @apply relative bg-secondary-bg cursor-pointer text-primary-text justify-center flex flex-col w-full p-3 rounded-xl transition-all duration-700 ease-in-out;
+  box-shadow: #0001 0 0 3px 1px;
 }
 
 a.boxIso {
-  @apply p-7;
+  @apply md:p-7;
 }
 
 /*
@@ -351,11 +353,11 @@ a.boxIso:hover .boxBord{
 }
 
 a.boxIso:hover, .dynCadre:hover {
-  border-radius: 0.25rem;
+  @apply rounded-xl;
 }
 
 a.boxIso::after, .dynCadre::after {
-  @apply absolute rounded transition-all duration-700 ease-in-out;
+  @apply absolute rounded-xl transition-all duration-700 ease-in-out;
   content: ' ';
   height: calc(100% + .25rem);
   width: calc(100% + .25rem);
@@ -715,10 +717,19 @@ a:hover img.imgBox {
   top: 0;
   left: 0;
   z-index: 10;
-  border: 1px rgba(0, 0, 0, 0.2) solid;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color:#288ec122;
   opacity: 0.9;
   transition: all 500ms ease-in-out;
+  animation: imgFrnt 60s ease-in-out infinite alternate;
+}
+
+@keyframes imgFrnt {
+  0% {
+    background-color: #288ec119;
+  }
+  100% {
+    background-color:#bb1b1b19;
+  }
 }
 
 .boxIso:hover div.imagFront {
@@ -918,8 +929,10 @@ span.minor:not(:last-child)::after {
 
 /* embed iframe */
 .embed-wrapper {
-  @apply overflow-hidden relative rounded;
+  @apply overflow-hidden relative;
   padding-top: 56.25%;
+  border-top-left-radius: .63rem;
+  border-top-right-radius: .63rem;
 }
 
 .embed-wrapper iframe {
