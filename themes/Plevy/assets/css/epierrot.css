@@ -91,14 +91,14 @@ body::before {
 }
 */
 body {
-  --color-primary-bg: light-dark(#f7f7f7, #1c1c1c);
-  --color-secondary-bg: light-dark(#fff, #1c1c1c);
-  --color-tertiary-bg: light-dark(#fafafa, #2e2e2e);
-  --color-quaternary-bg: light-dark(#000000, #fff);
-  --color-primary-text: light-dark(#1c1c1c, #f4f4f4);
-  --color-secondary-text: light-dark(#e3ddd3, #f3f4f6);
-  --color-epierrot: light-dark(#0089A7, #2abac4);
-  --color-borders: light-dark(#1c1c1c, #FFFA);
+  --color-primary-bg: #f7f7f7;
+  --color-secondary-bg: #fff;
+  --color-tertiary-bg: #fafafa;
+  --color-quaternary-bg: #000000;
+  --color-primary-text: #1c1c1c;
+  --color-secondary-text: #e3ddd3;
+  --color-epierrot: #3b8fc6;
+  --color-borders: #1c1c1c;
 }
 
 b i {
@@ -355,7 +355,7 @@ a.boxIso:hover, .dynCadre:hover {
 }
 
 a.boxIso::after, .dynCadre::after {
-  @apply absolute rounded;
+  @apply absolute rounded transition-all duration-700 ease-in-out;
   content: ' ';
   height: calc(100% + .25rem);
   width: calc(100% + .25rem);
@@ -363,11 +363,12 @@ a.boxIso::after, .dynCadre::after {
   left: 50%;
   translate: -50% -50%;
   z-index: -2;
-  transition: 0.5s ease-in-out;
+  opacity: 0;
+  border: #000000 1px solid;
 }
 
 .dynCadre:hover::after, a.boxIso:hover::after {
-  box-shadow: rgba(0,0,0, 0.8) 0 0 4px 0;
+  opacity: 0.4;
 }
 /*
 a.boxIso.presentations:hover::after {
