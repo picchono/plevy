@@ -210,6 +210,10 @@ window.addEventListener("scroll", function () {
   showPic();
 });
 
+window.addEventListener("resize", function () {
+  showPic();
+});
+
 /* isotope */
 var qsRegex;
 var buttonValue;

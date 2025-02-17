@@ -12,7 +12,7 @@
 </div>
 {{ if not .IsHome }}
 <div class="text-left items-start">
-    <h1 class="text-4xl font-bold mt-10">{{ .Params.title |safeHTML }}</h1>
+    <h1 class="text-4xl font-bold mt-10">{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</h1>
     {{ if .Params.authors }}
     <p class="italic">{{ .Params.authors }},
         {{ dateFormat "02 Jan 2006" .Date }}</p>

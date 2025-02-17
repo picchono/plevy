@@ -16,7 +16,7 @@
             </div>
             {{ end}}
             <div class='{{ if isset .context.Params "frontphoto" }}pl-3{{ else }}pl-2{{ end }}'>
-                <h5 class='block w-full font-bold text-base m-0'>{{- .context.Title |safeHTML -}}</h5>
+                <h5 class='block w-full font-bold text-base m-0'>{{- .context.Title |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</h5>
                 <div class="inline-block text-sm">{{ if eq .context.Params.layout "member" }}
                     {{ $parts := .context.Params.description }}{{ $splitParts := split $parts "," }}{{ range $index, $part := $splitParts }}{{ if eq $index 0 }}{{ $part }}{{ end }}{{ end }}
                 {{ else }}{{ dateFormat "02 Jan 2006" .context.Date }} | <b class="sectionTitle">{{ $str := replaceRE "(s)$" "" (i18n .context.Section) }}{{ $str }}

@@ -70,6 +70,10 @@ html,body {
 
 body {
   @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden p-5;
+  transition: all 500ms ease-in-out;
+  background: linear-gradient(-45deg, #e1cece 30%, #ddcfd6, #78a0bc, #b5ece0 70%);
+  background-size: 400% 400%;
+	animation: imgFrnt 30s ease infinite alternate;
 }
 /*
 body::before {
@@ -307,89 +311,21 @@ a.floatImg::after {
 a.boxIso,
 .dynCadre,
 .doclinkButton {
-  @apply relative bg-secondary-bg cursor-pointer text-primary-text justify-center flex flex-col w-full p-3 rounded-xl transition-all duration-700 ease-in-out;
+  @apply relative text-primary-text justify-center flex flex-col w-full p-3 rounded-xl transition-all duration-700 ease-in-out;
+  background-color: #FFF5;
   box-shadow: #0001 0 0 3px 1px;
+  border: #FFF0 2px solid;
 }
 
 a.boxIso {
-  @apply md:p-7;
-}
-
-/*
-a.boxIso .boxBord {
-  @apply absolute rounded;
-  content: ' ';
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(125deg,#adadad,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #adadad) 1;
-  translate: -50% -50%;
-  transition: all 0.2s ease-in-out;
-}
-
-a.boxIso.presentations .boxBord {
-  border-image: linear-gradient(125deg,#efc364,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #efc364) 1;
-}
-a.boxIso.projects .boxBord {
-  border-image: linear-gradient(125deg,#7ecbc2,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #7ecbc2) 1;
-}
-a.boxIso.events .boxBord {
-  border-image: linear-gradient(125deg,#d58585,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #d58585) 1;
-}
-a.boxIso.teaching .boxBord, a.boxIso.courses .boxBord {
-  border-image: linear-gradient(125deg,#80b1c3,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #80b1c3) 1;
-}
-a.boxIso.publications .boxBord, a.boxIso.research .boxBord, a.boxIso.writings .boxBord  {
-  border-image: linear-gradient(125deg,#ca9acb,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%, #ca9acb) 1;
-}
-
-*/
-a.boxIso:hover .boxBord{
-  opacity: 0;
+  @apply md:p-7 cursor-pointer;
 }
 
 a.boxIso:hover, .dynCadre:hover {
   @apply rounded-xl;
-}
-
-a.boxIso::after, .dynCadre::after {
-  @apply absolute rounded-xl transition-all duration-700 ease-in-out;
-  content: ' ';
-  height: calc(100% + .25rem);
-  width: calc(100% + .25rem);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -2;
-  opacity: 0;
   border: var(--color-epierrot) 2px solid;
+  background-color: #FFF9;
 }
-
-.dynCadre:hover::after, a.boxIso:hover::after {
-  opacity: 1;
-}
-/*
-a.boxIso.presentations:hover::after {
-  box-shadow: #efc364 0 0 4px 0;
-}
-a.boxIso.projects:hover::after {
-  box-shadow: #7ecbc2 0 0 4px 0;
-}
-a.boxIso.events:hover::after {
-  box-shadow: #d58585 0 0 4px 0;
-}
-a.boxIso.teaching:hover::after, a.boxIso.courses:hover::after {
-  box-shadow: #80b1c3 0 0 4px 0;
-}
-a.boxIso.publications:hover::after, a.boxIso.research:hover::after, a.boxIso.writings:hover::after  {
-  box-shadow: #ca9acb 0 0 4px 0;
-}
-*/
-
 
 a.doclinkButton {
   @apply flex-row items-center justify-center transition-all duration-700 ease-in-out;
@@ -700,7 +636,7 @@ div.blendPhoto {
 
 img.imgBox {
   @apply object-cover h-16 w-16 rounded-md relative;
-  filter: grayscale(1) brightness(1.6);
+  filter: grayscale(1) brightness(1.3);
   transition: all 500ms ease-in-out;
 }
 
@@ -710,26 +646,27 @@ a:hover img.imgBox {
 }
 
 .boxIso div.imagFront {
-  @apply h-16 w-16 rounded-md;
+  @apply h-16 w-16 rounded-md overflow-hidden;
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
-  background-color:#288ec122;
-  opacity: 0.9;
+  opacity: 0.1;
   transition: all 500ms ease-in-out;
-  animation: imgFrnt 60s ease-in-out infinite alternate;
+  background: linear-gradient(-45deg, #e1cece 30%, #ddcfd6, #78a0bc, #b5ece0 70%);
+	background-size: 400% 400%;
+	animation: imgFrnt 30s ease infinite alternate;
 }
 
 @keyframes imgFrnt {
   0% {
-    background-color: #288ec119;
-  }
-  100% {
-    background-color:#bb1b1b19;
-  }
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
 }
 
 .boxIso:hover div.imagFront {
@@ -1519,7 +1456,7 @@ a.linkBox:hover .titleLink {
 }
 
 .linkBox .imgLink {
-  @apply w-28 flex-shrink-0;
+  @apply w-28 h-28 flex-shrink-0;
 
 }
 

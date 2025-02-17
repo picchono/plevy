@@ -38,7 +38,7 @@ collaboration:
         web: "https://emafructidor.com/ema/"
         heig: 1.5
 frontphoto: "https://images.unsplash.com/photo-1550895030-823330fc2551?q=80&w=1080"
-frontphotomini: "https://images.unsplash.com/photo-1550895030-823330fc2551?q=80&w=250"
+frontphotomini: "https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?q=80&w=250"
 code: MR15001B
 link:
     1: ["e|m|a", "website", "https://emafructidor.com/ema"]

@@ -162,14 +162,9 @@
                </b><br />
                {{ .jurysdoctoraux.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .jurysdoctoraux.list }}</b><br />
                <br />
-               HAL&nbsp;&nbsp;<a
-                  href="https://hal.science/search/index/?q=*&authIdPerson_i={{ .identity.registration.hal }}"
-                  target="_blank" rel="noreferrer">{{ .identity.registration.hal }}</a><br />
-               ORCID&nbsp;&nbsp;<a href="https://orcid.org/{{ .identity.registration.orcid }}" target="_blank"
-                  rel="noreferrer">{{ .identity.registration.orcid }}</a><br />
-               Google scholar&nbsp;&nbsp;<a
-                  href="https://scholar.google.com/citations?user={{ .identity.registration.scholar }}" target="_blank"
-                  rel="noreferrer">{{ .identity.registration.scholar }}</a><br />
+               {{range sort .identity.registration "ord" "asc"}}
+               {{ .name }}&nbsp;&nbsp;<a href="{{ .url -}}{{- .code }}" target="_blank" rel="noreferrer">{{ .code }}</a><br />
+               {{ end }}
             </div>
          </div>
       </div>

@@ -41,6 +41,13 @@ photocredit:
     cred: "Nadine van Amersvoort"
 link:
     1: ["poster", "pdf", "https://1drv.ms/b/s!AnQx_v88q65QgcCbKLZVHK3YRuvCaps?e=SzwP9D"]
+    2: ["DSN201 · Initiation à recherche en design, art et création", "website", "http://localhost:1313/teaching/initiation-a-la-recherche-en-design-art-creation/"]
+calendar:
+    a: "<b>3 avril 2025 · </b> Le design comme objet de recherche - Benjamin Loiseau"
+    b: "<b>10 avril 2025 · </b>La recherche critique et spéculative (en anglais) - James Auger"
+    c: "<b>24 avril 2025 · </b>La recherche-création - Samuel Bianchini"
+    d: "<b>15 mai 2025 · </b>Le design comme pratique de recherche - Dorian Reunkrilerk"
+    e: "<b>5 juin 2025 · </b>La recherche au travers du design (en anglais) t.b.d"
 ---
 Le séminaire méthodologique « Pratiques de recherche en design et création » est co-animé par le laboratoire Dicen-IDF et la chaire Design Jean Prouvé du Cnam. Principalement dédié aux étudiants en master, aux jeunes chercheurs, doctorant.e.s ou aspirants à le devenir, il invite les membres des communautés de recherche liées aux domaines du design et de la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances.
 

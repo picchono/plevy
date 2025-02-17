@@ -12,11 +12,13 @@ institution:
     web: "https://www.cnam.fr/"
 chaire: true
 date: 2022-09-01T16:27:15+02:00
-subsection: course
+start: 2021
+end: 2024
+subsection: ended
 description: "Cette UE propose une vue d'ensemble des pratiques de la recherche en design, art et création, afin de contextualiser la pratique dans l'activité de recherche."
 frontphoto: "https://live.staticflickr.com/65535/52417553333_c004b0a4b5.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52417553333_c004b0a4b5_q.jpg"
-code: DSN201
+code: DSN201A
 lectures:
     intro:
         order: 0

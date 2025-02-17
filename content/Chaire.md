@@ -27,7 +27,7 @@ members:
 ---
 {{<slashLink "Écrits récents" "/writings/">}}[La diversité dans l'enseignement du design et des métiers d'art doit faire école]({{< ref "/writings/PLevy_PIA23" >}})
 {{<slashLink "Formations" "/courses/">}}[Master design Cnam·CESAAP]({{< ref "/courses/Master-CESAAP.md" >}}) en résidence à l'Académie du climat à Paris
-{{<slashLink "Enseignements" "/teaching/">}}[Pratiques de recherche en design, arts et création (DSN201)]({{< ref "/teaching/DSN201.md" >}}) · [Pratiques reflexives (DSN202)]({{< ref "/teaching/DSN202.md" >}}) · [Structurer l'information (TET007)]({{< ref "/teaching/TET007-M1.md" >}}) · [Dialoguer (USMC85)]({{< ref "/teaching/USMC85.md" >}})
+{{<slashLink "Enseignements" "/teaching/">}}[Pratiques de recherche en design, arts et création (DSN201)]({{< ref "/teaching/DSN201A.md" >}}) · [Pratiques reflexives (DSN202)]({{< ref "/teaching/DSN202.md" >}}) · [Structurer l'information (TET007)]({{< ref "/teaching/TET007-M1.md" >}}) · [Dialoguer (USMC85)]({{< ref "/teaching/USMC85.md" >}})
 {{<slashLink "Événements" "/events/">}}Séminaire de recherche [Médiums en design]({{< ref "/events/mediumsendesign.md" >}})
 {{<slashLink "Projets" "/projects/">}}[École du non-savoir]({{< ref "/projects/non-sapere24.md" >}}) avec Ruedi Baur et Civic City · [TransFabriC]({{< ref "/projects/transfabric.md" >}}) au CNAM
 
