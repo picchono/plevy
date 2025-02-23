@@ -1,0 +1,38 @@
+{{ define "main" }}
+    <div class="navevery bg-primary-bg h-auto lg:h-216">
+        {{ partial "list-menutop.html" . -}}
+        <div id="target"
+            class="hidden lg:flex flex-row lg:flex-col flex-wrap w-full py-4 lg:pt-0 lg:pb-10 px-8 lg:px-0 bg-primary-bg lg:bg-transparent border-b lg:border-0 border-primary-text overflow-y-scroll">
+            <nav class="flex-none w-full flex flex-row lg:justify-center">
+                <div id="topMenu"
+                    class="h-full transition-all lg:w-full flex flex-col lg:flex-row flex-wrap content-start publiselect menu button-group"
+                    id="filters">
+                    <div class="p-4 lg:p-6">
+                        <span onclick="tagfilter('.');"
+                            class="filterOption tagcloud-item cursor-pointer pr-4 hover:text-epierrot transition-all duration-700 ease-in-out text-sm capitalize font-bold">{{
+                            i18n "all" }}</span>
+                        {{ partial "tagfront.html" . -}}
+                    </div>
+                    <input
+                        class="control-field search-field form-control bg-transparent w-full font-bold"
+                        type="text" name="search" placeholder='{{ i18n "search" }}...' />
+                </div>
+            </nav>
+        </div>
+    </div>
+    {{ partial "international.html" . }}
+    <div class="absolute top-3 left-3"><a class="text-primary-text"
+        href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>
+    <div class="case">
+        <h1 class="text-2xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
+    </div>
+    {{if .Params.updating }}<div class="large lg:w-auto"><p class="italic text-epierrot">Currently updating</p></div>{{ end }}
+    <div class="muugrid publili">
+    {{ $count := 0 }}
+    {{ range .Site.Pages }}{{ if ne .Params.notEverything true }}{{ if ne .Page.Type "tags" }}
+    {{ $count = add $count 1 }}
+    {{ partial "box.html" ( dict "context" . "cou" $count "everyt" true ) -}}
+    {{ end }}{{ end }}{{ end }}
+    </div>
+</script>
+{{ end }}

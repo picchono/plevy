@@ -1,7 +1,7 @@
 baseURL = "https://plevy.fr"
 languageCode = "fr-FA"
 title = "Pierre Lévy"
-theme = "Plevy"
+theme = "Plevy-inline"
 defaultContentLanguage = "fr"
 ignoreErrors = ["error-disable-taxonomy"]
 

@@ -1,7 +1,7 @@
 ---
 members: ["PLevy"]
 slug: master_design-art_contextes_techniques_usages
-title: "Master Design · Art, contextes, techniques, et usages"
+title: "Master Design · Art, contextes, techniques, usages"
 layout: course
 searchFilter: Course
 chaire: true
@@ -37,14 +37,17 @@ collaboration:
         name: "École Média Art du Grand Chalon"
         web: "https://emafructidor.com/ema/"
         heig: 1.5
-frontphoto: "https://images.unsplash.com/photo-1550895030-823330fc2551?q=80&w=1080"
-frontphotomini: "https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?q=80&w=250"
+frontphoto: "https://images.unsplash.com/photo-1657834713969-6592efed8913?q=80&w=1080"
+frontphotomini: "https://images.unsplash.com/photo-1657834713969-6592efed8913?q=80&w=500"
+photocredit: 
+    cred: "Maksym Kaharlytskyi"
+    link: "https://unsplash.com/@qwitka"
 code: MR15001B
 link:
     1: ["e|m|a", "website", "https://emafructidor.com/ema"]
     2: ["Cnam", "website", "#"]
     3: ["Certificat", "website", "https://bedeo.cnam.fr/public/cursus/view/CS11400A"]
-
+fronttop: true
 ---
 Cette formation entend à cet effet associer la pratique artistique, la connaissance technique et l'attention aux
 usages pour deux types de métiers :

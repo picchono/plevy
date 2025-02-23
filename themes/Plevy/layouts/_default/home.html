@@ -45,6 +45,15 @@
 {{ end }}
 {{ end }}
 
+{{$memb := .Params.member}}
+{{ range $fold := slice "team" "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
+{{ range where $.Site.Pages "Section" "in" ($fold) }}
+{{ if .Params.fronttop }}
+{{- partial "frontbox.html" ( dict "context" . ) -}}
+{{ end }}
+{{ end }}
+{{ end }}
+
 {{ $count := 0 }}
 {{ $page := $.Site.GetPage "page" "chaire.md" }}
 {{ with $page }}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+{{ if or .Params.playlist .Content }}
+<div class="pack-item w-full md:w-192 justify-start flex flex-col flex-grow"><div class="dynCadre md:p-10">
+    {{ if .Params.playlist}}
+    {{ partial "playlist.html" . }}
+    {{ end }}
+    {{ if .Content}}
+    <div id="content">{{ .Content }}</div>
+    {{ end }}
+    </div>
+</div></div>
+{{ end }}
+{{ end }} 

@@ -36,7 +36,7 @@ video:
 ---
 
 
-*Extrait de mon [HDR](/publications/time-of-experience/*
+**Extrait de mon [HDR](/publications/time-of-experience/)**
 
 Passage est un projet réalisé en 2012 par Gracia Goh, Chiyong Lim, et Kate Vermeyen à l’Université de Technologie d’Eindhoven. Passage s’intéresse au lieu de transition entre deux espaces physiques, c’est-à-dire à leur entre-espace. L’énoncé du projet invite les étudiant à réaliser un design pour l’entre-espace en évitant d’influencer l’expérience de l’un des deux espaces. Cet énoncé semble a priori phénoménologiquement incohérent, puisque l’expérience d’une chose extérieure à soi a nécessairement lieu dans un espace et demande de plus que l’attention de l’utilisateur soit dirigée au moins partiellement vers cette chose. Or non seulement l’entre-espace ne semble pas être un espace (mais plutôt une surface), et l’attention d’une personne passant une porte est le plus souvent dirigée vers l’espace dans lequel elle compte se rendre.  
 Après de multiples itérations incluant des fabrications de prototypes, des essais en situation, des réflexions basées sur la contexture kansei, etc., un remarquable design a progressivement pris forme. Passage est une installation montée sur le cadre d’une porte. Cette installation est composée d’une ligne de diodes électroluminescentes (LEDs RGB) projetée sur une feuille d’aluminium fine qui réfléchit la lumière en direction de la porte une fois entrouverte. Les diodes changent très lentement la couleur émise. La feuille d’aluminium ondule en fonction de la manière dont la porte est ouverte : une ouverture franche créera bien plus de turbulences qu’une ouverture lente. L’impression lumineuse projetée sur la porte est donc unique à chaque ouverture et à chaque fermeture.  

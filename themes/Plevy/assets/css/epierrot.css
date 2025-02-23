@@ -71,9 +71,8 @@ html,body {
 body {
   @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden p-5;
   transition: all 500ms ease-in-out;
-  background: linear-gradient(-45deg, #e1cece 30%, #ddcfd6, #78a0bc, #b5ece0 70%);
-  background-size: 400% 400%;
-	animation: imgFrnt 30s ease infinite alternate;
+  background: fixed linear-gradient(135deg,#ffffff 30%,#f0ede2 70%);
+  background-size: 100vw 100vh;
 }
 /*
 body::before {
@@ -119,6 +118,7 @@ a {
   font-size: inherit;
   font-weight: inherit;
   transition: all 1s ease-in-out;
+  display: inline-block;
 }
 
 a:hover {
@@ -224,7 +224,37 @@ a.logohome:hover .lh2 {
   @apply relative bg-transparent w-full py-3 md:p-2 transition-all duration-700 ease-in-out;
 }
 
+.pack-item.frontTop {
+  @apply relative rounded-xl w-1/2 md:max-w-48 h-48;
+  background-size: 100% 100%;
+  background-clip: content-box;
 
+}
+
+.pack-item.frontTop>.topBg {
+  @apply  absolute w-42 h-42 ;
+}
+.pack-item.frontTop>.topBg>img {
+  @apply object-cover h-42 w-42 rounded-xl transition-all duration-700 ease-in-out;
+  filter: grayscale(0.8) brightness(3);
+}
+
+.pack-item.frontTop>.dynCadre {
+  @apply absolute h-42 w-42 bg-transparent;
+}
+
+.pack-item.frontTop:hover>.topBg>img {
+  filter: grayscale(0) brightness(1);
+}
+.frontTopTitle {
+  @apply leading-tight px-2 py-1 rounded-lg transition-all duration-700 ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.pack-item.frontTop:hover .frontTopTitle {
+  opacity: 0;
+}
 /* buttons */
 .pack-item #languageMode {
   @apply bg-transparent;
@@ -310,7 +340,8 @@ a.floatImg::after {
 
 a.boxIso,
 .dynCadre,
-.doclinkButton {
+.doclinkButton, 
+.linkBox {
   @apply relative text-primary-text justify-center flex flex-col w-full p-3 rounded-xl transition-all duration-700 ease-in-out;
   background-color: #FFF5;
   box-shadow: #0001 0 0 3px 1px;
@@ -322,7 +353,6 @@ a.boxIso {
 }
 
 a.boxIso:hover, .dynCadre:hover {
-  @apply rounded-xl;
   border: var(--color-epierrot) 2px solid;
   background-color: #FFF9;
 }
@@ -331,7 +361,7 @@ a.doclinkButton {
   @apply flex-row items-center justify-center transition-all duration-700 ease-in-out;
 }
 
-a.doclinkButton:hover {
+a.doclinkButton:hover, a.linkBox:hover {
   @apply text-epierrot bg-transparent;
 }
 
@@ -378,7 +408,7 @@ a.langu {
 
 a.homemenu,
 a.listcourse {
-  @apply relative inline-block px-2 py-0.5 my-2 text-primary-text hover:text-epierrot;
+  @apply relative inline-block px-2 py-0.5 my-2 text-primary-text hover:text-primary-bg rounded-md;
 }
 
 a.homemenu {
@@ -386,15 +416,7 @@ a.homemenu {
 }
 
 a.linkBox {
-  @apply relative flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 border-0 transition-all duration-700 ease-in-out;
-}
-
-a.linkBox {
-  @apply relative bg-secondary-bg flex justify-between min-h-24 w-full max-w-96 p-1 mb-4 border-0 transition-all duration-700 ease-in-out;
-}
-
-a.linkBox:hover {
-  @apply bg-secondary-bg;
+  @apply relative flex flex-row justify-between min-h-24 w-full max-w-96 p-1 mb-4 border-0 transition-all duration-700 ease-in-out;
 }
 
 div.ended a.boxIso {
@@ -655,18 +677,15 @@ a:hover img.imgBox {
   z-index: 10;
   opacity: 0.1;
   transition: all 500ms ease-in-out;
-  background: linear-gradient(-45deg, #e1cece 30%, #ddcfd6, #78a0bc, #b5ece0 70%);
-	background-size: 400% 400%;
-	animation: imgFrnt 30s ease infinite alternate;
+  background: linear-gradient(-45deg, #92d2ea 20%, #b2ebd9 80%);
+  background-size: 400% 400%;
+	animation: imgFrnt 60s ease infinite alternate;
 }
 
 @keyframes imgFrnt {
-  0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 100% 50%;
-	}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .boxIso:hover div.imagFront {
@@ -1360,7 +1379,7 @@ li:last-child {
 }
 
 .sidenav {
-  @apply border-l border-epierrot pl-2
+  @apply border-l border-epierrot;
 }
 
 .sidenav__sublist .current::after {
@@ -1451,17 +1470,13 @@ div.highlight pre {
   @apply font-bold leading-tight px-3 py-2;
 }
 
-a.linkBox:hover .titleLink {
-  @apply text-primary-text;
-}
-
 .linkBox .imgLink {
   @apply w-28 h-28 flex-shrink-0;
 
 }
 
 .linkBox .imgLink img {
-  @apply w-28 h-full object-cover rounded grayscale text-sm;
+  @apply w-28 h-full object-cover rounded-lg grayscale text-sm;
 }
 
 .linkBox:hover .imgLink img {

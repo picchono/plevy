@@ -17,14 +17,14 @@ collaboration:
         logo: civiccity
         name: "Civic City"
         web: "https://civic-city.org/"
-        heig: 3
+        heig: 1.8
     partner2:
         logo: cnam
         short: Cnam
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
         colo: "var(--color-primary-text)"
-        heig: 1.5
+        heig: 1.2
 chaire: true
 date: 2023-10-16T14:00:00+02:00
 reference: "This seminar aims to launch the third session of the school of not-Knowing. The first began in September 2022 at the French Institute in Milan and culminated in the form of a first exhibition in the same place in January 2024."

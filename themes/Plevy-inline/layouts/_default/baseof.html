@@ -1,0 +1,14 @@
+{{ if .Params.redirect }}<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="{{ .Params.bodyclass }}">
+  <main class='pack'>
+    <div class="w-px fixed top-0 left-0 -z-40"></div>
+    {{ partial "title.html" . }}
+    {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
+    {{- block "main" . }}{{- end }}
+  </main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{{ if .IsTranslated }}
+        <div id="languageMode" class='text-sm mt-12'>
+                <b class="relative bg-transparent text-epierrot inline-block mr-2">{{ .Language.LanguageName }}</b>
+                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}" rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu">{{ .Language.LanguageName }}</a>
+                {{ end }}
+        </div>
+{{ end }}

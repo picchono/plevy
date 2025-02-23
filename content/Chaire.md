@@ -4,6 +4,7 @@ title: "Chaire de Design Jean Prouvé"
 date: 2020-10-24T00:55:28+02:00
 draft: false
 layout: chaire
+logo: chaire
 searchFilter: home
 listchaire: true
 institution:
@@ -17,11 +18,6 @@ description: "La Chaire de Design Jean Prouvé est un lieu bienveillant consacr�
 notEverything: true
 notListed: true
 noPagesearch: true
-video:
-    video1:
-        youtube: "2iE0PFu51CM"
-        title: "Inaugural lecture - Les moments du design"
-        speaker: "Pierre Lévy"
 members:
     1: ["Pierre Lévy", "Professeur du Cnam,<br/>Titulaire de la chaire", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
 ---

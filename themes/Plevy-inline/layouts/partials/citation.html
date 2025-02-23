@@ -9,7 +9,7 @@
         {{ $ord = add $ord 1 }}
     {{ end }}
     {{ if .year }}({{ .year -}}).{{- end -}}
-    {{ if .title }} {{ .title -}}.{{- end -}}
+    {{ if .title }} {{ .title -}}{{ if .technical_report_number}} ({{- .technical_report_number -}}){{- end -}}.{{- end -}}
 {{ end }}
 {{ if .editors }}
     {{ $edito := .editors }}
@@ -39,15 +39,16 @@
 {{ if .proceedings }}
     {{ if .editors }}{{ else }}In {{ end }}{{ .proceedings }}
     {{- if .number -}}, {{ .number }}{{ if .volume}}({{ .volume }}){{ end -}} {{ end }}
-    {{ if .pages }}({{ if eq .pages "CD" }}[on CD]{{ else if eq .pages "online" }}online{{ else }}pp. {{ .pages }}{{ end }}). {{ end }}
+    {{ if .firstpage }}({{ if eq .firstpage "CD" }}[on CD]{{ else if eq .firstpage "online" }}online{{ else }}pp. {{ .firstpage }}-{{ .lastpage }}{{ end }}).{{- end }}
 {{ end }}
 {{ if .booktitle }}
     {{ .booktitle }}
-    {{ if .pages }}({{ if eq .pages "CD" }}[on CD]{{ else if eq .pages "online" }}online{{ else }}pp. {{ .pages }}{{ end }}){{ end }}.
+    {{ if .firstpage }}({{ if eq .firstpage "CD" }}[on CD]{{ else if eq .firstpage "online" }}online{{ else }}pp. {{ .firstpage }}-{{ .lastpage }}{{ end }}).{{- end }}
 {{ end }}
 {{ if .publisher }}{{ index .publisher 1 -}}{{ if ne (index .publisher 0) "" -}}: {{ index .publisher 0 -}}{{ end }}.{{ end }}
+{{ if .technical_report_institution }}{{ .technical_report_institution }}.{{ end }}
 {{ if .school }}{{ index .school 1 -}}{{ if ne (index .school 0) "" -}}: {{ index .school 0 -}}{{ end }}.{{ end }}
 {{- if .isbn }}ISBN: {{ .isbn }}. {{- end -}}
 {{- if .issn }}ISSN: {{ .issn }}. {{- end -}}
-{{ if .doi }}https://doi.org/{{- .doi -}}{{ end }}
+{{ if .doi }}<a href="https://doi.org/{{- .doi -}}" rel="noreferrer">https://doi.org/{{- .doi -}}</a>{{ end }}
 {{ end }}

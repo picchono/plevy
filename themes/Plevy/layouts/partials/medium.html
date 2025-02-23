@@ -21,9 +21,10 @@
 </div></div>
 {{ end }}
 {{ if .Params.tablecontent }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96 tablecontent" id="toc" data-cat-sort="1"><div class="dynCadre">
+<div class="pack-item w-full md:w-1/3 md:max-w-96 dynCadre mt-2" id="toc" data-cat-sort="1">
     <h2>{{ i18n "tableOfContent"}}</h2>
-</div></div>
+    <div class="tablecontent"></div>
+</div>
 {{ end }}
 {{ if .Params.photogallery }}
 {{ partial "photogallery.html" . }}

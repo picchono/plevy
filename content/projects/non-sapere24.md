@@ -16,7 +16,7 @@ collaboration:
         logo: civiccity
         name: "Civic City"
         web: "https://civic-city.org/"
-        heig: 3
+        heig: 1.8
     partner2:
         logo: cnam
         short: Cnam

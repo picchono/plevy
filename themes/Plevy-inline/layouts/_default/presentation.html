@@ -1,0 +1,116 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+<div class="pack-item w-2/3" id="content">
+    <div class="dynCadre">
+    <div class="flex flex-row flex-wrap mb-8 md:mb-22">
+        <div class="invisible md:visible flex-shrink-0 flex-grow-0 h-0 md:h-48 w-0 md:w-48">
+            <span id="qrcode" class="block h-0 md:h-44 w-0 md:w-44 md:mb-8 md:p-2 bg-white rounded-lg"></span>
+        </div>
+        {{ if .Content}}
+        <div id="content" class="flex-shrink flex-grow w-52 md:p-10">
+            {{ .Content }}
+        </div>
+        {{ end }}
+    </div>
+    {{ if .Params.slides }}
+    {{ $slid := .Params.slides }}
+    {{ $ord := 1 }}
+    <div class="flex flex-row flex-wrap" id="lightgallery">
+        {{ range $slid }}
+        {{ $typ := index . 0 }}
+        {{ if eq $typ "img" }}
+        <a class="place-self-center w-full lg:w-44 mr-4 mb-4" href="{{ index . 1 }}&width=3840&height=2160"
+            aria-label="See image {{ $ord }}">
+            <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 1 }}&width=400"
+                alt="image {{ $ord }}"></a>
+        {{ else if eq $typ "mov"}}
+        <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}" 
+            class="place-self-center w-full lg:w-44 mr-4 mb-4"> 
+            <img class="rounded-sm object-cover" loading="lazy" src="{{ index . 2 }}" alt="video {{ $ord }}">
+        </a>
+        {{ end }}
+        {{ $ord = add $ord 1 }}
+        {{ end }}
+    </div>
+    {{ end }}
+    </div>
+</div>
+
+{{ $qr_js := resources.Get "js/qrgen.js" | minify }}
+<script src="{{ $qr_js.Permalink }}"></script>
+<script defer="defer">
+    const qrcode = new QRCode(document.getElementById('qrcode'), {
+        text: {{ .Page.Permalink }},
+        width: 500,
+        height: 500,
+        colorDark: '#000',
+        colorLight: '#fff',
+        correctLevel: QRCode.CorrectLevel.H
+    });
+</script>
+
+<style>
+    @font-face {
+        font-family: "lg";
+        src: url(/lg.woff2) format("truetype");
+    }
+</style>
+
+{{ $lg_js := resources.Get "js/lg.js" | minify }}
+<script src="{{ $lg_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ $lg_css := resources.Get "css/lg.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $lg_css := $lg_css | minify }}
+<link rel="stylesheet" href="{{ $lg_css.Permalink }}" media="all">
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="https://www.youtube.com/player_api"></script>
+
+{{ $lgvideo_js := resources.Get "js/lgvideo.js" | minify }}
+<script src="{{ $lgvideo_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ $lgvideo_css := resources.Get "css/lgvideo.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $lgvideo_css := $lgvideo_css | minify }}
+<link rel="stylesheet" href="{{ $lgvideo_css.Permalink }}" media="all" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+{{ $lghash_js := resources.Get "js/lghash.js" | minify }}
+<script src="{{ $lghash_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+{{ $lgfullscreen_js := resources.Get "js/lgfullscreen.js" | minify }}
+<script src="{{ $lgfullscreen_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ $lgfullscreen_css := resources.Get "css/lgfullscreen.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $lgfullscreen_css := $lgfullscreen_css | minify }}
+<link rel="stylesheet" href="{{ $lgfullscreen_css.Permalink }}" media="all" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        licenseKey: "86E42556-05764516-9C2C8B36-B8B2858F",
+        plugins: [lgVideo, lgFullscreen, lgHash], //
+        speed: 500,
+        download: false,
+        loop: false,
+        mode: "lg-fade",
+        controls: false,
+        nextHtml: ">",
+        prevHtml: "<",
+        showBarsAfter: 2000,
+        videojs: true,
+        getCaptionFromTitleOrAlt: false,
+        videoMaxWidth: "1080px",
+        videojs: true,
+        vimeoPlayerParams: {
+            byline: 0,
+            portrait: 0,
+            color: 'CCCCCC'
+        },
+        loadYoutubeThumbnail: true,
+        youTubePlayerParams: {
+            modestbranding: 1,
+            autoplay: 1,
+            showinfo: 0,
+            controls: 1,
+            rel: 0
+        },
+        loadYouTubePoster: true
+    });
+</script>
+{{ end }}
