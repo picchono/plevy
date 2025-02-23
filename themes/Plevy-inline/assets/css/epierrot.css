@@ -71,6 +71,7 @@ body {
   @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden transition-all duration-500 ease-in-out;
   background-color: #f5f4ef;
   /*background: fixed radial-gradient(49% 81% at 45% 47%, #F6FBFA45 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FFFFFFFF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #F2FCF9FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #F2FCF9FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #D5F6EBFF 0%, #E7F2F0FF 100%);*/
+  background-image: linear-gradient(to right bottom, var(--color-primary-bg), #f5f4ef);
   background-size: 100vw 100%;
 }
 /*
