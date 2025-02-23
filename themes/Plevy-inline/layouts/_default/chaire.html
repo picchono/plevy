@@ -1,4 +1,7 @@
 {{ define "main" }}
+<div class="it pack-item" aria-label="Description de la chaire de Design Jean Prouvé" data-cat-sort="200" data-date="1980-10-24 00:55:28 +0200 CEST">
+    <a class="introChair" href="#">{{ .Params.description }}</a>
+</div>
 {{ range $fold := slice "events" "teaching" "courses" "projects" "writings" "research" "publications" "team" }}
 {{ range readDir "content" }}
 {{ if eq .Name $fold }}
