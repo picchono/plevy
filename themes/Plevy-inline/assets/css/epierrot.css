@@ -220,7 +220,7 @@ a.logohome:hover .lh2 {
 
 /* Pack items*/
 .pack-item {
-  @apply bg-transparent px-2 py-7 md:p-5 transition-all duration-700 ease-in-out;
+  @apply bg-transparent w-full md:w-auto px-2 py-7 md:p-5 transition-all duration-700 ease-in-out;
 }
 
 /* buttons */
@@ -245,7 +245,7 @@ a.logohome:hover .lh2 {
 }
 
 .dynCadre {
-  @apply relative inline-block rounded-md w-auto justify-center p-5 transition-all duration-700 ease-in-out;
+  @apply relative inline-block w-full md:w-auto rounded-md justify-center p-5 transition-all duration-700 ease-in-out;
   background-color: #FFF5;
   border: 1px #fff solid;
 }
@@ -373,7 +373,7 @@ a.doclinkButton span, a.linkBox span {
 }
 
 a.doclinkButton .doclinkIcon {
-  @apply my-1;
+  @apply my-1 transition-all duration-700 ease-in-out;
 }
 
 a.doclinkButton:hover, a.linkBox:hover, a.listcourse:hover {
