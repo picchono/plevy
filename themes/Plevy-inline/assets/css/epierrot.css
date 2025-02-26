@@ -358,7 +358,7 @@ a.boxIso:hover{
 }
 
 a.doclinkButton, a.linkBox {
-  @apply relative flex flex-row justify-between w-full md:max-w-96 px-10 transition-all duration-700 ease-in-out;
+  @apply relative flex flex-row justify-center w-full md:max-w-96 px-10 transition-all duration-700 ease-in-out;
 }
 
 a.linkBox {
