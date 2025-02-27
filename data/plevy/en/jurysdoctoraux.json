@@ -1,6 +1,22 @@
 {
     "description": "Doctoral thesis jury",
     "list": {
+        "Estelle Berger HDR": {
+            "date": "2025-02-10",
+            "type": "Rapporteur and President of the jury fo the Habilitation à diriger des recherches",
+            "candidate": "Estelle Berger",
+            "place": "University of Bordeaux-Montaigne, France",
+            "title": "Le design comme posture - un décentrement avec la philosophie du yoga",
+            "language": "French"
+        },
+        "Laura Nino": {
+            "date": "2024-11-19",
+            "type": "Membre of the doctoral defence",
+            "candidate": "Laura Nino",
+            "place": "Eindhoven University of Technology, the Netherlands",
+            "title": "From Marginal to Dialogical Relations: Systemically Designing with Ethnomedical and Digital Perspectives in Healthcare",
+            "language": "English"
+        },
         "Daniele Arets": {
             "date": "2024-04-16",
             "type": "Membre of the doctoral defence",

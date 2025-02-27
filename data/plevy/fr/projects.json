@@ -1,6 +1,6 @@
 {
     "description": "Projets",
-    "totalfinance": "~4m€",
+    "totalfinance": "~3.5m€",
     "list": {
         "TransFabriC24": {
             "start": "2024",
@@ -8,23 +8,31 @@
             "title": "Institut de la transfabrication circulaire (TranFabriC)",
             "comment": "Institut de la transfabrication circulaire matérialise l’ambition du Conservatoire national des Arts et Métiers d’accompagner le développement des pratiques sociales et citoyennes pour l’émergence d’une économie sociale, solidaire et circulaire (ESSC). Il s’agit de créer un éco-système opérant, des formations et un programme de recherche, capables ensemble de faire émerger une ESSC répondant aux missions historiques du Cnam.",
             "place": "Conservatoire national des Arts et Métiers (CNAM), France",
-            "amount": "640k€"
+            "amount": "600k€"
         },
         "LaboCouleurs": {
             "start": "2024",
             "end": "2030",
-            "title": "Institut de la transfabrication circulaire (TranFabriC)",
-            "comment": "Institut de la transfabrication circulaire matérialise l’ambition du Conservatoire national des Arts et Métiers d’accompagner le développement des pratiques sociales et citoyennes pour l’émergence d’une économie sociale, solidaire et circulaire (ESSC). Il s’agit de créer un éco-système opérant, des formations et un programme de recherche, capables ensemble de faire émerger une ESSC répondant aux missions historiques du Cnam.",
+            "title": "Laboratoire des couleurs École Duperré/Cnam ",
+            "comment": "L’objectif du Laboratoire des couleurs est d’être à l’écoute des questions posées par l’industrie de la mode et de tenter, à travers différents espaces d’expérimentation et de médiatisation, pour l’étude et le développement de la teinture, en particulier naturelle, et de leur apporter des réponses adaptées.",
             "place": "Conservatoire national des Arts et Métiers (CNAM), France",
-            "amount": "640k€"
+            "amount": "315k€"
         },
         "IFMdoc": {
             "start": "2024",
             "end": "2030",
-            "title": "Institut de la transfabrication circulaire (TranFabriC)",
-            "comment": "Institut de la transfabrication circulaire matérialise l’ambition du Conservatoire national des Arts et Métiers d’accompagner le développement des pratiques sociales et citoyennes pour l’émergence d’une économie sociale, solidaire et circulaire (ESSC). Il s’agit de créer un éco-système opérant, des formations et un programme de recherche, capables ensemble de faire émerger une ESSC répondant aux missions historiques du Cnam.",
+            "title": "Développement d'activités de recherche liées à l’évolution de l’industrie de la mode",
+            "comment": "Situé à l’Institut Français de la Mode (IFM) et en lien avec le Cnam, ce nouveau programme réunira dans un même parcours doctoral les mondes de l’innovation et de la technologie de la mode, des sciences sociales ainsi que celui des arts. Il sera interdisciplinaire par nature et combinera des investigations théoriques, des expériences pratiques ainsi que des recherches appliquées, dans une perspective d’avenir.",
             "place": "Conservatoire national des Arts et Métiers (CNAM), France",
-            "amount": "640k€"
+            "amount": "290k€"
+        },
+        "Cagami": {
+            "start": "2024",
+            "end": "2030",
+            "title": "Projet Cagami",
+            "comment": "Le projet Cagami a pour ambition de chercher des solutions concrètes à cette problématique à travers la captation en 3 dimensions de gestes des métiers d’art, de la mode et de l’industrie avec trois technologies : la vidéo 360 degrés, la motion capture et la capture volumétrique.",
+            "place": "Conservatoire national des Arts et Métiers (CNAM), France",
+            "amount": "380k€"
         },
         "Fablab23": {
             "start": "2023",

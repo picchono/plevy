@@ -1,6 +1,22 @@
 {
     "description": "Jurys de doctorat",
     "list": {
+        "Estelle Berger HDR": {
+            "date": "2025-02-10",
+            "type": "Rapporteur and président du jury d'habilitation à diriger des recherches",
+            "candidate": "Estelle Berger",
+            "place": "Université de Bordeaux-Montaigne",
+            "title": "Le design comme posture - un décentrement avec la philosophie du yoga",
+            "language": "français"
+        },
+        "Laura Nino": {
+            "date": "2024-11-19",
+            "type": "Membre du jury de la défense doctorale",
+            "candidate": "Laura Nino",
+            "place": "Eindhoven University of Technology, the Netherlands",
+            "title": "From Marginal to Dialogical Relations: Systemically Designing with Ethnomedical and Digital Perspectives in Healthcare",
+            "language": "anglais"
+        },
         "Daniele Arets": {
             "date": "2024-04-16",
             "type": "Membre du jury de la défense doctorale",
@@ -11,7 +27,7 @@
         },
         "Laurent Mertz": {
             "date": "2024-01-18",
-            "type": "Rapporteur and President of the jury of the doctoral defence",
+            "type": "Rapporteur and président du jury de la défense doctorale",
             "candidate": "Laurent Mertz",
             "place": "Institut Polytechnique de Paris / Telecom Paris",
             "title": "Représenter l'utilisateur et son expérience : conditions de production et d'évolution de documents dans un projet design",

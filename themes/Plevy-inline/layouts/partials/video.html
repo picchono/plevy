@@ -14,8 +14,8 @@
         <div class="w-full flex-grow flex-shrink flex flex-col justify-end self-end max-w-xl p-2">
             {{ if .Title }}
             <div class="">{{ if isset . "title" }}<h2 class="pt-4 pb-2 leading-tight">{{ .Title }}</h2>{{ end }}
-                {{ if isset . "speaker" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
-                {{ end }}
+                {{ if isset . "speaker" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .speaker }}</div>{{ end }}
+                {{ if isset . "author" }}<div class="italic -mt-2 mb-5">by {{ i18n "with" }}{{ .author }}</div>{{ end }}
                 <div class="videoLink order-3">https://www.youtube.com/watch?v={{ .youtube | safeURL }}</div>
             </div>
             {{ end }}
@@ -35,8 +35,9 @@
             {{ if .Title }}
             <div class="">{{ if isset . "title" }}<h2 class="pt-4 pb-0">
                     {{ .Title }}</h2>{{ end }}
-                {{ if isset . "speaker" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
-                {{ end }}<div class="videoLink order-3">https://vimeo.com/{{ .vimeo }}</div>
+                {{ if isset . "speaker" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .speaker }}</div>{{ end }}
+                {{ if isset . "author" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .author }}</div>{{ end }}
+                <div class="videoLink order-3">https://vimeo.com/{{ .vimeo }}</div>
             </div>
             {{ end }}
 
@@ -50,8 +51,9 @@
         <div class="w-full flex-grow flex-shrink flex flex-col justify-end self-end max-w-xl p-1 px-5">
             {{ if .Title }}
             <div class="">{{ if isset . "title" }}<h2 class="pt-4 pb-2 leading-tight">{{ .Title }}</h2>{{ end }}
-                {{ if isset . "speaker" }}<div class="italic -mt-1 mb-5">{{ i18n "with" }}{{ .speaker }}</div>
-                {{ end }}<div class="videoLink order-3">{{ .other }}</div>
+                {{ if isset . "speaker" }}<div class="italic -mt-1 mb-5">{{ i18n "with" }}{{ .speaker }}</div>{{ end }}
+                {{ if isset . "author" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .author }}</div>{{ end }}
+                <div class="videoLink order-3">{{ .other }}</div>
             </div>
             {{ end }}
 

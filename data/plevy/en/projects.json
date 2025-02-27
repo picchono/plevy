@@ -1,6 +1,6 @@
 {
     "description": "Financed projects",
-    "totalfinance": "~3m€",
+    "totalfinance": "~3.5m€",
     "list": {
         "TransFabriC24": {
             "start": "2024",
@@ -8,7 +8,31 @@
             "title": "Institute for circular transfabrication (TranFabriC) ",
             "comment": "Institut de la transfabrication circulaire embodies the ambition of the Conservatoire national des Arts et Métiers to support the development of social and civic practices for the emergence of a social, solidarity-based and circular economy (ESSC). The aim is to create an operating eco-system, training courses and a research program, together capable of bringing about the emergence of an ESSC in line with the Cnam's historic missions.",
             "place": "Conservatoire national des Arts et Métiers (CNAM), France",
-            "amount": "640k€"
+            "amount": "600k€"
+        },
+        "LaboCouleurs": {
+            "start": "2024",
+            "end": "2030",
+            "title": "Laboratory of colours at École Duperré/Cnam ",
+            "comment": "The aim of the Laboratory of colours is to listen to the questions posed by the fashion industry and to try, through different areas of experimentation and media coverage, to study and develop dyeing, particularly natural dyeing, and to provide appropriate answers.",
+            "place": "Conservatoire national des Arts et Métiers (CNAM), France",
+            "amount": "315k€"
+        },
+        "IFMdoc": {
+            "start": "2024",
+            "end": "2030",
+            "title": "Setting up resarch activities related to the evolution of the fashion industry",
+            "comment": "Based at the Institut Français de la Mode (IFM) and in association with the Cnam, this new program will bring together the worlds of fashion innovation and technology, the social sciences and the arts in a single doctoral program. It will be interdisciplinary in nature, combining theoretical investigations, practical experience and applied research, with a view to the future.",
+            "place": "Conservatoire national des Arts et Métiers (CNAM), France",
+            "amount": "290k€"
+        },
+        "Cagami": {
+            "start": "2024",
+            "end": "2030",
+            "title": "Cagami project",
+            "comment": "The aim of the Cagami project is to find concrete solutions to this problem by capturing gestures from the arts, fashion and industry in 3 dimensions, using three technologies: 360-degree video, motion capture and volumetric capture.",
+            "place": "Conservatoire national des Arts et Métiers (CNAM), France",
+            "amount": "380k€"
         },
         "Fablab23": {
             "start": "2023",
