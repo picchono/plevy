@@ -6,35 +6,18 @@
     <div class="invisible abolute inline-block h-0 w-0 overflow-hidden">{{ .context.Section }} {{ htmlUnescape (plainify 
         .context.Content) }} {{ .context.Params.Date }}</div>
     <a class="boxIso{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}">
-        <span class="boxInfo">{{ if eq .context.Params.layout "member" }}<div>
-                {{ $parts := .context.Params.description }}{{ $splitParts := split $parts "," }}{{ range $index,
-                $part := $splitParts }}{{ if eq $index 0 }}{{ $part }}{{ end }}{{ end }}</div>
-            {{ else }}<div class="font-bold">{{ $str := replaceRE "(s)$" "" (i18n .context.Section) }}{{ $str }}
-            </div>
+        <span class="boxInfo">
+            {{ if eq .context.Params.layout "member" }}
+            {{ $parts := .context.Params.shortdescription }}{{ $splitParts := split $parts "," }}{{ range $index, $part := $splitParts }}<div>{{ $part }}</div>{{ end }}
+            {{ else }}
+            <div class="font-bold">{{ $str := replaceRE "(s)$" "" (i18n .context.Section) }}{{ $str }}</div>
             <div>{{ if eq .context.Section "publications" }}{{ dateFormat "2006" .context.Date }}
                 {{ else if eq .context.Section "projects" }}{{ dateFormat "Jan 2006" .context.Date }}
                 {{ else if or (eq .context.Section "courses") (eq .context.Section "research") }}&nbsp;
-                {{ else }}{{ dateFormat "02 Jan 2006" .context.Date }}{{ end }}</div>{{ end }}
+                {{ else }}{{ dateFormat "02 Jan 2006" .context.Date }}{{ end }}</div>
+            {{ end }}
         </span>
-        <span class='boxTitle{{ if .context.Params.fronttop }} frontTop{{end}}'>{{- .context.Title |safeHTML }}{{if
-            eq
-            .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</span>
-        {{ if false }}
-        {{ if .context.Params.collaboration }}
-        <div class="w-full flex flex-col">
-            {{ $inst := .context.Params.institutiontution.logo }}
-            <p class="flex flex-row flex-wrap pt-10 px-2">
-                {{ range sort .context.Params.collaboration }}
-                {{ if ne $inst .logo }}
-                <span class="mr-4 mb-2 collabicon">
-                    {{ partial "icons.html" (dict "ico" .logo "hei" 0.8) -}}
-                </span>
-                {{ end }}
-                {{ end }}
-            </p>
-        </div>
-        {{ end }}
-        {{ end }}
+        <span class='boxTitle{{ if .context.Params.fronttop }} frontTop{{end}}'>{{- .context.Title |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</span>
     </a>
 {{if .dynC }}</div>{{ end }}</div>
 {{ end }}
