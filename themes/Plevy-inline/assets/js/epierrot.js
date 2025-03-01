@@ -64,7 +64,6 @@ function externalLinks() {
 
 //create a table of content if #toc exists
 function tableContent() {
-  window.addEventListener("DOMContentLoaded", function (event) {
     //Get all headings only from the actual contents.
     var contentContainer = document.getElementById("content"); // Add this div to the html
     var headings = contentContainer.querySelectorAll("h2,h3,h4"); // You can do as many or as few headings as you need.
@@ -134,7 +133,6 @@ function tableContent() {
     }
 
     //console.log(links);
-  });
 }
 
 /* copy button in pre fields */
@@ -199,20 +197,6 @@ function progressBar() {
 }
 window.onscroll = function() {progressBar()};
 */
-window.addEventListener('load', function (event) {
-  externalLinks();
-  showPic();
-  if (document.getElementById("toc")) tableContent();
-  if (document.querySelector("pre")) AddCopyButtons();
-});
-
-window.addEventListener("scroll", function () {
-  showPic();
-});
-
-window.addEventListener("resize", function () {
-  showPic();
-});
 
 /* isotope */
 var qsRegex;
@@ -291,5 +275,20 @@ iso.on( 'arrangeComplete', function( filteredItems ) {
   }
 
   console.log('filtered');
+  showPic();
+});
+
+window.addEventListener('load', function (event) {
+  externalLinks();
+  showPic();
+  if (document.getElementById("toc")) tableContent();
+  if (document.querySelector("pre")) AddCopyButtons();
+});
+
+window.addEventListener("scroll", function () {
+  showPic();
+});
+
+window.addEventListener("resize", function () {
   showPic();
 });

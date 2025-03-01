@@ -1397,6 +1397,9 @@ li:last-child {
   padding-left: 2.5rem;
 }
 
+.sidenav__item a:hover {
+  @apply text-epierrot bg-transparent;
+}
 /* pre */
 
 pre {

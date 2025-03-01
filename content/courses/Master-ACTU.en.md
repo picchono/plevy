@@ -37,8 +37,8 @@ collaboration:
         name: "École Média Art du Grand Chalon"
         web: "https://emafructidor.com/ema/"
         heig: 1.5
-frontphoto: "https://images.unsplash.com/photo-1657834713969-6592efed8913?q=80&w=1080"
-frontphotomini: "https://images.unsplash.com/photo-1657834713969-6592efed8913?q=80&w=500"
+frontphoto: "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?q=80&w=1080"
+frontphotomini: "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?q=80&w=500"
 photocredit: 
     cred: "Maksym Kaharlytskyi"
     link: "https://unsplash.com/@qwitka"

@@ -34,5 +34,5 @@ abstract: "Our current education systems do not adequately support students to l
 link:
     1: ["paper", "paper", "https://1drv.ms/b/s!AnQx_v88q65QgYHxKMy9UCtuRrgfT2Y?e=Qdi7d3"]
     2: ["website", "website", "https://rsdsymposium.org/education-as-a-transforming-practice-preparing-together-for-complex-sustainable-futures"]
-    5: ["dissertation", "dissertation", "https://research.tue.nl/en/publications/education-as-a-transforming-practice-designing-together-for-compl"]
+    5: ["article", "paper", "https://research.tue.nl/en/publications/education-as-a-transforming-practice-designing-together-for-compl"]
 ---

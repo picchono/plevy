@@ -1,7 +1,7 @@
 ---
 members: ["PLevy"]
-slug: Recherche-en-design-art-creation
-title: "DSN201 · Pratiques de recherche en design, art et création"
+slug: Initiation-a-la-recherche-en-design-art-creation
+title: "DSN201 · Initiation à recherche en design, art et création"
 layout: single
 searchFilter: Teaching
 institution:
@@ -11,14 +11,14 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 chaire: true
-date: 2022-09-01T16:27:15+02:00
-start: 202
-end: 2024
-subsection: ended
+date: 2025-03-20T16:27:15+02:00
 description: "Cette UE propose une vue d'ensemble des pratiques de la recherche en design, art et création, afin de contextualiser la pratique dans l'activité de recherche."
-frontphoto: "https://live.staticflickr.com/65535/52417553333_c004b0a4b5.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/52417553333_c004b0a4b5_q.jpg"
-code: DSN201A
+frontphoto: "https://images.unsplash.com/photo-1537202108838-e7072bad1927?q=80&w=1080"
+frontphotomini: "https://images.unsplash.com/photo-1537202108838-e7072bad1927?q=70&w=200"
+photocredit: 
+    cred: "Martin Adams"
+    link: "https://unsplash.com/@martinadams"
+code: DSN201B
 lectures:
     intro:
         order: 0
@@ -45,13 +45,17 @@ lectures:
         link: "evaluation"
         title: "L'évaluation"
 link:
-    1: ["page institutionelle", "institutional", "https://www.cnam-paris.fr/choisir-ma-formation/catalogue-des-formations/pratiques-de-recherche-en-design-art-et-creation-1349639.kjsp?RF=1493737534092"]
+    1: ["page institutionelle", "institutional", "https://bedeo.cnam.fr/public/unite/view/DSN201/2024-11-24"]
     2: ["Séminaire de recherche", "website", "https://plevy.fr/events/seminaire-de-recherche-en-design"]
 encapsulation:
     CS11400A: 
         title: "CS11400A · Certificat de spécialisation d'ingénierie de la culture et de la création"
         link: "https://formation.cnam.fr/rechercher-par-discipline/certificat-de-specialisation-d-ingenierie-de-la-culture-et-de-la-creation-1322095.kjsp"
         img: "https://images.unsplash.com/photo-1632127255731-469370df58c3?q=80&w=500"
+    MR1500B: 
+        title: "MR1500B · Master Design - Parcours Art, Contextes, Techniques, Usages"
+        link: "http://localhost:1313/courses/master_design-art_contextes_techniques_usages/"
+        img: "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?q=80&w=500"
 calendar:
     a: "<b>20 mars 2025 ·</b> Introduction"
     b: "<b>27 mars 2025 ·</b> Préparation du projet"

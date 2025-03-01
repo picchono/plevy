@@ -41,5 +41,5 @@ This paper introduces the first design iterations of Luciole, a design process v
 Finally, a first functional prototype of Luciole is introduced, as a means for further research. A long term user-test is currently conducted in order to validate the actual relevancy of Luciole as a tool to support education at TU/e.ID, and to evaluate the students? appreciation and use of the tool."
 link:
     1: ["paper", "paper", "https://1drv.ms/b/s!AnQx_v88q65Qv4Rueyse4XRbopVMvQ?e=7J5q1M"]
-    5: ["dissertation", "dissertation", "https://dl.acm.org/doi/10.1145/2037296.2037323"]
+    5: ["article", "paper", "https://dl.acm.org/doi/10.1145/2037296.2037323"]
 ---

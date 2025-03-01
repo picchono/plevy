@@ -33,7 +33,7 @@
         </div>
         <div class="w-full flex-grow flex-shrink flex flex-col justify-end self-end max-w-xl p-1">
             {{ if .Title }}
-            <div class="">{{ if isset . "title" }}<h2 class="pt-4 pb-0">
+            <div class="">{{ if isset . "title" }}<h2 class="pt-4 pb-2 leading-tight">
                     {{ .Title }}</h2>{{ end }}
                 {{ if isset . "speaker" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .speaker }}</div>{{ end }}
                 {{ if isset . "author" }}<div class="italic -mt-2 mb-5">{{ i18n "with" }}{{ .author }}</div>{{ end }}

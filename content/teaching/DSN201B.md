@@ -55,7 +55,7 @@ encapsulation:
     MR1500B: 
         title: "MR1500B · Master Design - Parcours Art, Contextes, Techniques, Usages"
         link: "http://localhost:1313/courses/master_design-art_contextes_techniques_usages/"
-        img: "https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?q=80&w=250"
+        img: "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?q=80&w=500"
 calendar:
     a: "<b>20 mars 2025 ·</b> Introduction"
     b: "<b>27 mars 2025 ·</b> Préparation du projet"
