@@ -172,12 +172,12 @@
          {{ end }}</div>
       <h2>{{ i18n "teaching" }}</h2>
       <h3>{{ i18n "pedagoresponsabilities" }}</h3>
-      <div class="mb-10">{{ range sort .teaching.responsabilities "ordre" "asc" }}
+      <div class="mb-10">{{ range sort .teaching.responsabilities "start" "desc" }}
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
             <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }}{{ if .language }} - {{ i18n "in"}} {{ .language }}{{ end }}
                {{ if .domaine}}<br /><span class="text-sm font-bold">{{ .domaine |safeHTML }}</span>{{ end }}
-               {{ if .description}}<br /><span class="comment">{{ .description |safeHTML }}</span>{{ end }}</div>
+               {{ if .comment}}<br /><span class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
       <h3>{{ i18n "bachelorcourses" }}</h3>
@@ -185,8 +185,8 @@
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
             <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
-               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .description}}<br /><span
-                  class="comment">{{ .description |safeHTML }}</span>{{ end }}</div>
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
       <h3>{{ i18n "mastercourses" }}</h3>
@@ -194,8 +194,8 @@
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
             <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
-               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .description}}<br /><span
-                  class="comment">{{ .description |safeHTML }}</span>{{ end }}</div>
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
       <h3>{{ i18n "doctoralcourses" }}</h3>
@@ -203,8 +203,8 @@
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
             <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
-               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .description}}<br /><span
-                  class="comment">{{ .description |safeHTML }}</span>{{ end }}</div>
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
       <h3>{{ i18n "procourses" }}</h3>
@@ -212,8 +212,8 @@
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
             <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
-               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .description}}<br /><span
-                  class="comment">{{ .description |safeHTML }}</span>{{ end }}</div>
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
       <h3>{{ i18n "projectcourses" }}</h3>
@@ -221,8 +221,8 @@
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
             <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
-               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .description}}<br /><span
-                  class="comment">{{ .description |safeHTML }}</span>{{ end }}</div>
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
       <h2>{{ .projects.description }}</h2>
