@@ -175,9 +175,9 @@
                <div class="flex flex-col flex-wrap">
                   {{ $qr1 := .Permalink }}
                   <div class="flex flex-row flex-wrap justify-start items-end md:px-6 pt-6 md:pt-0 mt-10 md:mt-0">
-                     <div class="invisible md:visible flex-shrink-0 flex-grow-0 h-0 md:h-32 w-0 md:w-32">
+                     <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
                         <a id="qrcode1" href="{{- $qr1 -}}" rel="noreferrer"
-                           class="block h-0 md:h-32 w-0 md:w-32 md:mb-8 md:p-2 bg-white rounded-lg"></a>
+                           class="block h-24 md:h-32 w-24 md:w-32 md:mb-8 md:p-2 bg-white rounded-lg"></a>
                      </div>
                      <div class="md:pl-4 comment pb-2">
                         <a href="{{- $qr1 -}}" rel="noreferrer">&nbsp;<b>{{- i18n "Updates" }}</b>&nbsp;<br>&nbsp;{{ .Permalink }}&nbsp;</a>
@@ -198,9 +198,9 @@
                   <div class="flex flex-row flex-wrap justify-start items-end md:px-6 py-6">
                      {{ with $.Site.GetPage "cvcomplete" }}
                         {{ $qr2 := .Permalink }}
-                        <div class="invisible md:visible flex-shrink-0 flex-grow-0 h-0 md:h-32 w-0 md:w-32">
+                        <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
                            <a id="qrcode2" href="{{- $qr2 -}}" rel="noreferrer"
-                              class="block h-0 md:h-32 w-0 md:w-32 md:p-2 bg-white rounded-lg"></a>
+                              class="block h-24 md:h-32 w-24 md:w-32 md:p-2 bg-white rounded-lg"></a>
                         </div>
                      <div class="md:pl-4 comment pb-2">
                         <script>console.log('qr2', {{ print $qr2 }});</script>
