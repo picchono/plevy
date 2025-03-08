@@ -17,7 +17,8 @@
                 {{ else }}{{ dateFormat "02 Jan 2006" .context.Date }}{{ end }}</div>
             {{ end }}
         </span>
-        <span class='boxTitle{{ if .context.Params.fronttop }} frontTop{{end}}'>{{- .context.Title |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</span>
+        <span class='boxTitle{{ if .context.Params.fronttop }} frontTop{{end}}'>{{- .context.Title |safeHTML }}
+            {{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</span>
     </a>
 {{if .dynC }}</div>{{ end }}</div>
 {{ end }}

@@ -179,7 +179,7 @@
                         <a id="qrcode1" href="{{- $qr1 -}}" rel="noreferrer"
                            class="block h-24 md:h-32 w-24 md:w-32 md:mb-8 md:p-2 bg-white rounded-lg"></a>
                      </div>
-                     <div class="md:pl-4 comment pb-2">
+                     <div class="pl-4 comment pb-2">
                         <a href="{{- $qr1 -}}" rel="noreferrer">&nbsp;<b>{{- i18n "Updates" }}</b>&nbsp;<br>&nbsp;{{ .Permalink }}&nbsp;</a>
                      </div>
                      <script defer="defer">
@@ -202,7 +202,7 @@
                            <a id="qrcode2" href="{{- $qr2 -}}" rel="noreferrer"
                               class="block h-24 md:h-32 w-24 md:w-32 md:p-2 bg-white rounded-lg"></a>
                         </div>
-                     <div class="md:pl-4 comment pb-2">
+                     <div class="pl-4 comment pb-2">
                         <script>console.log('qr2', {{ print $qr2 }});</script>
                         <a href='{{- $qr2 -}}' rel="noreferrer">&nbsp;<b>{{- i18n "CvComplete" }}</b>&nbsp;<br>&nbsp;{{- $qr2 -}}&nbsp;</a>
                      </div>

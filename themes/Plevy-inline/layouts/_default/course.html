@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
 {{ if .Content}}
-<div id="content" class="pack-item w-full md:w-192"><div class="dynCadre md:p-10">{{ .Content }}</div></div>
+<div id="content" class="pack-item w-full md:w-192"><div class="dynCadre">{{ .Content }}</div></div>
 {{ end }}
 {{ if .Params.Parcours }}
     {{ $teach := where .Site.Pages "Section" "in" (slice "courses") }}

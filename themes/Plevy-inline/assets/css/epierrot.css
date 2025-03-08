@@ -63,16 +63,9 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
-html,body {
-  background-color: var(--color-quaternary-bg);
-}
 
 body {
   @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden transition-all duration-500 ease-in-out;
-  background-color: #f5f4ef;
-  /*background: fixed radial-gradient(49% 81% at 45% 47%, #F6FBFA45 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FFFFFFFF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #F2FCF9FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #F2FCF9FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #D5F6EBFF 0%, #E7F2F0FF 100%);*/
-  background-image: linear-gradient(to right bottom, var(--color-primary-bg), #f5f4ef);
-  background-size: 100vw 100%;
 }
 /*
 body::before {
@@ -220,8 +213,18 @@ a.logohome:hover .lh2 {
 }
 
 /* Pack items*/
+main.pack {
+  @apply md:p-7;
+}
+
 .pack-item {
-  @apply bg-transparent w-full md:w-auto px-2 py-7 md:p-5 transition-all duration-700 ease-in-out;
+  @apply bg-transparent w-full md:w-auto p-2 md:p-7 transition-all duration-700 ease-in-out;
+}
+
+/* big menu */
+
+body#menu .pack-item {
+  @apply p-5;
 }
 
 /* buttons */
@@ -246,14 +249,35 @@ a.logohome:hover .lh2 {
 }
 
 .dynCadre {
-  @apply relative inline-block w-full md:w-auto rounded-md justify-center p-5 transition-all duration-700 ease-in-out;
-  background-color: #FFF5;
-  border: 1px #fff solid;
+  @apply relative inline-block w-full md:w-auto justify-center p-5 transition-all duration-700 ease-in-out;
+  --b: 1px; /* border width */
+	--c: 1em; /* corner size */
+	--r: 0.125em; /* corner rounding */
+  border-radius: var(--r);
+  place-self: center;
+	border: var(--b) solid transparent;
+}
+
+.dynCadre::before {
+  position: absolute;
+  z-index: -1;
+  inset: calc(-1*var(--b));
+  border: inherit;
+  border-radius: var(--r);
+  background: linear-gradient(var(--color-primary-text), var(--color-primary-text), var(--color-primary-text)) border-box;
+  --corner: 
+    conic-gradient(from -90deg at var(--c) var(--c), var(--color-primary-text) 25%, #0000 0) 
+      0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+  --inner: conic-gradient(var(--color-primary-text) 0 0) padding-box;
+  mask: 
+    var(--corner) subtract, 
+    var(--inner);
+  content: ''
 }
 
 .dynCadre:hover{
-  background-color: #FFF8;
-  border: 1px var(--color-epierrot) solid;
+  background-color: white;
+  border-color: var(--color-epierrot);
 }
 
 .introChair {
@@ -696,11 +720,11 @@ a:hover img.imgBox {
 }
   
 .stamp {
-  @apply flex flex-col w-full ;
+  @apply flex flex-col absolute top-0 left-0 w-screen p-4;
 }
 
 .mainMenu {
-  @apply flex justify-start p-5 pr-8 rounded-lg w-full bg-primary-bg transition-all duration-700 ease-in-out;
+  @apply flex justify-start p-5 pr-8 rounded w-full bg-primary-bg transition-all duration-700 ease-in-out;
 }
 
 .stamp.medium {
@@ -2432,7 +2456,7 @@ body {
 
 @media print {
   @page {
-    margin: 1.3cm 1.3cm 1.3cm 4cm;
+    margin: 1.2cm 1.2cm 1.2cm 3cm;
 
     @bottom-right {
       border-top: .25pt solid #666;
@@ -2449,7 +2473,7 @@ body {
   body {
     @apply bg-white text-black text-base;
     font-family: 'Avenir', 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 9pt;
+    font-size: 11pt;
     line-height: 1.4rem;
     margin: 0;
     float: none;

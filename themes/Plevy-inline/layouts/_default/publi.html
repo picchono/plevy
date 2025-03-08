@@ -2,7 +2,7 @@
 {{ $langu := .Site.Language.Lang }}
 
 <div class="pack-item md:w-192" data-cat-sort="100"><div class="dynCadre">
-    <h1>{{ i18n "abstract" }}</h1>
+    <b class="text-epierrot">{{ partial "slash.html" (dict "txt" (i18n "abstract")) }}</b>
     <div id="px-5 content">{{ .Params.abstract |safeHTML }}</div>
     {{ if .Content}}<div id="content" class="md:p-10">{{ .Content }}</div>{{ end }}
     </div>
