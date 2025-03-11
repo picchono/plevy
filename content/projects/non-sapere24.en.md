@@ -60,8 +60,6 @@ photogallery:
         img: "https://live.staticflickr.com/65535/53535702119_a83735db72_h.jpg"
 ---
 
-&nbsp;
-
 [![Cahier](https://s3-eu-west-1.amazonaws.com/com.ulule.media/presales/2/3/5/1/8/1/181532/cahier-2.ByMQDN0o59.jpg "Cahier of the not-knowning school")](https://civic-city.org/nonsapere/cahier-civic-city-3/)
 The cahier of the School of not-knowing are published and accessible on the [Civic City](https://civic-city.org/nonsapere/cahier-civic-city-3/) website and on [Ulule](https://fr.ulule.com/civic-city/).
 

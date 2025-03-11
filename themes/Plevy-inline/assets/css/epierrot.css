@@ -218,7 +218,7 @@ main.pack {
 }
 
 .pack-item {
-  @apply bg-transparent w-full md:w-auto p-2 md:p-7 transition-all duration-700 ease-in-out;
+  @apply bg-transparent w-full md:w-auto px-4 py-2 md:p-7 transition-all duration-700 ease-in-out;
 }
 
 /* big menu */
@@ -1395,10 +1395,6 @@ canvas#bgirreg2in {
 .sidenav__item,
 li:last-child {
   @apply mb-0;
-}
-
-.sidenav {
-  @apply border-l border-epierrot;
 }
 
 .sidenav__sublist .current::after {

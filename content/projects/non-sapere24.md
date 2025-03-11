@@ -60,8 +60,6 @@ photogallery:
         img: "https://live.staticflickr.com/65535/53535702119_a83735db72_h.jpg"
 ---
 
-&nbsp;
-
 [![Cahier](https://s3-eu-west-1.amazonaws.com/com.ulule.media/presales/2/3/5/1/8/1/181532/cahier-2.ByMQDN0o59.jpg "Cahier de l'école du non-savoir")](https://civic-city.org/nonsapere/cahier-civic-city-3/)
 Les cahiers de l'école du non-savoir sont publiés et accessibles sur le site de [Civic City](https://civic-city.org/nonsapere/cahier-civic-city-3/) et sur [Ulule](https://fr.ulule.com/civic-city/).
 

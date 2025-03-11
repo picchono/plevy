@@ -273,22 +273,28 @@ iso.on( 'arrangeComplete', function( filteredItems ) {
   for (var i = 0; i < removIsot.length; i++) {
     removIsot[i].classList.remove('isot');
   }
-
-  console.log('filtered');
   showPic();
 });
 
 window.addEventListener('load', function (event) {
   externalLinks();
-  showPic();
   if (document.getElementById("toc")) tableContent();
   if (document.querySelector("pre")) AddCopyButtons();
+  iso.arrange();
 });
 
-window.addEventListener("scroll", function () {
-  showPic();
-});
+
+let isScrolling;
+window.addEventListener('scroll', function (event) {
+    clearTimeout(isScrolling);
+    isScrolling = setTimeout(function() {
+      iso.arrange();
+    }, 100);
+}, false);
 
 window.addEventListener("resize", function () {
-  showPic();
+  clearTimeout(isScrolling);
+    isScrolling = setTimeout(function() {
+      iso.arrange();
+    }, 100);
 });
