@@ -1,13 +1,15 @@
 {{ $photonb := len .Params.photogallery }}
 {{ if eq $photonb 1 }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="2"><div class="dynCadre photoItem" id="lightgallery" data-src="{{ .Params.photogallery.image1.img }}"><img loading="lazy" class="imag" src="{{ .Params.photogallery.image1.img }}"></div></div>
+<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="2">
 {{ else }}
-<div class="pack-item w-full md:w-192" data-cat-sort="2"><div class="dynCadre flex flex-row" id="lightgallery" >
-        {{ range sort .Params.photogallery "order" "asc" }}
-        <div class="place-self-center h-32 p-0.5 w-auto photoItem" data-src="{{ .img }}" aria-label="See image"><img loading="lazy" src="{{ .src }}" alt="{{ .name }}" class="rounded"></div>
-        {{ end }}
-</div></div>
+<div class="pack-item w-full md:w-192" data-cat-sort="2">
 {{ end }}
+    <div class="dynCadre flex flex-row" id="lightgallery" >
+        {{ range sort .Params.photogallery "order" "asc" }}
+        <div class="place-self-center {{ if eq $photonb 1 }}h-74{{ else }}h-32{{ end }} p-0.5 w-auto photoItem" data-src="{{ .img }}" aria-label="See image"><img loading="lazy" src="{{ .src }}" alt="{{ .name }}" class="rounded"></div>
+        {{ end }}
+    </div>
+</div>
 
 {{ $lg_js := resources.Get "js/lg.js" | minify }}
 <script src="{{ $lg_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

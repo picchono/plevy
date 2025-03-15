@@ -1,7 +1,7 @@
 ---
 members: ["PLevy"]
 slug: seminaire-de-recherche-en-design
-title: "Séminaire de recherche en design et création"
+title: "Séminaire méthodologique de recherche en design et création"
 chaire: true
 date: 2025-01-28T10:04:12+02:00
 tags: ['séminaire', 'design', 'création', 'méthodologie']
@@ -42,13 +42,30 @@ photocredit:
 link:
     1: ["poster", "paper", "https://1drv.ms/b/s!AnQx_v88q65QgcCbKLZVHK3YRuvCaps?e=SzwP9D"]
     2: ["DSN201 · Initiation à recherche en design, art et création", "website", "http://localhost:1313/teaching/initiation-a-la-recherche-en-design-art-creation/"]
-calendar:
-    a: "<b>3 avril 2025 · </b> Le design comme objet de recherche - Benjamin Loiseau"
-    b: "<b>10 avril 2025 · </b>La recherche critique et spéculative (en anglais) - James Auger"
-    c: "<b>24 avril 2025 · </b>La recherche-création - Samuel Bianchini"
-    d: "<b>15 mai 2025 · </b>Le design comme pratique de recherche - Dorian Reunkrilerk"
-    e: "<b>5 juin 2025 · </b>La recherche au travers du design (en anglais) t.b.d"
 fronttop: true
+code: seminaire-de-recherche-en-design
+sessions:
+    objet:
+        date: 20250403
+        link: "objet"
+    speculative:
+        date: 20250410
+        link: "reconstrained-design"
+    creative:
+        date: 20250424
+        link: "recherche-creation"
+    pratique:
+        date: 20250515
+        link: "faire-terrain"
+    RtD-approach:
+        date: 20250605
+        link: "RtD-approach"
+photogallery:
+    image1:
+        order: 1
+        name: "Séminaire méthodologique de recherche en design"
+        src: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=400"
+        img: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=1413"
 ---
 Le séminaire méthodologique « Pratiques de recherche en design et création » est co-animé par le laboratoire Dicen-IDF et la chaire Design Jean Prouvé du Cnam. Principalement dédié aux étudiants en master, aux jeunes chercheurs, doctorant.e.s ou aspirants à le devenir, il invite les membres des communautés de recherche liées aux domaines du design et de la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances.
 
@@ -58,19 +75,3 @@ Chaque session annuelle sera composée de quatre ou cinq interventions présenta
 Le séminaire est ouvert à tout public. (sur inscription gratuite). Une captation sera réalisée pour une mise en ligne  après accord des intervenants.
 
 Ce séminaire s'inscrit dans l'UE du Cnam DSN201. Les apprenants inscrits à ce cours seront accompagnés au travers de ce séminaire et de moments supplémentaires d'enseignements et de travaux pratiques pour la mise en place d'un projet de recherche. Cet enseignement est intégré à plusieurs masters et  certificats de spécialisation et peut être également suivi sur demande ou dans le cadre de l'école doctorale Abbé Grégoire.
-
-## Programme 2025
-### Le design comme objet de recherche
-le 03 avril 2025, avec **[Benjamin Loiseau](https://www.esa-paris.fr/la-pedagogie/enseignants/loiseau-benjamin?lang=fr)**
-
-### La recherche critique et spéculative (en anglais)
-le 10 avril 2025, avec **[James Auger](https://crd.ens-paris-saclay.ensci.com/chercheurs/chercheur?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=30436&cHash=4055d4b386b5303d65fdab2e2b7851a8)**
-
-### La recherche-création  
-le 24 avril 2025, avec **[Samuel Bianchini](https://reflectiveinteraction.ensadlab.fr/category/equipes/enseignants-chercheurs-intervenants/)**
-
-### Le design comme pratique de recherche
-le 15 mai 2025, avec **[Dorian Reunkrilerk](https://designenrecherche.org/membres/dorian-reunkrilerk/)**
-
-### La recherche au travers du design (en anglais)
-le 05 juin 2025 , avec **[t.b.d.]()**

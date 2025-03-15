@@ -2,13 +2,13 @@
     <div class="mainMenu {{ if .IsHome }}justify-between flex-row{{ else }}flex-col{{ end }}">
         <div class="flex flex-col justify-stretch">
             <div class="relative block">
-                {{ if ne .Params.logo "chaire" }}<a class="logohome strok" href="{{ .Site.BaseURL | absURL }}"
+                <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}"
                     aria-label="Pierre Lévy">
                     {{ partial "icons.html" (dict "ico" "pierrelevy" "hei" 4.5 "cla" "lh") -}}
-                </a>{{ end }}
-                {{ if ne .Params.logo "pierre" }}<a class="logohome strok" href="{{ .Site.BaseURL | absURL }}/chaire" aria-label="Pierre Lévy">
+                </a>
+                <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}/chaire" aria-label="Pierre Lévy">
                     {{ partial "icons.html" (dict "ico" "jprouve" "hei" 4 "cla" "lh2") -}}
-                </a>{{ end }}
+                </a>
             </div>
             <div class="flex flex-row">
                 <a class="iconhome strok" href="https://gohugo.io/" aria-label="Go to cnam website">{{ partial
@@ -31,12 +31,22 @@
 
         {{ if not .IsHome }}
         <div class="flex flex-col justify-end md:ml-20">
-        <div class="text-left items-start">
-            <h1 class="text-4xl font-bold mt-10">{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}} ({{-
-                i18n "ended" -}}){{ end }}</h1>
+        <div class="text-left items-start my-10">
+            <h1 class="text-4xl font-bold m-0">{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</h1>
             {{ if .Params.authors }}
             <p class="italic">{{ .Params.authors }},
                 {{ dateFormat "02 Jan 2006" .Date }}</p>
+            {{ end }}
+            {{ if .Params.prezfor }}
+            <p class="italic">{{- i18n "by" }}
+            {{ $len := len .Params.intervenants}}
+            {{ $count := 0 }}
+            {{ range .Params.intervenants }}
+                {{ .name }}
+                {{ $count = add $count 1 }}
+                {{ if ne $count $len -}}, {{ end }}
+            {{ end }}
+            {{ i18n "for" }} {{ .Params.prezfor }}, {{ dateFormat "02 Jan 2006" .Date }}</p>
             {{ end }}
         </div>
         {{ if .Params.updating }}
@@ -64,9 +74,9 @@
             {{ range sort .Params.collaboration }}
             <a href="{{ .web }}" target="_blank" class="collab">
                 {{ if .colo }}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6 mr-6") -}}
+                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6 mr-10") -}}
                 {{else}}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-6 mr-6" ) -}}
+                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-6 mr-10" ) -}}
                 {{ end }}
             </a>
             {{ end }}

@@ -38,7 +38,6 @@ collaboration:
         name: "École Supérieure des Arts Appliqués Duperré"
         web: "https://duperre.org"
         heig: 1.5
-chaire: true
 date: 2021-10-01T00:55:28+02:00
 draft: false
 layout: single

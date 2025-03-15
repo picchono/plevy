@@ -25,7 +25,7 @@
          <div class="col-span-2">{{ .identity.tel }}</div>
          <div class="">&nbsp;</div>{{ end }}
          <div><b>{{ i18n "email" }}</b></div>
-         <div class="col-span-2">{{ .identity.email }}</div>
+         <div class="col-span-2">{{ .identity.proemail }}</div>
          {{ if not .Params.allinfo }}<div class="col-span-2">&nbsp;</div><div class="col-span-2">&nbsp;</div>{{ end }}
          <div><b>{{ i18n "web" }}</b></div>
          <div class="col-span-2"><a href="{{ .identity.web.url }}" target="_blank" rel="noreferrer">{{ .identity.web.username }}</a></div>

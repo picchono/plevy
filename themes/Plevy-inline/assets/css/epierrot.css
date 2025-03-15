@@ -218,7 +218,7 @@ main.pack {
 }
 
 .pack-item {
-  @apply bg-transparent w-full md:w-auto px-4 py-2 md:p-7 transition-all duration-700 ease-in-out;
+  @apply bg-transparent w-full md:w-auto px-4 py-2 md:p-7;
 }
 
 /* big menu */
@@ -394,7 +394,7 @@ a.listcourse {
 }
 
 a.doclinkButton span, a.linkBox span {
-  @apply text-2xl font-bold;
+  @apply text-xl font-bold;
 }
 
 a.doclinkButton .doclinkIcon {
@@ -452,6 +452,14 @@ a.slashLink {
 
 a.slashLink:hover {
   @apply bg-epierrot text-primary-bg border-secondary-bg;
+}
+
+a.affiliationLogo {
+  @apply block mt-6 transition-all duration-700 ease-in-out;
+}
+
+a.affiliationLogo:hover {
+  @apply bg-transparent;
 }
 
 #lightgallery {
@@ -1357,6 +1365,18 @@ canvas#bgirreg2in {
 /* utterances */
 .utterances-frame .new-comment-header {
   background-color: #2991f9 !important;
+}
+
+/* session seminaire */
+.sessionTitleBloc {
+  @apply absolute bottom-0 left-0 p-3;
+}
+.sessionTitle {
+  @apply rounded px-3 py-1 transition-all duration-700 ease-in-out;
+  background-color: #FFFA;
+}
+.pack-item:hover .sessionTitle {
+  @apply text-epierrot;
 }
 
 /* grid */
@@ -2468,7 +2488,7 @@ body {
   html,
   body {
     @apply bg-white text-black text-base;
-    font-family: 'Avenir', 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Atkinson Hyperlegible', 'Avenir', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 11pt;
     line-height: 1.4rem;
     margin: 0;
@@ -2517,7 +2537,7 @@ body {
   }
 
   h1 {
-    @apply text-4xl mb-20;
+    @apply text-4xl mb-20 mt-0;
   }
 
   h2 {

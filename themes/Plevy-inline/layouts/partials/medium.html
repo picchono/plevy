@@ -33,7 +33,7 @@
 {{ partial "video.html" . }}
 {{ end }}
 {{ if .Params.calendar }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="1"><div class="dynCadre">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
+<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="3"><div class="dynCadre">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
     {{ range .Params.calendar }}
     <div class="listoutside pb-3">{{ . | safeHTML }}</div>
     {{ end }}
@@ -52,12 +52,68 @@
 
 </div></div>
 {{ end }}
+{{ if .Params.sessions }}
+{{ $code := .Params.code }}
+<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="2"><div class="dynCadre">
+    {{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
+    <div class="">{{ range sort .Params.sessions "date" "asc" }}
+        <a class="listcourse" href="../{{ $code }}/{{ .link -}}">
+        {{ $targ :=  (print .link  ".md") }}
+        {{ $page := $.Site.GetPage "page" $targ }}
+        {{ with $page }}
+            <b>{{ dateFormat "02 January 2006" .Date }} · </b>{{ .Title }} - 
+            {{ $len := len .Params.intervenants}}
+            {{ $count := 0 }}
+            {{ range .Params.intervenants }}
+                {{- .name -}}
+                {{ $count = add $count 1 }}
+                {{ if ne $count $len -}}, {{ end }}
+            {{ end }}
+        {{ end }}
+    </a>{{ end }}</div>
+</div></div>
+{{ range sort .Params.sessions "date" "desc" }}
+<div class='pack-item' data-cat-sort="0"><div class="dynCadre">
+    <a class="boxIso" href="../{{ $code }}/{{ .link -}}">
+        {{ $targ :=  (print .link  ".md") }}
+        {{ $page := $.Site.GetPage "page" $targ }}
+        {{ with $page }}
+            <span class="boxInfo">
+            {{ $len := len .Params.intervenants}}
+            {{ $count := 0 }}
+            <div class="font-bold">{{ range .Params.intervenants }}
+                {{ .name }}
+                {{ $count = add $count 1 }}
+                {{ if ne $count $len -}}, {{ end }}{{ end }}
+            </div>
+            <div>{{ dateFormat "02 January 2006" .Date }}</div>
+            </span>
+            <span class='boxTitle'>{{ .Title }}</span>
+        {{ end }}
+    </a>
+</div></div>
+{{ end }}
+{{ end }}
+{{ if .Params.intervenants }}{{ range .Params.intervenants }}
+    <div class="pack-item w-full md:w-1/3 md:max-w-192" data-cat-sort="2">
+        <div class="dynCadre flex flex-col">
+            <div class="flex flex-row">
+                <div class="place-self-center h-74 w-auto md:w-74 photoItem" data-src="{{ .photo }}" aria-label="See image"><img loading="lazy" src="{{ .photo }}" alt="{{ .photo }}" class="rounded object-cover h-74 w-auto md:w-74"></div>
+                <div class="pl-6"><div class="text-3xl font-bold mt-4">{{ .name }}</div>
+                    <div><i>{{ i18n "speaker" }}</i></div>
+                    <a href="{{ .link }}" class="affiliationLogo">{{ partial "icons.html" (dict "ico" .logo "hei" .height) -}}</a>
+                </div>
+            </div>
+            {{ if .bio }}<div class="mt-6">{{ .bio | safeHTML }}</div>{{ end }}
+        </div>
+    </div>
+{{ end }}{{ end }}
 {{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start">
     <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
     <div class="ml-2 w-auto lg:w-full py-1">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}
         {{ range sort .Params.redirectlecture "order" "asc" }}
-        <a class="" href="{{ .link }}" target="_blank" rel="noreferrer"><b>{{ $cod }}.{{ .order
-                }}&nbsp;&middot;&nbsp;</b>{{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>
+        <a class="" href="{{ .link }}" target="_blank" rel="noreferrer"><b>{{ $cod }}.{{ .order }}&nbsp;&middot;&nbsp;</b>
+            {{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>
         {{ end }}
     </div>
 </div>

@@ -31,22 +31,29 @@
 			"url": "https://live.staticflickr.com/65535/54134834097_f5279a0ce4_k.jpg",
 			"icon": "photo"
 		},
-		"linkedin": {
+		"publis": {
 			"order": 3,
+			"type": "Plevy",
+			"username": "levypier",
+			"url": "/en/team/plevy/publis/",
+			"icon": "publis"
+		},
+		"linkedin": {
+			"order": 4,
 			"type": "linkedIn",
 			"username": "levypier",
 			"url": "https://www.linkedin.com/in/levypier",
 			"icon": "linkedin"
 		},
 		"researchgate": {
-			"order": 4,
+			"order": 5,
 			"type": "researchgate",
 			"username": "Pierre-Levy-4",
 			"url": "https://www.researchgate.net/profile/Pierre-Levy-4",
 			"icon": "researchgate"
 		},
 		"youtube": {
-			"order": 5,
+			"order": 6,
 			"type": "youtube",
 			"username": "pierrelevy7915",
 			"url": "https://www.youtube.com/channel/UCm6PefM2jvYGCCRnO9KaWsw",
