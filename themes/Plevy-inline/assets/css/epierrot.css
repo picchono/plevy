@@ -811,6 +811,13 @@ strong {
   font-size: inherit;
 }
 
+p>a, li>a {
+  @apply inline border-b border-primary-text border-dotted;
+}
+
+p>a:hover, li>a:hover {
+  @apply border-transparent;
+}
 i,
 em {
   @apply italic;

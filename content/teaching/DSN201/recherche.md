@@ -17,7 +17,6 @@ searchFilter: Teaching
 searchWeight: 1
 notListed: true
 chaire: false
-place: "Cnam"
 level: "bachelor"
 language: French
 ects: 4
@@ -34,10 +33,11 @@ frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
 
 {{<linkBox "Arrêtons de confondre les sciences avec la recherche scientifique, par Etienne Klein" "https://www.lexpress.fr/sciences-sante/arretons-de-confondre-les-sciences-avec-la-recherche-scientifique-par-etienne-klein-PZ7B7JEWYRHPRCMVQWCDNAHAQ4">}}
 
+&nbsp;
 
 #### La recherche est une discussion organisée
 - Toute proposition, tout argument doit être critiquable.
-- La recherche d'information est structurée.
+- La recherche d'information est structurée et discutée.
 - Les méthodes de recherche sont structurées et discutées.
 - Les formes de disséminations sont identifiées et discutées.
 
@@ -56,7 +56,7 @@ Cela explique la pertinence de cette recherche à la fois dans le monde académi
 {{<linkBox "Fallman, D. (2008). The Interaction Design Research Triangle of Design Practice, Design Studies, and Design Exploration. Design Issues, 24(3), 4–18. https://doi.org/10.1162/desi.2008.24.3.4" "https://direct.mit.edu/desi/article/24/3/4/60187/The-Interaction-Design-Research-Triangle-of-Design">}}
 
 
-Ce modèle est initialement proposé par Fallman, chercheur à l'Université de Umeå en Suède, pour le design pour l'interaction. L’objectif de ce modèle est à la fois de proposer une structure des activités liées à la recherche en design, et de clarifier les liaisons externes du champs de recherche notamment avec l'industrie et la société.
+Ce modèle est initialement proposé par Daniel Fallman, chercheur à l'Université de Umeå en Suède, pour le design pour l'interaction. L’objectif de ce modèle est à la fois de proposer une structure des activités liées à la recherche en design, et de clarifier les liaisons externes du champs de recherche notamment avec l'industrie et la société.
 
 #### Design studies
 Les *design studies* est une **approche assimilable à la recherche  académique classique**.  

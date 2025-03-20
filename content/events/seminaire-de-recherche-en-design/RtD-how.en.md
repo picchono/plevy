@@ -25,7 +25,7 @@ intervenants:
         photo: "https://m.media-amazon.com/images/S/amzn-author-media-prod/3keh516gee85emsbrbfskqjd6t._SY450_CR0%2C0%2C450%2C450_.jpg"
         bio: "<p>Ilpo Koskinen has been professor of design – specifically design research – in the industrial design program of the University of Art and Design Helsinki (now Aalto University), the Hong Kong Polytechnic University, University of New South Wales, and now Manchester School of Art. He is known for his contribution to several areas of design, including mobile multimedia, empathic approaches to design, studies of design in the cityscape, and methodology. His most recent book was Design, Empathy, Interpretation, published by MIT press in 2023. He is currently preparing studies on mobile mind, social approaches in design, and peace.</><p>This talk will build on his work on the methodology of design research. In 2011, he published Design Research through Practice with Stephan Wensveen, Johan Redström, Thomas Binder and John Zimmerman. This book explicated three ways in which design can create knowledge: lab, field and showroom.</p>"
 chaire: true
-date: 2025-06-06T18:00:00+02:00
+date: 2025-06-05T18:00:00+02:00
 place: "Cnam<br/>Amphithéatre Jean Prouvé, accès 11<br>292, rue Saint Martin<br>75003 Paris"
 layout: single
 ---
