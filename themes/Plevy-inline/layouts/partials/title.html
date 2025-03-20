@@ -46,7 +46,7 @@
                 {{ $count = add $count 1 }}
                 {{ if ne $count $len -}}, {{ end }}
             {{ end }}
-            {{ i18n "for" }} {{ .Params.prezfor }}, {{ dateFormat "02 Jan 2006" .Date }}</p>
+            {{ i18n "for" }} {{ .Params.prezfor }}, {{ dateFormat "02 Jan 2006 - 15h04" .Date }}</p>
             {{ end }}
         </div>
         {{ if .Params.updating }}

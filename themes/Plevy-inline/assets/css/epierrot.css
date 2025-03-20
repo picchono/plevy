@@ -386,7 +386,7 @@ a.doclinkButton, a.linkBox {
 }
 
 a.linkBox {
-  @apply  p-1 mb-4 border-0 rounded-lg;
+  @apply  p-1 mb-4 border rounded;
 }
 
 a.listcourse {

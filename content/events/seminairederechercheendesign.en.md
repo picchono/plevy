@@ -47,7 +47,7 @@ code: seminaire-de-recherche-en-design
 sessions:
     objet:
         date: 20250403
-        link: "objet"
+        link: "usagers-architecture"
     speculative:
         date: 20250410
         link: "reconstrained-design"
@@ -59,22 +59,21 @@ sessions:
         link: "faire-terrain"
     RtD-approach:
         date: 20250605
-        link: "RtD-approach"
+        link: "RtD-how"
 photogallery:
     image1:
         order: 1
         name: "Séminaire méthodologique de recherche en design"
         src: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=400"
         img: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=1413"
+link: 
+    1: ["Ways to Cnam", "website", "https://www.cnam.eu/maps-and-contacts/"]
 ---
-Le séminaire méthodologique « Pratiques de recherche en design et création » est co-animé par le laboratoire Dicen-IDF et la chaire Design Jean Prouvé du Cnam. Principalement dédié aux étudiants en master, aux jeunes chercheurs, doctorant.e.s ou aspirants à le devenir, il invite les membres des communautés de recherche liées aux domaines du design et de la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances.
+The ‘Research practices in design and creation’ methodology seminar is organised and run jointly by the Dicen-IDF laboratory and the Jean Prouvé Design Chair at the National Conservatory of Arts and Craft (Cnam). Primarily aimed at master's students, young researchers, doctoral candidates and those aspiring to become such, it invites members of research communities linked to the fields of design and creation to contribute together to a better understanding of the methodological issues involved in research as a place for exploration, discussion and the dissemination of ideas and knowledge.
 
-La recherche en design et création reste un champ récent qui continue à se structurer. On y trouve des approches complémentaires qui parfois se chevauchent dans les programmes de recherche. Elles peuvent s'inscrire dans une tradition de recherche académique bien établie, prenant le design comme objet d'étude pour en comprendre sa nature, son fonctionnement, et son inscription socio-historique. D'autres s'inscrivent dans un mode de recherche appliquée, pour formaliser des méthodes et des outils contribuant à l'amélioration des pratiques du design. D'autres encore, plus récentes, utilisent la pratique du design comme approche de création et de discussion de nouvelles connaissances.
+Research in design and creation is a recent field that is still developing. There are several complementary approaches, some of which overlap in their research programmes. Some are part of a well-established tradition of academic research, taking design as the object of study to understand its nature, how it works and its socio-historical context. Others are part of an applied research approach, aimed at formalising methods and tools to help improve design practices. Still others, more recent, use the practice of design as an approach to creating and discussing new knowledge.
 
-Chaque session annuelle sera composée de quatre ou cinq interventions présentant les travaux d'acteur·rice·s de la recherche en design et création, à l'aune de leurs méthodes et approches. Certaines interventions pourront être en anglais, dans quel cas elles seront par la suite retranscrites en français. 
-Le séminaire est ouvert à tout public. (sur inscription gratuite). Une captation sera réalisée pour une mise en ligne  après accord des intervenants.
+Each annual session will consist of four or five papers presenting the work of key players in design and creation research, in terms of their methods and approaches. Some presentations may be in English, in which case they will be transcribed into French. 
+The seminar is open to all public. A recording will be made for online publication with the agreement of the speakers.
 
-Ce séminaire s'inscrit dans l'UE du Cnam DSN201. Les apprenants inscrits à ce cours seront accompagnés au travers de ce séminaire et de moments supplémentaires d'enseignements et de travaux pratiques pour la mise en place d'un projet de recherche. Cet enseignement est intégré à plusieurs masters et  certificats de spécialisation et peut être également suivi sur demande ou dans le cadre de l'école doctorale Abbé Grégoire.
-
-## Programme 2025
-*to be announced*
+This seminar is part of course DSN201 at Cnam. Students enrolled on this course will be supported through this seminar and additional teaching and practical work to set up a research project. This course is included in several masters and specialisation certificates and can also be taken on request or as part of the Abbé Grégoire doctoral school.

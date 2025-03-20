@@ -59,12 +59,9 @@ Cela explique la pertinence de cette recherche à la fois dans le monde académi
 Ce modèle est initialement proposé par Fallman, chercheur à l'Université de Umeå en Suède, pour le design pour l'interaction. L’objectif de ce modèle est à la fois de proposer une structure des activités liées à la recherche en design, et de clarifier les liaisons externes du champs de recherche notamment avec l'industrie et la société.
 
 #### Design studies
-Les *design studies* est une **approche assimilable à la recherche  académique classique**.
-
-Son effort porte principalement sur la **construction d'une tradition de recherche**, et donc sur une accumulation ordonnée de connaissances et de méthodes utiles à la recherche et/ou la pratique.
-
-La recherche est **principalement analytique et contribue à la discussion de recherche liée à la théorie, à la méthodologie, à l'histoire, et à la philosophie en design**. Son activité est ouvertement et fortement liée à d'autres disciplines. Elle emprunte notamment les techniques, les pratiques et les theories de nombreuses disciplines externes pour son propre compte.
-
+Les *design studies* est une **approche assimilable à la recherche  académique classique**.  
+Son effort porte principalement sur la **construction d'une tradition de recherche**, et donc sur une accumulation ordonnée de connaissances et de méthodes utiles à la recherche et/ou la pratique.  
+La recherche est **principalement analytique et contribue à la discussion de recherche liée à la théorie, à la méthodologie, à l'histoire, et à la philosophie en design**. Son activité est ouvertement et fortement liée à d'autres disciplines. Elle emprunte notamment les techniques, les pratiques et les theories de nombreuses disciplines externes pour son propre compte.  
 *Les design studies sont souvent considérés comme des sciences de l'artificiel (Simon, H. A. (1996). The Sciences of the Artificial (Third Edit). MIT Press.)*
 
 {{<linkBox "Les Sciences de l’artificiel : une conceptualisation révolutionnaire de sciences fondamentales à parachever" "https://www.cairn.info/revue-projectique-2019-3-page-43.htm">}}
@@ -74,10 +71,8 @@ La recherche est **principalement analytique et contribue à la discussion de re
 {{<linkBox "Design Studies | Journal | ScienceDirect.com by Elsevier" "https://www.sciencedirect.com/journal/design-studies">}}
 
 #### Design practice
-Cette catégorie de la recherche en design est **la plus proche de l'activité de design** dans le cadre d'une pratique professionnelle classique. Elle permet entre autre d'impliquer un savoir tacite et et un savoir-faire dans les discussions liées à la fois à la pratique et à la recherche.
-
-Au cours de cette approche, le **chercheur est un acteur du projet faisant partie de l'équipe de design**. Il contribue à la réussite du projet et développe ses savoirs, souvent capturés par la communication orale au sein du groupe. Il accède de plus à l'ensemble des moments du projet et peut rendre compte de sa dynamique et de sa complexité.
-
+Cette catégorie de la recherche en design est **la plus proche de l'activité de design** dans le cadre d'une pratique professionnelle classique. Elle permet entre autre d'impliquer un savoir tacite et et un savoir-faire dans les discussions liées à la fois à la pratique et à la recherche. 
+Au cours de cette approche, le **chercheur est un acteur du projet faisant partie de l'équipe de design**. Il contribue à la réussite du projet et développe ses savoirs, souvent capturés par la communication orale au sein du groupe. Il accède de plus à l'ensemble des moments du projet et peut rendre compte de sa dynamique et de sa complexité. 
 Pour autant, cela n'est pas une pratique du design comme les autres, car **elle est également constituée d'une activité de recherche**. Cette pratique s'accompagne donc d'une question de recherche - que ce soit un programme ou une hypothèse d'expérimentation. La question de recherche peut-être proactive ou reflexive.
 
 - **La proactivité vise souvent le changement d'une approche et d'une méthode, et l'évaluation de ce changement**. Il peut également travailler à l'infléchissement du projet en relation avec la question de recherche traitée.
@@ -127,7 +122,7 @@ Fallman propose trois types of mouvements:
 
 ### La recherche au travers du design
 
-[Frayling - 1993 - Research in Art and Design.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/4beda089-c999-4d56-8ee7-f48e64a25146/Frayling_-_1993_-_Research_in_Art_and_Design.pdf)
+{{<linkBox "Frayling - 1993 - Research in Art and Design" "https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/4beda089-c999-4d56-8ee7-f48e64a25146/Frayling_-_1993_-_Research_in_Art_and_Design.pdf">}}
 
 Is it research about design?, is it research in design? or is it research through design? [Frayling, 1993]
 [Documenting the Research Through Design Process | Proceedings of the 2016 ACM Conference on Designing Interactive Systems](https://dl.acm.org/doi/10.1145/2901790.2901859)
@@ -257,23 +252,14 @@ L'experimentation est donc un moment du programme, au travers de laquelle le pro
 
 Koskinen, I., Zimmerman, J., Binder, T., Redström, J., & Wensveen, S. A. G. (2011). *Design Research through Practice: From the Lab, Field, and Showroom*. Elsevier.
 
-- **Laboratoire**
-    
-    Un environnement contrôlé pour limiter le bruit, et assuré une certaine stabilité expérimentale.
+- **Laboratoire** · Un environnement contrôlé pour limiter le bruit, et assuré une certaine stabilité expérimentale.
     
 
-- **Terrain**
+- **Terrain** · Un environnement pour rendre compte de la réalité d'un usage, d'une acceptabilié et d'une acceptation, d'une forme d'appropriation.
     
-    Un environnement pour rendre compte de la réalité d'un usage, d'une acceptabilié et d'une acceptation, d'une forme d'appropriation.
-    
-- **Exposition**
-    
-    Un environnement d'attention permettant l'expérimentation temporaire, la critique, le débat.
-    
-
+- **Exposition** · Un environnement d'attention permettant l'expérimentation temporaire, la critique, le débat.
 
 ## Réflexion personnelle sur la recherche en art
-
 Réflexion basée sur *Fourmentraux, J.-P. (2009). L’art à l’épreuve de la recherche. Profession et identité artistiques en mutation. In S. Bianchini (Ed.), R&C - Recherche et Création (pp. 72–87). Ed. Burozoïque. https://hal.univ-lille.fr/hal-01309806*
 
 Je ne vois pas en quoi la recherche en art peut-elle être considérée différemment que tout autre recherche par une pratique liée à la création. Quelques arguments :

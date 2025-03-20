@@ -257,23 +257,16 @@ L'experimentation est donc un moment du programme, au travers de laquelle le pro
 
 Koskinen, I., Zimmerman, J., Binder, T., Redström, J., & Wensveen, S. A. G. (2011). *Design Research through Practice: From the Lab, Field, and Showroom*. Elsevier.
 
-- **Laboratoire**
-    
-    Un environnement contrôlé pour limiter le bruit, et assuré une certaine stabilité expérimentale.
+- **Laboratoire** · Un environnement contrôlé pour limiter le bruit, et assuré une certaine stabilité expérimentale.
     
 
 - **Terrain**
-    
-    Un environnement pour rendre compte de la réalité d'un usage, d'une acceptabilié et d'une acceptation, d'une forme d'appropriation.
+Un environnement pour rendre compte de la réalité d'un usage, d'une acceptabilié et d'une acceptation, d'une forme d'appropriation.
     
 - **Exposition**
-    
-    Un environnement d'attention permettant l'expérimentation temporaire, la critique, le débat.
-    
-
+Un environnement d'attention permettant l'expérimentation temporaire, la critique, le débat.
 
 ## Réflexion personnelle sur la recherche en art
-
 Réflexion basée sur *Fourmentraux, J.-P. (2009). L’art à l’épreuve de la recherche. Profession et identité artistiques en mutation. In S. Bianchini (Ed.), R&C - Recherche et Création (pp. 72–87). Ed. Burozoïque. https://hal.univ-lille.fr/hal-01309806*
 
 Je ne vois pas en quoi la recherche en art peut-elle être considérée différemment que tout autre recherche par une pratique liée à la création. Quelques arguments :

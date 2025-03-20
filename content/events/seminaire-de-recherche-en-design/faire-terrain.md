@@ -1,7 +1,7 @@
 ---
 members: ["PLevy"]
 title: "Faire terrain : le design comme pratique située de recherche"
-prezfor: "le séminaire méthodologique de recherche en design et création"
+prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:
     partner1:
         logo: cnam
@@ -25,8 +25,8 @@ intervenants:
         photo: "https://1drv.ms/i/s!AnQx_v88q65QgczFP5NuHmygev43xxo?embed=1&width=3024&height=4032"
         bio: "<p>Designer et chercheur en design, Dorian Reunkrilerk travaille sur les modes de médiation au design permettant de penser une approche située et intégrative du design au sein des organisations. Actuellement en poste au 110 bis, lab d’innovation publique du Ministère de l’éducation nationale, sa pratique nourrit un travail de recherche sur les enjeux d’intégrations du design au sein des environnements administratifs de la fonction publique d’état.</p>"
 chaire: true
-fronttop: true
 date: 2025-05-15T18:00:00+02:00
+place: "Cnam<br/>Amphithéatre Jean Prouvé, accès 11<br>292, rue Saint Martin<br>75003 Paris"
 layout: single
 photogallery:
     image1:
