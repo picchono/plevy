@@ -91,7 +91,7 @@ body {
   --color-primary-bg: light-dark(#fff, #1c1c1c);
   --color-secondary-bg: light-dark(#f7f7f7, #1e1e1e);
   --color-tertiary-bg: light-dark(#fafafa, #222222);
-  --color-quaternary-bg: light-dark(#f5f3ec, #141414);
+  --color-quaternary-bg: light-dark(#fafafa, #141414);
   --color-primary-text: light-dark(#1c1c1c, #f7f7f7);
   --color-secondary-text: light-dark(#222222, #545454);
   --color-epierrot: light-dark(#b85657, #20E0D9);/*#cb6465*/
