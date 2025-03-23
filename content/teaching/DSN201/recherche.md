@@ -58,19 +58,19 @@ Cela explique la pertinence de cette recherche à la fois dans le monde académi
 
 Ce modèle est initialement proposé par Daniel Fallman, chercheur à l'Université de Umeå en Suède, pour le design pour l'interaction. L’objectif de ce modèle est à la fois de proposer une structure des activités liées à la recherche en design, et de clarifier les liaisons externes du champs de recherche notamment avec l'industrie et la société.
 
-#### Design studies
+### Design studies
 Les *design studies* est une **approche assimilable à la recherche  académique classique**.  
-Son effort porte principalement sur la **construction d'une tradition de recherche**, et donc sur une accumulation ordonnée de connaissances et de méthodes utiles à la recherche et/ou la pratique.  
 La recherche est **principalement analytique et contribue à la discussion de recherche liée à la théorie, à la méthodologie, à l'histoire, et à la philosophie en design**. Son activité est ouvertement et fortement liée à d'autres disciplines. Elle emprunte notamment les techniques, les pratiques et les theories de nombreuses disciplines externes pour son propre compte.  
 *Les design studies sont souvent considérés comme des sciences de l'artificiel (Simon, H. A. (1996). The Sciences of the Artificial (Third Edit). MIT Press.)*
 
 {{<linkBox "Les Sciences de l’artificiel : une conceptualisation révolutionnaire de sciences fondamentales à parachever" "https://www.cairn.info/revue-projectique-2019-3-page-43.htm">}}
 
 {{<linkBox "Les Sciences de l'artificiel - Folio essais - Folio - GALLIMARD - Site Gallimard" "https://www.gallimard.fr/Catalogue/GALLIMARD/Folio/Folio-essais/Les-Sciences-de-l-artificiel">}}
+Son effort porte principalement sur la **construction d'une tradition de recherche**, et donc sur une accumulation ordonnée de connaissances et de méthodes utiles à la recherche et/ou la pratique.  
 
 {{<linkBox "Design Studies | Journal | ScienceDirect.com by Elsevier" "https://www.sciencedirect.com/journal/design-studies">}}
 
-#### Design practice
+### Design practice
 Cette catégorie de la recherche en design est **la plus proche de l'activité de design** dans le cadre d'une pratique professionnelle classique. Elle permet entre autre d'impliquer un savoir tacite et et un savoir-faire dans les discussions liées à la fois à la pratique et à la recherche. 
 Au cours de cette approche, le **chercheur est un acteur du projet faisant partie de l'équipe de design**. Il contribue à la réussite du projet et développe ses savoirs, souvent capturés par la communication orale au sein du groupe. Il accède de plus à l'ensemble des moments du projet et peut rendre compte de sa dynamique et de sa complexité. 
 Pour autant, cela n'est pas une pratique du design comme les autres, car **elle est également constituée d'une activité de recherche**. Cette pratique s'accompagne donc d'une question de recherche - que ce soit un programme ou une hypothèse d'expérimentation. La question de recherche peut-être proactive ou reflexive.
@@ -79,7 +79,7 @@ Pour autant, cela n'est pas une pratique du design comme les autres, car **elle 
 - **La réflexivité vise souvent à observer et comprendre la façon dont une approche ou une technique est utilisée**, au plus près de son traitement (d'où la participation, alors qu'une simple observation mettrait le chercheur à distance).
 La recherche dans la pratique du design est essentiellement synthétique, et engage le chercheur dans la pratique elle-même, considérant ses activités, ses livrables et leur qualité escomptée.
 
-#### Design exploration
+### Design exploration
 Le *design exploration* est proche du *design practice* : il entend lui-aussi être synthétique et proactif dans la réalisation d'un design de produit, de système ou du service. Il s'en différencie toutefois par les aspects suivants:
 
 {{<linkBox "Work-Oriented Design of Computer Artifacts" "https://www.researchgate.net/publication/234791868_Work-Oriented_Design_of_Computer_Artifacts/link/54fed4c20cf2eaf210b40722/download">}}
@@ -95,7 +95,7 @@ Dans les cas classiques de cette recherche en design exploration, on trouvera le
 
 Cette approche de recherche en *design exploration* est basée sur une **activité synthétique, se basant en même temps sur des théories et des fondations alternatives du design**. Cette approche se base le plus souvent sur des questions de type "what if?" ou "how to design for?", et peut également s'engager dans des projets critiques, provocateurs dans des sphères intellectuelles, sociétales, industrielles... , et visant à mettre à jour des arguments, des perspectives, des cadres de pensée ou opératoire alternatifs. Les artefacts issus de cette pratiques sont souvent considérés comme la matérialisation d'arguments, de perspectives, de théories...
 
-#### Transversalité
+### Transversalité
 
 Il ne faut toutefois pas voir ces trois approches comme des silos étanches. C'est leur association et le passage élaboré de l'un à l'autre qui constitue dans la structure et dans le temps une recherche en design. Ces mouvements invitent une variété de pratiques et de méthodes, mais aussi un variété de perspectives. Ces glissements entre perspectives invitent le sens critique sur la recherche et son objet par elle-même. Ces trois types d'activité forment la recherche en design, et a fortiori en création.
 
@@ -122,20 +122,11 @@ Fallman propose trois types of mouvements:
 
 ### La recherche au travers du design
 
-{{<linkBox "Frayling - 1993 - Research in Art and Design" "https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/4beda089-c999-4d56-8ee7-f48e64a25146/Frayling_-_1993_-_Research_in_Art_and_Design.pdf">}}
+{{<linkBox "The Encyclopedia of Human-Computer Interaction, 2nd edition - Research through Design" "https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/research-through-design">}}
 
-Is it research about design?, is it research in design? or is it research through design? [Frayling, 1993]
-[Documenting the Research Through Design Process | Proceedings of the 2016 ACM Conference on Designing Interactive Systems](https://dl.acm.org/doi/10.1145/2901790.2901859)
+{{<linkBox "Buchanan - 1992 - Wicked Problems in Design Thinking" "http://www.jstor.org/stable/1511637">}}
 
-[Bardzell et al. - 2016 - Documenting the Research Through Design Process.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/787f4314-a386-4843-9c92-3d64cd6a93e3/Bardzell_et_al._-_2016_-_Documenting_the_Research_Through_Design_Process.pdf)
-
-[Wicked Problems in Design Thinking on JSTOR](http://www.jstor.org/stable/1511637)
-
-[Design_thinking.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/83c4951e-cb84-4e75-8265-666f9749a3d9/Design_thinking.pdf)
-
-[Lab, Field, Gallery, and Beyond](https://doi.org/10.1080/17493460802303333)
-
-[Lab Field Gallery and Beyond.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/be59983d-f1d5-49d1-8d6c-d15b3dc949d3/Lab_Field_Gallery_and_Beyond.pdf)
+{{<linkBox "Ilpo Koskinen, Thomas Binder, Johan Redström - 2008 - Lab, Field, Gallery, and Beyond" "https://doi.org/10.1080/17493460802303333">}}
 
 La recherche au travers du design vise à engager la pratique du design, cad la réflexion, les processus et les artefact du design dans la recherche en tant que méthode d'investigation. (Bardzell et al., 2016)
 
@@ -143,7 +134,7 @@ La RtD se différentie de la "science dure" car elle traite de "wicked problems"
 
 Cela induit par exemple que la solution proposée n'est potentiellement optimale que pour la situation traitée (le travail est situé) et ne tend pas à trouver une solution générale, une vérité scientifique. Le lien est en revanche fort avec la recherche-action utilisée en sciences humaines et sociales. Koskinen affirme même que les chercheurs en design se sont appropriés la recherche-action pour former la RtD (Koskinen, I., Binder, T., & Redstrom, J. (2008). LAB, FIELD, GALLERY, AND BEYOND. *Artifact2*(1), 46–57. https://doi.org/10.1080/17493460802303333).
 
-Les artefact produits par le RtD sont en eux-mêmes une contribution implicite. Ils matérialisent et codifient la compréhension du designer d'état actuel, incluant l'ensemble de relations en jeu, et décrivent également un état préférable proposé par le design sous forme de la construction de l'artefact.
+Les artefacts produits par le RtD sont en eux-mêmes une contribution implicite. Ils matérialisent et codifient la compréhension du designer d'état actuel, incluant l'ensemble de relations en jeu, et décrivent également un état préférable proposé par le design sous forme de la construction de l'artefact.
 
 La recherche liée au design est une activité visant une production de connaissance directement pertinente pour la communauté du design, en recherche ou en pratique. Elle peut être menée par un designer ou un académique, pourvue que cette activité suive un certain nombre de critères et qu'elle fasse avancer la discussion de la recherche liée au design.
 
@@ -154,9 +145,8 @@ La recherche en design n'est pas exclusive à une activité académique. Elle pe
 
 ### Programme de recherche
 
-[Exemplary Design Research](https://dl.designresearchsociety.org/drs-conference-papers/drs2006/researchpapers/51/)
 
-[Exemplary Design Research.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/5fa8a679-98a0-41e8-b86e-9d9e5e0d317e/Exemplary_Design_Research.pdf)
+{{<linkBox "T Binder & J Redström - 2006 - Exemplary Design Research" "https://dl.designresearchsociety.org/drs-conference-papers/drs2006/researchpapers/51">}}
 
 Cette discussion vise non pas une ambition epistémologique (eg sur l'articulation de la connaissance - cf. discussions such as Biggs 2006, Rosengren 2007), mais programmatique, cad sur l'organisation de l'activité de recherche.
 
@@ -164,27 +154,25 @@ Cette discussion vise non pas une ambition epistémologique (eg sur l'articulati
 
 #### Exemples
 
-[Slow Technology – Designing for Reflection | Personal and Ubiquitous Computing](https://dl.acm.org/doi/10.1007/PL00000019)
+{{<linkBox "Slow Technology – Designing for Reflection | Personal and Ubiquitous Computing" "https://dl.acm.org/doi/10.1007/PL00000019">}}
 
-[slowtech.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/b2addfde-7b9e-4e4f-8516-cc2b833e25a2/slowtech.pdf)
 
-[Gropius.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ffe7a7-327e-4716-96d1-3d557274da28/f916797d-9e05-4612-b5b4-7c40467e350f/Gropius.pdf)
+{{<linkBox "Walter Gropius - 1926 - Bauhaus Dessau: Principles of Bauhaus Production" "https://mariabuszek.com/mariabuszek/kcai/ConstrBau/Readings/GropPrdctn.pdf">}}
 
 Exemples de programmes de recherche en design:
-• comment la pratique du design change si les technologies de l'information et de la communication sont considérées comme un matériau pour le design et non plus comme un outil,
-• quelles relation existent-t-ils entre la pratique du design et celle de l'appropriation au quotidien,
-• designing for slow technology (Hallnäs et Redström 2001),
-• Bauhaus *(Gropius 1926, p. 95): The Bauhaus wants to serve in the development of present-day housing, from the simplest household appliances to the finished dwelling. In the conviction that household appliances and furnishings must be rationally related to each other, the Bauhaus is seeking — by systematic practical and theoretical research in the formal, technical and economic fields — to derive the design of an object from its natural functions and relationship.* (et dans Redström 2011: "Clearly, the strong programmatic statements were not present at this time – but other fundamentals of a design research program certainly were: the creation of an experimental environment, the urge to do things differently, and a substantial openness to what might come out of it.").
+- comment la pratique du design change si les technologies de l'information et de la communication sont considérées comme un matériau pour le design et non plus comme un outil,
+- quelles relation existent-t-ils entre la pratique du design et celle de l'appropriation au quotidien,
+- designing for slow technology (Hallnäs et Redström 2001),
+- Bauhaus *(Gropius 1926, p. 95): The Bauhaus wants to serve in the development of present-day housing, from the simplest household appliances to the finished dwelling. In the conviction that household appliances and furnishings must be rationally related to each other, the Bauhaus is seeking — by systematic practical and theoretical research in the formal, technical and economic fields — to derive the design of an object from its natural functions and relationship.* (et dans Redström 2011: "Clearly, the strong programmatic statements were not present at this time – but other fundamentals of a design research program certainly were: the creation of an experimental environment, the urge to do things differently, and a substantial openness to what might come out of it.").
 
 ### Qualités du programme
 
 Le programme est essentiellement **prévisionnel**, c'est-à-dire qu'il ne se structure pas sur une base certaine (sur un ensemble d'axiomes déterminant une grande partie de la perspective sur laquelle il travaillera), mais plutôt sur base fonctionnant comme une prémisse de départ qui paraît pertinente pour le sujet abordé, mais qui saura également évoluer au court de la recherche suivant que cette dernière corrobore ou infirme de façon dialectique entre la recherche et l'investigation la perspective prise a priori de la recherche.
 
-Un programme de recherche se structure alors sur **un ensemble d'interventions**, lesquelles permettent de cadrer et de situé son programme (dans le temps, dans l'espace et dans la culture). Il suggère donc une recherche-action, par laquelle le chercheur s'engage dans une série d'interventions dans le but de créer des conditions de nouvelles pratiques observables à partir desquelles une connaissance peut être extraite et critiquée/discutée.
+Un programme de recherche se structure alors sur **un ensemble d'interventions**, lesquelles permettent de cadrer et de situé son programme (dans le temps, dans l'espace et dans la culture). Il suggère donc une recherche-action, par laquelle le chercheur s'engage dans une série d'interventions dans le but de créer des conditions de nouvelles pratiques observables à partir desquelles une connaissance peut être extraite et critiquée/discutée.  
+Cette approche, rendue difficile par la participation active du chercheur, par la transformation des pratiques et des environnements, et par l'instabilité de la perspective sous-jacente au programme de recherche, doit rester pertinente à la pratique et sujette à l'évaluation. L'évaluation n'est toutefois pas scientifiquement classique, dû notamment au fait que le recherche-action est située. La répétition d'une expérimentation est rarement envisageable, une intervention jamais. C'est la clarté du travail, de ses conditions d'exécution et de son rendu en relation avec la question de recherche, que ce soit une expérimentation ou une intervention, qui permette une dissémination claire d'un savoir encore critiquable.
 
-Dans cette approche, rendue difficile par la participation active du chercheur, par la transformation des pratiques et des environnements, et par l'instabilité de la perspective sous-jacente au programme de recherche, doit toutefois rester pertinente à la pratique et sujette à l'évaluation. L'évaluation n'est toutefois pas scientifiquement classique, dû notamment au fait que le recherche-action est située. La répétition d'une expérimentation est rarement envisageable, une intervention jamais. C'est la clarté du travail, de ses conditions d'exécution et de son rendu en relation avec la question de recherche, que ce soit une expérimentation ou une intervention, qui permette une dissémination claire d'un savoir encore critiquable.
-
-Le programme de recherche est donc **une approche apparemment normative**. C'est à la fois une proposition, un pris-parti, et une question ouverte qui entend proposer une transformation de pratique du design. Il peut être complémentaire ou contradictoire à d'autres programme de recherche. Même s'il se veut général, il n'est donc pas global (ou universel) et se penche sur des aspects spécifiques qu'il grossira tout en réduisant l'attention portée sur d'autres éléments. La multitude de programmes de recherche qui se complémentent, se contredisent, bref discutent de façon critique ensemble est essentiel à une bonne conduite de la recherche en design au niveau communauté de recherche.
+Le programme de recherche est donc **une approche apparemment normative**. C'est à la fois une proposition, un pris-parti, et une question ouverte qui entend proposer une transformation de pratique. Il peut être complémentaire ou contradictoire à d'autres programme de recherche. Même s'il se veut général, il n'est donc pas global (ou universel) et se penche sur des aspects spécifiques qu'il grossira tout en réduisant l'attention portée sur d'autres éléments. La multitude de programmes de recherche qui se complémentent, se contredisent, bref discutent de façon critique ensemble est essentielle à une bonne conduite de la recherche en design au niveau communauté de recherche.
 Ce positionnement et cette capacité à participer à la "discussion globale" de la recherche en design. Ceci induit que sa pertinence prend corps dans le cours de son execution, se formant sur la base des interventions qui contribuent au programme. Il lui faut donc du contenu pour être évalué, que ce soit sur des aspects théoriques, épistémologiques, méthodologiques, pratiques ou sociaux. Cette évaluation passe notamment par la façon dont ces interventions interrogent la question de recherche, et produisent des connaissances capables de contribuer à son avancement.
 
 Un **programme de recherche n'est pas statique**. Au fur et à mesure de son questionnement par les experimentations, les interventions, et l'ensemble des discussions et des critiques émises par la communauté, la question de recherche se reformule, la perspective se recadre progressivement. Ceci induit des cycles, ou des itérations, entre lesquels la perspective, la question, voire le programme lui-même peuvent être reformulés ,et que systématiquement invitent pour de nouvelles experimentations ou interventions. Ceci arrive le plus souvent quand une expérimentation ou une intervention semble s'éssoufler, ou lorsqu'un nouvel insight impactant significativement la perspective en cours.
@@ -199,7 +187,7 @@ Cela pose à nouveau la question de ce qui est évaluer pour un programme de rec
 - celle pour la recherche en design,
 - celle bien sûr pour la contribution sociale et écologique.
 
-Étant par essence située, le programme de recherche s'inscrit dans le temps et l'espace et n'est donc pas intemporel. Le programme s'inscrit donc dans un regard sur le mode (worldview) qui porte un regard sur sujet d'étude potentiellement pertinent à la fois dans l'état de l'art de la pratique et de la recherche en design, mais aussi dans le contexte industriel, sociétal et écologique d'alors.
+Étant par essence située, le programme de recherche s'inscrit dans le temps et l'espace. Le programme s'inscrit donc dans un regard sur le mode (worldview) qui porte un regard sur sujet d'étude potentiellement pertinent à la fois dans l'état de l'art de la pratique et de la recherche en design, mais aussi dans le contexte industriel, sociétal et écologique d'alors.
 
 La mise en place d'un programme de recherche en design commence le plus souvent par une question critique sur une pratique, un état de l'art, ou une situation socio-écologique. Son objet reste une amélioration d'une pratique de design, le but n'étant pas, par exemple, d'améliorer une situation sociale, mais d'améliorer une pratique de design qui entend elle améliorer cette situation sociale. 
 Une tradition du groupe de recherche DQI à TU/e aux Pays-Bas était de commencer la question du programme de recherche par "How to design for...". Nous notons de plus ici que la question engage et ne met pas le chercheur dans une position uniquement descriptive.
@@ -215,14 +203,14 @@ L'ouverture du programme, la multiplicité des expérimentations, la formation d
 
 Cette pratique invite engage les intentions et le projet global du chercheur dans le processus de formation du programme et dans la mise en place des expérimentations, et donne une direction globale à la recherche.
 
-La force du programme repose donc également sur sa capacité de suggestion, c'est-à-dire sur ce qu'il permet de suggérer donc en terme de développement ou de transformation cohérent et effectif d'une pratique et des effets sur le champs visé par cette pratique, sur ce qu'il propose en terme de progression de recherche et d'expérimentations à engager. Une contradiction donc avec sa nature ouverte sur l'inattendu. Le programme doit en effet à la fois être ouvert sur l'inattendu tout en étant directif pour ne pas se perdre.
+La force du programme repose donc également sur sa capacité de suggestion, c'est-à-dire sur ce qu'il permet de suggérer en terme de développement ou de transformation cohérent et effectif d'une pratique et des effets sur le champs visé par cette pratique, sur ce qu'il propose en terme de progression de recherche et d'expérimentations à engager. Une contradiction donc avec sa nature ouverte sur l'inattendu. Le programme doit en effet à la fois être ouvert sur l'inattendu tout en étant directif pour ne pas se perdre.
 
 La nature ouverte et en progression continue du programme ne rend pas sa conclusion aisée à atteindre. Il n'est pas intrinsèquement structurer pour être conclue, comme le peut-être une hypothèse à laquelle une expérimentation répond.
-Outre les aspect extérieurs et souvent pratiques qui peuvent conduire à la terminaison d'un programme (e.g., fin d'un financement ou d'autres ressources).
-Une conclusion plus centrée sur le programme porte sur la contribution portée par les expérimentations. Si cette contribution répond suffisamment au questions du programme, si bien que l'ensemble semble proprement aligné, que les connaissances acquises servent la pratique pour la faire avancer, un qu'une progression supplémentaire serait plutôt du côté de la pratique (eg acquisition de compétences par entrainement) plutôt de de la recherche, alors le programme peut être, du moins temporairement, conclue. Le programme est 'utile' et sont résultat prêt à être utilisé dans la pratique de façon renseignée et cohérente.
-Ce qui arrive également est que d'un programme émerge un autre programme potentiellement de plus grande valeur pour la recherche et la pratique, ou plus actuel. Alors le premier programme peut-être arrêter pour transférer les ressources au second.
-Enfin, il arrive que simplement le programme s'essouffle, que la question de recherche ne puisse plus être reformulé pour lui permettre d'aller plus loin.
-Toutes ces possibilités semblent porter la décision de la conclusion d'un programme sur une décision du chercheur, et non sur une décision porté par une observation ou un résultat objectif. Cette décision se fait dû à des facteurs extérieurs, en relation à d'autres programmes passés ou e
+Outre les aspect extérieurs et souvent pratiques qui peuvent conduire à la terminaison d'un programme (e.g., fin d'un financement ou d'autres ressources).  
+Une conclusion plus centrée sur le programme porte sur la contribution portée par les expérimentations. Si cette contribution répond suffisamment au questions du programme, si bien que l'ensemble semble proprement aligné, que les connaissances acquises servent la pratique pour la faire avancer, qu'une progression supplémentaire serait plutôt du côté de la pratique (eg acquisition de compétences par entrainement) plutôt de de la recherche, alors le programme peut être, du moins temporairement, conclue. Le programme est 'utile' et sont résultat prêt à être utilisé dans la pratique de façon renseignée et cohérente.  
+Ce qui arrive également est que d'un programme émerge un autre programme potentiellement de plus grande valeur pour la recherche et la pratique, ou plus actuel. Alors le premier programme peut-être arrêter pour transférer les ressources au second.  
+Enfin, il arrive que simplement le programme s'essouffle, que la question de recherche ne puisse plus être reformulé pour lui permettre d'aller plus loin.  
+Toutes ces possibilités semblent porter la conclusion d'un programme sur une décision du chercheur, et non sur une décision porté par une observation ou un résultat objectif. Cette décision se fait dû à des facteurs extérieurs, en relation à d'autres programmes passés ou emergeants.
 
 ## Interventions - expérimentations
 
@@ -242,7 +230,7 @@ Ce qui alors permet de proposer que l'expérimentation vient contribuer au progr
 - L’intervention quant à elle a besoin d'une intention pour être effective. Dans une science classique elle permettrait d'infirmer ou de valider une hypothèse. Dans le cas de la recherche en design, elle peut permettre de plus directement répondre à une question méthodologique: comment fait quelque chose, avec quelles ressources.  Cette question et le travail qui y contribue doivent toutefois garder les qualités nécessaires à leur critique et donc contribuer à une discussion de recherche.
 L'experimentation est donc un moment du programme, au travers de laquelle le programme est interprété, et aux suites de laquelle le programme peut être réinterpréter ou changé. Elle ouvre un espace de design permettant cette mise en perspective *(médialité de dorian?)*, permettant de spécifier certains éléments utile à la formation et au progrès du programme...
 
-**Qualités de l'interventions en recherche en design:**
+### Qualités de l'interventions en recherche en design:
 
 - Elle produit de la connaissance générative;
 - Elle est réalisée en situation d’incomplétude, et le résultat ne peut être prévu au départ;
@@ -253,10 +241,7 @@ L'experimentation est donc un moment du programme, au travers de laquelle le pro
 Koskinen, I., Zimmerman, J., Binder, T., Redström, J., & Wensveen, S. A. G. (2011). *Design Research through Practice: From the Lab, Field, and Showroom*. Elsevier.
 
 - **Laboratoire** · Un environnement contrôlé pour limiter le bruit, et assuré une certaine stabilité expérimentale.
-    
-
 - **Terrain** · Un environnement pour rendre compte de la réalité d'un usage, d'une acceptabilié et d'une acceptation, d'une forme d'appropriation.
-    
 - **Exposition** · Un environnement d'attention permettant l'expérimentation temporaire, la critique, le débat.
 
 ## Réflexion personnelle sur la recherche en art
@@ -267,21 +252,21 @@ Je ne vois pas en quoi la recherche en art peut-elle être considérée différe
 - la relation maintenant claire entre **l'art et le marché** (Menger, P.-M. (2003). *Portrait de l’artiste en travailleur. Métamorphoses du capitalisme*. Seuil.)
 - le développement de la notion d'industrie culturelle, **lieu de rencontre entre l'art, l'ingénierie de la culture, les TICs**... qui non seulement pousse la dimension collective et interdisciplinaire de la pratique artistique, et redéfinit également les modes de production et d'exposition du travail artistique.
     
-    Ce sont ces éléments qui poussent à restructurer la formation en art, et donc de poser la question de l'art dans l'environnement académique, d'autant plus que la politique européenne (ou du moins française) tend à une harmonisation, pour ne pas dire à un aplatissement, des formation dans une structure LMD. Le défi n'est donc pas le développement et l'intégration d'une recherche sur l'art, domaine bien développé de longue date, mais celle de la recherche au travers de la pratique artistique (ni *en amont*, ni *sur*, mais *au travers de*), que l'on considère souvent comme *recherche-création*. Une recherche en amont de la pratique artistique est bien sûr satisfaisante, mais ce qui participe à la pratique de recherche est dissocié de la pratique artistique. Une recherche sur la pratique l'est tout autant et est elle aussi dissociée de la pratique artistique. Ils font tous les deux partie de ce que j'appellerais *art studies* pour l'associé au *design studies* du Triangle de Fallman.
+Ce sont ces éléments qui poussent à restructurer la formation en art, et donc de poser la question de l'art dans l'environnement académique, d'autant plus que la politique européenne (ou du moins française) tend à une harmonisation, pour ne pas dire à un aplatissement, des formation dans une structure LMD. Le défi n'est donc pas le développement et l'intégration d'une recherche sur l'art, domaine bien développé de longue date, mais celle de la recherche au travers de la pratique artistique (ni *en amont*, ni *sur*, mais *au travers de*), que l'on considère souvent comme *recherche-création*. Une recherche en amont de la pratique artistique est bien sûr satisfaisante, mais ce qui participe à la pratique de recherche est dissocié de la pratique artistique. Une recherche sur la pratique l'est tout autant et est elle aussi dissociée de la pratique artistique. Ils font tous les deux partie de ce que j'appellerais *art studies* pour l'associé au *design studies* du Triangle de Fallman.
     
-    > *À Paris, l’université des Arts plastiques de la Sorbonne propose de résoudre en ces termes la question de la recherche dans ce domaine, par une différenciation des phases de collecte et de quête méthodiques qui fondent et enrichissent la conception des œuvres (études préparatoires, esquisses, réflexions théoriques), vis-à-vis des phases ultérieures de leur réalisation pratique. « C’est justement l’un des buts que s’est fixée l’étude des conduites créatrices : démêler ce qui dans l’œuvre en cours concerne une posture de recherche (à visée cognitive) et une posture créatrice (à visée singularisante). Par exemple, les savoirs techniques, les observations autocritiques, ou les documents iconographiques et historiographiques rassemblés par l’artiste au travail, peuvent apporter des connaissances supplémentaires susceptibles de faire progresser, non pas la création de cet artiste en tant que telle, mais les savoirs et savoir-faire qui en sont les ingrédients nécessaires et dont l’artiste peut faire partager l’expérience et même généraliser les résultats.» (Extrait de la ligne de recherche du Cérap (Centre d’étude de recherche en arts plastiques) de l’UFR des Arts plastiques et des Sciences de l’art de l’université Paris I – Sorbonne, http://cerap.univ-paris1.fr/spip.php?rubrique13)* (Fourmentraux, 2009).
-    > 
-- Il y a un argument entendu régulièrement que je considère comme erroné, ou du moins pas suffisamment développé pour être admissible : celui selon lequel la pratique artistique est intrinsèquement habité par une activité de recherche. Cette recherche est de type exploratoire, mais n'est pas nécessairement acceptable d'un point de vue de la recherche académique. Elle n'est pas une recherche académique satisfaisante si elle est l'expression d'une réflexion :
-    - pouvant ne pas être remis en cause car elle est exprimée sous la forme d'une performance artistique,
-    - manquant d'une reflexion à fortiori qui sortirait la proposition hors de la singularité du travail artistique,
-    - basée sur une trop faible structure argumentaire la positionnant donc sur un îlot conceptuel.
+*À Paris, l’université des Arts plastiques de la Sorbonne propose de résoudre en ces termes la question de la recherche dans ce domaine, par une différenciation des phases de collecte et de quête méthodiques qui fondent et enrichissent la conception des œuvres (études préparatoires, esquisses, réflexions théoriques), vis-à-vis des phases ultérieures de leur réalisation pratique. « C’est justement l’un des buts que s’est fixée l’étude des conduites créatrices : démêler ce qui dans l’œuvre en cours concerne une posture de recherche (à visée cognitive) et une posture créatrice (à visée singularisante). Par exemple, les savoirs techniques, les observations autocritiques, ou les documents iconographiques et historiographiques rassemblés par l’artiste au travail, peuvent apporter des connaissances supplémentaires susceptibles de faire progresser, non pas la création de cet artiste en tant que telle, mais les savoirs et savoir-faire qui en sont les ingrédients nécessaires et dont l’artiste peut faire partager l’expérience et même généraliser les résultats.» (Extrait de la ligne de recherche du Cérap (Centre d’étude de recherche en arts plastiques) de l’UFR des Arts plastiques et des Sciences de l’art de l’université Paris I – Sorbonne, http://cerap.univ-paris1.fr/spip.php?rubrique13)* (Fourmentraux, 2009).
+
+Il y a un argument entendu régulièrement que je considère comme erroné, ou du moins pas suffisamment développé pour être admissible : celui selon lequel la pratique artistique est intrinsèquement habité par une activité de recherche. Cette recherche est de type exploratoire, mais n'est pas nécessairement acceptable d'un point de vue de la recherche académique. Elle n'est pas une recherche académique satisfaisante si elle est l'expression d'une réflexion :
+- pouvant ne pas être remis en cause car elle est exprimée sous la forme d'une performance artistique,
+- manquant d'une reflexion à fortiori qui sortirait la proposition hors de la singularité du travail artistique,
+- basée sur une trop faible structure argumentaire la positionnant donc sur un îlot conceptuel.
 
 ### to check
 
 - D’une façon générale la revue [Culture et recherche](https://www.culture.gouv.fr/Thematiques/Enseignement-superieur-et-Recherche/La-revue-Culture-et-Recherche?page=2) est une mine et me paraît vraiment intéressante à recommander parce qu’elle va se questionner à la fois sur la recherche en art et création et en ingénierie culturelle. Mais sur le sujet de la recherche création il y a deux numéros spécifiques
 - Il y a aussi la revue [Culture et musées](https://journals-openedition-org.proxybib-pp.cnam.fr/culturemusees/)
-- La recherche dans les écoles supérieures d’art, C_ulture et Recherche_ n° 130 2014
-- La recherche dans les écoles supérieures d’art, C_ulture et Recherche_ n° 137 2017
+- La recherche dans les écoles supérieures d’art, Culture et Recherche_ n° 130 2014
+- La recherche dans les écoles supérieures d’art, Culture et Recherche_ n° 137 2017
 - L’artiste un chercheur par comme les autres" *Hermès* n° 72 hiver 2014-2015
 - Caillet, Aline *L’art de l’enquête: savoirs pratiques et sciences sociales*, Mimésis, 2019
 - Rageul, Anthony « La méthode de recherche-création en Arts Plastiques : prescription, prospective et mise à l’épreuve de l’objet ». *Belphégor* (19‑1). doi: [10.4000/belphegor.3893](https://doi.org/10.4000/belphegor.3893), 2021

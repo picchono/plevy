@@ -28,6 +28,8 @@ chaire: true
 date: 2025-05-15T18:00:00+02:00
 place: "Cnam<br/>Amphithéatre Jean Prouvé, accès 11<br>292, rue Saint Martin<br>75003 Paris"
 layout: single
+frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=1000"
+frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=500"
 photogallery:
     image1:
         order: 1

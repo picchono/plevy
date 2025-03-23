@@ -1,7 +1,7 @@
 ---
 members: ["PLevy"]
 title: "Reconstrained design"
-prezfor: "the seminar on methods in design research"
+prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:
     partner1:
         logo: cnam
@@ -28,8 +28,8 @@ chaire: true
 date: 2025-04-10T18:00:00+02:00
 place: "Cnam<br/>Amphithéatre Jean Prouvé, accès 11<br>292, rue Saint Martin<br>75003 Paris"
 layout: single
-frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
+frontphoto: "https://1drv.ms/i/s!AnQx_v88q65Qgcv5YTJgQT4FzeBDDow?embed=1&width=1000"
+frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65Qgcv5YTJgQT4FzeBDDow?embed=1&width=500"
 link:
     1: ["reconstrained.design", "website", "https://reconstrained.design"]
     2: ["crapfutures", "website", "http://crapfutures.tumblr.com"]

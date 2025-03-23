@@ -29,6 +29,8 @@ date: 2025-04-03T18:00:00+02:00
 place: "Cnam<br/>Amphithéatre Gaston Planté, accès 35<br>2, rue Conté<br>75003 Paris"
 layout: single
 fronttop: true
+frontphoto: "https://1drv.ms/i/s!AnQx_v88q65Qgc2SMyOxQBw4lcOV7Ak?embed=1&width=1000"
+frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65Qgc2SMyOxQBw4lcOV7Ak?embed=1&width=500"
 photogallery:
     image1:
         order: 1
