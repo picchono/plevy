@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: perception-theories-and-kansei-design
 title: Perception Theories and Kansei Design
 layout: publi

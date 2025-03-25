@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: passage
 title: "Passage"
 layout: single

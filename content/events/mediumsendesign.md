@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: mediums-in-design
 title: "Médiums en design"
 chaire: true

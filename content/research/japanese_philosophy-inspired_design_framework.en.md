@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Japanese philosophy inspired design framework"
 slug: japanese_philosophy-inspired_design_framework
 chaire: true

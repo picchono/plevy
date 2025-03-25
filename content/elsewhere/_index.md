@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Autre part"
 date: 2023-01-24T00:55:28+02:00
 draft: false

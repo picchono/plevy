@@ -1,6 +1,5 @@
 
 ---
-members: ["PLevy"]
 slug: the-eindhoven-school
 title: "Systems Design - The Eindhoven School"
 layout: single

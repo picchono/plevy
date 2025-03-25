@@ -1,67 +1,15 @@
-{{ define "main" }} {{ $page := $.Site.GetPage "page" "team/plevy.md" }}
-{{if false }}
-{{ with $page }}
-<div class="pack-item w-full md:w-144" data-cat-sort="101">
-    <div class="dynCadre">
-<h2 class="m-0 md:p-6 md:px-10">{{ .Title }}</h2>
-{{ if .Content}}<div id="content" class="md:p-10">{{ .Content }}</div>{{ end }}
-{{ with index .Site.Data.plevy .Site.Language.Lang }}
-<div class="md:p-10">
-{{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink"
-    rel="noreferrer" aria-label="{{ .icon }}">{{- partial "icons.html" (dict "ico" .icon
-    "hei" 0.8) -}}</a>{{ end }}</div>
-{{ end }}
-</div>
-</div>
-{{ end }}
-
-{{$memb := .Params.member}}
-{{ $page := $.Site.GetPage "page" "chaire.md" }}
-{{ with $page }}
-<div class="pack-item w-full md:w-144" data-cat-sort="100">
-    <div class="dynCadre">
-<h2 class="m-0 md:p-6 md:px-10">{{ .Title }}</h2>
-<div class="md:p-10">{{ .Params.description }}</div>
-<div class="md:p-10"><a href='/chaire' target="_blank" class="doclinkButton" rel="noreferrer"
-        aria-label="Get chaire page"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict "hei" 1 "ico"
-            "link" ) -}}</span><span class="doclinkText">Chaire</span></span></a></div>
-<h2 class="md:px-10">{{ i18n "members"}}</h2>
-{{ if .Params.members }}
-{{ range .Params.members }}
-<div class="md:p-10">
-<a class="doclinkButton flex-row justify-start" href="{{ index . 3 }}">
-    <img class="flex-grow-0 flex-shrink-0 object-cover rounded-md h-20 w-20 mr-4" src="{{ index . 2 }}"
-        alt="{{ index . 0 }}">
-    <div class="flex flex-col justify-center leading-none">
-        <div class="font-bold">{{ index . 0 }}</div>
-        <div class="leading-tight">{{ index . 1 |safeHTML }}</div>
-    </div>
-</a>
-</div>
-{{ end }}
-{{ end }}
-</div>
-</div>
-{{ end }}
-{{ end }}
-
-{{$memb := .Params.member}}
-{{ range $fold := slice "team" "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
-{{ range where $.Site.Pages "Section" "in" ($fold) }}
-{{ if .Params.fronttop }}
-{{- partial "frontbox.html" ( dict "context" . ) -}}
-{{ end }}
-{{ end }}
-{{ end }}
-
+{{ define "main" }}
 {{ $count := 0 }}
 {{ $page := $.Site.GetPage "page" "chaire.md" }}
 {{ with $page }}
 {{- partial "box.html" ( dict "context" . "cou" $count "sort" 100) -}}
 {{ end }}
+{{ $page := $.Site.GetPage "page" "plevy.md" }}
+{{ with $page }}
+{{- partial "box.html" ( dict "context" . "cou" $count "sort" 100) -}}
+{{ end }}
 
-{{$memb := .Params.member}}
-{{ range $fold := slice "team" "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
+{{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
 {{ range readDir "content" }}
 {{ if eq .Name $fold }}
 {{ range where $.Site.Pages "Section" "in" ($fold) }}
@@ -69,12 +17,10 @@
 {{ $count := 0 }}
 {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
 {{ if ne .Params.notListed true }}
-{{ if isset .Params "members" }}
 {{ if ne .Params.notListed true }}
-{{ if in .Params.members $memb }}
 {{ $count = add $count 1 }}
 {{- partial "box.html" ( dict "context" . "cou" $count) -}}
-{{ end }}{{ end }}{{ end }}
+{{ end }}
 {{ end }}
 {{ end }}
 {{ end }}

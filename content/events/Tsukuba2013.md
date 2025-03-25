@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: holism-and-kansei-design-kansei-beyond-borders
 title: "Holism and kansei design, kansei beyond borders"
 layout: single

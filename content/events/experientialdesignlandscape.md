@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: experiential-design-landscapes
 title: "Experiential design landscapes: how to design for behaviour change, towards an active lifestyle"
 layout: single

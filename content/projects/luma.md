@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: luma
 title: "Luma"
 layout: single

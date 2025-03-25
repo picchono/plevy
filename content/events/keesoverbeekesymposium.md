@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: kees-overbeeke-symposium
 tags: ['interaction', 'Kees_Overbeeke']
 title: "Kees Overbeeke symposium"

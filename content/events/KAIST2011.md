@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: the-origin-of-experience
 title: "The origin of experience"
 layout: single

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: kinectic-folds-interaction-priming
 title: "Kinectic Folds: Interaction Priming"
 layout: single

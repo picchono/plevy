@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Composing Everyday Rituals"
 institution:
     heig: 1

@@ -1,7 +1,0 @@
-{{ if ne (len $.Site.Taxonomies.tags) 0 }}
-{{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
-{{ $tagCount := len $taxonomy.Pages }}
-<span onclick="tagfilter({{ $name }})" class="filterOption tagcloud-item cursor-pointer pr-4 lowerhover:text-epierrot transition-all duration-700 ease-in-out text-sm">
-    {{- replace $name "_" " " -}}</span>
-{{ end }}
-{{ end }}

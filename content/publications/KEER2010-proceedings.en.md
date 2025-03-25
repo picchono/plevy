@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: kansei-engineering-and-emotion-research-2010
 title: The Proceedings of the Kansei Engineering and Emotion Research International Conference 2010, KEER 2010
 layout: publi

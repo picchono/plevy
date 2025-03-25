@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Research through Design – yes but how?"
 prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: designing-for-systemic-change
 title: "Designing for Systemic Change"
 layout: single

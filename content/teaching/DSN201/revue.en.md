@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN201 · La revue de littérature"
 slug: "revue-de-litterature"
 institution:

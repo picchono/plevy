@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: school-of-not-knowing
 title: "School of not-knowing"
 tags: ['not knowing', 'design']

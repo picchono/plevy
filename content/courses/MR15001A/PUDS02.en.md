@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Master CESAAP - PUDS02 / UE12 · Critique et médiation du design"
 institution:
     heig: 1

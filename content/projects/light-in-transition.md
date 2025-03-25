@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: light-in-transition
 title: "Light in Transition"
 layout: single

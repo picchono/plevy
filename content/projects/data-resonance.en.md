@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: data-resonance
 title: "Data Resonance"
 layout: single

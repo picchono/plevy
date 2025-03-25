@@ -1,11 +1,8 @@
 {{ range .Params.link }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="1">
-      <div class="dynCadre">
-            {{ $icon := index . 1 }}
-            {{ $text := index . 0 }}
-            <a href='{{ index . 2 }}' target="_blank" class="doclinkButton" rel="noreferrer"
-                  aria-label="Get {{ index . 0 }}"><span class="doclinkIcon collabicon">{{- partial "icons.html" (dict
-                        "hei" 1 "ico" $icon ) -}}</span><span class="doclinkText">{{ $text }}</span></a>
-      </div>
+<div class="pack-item" data-cat-sort="1">
+      {{ $icon := index . 1 }}
+      {{ $text := index . 0 }}
+      <a href='{{ index . 2 }}' target="_blank" class="dynCadre doclinkButton" rel="noreferrer"
+            aria-label="Get {{ index . 0 }}"><span>{{- partial "icons.html" (dict "hei" 1.5 "ico" $icon "cla" "doclinkIcon" ) -}}</span>&nbsp;&nbsp;<span>{{ $text }}</span></a>
 </div>
 {{ end }}

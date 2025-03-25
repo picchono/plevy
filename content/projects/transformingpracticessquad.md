@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: transforming-practices-squad
 title: "Transforming Practices squad"
 layout: single

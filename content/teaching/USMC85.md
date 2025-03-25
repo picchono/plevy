@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: USMC85-Dialoguing
 title: "USMC85 · Dialoguing"
 layout: course

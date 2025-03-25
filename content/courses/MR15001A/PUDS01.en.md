@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Master CESAAP - PUDS01 / UE11 · Séminaire de recherche"
 institution:
     heig: 1

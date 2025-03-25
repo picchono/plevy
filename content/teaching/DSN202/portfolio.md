@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN202 · Portfolio annoté"
 slug: "portfolio-annote"
 institution:

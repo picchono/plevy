@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: design-lecture-caroline-hummels
 title: "Design lectures by Caroline Hummels"
 layout: videopage

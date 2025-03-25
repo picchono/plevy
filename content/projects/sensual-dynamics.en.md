@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: sensual-dynamics
 title: "Sensual Dynamics"
 institution:

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: probing-future
 title: "Probing Future"
 layout: single

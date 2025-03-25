@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: perceptive-qualities
 title: "Perceptive Qualities in System of Interactive Products"
 layout: single

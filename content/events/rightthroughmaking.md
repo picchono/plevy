@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: rights-through-making
 title: "Rights through Making - Skills for Pervasive Ethics"
 layout: single

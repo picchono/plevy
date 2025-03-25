@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: stewart
 title: "Stewart"
 layout: single

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: design-apocalypse-manifesto
 title: "Design et apocalypse, un manifesto"
 projecttype: general

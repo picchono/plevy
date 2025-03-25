@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN201 · La recherche"
 slug: "recherche"
 institution:

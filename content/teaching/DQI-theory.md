@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: DQI-theory
 title: "Designing Quality in Interaction theory"
 institution:

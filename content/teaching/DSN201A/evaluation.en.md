@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN201 · L'évaluation"
 slug: "evaluation"
 institution:

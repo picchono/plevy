@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: shift
 title: "Shift - an installation for the Glow festival"
 layout: single

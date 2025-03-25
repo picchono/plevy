@@ -400,3 +400,15 @@ other="Encapsulation"
 
 [members]
 other="Membres"
+
+[speaker]
+other="Intervenant"
+
+[by]
+other="par"
+
+[for]
+other="pour"
+
+[venue]
+other="Où et quand"

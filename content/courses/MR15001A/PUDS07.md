@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Master CESAAP - PUDS07 / UE 14 · Médiation en langue anglaise"
 institution:
     heig: 1

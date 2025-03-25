@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: beaute-du-motif-japonais
 title: The beauty of the Japanese pattern
 tags: ['japanese', 'Japan', 'pattern', 'kamon', 'Boulle']

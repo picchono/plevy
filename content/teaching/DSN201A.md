@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: Recherche-en-design-art-creation
 title: "DSN201 · Pratiques de recherche en design, art et création"
 layout: single

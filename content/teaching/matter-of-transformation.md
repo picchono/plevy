@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Matter of Transformation"
 institution:
     heig: 1

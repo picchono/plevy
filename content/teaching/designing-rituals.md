@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: designing-rituals
 title: "Designing rituals"
 institution:

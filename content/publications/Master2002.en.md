@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: design-industriel-et-interdisciplinarite-methode-et-outil-dintégration-de-linterdisciplinarité-dans-la-formation-pédagogique-initiale-du-design-industriel
 title: "Design industriel et interdisciplinarité, Méthode et outil d’intégration de l’interdisciplinarité dans la formation pédagogique initiale du design industriel"
 layout: publi

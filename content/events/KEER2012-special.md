@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: Special-issue-kansei-research-in-europe
 title: "Special issue: kansei research in Europe"
 tags: ['kansei', 'recherche_en_kansei']

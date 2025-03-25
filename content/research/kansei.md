@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Kansei studies, kansei design"
 chaire: false
 date: 2003-10-16T20:03:12+02:00

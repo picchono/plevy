@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "USMC85 · Internet"
 slug: "internet"
 institution:

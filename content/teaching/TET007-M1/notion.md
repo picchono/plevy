@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "TET007 · Notion"
 slug: "notion"
 institution:

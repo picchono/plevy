@@ -13,7 +13,8 @@
          <div class="w-5/6 pl-6">{{ .identity.firstname }} {{ .identity.middlename }}</div>
          <div class="w-full">&nbsp;</div>
          <div class="w-1/6 pr-6"><b>{{ i18n "email" }}</b></div>
-         <div class="w-5/6 pl-6"><a href="mailto:{{- .identity.proemail -}}" target="_blank" rel="noreferrer">{{ .identity.proemail }}</a></div>
+         <div class="w-5/6 pl-6"><a href="mailto:{{- .identity.proemail -}}" target="_blank" rel="noreferrer">{{
+               .identity.proemail }}</a></div>
          <div class="w-1/6 pr-6"><b>{{ i18n "web" }}</b></div>
          <div class="w-5/6 pl-6"><a href="{{ .identity.web.url }}" target="_blank" rel="noreferrer">{{
                .identity.web.username }}</a></div>
@@ -148,34 +149,84 @@
             {{ end }}{{ end }}
          </div>
       </div>
-      <div class="flex flex-row mt-24">
-         <h2 class="w-1/6 p-0 pr-6 font-bold text-xl">{{ i18n "other-data" }}</h2>
-         <div class="w-5/6 pl-6">
-            <div class="border-l-4 border-epierrot pl-3">
-               {{ $list := (where site.Pages "Section" "publications") }}
-               {{ $len := (len $list) }}
-               {{ i18n "publications" }} & {{ i18n "editions" }}&nbsp;&nbsp;<b>{{ $len }}</b><br />
-               {{ .projects.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .projects.list }} ({{ .projects.totalfinance }})</b><br />
-               {{ .awards.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .awards.list }}</b><br />
-               {{ .directiontheses.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directiontheses.list }}</b><br />
-               {{ .directionHDR.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directionHDR.list }}
-               </b><br />
-               {{ .jurysdoctoraux.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .jurysdoctoraux.list }}</b><br />
-               <br />
-               {{range sort .identity.registration "ord" "asc"}}
-               {{ .name }}&nbsp;&nbsp;<a href="{{ .url -}}{{- .code }}" target="_blank" rel="noreferrer">{{ .code }}</a><br />
+      <div class="flex flex-col mt-0">
+         <h2>{{ i18n "other" }}</h2>
+         <div class="flex flex-row flex-wrap">
+            <div class="w-1/6 pr-6"></div>
+            <div class="w-5/6 pl-6 flex flex-col justify-between md:flex-row flex-wrap">
+               <div class="border-l-4 border-epierrot pl-3">
+                  {{ $list := (where site.Pages "Section" "publications") }}
+                  {{ $len := (len $list) }}
+                  {{ i18n "publications" }} & {{ i18n "editions" }}&nbsp;&nbsp;<b>{{ $len }}</b><br />
+                  {{ .projects.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .projects.list }} ({{
+                     .projects.totalfinance }})</b><br />
+                  {{ .awards.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .awards.list }}</b><br />
+                  {{ .directiontheses.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directiontheses.list }}</b><br />
+                  {{ .directionHDR.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directionHDR.list }}
+                  </b><br />
+                  {{ .jurysdoctoraux.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .jurysdoctoraux.list }}</b><br />
+                  <br />
+                  {{range sort .identity.registration "ord" "asc"}}
+                  {{ .name }}&nbsp;&nbsp;<a href="{{ .url -}}{{- .code }}" target="_blank" rel="noreferrer">{{ .code
+                     }}</a><br />
+                  {{ end }}
+               </div>
                {{ end }}
+               <div class="flex flex-col flex-wrap">
+                  {{ $qr1 := .Permalink }}
+                  <div class="flex flex-row flex-wrap justify-start items-end md:px-6 pt-6 md:pt-0 mt-10 md:mt-0">
+                     <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
+                        <a id="qrcode1" href="{{- $qr1 -}}" rel="noreferrer"
+                           class="block h-24 md:h-32 w-24 md:w-32 md:mb-8 md:p-2 bg-white rounded-lg"></a>
+                     </div>
+                     <div class="pl-4 comment pb-2">
+                        <a href="{{- $qr1 -}}" rel="noreferrer">&nbsp;<b>{{- i18n "Updates" }}</b>&nbsp;<br>&nbsp;{{ .Permalink }}&nbsp;</a>
+                     </div>
+                     <script defer="defer">
+                        window.addEventListener('load', function (event) {
+                           const qrcode1 = new QRCode(document.getElementById('qrcode1'), {
+                              text: {{ $qr1 }},
+                           width: 500,
+                           height: 500,
+                           colorDark: '#000',
+                           colorLight: '#fff',
+                           correctLevel: QRCode.CorrectLevel.H
+                        });
+                    });
+                     </script>
+                  </div>
+                  <div class="flex flex-row flex-wrap justify-start items-end md:px-6 py-6">
+                     {{ with $.Site.GetPage "cvcomplete" }}
+                        {{ $qr2 := .Permalink }}
+                        <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
+                           <a id="qrcode2" href="{{- $qr2 -}}" rel="noreferrer"
+                              class="block h-24 md:h-32 w-24 md:w-32 md:p-2 bg-white rounded-lg"></a>
+                        </div>
+                     <div class="pl-4 comment pb-2">
+                        <script>console.log('qr2', {{ print $qr2 }});</script>
+                        <a href='{{- $qr2 -}}' rel="noreferrer">&nbsp;<b>{{- i18n "CvComplete" }}</b>&nbsp;<br>&nbsp;{{- $qr2 -}}&nbsp;</a>
+                     </div>
+                     <script defer="defer">
+                        window.addEventListener('load', function (event) {
+                           const qrcode2 = new QRCode(document.getElementById('qrcode2'), {
+                              text: {{ $qr2 }},
+                           width: 500,
+                           height: 500,
+                           colorDark: '#000',
+                           colorLight: '#fff',
+                           correctLevel: QRCode.CorrectLevel.H
+                            });
+                        });
+                     </script>
+                     {{ end }}
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-      {{ end }}
-      <div class="flex flex-row flex-wrap mt-10">
-         <div class="w-1/6 p-0 pr-6">&nbsp;</div>
-         <div class="w-5/6 pl-6 italic petitTxt">{{- i18n "Updates" }}: <a href="{{- .Permalink -}}" rel="noreferrer">{{ .Permalink }}</a></div>
-         <div class="w-1/6 p-0 pr-6">&nbsp;</div>
-         <div class="w-5/6 pl-6 italic petitTxt">{{- i18n "CvComplete" }}: {{ with .Site.GetPage "cvcomplete" }}<a href='{{- .Permalink -}}' rel="noreferrer">{{- .Permalink -}}</a></div></div>{{ end }}
-      </div>
    </main>
 </body>
+{{ $qr_js := resources.Get "js/qrgen.js" | minify }}
+<script src="{{ $qr_js.Permalink }}"></script>
 
 </html>

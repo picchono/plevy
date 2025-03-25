@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "USMC85 · Writing"
 slug: "writing"
 institution:

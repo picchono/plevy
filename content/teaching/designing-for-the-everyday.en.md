@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Designing for the everyday"
 institution:
     heig: 1

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Master CESAAP - PUDS04 / UE17 & UE18 · Médiation du projet en design"
 institution:
     heig: 1

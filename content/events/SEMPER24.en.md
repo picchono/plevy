@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: le-design-est-il-une-science-humaine
 title: "Le design est-il une science humaine ?"
 layout: single

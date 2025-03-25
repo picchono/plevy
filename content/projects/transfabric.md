@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: transfabric
 title: "TransFabriC - Institut de la transfabrication circulaire"
 layout: single

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Transforming practices"
 chaire: false
 date: 2020-09-16T20:03:12+02:00

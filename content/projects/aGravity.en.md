@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: aGravity
 title: "aGravity"
 layout: single

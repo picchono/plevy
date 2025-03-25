@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Master CESAAP - UAIP11 / UE19 · Stage en entreprise"
 institution:
     heig: 1

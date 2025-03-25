@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Qualités perceptives"
 chaire: false
 date: 2015-10-16T20:03:12+02:00

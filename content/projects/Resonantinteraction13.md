@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: resonnant-interaction
 title: "Resonnant interaction"
 layout: single

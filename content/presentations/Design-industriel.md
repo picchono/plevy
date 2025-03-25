@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: EPN05-20250113
 title: "Designs industriels"
 layout: presentation

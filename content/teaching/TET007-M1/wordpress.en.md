@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "TET007 · Wordpress"
 slug: "wordpress"
 institution:

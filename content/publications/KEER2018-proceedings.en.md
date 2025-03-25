@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: kansei-engineering-and-emotion-research-2018
 title: The Proceedings of the Kansei Engineering and Emotion Research International Conference 2018, KEER 2018
 layout: publi

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Reconstrained design"
 prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:

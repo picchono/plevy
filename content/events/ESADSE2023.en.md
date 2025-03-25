@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: irregularite_une_opportunite_societale
 title: "L'irrégularité, une opportunité sociétale"
 layout: single

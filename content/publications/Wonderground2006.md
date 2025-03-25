@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: towards-a-definition-of-kansei
 title: "Towards a definition of Kansei"
 layout: publi

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "TET007 · CSS"
 slug: "css"
 institution:

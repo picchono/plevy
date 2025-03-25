@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: artefactual-emptiness-on-appropriation-in-kansei-design
 title: "Artefactual emptiness – On appropriation in kansei design"
 institution:

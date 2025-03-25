@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: mediums-in-design
 title: "Mediums in design"
 tags: ['seminar', 'mediums', 'mediality', 'symetrical_anthropology']

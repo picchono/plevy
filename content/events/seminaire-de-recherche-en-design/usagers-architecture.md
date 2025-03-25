@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Conception avec usagers en architecture : vers un indice de profondeur de participation"
 prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:

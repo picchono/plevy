@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: TET007-RNCP-Approche_pratique_du_numerique_et_la_recherche_d_information
 title: "TET007-RNCP · Approche pratique du numérique et la recherche d'information"
 layout: single

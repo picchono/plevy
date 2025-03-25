@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: haiku-cocoa
 title: "À peine hors du lit"
 layout: single

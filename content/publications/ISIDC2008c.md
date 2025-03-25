@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: development-of-competences-for-service-design
 title: "Development of Competences for Service Design"
 layout: publi

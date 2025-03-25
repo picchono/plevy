@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: kansei-et-kansei-design
 title: "Kansei et kansei design"
 layout: single

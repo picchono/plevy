@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: designJAD25
 title: "Une histoire commentée du design"
 layout: prez

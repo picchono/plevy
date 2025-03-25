@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: haiku-cocoa
 title: "Barely out of bed"
 layout: single

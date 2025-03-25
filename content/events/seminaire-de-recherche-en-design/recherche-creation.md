@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Recherche-création : de la pratique réflexive à la publicisation"
 collaboration:
     partner1:

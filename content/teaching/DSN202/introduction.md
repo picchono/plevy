@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN202 · Introduction"
 institution:
     heig: 1

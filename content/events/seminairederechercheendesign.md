@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: seminaire-de-recherche-en-design
 title: "Séminaire de méthodologie Pratiques de recherche en design et création"
 chaire: true

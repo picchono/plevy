@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "USMC85 · Introduction"
 slug: "introduction"
 institution:

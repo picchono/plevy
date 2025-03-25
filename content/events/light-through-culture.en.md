@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: light-through-culture
 title: "Light through Culture - Experience Human Rights"
 tags: ['light', 'interaction', 'experience', 'culture', 'exhibition', 'human_rights', 'Sienna']

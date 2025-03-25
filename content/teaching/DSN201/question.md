@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN201 · La question de recherche"
 slug: "question-de-recherche"
 institution:

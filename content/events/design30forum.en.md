@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: design-30-forum
 title: "Design 3.0 Forum"
 layout: single

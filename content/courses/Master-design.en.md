@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: master_design
 title: "Master Design"
 layout: course

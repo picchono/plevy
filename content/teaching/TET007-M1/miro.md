@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "TET007 · Miro"
 slug: "miro"
 institution:

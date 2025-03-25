@@ -22,7 +22,7 @@
 			"order": 1,
 			"type": "Curriculum vitae",
 			"username": "Pierre Levy",
-			"url": "/en/team/plevy/cv/",
+			"url": "/en/plevy/cv/",
 			"icon": "cv"
 		},
 		"photo": {
@@ -36,7 +36,7 @@
 			"order": 3,
 			"type": "Plevy",
 			"username": "levypier",
-			"url": "/en/team/plevy/publis/",
+			"url": "/en/plevy/publis/",
 			"icon": "publis"
 		},
 		"linkedin": {

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: du-design
 title: "Du design"
 layout: presentation

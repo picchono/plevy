@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: ecole-du-non-savoir
 title: "École du non-savoir"
 tags: ['not knowing', 'design']

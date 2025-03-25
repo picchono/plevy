@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: master_design-art_contextes_techniques_usages
 title: "Master Design · Art, contextes, techniques, usages"
 layout: course

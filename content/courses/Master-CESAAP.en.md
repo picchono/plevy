@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: master_design-creation_projet_transdisciplinarite
 title: "Master Design · Parcours Création, Projet, Transdisciplinarité"
 layout: course

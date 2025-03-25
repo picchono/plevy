@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: seminaire-de-recherche-en-design
 title: "Seminar on methods in design research"
 chaire: true

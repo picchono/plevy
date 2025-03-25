@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Cadre théorique du design inspiré par la philosophie japonaise"
 slug: japanese_philosophy-inspired_design_framework
 chaire: true

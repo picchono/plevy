@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: lecon-inaugurale
 title: "Leçon inaugurale de la Chaire de design Jean Prouvé"
 layout: single

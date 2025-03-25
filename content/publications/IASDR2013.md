@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: exploring-constituents-for-kansei-design-towards-a-framework
 title: "Exploring constituents for kansei design, towards a framework"
 layout: publi

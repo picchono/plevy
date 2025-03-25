@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: rite-de-transition
 title: "Rite de transition – a design choreographic exploration of cultural value exchange, through development of intercultural ritual artefacts"
 layout: publi

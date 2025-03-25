@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: PhD_arts_design_society
 title: "PhD in Arts, Design & Society"
 layout: course

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: the-chatter-door-designing-for-in-between-spaces
 title: The Chatter Door, designing for in-between spaces
 layout: publi

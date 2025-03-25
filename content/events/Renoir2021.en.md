@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: Entre-methodes-et-pratiques-en-design-un-moment-d_apprentissage
 title: "Entre méthodes et pratiques en design - un moment d'apprentissage"
 tags: ['Renoir', 'méthods', 'learning', 'séminaire']

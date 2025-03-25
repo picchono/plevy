@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: kansei-engineering-science-rrans-interdisciplinary-research
 title: "Kansei Engineering|Science, Trans|Interdisciplinary Research"
 tags: ['kansei', 'interdisciplinarity']

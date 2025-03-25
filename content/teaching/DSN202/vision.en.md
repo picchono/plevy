@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN202 · Vision projetée"
 slug: "vision-projetee"
 institution:

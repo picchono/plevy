@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: monty
 title: "Monty"
 layout: single

@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: studying-requirements-for-designing-a-vitality-data-sharing-platform-from-a-multi-stakeholder-perspective
 title: "Studying requirements for designing a vitality data sharing platform from a multi-stakeholder perspective"
 institution:

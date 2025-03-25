@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: introducing-MATiK-service-proposition-for-a-new-IT-communication-system-through-an-approach-in-kansei
 title: "Introducing MATiK service, Proposition for a new IT communication system through an approach in Kansei"
 layout: publi

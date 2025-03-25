@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "DSN201 · Introduction"
 slug: "introduction"
 institution:

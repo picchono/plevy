@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Master CESAAP - PUDS03 / UE15 · Séminaire de recherche associé"
 institution:
     heig: 1

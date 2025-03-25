@@ -38,7 +38,6 @@
   * {
     scrollbar-color: var(--color-tertiary-bg) transparent;
     scrollbar-width: thin;
-    border: none;
   }
 }
 
@@ -48,6 +47,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   color: var(--color-primary-text);
+  border: none;
 }
 
 *,
@@ -63,16 +63,9 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
-html,body {
-  /*background: linear-gradient(135deg, var(--color-primary-bg) 30%, var(--color-quaternary-bg));*/
-  background-color: var(--color-primary-bg);
-}
 
 body {
-  @apply text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden p-5;
-  transition: all 500ms ease-in-out;
-  background: fixed linear-gradient(135deg,#ffffff 30%,#f0ede2 70%);
-  background-size: 100vw 100vh;
+  @apply bg-primary-bg text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden transition-all duration-500 ease-in-out;
 }
 /*
 body::before {
@@ -95,14 +88,14 @@ body::before {
 }
 */
 body {
-  --color-primary-bg: #f7f7f7;
-  --color-secondary-bg: #fff;
-  --color-tertiary-bg: #fafafa;
-  --color-quaternary-bg: #e7e2dd;
-  --color-primary-text: #1c1c1c;
-  --color-secondary-text: #e3ddd3;
-  --color-epierrot: #cb6465;
-  --color-borders: #1c1c1c;
+  --color-primary-bg: light-dark(#fff, #1c1c1c);
+  --color-secondary-bg: light-dark(#f7f7f7, #1e1e1e);
+  --color-tertiary-bg: light-dark(#fafafa, #222222);
+  --color-quaternary-bg: light-dark(#fafafa, #141414);
+  --color-primary-text: light-dark(#1c1c1c, #f7f7f7);
+  --color-secondary-text: light-dark(#222222, #545454);
+  --color-epierrot: light-dark(#b85657, #20E0D9);/*#cb6465*/
+  --color-borders: light-dark(#1c1c1c, #fafafa);
 }
 
 b i {
@@ -114,11 +107,11 @@ p:last-child {
 }
 
 a {
-  @apply text-primary-text transition-all duration-200 ease-in-out;
+  @apply text-primary-text transition-all duration-500 ease-in-out;
   font-size: inherit;
   font-weight: inherit;
   transition: all 1s ease-in-out;
-  display: inline-block;
+  display: inline;
 }
 
 a:hover {
@@ -220,41 +213,20 @@ a.logohome:hover .lh2 {
 }
 
 /* Pack items*/
+main.pack {
+  @apply md:p-7;
+}
+
 .pack-item {
-  @apply relative bg-transparent w-full py-3 md:p-2 transition-all duration-700 ease-in-out;
+  @apply bg-transparent w-full md:w-auto px-4 py-2 md:p-7;
 }
 
-.pack-item.frontTop {
-  @apply relative rounded-xl w-1/2 md:max-w-48 h-48;
-  background-size: 100% 100%;
-  background-clip: content-box;
+/* big menu */
 
-}
-
-.pack-item.frontTop>.topBg {
-  @apply  absolute w-42 h-42 ;
-}
-.pack-item.frontTop>.topBg>img {
-  @apply object-cover h-42 w-42 rounded-xl transition-all duration-700 ease-in-out;
-  filter: grayscale(0.8) brightness(3);
+body#menu .pack-item {
+  @apply p-5;
 }
 
-.pack-item.frontTop>.dynCadre {
-  @apply absolute h-42 w-42 bg-transparent;
-}
-
-.pack-item.frontTop:hover>.topBg>img {
-  filter: grayscale(0) brightness(1);
-}
-.frontTopTitle {
-  @apply leading-tight px-2 py-1 rounded-lg transition-all duration-700 ease-in-out;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-}
-
-.pack-item.frontTop:hover .frontTopTitle {
-  opacity: 0;
-}
 /* buttons */
 .pack-item #languageMode {
   @apply bg-transparent;
@@ -265,7 +237,7 @@ a.logohome:hover .lh2 {
 }
 
 .pack-item #languageMode a {
-  @apply bg-primary-bg border border-primary-bg border-solid rounded-xl transition-all duration-700 ease-in-out;
+  @apply bg-primary-bg border border-primary-bg border-solid rounded-md transition-all duration-700 ease-in-out;
 }
 
 .pack-item:hover #languageMode a {
@@ -274,6 +246,48 @@ a.logohome:hover .lh2 {
 
 .pack-item:hover #languageMode a:hover {
   @apply bg-epierrot text-primary-bg border border-epierrot;
+}
+
+.dynCadre {
+  @apply relative inline-block w-full md:w-auto justify-center p-5 transition-all duration-700 ease-in-out;
+  --b: 1px; /* border width */
+	--c: 1em; /* corner size */
+	--r: 0.125em; /* corner rounding */
+  border-radius: var(--r);
+  place-self: center;
+	border: var(--b) solid transparent;
+}
+
+.dynCadre::before {
+  position: absolute;
+  z-index: -1;
+  inset: calc(-1*var(--b));
+  border: inherit;
+  border-radius: var(--r);
+  background: linear-gradient(var(--color-primary-text), var(--color-primary-text), var(--color-primary-text)) border-box;
+  --corner: 
+    conic-gradient(from -90deg at var(--c) var(--c), var(--color-primary-text) 25%, #0000 0) 
+      0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+  --inner: conic-gradient(var(--color-primary-text) 0 0) padding-box;
+  mask: 
+    var(--corner) subtract, 
+    var(--inner);
+  content: ''
+}
+
+.dynCadre:hover{
+  background-color: var(--color-quaternary-bg);
+  border-color: var(--color-epierrot);
+}
+
+.introChair {
+  @apply text-primary-text justify-center rounded-md transition-all duration-700 ease-in-out block py-7 md:py-14 text-3xl font-bold leading-14 cursor-default;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+
+.introChair:hover{
+  @apply text-primary-text bg-transparent;
 }
 
 /*basic table */
@@ -292,7 +306,6 @@ table th {
 .publili a,
 a.cc svg,
 a.hugo svg,
-.mainMenu,
 .submenu div,
 a.titlePL {
   @apply relative text-primary-text bg-primary-bg rounded-lg transition-all duration-700 ease-in-out;
@@ -302,7 +315,6 @@ a.titlePL {
 #home .frontPosts a:hover,
 #Research a:hover,
 .publili a:hover,
-.mainMenu:hover,
 .submenu div:hover,
 a.titlePL:hover {
   @apply bg-primary-bg text-primary-text;
@@ -338,43 +350,63 @@ a.floatImg::after {
   content: none !important;
 }
 
-a.boxIso,
-.dynCadre,
-.doclinkButton, 
-.linkBox {
-  @apply relative text-primary-text justify-center flex flex-col w-full p-3 rounded-xl transition-all duration-700 ease-in-out;
-  background-color: #FFF5;
-  box-shadow: #0001 0 0 3px 1px;
-  border: #FFF0 2px solid;
+a.boxIso{
+  @apply inline text-primary-text justify-center px-2 pt-5 pb-1 rounded-md transition-all duration-700 ease-in-out cursor-pointer;
 }
 
-a.boxIso {
-  @apply md:p-7 cursor-pointer;
-}
-
-a.boxIso:hover, .dynCadre:hover {
-  border: var(--color-epierrot) 2px solid;
-  background-color: #FFF9;
-}
-
-a.doclinkButton {
-  @apply flex-row items-center justify-center transition-all duration-700 ease-in-out;
-}
-
-a.doclinkButton:hover, a.linkBox:hover {
+a.boxIso:hover{
   @apply text-epierrot bg-transparent;
 }
 
-a.doclinkButton span.doclinkIcon {
-  @apply inline-block py-3 px-5 transition-all duration-700 ease-in-out;
+.boxInfo {
+  @apply inline-block text-right;
+  font-size: 0.8rem;
 }
 
-a.doclinkButton span.doclinkText {
-  @apply inline-block py-3 pr-5 pl-0.5 transition-all duration-700 ease-in-out;
+.boxInfo div {
+  @apply h-3.5 pr-2 m-0;
+  font-size: 0.8rem;
+}
+
+.boxTitle {
+  @apply font-bold transition-all duration-700 ease-in-out;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.boxTitle.frontTop {
+  color: light-dark(blue, #ff0060);
+}
+.boxTitle.frontTop:hover {
+  @apply text-epierrot;
+}
+
+a.doclinkButton, a.linkBox {
+  @apply relative flex flex-row justify-center w-full md:max-w-96 px-10 transition-all duration-700 ease-in-out;
+}
+
+a.linkBox {
+  @apply  p-1 mb-4 border rounded;
+}
+
+a.listcourse {
+  @apply relative inline-block px-2 py-0.5 my-2 text-primary-text rounded-md;
+}
+
+a.doclinkButton span, a.linkBox span {
+  @apply text-xl font-bold;
+}
+
+a.doclinkButton .doclinkIcon {
+  @apply my-1 transition-all duration-700 ease-in-out;
+}
+
+a.doclinkButton:hover, a.linkBox:hover, a.listcourse:hover {
+  @apply text-epierrot bg-primary-bg;
 }
 
 a.collab {
-  @apply relative inline-block w-full my-3 transition-all duration-700 ease-in-out;
+  @apply relative inline-block w-auto my-3 transition-all duration-700 ease-in-out;
 }
 
 a.collab:hover {
@@ -403,20 +435,7 @@ a.smalllink:last-child {
 }
 
 a.langu {
-  @apply relative bg-transparent inline-block px-2 mr-2 text-primary-text hover:text-epierrot;
-}
-
-a.homemenu,
-a.listcourse {
-  @apply relative inline-block px-2 py-0.5 my-2 text-primary-text hover:text-primary-bg rounded-md;
-}
-
-a.homemenu {
-  @apply text-lg;
-}
-
-a.linkBox {
-  @apply relative flex flex-row justify-between min-h-24 w-full max-w-96 p-1 mb-4 border-0 transition-all duration-700 ease-in-out;
+  @apply relative bg-transparent inline-block mr-2 text-primary-text hover:text-epierrot;
 }
 
 div.ended a.boxIso {
@@ -433,6 +452,14 @@ a.slashLink {
 
 a.slashLink:hover {
   @apply bg-epierrot text-primary-bg border-secondary-bg;
+}
+
+a.affiliationLogo {
+  @apply block mt-6 transition-all duration-700 ease-in-out;
+}
+
+a.affiliationLogo:hover {
+  @apply bg-transparent;
 }
 
 #lightgallery {
@@ -561,8 +588,16 @@ li:last-child {
 }
 
 /* inputSearch */
+#inputSearch {
+  @apply w-full rounded-lg p-1 pl-3 mb-2;
+  border: 1px #0002 solid;
+}
 #inputSearch input {
-  @apply flex-grow w-full bg-transparent placeholder:text-primary-text placeholder:opacity-60 text-primary-text text-sm border border-blue-700 rounded-sm p-1 transition-all duration-700 ease-in-out focus:outline-none focus:border-gray-500 hover:border-yellow-700;
+  @apply flex-grow w-full border-none bg-transparent placeholder:text-primary-text placeholder:opacity-60 text-primary-text text-sm border border-blue-700 rounded-sm p-1 transition-all duration-700 ease-in-out focus:outline-none focus:border-gray-500 hover:border-yellow-700;
+}
+
+button.homemenu {
+  @apply text-right md:text-center;
 }
 
 /* hamburger */
@@ -692,28 +727,20 @@ a:hover img.imgBox {
   opacity: 0;
 }
   
-/*
-a.boxIso.presentations div.imagFront {
-  border: 1px #efc36499 solid;
-  background-color: #efc36455;
+.stamp {
+  @apply flex flex-col absolute top-0 left-0 w-screen p-4;
 }
-a.boxIso.projects div.imagFront {
-  border: 1px #7ecbc299 solid;
-  background-color: #7ecbc255;
+
+.mainMenu {
+  @apply flex justify-start p-5 pr-8 rounded w-full bg-primary-bg transition-all duration-700 ease-in-out;
 }
-a.boxIso.events div.imagFront {
-  border: 1px #d5858599 solid;
-  background-color: d5858555;
+
+.stamp.medium {
+  @apply absolute flex flex-row justify-between p-5 w-full;
+  top:0;
+  left: 0;
 }
-a.boxIso.teaching div.imagFront, a.boxIso.courses div.imagFront {
-  border: 1px #80b1c399 solid;
-  background-color: #80b1c355;
-}
-a.boxIso.publications div.imagFront, a.boxIso.research div.imagFront, a.boxIso.writings div.imagFront  {
-  border: 1px #ca9acb99 solid;
-  background-color: #ca9acb55;
-}
-*/
+
 a.gridbox p {
   font-size: 15px;
   line-height: var(--lineHeight);
@@ -784,6 +811,13 @@ strong {
   font-size: inherit;
 }
 
+p>a, li>a {
+  @apply inline border-b border-primary-text border-dotted;
+}
+
+p>a:hover, li>a:hover {
+  @apply border-transparent;
+}
 i,
 em {
   @apply italic;
@@ -887,8 +921,8 @@ span.minor:not(:last-child)::after {
 .embed-wrapper {
   @apply overflow-hidden relative;
   padding-top: 56.25%;
-  border-top-left-radius: .63rem;
-  border-top-right-radius: .63rem;
+  border-top-left-radius: .32rem;
+  border-top-right-radius: .32rem;
 }
 
 .embed-wrapper iframe {
@@ -1340,6 +1374,18 @@ canvas#bgirreg2in {
   background-color: #2991f9 !important;
 }
 
+/* session seminaire */
+.sessionTitleBloc {
+  @apply absolute bottom-0 left-0 p-3;
+}
+.sessionTitle {
+  @apply rounded px-3 py-1 transition-all duration-700 ease-in-out;
+  background-color: #FFFA;
+}
+.pack-item:hover .sessionTitle {
+  @apply text-epierrot;
+}
+
 /* grid */
 .muugrid {
   position: relative;
@@ -1378,10 +1424,6 @@ li:last-child {
   @apply mb-0;
 }
 
-.sidenav {
-  @apply border-l border-epierrot;
-}
-
 .sidenav__sublist .current::after {
   display: none;
 }
@@ -1402,6 +1444,9 @@ li:last-child {
   padding-left: 2.5rem;
 }
 
+.sidenav__item a:hover {
+  @apply text-epierrot bg-transparent;
+}
 /* pre */
 
 pre {
@@ -2434,7 +2479,7 @@ body {
 
 @media print {
   @page {
-    margin: 1.3cm 1.3cm 1.3cm 4cm;
+    margin: 1.2cm 1.2cm 1.2cm 3cm;
 
     @bottom-right {
       border-top: .25pt solid #666;
@@ -2450,8 +2495,8 @@ body {
   html,
   body {
     @apply bg-white text-black text-base;
-    font-family: 'Avenir', 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 9pt;
+    font-family: 'Atkinson Hyperlegible', 'Avenir', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11pt;
     line-height: 1.4rem;
     margin: 0;
     float: none;
@@ -2499,7 +2544,7 @@ body {
   }
 
   h1 {
-    @apply text-4xl mb-20;
+    @apply text-4xl mb-20 mt-0;
   }
 
   h2 {

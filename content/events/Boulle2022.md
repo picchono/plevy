@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: beaute-du-motif-japonais
 title: La beauté du motif japonais
 tags: ['Japon', 'motif', 'kamon', 'Boulle']

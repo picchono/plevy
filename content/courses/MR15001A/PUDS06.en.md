@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 title: "Master CESAAP - PUDS05 / UE16 · Projet en design"
 institution:
     heig: 1

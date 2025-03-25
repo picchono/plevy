@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: direct-interaction-design
 title: "Direct interaction design"
 tags: ['interaction', 'musashino-AU']

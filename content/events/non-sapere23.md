@@ -1,5 +1,4 @@
 ---
-members: ["PLevy"]
 slug: seminaire-ecole-du-non-savoir
 title: "Séminaire de l'école du non-savoir"
 tags: ['not knowing', 'design']

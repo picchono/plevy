@@ -4,9 +4,9 @@
     {{ $lea := len $auth }}
     {{ $ord := 1 }}
     {{ range $auth }}
-        {{ if ne $ord 1 -}}{{- if eq $ord $lea }} & {{- else -}}, {{- end -}}{{- end }}
+        {{- if ne $ord 1 -}}{{- if eq $ord $lea }} & {{- else -}}, {{- end -}}{{- end }}
         {{ index . 0 -}}, {{ index . 2 -}}
-        {{ $ord = add $ord 1 }}
+        {{- $ord = add $ord 1 -}}
     {{ end }}
     {{ if .year }}({{ .year -}}).{{- end -}}
     {{ if .title }} {{ .title -}}{{ if .technical_report_number}} ({{- .technical_report_number -}}){{- end -}}.{{- end -}}
