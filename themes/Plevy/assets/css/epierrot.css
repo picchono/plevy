@@ -351,7 +351,7 @@ a.floatImg::after {
 }
 
 a.boxIso{
-  @apply inline text-primary-text justify-center px-2 pt-5 pb-1 rounded-md transition-all duration-700 ease-in-out cursor-pointer;
+  @apply inline text-primary-text justify-center pr-2 pt-5 pb-1 rounded-md transition-all duration-700 ease-in-out cursor-pointer;
 }
 
 a.boxIso:hover{
@@ -382,7 +382,7 @@ a.boxIso:hover{
 }
 
 a.doclinkButton, a.linkBox {
-  @apply relative flex flex-row justify-center w-full md:max-w-96 px-10 transition-all duration-700 ease-in-out;
+  @apply relative flex flex-row justify-between w-full md:max-w-96 px-10 transition-all duration-700 ease-in-out;
 }
 
 a.linkBox {
@@ -1521,11 +1521,12 @@ div.highlight pre {
 }
 
 .linkBox .imgLink img {
-  @apply w-28 h-full object-cover rounded-lg grayscale text-sm;
+  @apply w-28 h-full object-cover rounded-lg text-sm transition-all duration-700 ease-in-out;
+  filter: grayscale(0.4);
 }
 
 .linkBox:hover .imgLink img {
-  @apply grayscale-0;
+  filter: grayscale(0);
 }
 
 .floatImg {
