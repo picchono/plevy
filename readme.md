@@ -1,6 +1,6 @@
 # CDJP
 
-![GitHub last commit](https://img.shields.io/github/last-commit/picchono/plevyfr)
+![GitHub last commit](https://img.shields.io/github/last-commit/picchono/plevy)
 
 This repository contains the assets required to build the [plevy.fr](https://plevy.fr) website.
 
