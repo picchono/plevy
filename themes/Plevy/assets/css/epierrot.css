@@ -63,10 +63,10 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
-
 body {
   @apply bg-primary-bg text-primary-text w-screen mx-auto min-h-screen overflow-x-hidden transition-all duration-500 ease-in-out;
 }
+
 /*
 body::before {
   background:#000;
@@ -1521,7 +1521,7 @@ div.highlight pre {
 }
 
 .linkBox .imgLink img {
-  @apply w-28 h-full object-cover rounded-lg text-sm transition-all duration-700 ease-in-out;
+  @apply w-28 h-full object-cover rounded text-sm transition-all duration-700 ease-in-out;
   filter: grayscale(0.4);
 }
 

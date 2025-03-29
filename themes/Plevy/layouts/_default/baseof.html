@@ -4,7 +4,7 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}">
-  <main class='pack'>
+  <main class="pack">
     <div class="w-px fixed top-0 left-0 -z-40"></div>
     {{ partial "title.html" . }}
     {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
