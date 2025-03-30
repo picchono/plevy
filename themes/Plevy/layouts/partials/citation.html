@@ -50,5 +50,5 @@
 {{ if .school }}{{ index .school 1 -}}{{ if ne (index .school 0) "" -}}: {{ index .school 0 -}}{{ end }}.{{ end }}
 {{- if .isbn }}ISBN: {{ .isbn }}. {{- end -}}
 {{- if .issn }}ISSN: {{ .issn }}. {{- end -}}
-{{ if .doi }}<a href="https://doi.org/{{- .doi -}}" rel="noreferrer">https://doi.org/{{- .doi -}}</a>{{ end }}
+{{ if .doi }} <a href="https://doi.org/{{- .doi -}}" rel="noreferrer">https://doi.org/{{- .doi -}}</a>{{ end }}
 {{ end }}

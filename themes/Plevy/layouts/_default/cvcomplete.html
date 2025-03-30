@@ -37,7 +37,7 @@
          <div class="">&nbsp;</div>
          <div class="col-span-7">&nbsp;</div>
       </div>
-      <h2>{{ i18n "current-situation" }}</h2>
+      <h2 id="current-situation">{{ i18n "current-situation" }}</h2>
       {{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
       <div class="grid grid-cols-7 gap-x-6 mb-0">
          <div>{{ i18n "Since" }} {{ .start }}</div>
@@ -70,7 +70,7 @@
             {{ end }}
       </div>
       {{ end }}{{ end }}
-      <h2>{{ i18n "pastPro" }}</h2>
+      <h2 id="pastPro">{{ i18n "pastPro" }}</h2>
       <div class="mb-10">{{ range sort .pro "start" "desc" }}{{ if ne .end "none"}}
          <div class="grid grid-cols-7 gap-x-6">
             <div>{{ .start }} - {{ .end }}</div>
@@ -103,7 +103,7 @@
          </div>
          {{ end }}{{ end }}
       </div>
-      <h2>{{ i18n "education" }}</h2>
+      <h2 id="education">{{ i18n "education" }}</h2>
       <div class="grid grid-cols-7 gap-x-6 mb-0">
          {{ range sort .studies "date" "desc" }}{{ if .main }}
          <div>{{ .date }}</div>
@@ -112,7 +112,7 @@
                class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          {{ end }}{{ end }}
       </div>
-      <h2 class="pt-6z">{{ i18n "promotion" }}</h2>
+      <h2 id="promotion" class="pt-6z">{{ i18n "promotion" }}</h2>
       <div class="grid grid-cols-7 gap-x-6">
          {{ range sort .promotions "year" "desc" }}
          <div>{{ .date }}</div>
@@ -136,7 +136,7 @@
          </div>
          {{ end }}
       </div>
-      <h2>{{ .directiontheses.description }}</h2>
+      <h2 id="directiontheses">{{ .directiontheses.description }}</h2>
       <div class="mb-10">{{ range sort .directiontheses.list "date" "desc" }}
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{ if eq .ongoing true }}{{ i18n "Since" }}
@@ -148,7 +148,7 @@
                   class="comment">{{ .financial |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
-         <h2>{{ .directionHDR.description }}</h2>
+         <h2 id="directionHDR">{{ .directionHDR.description }}</h2>
          <div class="mb-10">{{ range sort .directionHDR.list "date" "desc" }}
             <div class="grid grid-cols-7 gap-x-6 level1">
                <div>{{ if eq .ongoing true }}{{ i18n "Since" }}
@@ -160,7 +160,7 @@
                      class="comment">{{ .financial |safeHTML }}</span>{{ end }}</div>
             </div>
             {{ end }}</div>
-      <h2>{{ .jurysdoctoraux.description }}</h2>
+      <h2 id="jurysdoctoraux">{{ .jurysdoctoraux.description }}</h2>
       <div class="mb-10">{{ range sort .jurysdoctoraux.list "date" "desc" }}
          <div class="grid grid-cols-7 gap-x-6 level1">
             <div>{{ dateFormat "02/01/2006" .date }}</div>
@@ -170,7 +170,7 @@
                   class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
-      <h2>{{ i18n "teaching" }}</h2>
+      <h2 id="teaching">{{ i18n "teaching" }}</h2>
       <h3>{{ i18n "pedagoresponsabilities" }}</h3>
       <div class="mb-10">{{ range sort .teaching.responsabilities "start" "desc" }}
          <div class="grid grid-cols-7 gap-x-6 level1">
@@ -225,7 +225,7 @@
                   class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
-      <h2>{{ .projects.description }}</h2>
+      <h2 id="projects">{{ .projects.description }}</h2>
       <div class="grid grid-cols-7 gap-x-6 mb-0">{{ range sort .projects.list "start" "desc" }}
          <div>{{ if .end }}{{ .start }} - {{ .end }}{{ else }}{{ i18n "Since" }} {{ .start }}{{ end }}</div>
          <div class="col-span-6 level2"><b>{{ .title |safeHTML }}</b> - {{ .place }}
@@ -240,7 +240,7 @@
          </div>
          {{ end }}{{ end }}
       </div>
-      <h2>{{ i18n "publications" }}</h2>
+      <h2 id="publications">{{ i18n "publications" }}</h2>
       <h3>{{ i18n "publijournal"}}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "article" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
       {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "article" }}<div class="level1">
          {{ partial "citation.html" . }}</div>{{ end }}{{ end }}

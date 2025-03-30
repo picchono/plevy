@@ -26,7 +26,7 @@
 		},
 		"photo": {
 			"order": 2,
-			"type": "PHoto",
+			"type": "Photo",
 			"username": "PLevy",
 			"url": "https://live.staticflickr.com/65535/54134834097_f5279a0ce4_k.jpg",
 			"icon": "photo"
@@ -35,7 +35,7 @@
 			"order": 3,
 			"type": "Plevy",
 			"username": "levypier",
-			"url": "/en/plevy/publis/",
+			"url": "/plevy/publis/",
 			"icon": "publis"
 		},
 		"linkedin": {
