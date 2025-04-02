@@ -36,5 +36,7 @@ photogallery:
         name: "Conception avec usagers en architecture : vers un indice de profondeur de participation, par Benjamin Loiseau"
         src: "https://1drv.ms/i/s!AnQx_v88q65Qgc2SMyOxQBw4lcOV7Ak?embed=1&width=500"
         img: "https://1drv.ms/i/s!AnQx_v88q65Qgc2SMyOxQBw4lcOV7Ak?embed=1&width=1386"
+link:
+    1: ["Link to the online conference", "teams", "https://teams.microsoft.com/l/meetup-join/19%3ameeting_Yzg5MmQzZmQtZWVhNi00M2ZlLTlkZTQtNjVkZGFlYTUzZWNj%40thread.v2/0?context=%7b%22Tid%22%3a%22b323bcb4-6d58-4f25-87bf-6366c3d689af%22%2c%22Oid%22%3a%2224e690a3-2af9-47cd-8677-8e3b0dbc1342%22%7d"]
 ---
 Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception . En nous appuyant sur un projet de rénovation de logements sociaux en difficulté, la véritable profondeur de cette participation sera examinée à l’aide d’un indice développé pour évaluer le rôle effectif des différents types d'acteurs dans ces processus. L’intervention mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et discutera des questions méthodologiques pertinentes pour l’analyse des interactions entre les concepteurs et les usagers dans ces processus.
