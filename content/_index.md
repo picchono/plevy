@@ -1,7 +1,7 @@
 ---
 member: PLevy
-title: "prof.dr.ing. Pierre Lévy, HDR"
-slug: "pierre-levy"
+title: "Chaire design Jean Prouvé"
+slug: "cdjp"
 chaire: true
 bodyclass: menu
 date: 2020-10-24T00:55:28+02:00
