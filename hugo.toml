@@ -1,12 +1,12 @@
-baseURL = "https://plevy.fr"
+baseURL = "https://chaire-design.fr"
 languageCode = "fr-FA"
 title = "Pierre Lévy"
-theme = "Plevy"
+theme = "CDJPtheme"
 defaultContentLanguage = "fr"
 ignoreErrors = ["error-disable-taxonomy"]
 
 DefaultContentLanguage = "fr"
-copyright = "plevy.fr"
+copyright = "chaire-design.fr"
 
 [Params]
 favicon = "icon.png"

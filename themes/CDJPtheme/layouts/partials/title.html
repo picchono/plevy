@@ -2,12 +2,14 @@
     <div class="mainMenu {{ if .IsHome }}justify-between flex-row{{ else }}flex-col{{ end }}">
         <div class="flex flex-col justify-stretch">
             <div class="relative block">
+                {{ if false }}
                 <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}"
                     aria-label="Pierre Lévy">
                     {{ partial "icons.html" (dict "ico" "pierrelevy" "hei" 4.5 "cla" "lh") -}}
                 </a>
+                {{ end }}
                 <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}/chaire" aria-label="Pierre Lévy">
-                    {{ partial "icons.html" (dict "ico" "jprouve" "hei" 4 "cla" "lh2") -}}
+                    {{ partial "icons.html" (dict "ico" "jprouve" "hei" 5 "cla" "lh2") -}}
                 </a>
             </div>
             <div class="flex flex-row">

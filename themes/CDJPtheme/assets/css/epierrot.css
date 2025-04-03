@@ -160,7 +160,7 @@ a.logohome .lh {
 }
 
 a.logohome .lh2 {
-  @apply h-auto w-28;
+  @apply h-auto w-36;
   stroke-width: 4;
   stroke-dasharray: 569;
   animation: logoanim2 3s ease-out;

@@ -1,8 +1,8 @@
 # plevy
 
-![GitHub last commit](https://img.shields.io/github/last-commit/picchono/plevy)
+![GitHub last commit](https://img.shields.io/github/last-commit/picchono/CDJP)
 
-This repository contains the assets required to build the [plevy.fr](https://plevy.fr) website.
+This repository contains the assets required to build the [chaire-design.fr](https://chaire-design.fr) website.
 
 ## Resources
 
@@ -13,7 +13,7 @@ To use this repository, you need the following installed locally:
 
 ## Thank you
 
-The [plevy.fr](https://plevy.fr) website works based on [Hugo](https://gohugo.io/).
+The [chaire-design.fr](https://chaire-design.fr) website works based on [Hugo](https://gohugo.io/).
 It uses the scripts:
 - [lightgallery](http://www.lightgalleryjs.com/)
 - [qrcode.js](https://davidshimjs.github.io/qrcodejs/)
