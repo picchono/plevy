@@ -43,41 +43,8 @@
 {{ $atkinson_css := $atkinson_css | minify }}
 <link rel="stylesheet" href="{{ $atkinson_css.Permalink }}" media="all">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-392XHYQXG7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-392XHYQXG7');
-</script>
-
 {{ partial "opengraph.html" . }}
 {{ partial "x_cards.html" . }}
 {{ range .AlternativeOutputFormats -}}
 {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
-
-{{if ne .Params.layout "prez"}}
-
-{{ if $js.epierrot.url }}
-{{ if $js.epierrot.version }}
-<script defer src="{{ printf $js.epierrot.url $js.epierrot.version }}"></script>
-{{ else }}
-<script defer src="{{ $js.epierrot.url }}"></script>
-{{ end }}
-{{ else }}
-{{ $epierrot_js := resources.Get "js/epierrot.js" | minify }}
-<script defer src="{{ $epierrot_js.Permalink }}"></script>
-{{ end }}
-
-
-{{ $isotope_js := resources.Get "js/isotope.pkgd.min.js" | minify }}
-<script src="{{ $isotope_js.Permalink }}"></script>
-{{ $packery_js := resources.Get "js/packery-mode.pkgd.min.js" | minify }}
-<script src="{{ $packery_js.Permalink }}"></script>
-
-
-{{ if .Params.citation }}{{ partial "citationmeta.html" . }}{{ end }}
-
-{{ end }}

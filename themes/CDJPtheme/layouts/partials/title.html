@@ -3,12 +3,11 @@
         <div class="flex flex-col justify-stretch">
             <div class="relative block">
                 {{ if false }}
-                <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}"
-                    aria-label="Pierre Lévy">
+                <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}" aria-label="Pierre Lévy">
                     {{ partial "icons.html" (dict "ico" "pierrelevy" "hei" 4.5 "cla" "lh") -}}
                 </a>
                 {{ end }}
-                <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}/chaire" aria-label="Pierre Lévy">
+                <a class="logohome strok" href="https://chaire-design.fr" aria-label="Pierre Lévy">
                     {{ partial "icons.html" (dict "ico" "jprouve" "hei" 5 "cla" "lh2") -}}
                 </a>
             </div>
@@ -27,108 +26,5 @@
             {{ end }}
             {{ partial "international.html" . }}
         </div>
-        {{ if not .IsHome }}
-        <div class="flex flex-col justify-end md:ml-20">
-        <div class="text-left items-start my-10">
-            <h1 class="text-4xl font-bold m-0">{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</h1>
-            {{ if .Params.authors }}
-            <p class="italic">{{ .Params.authors }},
-                {{ dateFormat "02 Jan 2006" .Date }}</p>
-            {{ end }}
-            {{ if .Params.prezfor }}
-            <p class="italic">{{- i18n "by" }}
-            {{ $len := len .Params.intervenants}}
-            {{ $count := 0 }}
-            {{ range .Params.intervenants }}
-                {{ .name }}
-                {{ $count = add $count 1 }}
-                {{ if ne $count $len -}}, {{ end }}
-            {{ end }}
-            {{ i18n "for" }} {{ .Params.prezfor }}, {{ dateFormat "02 Jan 2006 - 15h04" .Date }}</p>
-            {{ end }}
-        </div>
-        {{ if .Params.updating }}
-        <div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="2">
-            <div class="dynCadre">
-                <p class="italic text-epierrot">Currently updating</p>
-            </div>
-        </div>
-        {{ end }}
-        {{ if .Params.diploma}}
-        <div class="flex flex-row mb-6">
-            {{ range sort .Params.diploma }}
-            <div class="mr-8"><b>{{ .type }}</b><br />
-            {{ .name }}</div>
-            {{ end }}
-        </div>
-        {{ end }}
-        {{ if .Params.reference }}
-        <div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="2">
-            <div class="dynCadre">{{ .Params.reference }}</div>
-        </div>
-        {{ end }}
-        {{ if .Params.collaboration }}
-        <div class="flex flex-row flex-wrap items-center">
-            {{ range sort .Params.collaboration }}
-            <a href="{{ .web }}" target="_blank" class="collab">
-                {{ if .colo }}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6 mr-10") -}}
-                {{else}}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-6 mr-10" ) -}}
-                {{ end }}
-            </a>
-            {{ end }}
-        </div>
-        {{ else if .Params.institution }}
-        <div class="flex flex-wrap items-center">
-            <a href="{{ .Params.institution.web }}" target="_blank" class="collab">
-                {{ if .Params.institution.colo }}
-                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig "colo"
-                .Params.institution.colo) -}}
-                {{else}}
-                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig) -}}
-                {{ end }}
-            </a>
-        </div>
-        </div>
-        {{ end }}
-        {{ else }}
-        <div class="flex flex-col justify-end">
-            <div id="inputSearch">
-                <div class="relative flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="w-4 h-4 pr-1 top-4 left-3.5 text-primary-text">
-                        <path fill-rule="evenodd"
-                            d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <input placeholder='{{ i18n "search" }}...' class="quickSearch" />
-                </div>
-            </div>
-            <div
-                class="button-group filters-button-group flex flex-col justify-end md:flex-row md:justify-around button">
-                <button data-filter="" class="homemenu mx-2 font-bold">{{ i18n "all" }}</button><br />
-                {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings"
-                "presentations" }}
-                {{ range readDir "content" }}
-                {{ if eq .Name $fold }}
-                {{ range where $.Site.Pages "Section" "in" ($fold) }}
-                {{ if eq .Params.zone $fold }}
-                <button data-filter="{{- $fold -}}" class="homemenu mx-2 font-bold">{{ .Title }}</button><br />
-                {{ end }}
-                {{ end }}
-                {{ end }}
-                {{ end }}
-                {{ end }}
-            </div>
-        </div>
     </div>
-    {{ $intro := $.Site.GetPage "page" "intro.md" }}
-    {{ with $intro }}
-    {{ if .Params.active }}
-    <div class="px-5 py-10">{{ .Content }}</div>
-    {{ else}}<div class="p-1">&nbsp;</div>
-    {{ end }}
-    {{ end }}
 </div>
-{{ end }}

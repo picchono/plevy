@@ -8,7 +8,3 @@ This repository contains the content of the chaire-design.fr website
 ## Resources
 
 This website is built thanks to [Hugo](https://gohugo.io/). The repository is accessible on [Github](https://github.com/picchono/plevy).
-
-## Thank you
-
-Kubernetes thrives on community participation, and we appreciate your contributions to our website and our documentation!
