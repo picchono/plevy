@@ -14,23 +14,19 @@
             </div>
             <div class="flex flex-row">
                 <a class="iconhome strok" href="https://gohugo.io/" aria-label="Go to cnam website">{{ partial
-                    "icons.html" (dict
-                    "ico" "hugo"
-                    "hei" 1) -}}</a>
+                    "icons.html" (dict "ico" "hugo" "hei" 1) -}}</a>
                 <a class="iconhome" href="https://github.com/picchono/plevyfr" aria-label="Go to github">{{ partial
-                    "icons.html" (dict
-                    "ico" "github" "hei" 1) -}}</a>
+                    "icons.html" (dict "ico" "github" "hei" 1) -}}</a>
                 <a class="iconhome" href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
                     aria-label="Go to cc">{{
                     partial "icons.html" (dict "ico" "cc" "hei" 1) -}}</a>
-                {{ if .IsHome }}
-                <a class="iconhome ml-4 mb-2" href="https://www.cnam.fr" aria-label="Go to cnam website">
-                    {{ partial "icons.html" (dict "ico" "cnam" "hei" 0.9) -}}</a>
-                {{ end }}
             </div>
+            {{ if .IsHome }}
+            <div><a class="iconhome mt-4 mb-2" href="https://www.cnam.fr" aria-label="Go to cnam website">
+                    {{ partial "icons.html" (dict "ico" "cnam" "hei" 0.9) -}}</a></div>
+            {{ end }}
             {{ partial "international.html" . }}
         </div>
-
         {{ if not .IsHome }}
         <div class="flex flex-col justify-end md:ml-20">
         <div class="text-left items-start my-10">
