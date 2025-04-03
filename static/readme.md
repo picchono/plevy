@@ -1,6 +1,6 @@
-# plevy.fr
+# chaire-design.fr
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3343ad67-f01e-4f42-9981-bd25df75bebf/deploy-status)](https://app.netlify.com/sites/CDJPfr/deploys) ![GitHub last commit](https://img.shields.io/github/last-commit/picchono/CDJPfr)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3343ad67-f01e-4f42-9981-bd25df75bebf/deploy-status)](https://app.netlify.com/sites/chairedesign/deploys) &nbsp; ![GitHub last commit](https://img.shields.io/github/last-commit/picchono/CDJPfr)
 
 
 This repository contains the content of the chaire-design.fr website
