@@ -4,7 +4,7 @@
     data-date="{{ .context.Date }}" {{if eq .context.Params.front 1 }} data-front="1" {{ else }} data-front="0" {{ end
     }} data-section="{{ .context.Section  }}">{{if .dynC }}<div class="dynCadre">{{ end }}
     <div class="invisible abolute inline-block h-0 w-0 overflow-hidden">{{ .context.Section }} {{ htmlUnescape (plainify 
-        .context.Content) }} {{ .context.Params.Date }}</div>
+        .context.Content) }} {{ .context.Params.Date }} {{ .context.Params.abstract }}</div>
     <a class="boxIso{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}">
         <span class="boxInfo">
             {{ if eq .context.Params.layout "member" }}

@@ -1,0 +1,239 @@
+{
+	"responsabilities": {
+		"MR150": {
+			"title": "Master Design (MR150)",
+			"start": "2021",
+			"end": "none",
+			"ordre": 1,
+			"place": "CNAM",
+			"domaine": "Double domaine Science, Technologie, Santé & Arts, Lettres, Langues",
+			"comment": "Le master de design du Cnam vise la formation de designers capable d'accompagner des pratiques reflexives et transformatives au travers de projets en design, en ingénierie et en artisanat d'art."
+		},
+		"MR15001A": {
+			"title": "Master Design parcours Création, projets, transdisciplinarité (MR15001A)",
+			"start": "2021",
+			"end": "none",
+			"ordre": 2,
+			"place": "CNAM",
+			"language": "français",
+			"comment": "Ce parcours vise la mise en œuvre d’une pensée et d’une pratique critique qui a pour visée de contribuer à formuler et définir les enjeux du design contemporain."
+		},
+		"ED546": {
+			"title": "Responsabilité de la spécialité Arts, Design et Société du doctorat Sciences humaines et humanités nouvelles (DOC7200A)",
+			"start": "2022",
+			"end": "none",
+			"ordre": 3,
+			"place": "École doctorale Abbé Grégoire (ED 546), CNAM",
+			"language": "français",
+			"comment": "This specialisation adheres with the CNAM's centuries-old tradition of crafts and technical professions, design and innovation, culture and creation, and with contemporary developments in these fields linked to the growing focus on social and ecological innovation both in France and internationally."
+		}
+	},
+	"bachelor": {
+		"PoA": {
+			"title": "Perspectives on Aesthetics",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Creating one's own perspective on design and shaping a manifesto"
+		},
+		"DD": {
+			"title": "Design for Debate",
+			"start": "2016",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Logic (and fallacies) and discourse in design"
+		},
+		"DfHN2": {
+			"title": "Designing for the Here and the Now 2",
+			"start": "2015",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Reflection-in-action focusing on telepresence"
+		},
+		"FItD": {
+			"title": "From Idea to Design",
+			"start": "2015",
+			"end": "2019",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Overview of the entire design process"
+		},
+		"DfHN": {
+			"title": "Designing for the Here and the Now",
+			"start": "2013",
+			"end": "2017",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Exploration of the notion of affordance through prototyping"
+		},
+		"KD": {
+			"title": "Kansei Design: exploring values in experience",
+			"start": "2009",
+			"end": "2012",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "3",
+			"comment": "Application of Japanese notions in interaction design"
+		},
+		"voyage": {
+			"title": "A Voyage, provoking a cultural clash to inspire design",
+			"start": "2009",
+			"end": "2012",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "3",
+			"comment": "Using a cultural clash as a source of inspiration for design"
+		}
+	},
+	"master": {
+		"MoT": {
+			"title": "Matter of Transformation",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "How the interweaving between design, philosophy and human & social sciences impacts practices, societies and individuals"
+		},
+		"DfSI": {
+			"title": "Design for social innovation",
+			"start": "2019",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Introducing the Transformative Practices Innovation framework for social innovation"
+		},
+		"Drituals": {
+			"title": "Designing (for) rituals",
+			"start": "2014",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Exploration the complexity of nested temporality in interaction design through everyday rituals"
+		},
+		"DQI-theory": {
+			"title": "Designing Quality in Interaction (DQI) Theory",
+			"start": "2011",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Introduction to theories and frameworks related to interaction design"
+		},
+		"Glow": {
+			"title": "Glow festival workshop",
+			"start": "2011",
+			"end": "2011",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Creation of an interactive installation for the GLOW light festival"
+		},
+		"SD": {
+			"title": "Sensual dynamics",
+			"start": "2009",
+			"end": "2016",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "5",
+			"comment": "Behaviour design based on perceptive qualities"
+		},
+		"SPD": {
+			"title": "Service Product Design",
+			"start": "2008",
+			"end": "2009",
+			"place": "Chiba University, Japan",
+			"language": "Japanese",
+			"ects": "",
+			"comment": "Coaching projects and teaching tools for service design"
+		},
+		"PD-methods": {
+			"title": "Product design methods",
+			"start": "2007",
+			"end": "2008",
+			"place": "University of Tsukuba, Japan",
+			"language": "Japanese",
+			"ects": "",
+			"comment": "Introduction to user-centred design methods"
+		}
+	},
+	"pro": {
+		"DSN202": {
+			"title": "Pratiques réflexives en design, art et création",
+			"start": "2022",
+			"end": "none",
+			"place": "CNAM",
+			"language": "French",
+			"ects": "4",
+			"comment": "For a reflexive approach to situated practice, i.e. practice lived in a real context, this course provides tools from the fields of design for the transformative reflection of professional or everyday practices"
+		},
+		"DSN201": {
+			"title": "Research practices in design, art and creation",
+			"start": "2022",
+			"end": "",
+			"place": "CNAM",
+			"language": "French",
+			"ects": "4",
+			"comment": "Overview and contextualisation of research practices in design, art and creation. It is about providing resources (knowledge, tools, methodologies, networks...) and putting them into practice"
+		},
+		"TET007-RNCP": {
+			"title": "Approche pratique du numérique et la recherche d'information (RNCP)",
+			"start": "2021",
+			"end": "2023",
+			"place": "CNAM",
+			"language": "French",
+			"ects": "4",
+			"comment": "Digital literacy allowing to engage in information research and synthesis useful for professional life on the web"
+		}
+	},
+	"doctoral": {
+		"prospective-psychophysio": {
+			"title": "Prospective Psychophysiological Approach for Kansei Design",
+			"start": "2006",
+			"end": "2006",
+			"place": "University of Tsukuba, Japan",
+			"language": "English",
+			"ects": "",
+			"comment": "Application of Japanese notions in interaction design"
+		}
+	},
+	"project": {
+		"USEEK8": {
+			"title": "Projects for the international Master in Sciences, technologies, health - Telecommunications and Networks (MR14602A)",
+			"start": "2023",
+			"end": "none",
+			"place": "CNAM",
+			"language": "English",
+			"ects": "4",
+			"comment": "Supervision of students' projects in design and engineering"
+		},
+		"TUe-coaching": {
+			"title": "Design project coaching",
+			"start": "2009",
+			"end": "2021",
+			"place": "TU/e, The Netherlands",
+			"language": "English",
+			"ects": "15~45",
+			"comment": "Bachelor and Master levels at TU/e"
+		},
+		"ME310": {
+			"title": "Design thinking project coaching for ME310",
+			"start": "2011",
+			"end": "2017",
+			"place": "École des Ponts ParisTech and d.school Paris, France",
+			"language": "French and English",
+			"ects": "",
+			"comment": "Lecturing and supervising master-level design thinking projects"
+		}
+	}
+}

@@ -1,0 +1,59 @@
+{
+    "Cesar": {
+        "date": "2021",
+        "ongoing": true,
+        "position": "Directeur de thèse",
+        "candidate": "César Harada Jung",
+        "title": "Conception et Innovation des labos marin par l'open-science"
+    },
+    "Maarten": {
+        "date": "2020",
+        "ongoing": true,
+        "position": "Co-directeur (@TU/e)",
+        "candidate": "Maarten Smith",
+        "title": "Philosophy-Design correspondance"
+    },
+    "Sander": {
+        "date": "2020",
+        "ongoing": true,
+        "position": "Co-directeur (@TU/e)",
+        "candidate": "Sander van der Zwan",
+        "title": "Design-Philosophy correspondance"
+    },
+    "Véronique": {
+        "date": "2017-05-23",
+        "ongoing": false,
+        "position": "Co-promotor",
+        "candidate": "Véronique Hillen",
+        "title": "People Place Process – A self-reflection tool to become a professional in design thinking, based on Pedagogical Action Research"
+    },
+    "Carl": {
+        "date": "2014-04-15",
+        "ongoing": false,
+        "position": "Co-promotor",
+        "candidate": "Carl Megens",
+        "title": "Experiential Design Landscapes - How to design for behaviour change, towards an active lifestyle (double thèse avec Michel Peeters)" 
+    },
+    "Michel": {
+        "date": "2014-04-15",
+        "ongoing": false,
+        "position": "Co-promotor",
+        "candidate": "Michel Peeters",
+        "title": "Experiential Design Landscapes - How to design for behaviour change, towards an active lifestyle (double thèse avec Carl Megens)"
+    },
+    "Eva": {
+        "date": "2013-05-03",
+        "ongoing": false,
+        "position": "Daily supervisor",
+        "candidate": "Eva Deckers",
+        "title": "Perceptive qualities in systems of Interactive products",
+        "special": "promotion CUM LAUDE" 
+    },
+    "Ambra": {
+        "date": "2011-12-12",
+        "ongoing": false,
+        "position": "Co-promotor",
+        "candidate": "Ambra Trotto",
+        "title": "Rights through making - skills for pervasive ethics"
+    }
+}

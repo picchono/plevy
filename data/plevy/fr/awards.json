@@ -1,0 +1,25 @@
+{
+    "description": "Prix académiques et de design",
+    "list": {
+        "AHFE16": {
+            "date": "2016",
+            "title": "Best Paper Award",
+            "place": "The 7th International Conference on Applied Human Factors and Ergonomics (AHFE 2016)" 
+        },
+        "Core772016": {
+            "date": "2016",
+            "title": "Felix Ros (coached by Pierre Lévy), student winner of the Interaction Award",
+            "place": "Core77 Design Awards"
+        },
+        "IASDR11": {
+            "date": "2011",
+            "title": "Reviewers’ favorite",
+            "place": "International Association of Societies of Design Research Conference 2011, Delft, The Netherlands"
+        },
+        "Tsukuba06" : {
+            "date": "2006",
+            "title": "Best Degree Dissertation Award",
+            "place": "Graduate School of Comprehensive Human Sciences, University of Tsukuba, Tsukuba, Japan"
+        }
+    }
+}

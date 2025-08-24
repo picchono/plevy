@@ -1,0 +1,55 @@
+{
+    "kansei": {
+        "start": "2006",
+        "end": "2023",
+        "order": 1,
+        "title": "Contribution à la communauté internationale sur l'étude du kansei",
+        "main": false,
+        "activities": {
+            "KEER-steering-coord": {
+                "order": 6,
+                "start": "2014",
+                "end": "none",
+                "title": "Coordinateur du Comité directoire du <a href='https://keer.org' target='_blank' title='keer.org' rel='noreferrer'>Kansei Engineering and Emotion Research (KEER)</a>",
+                "comment": "Ce comité organise les activités communes aux quatre sociétés de recherche sur le kansei (JSKE (Japon), TIK (Taiwan), MAKE (Malaisie), et EKG (Europe))",
+                "main": true
+            },
+            "IJAE": {
+                "order": 4,
+                "start": "2006",
+                "end": "none",
+                "title": "Membre du Comité Editorial de l’International Journal of Affective Engineering (IJAE)",
+                "main": false
+            },
+            "EKG": {
+                "order": 5,
+                "start": "2016",
+                "end": "2018",
+                "title": "Président et co-fondateur de l’European Kansei Group (EKG)",
+                "comment": "L’European Kansei Group vise à développer et promouvoir la recherche sur le kansei en Europe, à la fois un monde académique et un monde industriel",
+                "main": false
+            },
+            "KEER14": {
+                "order": 3,
+                "start": "2012",
+                "end": "2014",
+                "title": "Président du Comité Scientifique de la Conférence Internationale KEER 2014, Linköping, Suède",
+                "main": false
+            },
+            "KEER": {
+                "order": 2,
+                "start": "2009",
+                "end": "none",
+                "title": "Co-organisateur des conférences internationales KEER depuis 2010",
+                "main": false
+            },
+            "JSKE-advis": {
+                "order": 1,
+                "start": "2009",
+                "end": "none",
+                "title": "Conseiller de la Japanese Society of Kansei Engineering (JSKE)",
+                "main": false
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "HDR18": {
+        "date": "2018",
+        "title": "<a href='https://en.wikipedia.org/wiki/Habilitation#France' target='blank'>Habilitation à Diriger des Recherches</a>",
+        "place": "<a href='https://www.utc.fr/' target='_blank' title='UTC' rel='noreferrer'>Compiegne University Technology</a> (UTC), France",
+        "comment": "Section 71 - Information and Communication Sciences",
+        "type": "diploma",
+        "manuscript": "Le temps de l’expérience, enchanter le quotidien par le design",
+        "main": true
+    },
+    "Qualif13": {
+        "date": "2013",
+        "title": "<i>Qualification aux fonctions de Maître de Conférence</i>",
+        "comment": "Section 60 - Mécanique, génie mécanique, génie civil",
+        "type": "qualification",
+        "main": false
+    },
+    "BKO13": {
+        "date": "2013",
+        "title": "University Teaching Qualification - BKO",
+        "place": "<a href='https://www.tue.nl/' target='_blank' title='Eindhoven University of Technology' rel='noreferrer'>Eindhoven University of Technology</a> (TU/e), The Netherlands",
+        "comment": "Dutch diploma for university teaching",
+        "type": "qualification",
+        "main": true
+    },
+    "PhD06": {
+        "date": "2006",
+        "title": "Doctorate in Kansei Science",
+        "place": "<a href='https://www.tsukuba.ac.jp/' target='_blank' title='University of Tsukuba' rel='noreferrer'>University of Tsukuba</a>, Japan",
+        "comment": "Award of the best dissertation (highest distinction delivered by the doctoral school)",
+        "type": "diploma",
+        "manuscript": "Interdisciplinary design for the cyberspace by an approach in kansei information, Methodology and Workgroup Communication Tool Design Approach in Kansei",
+        "main": true
+    },
+    "Ing01": {
+        "date": "2001",
+        "title": "Master in Mechanical Engineering, speciality in Industrial Design",
+        "place": "<a href='https://www.utc.fr/' target='_blank' title='Compiegne University Technology' rel='noreferrer'>Compiegne University Technology</a> (UTC), France",
+        "type": "diploma",
+        "main": true
+    }
+}
