@@ -253,32 +253,6 @@ main.pack {
   @apply bg-transparent w-full md:w-auto px-4 py-2 md:p-7;
 }
 
-/* colors pack-item */
-.pack-item.events .boxInfoSection {
-  color: var(--color-events);
-}
-.pack-item.presentations .boxInfoSection {
-  color: var(--color-presentations);
-}
-.pack-item.teaching .boxInfoSection {
-  color: var(--color-teaching);
-}
-.pack-item.projects .boxInfoSection {
-  color: var(--color-projects);
-}
-.pack-item.publications .boxInfoSection {
-  color: var(--color-publications);
-}
-.pack-item.courses .boxInfoSection {
-  color: var(--color-events);
-}
-.pack-item.writings .boxInfoSection {
-  color: var(--color-events);
-}
-.pack-item.research .boxInfoSection {
-  color: var(--color-research);
-}
-
 .boxTitle.frontTop {
   @apply text-2xl;
   color: #ff0060;
@@ -404,12 +378,7 @@ a.boxIso {
 }
 
 .boxInfo div {
-  @apply inline-block border-t border-dotted border-primary-text;
-  font-size: 0.8rem;
-}
-
-.boxInfo div {
-  @apply pr-2 m-0;
+  @apply inline-block border-t border-dotted border-primary-text m-0 p-0;
   font-size: 0.8rem;
 }
 
