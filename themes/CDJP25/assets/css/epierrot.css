@@ -254,7 +254,7 @@ main.pack {
 }
 
 .boxTitle.frontTop {
-  @apply text-2xl;
+  @apply text-2xl leading-6;
   color: #ff0060;
 }
 
@@ -361,7 +361,7 @@ a.floatImg::after {
 }
 
 a.boxIso {
-  @apply text-primary-text justify-center flex flex-col rounded-md transition-all duration-700 ease-in-out cursor-pointer max-w-72;
+  @apply text-primary-text justify-center flex flex-col rounded-md transition-all duration-700 ease-in-out cursor-pointer;
 }
 
 a.boxIso:hover {
@@ -383,7 +383,7 @@ a.boxIso {
 }
 
 .boxTitle {
-  @apply font-bold transition-all duration-700 ease-in-out;
+  @apply font-bold transition-all duration-700 ease-in-out mb-1;
   font-size: 1.2rem;
   line-height: 1.3rem;
 }

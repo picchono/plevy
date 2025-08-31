@@ -62,6 +62,18 @@ function externalLinks() {
   }
 }
 
+//randow the with of each box
+function boxIsoMaxWidth() {
+  console.log('boxIso');
+  var boxes = document.querySelectorAll('a.boxIso');
+  boxes.forEach(function (box) {
+    var l = 250 + (60 * Math.random()) + "px";
+    box.style.maxWidth = l;
+    console.log(box, l);
+  });
+}
+
+
 //create a table of content if #toc exists
 function tableContent() {
   //Get all headings only from the actual contents.
@@ -349,11 +361,12 @@ function closeSearch() {
   isScrolling2 = setTimeout(function () {
     document.getElementById('entete').classList.remove("disappear");
   }, 500);
-  
+
 };
 
 window.addEventListener('load', function (event) {
   externalLinks();
+  boxIsoMaxWidth();
   if (document.getElementById("toc")) tableContent();
   if (document.querySelector("pre")) AddCopyButtons();
   closeSearch();

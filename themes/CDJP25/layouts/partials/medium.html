@@ -96,17 +96,26 @@
             {{ $targ := (print .link ".md") }}
             {{ $page := $.Site.GetPage "page" $targ }}
             {{ with $page }}
-            <span class="boxInfo">
-                {{ $len := len .Params.intervenants}}
-                {{ $count := 0 }}
-                <div class="font-bold">{{ range .Params.intervenants }}
-                    {{ .name }}
-                    {{ $count = add $count 1 }}
-                    {{ if ne $count $len -}}, {{ end }}{{ end }}
-                </div>
-                <div>{{ dateFormat "02 January 2006" .Date }}</div>
+            
+            <span class='boxTitle{{ if .Params.fronttop }} frontTop{{end}}'>{{- .Title |safeHTML }}</span>
+                <span class="boxElts">
+                    {{ if .Params.intervenants }}{{ $len := len .Params.intervenants }}
+                    {{ $count := 0 }}
+                    {{ range .Params.intervenants }}
+                        {{ .name -}}
+                        {{ $count = add $count 1 }}
+                        {{- if ne $count $len -}}, {{ end }}
+                    {{ end }}<br>{{ end }}
+                    @ {{ .Params.institution.name }}
             </span>
-            <span class='boxTitle'>{{ .Title }}</span>
+            <span class="boxInfo">
+                <div>
+                    {{ if eq .Params.layout "member" }}
+                    {{ $parts := .Params.shortdescription }}{{ $splitParts := split $parts "," }}{{ range
+                    $index, $part := $splitParts }}{{ if ne $index 0 }} · {{ end }}{{ $part }}{{ end }}
+                    {{ else }}{{ dateFormat "02 Jan 2006" .Date }}{{ end }}
+                </div>
+            </span>
             {{ end }}
         </a>
     </div>
