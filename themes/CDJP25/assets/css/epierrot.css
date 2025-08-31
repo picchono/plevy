@@ -383,7 +383,7 @@ a.boxIso {
 }
 
 .boxTitle {
-  @apply font-bold transition-all duration-700 ease-in-out mb-1;
+  @apply font-bold transition-all duration-700 ease-in-out mb-1 h-auto overflow-visible;
   font-size: 1.2rem;
   line-height: 1.3rem;
 }
