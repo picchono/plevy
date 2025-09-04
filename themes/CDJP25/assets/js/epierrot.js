@@ -64,12 +64,10 @@ function externalLinks() {
 
 //randow the with of each box
 function boxIsoMaxWidth() {
-  console.log('boxIso');
   var boxes = document.querySelectorAll('a.boxIso');
   boxes.forEach(function (box) {
     var l = 250 + (60 * Math.random()) + "px";
     box.style.maxWidth = l;
-    console.log(box, l);
   });
 }
 

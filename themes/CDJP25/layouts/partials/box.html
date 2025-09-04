@@ -5,7 +5,7 @@
     }} data-section="{{ .context.Section  }}">{{if .dynC }}<div class="dynCadre">{{ end }}
         <div class="invisible abolute inline-block h-0 w-0 overflow-hidden">{{ .context.Section }} {{ htmlUnescape (plainify .context.Content) }} {{ .context.Params.Date }} {{ .context.Params.abstract }}</div>
         <a class="boxIso{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}" style="max-width:240px;">
-            <span class='boxTitle{{ if .context.Params.fronttop }} frontTop{{end}}'>{{- .context.Title |safeHTML }}</span>
+            <span class='boxTitle{{ if .context.Params.fronttop }} frontTop{{end}}'>{{- .context.Title |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</span>
                 <span class="boxElts">{{ if eq .context.Section "publications" }}
                     {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
                     {{ if .context.Params.shortBook }}{{ .context.Params.shortBook }}{{ end }}
@@ -42,7 +42,6 @@
                         {{- if ne $count $len -}}, {{ end }}
                     {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
                 {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}@ {{ .context.Params.institution.name }}{{ end }}{{ end }}
-                {{if eq .context.Params.subsection "ended"}} · ({{- i18n "ended" -}}){{ end }}
             </span>
             <span class="boxInfo">
                 <div>
