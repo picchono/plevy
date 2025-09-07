@@ -11,7 +11,7 @@
         "main": true,
         "associations": {
             "EPN05": {
-                "order": 3,
+                "order": 1,
                 "start": "2024",
                 "end": "none",
                 "title": "Membre du <a href='https://informatique.cnam.fr/' target='_blank' rel='noreferrer' data-tooltip='Équipe pédagogique nationale 05 – Informatique' title='Équipe pédagogique nationale 05 – Informatique'>département d'informatique (EPN05)</a>",
@@ -19,15 +19,15 @@
                 "main": true
             },
             "dicenidf": {
-                "order": 1,
-                "start": "2020",
+                "order": 2,
+                "start": "2021",
                 "end": "none",
                 "title": "Chercheur au laboratoire <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> (EA 7339)",
                 "comment": "Le laboratoire Dicen-IDF (Dispositifs d'Information et de Communication à l'Ere Numérique – Paris, Ile-de-France) est une unité de recherche multi-tutelles (EA 7339) entre le Conservatoire National des Arts et Métiers, l'Université Gustave Eiffel et l'Université Paris-Nanterre",
                 "main": true
             },
             "TUe2": {
-                "order": 2,
+                "order": 3,
                 "start": "2025",
                 "end": "none",
                 "title": "Chercheur associé au <a href='https://www.tue.nl/en/our-university/departments/industrial-design' target='_blank' rel='noreferrer' title='Département de Design'>département de design de l'Université de Technologie</a>",
@@ -94,7 +94,7 @@
                 "order": 4,
                 "start": "2022",
                 "end": "none",
-                "title": "Membre du Comité consultatif de rédaction du <a href='https://ojs.utwente.nl/index.php/jhtr/' target='_blank' rel='noreferrer' data-tooltip='Journal of Human-Technology Relations' title='Journal of Human-Technology Relations'>JHTR</a>",
+                "title": "Membre du Comité consultatif de rédaction du <a href='https://ojs.utwente.nl/index.php/jhtr/' target='_blank' rel='noreferrer' data-tooltip='Journal of Human-Technology Relations' title='Journal of Human-Technology Relations'>Journal of Human-Technology Relations</a>",
                 "main": true
             },
             "ecoletransition": {
@@ -116,21 +116,14 @@
                 "order": 3,
                 "start": "2024",
                 "end": "none",
-                "title": "TransFabriC au Cnam",
+                "title": "Responsable de la TransFabriC au Cnam",
                 "main": true
             },
             "LaboCouleurs":{
                 "order": 3,
                 "start": "2024",
                 "end": "none",
-                "title": "Laboratoire des Couleurs avec l'École Duperré",
-                "main": true
-            },
-            "IFMdoc":{
-                "order": 3,
-                "start": "2024",
-                "end": "none",
-                "title": "Mise en place d'une activité de recherche doctorale a l'Institut Français de la Mode",
+                "title": "Coordinateur du Laboratoire des Couleurs avec l'École Duperré",
                 "main": true
             }
         }

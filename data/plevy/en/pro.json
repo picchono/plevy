@@ -10,31 +10,38 @@
         "main": true,
         "associations": {
             "EPN05": {
-                "order": 2,
+                "order": 1,
                 "start": "2024",
                 "end": "none",
                 "title": "Member of the <a href='https://informatique.cnam.fr/' target='_blank' rel='noreferrer' data-tooltip='Équipe pédagogique nationale 05 – Informatique' title='Équipe pédagogique nationale 05 – Informatique'>Department of Informatics and Computer Science - EPN05</a>",
                 "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés, etc",
                 "main": true
             },
-            "EPN16": {
+            "dicenidf": {
+                "order": 2,
+                "start": "2021",
+                "end": "none",
+                "title": "Researcher at <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> laboratory (EA 7339)",
+                "comment": "Laboratory Unit on Information and Communication Dispositives in the Digital Age",
+                "main": true
+            },
+             "TUe2": {
                 "order": 3,
+                "start": "2025",
+                "end": "none",
+                "title": "Chercheur associé au <a href='https://www.tue.nl/en/our-university/departments/industrial-design' target='_blank' rel='noreferrer' title='Département de Design'>département de design de l'Université de Technologie</a>",
+                "main": true
+            }
+        },
+        "activities": {
+            "EPN16": {
+                "order": 6,
                 "start": "2021",
                 "end": "2024",
                 "title": "Member of the <a href='https://innovation.cnam.fr' target='_blank' rel='noreferrer' data-tooltip='Équipe pédagogique nationale 16 – Innovation' title='Équipe Pédagogique Nationale EPN16 - Innovation'>Department of Innovation - EPN16</a>",
                 "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés, etc",
                 "main": true
             },
-            "dicenidf": {
-                "order": 1,
-                "start": "2021",
-                "end": "none",
-                "title": "Researcher at <a href='https://www.dicen-idf.org' target='_blank' rel='noreferrer' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> laboratory (EA 7339)",
-                "comment": "Laboratory Unit on Information and Communication Dispositives in the Digital Age",
-                "main": true
-            }
-        },
-        "activities": {
             "ecoletransition": {
                 "order": 6,
                 "start": "2024",

@@ -148,7 +148,7 @@
                   class="comment">{{ .financial |safeHTML }}</span>{{ end }}</div>
          </div>
          {{ end }}</div>
-         <h2 id="directionHDR">{{ .directionHDR.description }}</h2>
+         {{ if ne (len .directionHDR.list) 0 }}<h2 id="directionHDR">{{ .directionHDR.description }}</h2>
          <div class="mb-10">{{ range sort .directionHDR.list "date" "desc" }}
             <div class="grid grid-cols-7 gap-x-6 level1">
                <div>{{ if eq .ongoing true }}{{ i18n "Since" }}
@@ -159,7 +159,7 @@
                   cours){{ end }}<br />{{ .title |safeHTML }}{{ if isset . "financial"}}<br /><span
                      class="comment">{{ .financial |safeHTML }}</span>{{ end }}</div>
             </div>
-            {{ end }}</div>
+            {{ end }}</div>{{ end }}
       <h2 id="jurysdoctoraux">{{ .jurysdoctoraux.description }}</h2>
       <div class="mb-10">{{ range sort .jurysdoctoraux.list "date" "desc" }}
          <div class="grid grid-cols-7 gap-x-6 level1">
