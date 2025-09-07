@@ -66,7 +66,7 @@ function externalLinks() {
 function boxIsoMaxWidth() {
   var boxes = document.querySelectorAll('a.boxIso');
   boxes.forEach(function (box) {
-    var l = 250 + (60 * Math.random()) + "px";
+    var l = 270 + (60 * Math.random()) + "px";
     box.style.maxWidth = l;
   });
 }

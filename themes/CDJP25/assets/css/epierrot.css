@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -361,16 +362,12 @@ a.floatImg::after {
 }
 
 a.boxIso {
-  @apply text-primary-text justify-center flex flex-col rounded-md transition-all duration-700 ease-in-out cursor-pointer;
+  @apply text-secondary-text justify-center flex flex-col rounded-md transition-all duration-700 ease-in-out cursor-pointer p-3;
 }
 
 a.boxIso:hover {
   @apply text-epierrot bg-transparent;
 }
-
-a.boxIso {
-  @apply text-secondary-text;
-} 
 
 .boxElts{
   @apply inline-block font-bold leading-4 py-1;

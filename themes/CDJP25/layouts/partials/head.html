@@ -47,6 +47,7 @@
 {{ $roundo_css := $roundo_css | minify }}
 <link rel="stylesheet" href="{{ $roundo_css.Permalink }}" media="all">
 
+
 {{ partial "opengraph.html" . }}
 {{ partial "x_cards.html" . }}
 {{ range .AlternativeOutputFormats -}}
