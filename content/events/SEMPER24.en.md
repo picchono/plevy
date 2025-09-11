@@ -26,7 +26,6 @@ collaboration:
         web: "https://www.cnam.fr/"
         colo: "var(--color-primary-text)"
         heig: 1.2
-chaire: true
 date: 2024-09-26T16:00:00+02:00
 reference: "Duwa, J., Zacklad, M. & Lévy, P. (2024). Le design est-il une science humaine ?, presented at l'École Estienne, Paris, France. February 27th, 2023."
 frontphoto: "https://live.staticflickr.com/65535/54186735669_10b12ec9fc.jpg"

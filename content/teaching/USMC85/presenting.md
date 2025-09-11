@@ -7,14 +7,12 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-chaire: true
 description: "Basics of presentation"
 date: 2024-10-01T00:55:28+02:00
 draft: false
 layout: presentation
 searchWeight: 1
 notListed: true
-chaire: false
 place: "Cnam"
 level: "bachelor"
 language: French

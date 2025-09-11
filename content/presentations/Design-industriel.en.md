@@ -8,7 +8,6 @@ institution:
     short: Cnam
     name: "National Conservatory of Arts and Craft"
     web: "https://www.cnam.fr/"
-chaire: true
 date: 2025-01-13T10:27:15+02:00
 frontphoto: "https://images.unsplash.com/photo-1605658782229-892fd044b24a?q=80&w=600"
 description: "Different categories of indsutrial design."

@@ -17,7 +17,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2013-09-10T20:07:29+02:00
 shortJournal: "Interactions 20(6)"
 citation:

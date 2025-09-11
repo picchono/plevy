@@ -12,7 +12,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2015-04-15T16:27:15+02:00
 abstract: "The design process is taken into society by creating infrastructures where designers work together with stakeholders in jointly creating experienceable propositions that can evolve over time.<br/><i>Doctoral dissertation of Carl Megens and Michel Peeters</i>"
 frontphoto: "https://live.staticflickr.com/65535/50587487683_7f4b641542.jpg"

@@ -15,7 +15,6 @@ institution:
 kansei: true
 research: 
     -  kansei
-chaire: false
 date: 2007-10-02T19:37:01+02:00
 shortConf: "EcoDesign 2007"
 citation:

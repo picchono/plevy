@@ -8,7 +8,6 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-chaire: true
 date: 2021-09-01T16:27:15+02:00
 frontphoto: "https://images.unsplash.com/photo-1680813999409-b6109c96e554?q=80&w=600"
 description: "Une brève présentation du Cnam."

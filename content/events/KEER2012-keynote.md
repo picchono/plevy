@@ -16,7 +16,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2012-07-13T15:46:21+02:00
 reference: "Lévy, P. (2012). The multi-disciplinary nature of kansei research: an historical approach. Penghu, Taiwan."
 abstract: "During the last three decades, kansei engineering has expanded greatly and has been highly recognized both in the industrial and the academic worlds. Nowadays, the term ‘kansei engineering’ is so strong in the kansei community that activities related to kansei, but not to engineering, keep on naming themselves kansei engineering research. This prevents the emancipation of other kansei disciplines, the enrichment of the field by the multiplication of point-of-views, and the dialogue between disciplines to understand better what kansei and kansei related disciplines are about.

@@ -3,7 +3,6 @@ slug: PhD_arts_design_society
 title: "PhD in Arts, Design & Society"
 layout: course
 searchFilter: Course
-chaire: true
 date: 2023-09-01T16:27:15+02:00
 subsection: diploma
 Diploma:

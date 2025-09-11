@@ -15,7 +15,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2013-08-30T21:55:59+02:00
 reference: "Lévy, P. (2013). Holism and kansei design – kansei beyond borders, presented at the International Colloquium on Kansei and Design 2013, University of Tsukuba, Tsukuba, Japan. August 30th, 2013."
 ---

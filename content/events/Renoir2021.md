@@ -27,7 +27,6 @@ collaboration:
         name: "Lycée Auguste Renoir"
         web: "https://ecole-lycee-renoir-paris.fr/"
         heig: 1.5
-chaire: true
 date: 2021-11-18T10:30:52+02:00
 reference: "Lévy, P. (2021). Entre méthodes et pratiques en design - un moment d'apprentissage, presented at Conservatoire National des Arts et Métiers, Paris, France. November 18th, 2021."
 abstract: "Je voudrais m'intéresser aujourd'hui à la place des méthodes et des pratiques en design, et décrire leur entre-deux comme un lieu de développement des pratiques, c'est-à-dire comme moment d'apprentissage réflexif sur la pratique."

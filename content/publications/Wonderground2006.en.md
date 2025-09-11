@@ -16,7 +16,6 @@ institution:
     short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
-chaire: false
 date: 2006-09-29T19:13:29+02:00
 shortConf: "Wonderground 2006"
 citation:

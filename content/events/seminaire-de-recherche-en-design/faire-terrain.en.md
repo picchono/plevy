@@ -29,12 +29,7 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-chaire: true
 date: 2025-05-15T18:00:00+02:00
-place: "Cnam<br/>Amphithéatre Jean Prouvé, accès 11<br>292, rue Saint Martin<br>75003 Paris"
-visio: 
-    media: Teams
-    link: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWRiMDI1NWUtMTY2MC00NTc5LTkyN2QtODYzMmUzY2I1NzJi%40thread.v2/0?context=%7b%22Tid%22%3a%22b323bcb4-6d58-4f25-87bf-6366c3d689af%22%2c%22Oid%22%3a%2224e690a3-2af9-47cd-8677-8e3b0dbc1342%22%7d"
 layout: single
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=1000"
 frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=500"

@@ -7,7 +7,6 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-chaire: false
 date: 2021-10-01T00:55:28+02:00
 draft: false
 layout: single
@@ -15,7 +14,6 @@ tablecontent: true
 searchFilter: Teaching
 searchWeight: 1
 notListed: true
-chaire: false
 level: "bachelor"
 language: French
 ects: 4
@@ -29,6 +27,7 @@ Cette UE propose une vue d'ensemble des pratiques de la recherche en design, art
 Cette UE vise donc à initier des praticiens à la recherche au travers de leur propre pratique. Elle vise plus spécifiquement un public de professionnels dont l’activité s’inscrit dans un processus de création (artistique, culturelle, scientifique et technique, idéation…) tant dans le domaine manuel et technique que dans le domaine du projet soucieux de valoriser leur pratique professionnelle à travers un travail de recherche.
 
 Elle est enfin structurée par une série de cours, de discussions et d'un séminaire de méthodologie de recherche en design et création](https://plevy.fr/events/seminaire-de-recherche-en-design/). La discussion et l'échange font la qualité désirée de ce cours.
+
 ## Compétences visées
 - s’approprier les enjeux d’une pratique de recherche en design, art et création,
 - en argumentant de la contribution potentielle d'une pratique à un projet de recherche,
@@ -37,18 +36,7 @@ Elle est enfin structurée par une série de cours, de discussions et d'un sémi
 - connaître et utiliser les ressources pertinentes pour être accompagné dans la réalisation du projet de recherche.
 
 Le développement de ces compétences se fera bien évidemment en s’appuyant sur la pratique propre (présente ou passée) de l’apprenant. Tout en proposant une approche globale pertinente à la recherche en design, arts et création, l’apprenant l’aura acquise principalement au travers de sa propre expérience professionnelle ou d’étude.Objectifs pédagogiques.
-## Modalités d’enseignements
-Les méthodes d’enseignement mobilisées pour cette UE sont :
-- des cours magistraux (présence requise) délivrant les bases théoriques et méthodologiques,
-- des travaux dirigés collectifs ou individuels suivant la complémentarité des pratiques portées par les apprenants,
-- le suivi du [séminaire de méthodologie de recherche en design et création](https://plevy.fr/events/seminaire-de-recherche-en-design/).
-## Livrables
-- **Proposition de recherche**
-  La proposition de recherche est un document de 3-4 pages qui argumente la pertinence et la structure d’une recherche doctorale potentielle. L’objectif pour l’apprenant est d’écrire un document qui peut servir comme étape initiale de la construction d’un projet de recherche doctoral.
-- **Rapport d'étonnement**
-  Le rapport d'étonnement est un document réflexif sur le contenu et l’exercice du cours. Il doit faire 1 page maximum. Il n'a pas pour objet de décrire ce qui s'est passé, mais d'exprimer ce que l'on en retient et ce qui potentiellement impactera les pratiques futures.
-  Ainsi, ce rapport doit questionner ce qui a été appris, la différence entre ce qui était attendu et ce qui est advenu, et enfin ce qu'il restera une fois les détails du cours oubliés.
-  Une considération sur le séminaire est nécessaire.
+
 ## Bibliographie
 - Berger, E., & : Je, nous, ils·elles: Le·la designer, ses collectifs et les écosystèmes de conception
 - Bowers, J. (2012): The Logic of Annotated Portfolios: Communicating the Value of Research Through Design

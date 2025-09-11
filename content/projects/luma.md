@@ -16,7 +16,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2012-09-03T16:27:15+02:00
 abstract: "This research project focuses on how to design for perceptive activity in artifacts in order for crossing in perception of expressivity between person and artifact to happen.<br/>by Koen Beljaars"
 frontphoto: "https://live.staticflickr.com/65535/50752154141_2f7e727c12.jpg"

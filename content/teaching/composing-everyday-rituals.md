@@ -7,14 +7,12 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2016-09-01T14:55:28+02:00
 start: 2016
 end: 2019
 draft: false
 layout: single
 searchFilter: Teaching
-chaire: false
 subsection: ended
 place: "TU/e, The Netherlands"
 level: "master"

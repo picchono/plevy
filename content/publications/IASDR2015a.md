@@ -17,7 +17,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2015-11-05T23:00:52+01:00
 shortConf: "IASDR 2015"
 citation:

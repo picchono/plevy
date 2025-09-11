@@ -8,7 +8,6 @@ everyday: true
 researchpage: true
 research: 
     -  everyday
-chaire: false
 date: 2018-09-03T16:27:15+02:00
 abstract: "床を抜け匙にて点てるココアの茶"
 frontphoto: "https://live.staticflickr.com/65535/50588234511_901c2a5e0e.jpg"

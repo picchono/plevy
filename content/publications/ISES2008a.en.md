@@ -15,7 +15,6 @@ institution:
 kansei: true
 research: 
     -  kansei
-chaire: false
 date: 2008-02-28T19:51:56+01:00
 shortConf: "ISES 2008"
 reference: "Lévy, P., & Yamanaka, T. (2008). Kansei Studies Description and Mapping through Kansei Studies Keywords. the Proceedings of International Symposium on Emotion and Sensitivity 2008 - ISES08. Daejeon, Korea."

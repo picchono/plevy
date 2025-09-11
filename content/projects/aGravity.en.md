@@ -16,7 +16,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2014-09-03T16:27:15+02:00
 abstract: "Nobody ever said that defying gravity is easy!<br/>a final bachelor project by Alex Jurtan"
 frontphoto: "https://live.staticflickr.com/65535/50752466091_ef1d8b1aa2.jpg"

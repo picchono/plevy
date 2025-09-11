@@ -15,7 +15,6 @@ institution:
 kansei: true
 research: 
     -  kansei
-chaire: false
 date: 2004-09-29T17:21:09+02:00
 shortConf: "Futureground 2006"
 citation:

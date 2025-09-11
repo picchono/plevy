@@ -1,0 +1,18 @@
+{{ if .Params.redirect }}<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="{{ .Params.bodyclass }}">
+    {{ if .IsHome }}{{ partial "searching.hml" . }}{{ end }}
+  <main class="pack">
+    {{ partial "title.html" . }}
+    {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
+    {{- block "main" . }}{{- end }}
+  </main>
+    <div class="bordTop"></div>
+    <div class="bordBottom"></div>
+    <div class="bordLeft"></div>
+    <div class="bordRight"></div>
+</body>
+</html>

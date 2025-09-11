@@ -7,12 +7,10 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2019-11-04T00:55:28+02:00
 start: 2019
 draft: false
 layout: single
-chaire: false
 searchFilter: Teaching
 subsection: ended
 transformpractices: true

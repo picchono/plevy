@@ -29,7 +29,6 @@ collaboration:
         name: "Atelier mutualisé"
         web: "#"
         heig: 2
-chaire: true
 date: 2022-12-01T13:38:26+02:00
 tags: ['TransFabriC', 'circuliarity', 'circular_economy', 'social_economy', 'CNAM', 'Materiality', 'Sort', 'Reuse', 'Recycle', 'Resource', 'Repair', 'Restore', 'Divert', 'Appropriate', 'Tinker', 'Recover', 'Connect', 'Recycle', 'Transform', 'Form', 'Mutualize', 'Share']
 boxtext: "TransFabriC - Institute of Circular Transfabrication materializes the ambition of the National Conservatory of Arts and Crafts to accompany the development of social and citizen practices for the emergence of a social, solidarity and circular economy (SSCE). The aim is to create an operating eco-system, training courses and a research program, together capable of bringing about the emergence of an ESSC that meets the historical missions of the Cnam."

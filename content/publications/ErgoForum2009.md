@@ -16,7 +16,6 @@ kansei: true
 researchpage: true
 research: 
     -  kansei
-chaire: false
 date: 2009-06-23T21:19:56+02:00
 shortConf: "ErgoForum 2009"
 citation:

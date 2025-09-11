@@ -3,7 +3,6 @@ slug: master_design-creation_projet_transdisciplinarite
 title: "Master Design · Parcours Création, Projet, Transdisciplinarité"
 layout: course
 searchFilter: Course
-chaire: true
 date: 2021-10-01T16:27:15+02:00
 subsection: diploma
 Diploma:

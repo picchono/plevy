@@ -23,7 +23,6 @@ collaboration:
         web: "https://www.cnam.fr/"
         colo: "#c1002a"
         heig: 1
-chaire: true
 date: 2024-12-19T16:27:15+02:00
 frontphoto: "https://images.unsplash.com/photo-1680813999409-b6109c96e554?q=80&w=600"
 description: "La pratique du design au travers de ses enjeux et de son histoire."

@@ -33,7 +33,6 @@ collaboration:
         name: "Institut français"
         web: "https://www.institutfrancais.com/fr"
         heig: 2
-chaire: true
 date: 2024-01-31T10:30:52+02:00
 reference: "L'École du non-savoir repose sur la conviction que le dialogue entre arts, design, sciences et société est à même de proposer de nouveaux horizons dans la compréhension et l’appréhension des mondes connus et à découvrir."
 frontphoto: "https://civic-city.org/nonsapere/wp-content/uploads/2024/01/post-HOME-ESTIENNE5.jpg"

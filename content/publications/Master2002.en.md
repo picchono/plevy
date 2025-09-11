@@ -12,7 +12,6 @@ institution:
     short: UTC
     name: "Université de Technologie de Compiègne"
     web: "https://www.utc.fr/"
-chaire: false
 date: 2002-06-30T15:35:08+02:00
 shortMemoire: "UTC, Compiègne, France"
 citation:

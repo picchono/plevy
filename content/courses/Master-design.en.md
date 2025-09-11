@@ -3,7 +3,6 @@ slug: master_design
 title: "Master Design"
 layout: course
 searchFilter: Course
-chaire: true
 date: 2021-10-01T16:27:15+02:00
 subsection: diploma
 Diploma:

@@ -17,7 +17,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2010-09-10T21:18:00+02:00
 shortJournal: "Cosmetic Stage 4(33)"
 citation:

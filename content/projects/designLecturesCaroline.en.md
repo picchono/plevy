@@ -11,7 +11,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2019-09-03T16:27:15+02:00
 abstract: "A series of recorded lectures on design,<br />by prof.dr.ir. Caroline Hummels @TU/e."
 frontphoto: "https://live.staticflickr.com/65535/51394261905_3ea3abd6c2.jpg"

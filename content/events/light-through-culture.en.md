@@ -17,7 +17,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2012-01-15T16:27:15+02:00
 abstract: "Light through Culture is an international design school which explores the theme of complexity in learning environments.</i>"
 frontphoto: "https://live.staticflickr.com/65535/50751856182_4a23b0cc3e.jpg"

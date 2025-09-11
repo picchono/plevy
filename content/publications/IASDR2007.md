@@ -12,7 +12,6 @@ institution:
     short: 'U. of Tsukuba'
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
-chaire: false
 date: 2007-07-10T19:32:06+02:00
 shortConf: "IASDR 2007"
 citation:

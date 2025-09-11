@@ -33,7 +33,6 @@ collaboration:
         name: "Institut français"
         web: "https://www.institutfrancais.com/fr"
         heig: 2
-chaire: true
 date: 2024-01-31T10:30:52+02:00
 reference: "The School of not-knowing is based on the conviction that dialogue between art, design, science and society can open up new horizons for understanding and apprehending known and yet-to-be-discovered worlds."
 frontphoto: "https://civic-city.org/nonsapere/wp-content/uploads/2024/01/post-HOME-ESTIENNE5.jpg"

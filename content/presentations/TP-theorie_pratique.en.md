@@ -24,7 +24,6 @@ collaboration:
         web: "https://www.cnam.fr/"
         colo: "#c1002a"
         heig: 1
-chaire: true
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65Qgc6RZEXJbhDrc3WLa9Y?embed=1&width=1500"
 description: "La pratique du design au travers de ses enjeux et de son histoire."
 slides: [

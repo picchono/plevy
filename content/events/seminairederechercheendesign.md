@@ -1,7 +1,6 @@
 ---
 slug: seminaire-de-recherche-en-design
 title: "Séminaire de méthodologie Pratiques de recherche en design et création"
-chaire: true
 date: 2025-01-28T10:04:12+02:00
 tags: ['séminaire', 'design', 'création', 'méthodologie']
 draft: false

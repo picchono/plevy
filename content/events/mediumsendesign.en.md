@@ -2,7 +2,6 @@
 slug: mediums-in-design
 title: "Mediums in design"
 tags: ['seminar', 'mediums', 'mediality', 'symetrical_anthropology']
-chaire: true
 date: 2021-12-11T20:04:12+02:00
 draft: false
 searchFilter: MediumsDesign

@@ -23,7 +23,6 @@ collaboration:
         web: "https://www.cnam.fr/"
         colo: "#c1002a"
         heig: 1
-chaire: true
 date: 2025-06-14T16:27:15+02:00
 frontphoto: "https://upload.wikimedia.org/wikipedia/commons/6/67/Mus%C3%A9e_du_Conservatoire_national_des_Arts_et_M%C3%A9tiers_-_panoramio.jpg"
 description: "Une brève présentation du Cnam dans le paysage du système français de l'enseignement supérieur."

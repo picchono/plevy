@@ -12,7 +12,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2014-06-03T16:27:15+02:00
 abstract: "What does data feel like?<br/>by Sander Dijkhuis"
 frontphoto: "https://live.staticflickr.com/65535/50588234476_49a3be3d7a.jpg"

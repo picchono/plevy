@@ -7,7 +7,6 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-chaire: false
 date: 2021-10-01T00:55:28+02:00
 draft: false
 layout: single
@@ -15,7 +14,6 @@ tablecontent: true
 searchFilter: Teaching
 searchWeight: 1
 notListed: true
-chaire: false
 level: "bachelor"
 language: French
 ects: 4
@@ -28,15 +26,20 @@ frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
 ### La recherche vs la science  
 {{<video "youtube" "JR1Ovv3B4FA" "Étienne Klein : Science & recherche, quelle différence y a-t-il entre ses deux formes d'études ?" >}}
 {{<linkBox "Arrêtons de confondre les sciences avec la recherche scientifique, par Etienne Klein" "https://www.lexpress.fr/sciences-sante/arretons-de-confondre-les-sciences-avec-la-recherche-scientifique-par-etienne-klein-PZ7B7JEWYRHPRCMVQWCDNAHAQ4">}}
-- **La recherche est une discussion organisée**
-	- Toute proposition, tout argument doit être critiquable.
-	- La recherche d'information est structurée et discutée.
-	- Les méthodes de recherche sont structurées et discutées.
-	- Les formes de dissémination sont identifiées et discutées.
-- **Spécificité de la recherche en design, art et création**
-	- Elle s'inscrit dans une multiplicité de disciplines liées au design, l'art et la création,
-	- Elle vise à contribuer à l'amélioration des pratiques dont elle relève.
 
+#### **La recherche est une discussion organisée**
+- Toute proposition, tout argument doit être critiquable.
+- La recherche d'information est structurée et discutée.
+- Les méthodes de recherche sont structurées et discutées.
+- Les formes de dissémination sont identifiées et discutées.
+
+&nbsp;
+
+**Spécificité de la recherche en design, art et création**
+- Elle s'inscrit dans une multiplicité de disciplines liées au design, l'art et la création,
+- Elle vise à contribuer à l'amélioration des pratiques dont elle relève.
+
+&nbsp;
 
 Cela explique la pertinence de cette recherche à la fois dans le monde académique et dans le monde industriel.
 

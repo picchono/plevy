@@ -9,7 +9,6 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-chaire: true
 date: 2022-09-01T16:27:15+02:00
 start: 2021
 end: 2024

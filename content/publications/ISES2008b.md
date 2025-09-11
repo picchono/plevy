@@ -13,7 +13,6 @@ institution:
     web: "https://www.tsukuba.ac.jp/"
     name: "University of Tsukuba"
 kansei: true
-chaire: false
 date: 2008-02-25T19:44:09+01:00
 shortConf: "ISES 2008"
 citation:

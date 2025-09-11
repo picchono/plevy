@@ -12,7 +12,6 @@ institution:
     short: 'Chiba U.'
     name: "Chiba University"
     web: "https://www.chiba-u.ac.jp/"
-chaire: false
 date: 2008-10-22T20:55:44+02:00
 shortConf: "ISIDC 2008"
 citation:

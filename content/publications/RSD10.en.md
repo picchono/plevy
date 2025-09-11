@@ -17,7 +17,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2021-11-05T23:11:05+01:00
 shortConf: "RSD 2010"
 citation:

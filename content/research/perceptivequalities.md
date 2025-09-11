@@ -1,6 +1,5 @@
 ---
 title: "Perceptive qualities"
-chaire: false
 date: 2015-10-16T20:03:12+02:00
 draft: false
 searchFilter: Research

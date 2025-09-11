@@ -16,7 +16,6 @@ institution:
     name: "University of Tsukuba"
 research: 
     -  everyday
-chaire: false
 date: 2008-10-22T21:02:00+01:00
 shortConf: "ISIDC 2008"
 citation:

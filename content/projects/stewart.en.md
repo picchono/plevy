@@ -16,7 +16,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2019-09-03T16:27:15+02:00
 abstract: "Stewart is a tactile interface designed for a fully autonomous car.<br/>a final bachelor project by Felix Ros"
 frontphoto: "https://live.staticflickr.com/65535/50587487223_bd344a0976.jpg"

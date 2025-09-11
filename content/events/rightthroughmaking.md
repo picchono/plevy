@@ -16,7 +16,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2012-05-15T16:27:15+02:00
 abstract: "Pervasive ethics is a social praxis aimed at justice and freedom, which pervades society in a capillary way, becoming a Universal attitude that makes people aware of their own rights, able and willing to contribute to seeing their own rights and those of all people fulfilled.<br/><i>Doctoral dissertation of Ambra Trotto</i>"
 frontphoto: "https://live.staticflickr.com/65535/50587487818_8e986d2ef1.jpg"

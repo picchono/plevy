@@ -16,7 +16,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2019-10-03T16:27:15+02:00
 abstract: "Many societal challenges require a systemic approach towards change. An approach where multiple stakeholders together create insight in the challenge at hand, and explore possible directions for systemic change. This session explores the concept of Designing for Systemic Change, including: what is it, how do we approach it, and what are the challenges we face?"
 frontphoto: "https://live.staticflickr.com/65535/50588234361_fe97b6c92f.jpg"

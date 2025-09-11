@@ -3,7 +3,6 @@ slug: master_design-art_contextes_techniques_usages
 title: "Master Design · Art, contextes, techniques, usages"
 layout: course
 searchFilter: Course
-chaire: true
 date: 2025-02-05T16:27:15+02:00
 subsection: diploma
 Diploma:

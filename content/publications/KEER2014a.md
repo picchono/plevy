@@ -16,7 +16,6 @@ institution:
     name: "Eindhoven University of Technology"
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
-chaire: false
 date: 2014-08-13T22:46:54+02:00
 shortConf: "KEER 2014"
 citation:
