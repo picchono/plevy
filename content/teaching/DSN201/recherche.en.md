@@ -94,8 +94,9 @@ Fallman propose trois types of mouvements:
     - créer/changer - expliquer/comprendre - suggérer/provoquer
     - client - pair - critics
 ## Recherche x design
-### La recherche sur le design
-### La recherche en design
+
+La recherche en design peut également être structurée pour des dénominations proposées sous la forme *recherche x design*, ex. la recherche **sur** le design (proche de *design studies*), la recherche **en** design (proche de *design practices*), la recherche au travers du design (située entre design practices et *design exploration*). Nous développons ici la troisième approche.
+
 ### La recherche au travers du design
 {{<linkBox "The Encyclopedia of Human-Computer Interaction, 2nd edition - Research through Design" "https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/research-through-design">}}
 {{<linkBox "Buchanan - 1992 - Wicked Problems in Design Thinking" "http://www.jstor.org/stable/1511637">}}
