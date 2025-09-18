@@ -169,8 +169,8 @@ html.dark {
 
 @media only screen and (min-width: 1024px) {
   body {
-    --pageBorder-width: 10vh;
-    --pageBorder-round: 5vh;
+    --pageBorder-width: 1vh;
+    --pageBorder-round: 3vh;
   }
   html.light {
     --color-pageborder-bg: #fff;
