@@ -169,8 +169,8 @@ html.dark {
 
 @media only screen and (min-width: 1024px) {
   body {
-    --pageBorder-width: 1vh;
-    --pageBorder-round: 3vh;
+    --pageBorder-width: 1.5vh;
+    --pageBorder-round: 4vh;
   }
   html.light {
     --color-pageborder-bg: #fff;
@@ -305,6 +305,10 @@ div#entete:hover a.logohome {
 main.pack {
   @apply transition-all duration-500 ease-in-out;
   margin-top: 0;
+}
+
+body:not(#menu) main.pack {
+  @apply mx-auto max-w-3xl;
 }
 
 .pack-item {
