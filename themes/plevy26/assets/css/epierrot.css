@@ -72,6 +72,10 @@ body {
   padding: calc(1 * var(--pageBorder-width));
 }
 
+*:not(html, body){
+  @apply overflow-hidden;
+}
+
 .bordTop, .bordBottom, .bordLeft, .bordRight {
   @apply fixed bg-pageborder-bg transition-all duration-700 ease-in-out
 }

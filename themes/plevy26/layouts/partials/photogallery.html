@@ -1,8 +1,8 @@
 {{ $photonb := len .Params.photogallery }}
 {{ if eq $photonb 1 }}
-<div class="pack-item w-full md:w-1/3 md:max-w-96" data-cat-sort="2">
+<div class="pack-item w-full md:max-w-96" data-cat-sort="2">
 {{ else }}
-<div class="pack-item w-full md:w-large" data-cat-sort="2">
+<div class="pack-item w-full" data-cat-sort="2">
 {{ end }}
     <div class="dynCadre flex flex-row" id="lightgallery" >
         {{ range sort .Params.photogallery "order" "asc" }}
