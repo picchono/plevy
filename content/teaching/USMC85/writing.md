@@ -1,6 +1,6 @@
 ---
-title: "USMC85 · HTML"
-slug: "html"
+title: "USMC85 · Writing"
+slug: "writing"
 institution:
     heig: 1
     logo: cnam
@@ -10,11 +10,10 @@ institution:
 date: 2021-10-01T00:55:28+02:00
 draft: false
 layout: single
-tablecontent: true
 searchFilter: Teaching
+tablecontent: true
 searchWeight: 1
 notListed: true
-place: "Cnam"
 level: "bachelor"
 language: French
 ects: 4
@@ -24,180 +23,84 @@ teacher:
 frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
 ---
 
-## La structure du HTML: les balises
+## Introduction
+**Writing** is the act of creating a persistent representation of human language *(Wikipedia on writing)*. It is both a cognitive and social activity  
+**Writing** is a means :
+- to create durable traces of content,
+- to transmit information over time,
+- to externalise one's thoughts for reflexion.
 
-{{<linkBox "HTML Examples" "https://www.w3schools.com/html/html_examples.asp" "https://www.w3schools.com/images/w3schools_logo_436_2.png">}}
-
-{{<linkBox "Liste de toutes les balises HTML" "https://facemweb.com/creation-site-internet/liste-balises-html" "https://facemweb.com/wp-content/uploads/2019/02/Image-facebook-balises-html.jpg">}}
-
-{{<linkBox "Liste des balises HTML" "https://jaetheme.com/balises-html5/" "https://jaetheme.com/wp-content/themes/paris/dist/img/liste-balises-html5.jpg">}}
-
-
-&nbsp;
-### Le document HTML
-
-```html
-<!DOCTYPE html> 
-
-<html>...</html>  <!-- conteneur du html -->
-<head>...</head>  <!-- conteneur des méta-données -->
-<body>...</body>  <!-- conteneur du corps principal -->
-
-<header>...</header>  <!-- barre de titre -->
-<nav>...</nav>  <!-- menu -->
-<content>...</content>  <!-- contenu -->
-<article>...</article>  <!-- article (blog) -->
-<aside>...</aside>  <!-- partie latérale -->
-<footer>...</footer>  <!-- pied de page -->
-```
-&nbsp;
-### Les titres
-
-```html
-<h1>...</h1>  <!-- titre niveau 1 -->
-<h2>...</h2>  <!-- titre niveau 2 -->
-...
-<hn>...</hn>  <!-- titre niveau n -->
-```
+## Structure
+A text is usually composed of paragraph, in which are sentences, in which are words.
+- the **text** demonstrates a point on a topic (to be convincing).
+- the **paragraph** brings an argument to the demonstration.
+- The **sentence** provides an information (not two) usefull to bring forth the argument.
+- The **word** specify the elements involved in the piece of information (either being an object or an action).
 
 &nbsp;
-### Les paragraphes  et retours à la ligne et séparateurs
 
-```html
-<p>...</p>  <!-- paragraphe -->
-<br/>  <!-- retour à la ligne -->
-<hr/>  <!-- séparateur -->
-```
+When you write, or more importantly review a writing you have done before submitting it, check each sentence asking yourself if:
+- is this sentence useful for the argument I am trying to provide. If not, remove it and read again the paragraph.
+- is the words are the proper ones or is there better ones. If not, look for better ones.
+- is my argument is clear. If not.. do it again.
 
-&nbsp;
-### Les styles
+## Proposition of a structure of text
+### IMRAD papers
+There are many ways a text can be structured, especially depending on the style (plain, middle, grand). Yet here is a proposition for a safe (i.e. classic) structure:
+- **Title:** A clear, engaging title that encapsulates the project. A good title is memorable, and tells well what we will read.
+(**Bonus, yet not easy:** A good spoiler engage well the reader and empower the rhetoric. The reader should be strongly engaged and motivated/curious to know more.)  
+- **Contextualising the project:** Providing a brief overview of the current state of the field, the place and the context of the project, the related issues helps to figure out why it matters. Discuss the societal, ecological, technical, or cultural motivations behind the research. Why is this work necessary? What gaps does it address?
+- **Research Problem/Challenge:** Clearly defining the specific problem or question your research will tackle structures all the approach you will take and underline the significancy of the project in relation with the context.
+- **Objectives:** Outlining the primary goals of the research creates a link with the problem/challenge and will support the choice of the
+- **Methodology:** Be brief on explaining what is to be done, what the technology involved, what the measurement/analysis approaches. Be specific (plain style).
+- **Output:** Briefly describe what you expect to find.
+- **Outcome:** Reopen the discussion by describing the potential implications of your findings for society, ecology, technology, or culture.
+- **Conclusion:** One or two sentences to get from the problem/challenge to the contributions to the field or to the society.
+- **References** (if applicable): Include key literature or prior research that supports your project.
 
-```html
-<b>...</b>  <!-- bold -->
-<strong>...</strong>  <!-- bold -->
+## Tools
+There are many tools to write a text:
+- do not underestimate handwriting!  
+- [OnlyOffice](https://www.onlyoffice.com/) / [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) / [OpenOffice Writer](https://www.openoffice.org/product/writer.html)  
+- MS word/Google docs  
+- [LaTeX](https://en.wikipedia.org/wiki/LaTeX) (via [Overleaf](https://www.overleaf.com/) or by [installing it](https://www.latex-project.org/get/))  
+- [Markdown](https://en.wikipedia.org/wiki/Markdown) (eg. [Obsidian](https://obsidian.md/) / [Logseq](https://logseq.com/) / [VSCodium](https://vscodium.com/) / [Vim](https://www.vim.org/) / [Neovim](https://neovim.io/))
+- publishing apps
 
-<i>...</i>  <!-- italique -->
-<em>...</em>  <!-- italique -->
-
-<del>...</del>  <!-- barre -->
-<ins>...</ins>  <!-- souslignage -->
-<mark>...</mark>  <!-- surlignage -->
-
-<small>...</small>  <!-- petit texte -->
-
-<pre>...</pre>  <!-- pre -->
-<cite>...</cite>  <!-- citation -->
-<q>...</q>  <!-- guillemets -->
-
-<sub>...</sub>  <!-- subscript -->
-<sup>...</sup>  <!-- supscript -->
-
-<bdo dir="rtl">...</bdo>  <!-- droite à gauche (bi-directional override) -->
-```
-
-&nbsp;
-### Abbréviations
-
-```html
-<abbr title="...">...</abbr>  <!-- abréviation
-```
+## References
+Referring others' work that is used in your text is important for multiple reasons:
+- contextualise your work 
+- contribute to a community of work 
+- validate the depth of your work 
+- acknowledge others' work 
+- specify your own contribution   
 
 &nbsp;
-### Les liens
-*target* peut prendre les valeurs:
-_blank, _self, _parent, _top, *framename*
 
-```html
-<!-- lien normal -->
-<a href="https://..." title="...">...</a>
+- **Tools**: [Zotero](https://www.zotero.org/)  (and its AI plugin - [ARIA](https://github.com/lifan0127/ai-research-assistant))| [Mendeley](https://www.mendeley.com/reference-management/reference-manager)
+- **Repository**: [Cnam Library](https://bibliotheques.cnam.fr/opac/.do?sysb=ep)!
 
-<!-- lien email -->
-<a href="mailto:someone@example.com?
-cc=someoneelse@example.com
-&bcc=andsomeoneelse@example.com
-&subject=Summer%20Party
-&body=You%20are%20invited%20to%20a%20big%20summer%20party!"
-target="_top">Send mail!</a>
+## Publishing
+- Determine your public and select the places they access.
+- For scientific publications, you may refer to the impact factors of journals (e.g., [SJR](https://www.scimagojr.com/)) and of confernces (e.g., [Conferenceranks](http://www.conferenceranks.com/)).
 
-<!-- lien interne -->
-<a href="#tohere">...</a>
-...
-<p id="tohere">...</p>
-```
+### Impact Factor
+The **impact factor**  (**IF**) or  **journal impact factor**  (**JIF**) of an academic journal is a scientometric index calculated by Clarivate that reflects the yearly mean number of citations of articles published in the last two years in a given journal, as indexed by Clarivate's Web of Science.
 
-&nbsp;
-### Images
+As a journal-level metric, it is frequently used as a proxy for the relative importance of a journal within its field; journals with higher impact factor values are given the status of being more important, or carry more prestige in their respective fields, than those with lower values.
 
-```html
-<img src="....jpg|webp|png|gif" alt="..." width="#" height="#" border="0">
-```
+While frequently used by universities and funding bodies to decide on promotion and research proposals, it has been criticised for distorting good scientific practices.
+(from wikipedia on impact factor)
 
-&nbsp;
-### Listes
+## Writing assignment
+[Writing - Assignment](https://par.moodle.lecnam.net/mod/assign/view.php?id=748685)
+The format can be either in markdown or LateX or simple text. There is no format imposed, but do not hesitate to propose one (no need to justify unless necessary to understand the document itself). Diagrams, illustrations and tables are not allowed. If necessary, quantitative data should be integrated in the text.
 
-*ol* peut prendre les valeurs:
-i, I,a, A, 1
+The file has to include your name a registration number at Cnam.
 
-```html
-<ul>...</ul>  <!-- liste simple -->
-	<li>...</li>
+There is no limitation of text. **The more concise the better!** If it is half a page and does the job, that is fine.
 
-<ol type="#">...</ol>  <!-- liste numérotée -->
-	<li>...</li>
-```
-
-Tableaux
-
-```html
-<table> <!-- tableau -->
-	<tr> <!-- ligne 1 -->
-		<td>.1.</td>  <!-- case -->
-		<td>.2.</td>
-	</tr>
-	<tr> <!-- ligne 2 -->
-		<td colspan="2">.1.</td> <!-- case étalée sur deux colonnes -->
-	</tr>
-</table>
-```
-
-&nbsp;
-### Les méta-données
-
-```html
-<head>
-  <title>...</title>  <!-- titre -->
-  <meta charset="UTF-8">  <!-- format du texte -->
-	<meta name="keywords" content="mes, mots, clés">  <!-- mots clés -->
-	<meta name="description" content="description du site"> <!-- description courte du contenu -->
-	<meta name="author" content="Mon Nom">  <!-- nom de l'auteur de la page -->
-	<meta http-equiv="refresh" content="30">  <!-- période avant reload -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- viewpoint pour une apparence correcte sur de multiple écrans -->
-	<style>...</style>  <!-- style (le plus souvent css) -->
-	<script>...</script>  <!-- script (le plus souvent javascript) -->
-	<link rel=stylesheet href="..." media="all">
-</head>
-```
-
-&nbsp;
-### Commentaires
-
-```html
-<!-- Ceci est un commentaire -->
-
-<!--
-<p>Large commentaire avec du HTML</p>
-<img border="0" src="" alt="">
--->
-
-```
-
-<aside>
-💡 EXERCICE: Créez trois (ou plus) pages HTML sur un sujet de votre choix, incluant au moins des images, des liens internes et externes. 
-Créer des méta-données pertinentes. 
-N'oubliez pas de commenter votre page pour que quelqu'un d'autre comprennent le contenu et la structure. 
-
-
-&nbsp;
-**Ne vous inquiétez pas du style, nous nous en occuperons plus tard.**
-
-</aside>
+Due dates:
+- for TLC: december 2nd at 09:00
+- for IoT: december 9th at 09:00
+- for MECA: december 13th at 09:00
