@@ -350,12 +350,14 @@ body#menu #entete.pack-item {
 }
 
 .dynCadre {
-  @apply relative inline-block w-full justify-center p-5 rounded-md place-self-center transition-all duration-700 ease-in-out;
+  @apply relative inline-block w-full justify-center py-5 md:p-5 rounded-md place-self-center transition-all duration-700 ease-in-out;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 3px 0px;
 }
 
+@media only screen and (min-width: 1024px) {
 .dynCadre:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+}
 }
 
 .introChair {
