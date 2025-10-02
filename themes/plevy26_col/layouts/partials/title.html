@@ -4,8 +4,9 @@
             <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}" aria-label="Pierre Lévy">
                 {{ partial "icons.html" (dict "ico" "pierrelevy" "hei" 7 "cla" "lh") -}}
             </a>
+            {{ partial "settings.html" . }}
         </div>
-        {{ partial "settings.html" . }}
+        {{ if false }}
         <div class="flex flex-row mt-12">
             <a class="iconhome strok" href="https://gohugo.io/" aria-label="Go to cnam website">{{ partial
                 "icons.html" (dict "ico" "hugo" "hei" 1) -}}</a>
@@ -15,6 +16,7 @@
                 aria-label="Go to cc">{{
                 partial "icons.html" (dict "ico" "cc" "hei" 1) -}}</a>
         </div>
+        {{ end }}
     </div>
 
     {{ $intro := $.Site.GetPage "page" "intro.md" }}

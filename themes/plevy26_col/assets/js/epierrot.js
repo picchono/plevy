@@ -255,10 +255,10 @@ function setSplide() {
         perPage: 3,
       },
       1536: {
-        perPage: 5,
+        perPage: 4,
       },
       2048: {
-        perPage: 8,
+        perPage: 5,
       }
     }
   }).mount();
