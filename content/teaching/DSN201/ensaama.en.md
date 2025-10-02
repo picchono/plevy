@@ -31,9 +31,9 @@ Pour les DSAA2, l'objectif est de transformer ces enjeux en une série de livrab
 ## Calendrier 2025-2026
 - **DSAA 1** · Mercredi 10 septembre 2025 · 09h00 - 12h00
 - **DSAA2** · Mercredi 10 septembre 2025 · 13h00 - 16h00
-- **DSAA 1** · Mercredi 17 septembre 2025 · 09h00 - 12h00
-- **DSAA 1** · Mercredi 01 octobre 2025 · 09h00 - 12h00
-- **DSAA2** · Mercredi 01 octobre 2025 · 13h00 - 16h00
+- **DSAA 1** · Mercredi 17 septembre 2025 · 09h30 - 12h30
+- **DSAA 1** · Mercredi 01 octobre 2025 · 09h30 - 12h30
+- **DSAA2** · Mercredi 01 octobre 2025 · 13h30 - 16h30
 - **DSAA2** · Mercredi 15 octobre 2025 · 09h00 - 12h00
 
 ## Modalités d’enseignements

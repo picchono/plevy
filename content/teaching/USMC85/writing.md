@@ -99,8 +99,3 @@ The format can be either in markdown or LateX or simple text. There is no format
 The file has to include your name a registration number at Cnam.
 
 There is no limitation of text. **The more concise the better!** If it is half a page and does the job, that is fine.
-
-Due dates:
-- for TLC: december 2nd at 09:00
-- for IoT: december 9th at 09:00
-- for MECA: december 13th at 09:00

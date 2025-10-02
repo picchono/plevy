@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>{{if eq .Params.Title .Site.Title }}{{- .Params.Title -}}{{ else }}{{- .Params.Title }} | {{ .Site.Title -}}{{ end }}</title>
+{{ with .Site.Params.icon }}
+<link rel="icon" type="image/png" sizes="32x32" href='{{ (partial "get_icon" (dict "icon" . "size" 32)).Permalink }}'>
+<link rel="apple-touch-icon" sizes="180x180" href='{{ (partial "get_icon" (dict "icon" . "size" 180)).Permalink }}'>
+{{ end }}
+
+{{ if .Params.nofollow}}
+<meta name="robots" content="noindex" />
+{{ end }}
+
+{{ if .Params.description }}
+<meta name="description" content="{{ .Params.description }}" />
+{{ end }}
+
+{{ if isset .Params "tags"}}{{ with .Params.tags }}
+<meta property="keywords" content="{{ range . }}{{ . }}, {{ end }}" />
+{{ end }}{{ end }}
+
+{{ define "partials/get_icon" }}
+{{ $icon := resources.GetMatch .icon }}
+{{ $icon_resized := $icon.Fill (printf "%sx%s Center" (string .size) (string .size)) }}
+{{ return $icon_resized }}
+{{ end }}
+
+{{ $css := .Site.Data.assets.css }}
+{{ $js := .Site.Data.assets.js }}
+
+{{ if $css.epierrot.url }}
+{{ if $css.epierrot.version }}
+<link rel="stylesheet" href="{{ printf $css.epierrot.url $css.epierrot.version }}" media="all">
+{{ else }}
+<link rel="stylesheet" href="{{ $css.epierrot.url }}" media="all">
+{{ end }}
+{{ else }}
+{{ $epierrot_css := resources.Get "css/epierrot.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $epierrot_css := $epierrot_css | minify }}
+<link rel="stylesheet" href="{{ $epierrot_css.Permalink }}" media="all">
+{{ end }}
+
+{{ $swiper_css := resources.Get "css/swiper.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $swiper_css := $swiper_css | minify }}
+<link rel="stylesheet" href="{{ $swiper_css.Permalink }}" media="all">
+
+{{ $roundo_css := resources.Get "css/roundo.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $roundo_css := $roundo_css | minify }}
+<link rel="stylesheet" href="{{ $roundo_css.Permalink }}" media="all">
+
+
+
+{{ partial "opengraph.html" . }}
+{{ partial "x_cards.html" . }}
+{{ range .AlternativeOutputFormats -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{if ne .Params.layout "prez"}}
+
+{{ if $js.epierrot.url }}
+{{ if $js.epierrot.version }}
+<script defer src="{{ printf $js.epierrot.url $js.epierrot.version }}"></script>
+{{ else }}
+<script defer src="{{ $js.epierrot.url }}"></script>
+{{ end }}
+{{ else }}
+{{ $epierrot_js := resources.Get "js/epierrot.js" | minify }}
+<script defer src="{{ $epierrot_js.Permalink }}"></script>
+{{ end }}
+
+{{ $swiper_js := resources.Get "js/swiper.js" | minify }}
+<script defer src="{{ $swiper_js.Permalink }}"></script>
+
+{{ if .Params.citation }}{{ partial "citationmeta.html" . }}{{ end }}
+
+{{ end }}

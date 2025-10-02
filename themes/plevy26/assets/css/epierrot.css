@@ -174,7 +174,7 @@ html.dark {
 @media only screen and (min-width: 1024px) {
   body {
     --pageBorder-width: 1.5vh;
-    --pageBorder-round: 4vh;
+    --pageBorder-round: 2.5vh;
   }
   html.light {
     --color-pageborder-bg: #fff;
@@ -329,7 +329,7 @@ body#menu #entete.pack-item {
 
 .boxTitle.frontTop {
   @apply text-2xl leading-6;
-  color: #ff0060;
+  color: #fc644d;
 }
 
 /* buttons */

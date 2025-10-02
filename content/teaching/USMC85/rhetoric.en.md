@@ -51,14 +51,12 @@ frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
 ![Rhetorical triangle](https://live.staticflickr.com/65535/54810628492_72e15d891e_o.jpg)
 
 ## Rhetorical appeals
+Aims of the speaker:
+- **logos** - *intellect* - reasonable premises | appropriate details | argumentation
+- **ethos** -  *credibility* - being credible | being good-willed | knowledgeable
+- **pathos** - *emotions*  - interests | praise the audience
 
-|                     |                   |                     |                        |
-| ------------------- | ----------------- | ------------------- | ---------------------- |
-| **logos**           | **ethos**         | **pathos**          |                        |
-| *intellect*         | *credibility*     | *emotions*          | **rhetorical appeals** |
-| reasonable premises | being credible    | interests           | *aims of the speaker*  |
-| appropriate details | being good-willed | praise the audience |                        |
-| argumentation       | knowledgeable     |                     |                        |
+&nbsp;
 
 **Exemples**
 - *Interaction is about the in-between.*
