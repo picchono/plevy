@@ -83,7 +83,8 @@ body {
   @apply fixed bg-pageborder-bg transition-colors duration-700 ease-in-out z-50;
 }
 
-.bordTop, .bordBottom {
+.bordTop,
+.bordBottom {
   left: 0;
   width: 100vw;
   height: var(--pageBorder-width);
@@ -195,6 +196,10 @@ html.dark {
   html.light {
     --color-pageborder-bg: #fff;
   }
+}
+
+body:not(#menu) main {
+  @apply px-5;
 }
 
 b i {
@@ -315,16 +320,21 @@ a.logohome:hover .lh2 {
 }
 
 div#entete {
-  @apply fixed top-4 left-4 z-50 transition-colors duration-700 ease-in-out opacity-100 flex flex-row justify-stretch;
-  padding: 0 calc(var(--pageBorder-width) + var(--pageBorder-round)) 1.5rem;
+  @apply fixed left-4 z-50 transition-colors duration-700 ease-in-out opacity-100 flex flex-row justify-stretch;
+  padding: 0 calc(var(--pageBorder-round) + 0.5rem) 1.5rem;
   border-bottom-right-radius: var(--pageBorder-round);
-  background: var(--color-pageborder-bg);
-  background: linear-gradient(180deg, var(--color-pageborder-bg) 0%,  var(--color-pageborder-bg) 40%, rgba(255, 255, 255, 0) 100%);
-  min-width: 70vw;
+  background: var(--color-primary-bg);
+  background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-primary-bg) 50%, rgba(255, 255, 255, 0) 100%);
+  min-width: 50vw;
+  top: var(--pageBorder-width);
 }
 
 div#entete:hover a.logohome {
   @apply bg-transparent;
+}
+
+section#headUp {
+  @apply h-screen bg-primary-bg flex flex-col justify-center items-center;
 }
 
 /* Pack items*/
@@ -345,13 +355,21 @@ body:not(#menu) main.pack {
 .splide {
   @apply px-10;
 }
+
 .splide__slide {
   overflow-y: auto;
-  height:100%;
-  max-height: calc(100vh - ( 2 * var(--pageBorder-width)));
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  height: 100%;
+  max-height: calc(100vh - (2 * var(--pageBorder-width)));
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   padding: 10rem 2rem;
+}
+@media only screen and (max-width: 512px) {
+  .splide__slide {
+  padding: 10rem 0;
+  }
 }
 
 .splide_title {
@@ -390,6 +408,7 @@ ul.splide__pagination {
 .splide__arrow--prev {
   left: 0rem !important;
 }
+
 /* buttons */
 .pack-item #languageMode {
   @apply bg-transparent;
@@ -491,6 +510,7 @@ a.floatImg::after {
 div.menuBox {
   @apply py-8 border-b border-tertiary-bg;
 }
+
 a.boxIso {
   @apply w-full h-full text-secondary-text justify-start flex-col rounded-md cursor-pointer;
   display: block flex;

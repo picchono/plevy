@@ -93,9 +93,18 @@ While frequently used by universities and funding bodies to decide on promotion 
 (from wikipedia on impact factor)
 
 ## Writing assignment
-[Writing - Assignment](https://par.moodle.lecnam.net/mod/assign/view.php?id=748685)
-The format can be either in markdown or LateX or simple text. There is no format imposed, but do not hesitate to propose one (no need to justify unless necessary to understand the document itself). Diagrams, illustrations and tables are not allowed. If necessary, quantitative data should be integrated in the text.
+- Take 10min max to write a text about your topic for a layperson - 250 words max
+- Ask AI to do the same (250 words max)
+- Compare and discuss the AI output from your expert perspective (250 words max)
+- You can discuss with your AI to improve its text
+- Propose a new text (as a result of your discussion with the AI and with you own final touch)  **The more concise the better!**
 
-The file has to include your name a registration number at Cnam.
+Deliverable: all the texts, all the prompts, and your quick reflections, all  organised in a timely order.
 
-There is no limitation of text. **The more concise the better!** If it is half a page and does the job, that is fine.
+You are assessed on your reflections, the apparent construction towards the construction of a better text, so I can understand why the last one is best.
+The exercise should not take more than 1h.
+
+
+To be submitted @ [pierre.levy@lecnam.net](mailto:pierre.levy@lecnam.net) with the following title for the email and for the document: USMC85_writing-<your SISCOL number>-<your Name>
+
+The format can be either in docx, markdown, LateX or simple text. There is no format imposed, but do not hesitate to propose one (no need to justify unless necessary to understand the document itself). Diagrams, illustrations and tables are not allowed. If necessary, quantitative data should be integrated in the text.
