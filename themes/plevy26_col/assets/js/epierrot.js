@@ -264,6 +264,10 @@ function setSplide() {
   }).mount();
 };
 
+document.getElementById('archive-btn').addEventListener('click', function (event) { 
+  window.scrollTo(0, document.body.scrollHeight);  
+});
+
 
 window.addEventListener('load', function (event) {
   externalLinks();

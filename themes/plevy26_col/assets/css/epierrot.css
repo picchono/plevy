@@ -325,7 +325,7 @@ div#entete {
   border-bottom-right-radius: var(--pageBorder-round);
   background: var(--color-primary-bg);
   background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-primary-bg) 50%, rgba(255, 255, 255, 0) 100%);
-  min-width: 50vw;
+  min-width: 33vw;
   top: var(--pageBorder-width);
 }
 
@@ -334,7 +334,11 @@ div#entete:hover a.logohome {
 }
 
 section#headUp {
-  @apply h-screen bg-primary-bg flex flex-col justify-center items-center;
+  @apply bg-primary-bg flex flex-col justify-between items-center text-center;
+  height: calc(100vh - (3 * var(--pageBorder-width)));
+}
+#archive-btn {
+  @apply cursor-pointer;
 }
 
 /* Pack items*/
