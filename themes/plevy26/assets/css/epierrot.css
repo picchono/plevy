@@ -181,12 +181,11 @@ html.dark {
   --color-borders: #fafafa;
 }
 
-
 @media only screen and (min-width: 1024px) {
   body {
     --pageBorder-width: 1.5vh;
     --pageBorder-round: 2.5vh;
-    --entete-height: 10vh;
+    --entete-height: 8vh;
   }
 
   html.light {
@@ -322,11 +321,17 @@ a.logohome:hover .lh2 {
 div#entete {
   @apply transition-colors duration-700 ease-in-out opacity-100 flex-shrink-0 flex flex-row justify-stretch;
   height: var(--entete-height);
-  padding: 0 calc(var(--pageBorder-round) + 0.5rem);
+  padding: 0 var(--pageBorder-round);
   border-bottom-right-radius: var(--pageBorder-round);
   background: var(--color-primary-bg);
   background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-primary-bg) 30%, rgba(255, 255, 255, 0) 100%);
   top: var(--pageBorder-width);
+}
+
+@media only screen and (max-width: 768px) {
+  div#entete {
+    padding: 0;
+  }
 }
 
 div#entete:hover a.logohome {
@@ -353,6 +358,7 @@ div#headUp {
 body#menu {
   overflow-x: hidden;
 }
+
 body:not(#menu) main.pack {
   @apply mx-auto max-w-3xl;
 }
