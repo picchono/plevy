@@ -4,10 +4,11 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}">
-    {{ if .IsHome }}{{ partial "searching.hml" . }}{{ end }}
-  <main class="pack">
+  <main>
     {{ partial "title.html" . }}
-    {{ if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
+    {{ if not .IsHome }}
+      {{ partial "medium.html" . }}
+    {{ end }}
     {{- block "main" . }}{{- end }}
   </main>
     <div class="bordTop"></div>

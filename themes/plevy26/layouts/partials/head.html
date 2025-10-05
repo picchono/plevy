@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <title>{{if eq .Params.Title .Site.Title }}{{- .Params.Title -}}{{ else }}{{- .Params.Title }} | {{ .Site.Title -}}{{ end }}</title>
@@ -39,13 +40,14 @@
 <link rel="stylesheet" href="{{ $epierrot_css.Permalink }}" media="all">
 {{ end }}
 
-{{ $atkinson_css := resources.Get "css/atkinson.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $atkinson_css := $atkinson_css | minify }}
-<link rel="stylesheet" href="{{ $atkinson_css.Permalink }}" media="all">
+{{ $splide_css := resources.Get "css/splide.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $splide_css := $splide_css | minify }}
+<link rel="stylesheet" href="{{ $splide_css.Permalink }}" media="all">
 
 {{ $roundo_css := resources.Get "css/roundo.css" | postCSS (dict "config" "./postcss.config.js") }}
 {{ $roundo_css := $roundo_css | minify }}
 <link rel="stylesheet" href="{{ $roundo_css.Permalink }}" media="all">
+
 
 
 {{ partial "opengraph.html" . }}
@@ -67,12 +69,8 @@
 <script defer src="{{ $epierrot_js.Permalink }}"></script>
 {{ end }}
 
-
-{{ $isotope_js := resources.Get "js/isotope.pkgd.min.js" | minify }}
-<script src="{{ $isotope_js.Permalink }}"></script>
-{{ $packery_js := resources.Get "js/packery-mode.pkgd.min.js" | minify }}
-<script src="{{ $packery_js.Permalink }}"></script>
-
+{{ $splide_js := resources.Get "js/splide.js" | minify }}
+<script defer src="{{ $splide_js.Permalink }}"></script>
 
 {{ if .Params.citation }}{{ partial "citationmeta.html" . }}{{ end }}
 

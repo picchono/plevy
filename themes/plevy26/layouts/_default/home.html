@@ -1,31 +1,80 @@
 {{ define "main" }}
-{{ $count := 0 }}
-{{ $page := $.Site.GetPage "page" "chaire.md" }}
-{{ with $page }}
-{{- partial "box.html" ( dict "context" . "cou" $count "sort" 100) -}}
+{{ if false }}
+<div>
+    {{ $page := $.Site.GetPage "page" "chaire.md" }}
+    {{ with $page }}
+    {{- partial "box.html" ( dict "context" . "sort" 100) -}}
+    {{ end }}
+    {{ $page := $.Site.GetPage "page" "plevy.md" }}
+    {{ with $page }}
+    {{- partial "box.html" ( dict "context" . "sort" 100) -}}
+    {{ end }}
+</div>
 {{ end }}
-{{ $page := $.Site.GetPage "page" "plevy.md" }}
-{{ with $page }}
-{{- partial "box.html" ( dict "context" . "cou" $count "sort" 100) -}}
-{{ end }}
+<div id="headUp">
+    <div class="headUpBlock">
+        <section id="splideHeadUp" class="splide" aria-label="splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {{ $page := $.Site.GetPage "page" "chaire.md" }}
+                    {{ with $page }}
+                    <li class="splide__slide">{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}</li>
+                    {{ end }}
+                    {{ $page := $.Site.GetPage "page" "plevy.md" }}
+                    {{ with $page }}
+                    <li class="splide__slide">{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}</li>
+                    {{ end }}
 
-{{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
-{{ range readDir "content" }}
-{{ if eq .Name $fold }}
-{{ range where $.Site.Pages "Section" "in" ($fold) }}
-{{ if eq .Params.zone $fold }}
-{{ $count := 0 }}
-{{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
-{{ if ne .Params.notListed true }}
-{{ if ne .Params.notListed true }}
-{{ $count = add $count 1 }}
-{{- partial "box.html" ( dict "context" . "cou" $count) -}}
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
+                    {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings" "presentations" }}
+                    {{ range readDir "content" }}
+                    {{ if eq .Name $fold }}
+                    {{ range where $.Site.Pages "Section" "in" ($fold) }}
+                    {{ if eq .Params.zone $fold }}
+                    {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+                    {{ if eq .Params.fronttop true }}
+                    <li class="splide__slide">{{ partial "boxUp.html" ( dict "context" . ) -}}</li>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div id="archive-btn">{{i18n "allContent"}}<br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-down mx-auto" viewBox="0 0 16 16">
+            <path
+                d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+        </svg>
+    </div>
+</div>
+<section id="splideArchive" class="splide" aria-label="Archives">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings"
+            "presentations" }}
+            <li class="splide__slide">
+                <div class="splide_title">{{ i18n $fold }}</div>
+                {{ range readDir "content" }}
+                {{ if eq .Name $fold }}
+                {{ range where $.Site.Pages "Section" "in" ($fold) }}
+                {{ if eq .Params.zone $fold }}
+                {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+                {{ if ne .Params.notListed true }}
+                {{- partial "box.html" ( dict "context" . ) -}}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
 {{ end }}

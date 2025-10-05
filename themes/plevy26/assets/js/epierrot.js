@@ -62,16 +62,6 @@ function externalLinks() {
   }
 }
 
-//randow the with of each box
-function boxIsoMaxWidth() {
-  var boxes = document.querySelectorAll('a.boxIso');
-  boxes.forEach(function (box) {
-    var l = 270 + (60 * Math.random()) + "px";
-    box.style.maxWidth = l;
-  });
-}
-
-
 //create a table of content if #toc exists
 function tableContent() {
   //Get all headings only from the actual contents.
@@ -208,98 +198,6 @@ function progressBar() {
 window.onscroll = function() {progressBar()};
 */
 
-/* isotope */
-var qsRegex;
-var buttonValue;
-var checksearch = document.getElementById("inputSearch");
-
-var elem = document.querySelector('.pack');
-var iso = new Isotope(elem, {
-  // options
-  itemSelector: '.pack-item',
-  layoutMode: 'packery',
-  stamp: '.stamp',
-  packery: {
-    gutter: 1
-  },
-  getSortData: {
-    weight: '[data-cat-sort]',
-    front: '[data-front]',
-    date: '[data-date]'
-  },
-  sortBy: ['weight', 'front', 'date'],
-  sortAscending: false,
-  filter: function (itemElem) {
-    var searchResult = qsRegex ? itemElem.textContent.match(qsRegex) : true;
-    if (checksearch) {
-      var buttonResult = buttonValue ? itemElem.textContent.match(buttonValue) : true;
-      return searchResult && buttonResult;
-    } else {
-      return searchResult;
-    }
-  }
-});
-
-// use value of search field to filter
-if (checksearch) {
-  var quicksearch = document.querySelector('.quickSearch');
-  quicksearch.addEventListener('keyup', debounce(function () {
-    qsRegex = new RegExp(quicksearch.value, 'gi');
-    iso.arrange();
-  }, 200));
-}
-
-//menu selection
-var buttons = document.querySelectorAll(".homemenu");
-var buttonsArr = Array.from(buttons);
-// Add event listener to each button
-buttonsArr.forEach(function (element) {
-  element.addEventListener('click', function () {
-    // Get the data attribute of the clicked button
-    buttonValue = this.dataset.filter;
-    iso.arrange();
-  });
-});
-
-// debounce so filtering doesn't happen every millisecond
-function debounce(fn, threshold) {
-  var timeout;
-  threshold = threshold || 100;
-  return function debounced() {
-    clearTimeout(timeout);
-    var args = arguments;
-    var _this = this;
-    function delayed() {
-      fn.apply(_this, args);
-    }
-    timeout = setTimeout(delayed, threshold);
-  };
-}
-
-// vanilla JS, no event argument
-iso.on('arrangeComplete', function (filteredItems) {
-  var removIsot = document.getElementsByClassName('pack-item');
-  for (var i = 0; i < removIsot.length; i++) {
-    removIsot[i].classList.remove('isot');
-  }
-  showPic();
-});
-
-let isScrolling;
-window.addEventListener('scroll', function (event) {
-  clearTimeout(isScrolling);
-  isScrolling = setTimeout(function () {
-    iso.arrange();
-  }, 500);
-});
-
-window.addEventListener("resize", function () {
-  clearTimeout(isScrolling);
-  isScrolling = setTimeout(function () {
-    iso.arrange();
-  }, 500);
-});
-
 /* light dark */
 function setTheme(themeName) {
   localStorage.setItem('theme', themeName);
@@ -334,40 +232,81 @@ function toggleTheme() {
   }
 })();
 
-function openSearch() {
-  document.getElementById('searchingBox').classList.add("searchOpen");
-  document.getElementById('entete').classList.add("searchOpen");
-  document.getElementById('entete').classList.add("disappear");
-  clearTimeout(isScrolling);
-  isScrolling = setTimeout(function () {
-    iso.arrange();
-  }, 500);
+
+//Splide
+function setSplide() {
+  new Splide('#splideHeadUp', {
+    perPage: 1,
+    speed: 500,
+    keyboard: true,
+    autoHeight: true,
+    focus: 0,
+    omitEnd: true,
+    pagination: true,
+    arrows: true,
+    drag: 'free',
+    snap: true,
+    gap: 1,
+    mediaQuery: 'min',
+    breakpoints: {
+      512: {
+        perPage: 2,
+      },
+      1024: {
+        perPage: 3,
+      },
+      1536: {
+        perPage: 4,
+      },
+      2048: {
+        perPage: 5,
+      }
+    }
+  }).mount();
+
+    new Splide('#splideArchive', {
+    perPage: 1,
+    speed: 500,
+    keyboard: true,
+    autoHeight: true,
+    focus: 0,
+    omitEnd: true,
+    pagination: true,
+    arrows: true,
+    drag: 'free',
+    snap: true,
+    mediaQuery: 'min',
+    breakpoints: {
+      512: {
+        perPage: 2,
+      },
+      1024: {
+        perPage: 3,
+      },
+      1536: {
+        perPage: 4,
+      },
+      2048: {
+        perPage: 5,
+      }
+    }
+  }).mount();
+
+  
 };
 
-let isScrolling2;
-function closeSearch() {
-  document.getElementById('searchingBox').classList.remove("searchOpen");;
-  document.getElementById('entete').classList.remove("searchOpen");
-  var eraseSearch = document.querySelector('.quickSearch');
-  eraseSearch.value = '';
-  clearTimeout(isScrolling);
-  isScrolling = setTimeout(function () {
-    filters = {};
-    iso.arrange();
-  }, 500);
-  clearTimeout(isScrolling2);
-  isScrolling2 = setTimeout(function () {
-    document.getElementById('entete').classList.remove("disappear");
-  }, 500);
+document.getElementById('archive-btn').addEventListener('click', function (event) { 
+  window.scrollTo(0, document.body.scrollHeight);  
+});
 
-};
+
+document.addEventListener("scrollend", (event) => {
+    
+});
 
 window.addEventListener('load', function (event) {
   externalLinks();
-  boxIsoMaxWidth();
+  setSplide();
   if (document.getElementById("toc")) tableContent();
   if (document.querySelector("pre")) AddCopyButtons();
-  closeSearch();
-  iso.arrange();
 });
-
