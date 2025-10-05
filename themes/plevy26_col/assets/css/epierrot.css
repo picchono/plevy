@@ -71,12 +71,6 @@ body {
   padding: var(--pageBorder-width);
 }
 
-/*
-*:not(html, body){
-  @apply overflow-hidden;
-}
-*/
-
 .bordTop,
 .bordBottom,
 .bordLeft,
@@ -357,7 +351,7 @@ div#headUp {
 /* Pack items*/
 
 body#menu {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body:not(#menu) main.pack {
   @apply mx-auto max-w-3xl;
