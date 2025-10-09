@@ -6,10 +6,12 @@
 <body id="{{ .Params.bodyclass }}">
   <main>
     {{ partial "title.html" . }}
-    {{ if not .IsHome }}
+    {{ if not .IsHome }}<div class="max-w-4xl mx-auto mb-20">
       {{ partial "medium.html" . }}
-    {{ end }}
-    {{- block "main" . }}{{- end }}
+    </div>{{ end }}
+    {{ if not .IsHome }}<div class="max-w-4xl mx-auto mb-20">{{ end }}
+      {{- block "main" . }}{{- end }}
+    {{ if not .IsHome }}</div>{{ end }}
   </main>
     <div class="bordTop"></div>
     <div class="bordBottom"></div>

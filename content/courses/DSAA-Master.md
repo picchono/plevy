@@ -15,7 +15,7 @@ Diploma:
     level3:
         type: "Parcours"
         name: "DSAA Master @Ensaama"
-description: "Ce parcours, organisé par une convention entre la Communauté l’agglomération du Grand Chalon, l’e|m|a, le CCR de Bourgogne Franche-Comté, et le Cnam, entend former des artistes ou des techniciens ayant une pratique artistique poussée aux techniques et à l’ingénierie liée à leur pratique (matériaux, outils…)."
+description: "The craft and design school Ensaama and the Cnam jointly award the Higher Diploma in Applied Arts, equivalent to a master's degree (120 ECTS credits at level 7)."
 institution:
     heig: 1
     logo: cnam
@@ -43,7 +43,7 @@ link:
     3: ["DSAA-Master", "website", "https://ensaama.net/site/home/formations/dsaa"]
 fronttop: true
 ---
-Depuis l’Arrêté du 17 février 2025 relatif au diplôme supérieur d’arts appliqués Le présent arrêté entre en vigueur à compter de la rentrée universitaire 2025, le Diplôme Supérieur d’Arts Appliqués sanctionne un niveau correspondant à l’obtention de 120 crédits européens au-delà du grade licence (DNMADE) ou licence (180 crédits ECTS). Il est inscrit au niveau 7 de la nomenclature interministérielle des niveaux de formation.
+L’Arrêté du 17 février 2025 relatif au diplôme supérieur d’arts appliqués entre en vigueur à compter de la rentrée universitaire 2025. Le Diplôme Supérieur d’Arts Appliqués sanctionne un niveau correspondant à l’obtention de 120 crédits européens au-delà du grade licence (DNMADE) ou licence (180 crédits ECTS). Il est inscrit au niveau 7 de la nomenclature interministérielle des niveaux de formation.
 
 Le DSAA atteste l'acquisition d'un socle de connaissances et de compétences dans les champs disciplinaires et pluridisciplinaires des arts appliqués. Il certifie la formation de futurs professionnels capables d'exercer des responsabilités de pilotage de projet au service de l’innovation. Il élabore des stratégies de design et de métiers d’art, en interaction avec les multiples acteurs qui interviennent en amont, au cœur et en aval du processus de création.
 

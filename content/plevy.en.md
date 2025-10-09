@@ -10,7 +10,7 @@ tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "Professor at the National Conservatory of Arts & Crafts, holder of the Chair of design Jean Prouvé, and member of the Dicen-IDF laboratory."
 shortdescription: "Professor of Cnam, Chair of Design Jean Prouvé"
 frontphoto: "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg"
+frontphotomini: "https://live.staticflickr.com/65535/52087507002_56a1a447a0.jpg"
 photogallery:
     image1:
         order: 1

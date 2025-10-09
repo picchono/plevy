@@ -15,7 +15,7 @@ Diploma:
     level3:
         type: "Parcours"
         name: "Art, contextes, techniques, et usages"
-description: "Ce parcours, organisé par une convention entre la Communauté l’agglomération du Grand Chalon, l’e|m|a, le CCR de Bourgogne Franche-Comté, et le Cnam, entend former des artistes ou des techniciens ayant une pratique artistique poussée aux techniques et à l’ingénierie liée à leur pratique (matériaux, outils…)."
+description: "This course, in collaboration with the Greater Chalon Urban Community, e|m|a, the Burgundy Franche-Comté Regional Centre for Continuing Education, and the Cnam, trains artists and technicians in the techniques and engineering related to their artistic practice (materials, tools, etc.)."
 institution:
     heig: 1
     logo: cnam

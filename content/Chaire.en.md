@@ -18,6 +18,9 @@ tags: ['Pierre', 'Lévy', 'design', 'kansei', 'eindhoven', 'pratiques_transforma
 notEverything: true
 notListed: true
 noPagesearch: true
+description: "The Jean Prouvé Chair in Design is a welcoming space dedicated to developing the role of design practice and research in society and culture. Its focus is on expressing beauty through everyday materials and reflective practices."
+frontphoto: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
+frontphotomini: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
 video:
     video1:
         youtube: "2iE0PFu51CM"
@@ -26,4 +29,4 @@ video:
 members:
     1: ["Pierre Lévy", "Professor of Cnam<br/>Design chair holder", "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg", "/"]
 ---
-The Chaire of Design Jean Prouvé is a benevolent place dedicated to the development of design practice and research. It is committed to a program combining research, teaching and design projects, with a view to transformation through reflexive practices in everyday life.
+The Jean Prouvé Chair in Design is a welcoming space dedicated to developing the role of design practice and research in society and culture. Its focus is on expressing beauty through everyday materials and reflective practices.

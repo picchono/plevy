@@ -328,12 +328,6 @@ div#entete {
   top: var(--pageBorder-width);
 }
 
-@media only screen and (max-width: 768px) {
-  div#entete {
-    padding: 0;
-  }
-}
-
 div#entete:hover a.logohome {
   @apply bg-transparent;
 }
@@ -351,6 +345,16 @@ div#headUp {
 
 #headUp #archive-btn {
   @apply text-xl font-bold text-center py-4 cursor-pointer;
+}
+
+.headUpDescription {
+  @apply w-1/2 p-2 pr-6 text-right text-sm overflow-y-auto;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
+}
+
+.headUpDescription::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in WebKit browsers (Chrome, Safari, Opera) */
 }
 
 /* Pack items*/
@@ -373,11 +377,12 @@ body:not(#menu) main.pack {
 
 /* Splide */
 section#splideArchive {
-  @apply block flex-shrink-0 flex-grow-0 pt-10 px-10;
-  height: calc(100% - 40vh);
+  @apply block flex-shrink-0 flex-grow-0;
+  height: 100vh;
+  padding: 0 var(--pageBorder-width);
 }
 
-#splideArchive #splideArchive-track {
+#splideArchive .splide__track {
   height: calc(100vh - (2 * var(--pageBorder-width)));
 }
 
@@ -418,27 +423,6 @@ section#splideArchive {
   z-index: 100;
 }
 
-#splideArchive .splide__arrow {
-  background: transparent !important;
-}
-
-#splideArchive .splide__arrow svg {
-  fill: var(--color-epierrot) !important;
-}
-
-#splideArchive .splide.is-focus-in #splideArchive .splide__arrow:focus {
-  outline: 0px solid transparent !important;
-}
-
-#splideArchive .splide__arrow--next {
-  right: 0rem !important;
-}
-
-#splideArchive .splide__arrow--prev {
-  left: 0rem !important;
-}
-
-
 /* splide2 */
 #splideHeadUp.splide {
   @apply px-10 h-full;
@@ -464,7 +448,7 @@ section#splideArchive {
 }
 
 #splideHeadUp div.menuBox {
-  @apply h-full rounded-sm flex flex-col justify-around items-center;
+  @apply h-full rounded-sm flex flex-col justify-center items-center md:p-8;
 }
 
 #splideHeadUp .splide_title {
@@ -484,26 +468,59 @@ section#splideArchive {
   z-index: 100;
 }
 
-#splideHeadUp .splide__arrow {
+/* all splide */
+
+.splide__arrow {
   background: transparent !important;
 }
 
-#splideHeadUp .splide__arrow svg {
+.splide__arrow svg {
   fill: var(--color-epierrot) !important;
 }
 
-#splideHeadUp .splide.is-focus-in #splideHeadUp .splide__arrow:focus {
+.splide.is-focus-in, .splide__arrow:focus {
   outline: 0px solid transparent !important;
 }
 
-#splideHeadUp .splide__arrow--next {
+.splide__arrow:disabled {
+  @apply transition-opacity duration-500 ease-in-out;
+  opacity: 0 !important;
+  cursor: auto;
+}
+
+.splide__arrow--next {
   right: 0rem !important;
 }
 
-#splideHeadUp .splide__arrow--prev {
+.splide__arrow--prev {
   left: 0rem !important;
 }
+/* headUp2 */
+#headUp2 {
+  @apply flex flex-col justify-between items-center;
+  min-height: calc(100vh - var(--entete-height) - (2 * var(--pageBorder-width)));
+  width: calc(100vw - 2 * var(--pageBorder-width));
+}
+#headUp2 .headUp_blocks {
+  @apply flex flex-col flex-nowrap md:flex-row md:flex-wrap justify-between;
+  min-height: calc(100% - 2rem);
+  padding: 0 var(--pageBorder-round);
+}
 
+#headUp2 a.boxIso {
+  @apply w-full text-right transition-all duration-500 ease-in-out;
+  aspect-ratio: 1.33;
+  box-shadow: none;
+}
+
+#headUp2 a.boxIso:hover {
+  @apply shadow-xl;
+}
+
+#headUp2 #archive-btn {
+  @apply text-xl font-bold text-center py-4 cursor-pointer;
+  width: calc(100vw - 2 * var(--pageBorder-width));
+}
 
 /* buttons */
 .pack-item #languageMode {
@@ -524,13 +541,6 @@ section#splideArchive {
 
 .dynCadre {
   @apply relative inline-block w-full justify-center py-5 md:p-5 rounded-md place-self-center transition-colors duration-700 ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 3px 0px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .dynCadre:hover {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
-  }
 }
 
 .introChair {
@@ -608,7 +618,7 @@ div.menuBox {
 }
 
 a.boxIso {
-  @apply w-full h-full text-secondary-text justify-center flex-col rounded-md cursor-pointer;
+  @apply w-full text-secondary-text justify-between flex-col rounded-md cursor-pointer;
   display: block flex;
 }
 
@@ -616,8 +626,13 @@ a.boxIso:hover {
   @apply text-epierrot bg-transparent;
 }
 
+#headUp a.boxIso {
+  @apply border border-epierrot border-solid px-5 w-full;
+  aspect-ratio: 1;
+}
+
 .boxElts {
-  @apply inline-block font-bold py-1 leading-tight;
+  @apply inline-block font-bold leading-tight;
   font-size: 0.6rem;
 }
 
@@ -633,7 +648,6 @@ a.boxIso:hover {
 
 .boxTitle {
   @apply font-bold transition-colors duration-700 ease-in-out overflow-visible;
-  font-size: 0.9rem;
   line-height: 1rem;
 }
 

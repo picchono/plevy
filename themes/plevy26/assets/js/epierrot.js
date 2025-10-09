@@ -235,35 +235,6 @@ function toggleTheme() {
 
 //Splide
 function setSplide() {
-  new Splide('#splideHeadUp', {
-    perPage: 1,
-    speed: 500,
-    keyboard: true,
-    autoHeight: true,
-    focus: 0,
-    omitEnd: true,
-    pagination: true,
-    arrows: true,
-    drag: 'free',
-    snap: true,
-    gap: 1,
-    mediaQuery: 'min',
-    breakpoints: {
-      512: {
-        perPage: 2,
-      },
-      1024: {
-        perPage: 3,
-      },
-      1536: {
-        perPage: 4,
-      },
-      2048: {
-        perPage: 5,
-      }
-    }
-  }).mount();
-
     new Splide('#splideArchive', {
     perPage: 1,
     speed: 500,
