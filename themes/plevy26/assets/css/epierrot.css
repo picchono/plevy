@@ -181,7 +181,7 @@ html.dark {
   --color-borders: #fafafa;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (#headUp2 .headUp_blocks: 1024px) {
   body {
     --pageBorder-width: 1.5vh;
     --pageBorder-round: 2.5vh;
@@ -348,7 +348,7 @@ div#headUp {
 }
 
 .headUpDescription {
-  @apply w-1/2 p-2 pr-6 text-right text-sm overflow-y-auto;
+  @apply p-2 text-sm overflow-y-auto;
   scrollbar-width: none; /* Hides scrollbar in Firefox */
   -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
 }
@@ -377,7 +377,7 @@ body:not(#menu) main.pack {
 
 /* Splide */
 section#splideArchive {
-  @apply block flex-shrink-0 flex-grow-0;
+  @apply block flex-shrink-0 flex-grow-0 bg-secondary-bg;
   height: 100vh;
   padding: 0 var(--pageBorder-width);
 }
@@ -448,7 +448,7 @@ section#splideArchive {
 }
 
 #splideHeadUp div.menuBox {
-  @apply h-full rounded-sm flex flex-col justify-center items-center md:p-8;
+  @apply rounded-sm flex flex-row flex-wrap justify-center items-center md:p-8;
 }
 
 #splideHeadUp .splide_title {
@@ -502,7 +502,7 @@ section#splideArchive {
   width: calc(100vw - 2 * var(--pageBorder-width));
 }
 #headUp2 .headUp_blocks {
-  @apply flex flex-col flex-nowrap md:flex-row md:flex-wrap justify-between;
+  @apply flex flex-col flex-nowrap sm:flex-row sm:flex-wrap justify-around;
   min-height: calc(100% - 2rem);
   padding: 0 var(--pageBorder-round);
 }
@@ -647,7 +647,7 @@ a.boxIso:hover {
 }
 
 .boxTitle {
-  @apply font-bold transition-colors duration-700 ease-in-out overflow-visible;
+  @apply text-lg text-epierrot font-bold transition-colors duration-700 ease-in-out overflow-visible;
   line-height: 1rem;
 }
 
