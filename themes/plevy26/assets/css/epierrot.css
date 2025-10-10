@@ -181,7 +181,7 @@ html.dark {
   --color-borders: #fafafa;
 }
 
-@media only screen and (#headUp2 .headUp_blocks: 1024px) {
+@media only screen and (min-width: 1024px) {
   body {
     --pageBorder-width: 1.5vh;
     --pageBorder-round: 2.5vh;
@@ -347,14 +347,18 @@ div#headUp {
   @apply text-xl font-bold text-center py-4 cursor-pointer;
 }
 
-.headUpDescription {
-  @apply p-2 text-sm overflow-y-auto;
+.headUpText {
+  @apply flex flex-col w-2/3 p-2 overflow-y-auto;
   scrollbar-width: none; /* Hides scrollbar in Firefox */
   -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
 }
 
-.headUpDescription::-webkit-scrollbar {
+.headUpText::-webkit-scrollbar {
   display: none; /* Hides scrollbar in WebKit browsers (Chrome, Safari, Opera) */
+}
+
+.headUpDescription {
+  @apply p-2 text-sm;
 }
 
 /* Pack items*/
@@ -504,17 +508,24 @@ section#splideArchive {
 #headUp2 .headUp_blocks {
   @apply flex flex-col flex-nowrap sm:flex-row sm:flex-wrap justify-around;
   min-height: calc(100% - 2rem);
-  padding: 0 var(--pageBorder-round);
+}
+
+@media only screen and (min-width: 1024px) {
+  #headUp2 .headUp_blocks {
+    padding: 0 var(--pageBorder-round);
+  }
 }
 
 #headUp2 a.boxIso {
-  @apply w-full text-right transition-all duration-500 ease-in-out;
+  @apply w-full text-right transition-all duration-500 ease-in-out md:p-2;
+  background-color: var(--color-primary-bg);
   aspect-ratio: 1.33;
   box-shadow: none;
 }
 
 #headUp2 a.boxIso:hover {
   @apply shadow-xl;
+  background-color: var(--color-pageborder-bg);
 }
 
 #headUp2 #archive-btn {
@@ -618,7 +629,7 @@ div.menuBox {
 }
 
 a.boxIso {
-  @apply w-full text-secondary-text justify-between flex-col rounded-md cursor-pointer;
+  @apply w-full text-secondary-text justify-between flex-col rounded-xl cursor-pointer;
   display: block flex;
 }
 
@@ -647,7 +658,7 @@ a.boxIso:hover {
 }
 
 .boxTitle {
-  @apply text-lg text-epierrot font-bold transition-colors duration-700 ease-in-out overflow-visible;
+  @apply text-lg text-epierrot font-bold transition-colors duration-700 ease-in-out overflow-visible pb-2;
   line-height: 1rem;
 }
 
@@ -2773,6 +2784,7 @@ body {
 
   :root {
     @apply font-sans bg-white text-black leading-6 box-border;
+    background-color: --color-pageborder-bg);
   }
 
   *,

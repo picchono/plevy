@@ -4,7 +4,7 @@
     data-date="{{ .context.Date }}" {{if eq .context.Params.front 1 }} data-front="1" {{ else }} data-front="0" {{ end
     }} data-section="{{ .context.Section  }}">{{if .dynC }}<div class="dynCadre">{{ end }}
         <a class="boxIso{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}" style="max-width:240px;">
-            <span class='boxTitle{{ if .context.Params.fronttop }} frontTop{{end}}'>{{- .context.Title |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</span>
+            <span class='boxTitle'>{{- .context.Title |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end }}</span>
                 <span class="boxElts">{{ if eq .context.Section "publications" }}
                     {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
                     {{ if .context.Params.shortBook }}{{ .context.Params.shortBook }}{{ end }}
