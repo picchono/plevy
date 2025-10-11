@@ -70,8 +70,8 @@
                     </span>
                 </span>
             </span>
-            <span class="w-1/3 h-full overflow-hidden"><img class="object-cover w-full h-full rounded-md"
-                    src="{{ .context.Params.frontphotomini }}"></span>
+            {{ $Img := print .context.Params.frontphotomini }}
+            <span class="headUpImg"><span class="duotone" style="background-image: url('{{ $Img | safeURL }}');"></span></span>
         </a>
         {{if .dynC }}
     </div>{{ end }}</div>
