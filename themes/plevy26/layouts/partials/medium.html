@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-end mt-32 mb-14 md:ml-20 flex-grow flex-shrink">
+<div class="dynCadre flex flex-col justify-end mt-32 mb-14 flex-grow flex-shrink">
     <div class="text-left items-start my-10">
         <h1 class="text-4xl font-bold m-0">{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}}
             ({{- i18n "ended" -}}){{ end }}</h1>
@@ -56,7 +56,7 @@
 {{ if ne .Params.layout "list" }}
 
 {{ if and (.Params.abstract) (ne .Params.layout "publi") }}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="1">
     <div class="dynCadre">
         <b class="text-epierrot">{{ partial "slash.html" (dict "txt" (i18n "abstract")) }}</b>
         {{ .Params.abstract |safeHTML }}
@@ -69,21 +69,21 @@
     height="240" data-cat-sort="1" />
 {{ end }}{{ end -}}
 {{ if .Params.schedule }}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="1">
     <div class="dynCadre">
         <p>{{ .Params.schedule |safeHTML }}</p>
     </div>
 </div>
 {{ end }}
 {{ if .Params.executive}}
-<div class="pack-item w-full md:max-w-96 italic text-sm" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144 italic text-sm" data-cat-sort="1">
     <div class="dynCadre">
         <p>{{ .Params.executive }}</p>
     </div>
 </div>
 {{ end }}
 {{ if .Params.tablecontent }}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="1">
     <div class="dynCadre" id="toc">
         <h2>{{ i18n "tableOfContent"}}</h2>
         <div class="tablecontent"></div>
@@ -106,7 +106,7 @@
 </div>
 {{ end }}
 {{ if .Params.lectures}}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="1">
     <div class="dynCadre">
         {{ partial "slash.html" (dict "txt" (i18n "lectures")) }}<br />
         {{ $cod := .Params.code }}
@@ -208,19 +208,19 @@
 </div>
 {{ end }}
 {{ if .Params.updating }}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="2">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="2">
     <div class="dynCadre bg-epierrot ">
         <p class="italic font-bold text-primary-bg text-lg">Currently updating</p>
     </div>
 </div>
 {{ end }}
 {{ if .Params.citation }}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="2">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="2">
     <div class="dynCadre">{{ partial "citation.html" . }}</div>
 </div>
 {{ end }}
 {{ if .Params.encapsulation }}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="1">
     <div class="dynCadre">
         {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
         {{ range .Params.encapsulation }}
@@ -234,7 +234,7 @@
 {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
 {{ end }}
 {{ if or .Params.place .Params.visio }}
-<div class="pack-item w-full md:max-w-96" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="1">
     <div class="dynCadre">
         {{ partial "slash.html" (dict "txt" (i18n "venue")) }}<br />
         <p>{{ dateFormat "02 January 2006" .Date }} - {{ dateFormat "15h04" .Date }}</p>

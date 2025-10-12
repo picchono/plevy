@@ -44,11 +44,8 @@
 {{ $splide_css := $splide_css | minify }}
 <link rel="stylesheet" href="{{ $splide_css.Permalink }}" media="all">
 
-{{ $roundo_css := resources.Get "css/roundo.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $roundo_css := $roundo_css | minify }}
-<link rel="stylesheet" href="{{ $roundo_css.Permalink }}" media="all">
-
-
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=montserrat:400,400i,600,600i" rel="stylesheet" />
 
 {{ partial "opengraph.html" . }}
 {{ partial "x_cards.html" . }}

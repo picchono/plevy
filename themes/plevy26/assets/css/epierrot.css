@@ -161,7 +161,7 @@ html {
 
 html.light {
   --color-primary-bg: rgb(240, 242, 244);
-  --color-secondary-bg: rgb(231, 234, 236);
+  --color-secondary-bg: #e9e5a6;
   --color-tertiary-bg: #d3d3d3;
   --color-pageborder-bg: #ffffff;
   --color-primary-text: #292929;
@@ -541,7 +541,7 @@ section#splideArchive {
 
 .duotone::before {
   @apply block w-full h-full absolute top-0 left-0 rounded-md;
-  background-color: #e9e5a6;
+  background-color: var(--color-secondary-bg);
   content: '';
   mix-blend-mode: darken;
 }
@@ -689,8 +689,7 @@ a.boxIso:hover {
 
 a.doclinkButton,
 a.linkBox {
-  @apply relative flex flex-row justify-center w-full rounded md:max-w-96 px-10 transition-colors duration-700 ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px;
+  @apply relative flex flex-row justify-center w-auto rounded md:max-w-80 py-2 ml-5 my-2 border-l-4 border-epierrot transition-colors duration-700 ease-in-out;
 }
 
 a.linkBox {
@@ -1801,8 +1800,6 @@ div.highlight pre {
 }
 
 /* linkBox */
-
-
 .linkBox .titleLink {
   @apply font-bold leading-tight px-3 py-2;
 }

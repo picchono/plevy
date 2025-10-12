@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Roundo', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'],
+      'sans': ['Montserrat', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'],
       'mono': ['SFMono-Regular', 'Menlo'],
     },
     fontWeight: {
