@@ -1,19 +1,17 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
-<div class='menuBox w-full sm:w-1/2 lg:w-1/3 py-5 sm:py-4 lg:p-8 {{ .context.Section  }} {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
+<div class='menuBox h-full max-w-154 w-full md:p-5 {{ .context.Section  }} {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
     data-date="{{ .context.Date }}" {{if eq .context.Params.front 1 }} data-front="1" {{ else }} data-front="0" {{ end
     }} data-section="{{ .context.Section  }}">{{if .dynC }}<div class="dynCadre">{{ end }}
-        <a class="boxIso flex-row lg:p-2{{ if .context.Section}} {{ .context.Section }}{{ end }}"
+        <a class="boxIso max-h-60 max-w-144 flex-row border-l-4 border-epierrot{{ if .context.Section}} {{ .context.Section }}{{ end }}"
             href="{{ .context.Permalink }}">
-            <span class="flex flex-row">
-                <span class="headUpDescription">{{ .context.Params.description }}</span>
-                <span class="w-1/2 flex flex-col justify-between">
-                    <span class="w-full h-1/2 overflow-hidden"><img class="object-cover w-full h-full rounded-t-md"
-                            src="{{ .context.Params.frontphotomini }}"></span>
-                    <span class="flex flex-col h-1/2 justify-between py-3 bg-epierrot text-primary-bg rounded-b-md">
-                        <span class='boxTitle px-2'>{{- .context.Title
-                            |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end
-                            }}</span>
+            <span class="headUpText">
+                <span class="flex flex-col h-full justify-between pt-3">
+                    <span class='boxTitle px-2'>{{- .context.Title
+                        |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end
+                        }}</span>
+                    <span class="headUpDescription">{{ .context.Params.description }}</span>
+                    <span class="flex flex-col">
                         <span class="boxElts px-2">{{ if eq .context.Section "publications" }}
                             {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
                             {{ if .context.Params.shortBook }}{{ .context.Params.shortBook }}{{ end }}
@@ -71,8 +69,9 @@
                         </span>
                     </span>
                 </span>
-
             </span>
+            {{ $Img := print .context.Params.frontphotomini }}
+            <span class="headUpImg"><span class="duotone" style="background-image: url('{{ $Img | safeURL }}');"></span></span>
         </a>
         {{if .dynC }}
     </div>{{ end }}</div>
