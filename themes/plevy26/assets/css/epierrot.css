@@ -166,7 +166,7 @@ html.light {
   --color-pageborder-bg: #ffffff;
   --color-primary-text: #292929;
   --color-secondary-text: #675d5d;
-  --color-epierrot: #b85657;
+  --color-epierrot: #ED6763;
   --color-borders: #1c1c1c;
 }
 
@@ -177,7 +177,7 @@ html.dark {
   --color-pageborder-bg: #1f1f1f;
   --color-primary-text: #e1e1e1;
   --color-secondary-text: #e1e1e1;
-  --color-epierrot: #46cbbc;
+  --color-epierrot: #5D9986;
   --color-borders: #fafafa;
 }
 
@@ -323,8 +323,7 @@ div#entete {
   height: var(--entete-height);
   padding: 0 var(--pageBorder-round);
   border-bottom-right-radius: var(--pageBorder-round);
-  background: var(--color-primary-bg);
-  background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-primary-bg) 30%, rgba(255, 255, 255, 0) 100%);
+  background: transparent;
   top: var(--pageBorder-width);
 }
 
@@ -542,7 +541,7 @@ section#splideArchive {
 
 .duotone::before {
   @apply block w-full h-full absolute top-0 left-0 rounded-md;
-  background-color: #dfa856;
+  background-color: #e9e5a6;
   content: '';
   mix-blend-mode: darken;
 }
