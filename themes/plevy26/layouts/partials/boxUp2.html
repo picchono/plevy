@@ -1,6 +1,6 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
 {{ $Img := print .context.Params.frontphotomini }}
-<div class='menuBox h-full max-w-154 w-full md:p-5 {{ .context.Section  }} {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
+<div class='menuBox h-full max-w-154 w-full p-2 pb-0 md:p-5 {{ .context.Section  }} {{- if eq .context.Params.Subsection "ended" }} ended{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
     data-date="{{ .context.Date }}" {{if eq .context.Params.front 1 }} data-front="1" {{ else }} data-front="0" {{ end
     }} data-section="{{ .context.Section  }}">{{if .dynC }}<div class="dynCadre">{{ end }}

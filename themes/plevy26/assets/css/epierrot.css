@@ -500,7 +500,7 @@ section#splideArchive {
 }
 /* headUp2 */
 #headUp2 {
-  @apply flex flex-col justify-between items-center;
+  @apply flex flex-col justify-between items-center py-5 md:py-0;
   min-height: calc(100vh - var(--entete-height) - (2 * var(--pageBorder-width)));
   width: calc(100vw - 2 * var(--pageBorder-width));
 }
