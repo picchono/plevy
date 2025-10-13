@@ -161,23 +161,23 @@ html {
 
 html.light {
   --color-primary-bg: rgb(240, 242, 244);
-  --color-secondary-bg: #ede78d;
+  --color-secondary-bg: #B4D6CD; /* C2DEDC 9CC1C2 FBE4B3 */
   --color-tertiary-bg: #e0e0e0;
   --color-pageborder-bg: #ffffff;
   --color-primary-text: #292929;
   --color-secondary-text: #675d5d;
-  --color-epierrot: #ED6763;
+  --color-epierrot: #B8001F;  /* 116A7B 344672 ED6763*/
   --color-borders: #1c1c1c;
 }
 
 html.dark {
   --color-primary-bg: #292929;
-  --color-secondary-bg: #6c868d;
+  --color-secondary-bg: #658489; /* 6c868d */
   --color-tertiary-bg: #555555;
   --color-pageborder-bg: #1f1f1f;
   --color-primary-text: #e1e1e1;
   --color-secondary-text: #e1e1e1;
-  --color-epierrot: #2CCBCB;
+  --color-epierrot: #B8001F; /* 2CCBCB */
   --color-borders: #fafafa;
 }
 
@@ -347,13 +347,17 @@ div#headUp {
 }
 
 .headUpText {
-  @apply absolute top-0 right-2 z-10 flex flex-col w-5/6 h-full overflow-y-auto;
+  @apply flex flex-col w-1/2 h-full bg-secondary-bg rounded-r-lg overflow-y-auto transition-all duration-500 ease-in-out;
   scrollbar-width: none; /* Hides scrollbar in Firefox */
   -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
 }
 
 .headUpText::-webkit-scrollbar {
   display: none; /* Hides scrollbar in WebKit browsers (Chrome, Safari, Opera) */
+}
+
+.boxIso:hover .headUpText {
+  @apply p-2 pl-0;
 }
 
 .headUpDescription {
@@ -426,51 +430,6 @@ section#splideArchive {
   z-index: 100;
 }
 
-/* splide2 */
-#splideHeadUp.splide {
-  @apply px-10 h-full;
-  width: calc(100vw - 2 * var(--pageBorder-width));
-}
-
-#splideHeadUp .splide__track {
-  @apply h-full;
-}
-
-#splideHeadUp .splide__slide {
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-@media only screen and (max-width: 512px) {
-  #splideHeadUp .splide__slide {
-    padding: 2rem 0;
-  }
-}
-
-#splideHeadUp div.menuBox {
-  @apply rounded-sm flex flex-row flex-wrap justify-center items-center md:p-8;
-}
-
-#splideHeadUp .splide_title {
-  @apply text-xl font-bold mb-8;
-}
-
-#splideHeadUp .splide__slide::-webkit-scrollbar {
-  display: none;
-}
-
-#splideHeadUp ul.splide__pagination {
-  position: absolute !important;
-}
-
-#splideHeadUp .splide__pagination__page.is-active {
-  background-color: var(--color-epierrot) !important;
-  z-index: 100;
-}
-
 /* all splide */
 
 .splide__arrow {
@@ -516,23 +475,21 @@ section#splideArchive {
 }
 
 #headUp2 a.boxIso {
-  @apply w-full text-right transition-all duration-500 ease-in-out md:p-2;
-  background-color: var(--color-pageborder-bg);
+  @apply w-full text-right transition-all duration-500 ease-in-out bg-secondary-bg p-2;
   aspect-ratio: 1.33;
 }
 
+#headUp2 a.boxIso .boxTitle, 
+#headUp2 a.boxIso .headUpDescription, 
+#headUp2 a.boxIso .boxElts, 
+#headUp2 a.boxIso .boxInfo div {
+  @apply text-primary-text transition-all duration-500 ease-in-out;
+}
+
 #headUp2 a.boxIso:hover {
-  @apply shadow-xl;
+  @apply shadow-xl p-0;
   background-color: var(--color-pageborder-bg);
 }
-
-#headUp2 a.boxIso:hover .boxTitle, 
-#headUp2 a.boxIso:hover .headUpDescription, 
-#headUp2 a.boxIso:hover .boxElts, 
-#headUp2 a.boxIso:hover .boxInfo div {
-  @apply text-primary-bg transition-all duration-500 ease-in-out;
-}
-
 
 #headUp2 #archive-btn {
   @apply text-xl font-bold text-center py-4 cursor-pointer;
@@ -544,30 +501,30 @@ section#splideArchive {
 }
 
 .duotone {
-  @apply absolute z-0 top-0 left-0 inline-block w-full h-full rounded-xl transition-all duration-500 ease-in-out;
+  @apply inline-block relative w-1/2 md:w-3/4 lg:w-full h-full rounded-lg bg-secondary-bg transition-all duration-500 ease-in-out;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
 }
 
 .duotone::before {
-  @apply block w-full h-full absolute top-0 left-0 rounded-xl;
+  @apply block w-full h-full absolute top-0 left-0 rounded-lg transition-all duration-500 ease-in-out;
   background-color: var(--color-secondary-bg);
   content: '';
   mix-blend-mode: darken;
 }
 
 .duotone::after {
-  @apply block w-full h-full absolute top-0 left-0 rounded-xl;
+  @apply block w-full h-full absolute top-0 left-0 rounded-lg transition-all duration-500 ease-in-out;
   background-color: var(--color-epierrot);
   content: '';
   mix-blend-mode: lighten;
 }
 
-#headUp2 a.boxIso:hover .duotone {
-  opacity: 1;
-  filter: brightness(0.5);
+a.boxIso:hover .duotone,
+a.boxIso:hover .duotone::before,
+a.boxIso:hover .duotone::after {
+  @apply rounded-r-none;
 }
 
 /* buttons */
@@ -661,6 +618,18 @@ a.floatImg::after {
   content: none !important;
 }
 
+#headUp2 .menuBox {
+  @apply h-full max-w-154 w-full;
+  padding: var(--pageBorder-width) var(--pageBorder-width) 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  #headUp2 .menuBox {
+    padding: var(--pageBorder-width);
+  }
+}
+
 div.menuBox {
   @apply py-8;
 }
@@ -672,11 +641,6 @@ a.boxIso {
 
 a.boxIso:hover {
   @apply text-epierrot bg-transparent;
-}
-
-#headUp a.boxIso {
-  @apply border border-epierrot border-solid px-5 w-full;
-  aspect-ratio: 1;
 }
 
 .boxElts {
@@ -696,7 +660,7 @@ a.boxIso:hover {
 
 .boxTitle {
   @apply text-lg text-primary-text font-bold transition-colors duration-700 ease-in-out overflow-visible py-2;
-  line-height: 1rem;
+  line-height: 1.1rem;
 }
 
 #headUp2 .boxTitle span {
