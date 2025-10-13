@@ -172,12 +172,12 @@ html.light {
 
 html.dark {
   --color-primary-bg: #292929;
-  --color-secondary-bg: #608b92; /* 6c868d */
+  --color-secondary-bg: #6EACDA; /* 6c868d */
   --color-tertiary-bg: #555555;
   --color-pageborder-bg: #1f1f1f;
   --color-primary-text: #e1e1e1;
   --color-secondary-text: #e1e1e1;
-  --color-epierrot: #CB2020; /* 2CCBCB */
+  --color-epierrot: #a926ba; /* 2CCBCB */
   --color-borders: #fafafa;
 }
 
