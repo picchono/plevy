@@ -235,7 +235,7 @@ function toggleTheme() {
 
 //Splide
 function setSplide() {
-    new Splide('#splideArchive', {
+  new Splide('#splideArchive', {
     perPage: 1,
     speed: 500,
     keyboard: true,
@@ -263,21 +263,42 @@ function setSplide() {
     }
   }).mount();
 
-  
+
 };
 
-document.getElementById('archive-btn').addEventListener('click', function (event) { 
-  window.scrollTo(0, document.body.scrollHeight);  
+document.getElementById('archive-btn').addEventListener('click', function (event) {
+  window.scrollTo(0, document.body.scrollHeight);
 });
 
 
 document.addEventListener("scrollend", (event) => {
-    
+
 });
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  new PagefindUI({ element: "#search", showSubResults: true });
+
+  const searchTrigger = document.querySelector(".nav-link-search");
+  const modal = document.getElementById("searchmodal");
+  searchTrigger.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    // Show modal using Micromodal or similar
+    MicroModal.show("searchmodal", {
+      onClose: () => {
+        // Optional: blur other elements
+      },
+      disableFocus: true
+    });
+    // Focus the search input
+    document.querySelector(".pagefind-ui__search-input").focus();
+  });
+});   
+
 
 window.addEventListener('load', function (event) {
   externalLinks();
   setSplide();
+  MicroModal.init();
   if (document.getElementById("toc")) tableContent();
   if (document.querySelector("pre")) AddCopyButtons();
 });

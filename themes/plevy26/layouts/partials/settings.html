@@ -16,16 +16,19 @@
                         </label>
                         <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
                 </div>
-                {{ if .IsHome }}
-                <div class="searchlaunch">
-                        <label id="searchl" class="searchl cursor-pointer">
-                                <input type="checkbox" onchange="openSearch()" id="searchButton">
-                                <span class="searchButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 16 16' class="searchSvg">
-                                                <path
-                                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                        </svg></span>
-                        </label>
+                <div id="" class="nav-link-search cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mt-2" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
                 </div>
-                {{ end }}
+        </div>
+</div>
+<div id="searchmodal" aria-hidden="true">
+        <div tabindex="-1" data-micromodal-close>
+                <div role="dialog" aria-modal="true" aria-labelledby="searchmodal-title">
+                        <div id="searchmodal-content">
+                                <div id="search"></div>
+                        </div>
+                </div>
         </div>
 </div>

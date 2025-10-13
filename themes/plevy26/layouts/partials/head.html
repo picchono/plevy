@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-<title>{{if eq .Params.Title .Site.Title }}{{- .Params.Title -}}{{ else }}{{- .Params.Title }} | {{ .Site.Title -}}{{ end }}</title>
+<title>{{if eq .Params.Title .Site.Title }}{{- .Params.Title -}}{{ else }}{{- .Params.Title }} | {{ .Site.Title -}}{{
+    end }}</title>
 {{ with .Site.Params.icon }}
 <link rel="icon" type="image/png" sizes="32x32" href='{{ (partial "get_icon" (dict "icon" . "size" 32)).Permalink }}'>
 <link rel="apple-touch-icon" sizes="180x180" href='{{ (partial "get_icon" (dict "icon" . "size" 180)).Permalink }}'>
@@ -50,7 +51,8 @@
 {{ partial "opengraph.html" . }}
 {{ partial "x_cards.html" . }}
 {{ range .AlternativeOutputFormats -}}
-{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ printf `
+<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
 {{if ne .Params.layout "prez"}}
@@ -68,6 +70,12 @@
 
 {{ $splide_js := resources.Get "js/splide.js" | minify }}
 <script defer src="{{ $splide_js.Permalink }}"></script>
+
+{{ $micromodal_js := resources.Get "js/micromodal.js" | minify }}
+<script defer src="{{ $micromodal_js.Permalink }}"></script>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
 
 {{ if .Params.citation }}{{ partial "citationmeta.html" . }}{{ end }}
 

@@ -157,32 +157,53 @@ html {
   --color-secondary-text: transparent;
   --color-epierrot: transparent;
   --color-borders: transparent;
+
+  --pagefind-ui-scale: 0.8 !important;
+  --pagefind-ui-text: var(--color-primary-text) !important;
+  --pagefind-ui-background: var(--color-primary-bg) !important;
+  --pagefind-ui-border-width: 0 !important;
+  --pagefind-ui-border-radius: 1rem !important;
+  --pagefind-ui-image-border-radius: 1rem !important;
+  --pagefind-ui-image-box-ratio: 3 / 2 !important;
+  --pagefind-ui-font: 'Montserrat', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif';
 }
 
 html.light {
   --color-primary-bg: rgb(240, 242, 244);
-  --color-secondary-bg: var(--color-pageborder-bg); /* C2DEDC 9CC1C2 FBE4B3 */
+  --color-secondary-bg: var(--color-pageborder-bg);
+  /* C2DEDC 9CC1C2 FBE4B3 */
   --color-tertiary-bg: #e0e0e0;
   --color-pageborder-bg: #ffffff;
   --color-primary-text: #292929;
   --color-secondary-text: #675d5d;
-  --color-epierrot: #B8001F;  /* 116A7B 344672 ED6763*/
+  --color-epierrot: #B8001F;
+  /* 116A7B 344672 ED6763*/
   --color-borders: #1c1c1c;
   --blend-mode-before: darken;
   --blend-mode-after: lighten;
+
+  --pagefind-ui-primary: #034ad8 !important;
+  --pagefind-ui-border: #eeeeee !important;
+  --pagefind-ui-tag: #eeeeee !important;
 }
 
 html.dark {
   --color-primary-bg: #292929;
-  --color-secondary-bg: var(--color-pageborder-bg); /* 6c868d */
+  --color-secondary-bg: var(--color-pageborder-bg);
+  /* 6c868d */
   --color-tertiary-bg: #555555;
   --color-pageborder-bg: #1f1f1f;
   --color-primary-text: #e1e1e1;
   --color-secondary-text: #e1e1e1;
-  --color-epierrot: #F7D94C; /* 2CCBCB */
+  --color-epierrot: #F7D94C;
+  /* 2CCBCB */
   --color-borders: #fafafa;
   --blend-mode-before: lighten;
   --blend-mode-after: multiply;
+
+  --pagefind-ui-primary: #eeeeee !important;
+  --pagefind-ui-border: #152028 !important;
+  --pagefind-ui-tag: #152028 !important;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -352,12 +373,15 @@ div#headUp {
 
 .headUpText {
   @apply flex flex-col w-1/2 h-full bg-secondary-bg rounded-r-lg overflow-y-auto transition-all duration-500 ease-in-out;
-  scrollbar-width: none; /* Hides scrollbar in Firefox */
-  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none;
+  /* Hides scrollbar in Internet Explorer and Edge */
 }
 
 .headUpText::-webkit-scrollbar {
-  display: none; /* Hides scrollbar in WebKit browsers (Chrome, Safari, Opera) */
+  display: none;
+  /* Hides scrollbar in WebKit browsers (Chrome, Safari, Opera) */
 }
 
 .boxIso:hover .headUpText {
@@ -444,7 +468,8 @@ section#splideArchive {
   fill: var(--color-epierrot) !important;
 }
 
-.splide.is-focus-in, .splide__arrow:focus {
+.splide.is-focus-in,
+.splide__arrow:focus {
   outline: 0px solid transparent !important;
 }
 
@@ -461,12 +486,14 @@ section#splideArchive {
 .splide__arrow--prev {
   left: 0rem !important;
 }
+
 /* headUp2 */
 #headUp2 {
   @apply flex flex-col justify-between items-center py-5 md:py-0;
   min-height: calc(100vh - var(--entete-height) - (2 * var(--pageBorder-width)));
   width: calc(100vw - 2 * var(--pageBorder-width));
 }
+
 #headUp2 .headUp_blocks {
   @apply flex flex-col flex-nowrap sm:flex-row sm:flex-wrap justify-around w-full;
   min-height: calc(100% - 2rem);
@@ -483,9 +510,9 @@ section#splideArchive {
   aspect-ratio: 1.33;
 }
 
-#headUp2 a.boxIso .boxTitle, 
-#headUp2 a.boxIso .headUpDescription, 
-#headUp2 a.boxIso .boxElts, 
+#headUp2 a.boxIso .boxTitle,
+#headUp2 a.boxIso .headUpDescription,
+#headUp2 a.boxIso .boxElts,
 #headUp2 a.boxIso .boxInfo div {
   @apply text-primary-text transition-all duration-500 ease-in-out;
 }
@@ -3176,4 +3203,32 @@ button.splide__arrow {
 .closingSvg {
   @apply h-6 w-6;
   fill: var(--color-primary-text);
+}
+
+/* Pagefind search */
+
+
+/* modal */
+
+#searchmodal {
+  @apply fixed z-50 rounded-lg p-2 md:p-5 transition-all duration-700 ease-in-out;
+  display: none;
+  background-color: var(--color-pageborder-bg);
+  top: var(--pageBorder-width);
+  left: var(--pageBorder-width);
+  width: calc(100vw - 2 * var(--pageBorder-width));
+  height: calc(100vh - 2 * var(--pageBorder-width));
+}
+
+@media screen and (min-width: 768px) {
+  #searchmodal {
+    top: calc(2 * var(--pageBorder-width));
+    left: calc(2 * var(--pageBorder-width));
+    width: calc(100vw - 4 * var(--pageBorder-width));
+    height: calc(100vh - 4 * var(--pageBorder-width));
+  }
+}
+
+#searchmodal.is-open {
+  display: block;
 }
