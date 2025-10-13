@@ -161,24 +161,28 @@ html {
 
 html.light {
   --color-primary-bg: rgb(240, 242, 244);
-  --color-secondary-bg: #B4D6CD; /* C2DEDC 9CC1C2 FBE4B3 */
+  --color-secondary-bg: var(--color-pageborder-bg); /* C2DEDC 9CC1C2 FBE4B3 */
   --color-tertiary-bg: #e0e0e0;
   --color-pageborder-bg: #ffffff;
   --color-primary-text: #292929;
   --color-secondary-text: #675d5d;
   --color-epierrot: #B8001F;  /* 116A7B 344672 ED6763*/
   --color-borders: #1c1c1c;
+  --blend-mode-before: darken;
+  --blend-mode-after: lighten;
 }
 
 html.dark {
   --color-primary-bg: #292929;
-  --color-secondary-bg: #6EACDA; /* 6c868d */
+  --color-secondary-bg: var(--color-pageborder-bg); /* 6c868d */
   --color-tertiary-bg: #555555;
   --color-pageborder-bg: #1f1f1f;
   --color-primary-text: #e1e1e1;
   --color-secondary-text: #e1e1e1;
-  --color-epierrot: #a926ba; /* 2CCBCB */
+  --color-epierrot: #61C9E9; /* 2CCBCB */
   --color-borders: #fafafa;
+  --blend-mode-before: lighten;
+  --blend-mode-after: multiply;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -511,14 +515,14 @@ section#splideArchive {
   @apply block w-full h-full absolute top-0 left-0 rounded-lg transition-all duration-500 ease-in-out;
   background-color: var(--color-secondary-bg);
   content: '';
-  mix-blend-mode: darken;
+  mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
   @apply block w-full h-full absolute top-0 left-0 rounded-lg transition-all duration-500 ease-in-out;
   background-color: var(--color-epierrot);
   content: '';
-  mix-blend-mode: lighten;
+  mix-blend-mode: var(--blend-mode-after);
 }
 
 a.boxIso:hover .duotone,
