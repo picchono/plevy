@@ -3208,9 +3208,19 @@ button.splide__arrow {
 /* Pagefind search */
 .pagefind-ui__results-area, .pagefind-ui__filter-panel {
   overflow-y: auto;
-  height: calc(100vh - 2.5rem - (84px * var(--pagefind-ui-scale)) - 4 * var(--pageBorder-width));
+  height: auto;
 }
 
+.pagefind-ui__drawer {
+  overflow-y: auto;
+  height: calc(100vh - 2.5rem - (84px * var(--pagefind-ui-scale)) - 2 * var(--pageBorder-width));
+}
+
+@media screen and (min-width: 628px) {
+  .pagefind-ui, .pagefind-ui__results-area, .pagefind-ui__filter-panel {
+  height: calc(100vh - 2.5rem - (84px * var(--pagefind-ui-scale)) - 4 * var(--pageBorder-width));
+  }
+}
 /* modal */
 
 #searchmodal {
@@ -3223,7 +3233,7 @@ button.splide__arrow {
   height: calc(100vh - 2 * var(--pageBorder-width));
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 628px) {
   #searchmodal {
     top: calc(2 * var(--pageBorder-width));
     left: calc(2 * var(--pageBorder-width));
