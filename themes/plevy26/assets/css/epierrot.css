@@ -3206,7 +3206,10 @@ button.splide__arrow {
 }
 
 /* Pagefind search */
-
+.pagefind-ui__results-area, .pagefind-ui__filter-panel {
+  overflow-y: auto;
+  height: calc(100vh - 2.5rem - (84px * var(--pagefind-ui-scale)) - 4 * var(--pageBorder-width));
+}
 
 /* modal */
 

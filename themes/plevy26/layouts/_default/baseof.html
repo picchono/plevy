@@ -4,7 +4,7 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}">
-  <main>
+  <main data-pagefind-body>
     {{ partial "title.html" . }}
     {{ if not .IsHome }}<div class="max-w-4xl mx-auto mb-20">
       {{ partial "medium.html" . }}

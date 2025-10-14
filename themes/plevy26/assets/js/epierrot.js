@@ -276,7 +276,15 @@ document.addEventListener("scrollend", (event) => {
 });
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  new PagefindUI({ element: "#search", showSubResults: true });
+  new PagefindUI({ 
+    element: "#search", 
+    showSubResults: true,
+    showImages: true,
+    showEmptyFilters: false,
+    resetStyles: false,
+    debounceTimeoutMs: 0,
+    autofocus: true
+  });
 
   const searchTrigger = document.querySelector(".nav-link-search");
   const modal = document.getElementById("searchmodal");
@@ -287,18 +295,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
       onClose: () => {
         // Optional: blur other elements
       },
-      disableFocus: true
+      disableFocus: false,
+      disableScroll: true,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true,
+      showEmptyFilters: false
     });
     // Focus the search input
     document.querySelector(".pagefind-ui__search-input").focus();
   });
-});   
+});
 
 
 window.addEventListener('load', function (event) {
   externalLinks();
   setSplide();
-  MicroModal.init();
+  MicroModal.init({});
   if (document.getElementById("toc")) tableContent();
   if (document.querySelector("pre")) AddCopyButtons();
 });

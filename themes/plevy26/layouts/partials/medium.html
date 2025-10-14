@@ -3,19 +3,19 @@
         <h1 class="text-4xl font-bold m-0">{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}}
             ({{- i18n "ended" -}}){{ end }}</h1>
         {{ if .Params.authors }}
-        <p class="italic">{{ .Params.authors }},
+        <p class="italic" data-pagefind-weight="6">{{ .Params.authors }},
             {{ dateFormat "02 Jan 2006" .Date }}</p>
         {{ end }}
         {{ if .Params.prezfor }}
-        <p class="italic">{{- i18n "by" }}
+        <p class="italic" data-pagefind-weight="6">{{- i18n "by" }}
             {{ $len := len .Params.intervenants}}
             {{ $count := 0 }}
             {{ range .Params.intervenants }}
-            {{ .name }}
+            <span data-pagefind-filter="author">{{ .name }}</span>
             {{ $count = add $count 1 }}
             {{ if ne $count $len -}}, {{ end }}
             {{ end }}
-            {{ i18n "for" }} {{ .Params.prezfor }}, {{ dateFormat "02 Jan 2006 - 15h04" .Date }}</p>
+            {{ i18n "for" }} <span data-pagefind-filter="institution">{{ .Params.prezfor }}</span>, {{ dateFormat "02 Jan 2006 - 15h04" .Date }}</p>
         {{ end }}
     </div>
     {{ if .Params.diploma}}
@@ -29,7 +29,7 @@
     {{ if .Params.collaboration }}
     <div class="flex flex-row flex-wrap items-center">
         {{ range sort .Params.collaboration }}
-        <a href="{{ .web }}" target="_blank" class="collab">
+        <a href="{{ .web }}" target="_blank" class="collab"  data-pagefind-weight="4">
             {{ if .colo }}
             {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6 mr-10") -}}
             {{else}}
@@ -40,7 +40,7 @@
     </div>
     {{ else if .Params.institution }}
     <div class="flex flex-wrap items-center">
-        <a href="{{ .Params.institution.web }}" target="_blank" class="collab">
+        <a href="{{ .Params.institution.web }}" target="_blank" class="collab"  data-pagefind-weight="3">
             {{ if .Params.institution.colo }}
             {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig
             "colo"
@@ -85,8 +85,8 @@
 {{ if .Params.tablecontent }}
 <div class="pack-item w-full md:max-w-144" data-cat-sort="1">
     <div class="dynCadre" id="toc">
-        <h2>{{ i18n "tableOfContent"}}</h2>
-        <div class="tablecontent"></div>
+        <h2 data-pagefind-weight="0.5">{{ i18n "tableOfContent"}}</h2>
+        <div class="tablecontent" data-pagefind-weight="0.5"></div>
     </div>
 </div>
 {{ end }}
@@ -97,7 +97,7 @@
 {{ partial "video.html" . }}
 {{ end }}
 {{ if .Params.calendar }}
-<div class="pack-item w-full" data-cat-sort="3">
+<div class="pack-item w-full" data-cat-sort="0.5">
     <div class="dynCadre">{{ partial "slash.html" (dict "txt" (i18n "calendar")) }}<br />
         {{ range .Params.calendar }}
         <div class="listoutside pb-3">{{ . | safeHTML }}</div>
@@ -106,7 +106,7 @@
 </div>
 {{ end }}
 {{ if .Params.lectures}}
-<div class="pack-item w-full md:max-w-144" data-cat-sort="1">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="3">
     <div class="dynCadre">
         {{ partial "slash.html" (dict "txt" (i18n "lectures")) }}<br />
         {{ $cod := .Params.code }}
@@ -178,15 +178,15 @@
 {{ end }}
 {{ end }}
 {{ if .Params.intervenants }}{{ range .Params.intervenants }}
-<div class="pack-item w-full md:min-w-96 md:max-w-192" data-cat-sort="2">
+<div class="pack-item w-full md:min-w-96 md:max-w-192">
     <div class="dynCadre flex flex-col">
         <div class="flex flex-col md:flex-row">
             <div class="place-self-center h-74 w-auto md:w-74 photoItem" data-src="{{ .photo }}" aria-label="See image">
-                <img loading="lazy" src="{{ .photo }}" alt="{{ .photo }}"
-                    class="rounded object-cover h-74 w-auto md:w-74">
+                <img loading="lazy" src="{{ .photo }}" alt="{{ .photo }}" title="{{ .name }}"
+                    class="rounded object-cover h-74 w-auto md:w-74" data-pagefind-index-attrs="title,alt">
             </div>
             <div class="py-6 md:py-0 md:pl-6">
-                <div class="text-3xl font-bold mt-4">{{ .name }}</div>
+                <div class="text-3xl font-bold mt-4" data-cat-sort="6">{{ .name }}</div>
                 <div><i>{{ i18n "speaker" }}</i></div>
                 <a href="{{ .link }}" class="affiliationLogo">{{ partial "icons.html" (dict "ico" .logo "hei" .height)
                     -}}</a>
@@ -215,7 +215,7 @@
 </div>
 {{ end }}
 {{ if .Params.citation }}
-<div class="pack-item w-full md:max-w-144" data-cat-sort="2">
+<div class="pack-item w-full md:max-w-144" data-cat-sort="4">
     <div class="dynCadre">{{ partial "citation.html" . }}</div>
 </div>
 {{ end }}

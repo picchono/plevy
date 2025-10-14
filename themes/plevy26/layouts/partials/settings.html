@@ -1,4 +1,4 @@
-<div class="flex flex-col w-auto h-auto">
+<div class="flex flex-col w-auto h-auto" data-pagefind-ignore>
         {{ if .IsTranslated }}
         <div id="languageMode" class='text-sm mt-3 md:mt-0'>
                 <b class="relative bg-transparent text-epierrot inline-block mr-2">{{ .Language.LanguageName }}</b>
@@ -23,7 +23,7 @@
                 </div>
         </div>
 </div>
-<div id="searchmodal" aria-hidden="true">
+<div id="searchmodal" aria-hidden="true" data-pagefind-ignore>
         <div tabindex="-1" data-micromodal-close>
                 <div role="dialog" aria-modal="true" aria-labelledby="searchmodal-title">
                         <div id="searchmodal-content">

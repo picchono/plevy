@@ -5,11 +5,11 @@
     {{ $ord := 1 }}
     {{ range $auth }}
         {{- if ne $ord 1 -}}{{- if eq $ord $lea }} & {{- else -}}, {{- end -}}{{- end }}
-        {{ index . 0 -}}, {{ index . 2 -}}
+        <span data-pagefind-filter="author[content]" content="{{- index . 0 }} {{ index . 1 -}}">{{ index . 0 -}}, {{ index . 2 -}}</span>
         {{- $ord = add $ord 1 -}}
     {{ end }}
-    {{ if .year }}({{ .year -}}).{{- end -}}
-    {{ if .title }} {{ .title -}}{{ if .technical_report_number}} ({{- .technical_report_number -}}){{- end -}}.{{- end -}}
+    {{ if .year }}(<span data-pagefind-filter="year">{{ .year -}}</span>).{{- end -}}
+    {{ if .title }} <span data-pagefind-filter="title">{{ .title -}}</span>{{ if .technical_report_number}} ({{- .technical_report_number -}}){{- end -}}.{{- end -}}
 {{ end }}
 {{ if .editors }}
     {{ $edito := .editors }}
@@ -31,13 +31,13 @@
     {{ end }}
 {{ end }}
 {{ if .journal}}
-    {{- .journal -}}
+    <span data-pagefind-filter="journal">{{- .journal -}}</span>
     {{ if eq $.Params.publitype "edition" }}{{- if .title }}: {{ .title -}}{{- end -}}{{- end -}}
     {{- if .number -}}. {{ .number }}{{ if .volume}}({{ .volume }}){{ end -}}{{ end }}
     {{- if .pages -}}, {{ if eq .pages "online" }}online{{ else }}{{ .pages }}{{ end }}{{- end -}}.
 {{ end }}
 {{ if .proceedings }}
-    {{ if .editors }}{{ else }}In {{ end }}{{ .proceedings }}
+    {{ if .editors }}{{ else }}In {{ end }}<span data-pagefind-filter="proceedings">{{ .proceedings }}</span>
     {{- if .number -}}, {{ .number }}{{ if .volume}}({{ .volume }}){{ end -}} {{ end }}
     {{ if .firstpage }}({{ if eq .firstpage "CD" }}[on CD]{{ else if eq .firstpage "online" }}online{{ else }}pp. {{ .firstpage }}-{{ .lastpage }}{{ end }}).{{- end }}
 {{ end }}
