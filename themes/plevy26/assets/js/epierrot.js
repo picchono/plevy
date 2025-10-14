@@ -297,8 +297,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
       },
       disableFocus: false,
       disableScroll: true,
-      awaitOpenAnimation: true,
-      awaitCloseAnimation: true,
       showEmptyFilters: false
     });
     // Focus the search input
