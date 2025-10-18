@@ -1,7 +1,7 @@
 ---
 slug: USMC85-Dialoguing
 title: "USMC85 · Dialoguing"
-layout: course
+layout: single
 searchFilter: Teaching
 institution:
     heig: 1

@@ -1,0 +1,25 @@
+{{ if .Params.redirect }}
+<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="{{ .Params.bodyclass }}">
+  <main data-pagefind-body>
+    {{ partial "title.html" . }}
+    <div class="flex flex-col lg:flex-row justify-between">
+      {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
+      {{- block "main" . }}{{- end }}
+    {{if not .IsHome }}</div>{{ end }}
+  </main>
+  <div class="bordTop"></div>
+  <div class="bordBottom"></div>
+  <div class="bordLeft"></div>
+  <div class="bordRight"></div>
+  <div class="bordCorner1"></div>
+  <div class="bordCorner2"></div>
+  <div class="bordCorner3"></div>
+  <div class="bordCorner4"></div>
+</body>
+
+</html>

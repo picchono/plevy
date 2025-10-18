@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="rightBlock newpad-y newpad-l">
+    <div class="rightBlockIn">
+        {{ if .Content}}<div id="content" data-cat-sort="101">
+            <div class="dynCadre">{{ .Content }}</div>
+        </div>{{ end }}
+        {{ with index .Site.Data.plevy .Site.Language.Lang }}
+        <div class="flex flex-row w-full border-b border-secondary-text">
+            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink"
+                rel="noreferrer" aria-label="{{ .icon }}" title="{{ .icon }}">{{- partial "icons.html" (dict "ico"
+                .icon
+                "hei" 0.8) -}}</a>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

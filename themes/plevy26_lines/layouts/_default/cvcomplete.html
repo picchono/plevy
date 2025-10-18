@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+{{- partial "head.html" . -}}
+
+<body id="cv" class="overflow-x-hidden lg:overflow-x-auto">
+   <main class="md:container lg:mx-auto bg-primary-bg lg:my-16 py-6 px-2 lg:p-14">
+      {{ with index .Site.Data.plevy .Site.Language.Lang }}
+      <h1 class="mb-30 mt-22">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
+      <div class="grid grid-cols-7 gap-x-6 mb-10">
+         <div><b>{{ i18n "name" }}</b></div>
+         <div class="col-span-2">{{ .identity.lastname }}</div>
+         {{ if .Params.allinfo}}<div><b>{{ i18n "nationality" }}</b></div>
+         <div class="col-span-2">{{ .identity.nationality }}</div>
+         <div>&nbsp;</div>
+         {{ else }}<div class="col-span-2">&nbsp;</div>
+         <div class="col-span-2">&nbsp;</div>{{ end }}
+         <div><b>{{ i18n "firstnames" }}</b></div>
+         <div class="col-span-2">{{ .identity.firstname }} {{ .identity.middlename }}</div>
+         {{ if .Params.allinfo}}<div><b>{{ i18n "birthdate" }}</b></div>
+         <div class="col-span-2">{{ .identity.birthdate }}</div>
+         {{ else }}<div class="col-span-2">&nbsp;</div>
+         <div class="col-span-2">&nbsp;</div>{{ end }}
+         {{ if .Params.allinfo}}<div class="col-span-7">&nbsp;</div>{{ end }}
+         {{ if .Params.allinfo}}<div><b>{{ i18n "phone" }}</b></div>
+         <div class="col-span-2">{{ .identity.tel }}</div>
+         <div class="">&nbsp;</div>{{ end }}
+         <div><b>{{ i18n "email" }}</b></div>
+         <div class="col-span-2">{{ .identity.proemail }}</div>
+         {{ if not .Params.allinfo }}<div class="col-span-2">&nbsp;</div><div class="col-span-2">&nbsp;</div>{{ end }}
+         <div><b>{{ i18n "web" }}</b></div>
+         <div class="col-span-2"><a href="{{ .identity.web.url }}" target="_blank" rel="noreferrer">{{ .identity.web.username }}</a></div>
+         {{ if .Params.allinfo }}<div class="">&nbsp;</div>{{ else }}
+         <div class="col-span-2">&nbsp;</div><div class="col-span-2">&nbsp;</div>{{ end }}
+         <div><b>{{ i18n "linkedin" }}</b></div>
+         <div class="col-span-2"><a href="{{ .identity.social.linkedin.url }}" target="_blank"
+               rel="noreferrer">{{ .identity.social.linkedin.username }}</a></div>
+         <div class="">&nbsp;</div>
+         <div class="col-span-7">&nbsp;</div>
+      </div>
+      <h2 id="current-situation">{{ i18n "current-situation" }}</h2>
+      {{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
+      <div class="grid grid-cols-7 gap-x-6 mb-0">
+         <div>{{ i18n "Since" }} {{ .start }}</div>
+         <div class="col-span-6 level1">
+            <b>{{ .title }}</b><br />{{ if isset . "institution" }}{{ .institution |safeHTML }}{{ if isset . "country" }},
+            {{ .country |safeHTML }}{{end }}{{ end }}
+            {{ if isset . "faculty" }}<br />{{ .faculty |safeHTML }}{{end }}
+            {{ if isset . "extra" }}<br />{{ .extra |safeHTML }}{{end }}</div>
+            {{ if isset . "associations" }}<div class="col-start-2 col-span-6 mb-4">{{ range sort .associations "order" "desc" }}
+               {{ .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }} {{ .start }}{{ else }}{{ if eq .start .end }}{{- .start -}}{{ else }}{{- .start }} - {{ .end -}}{{ end }}{{ end }}){{ if isset . "comment" }} <span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}<br>
+            {{ end }}</div>{{ end }}
+            {{ if isset . "activities" }}
+            <div class='col-start-2 col-span-6 {{ if not (isset . "projects") }}mb-10{{ end }}'>
+               {{ range sort .activities "order" "asc" }}
+               <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
+               {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}
+               {{ end }}
+            </div>
+            {{ end }}
+            {{ if isset . "projects" }}
+            <div class="col-start-2 col-span-6 mt-4 mb-10">
+               {{ range sort .projects "start" "desc" }}
+               <span class="petitTxt minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
+               {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                  class="comment petitTxt">{{ .comment |safeHTML }}</span>{{ end }}</span>
+               {{ end }}
+            </div>
+            {{ end }}
+      </div>
+      {{ end }}{{ end }}
+      <h2 id="pastPro">{{ i18n "pastPro" }}</h2>
+      <div class="mb-10">{{ range sort .pro "start" "desc" }}{{ if ne .end "none"}}
+         <div class="grid grid-cols-7 gap-x-6">
+            <div>{{ .start }} - {{ .end }}</div>
+            <div class="col-span-6 level2"><b>{{ .title }}</b>
+               {{ if isset . "institution" }} - {{ .institution |safeHTML }}{{ if isset . "country" }},
+               {{ .country |safeHTML }}{{end }}{{ end }}
+               <br />{{ .description |safeHTML }}</div>
+            {{ if isset . "associations" }}<div class="col-start-2 col-span-6 mb-4">{{ range sort .associations "start" "desc" }}
+               {{ .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}){{ if isset . "comment" }} <span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}<br>
+            {{ end }}</div>{{ end }}
+            {{ if isset . "activities" }}
+            <div class='col-start-2 col-span-6 {{ if not (isset . "projects") }}mb-10{{ end }}'>
+               {{ range sort .activities "start" "desc" }}
+               <b class="vert">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "since" }}
+               {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}
+               {{ end }}
+            </div>
+            {{ end }}
+            {{ if isset . "projects" }}
+            <div class="col-start-2 col-span-6 mt-4 mb-10">
+               {{ range sort .projects "start" "desc" }}
+               <span class="petitTxt minor">{{- .title |safeHTML }} ({{ if eq .end "none" }}{{ i18n "since" }}
+               {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }}) {{ if isset . "comment" }} - <span
+                  class="comment petitTxt">{{ .comment |safeHTML }}</span>{{ end }}</span>
+               {{ end }}
+            </div>
+            {{ end }}
+         </div>
+         {{ end }}{{ end }}
+      </div>
+      <h2 id="education">{{ i18n "education" }}</h2>
+      <div class="grid grid-cols-7 gap-x-6 mb-0">
+         {{ range sort .studies "date" "desc" }}{{ if .main }}
+         <div>{{ .date }}</div>
+         <div class="col-span-6 level1"><b>{{ .title |safeHTML }}</b>{{ if isset . "place" }} -
+            {{ .place |safeHTML }} {{ end }}{{ if isset . "comment" }}<br /><span
+               class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         {{ end }}{{ end }}
+      </div>
+      <h2 id="promotion" class="pt-6z">{{ i18n "promotion" }}</h2>
+      <div class="grid grid-cols-7 gap-x-6">
+         {{ range sort .promotions "year" "desc" }}
+         <div>{{ .date }}</div>
+         <div class="col-span-6 level1"><b>{{ .type }}</b></div>
+         <div class="col-start-2 col-span-6 mb-10">
+            <div class="grid grid-cols-6 gap-x-6">
+               <div>Title</div>
+               <div class="col-span-5 level2">{{ .title |safeHTML }}</div>
+               <div>Place</div>
+               <div class="col-span-5 level2">{{ .place }}</div>
+               <div>Supervision</div>
+               <div class="col-span-5 level2">{{ .superviser.name }}, {{ .superviser.affiliation }} -
+                  {{ .superviser.title}}, {{ .superviser.type }}</div>
+               <div>Jury</div>
+               <div class="col-span-5">
+                  {{ range .jury }}
+                  <b class="vert">{{ .name }}</b> <span class="comment level2"> ({{ .role }})</span> - {{ .affiliation }},
+                  {{ .title}}{{ if isset . "role" }}{{ end }}
+                  {{ end }}</div>
+            </div>
+         </div>
+         {{ end }}
+      </div>
+      <h2 id="directiontheses">{{ .directiontheses.description }}</h2>
+      <div class="mb-10">{{ range sort .directiontheses.list "date" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{ if eq .ongoing true }}{{ i18n "Since" }}
+               {{ .date }}{{ else }}{{ dateFormat "02/01/2006" .date }}{{ end }}</div>
+            <div class="col-span-6"><b>{{ .position |safeHTML }} {{ i18n "of" }}
+                  {{ .candidate }}</b>{{ if isset . "special"}} |
+               <b>{{ .special |safeHTML }}</b>{{ end }}{{ if eq .end "none" }} (en
+               cours){{ end }}<br />{{ .title |safeHTML }}{{ if isset . "financial"}}<br /><span
+                  class="comment">{{ .financial |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+         {{ if ne (len .directionHDR.list) 0 }}<h2 id="directionHDR">{{ .directionHDR.description }}</h2>
+         <div class="mb-10">{{ range sort .directionHDR.list "date" "desc" }}
+            <div class="grid grid-cols-7 gap-x-6 level1">
+               <div>{{ if eq .ongoing true }}{{ i18n "Since" }}
+                  {{ .date }}{{ else }}{{ dateFormat "02/01/2006" .date }}{{ end }}</div>
+               <div class="col-span-6"><b>{{ .position |safeHTML }} {{ i18n "of" }}
+                     {{ .candidate }}</b>{{ if isset . "special"}} |
+                  <b>{{ .special |safeHTML }}</b>{{ end }}{{ if eq .end "none" }} (en
+                  cours){{ end }}<br />{{ .title |safeHTML }}{{ if isset . "financial"}}<br /><span
+                     class="comment">{{ .financial |safeHTML }}</span>{{ end }}</div>
+            </div>
+            {{ end }}</div>{{ end }}
+      <h2 id="jurysdoctoraux">{{ .jurysdoctoraux.description }}</h2>
+      <div class="mb-10">{{ range sort .jurysdoctoraux.list "date" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{ dateFormat "02/01/2006" .date }}</div>
+            <div class="col-span-6"><b>{{ .type |safeHTML }} {{ i18n "of" }} {{ .candidate }}</b> -
+               {{ .place |safeHTML }} ({{ i18n "in"}}
+               {{ .language }})<br /><i>{{ .title }}</i>{{ if isset . "comment"}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+      <h2 id="teaching">{{ i18n "teaching" }}</h2>
+      <h3>{{ i18n "pedagoresponsabilities" }}</h3>
+      <div class="mb-10">{{ range sort .teaching.responsabilities "start" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
+            <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }}{{ if .language }} - {{ i18n "in"}} {{ .language }}{{ end }}
+               {{ if .domaine}}<br /><span class="text-sm font-bold">{{ .domaine |safeHTML }}</span>{{ end }}
+               {{ if .comment}}<br /><span class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+      <h3>{{ i18n "bachelorcourses" }}</h3>
+      <div class="mb-10">{{ range sort .teaching.bachelor "start" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
+            <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+      <h3>{{ i18n "mastercourses" }}</h3>
+      <div class="mb-10">{{ range sort .teaching.master "start" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
+            <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+      <h3>{{ i18n "doctoralcourses" }}</h3>
+      <div class="mb-10">{{ range sort .teaching.doctoral "start" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
+            <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+      <h3>{{ i18n "procourses" }}</h3>
+      <div class="mb-10">{{ range sort .teaching.pro "start" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
+            <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+      <h3>{{ i18n "projectcourses" }}</h3>
+      <div class="mb-10">{{ range sort .teaching.project "start" "desc" }}
+         <div class="grid grid-cols-7 gap-x-6 level1">
+            <div>{{if eq .end "none" }}{{ i18n "Since" }} {{ .start }}{{ else }}{{ .start }} - {{ .end }}{{ end }}</div>
+            <div class="col-span-6"><b>{{ .title |safeHTML }}</b> - {{ .place |safeHTML }} -
+               {{if .ects }}{{ .ects}}ects, {{ end }}{{ i18n "in"}} {{ .language }}{{ if .comment}}<br /><span
+                  class="comment">{{ .comment |safeHTML }}</span>{{ end }}</div>
+         </div>
+         {{ end }}</div>
+      <h2 id="projects">{{ .projects.description }}</h2>
+      <div class="grid grid-cols-7 gap-x-6 mb-0">{{ range sort .projects.list "start" "desc" }}
+         <div>{{ if .end }}{{ .start }} - {{ .end }}{{ else }}{{ i18n "Since" }} {{ .start }}{{ end }}</div>
+         <div class="col-span-6 level2"><b>{{ .title |safeHTML }}</b> - {{ .place }}
+            {{ if isset . "amount"}}<br /><span class="comment">({{ i18n "financed-project"}}) </span>{{ end }}{{ if isset . "comment"}}{{ if not (isset . "amount")}}<br />{{ end }}<span class="comment">{{ .comment }}</span>{{ end }}
+         </div>
+         {{ end }}
+      </div><h2>{{ .awards.description }}</h2>
+      <div class="grid grid-cols-7 gap-x-6 mb-0">{{ range sort .awards.list "date" "desc" }}
+         <div>{{ .date }}</div>
+         <div class="col-span-6 level2"><b>{{ .title |safeHTML }}</b>, 
+            {{ .place }}{{ if isset . "comment"}}<br /><span class="comment">{{ .comment }}</span>{{ end }}
+         </div>
+         {{ end }}{{ end }}
+      </div>
+      <h2 id="publications">{{ i18n "publications" }}</h2>
+      <h3>{{ i18n "publijournal"}}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "article" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
+      {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "article" }}<div class="level1">
+         {{ partial "citation.html" . }}</div>{{ end }}{{ end }}
+      <h3>{{ i18n "publiconf" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "inproceedings" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
+      {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "inproceedings" }}<div
+         class="level1">{{ partial "citation.html" . }}</div>{{ end }}{{ end }}
+      <h3>{{ i18n "books" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "book" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
+      {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "book" }}<div
+         class="level1">{{ partial "citation.html" . }}</div>{{ end }}{{ end }}
+      <h3>{{ i18n "publichap" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "inbook" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
+      {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "inbook" }}<div
+         class="level1">{{ partial "citation.html" . }}</div>{{ end }}{{ end }}
+      <h3>{{ i18n "edition" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "edition" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
+      {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "edition" }}<div
+         class="level1">{{ partial "citation.html" . }}</div>{{ end }}{{ end }}
+      <h3>{{ i18n "publidissertation" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if or (eq .Params.publitype "phdthesis") (eq .Params.publitype "masterthesis") (and (eq .Params.publitype "misc") (eq .Params.subsection "dissertation")) }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
+      {{ range where .Site.Pages "Section" "publications" }}{{ if or (eq .Params.publitype "phdthesis") (eq .Params.publitype "masterthesis") (and (eq .Params.publitype "misc") (eq .Params.subsection "dissertation")) }}<div
+         class="level1">{{ partial "citation.html" . }}</div>{{ end }}{{ end }}
+      <h3>{{ i18n "publireport" }}<span class="font-normal"> ({{ $cnt := 0 }}{{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "report" }}{{ $cnt = (add $cnt 1) }}{{ end }}{{ end }}{{- $cnt -}})</span></h3>
+      {{ range where .Site.Pages "Section" "publications" }}{{ if eq .Params.publitype "report" }}<div class="level1">
+            {{ partial "citation.html" . }}</div>{{ end }}{{ end }}
+   </main>
+</body>
+</html>

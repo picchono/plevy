@@ -7,6 +7,7 @@ draft: false
 front: true
 frontdescription: "Un séminaire de recherche en design et création"
 searchFilter: DSN201
+bodyclass: "seminar"
 milestone: mediums
 layout: single
 searchFilter: Event

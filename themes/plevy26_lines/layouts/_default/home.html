@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<div id="headUp">
+    <div class="headUp_blocks">
+        {{ $page := $.Site.GetPage "page" "chaire.md" }}
+        {{ with $page }}{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}{{ end }}
+        {{ $page := $.Site.GetPage "page" "plevy.md" }}
+        {{ with $page }}{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}{{ end }}
+        {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings"
+        "presentations" }}
+        {{ range readDir "content" }}
+        {{ if eq .Name $fold }}
+        {{ range where $.Site.Pages "Section" "in" ($fold) }}
+        {{ if eq .Params.zone $fold }}
+        {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+        {{ if eq .Params.fronttop true }}
+        {{- partial "boxUp.html" ( dict "context" . ) -}}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+<div id="splideArchive" class="splide" aria-label="Archives">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings"
+            "presentations" }}
+            <li class="splide__slide">
+                <div class="splide_title">{{ i18n $fold }}</div>
+                {{ range readDir "content" }}
+                {{ if eq .Name $fold }}
+                {{ range where $.Site.Pages "Section" "in" ($fold) }}
+                {{ if eq .Params.zone $fold }}
+                {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+                {{ if ne .Params.notListed true }}
+                {{- partial "box.html" ( dict "context" . ) -}}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

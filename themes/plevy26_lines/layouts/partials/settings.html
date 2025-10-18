@@ -1,0 +1,43 @@
+<div class="flex flex-col w-auto h-auto" data-pagefind-ignore>
+        {{ if .IsTranslated }}
+        <div id="languageMode" class='text-sm mt-3 md:mt-0'>
+                <b class="relative bg-transparent text-epierrot inline-block mr-2">{{ .Language.LanguageName }}</b>
+                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
+                        rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu">{{
+                        .Language.LanguageName }}</a>
+                {{ end }}
+        </div>
+        {{ end }}
+        <div class="flex flex-row justify-start items-start">
+                <div class="pagetheme">
+                        <label id="switch" class="switch">
+                                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                                <span class="slider"></span>
+                        </label>
+                        <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+                </div>
+                <div id="" class="nav-link-search cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search mt-2" viewBox="0 0 16 16">
+                                <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                </div>
+        </div>
+</div>
+<div id="searchmodal" aria-hidden="true" data-pagefind-ignore>
+        <div tabindex="-1" data-micromodal-close>
+                <div role="dialog" aria-modal="true" aria-labelledby="searchmodal-title">
+                        <div id="searchmodal-content">
+                                <div id="search"></div>
+                                <button aria-label="Close modal" data-micromodal-close class="closeModal" onclick="MicroModal.close('searchmodal');">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
+                                                fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                </button>
+                        </div>
+                </div>
+        </div>
+</div>

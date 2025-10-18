@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+        {{ if .Content}}
+        <div class="rightBlock newpad-y newpad-l">
+            <div class="rightBlockIn">
+                {{ if .Params.playlist}}
+                {{ partial "playlist.html" . }}
+                {{ end }}
+                {{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

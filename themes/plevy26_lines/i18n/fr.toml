@@ -1,0 +1,423 @@
+[EN]
+other="English"
+
+[FR]
+other="Français"
+
+[JP]
+other="日本語"
+
+[of]
+other="de"
+
+[in]
+other="en"
+
+[at]
+other="au"
+
+[and]
+other="et"
+
+[all]
+other="Tous"
+
+[contact]
+other="Contact"
+
+[journals]
+other="Journaux"
+
+[conferences]
+other="Conférences"
+
+[conference]
+other="Conference"
+
+[book-sections]
+other="Chapitres"
+
+[book-section]
+other="Chapitre"
+
+[dissertations]
+other="Dissertations"
+
+[dissertation]
+other="Dissertation"
+
+[editions]
+other="Éditions"
+
+[edition]
+other="Édition"
+
+[presentations]
+other="Présentations"
+
+[presentation]
+other="Présentation"
+
+[prez]
+other="Présentations"
+
+[programme]
+other="Programme"
+
+[reports]
+other="Rapports"
+
+[report]
+other="Rapport"
+
+[keynote]
+other="Keynotes"
+
+[search]
+other="Recherche"
+
+[keywords]
+other="Mots clés"
+
+[abstract]
+other="Résumé"
+
+[noabstract]
+other="Pas de résumé"
+
+[paper]
+other="Article"
+
+[transcription]
+other="Transcription"
+
+[journal]
+other="Journal"
+
+[preface]
+other="Preface"
+
+[repository]
+other="Archives"
+
+[disseration]
+other="Dissertation"
+
+[proceedings]
+other="Proceedings"
+
+[guide]
+other="Guide"
+
+[movie]
+other="Vidéo"
+
+[video]
+other="Vidéo"
+
+[book]
+other="Livre"
+
+[website]
+other="Site web"
+
+[news]
+other="info"
+
+[name]
+other="Nom"
+
+[nationality]
+other="Nationalité"
+
+[firstnames]
+other="Prénoms"
+
+[birthdate]
+other="Naissance"
+
+[address]
+other="Adresse"
+
+[phone]
+other="Téléphone"
+
+[email]
+other="E-mail"
+
+[web]
+other="Website"
+
+[linkedin]
+other="LinkedIn"
+
+[affiliations]
+other="Affiliations"
+
+[education]
+other="Éducation"
+
+[Since]
+other="Depuis"
+
+[since]
+other="depuis"
+
+[Proexp]
+other="Expérience professionelle"
+
+[teaching]
+other="Enseignement"
+
+[bachelorcourses]
+other="Licence"
+
+[mastercourses]
+other="Master"
+
+[doctoralcourses]
+other="Doctorat"
+
+[procourses]
+other="Formation professionnelle"
+
+[projectcourses]
+other="Supervision de projets"
+
+[current-situation]
+other="Situation actuelle"
+
+[pastPro]
+other="Expérience professionelle"
+
+[ParralPro]
+other="Autres contributions"
+
+[promotion]
+other="Promotion"
+
+[PHDdirect]
+other="Directions de thèses doctorales"
+
+[PHDjury]
+other="Jurys de doctorat"
+
+[publications]
+other="Publications"
+
+[projects]
+other="Projets"
+
+[publijournal]
+other="Journaux internationaux avec comité de sélection"
+
+[publiconf]
+other="Conférences internationales avec publication des actes et comité de sélection"
+
+[publichap]
+other="Chapitres de livre avec comité de sélection"
+
+[publikeynote]
+other="Présentations pléniaires"
+
+[publidissertation]
+other="Dissertations"
+
+[publireport]
+other="Rapports"
+
+[publipresinvite]
+other="Présentations invitées"
+
+[finance]
+other="Financements"
+
+[research]
+other="Recherche"
+
+[research-topics]
+other="Sujets de recherche"
+
+[research-programmes]
+other="Programmes de recherche"
+
+[other]
+other="Autre"
+
+[programmes]
+other="Programmes"
+
+[notions]
+other="Notions"
+
+[main-ressource]
+other="ressources principales"
+
+[student-projects]
+other="Projets d'étudiants"
+
+
+[student-project]
+other="Projet d'étudiants"
+
+[lectures]
+other="Leçons"
+
+[lecture]
+other="Leçon"
+
+[research-programme]
+other="Programme de recherche"
+
+[main-activities]
+other="Activités principales"
+
+[complete-list]
+other="Liste complète"
+
+[events]
+other="Événements"
+
+[seminars]
+other="Séminaires"
+
+[symposiums]
+other="Symposia"
+
+[exhibitions]
+other="Expositions"
+
+[PhDs]
+other="Doctorats"
+
+[event]
+other="Événement"
+
+[seminar]
+other="Séminaire"
+
+[symposium]
+other="Symposium"
+
+[exhibition]
+other="Exposition"
+
+[PhD]
+other="Doctorat"
+
+[past]
+other="Passé"
+
+[course]
+other="Formation"
+
+[diploma]
+other="Parcours"
+
+[courses]
+other="Formations"
+
+[past-course]
+other="Cours passé"
+
+[past-courses]
+other="Cours passés"
+
+[current-course]
+other="Cours actuel"
+
+[current-courses]
+other="Cours actuels"
+
+[diplomas]
+other="Parcours"
+
+[books]
+other="Livres"
+
+[by-others]
+other="Par d'autres"
+
+[image-by]
+other="Image par"
+
+[headlines]
+other="Nouvelles"
+
+[institutional-page]
+other="Page institutionnelle"
+
+[links]
+other="Liens"
+
+[poster]
+other="Poster"
+
+[thanks]
+other="Merci"
+
+[cv]
+other="Curriculum Vitae"
+
+[Recent-writings]
+other="Derniers écrits"
+
+[writings]
+other="Écrits"
+
+[tableOfContent]
+other="Table des matières"
+
+[parcours]
+other="Parcours"
+
+[pedagoresponsabilities]
+other="Responsabilités pédagogiques"
+
+[ended]
+other="terminé"
+
+[Updates]
+other="Mise à jour"
+
+[CvComplete]
+other="CV complet"
+
+[Cvdetail]
+other="CV détaillé"
+
+[financed-project]
+other="projet financé"
+
+[backlinks]
+other="En lien"
+
+[calendar]
+other="Calendrier"
+
+[comments]
+other="Commentaires"
+
+[encapsulation]
+other="Encapsulation"
+
+[members]
+other="Membres"
+
+[speaker]
+other="Intervenant"
+
+[by]
+other="par"
+
+[for]
+other="pour"
+
+[venue]
+other="Où et quand"
+
+[linkvisio]
+other="Lien vers la visio"
+
+[allContent]
+other="Tout le contenu"
