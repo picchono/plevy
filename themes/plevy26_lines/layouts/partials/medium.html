@@ -1,6 +1,6 @@
 <div class="leftBlock">
     <div class="lefttBlockIn">
-        <div class="pageTitle newpad-y">
+        <div class="pageTitle newpad-b">
             <div class="text-left items-start">
                 <h1>{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}}
                     ({{- i18n "ended" -}}){{ end }}</h1>
@@ -193,9 +193,7 @@
         </div>
         {{ end }}
         {{ if .Params.citation }}
-        <div class="pack-item w-full md:max-w-144" data-cat-sort="4">
-            <div class="dynCadre">{{ partial "citation.html" . }}</div>
-        </div>
+        <div class="line-b newpad-y" data-cat-sort="4">{{ partial "citation.html" . }}</div>
         {{ end }}
         {{ if .Params.encapsulation }}
         <div class="pageBlock newpad-y" data-cat-sort="1">

@@ -1,12 +1,8 @@
 {{ $photonb := len .Params.photogallery }}
-{{ if eq $photonb 1 }}
-<div class="photogallery newpad-y" data-cat-sort="2">
-{{ else }}
-<div class="pack-item w-full" data-cat-sort="2">
-{{ end }}
-    <div class="dynCadre flex flex-row" id="lightgallery" >
+<div class="w-full newpad-y line-b" data-cat-sort="2">
+    <div class="dynCadre flex flex-row" id="lightgallery">
         {{ range sort .Params.photogallery "order" "asc" }}
-        <div class="place-self-center {{ if eq $photonb 1 }}h-74{{ else }}h-32{{ end }} p-0.5 w-auto photoItem" data-src="{{ .img }}" aria-label="See image"><img loading="lazy" src="{{ .src }}" title="{{ .name }}" alt="{{ .name }}" data-pagefind-index-attrs="title,alt"></div>
+        <div class="place-self-center {{ if eq $photonb 1 }}h-74{{ else }}h-32{{ end }} p-0.5 w-auto photoItem" data-src="{{ .img }}" aria-label="See image"><img loading="lazy" src="{{ .src }}" title="{{ .name }}" alt="{{ .name }}" class="rounded" data-pagefind-index-attrs="title,alt"></div>
         {{ end }}
     </div>
 </div>

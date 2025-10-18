@@ -65,7 +65,7 @@ body {
 
 body {
   @apply relative bg-primary-bg text-primary-text min-h-screen;
-  --pageBorder-width: 1rem;
+  --pageBorder-width: 0.5rem;
   --entete-height: 10vh;
   padding: var(--pageBorder-width);
   --entete-height: 4rem;
@@ -82,13 +82,13 @@ body {
 .bordBottom {
   left: 0;
   width: 100vw;
-  height: var(--pageBorder-width);
+  height: calc(2 * var(--pageBorder-width));
 }
 
 .bordLeft,
 .bordRight {
   top: 0;
-  width: var(--pageBorder-width);
+  width: calc(2 * var(--pageBorder-width));
   height: 100vh;
 }
 
@@ -118,8 +118,8 @@ div.bordCorner3,
 div.bordCorner4 {
   @apply fixed bg-transparent transition-colors duration-700 ease-in-out;
   content: "";
-  height: calc(1.5 * var(--pageBorder-width));
-  width: calc(1.5 * var(--pageBorder-width));
+  height: calc(3 * var(--pageBorder-width));
+  width: calc(3 * var(--pageBorder-width));
   z-index: 100;
 }
 
@@ -214,11 +214,11 @@ html.dark {
 
 body#menu main {
   @apply flex flex-col justify-start;
-  padding: calc(0.5 * var(--pageBorder-width));
+  padding: var(--pageBorder-width);
 }
 
 body:not(#menu) main {
-  padding: calc(0.5 * var(--pageBorder-width));
+  padding: var(--pageBorder-width);
 }
 
 b i {
@@ -243,7 +243,7 @@ a:hover {
 
 #content {
   @apply border-b border-secondary-text;
-  padding-bottom: calc(0.5 * var(--pageBorder-width));
+  padding-bottom: var(--pageBorder-width);
 }
 
 a svg,
@@ -259,23 +259,33 @@ p.subhead::first-letter {
   initial-letter: 2;
 }
 
+.newpad {
+  padding: var(--pageBorder-width);
+}
 .newpad-x {
-  padding: 0 calc(0.5 * var(--pageBorder-width));
+  padding: 0 var(--pageBorder-width);
 }
 .newpad-y {
-  padding: calc(0.5 * var(--pageBorder-width)) 0;
+  padding: var(--pageBorder-width) 0;
 }
 .newpad-t {
-  padding-top: calc(0.5 * var(--pageBorder-width));
+  padding-top: var(--pageBorder-width);
 }
 .newpad-r {
-  padding-right: calc(0.5 * var(--pageBorder-width));
+  padding-right: var(--pageBorder-width);
 }
 .newpad-b {
-  padding-bottom: calc(0.5 * var(--pageBorder-width));
+  padding-bottom: var(--pageBorder-width);
 }
 .newpad-l {
-  padding-left: calc(0.5 * var(--pageBorder-width));
+  padding-left: var(--pageBorder-width);
+}
+
+.line-t {
+  @apply border-t border-secondary-text;
+}
+.line-b {
+  @apply border-b border-secondary-text;
 }
 /* logohome */
 
@@ -325,11 +335,10 @@ a.logohome:hover .lh {
 }
 
 div#entete {
-  @apply transition-colors duration-700 border-b border-secondary-text ease-in-out opacity-100 flex-shrink-0 flex flex-row justify-stretch;
+  @apply w-full items-center transition-colors duration-700 border-b border-secondary-text ease-in-out opacity-100 flex-shrink-0 flex flex-row justify-stretch;
   height: var(--entete-height);
   background: transparent;
   top: var(--pageBorder-width);
-  padding-bottom: calc(0.5 * var(--pageBorder-width));
 }
 
 div#entete:hover a.logohome {
@@ -367,14 +376,14 @@ body:not(#menu) main.pack {
 
 .leftBlock {
   @apply w-full lg:w-1/2 flex flex-col justify-start pb-16 md:pb-0;
-  padding: calc(0.5 * var(--pageBorder-width));
+  padding: var(--pageBorder-width);
   padding-left: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .leftBlockIn {
     @apply h-full;
-    padding-right: calc(0.5 * var(--pageBorder-width));
+    padding-right: var(--pageBorder-width);
   }
 }
 
@@ -386,20 +395,18 @@ body:not(#menu) main.pack {
 /* Splide */
 div#splideArchive {
   @apply w-full lg:w-1/2 block flex-shrink-0 flex-grow-0;
-  height: calc(100vh - var(--entete-height) - (1.5 * var(--pageBorder-width)));
+  height: calc(100vh - var(--entete-height) - (3 * var(--pageBorder-width)));
 }
-
 
 @media only screen and (min-width: 768px) {
-  div#splideArchive {
-    padding: calc(0.5 * var(--pageBorder-width));
-    padding-right: 0;
+  #splideArchive, #splideArchive-track {
+    padding-left: var(--pageBorder-width) !important;
   }
-}
+}  
 
 #splideArchive .splide__track {
-  @apply border-l-0 md:border-l border-secondary-text;
-  height: calc(100vh - var(--entete-height) - (3.5 * var(--pageBorder-width)));
+  @apply border-l-0 lg:border-l border-secondary-text;
+  height: calc(100vh - var(--entete-height) - (7 * var(--pageBorder-width)));
 }
 
 #splideArchive .splide__slide {
@@ -409,7 +416,6 @@ div#splideArchive {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  padding: 0 var(--pageBorder-width);
 }
 
 @media only screen and (max-width: 512px) {
@@ -420,7 +426,7 @@ div#splideArchive {
 
 #splideArchive div.menuBox {
   @apply bg-transparent border-b border-secondary-text transition-colors duration-700 ease-in-out;
-  padding: calc(0.5 * var(--pageBorder-width));
+  padding: var(--pageBorder-width);
 }
 
 #splideArchive div.menuBox:hover {
@@ -432,7 +438,7 @@ div#splideArchive {
 }
 
 #splideArchive .splide_title {
-  @apply text-xl font-bold mt-4 mb-8;
+  @apply text-xl font-bold mt-4 lg:mt-0 mb-8;
 }
 
 #splideArchive .splide__slide::-webkit-scrollbar {
@@ -495,16 +501,16 @@ div#splideArchive {
 }
 
 .splide__arrow--next {
-  right: calc(-0.5 * var(--pageBorder-width)) !important;
+  right: calc(-1 * var(--pageBorder-width)) !important;
 }
 
 .splide__arrow--prev {
-  left: calc(-0.5 * var(--pageBorder-width)) !important;
+  left: calc(-1 * var(--pageBorder-width)) !important;
 }
 
 @media only screen and (min-width: 768px) {
   .splide__arrow--prev {
-    left: calc(0.5 * var(--pageBorder-width)) !important;
+    left: var(--pageBorder-width) !important;
   }
 }
 
@@ -512,7 +518,7 @@ div#splideArchive {
 div#headUp {
   @apply w-full lg:w-1/2 flex flex-col justify-between items-center text-center;
   background-color: transparent;
-  min-height: calc(100vh - var(--entete-height) - (3.5 * var(--pageBorder-width)));
+  /*min-height: calc(100vh - var(--entete-height) - (7 * var(--pageBorder-width)));*/
 }
 
 #headUp .headUp_blocks {
@@ -736,7 +742,7 @@ a.floatImg::after {
 
 .linkBlock {
   @apply w-full max-w-96 border-r border-secondary-text;
-  padding: calc(0.5 * var(--pageBorder-width)) calc(0.5 * var(--pageBorder-width)) 0 0;
+  padding: var(--pageBorder-width) var(--pageBorder-width) 0 0;
 }
 
 a.doclinkButton,
@@ -1290,7 +1296,7 @@ span.minor:not(:last-child)::after {
 .embed-wrapper {
   @apply overflow-hidden relative;
   padding-top: 56.25%;
-  border-radius: .5rem;
+  border-radius: .25rem;
 }
 
 .embed-wrapper iframe {
@@ -1856,12 +1862,12 @@ div.highlight pre {
 /* linkBox */
 .linkBox .titleLink {
   @apply font-bold leading-tight;
-  padding: calc(0.5 * var(--pageBorder-width)) 0;
+  padding: var(--pageBorder-width) 0;
 }
 
 .linkBox .imgLink {
   @apply w-28 h-28 flex-shrink-0;
-  padding: calc(0.5 * var(--pageBorder-width)) 0;
+  padding: var(--pageBorder-width) 0;
 }
 
 .linkBox .imgLink img {

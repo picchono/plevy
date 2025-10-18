@@ -1,10 +1,11 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
 
-<div class="pack-item md:w-large" data-cat-sort="100"><div class="dynCadre">
-    <b class="text-epierrot">{{ partial "slash.html" (dict "txt" (i18n "abstract")) }}</b>
-    <div id="px-5 content">{{ .Params.abstract |safeHTML }}</div>
-    {{ if .Content}}<div id="content" class="md:p-10">{{ .Content }}</div>{{ end }}
+<div class="rightBlock newpad-y newpad-l">
+    <div class="rightBlockIn">
+        <b class="text-epierrot">{{ partial "slash.html" (dict "txt" (i18n "abstract")) }}</b>
+        <div id="content">{{ .Params.abstract |safeHTML }}</div>
+        {{ if .Content}}<div id="content" class="md:p-10" data-cat-sort="100">{{ .Content }}</div>{{ end }}
     </div>
-</div></div>
+</div>
 {{ end }}

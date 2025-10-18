@@ -6,11 +6,13 @@
 
 <body id="{{ .Params.bodyclass }}">
   <main data-pagefind-body>
-    {{ partial "title.html" . }}
-    <div class="flex flex-col lg:flex-row justify-between">
-      {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
-      {{- block "main" . }}{{- end }}
-    {{if not .IsHome }}</div>{{ end }}
+    <div class="newpad-x newpad-t">{{ partial "title.html" . }}</div>
+    <div class="newpad">
+      <div class="flex flex-col lg:flex-row justify-between">
+        {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
+        {{- block "main" . }}{{- end }}
+        {{if not .IsHome }}</div>{{ end }}
+    </div>
   </main>
   <div class="bordTop"></div>
   <div class="bordBottom"></div>
