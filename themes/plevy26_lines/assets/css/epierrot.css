@@ -407,6 +407,7 @@ div#splideArchive {
 #splideArchive .splide__track {
   @apply border-l-0 lg:border-l border-secondary-text;
   height: calc(100vh - var(--entete-height) - (7 * var(--pageBorder-width)));
+  padding: 0 calc(4 * var(--pageBorder-width)) !important;
 }
 
 #splideArchive .splide__slide {
