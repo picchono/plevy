@@ -6,9 +6,9 @@
     <a class="boxIso newpad-y{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}">
         <span class="headUpImg duotone" style="background-image: url('{{ $Img | safeURL }}');"></span>
         <span class="headUpTitle">
-            <span class="boxTitleIn">{{- .context.Title
+            <h2 class="boxTitleIn">{{- .context.Title
                 |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end
-                }}</span>
+                }}</h2>
             <span class="boxAff">
                     {{ if eq .context.Params.layout "member" }}
                     {{ $parts := .context.Params.shortdescription }}{{ $splitParts := split $parts ","

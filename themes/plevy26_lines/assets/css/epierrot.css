@@ -456,7 +456,8 @@ div#splideArchive {
 }
 
 .boxTitle {
-  @apply text-primary-text font-bold transition-colors duration-700 ease-in-out overflow-visible py-2;
+  @apply text-base text-primary-text font-bold transition-colors duration-700 ease-in-out overflow-visible py-2;
+  line-height: 1.1rem;
 }
 
 .boxElts,
