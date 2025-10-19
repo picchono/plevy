@@ -39,4 +39,4 @@ Ce master s’appuie sur la mise en œuvre d’une pensée et d’une pratique c
 
 Dans les différents secteurs d’activité où s’exercent ses compétences, le designer a pour responsabilité de contribuer à créer des réalisations contemporaines utiles et porteuses de sens.
 
-Il s’adapte aux besoins identifiés dans le cadre de contextes et de problématiques complexes relevant de la sensibilité esthétique, des conditions matérielles de mise en œuvre et des contextes humains et relationnels mis en jeu.</p>
+Il s’adapte aux besoins identifiés dans le cadre de contextes et de problématiques complexes relevant de la sensibilité esthétique, des conditions matérielles de mise en œuvre et des contextes humains et relationnels mis en jeu.

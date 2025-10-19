@@ -31,6 +31,7 @@ institution:
     web: "https://www.cnam.fr/"
 date: 2025-04-10T18:00:00+02:00
 layout: single
+description: "This presentation will firstly explore some of the more dominant oblique constraints and the ways in which they negatively influence the role and purpose of design. The second part will describe the approach of Reconstrained Design."
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65Qgcv5YTJgQT4FzeBDDow?embed=1&width=1000"
 frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65Qgcv5YTJgQT4FzeBDDow?embed=1&width=500"
 link:

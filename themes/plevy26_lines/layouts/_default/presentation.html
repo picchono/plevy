@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
 <div class="pack-item w-full md:max-w-96 invisible md:visible" id="QR" data-cat-sort="100">
-    <div class="dynCadre flex flex-row">
+    <div class="newpad-b line-b flex flex-row">
         <div class="place-self-center p-0.5 w-auto photoItem" aria-label="See QR">
             <span id="qrcode" class="block h-0 md:h-62 w-0 md:w-62 md:p-2 bg-white rounded-lg"></span>
         </div>
@@ -9,11 +9,11 @@
 </div>
 {{ if .Content}}
 <div class="pack-item w-full md:w-2/5" id="QR" data-cat-sort="110">
-    <div class="dynCadre">{{ .Content }}</div>
+    <div class="newpad-b line-b">{{ .Content }}</div>
 </div>
 {{ end }}
 <div class="pack-item w-full max-w-240" id="Slides">
-    <div class="dynCadre">
+    <div class="newpad-b line-b">
         {{ if .Params.slides }}
         {{ $slid := .Params.slides }}
         {{ $ord := 1 }}

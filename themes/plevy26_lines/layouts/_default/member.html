@@ -2,7 +2,7 @@
 <div class="rightBlock newpad-y newpad-l">
     <div class="rightBlockIn">
         {{ if .Content}}<div id="content" data-cat-sort="101">
-            <div class="dynCadre">{{ .Content }}</div>
+            <div class="newpad-b line-b">{{ .Content }}</div>
         </div>{{ end }}
         {{ with index .Site.Data.plevy .Site.Language.Lang }}
         <div class="flex flex-row w-full border-b border-secondary-text">

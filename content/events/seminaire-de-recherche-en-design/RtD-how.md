@@ -33,6 +33,7 @@ frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgczoVuMW9C29P0xb900?embed=1&width=2
 frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65QgczoVuMW9C29P0xb900?embed=1&width=2190&height=500"
 date: 2025-06-05T18:00:00+02:00
 layout: single
+description: "This talk returns to the debate that gave rise to the book 'Design Research through Practice', currently under revision, and recontextualizes it to our current design (research) environment characterized by introspective approaches to design, systemic design, design fiction, critique of humanism, and most recently by GenAI – among other things."
 ---
 
 Research through design is a notion that gained presence in design discussions in the mid-aughts after a few influential papers by Jodi Forlizzi and John Zimmerman of Carnegie Mellon University and Erik Stolterman of Indiana University. The notion had been introduced by Christopher Frayling of the Royal College of Art in 1993 as a remark in a small paper that suggested it as a way to conduct research in a way that would be interesting to designers. It had its virtues. Above all, helped to make research interesting to designers, and it gave them a way to understand how design can create knowledge. Yet, it was confusing and hard to understand, as this presentation will illustrate. This was the case with other suggestions too, including British and Dutch notions like funology and doing research by doing design, and Donald Schon’s notion of the reflective practitioner that lacked precision,

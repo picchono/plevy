@@ -235,42 +235,44 @@ function toggleTheme() {
 
 //Splide
 function setSplide() {
-  new Splide('#splideArchive', {
-    perPage: 1,
-    speed: 500,
-    keyboard: true,
-    autoHeight: true,
-    focus: 0,
-    omitEnd: true,
-    pagination: true,
-    arrows: true,
-    drag: 'free',
-    snap: true,
-    gap: 'calc(4 * var(--pageBorder-width))',
-    mediaQuery: 'min',
-    breakpoints: {
-      1024: {
-        perPage: 2,
-      },
-      1536: {
-        perPage: 3,
-      },
-      2048: {
-        perPage: 4,
+  if (document.getElementById("splideArchive")) {
+    new Splide('#splideArchive', {
+      perPage: 1,
+      speed: 500,
+      keyboard: true,
+      autoHeight: true,
+      focus: 0,
+      omitEnd: true,
+      pagination: true,
+      arrows: true,
+      drag: 'free',
+      snap: true,
+      gap: 'calc(4 * var(--pageBorder-width))',
+      mediaQuery: 'min',
+      breakpoints: {
+        1024: {
+          perPage: 2,
+        },
+        1536: {
+          perPage: 3,
+        },
+        2048: {
+          perPage: 4,
+        }
       }
-    }
-  }).mount();
-
-
+    }).mount();
+  };
 };
 
 document.addEventListener("scrollend", (event) => {
 
 });
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  new PagefindUI({ 
-    element: "#search", 
+
+window.addEventListener('load', function (event) {
+  
+  new PagefindUI({
+    element: "#search",
     showSubResults: true,
     showImages: true,
     showEmptyFilters: false,
@@ -296,10 +298,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // Focus the search input
     document.querySelector(".pagefind-ui__search-input").focus();
   });
-});
-
-
-window.addEventListener('load', function (event) {
+  
   externalLinks();
   setSplide();
   MicroModal.init({});

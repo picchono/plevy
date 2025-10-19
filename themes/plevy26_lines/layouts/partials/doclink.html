@@ -2,7 +2,7 @@
 <div class="pack-item" data-cat-sort="1">
       {{ $icon := index . 1 }}
       {{ $text := index . 0 }}
-      <a href='{{ index . 2 }}' target="_blank" class="dynCadre doclinkButton newpad-y" rel="noreferrer"
+      <a href='{{ index . 2 }}' target="_blank" class="newpad-b line-b doclinkButton newpad-y" rel="noreferrer"
             aria-label="Get {{ index . 0 }}"><span class="w-8 flex-shrink-0">{{- partial "icons.html" (dict "hei" 1.5 "ico" $icon "cla"
                   "doclinkIcon" ) -}}</span>&nbsp;&nbsp;<span>{{ $text }}</span></a>
 </div>

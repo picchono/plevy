@@ -20,13 +20,18 @@
 {{ if or (compare.Gt ($related | len) 1) (ne .Params.comment false) }}
 
 {{ if compare.Gt ($related | len) 1}}
-{{ $count := 0}}
-{{ range sort $related "Date" "desc" }}
-{{ if ne .Permalink (.Site.BaseURL | absURL ) }}
-{{ $count = add $count 1 }}
-{{- partial "boxUp.html" ( dict "context" . "cou" $count ) -}}
-{{ end }}
-{{ end }}
+
+<div id="headUp">
+    <div class="headUp_blocks">
+        {{ $count := 0}}
+        {{ range sort $related "Date" "desc" }}
+        {{ if ne .Permalink (.Site.BaseURL | absURL ) }}
+        {{ $count = add $count 1 }}
+        {{- partial "boxUp.html" ( dict "context" . "cou" $count ) -}}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
 {{ end }}
 {{ end }}
 </section>

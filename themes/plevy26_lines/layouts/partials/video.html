@@ -1,5 +1,5 @@
 {{ range sort .Params.video }}<div class="w-full newpad-y line-b" data-cat-sort="2">
-    <div class="dynCadre">
+    <div>
         {{ if isset . "youtube" }}
         <div class="videoFrame w-full">
             <div class="embed-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube | safeURL }}"

@@ -31,6 +31,7 @@ institution:
     web: "https://www.cnam.fr/"
 date: 2025-04-03T18:00:00+02:00
 layout: single
+description: "Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception. Elle mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et en discutera des questions méthodologiques pertinentes."
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgdGabg2R34tNLEOo-hY?embed=1&width=1920"
 frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65QgdGabg2R34tNLEOo-hY?embed=1&width=500"
 photogallery:
@@ -46,4 +47,4 @@ video:
         speaker: "Benjamin Loiseau"
         youtube: "l-wdQWDoXPQ"
 ---
-Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception . En nous appuyant sur un projet de rénovation de logements sociaux en difficulté, la véritable profondeur de cette participation sera examinée à l’aide d’un indice développé pour évaluer le rôle effectif des différents types d'acteurs dans ces processus. L’intervention mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et discutera des questions méthodologiques pertinentes pour l’analyse des interactions entre les concepteurs et les usagers dans ces processus.
+Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception. En nous appuyant sur un projet de rénovation de logements sociaux en difficulté, la véritable profondeur de cette participation sera examinée à l’aide d’un indice développé pour évaluer le rôle effectif des différents types d'acteurs dans ces processus. L’intervention mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et discutera des questions méthodologiques pertinentes pour l’analyse des interactions entre les concepteurs et les usagers dans ces processus.
