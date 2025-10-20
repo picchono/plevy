@@ -631,7 +631,7 @@ a.linkBox:hover .duotone::after {
 
 /* buttons */
 #languageMode {
-  @apply bg-transparent h-full text-sm line-l flex flex-row items-center justify-between;
+  @apply bg-transparent h-full text-sm line-l newpad-x flex flex-row items-center justify-between;
 }
 
 #languageMode>span {
@@ -647,7 +647,7 @@ a.linkBox:hover .duotone::after {
 }
 
 #settingOptions {
-  @apply h-full flex flex-row justify-between items-center line-l;
+  @apply h-full flex flex-row justify-between items-center line-l newpad-x;
 }
 
 #settingOptions>div {
