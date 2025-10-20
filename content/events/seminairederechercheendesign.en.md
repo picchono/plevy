@@ -14,6 +14,8 @@ searchFilter: Event
 subsection: seminar
 main: true
 current: true
+description: "Ce séminaire, dédié aux jeunes chercheurs ou aspirants à le devenir, invite les communautés de recherche liées au design et à la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances."
+fronttop: true
 institution:
     heig: 1
     logo: cnam

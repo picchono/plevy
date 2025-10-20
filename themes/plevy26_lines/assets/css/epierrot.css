@@ -287,6 +287,12 @@ p.subhead::first-letter {
 .line-b {
   @apply border-b border-secondary-text;
 }
+.line-l {
+  @apply border-l border-secondary-text;
+}
+.line-r {
+  @apply border-r border-secondary-text;
+}
 /* logohome */
 
 a.logohome {
@@ -559,11 +565,12 @@ div#headUp {
 }
 
 #headUp a.boxIso .boxTitleIn {
-  @apply text-lg overflow-hidden transition-all duration-500 ease-in-out;
+  @apply text-lg transition-all duration-500 ease-in-out;
+  line-height: 1.3rem;
 }
 
 #headUp a.boxIso .boxAff {
-  @apply inline-block font-bold leading-tight;
+  @apply inline-block font-bold leading-tight newpad-t;
   font-size: 0.6rem;
 }
 
@@ -623,24 +630,28 @@ a.linkBox:hover .duotone::after {
 }
 
 /* buttons */
-.pack-item #languageMode {
-  @apply bg-transparent;
+#languageMode {
+  @apply bg-transparent h-full text-sm line-l flex flex-row items-center justify-between;
 }
 
-.pack-item #languageMode a {
-  @apply bg-transparent border-solid rounded-md transition-colors duration-700 ease-in-out;
+#languageMode>span {
+  @apply relative bg-transparent text-epierrot font-bold inline-block newpad-x;
 }
 
-.pack-item:hover #languageMode a {
-  @apply bg-transparent;
+#languageMode a {
+  @apply bg-transparent inline-block text-primary-text hover:text-epierrot border-0 newpad-x transition-all duration-700 ease-in-out;
 }
 
-.pack-item:hover #languageMode a:hover {
+#languageMode a:hover {
   @apply text-epierrot;
 }
 
-.dynCadre {
-  @apply relative inline-block w-full justify-start place-self-center transition-colors duration-700 ease-in-out;
+#settingOptions {
+  @apply h-full flex flex-row justify-between items-center line-l;
+}
+
+#settingOptions>div {
+  @apply newpad-x;
 }
 
 .introChair {
@@ -808,9 +819,6 @@ a.smalllink svg {
 
 a.smalllink:hover svg {
   fill: var(--color-primary-bg);
-}
-a.langu {
-  @apply relative bg-transparent inline-block mr-2 text-primary-text hover:text-epierrot border-0;
 }
 
 div.ended a.boxIso {
@@ -3179,12 +3187,12 @@ button.splide__arrow {
 
 /* light dark theme */
 .pagetheme {
-  @apply flex flex-col h-8 justify-center items-start mr-2;
+  @apply flex flex-col h-8 justify-center items-start;
 }
 
 /* The switch - the box around the slider */
 .pagetheme .switch {
-  @apply relative inline-block h-6 w-6;
+  @apply relative inline-block h-5 w-5;
 }
 
 /* Hide default HTML checkbox */
