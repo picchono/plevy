@@ -1,4 +1,3 @@
-
 ---
 slug: pierre-levy
 title: "Pierre Lévy"
