@@ -1,43 +1,37 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-<div class="pack-item w-full md:max-w-96 invisible md:visible" id="QR" data-cat-sort="100">
-    <div class="newpad-b line-b flex flex-row">
-        <div class="place-self-center p-0.5 w-auto photoItem" aria-label="See QR">
-            <span id="qrcode" class="block h-0 md:h-62 w-0 md:w-62 md:p-2 bg-white rounded-lg"></span>
-        </div>
-    </div>
-</div>
-{{ if .Content}}
-<div class="pack-item w-full md:w-2/5" id="QR" data-cat-sort="110">
-    <div class="newpad-b line-b">{{ .Content }}</div>
-</div>
-{{ end }}
-<div class="pack-item w-full max-w-240" id="Slides">
-    <div class="newpad-b line-b">
-        {{ if .Params.slides }}
-        {{ $slid := .Params.slides }}
-        {{ $ord := 1 }}
-        <div class="flex flex-row flex-wrap" id="lightgallery">
-            {{ range $slid }}
-            {{ $typ := index . 0 }}
-            {{ if eq $typ "img" }}
-            <a class="galImg place-self-center w-24 mr-4 mb-4" href="{{ index . 1 }}"
-                aria-label="See image {{ $ord }}" data-custom-prop="abc">
-                <img class="rounded-xs object-cover" loading="lazy" src="{{ index . 1 }}&width=400"
-                    alt="{{ index . 2}}" title="{{ index . 2}}"></a>
-            {{ else if eq $typ "mov"}}
-            <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}"
-                class="place-self-center w-24 mr-4 mb-4">
-                <img class="rounded-xs object-cover" loading="lazy" src="{{ index . 2 }}" alt="video {{ $ord }}">
-            </a>
-            {{ end }}
-            {{ $ord = add $ord 1 }}
-            {{ end }}
+<div class="rightBlock newpad-y newpad-l">
+    <div class="rightBlockIn">
+        {{ if .Content}}
+        <div class="w-full newpad-b line-b" data-cat-sort="110">
+            {{ .Content }}
         </div>
         {{ end }}
+        <div id="Slides" class="newpad-b line-b">
+            {{ if .Params.slides }}
+            {{ $slid := .Params.slides }}
+            {{ $ord := 1 }}
+            <div class="flex flex-row flex-wrap" id="lightgallery">
+                {{ range $slid }}
+                {{ $typ := index . 0 }}
+                {{ if eq $typ "img" }}
+                <a class="galImg place-self-center w-24 mr-4 mb-4" href="{{ index . 1 }}"
+                    aria-label="See image {{ $ord }}" data-custom-prop="abc">
+                    <img class="rounded-xs object-cover" loading="lazy" src="{{ index . 1 }}?embed=1&width=400"
+                        alt="{{ index . 2}}" title="{{ index . 2}}"></a>
+                {{ else if eq $typ "mov"}}
+                <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}"
+                    class="place-self-center w-24 mr-4 mb-4">
+                    <img class="rounded-xs object-cover" loading="lazy" src="{{ index . 2 }}" alt="video {{ $ord }}">
+                </a>
+                {{ end }}
+                {{ $ord = add $ord 1 }}
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
     </div>
 </div>
-
 {{ $qr_js := resources.Get "js/qrgen.js" | minify }}
 <script src="{{ $qr_js.Permalink }}"></script>
 <script>
@@ -45,7 +39,7 @@
     let viewportHeight = Math.round(Math.min((window.innerHeight * 1.5), 3840));
     const galimag = document.querySelectorAll('.galImg');
     galimag.forEach((elt) => {
-        elt.href += "&width=" + viewportWidth + "&height=" + viewportHeight;
+        elt.href += "?embed=1&width=" + viewportWidth + "&height=" + viewportHeight;
     });
 </script>
 <script defer="defer">
@@ -125,8 +119,8 @@
         },
         loadYouTubePoster: true
     });
-    
-    
+
+
     window.addEventListener('load', function (event) {
         // Select the node that will be observed for mutations
         const targetNode = document.getElementById("lg-inner-1");
@@ -148,9 +142,9 @@
                     im.parentNode.insertBefore(newDiv, im.nextSibling);
                 }
                 var newAd = document.querySelectorAll('div.imgAddons');
-                 newAd.forEach(function (nA, index) {
+                newAd.forEach(function (nA, index) {
                     nA.style.cssText = "right: calc(101vw - " + rightIm + "px);bottom:calc(100.8vh - " + bottomIm + "px);";
-                 });
+                });
             });
             observer.observe(targetNode, config);
         };

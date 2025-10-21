@@ -523,10 +523,16 @@ div#splideArchive {
 }
 
 /* headUp */
+
 div#headUp {
   @apply w-full flex flex-col justify-between items-center text-center;
   background-color: transparent;
   /*min-height: calc(100vh - var(--entete-height) - (7 * var(--pageBorder-width)));*/
+}
+
+body#menu div#headUp {
+  overflow-y: auto;
+  height: calc(100vh - var(--entete-height) - (7 * var(--pageBorder-width)));
 }
 
 #headUp .headUp_blocks {
@@ -541,23 +547,17 @@ div#headUp {
   @apply bg-secondary-bg;
 }
 
-#headUp a.boxIso>* {
-  padding: 0 var(--pageBorder-width);
-}
+#headUp a.boxIso .headUpMain {
+  @apply w-3/5 h-full flex flex-col md:flex-row newpad-r;
 
+}
 #headUp a.boxIso .headUpImg {
-  @apply w-1/5 h-full overflow-hidden transition-all duration-500 ease-in-out;
+  @apply w-full md:w-1/3 h-full newpad-r overflow-hidden transition-all duration-500 ease-in-out;
   aspect-ratio: 1.66;
 }
 
-@media screen and (max-width: 1024px) {
-  #headUp a.boxIso .headUpImg {
-    aspect-ratio: 1;
-  }
-}
-
 #headUp a.boxIso .headUpTitle {
-  @apply flex flex-col justify-between w-2/5;
+  @apply newpad-l flex flex-col justify-between w-full md:w-2/3;
 }
 
 #headUp a.boxIso:hover * {
@@ -565,7 +565,7 @@ div#headUp {
 }
 
 #headUp a.boxIso .boxTitleIn {
-  @apply text-lg transition-all duration-500 ease-in-out;
+  @apply text-lg newpad-t md:p-0 transition-all duration-500 ease-in-out;
   line-height: 1.3rem;
 }
 
@@ -575,11 +575,11 @@ div#headUp {
 }
 
 #headUp a.boxIso .headUpDescription {
-  @apply flex flex-col justify-between w-2/5 text-xs border-l border-secondary-text transition-all duration-500 ease-in-out;
+  @apply flex flex-col justify-between w-2/5 text-xs line-l newpad-l transition-all duration-500 ease-in-out;
 }
 
 #headUp a.boxIso .boxDescipt {
-  @apply leading-tight text-xs p-1.5;
+  @apply leading-tight text-xs;
 }
 
 #headUp a.boxIso .boxInfo {
@@ -647,7 +647,7 @@ a.linkBox:hover .duotone::after {
 }
 
 #settingOptions {
-  @apply h-full flex flex-row justify-between items-center line-l newpad-x;
+  @apply h-full flex flex-row justify-between items-center line-l newpad-l;
 }
 
 #settingOptions>div {

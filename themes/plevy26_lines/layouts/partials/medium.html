@@ -118,7 +118,7 @@
         {{ end }}
         {{ if .Params.sessions }}
         {{ $code := .Params.code }}
-        
+
 
         <div id="headUp">
             <div class="headUp_blocks">
@@ -217,6 +217,14 @@
                         "doclinkIcon"
                         ) -}}</span>&nbsp;&nbsp;<span>{{ $text }}</span></a>
                 {{ end }}{{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ if eq .Params.layout "presentation" }}
+        <div class="w-full invisible lg:visible newpad-y line-b" id="QR"
+            data-cat-sort="1">
+            <div class="place-self-center w-auto" aria-label="See QR">
+                <span id="qrcode" class="block h-0 lg:h-62 w-0 lg:w-62 bg-white newpad rounded-lg"></span>
             </div>
         </div>
         {{ end }}

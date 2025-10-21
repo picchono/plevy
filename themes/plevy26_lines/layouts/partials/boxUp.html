@@ -4,12 +4,13 @@
     aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
     data-date="{{ .context.Date }}" data-section="{{ .context.Section  }}">
     <a class="boxIso newpad-y{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}">
-        <span class="headUpImg duotone" style="background-image: url('{{ $Img | safeURL }}');"></span>
-        <span class="headUpTitle">
-            <h2 class="boxTitleIn">{{- .context.Title
-                |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end
-                }}</h2>
-            <span class="boxAff">
+        <span class="headUpMain">
+            <span class="headUpImg duotone" style="background-image: url('{{ $Img | safeURL }}');"></span>
+            <span class="headUpTitle">
+                <h2 class="boxTitleIn">{{- .context.Title
+                    |safeHTML }}{{if eq .context.Params.subsection "ended"}} ({{- i18n "ended" -}}){{ end
+                    }}</h2>
+                <span class="boxAff">
                     {{ if eq .context.Params.layout "member" }}
                     {{ $parts := .context.Params.shortdescription }}{{ $splitParts := split $parts ","
                     }}{{
@@ -23,6 +24,7 @@
                     {{ else if eq .context.Params.slug "chaire" }}Cnam
                     {{ else }} · {{ dateFormat "02 Jan 2006" .context.Date }}{{ end }}
                     {{ end }}
+                </span>
             </span>
         </span>
         <span class="headUpDescription">
@@ -33,7 +35,7 @@
                 {{ if .context.Params.shortJournal }}{{ .context.Params.shortJournal }}{{ end }}
                 {{ if .context.Params.shortSection }}In {{ .context.Params.shortSection }}{{ end }}
                 {{ if .context.Params.shortMemoire }}{{ .context.Params.shortMemoire }}{{ end }}
-                </span>{{ else if eq .context.Section "events" }}<span class="boxInfo">
+            </span>{{ else if eq .context.Section "events" }}<span class="boxInfo">
                 {{ if .context.Params.intervenants }}{{ $len := len .context.Params.intervenants }}
                 {{ $count := 0 }}
                 {{ range .context.Params.intervenants }}
@@ -42,7 +44,7 @@
                 {{- if ne $count $len -}}, {{ end }}
                 {{ end }}<br>{{ end }}
                 @ {{ .context.Params.institution.name }}
-                </span>{{ else if eq .context.Section "presentations" }}<span class="boxInfo">
+            </span>{{ else if eq .context.Section "presentations" }}<span class="boxInfo">
                 {{ i18n "for" }}{{ if .context.Params.collaboration }}
                 {{ $len := len .context.Params.collaboration }}
                 {{ $count := 0 }}
@@ -52,9 +54,9 @@
                 {{ $count = add $count 1 }}
                 {{- if eq $count $len -}}, {{ end }}{{ end }}
                 {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
-                </span>{{ else if eq .context.Section "teaching" }}<span class="boxInfo">
+            </span>{{ else if eq .context.Section "teaching" }}<span class="boxInfo">
                 {{ .context.Params.institution.name }}
-                </span>{{ else if eq .context.Section "courses" }}<span class="boxInfo">
+            </span>{{ else if eq .context.Section "courses" }}<span class="boxInfo">
                 {{ if .context.Params.collaboration }}{{ $len := len .context.Params.collaboration }}
                 {{ $count := 0 }}
                 {{ range .context.Params.collaboration }}
@@ -62,9 +64,10 @@
                 {{ $count = add $count 1 }}
                 {{- if ne $count $len -}}, {{ end }}
                 {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
-                </span>{{ else if eq .context.Section "projects" }}<span class="boxInfo">{{ if .context.Params.institution.name }}@
+            </span>{{ else if eq .context.Section "projects" }}<span class="boxInfo">{{ if
+                .context.Params.institution.name }}@
                 {{ .context.Params.institution.name }}{{ end }}</span>{{ end }}
-            </span>
+        </span>
         </span>
     </a>
 </div>
