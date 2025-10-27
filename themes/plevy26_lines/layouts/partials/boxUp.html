@@ -12,11 +12,8 @@
                     }}</h2>
                 <span class="boxAff">
                     {{ if eq .context.Params.layout "member" }}
-                    {{ $parts := .context.Params.shortdescription }}{{ $splitParts := split $parts ","
-                    }}{{
-                    range
-                    $index,
-                    $part := $splitParts }}{{ if ne $index 0 }} · {{ end }}{{ $part }}{{ end }}
+                    {{ $parts := .context.Params.shortdescription }}{{ $splitParts := split $parts ","}}
+                    {{ range $index, $part := $splitParts }}{{ if ne $index 0 }} · {{ end }}{{ $part }}{{ end }}
                     {{ else }}{{ $str := replaceRE "(s)$" "" (i18n .context.Section) }}{{ $str }}
                     {{ if eq .context.Section "publications" }} · {{ dateFormat "2006" .context.Date }}
                     {{ else if eq .context.Section "projects" }} · {{ dateFormat "Jan 2006"

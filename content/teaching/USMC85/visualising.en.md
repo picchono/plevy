@@ -97,6 +97,6 @@ You are assessed on your reflections, the apparent construction towards the cons
 The exercise should not take more than 1h.
 
 
-To be submitted @ [pierre.levy@lecnam.net](mailto:pierre.levy@lecnam.net) with the following title for the email and for the document: USMC85_visualising-<your SISCOL number>-<your Name>
+To be submitted @ [pierre.levy@lecnam.net](mailto:pierre.levy@lecnam.net) with the following title for the email and for the document: USMC85_visualising-\<your SISCOL number\>-\<your Name\>
 
 The format should be in pdf. There is no format imposed, but do not hesitate to propose one (no need to justify unless necessary to understand the document itself). **Diagrams are not allowed.**

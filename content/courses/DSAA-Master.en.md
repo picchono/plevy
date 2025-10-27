@@ -35,8 +35,8 @@ collaboration:
         name: "Conservatoire national des Arts et Métiers"
         web: "https://www.cnam.fr/"
         heig: 1.1
-frontphoto: "https://ensaama.net/site/content/1-home/3-formations/3-dsaa/dsaa-ensaama.jpg"
-frontphotomini: "https://ensaama.net/site/content/1-home/3-formations/3-dsaa/dsaa-ensaama.jpg"
+frontphoto: "https://formation.cnam.fr/medias/photo/cnam-ensamaa-2_1747212506254-png"
+frontphotomini: "https://formation.cnam.fr/medias/photo/cnam-ensamaa-2_1747212506254-png"
 code: ENSAAMADSAA
 link:
     1: ["Ensaama", "website", "https://ensaama.net"]
