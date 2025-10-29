@@ -1,6 +1,7 @@
 ---
 slug: TP
 title: "Pratiques transformatives"
+subsection: presentation
 layout: presentation
 institution:
     heig: 1
@@ -27,9 +28,9 @@ date: 2024-12-10T16:27:15+02:00
 frontphoto: "https://1drv.ms/i/c/50aeab3cfffe3174/IQRwbWbHsQEfRq7jRHhgQkAZAejQ-TOEfwNyMPMThew3e5M?q=80&w=600"
 description: "Une brève introduction"
 slides: [
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/IQSHLVLNGLRrTJtFzEEZjOVuAQMsY6vqlSPfcnpi38skO50"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/IQQkaxOEFc0ZR7fKL-mOFGKSAcaKoZNySuMPG8EGriPopXg"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/IQRp68H8_hMfToMleMpysS4jAeHpRX0ypDjg1vx3qxPQwZk"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/IQSolJQPTfi2QIiz041oe0axASOoKp9PKdhJgjgW8REscSA"]
+    ["google", "1bxEWDzsbVrxwSPXcyTvr7esE-YbuzcoR"],
+    ["google", "11NsOFSkqCZ7yB9GstepRUYj3tC3zbE9U"],
+    ["google", "1q7YY-V7kxLxqPJN6KXMUlkPRsN9QMH18"],
+    ["google", "1ZeU0IdBIvdUPVRzcbOxLF2cv2go2ARU-"]
 ]
 ---

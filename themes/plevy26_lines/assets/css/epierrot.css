@@ -446,6 +446,7 @@ div#splideArchive {
 
 #splideArchive .splide_title {
   @apply text-xl font-bold mt-4 lg:mt-0 mb-8;
+  padding: 0 var(--pageBorder-width);
 }
 
 #splideArchive .splide__slide::-webkit-scrollbar {

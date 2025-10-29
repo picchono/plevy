@@ -32,6 +32,7 @@ institution:
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgczoVuMW9C29P0xb900?embed=1&width=2190&height=1000"
 frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65QgczoVuMW9C29P0xb900?embed=1&width=2190&height=500"
 date: 2025-06-05T18:00:00+02:00
+subsection: seminar
 layout: single
 description: "This talk returns to the debate that gave rise to the book 'Design Research through Practice', currently under revision, and recontextualizes it to our current design (research) environment characterized by introspective approaches to design, systemic design, design fiction, critique of humanism, and most recently by GenAI – among other things."
 ---

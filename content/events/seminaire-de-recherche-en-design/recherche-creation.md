@@ -29,6 +29,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2025-04-24T18:00:00+02:00
+subsection: seminar
 layout: single
 description: "La recherche-création est en plein essor, au point qu’elle dépasse même les frontières des arts et des arts appliqués. Mais comment la développer dans le champ académique, tout en garantissant sa qualité artistique et sa reconnaissance professionnelle, en premier lieu dans le monde de l'art et du design ?"
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65Qgc3be2sEvBOXbQdfZ-8?embed=1&width=1000"

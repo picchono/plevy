@@ -6,20 +6,9 @@
         {{ with $page }}{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}{{ end }}
         {{ $page := $.Site.GetPage "page" "plevy.md" }}
         {{ with $page }}{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}{{ end }}
-        {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings"
-        "presentations" }}
-        {{ range readDir "content" }}
-        {{ if eq .Name $fold }}
-        {{ range where $.Site.Pages "Section" "in" ($fold) }}
-        {{ if eq .Params.zone $fold }}
-        {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+        {{ range .Site.RegularPages }}
         {{ if eq .Params.fronttop true }}
         {{- partial "boxUp.html" ( dict "context" . ) -}}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
         {{ end }}
         {{ end }}
     </div>
@@ -28,21 +17,12 @@
 <div id="splideArchive" class="splide" aria-label="Archives">
     <div class="splide__track">
         <ul class="splide__list">
-            {{ range $fold := slice "events" "teaching" "courses" "projects" "research" "publications" "writings"
-            "presentations" }}
+            {{ range .Sections }}
             <li class="splide__slide">
-                <div class="splide_title">{{ i18n $fold }}</div>
-                {{ range readDir "content" }}
-                {{ if eq .Name $fold }}
-                {{ range where $.Site.Pages "Section" "in" ($fold) }}
-                {{ if eq .Params.zone $fold }}
-                {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
+                <h1 class="splide_title">{{ .Title }}</h1>
+                {{ range .Pages }}
                 {{ if ne .Params.notListed true }}
-                {{- partial "box.html" ( dict "context" . ) -}}
-                {{ end }}
-                {{ end }}
-                {{ end }}
-                {{ end }}
+                    {{- partial "box.html" ( dict "context" . ) -}}
                 {{ end }}
                 {{ end }}
             </li>

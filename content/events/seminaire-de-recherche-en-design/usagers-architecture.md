@@ -30,6 +30,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2025-04-03T18:00:00+02:00
+subsection: seminar
 layout: single
 description: "Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception. Elle mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et en discutera des questions méthodologiques pertinentes."
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgdGabg2R34tNLEOo-hY?embed=1&width=1920"

@@ -4,6 +4,7 @@ title: "School of not-knowing"
 tags: ['not knowing', 'design']
 layout: single
 searchFilter: Event
+subsection: project
 institution:
     heig: 1
     logo: cnam

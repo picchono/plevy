@@ -169,6 +169,9 @@ other="Expérience professionelle"
 [teaching]
 other="Enseignement"
 
+[project]
+other="Projet"
+
 [bachelorcourses]
 other="Licence"
 
@@ -238,6 +241,9 @@ other="Recherche"
 [research-topics]
 other="Sujets de recherche"
 
+[research-programme]
+other="Programme de recherche"
+
 [research-programmes]
 other="Programmes de recherche"
 
@@ -265,9 +271,6 @@ other="Leçons"
 
 [lecture]
 other="Leçon"
-
-[research-programme]
-other="Programme de recherche"
 
 [main-activities]
 other="Activités principales"
@@ -309,10 +312,10 @@ other="Doctorat"
 other="Passé"
 
 [course]
-other="Formation"
+other="Cours"
 
 [diploma]
-other="Parcours"
+other="Diplôme"
 
 [courses]
 other="Formations"
@@ -361,6 +364,9 @@ other="Curriculum Vitae"
 
 [Recent-writings]
 other="Derniers écrits"
+
+[writing]
+other="Écrit"
 
 [writings]
 other="Écrits"

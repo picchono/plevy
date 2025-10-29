@@ -2,7 +2,7 @@
     <div class="lefttBlockIn">
         <div class="pageTitle newpad-b">
             <div class="text-left items-start">
-                <h1>{{ .Params.title |safeHTML }}{{if eq .Params.subsection "ended"}}
+                <h1>{{ .Params.title |safeHTML }}{{if eq .Params.status "ended"}}
                     ({{- i18n "ended" -}}){{ end }}</h1>
                 {{ if .Params.authors }}
                 <p class="italic" data-pagefind-weight="6">{{ .Params.authors }},

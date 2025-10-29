@@ -30,6 +30,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2025-05-15T18:00:00+02:00
+subsection: seminar
 layout: single
 description: "Cette intervention s’attache à rendre compte d’une pratique de terrain dans le cadre d’une recherche en design menée durant 3 ans au sein d’une industrie de la métallurgie (menée au sein d’une thèse CIFRE)."
 frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=1000"

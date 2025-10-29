@@ -1,6 +1,7 @@
 ---
 slug: pierre-levy
 title: "Pierre Lévy"
+subsection: presentation
 layout: presentation
 institution:
     heig: 1
@@ -12,16 +13,16 @@ date: 2024-12-19T16:27:15+02:00
 frontphoto: "https://1drv.ms/i/c/50aeab3cfffe3174/IQRwbWbHsQEfRq7jRHhgQkAZAejQ-TOEfwNyMPMThew3e5M?q=80&w=600"
 description: "A brief introduction"
 slides: [
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/IQTVZTuRV_25T4Xe0YyvKnbiAR6Z5LqARJRBqeZHUGoJnfM"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/IQSmFUYwyHDnQq5dvt3U8d_TAWYUmUIUohPbPWV4DUW5iOw"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQZJc2AAAAAOWINxtw_9xV9IY"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQY5c2AAAAAJ2Ge1bKUJyJdCg"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQaJc2AAAAADtA77ePaPDe6bI"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQZ5c2AAAAAJ1rcE_PLWv-TXQ"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQdZc2AAAAAGLbfjRnEqNadQY"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQdJc2AAAAAIq6XloAT1meX0g"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQc5c2AAAAAJS4mXUP_ntkyUI"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQcpc2AAAAAMb9qVJNKeMfsx8"],
-    ["img", "https://1drv.ms/i/c/50aeab3cfffe3174/IQTReDI5rQq4QqnByXY0eAUXAX_sjAgDiibJCJTjaA8awwM"]
+    ["google", "1x5G1gahNaS3tw8jsVfL4W88fa3P9jiUL"],
+    ["google", "1ZpSEK7B_cQ_9pOHljt8irgwWjy9BYK45"],
+    ["google", "18HPNGunj158j0VyqkRGuGuGvLiJHmJzw"],
+    ["google", "19S0o7B78Po6sohJ-xkmjgWPY2wFx7yta"],
+    ["google", "170VoTMc6gsJIUwu6YzJiP4YQwxyfJHP9"],
+    ["google", "1qDzn6tLp-Ty2kpoeixnCgyptNTrCr0gQ"],
+    ["google", "1P6IJkzhhGFueag3Rsy2aNITPGzFIpsH3"],
+    ["google", "1CUvWMdVj4U5i1Cf5645K1xZk9TnrIycX"],
+    ["google", "1Z-SM-X1B6d-z2H7RilfeubpJrF6uFlqI"],
+    ["google", "14HeY1dGd9ScQM78zuC_caHonmKgeI6h8"],
+    ["google", "1OXzekE5R_OtXsaJJ0076D2Y5UXU1w3HD"]
 ]
 ---

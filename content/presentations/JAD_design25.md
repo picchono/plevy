@@ -1,6 +1,7 @@
 ---
 slug: designJAD25
 title: "Une histoire commentée du design"
+subsection: presentation
 layout: prez
 institution:
     heig: 1

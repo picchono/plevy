@@ -241,6 +241,9 @@ other="Research"
 [research-topics]
 other="Research topics"
 
+[research-programme]
+other="Research programme"
+
 [research-programmes]
 other="Research programmes"
 
@@ -267,9 +270,6 @@ other="Lectures"
 
 [lecture]
 other="Lecture"
-
-[research-programme]
-other="Research programme"
 
 [main-activities]
 other="Main activities"
@@ -326,7 +326,7 @@ other="Past courses"
 other="Current courses"
 
 [diploma]
-other="Programme"
+other="Diploma"
 
 [courses]
 other="Courses"
@@ -372,6 +372,9 @@ other="Recent writings"
 
 [writings]
 other="Writings"
+
+[writing]
+other="Writing"
 
 [tableOfContent]
 other="Table of Content"
