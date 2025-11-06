@@ -17,12 +17,12 @@
                 {{ if eq $typ "img" }}
                 <a class="galImg place-self-center w-24 mr-4 mb-4" href="{{ index . 1 }}"
                     aria-label="See image {{ $ord }}" data-custom-prop="abc">
-                    <img class="rounded-xs object-cover" loading="lazy" src="{{ index . 1 }}?embed=1&width=400"
+                    <img class="rounded-lg object-cover" loading="lazy" src="{{ index . 1 }}?embed=1&width=400"
                         alt="{{ index . 2}}" title="{{ index . 2}}"></a>
                 {{ else if eq $typ "google" }}
                 <a class="place-self-center w-24 mr-4 mb-4" href="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w3200"
                     aria-label="See image {{ $ord }}" data-custom-prop="abc">
-                    <img class="rounded-xs object-cover" loading="lazy" src="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w500"
+                    <img class="rounded-lg object-cover" loading="lazy" src="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w500"
                         alt="{{ index . 2}}" title="{{ index . 2}}"></a>
                 {{ else if eq $typ "mov"}}
                 <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}"

@@ -5,6 +5,9 @@ layout: course
 searchFilter: Course
 date: 2021-10-01T16:27:15+02:00
 subsection: diploma
+start: 2021
+end: 2025
+status: ended
 Diploma:
     level1:
         type: "Master"

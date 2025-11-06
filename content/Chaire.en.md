@@ -19,8 +19,7 @@ notEverything: true
 notListed: true
 noPagesearch: true
 description: "The Jean Prouvé Chair in Design is a welcoming space dedicated to developing the role of design practice and research in society and culture. Its focus is on expressing beauty through everyday materials and reflective practices."
-frontphoto: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
-frontphotomini: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
+frontphoto: "1eDSZNUKEs_FaUFK7vFKpRuTD-EY-v3Ha"
 video:
     video1:
         youtube: "2iE0PFu51CM"

@@ -20,7 +20,7 @@ ects: 4
 teacher:
     teacher1:
         name: "Pierre Lévy"
-frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
+frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
 ---
 ## La question de recherche
 La question de recherche est un élément charnière dans le développement d’une recherche, **entre une observation du contexte d’étude et une analyse dirigée** qui tentera de faire une proposition de savoir original. Elle est souvent la suite logique de l’élucidation du contexte d’étude (nous nous trouvons dans telle situation, avec tels enjeux et inconnus, donc notre question de recherche est telle). Elle précède l’énonciation de la conduite de la recherche (qui bien sûr repose sur la question de recherche).

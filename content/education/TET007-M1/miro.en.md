@@ -20,7 +20,7 @@ ects: 4
 teacher:
     teacher1:
         name: "Pierre Lévy"
-frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
+frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 link:
     1: ["to miro", "miro", "https://miro.com/app/board/uXjVNJOhJSM=/?share_link_id=922944164425"]
 playlist:

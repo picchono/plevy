@@ -12,8 +12,7 @@ institution:
 date: 2025-09-26T12:55:15+02:00
 subsection: course
 description: "The major aim of this course is to improve students' scientific or technical presentation skills, focusing on the roles and the effects of involved media in presenting a project (e.g., a poster, an artefact, a video...)."
-frontphoto: "https://live.staticflickr.com/65535/53987531454_961dc14fbe_o.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/53987531454_efb0ab05e7_w.jpg"
+frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 code: USMC85
 subsection: course
 lectures:

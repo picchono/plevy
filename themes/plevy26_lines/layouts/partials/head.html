@@ -45,9 +45,10 @@
 {{ $splide_css := $splide_css | minify }}
 <link rel="stylesheet" href="{{ $splide_css.Permalink }}" media="all">
 
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=mulish:300,300i,600,600i" rel="stylesheet" />
-
+{{ $mulish_css := resources.Get "css/mulish.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $mulish_css := $mulish_css | minify }}
+<link rel="stylesheet" href="{{ $mulish_css.Permalink }}" media="all">
+ 
 {{ partial "opengraph.html" . }}
 {{ partial "x_cards.html" . }}
 {{ range .AlternativeOutputFormats -}}

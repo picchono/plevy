@@ -19,7 +19,7 @@ ects: 4
 teacher:
     teacher1:
         name: "Pierre Lévy"
-frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
+frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 ---
 ## Briefly about me
 I am interested in the way we deal with and transform the world at hand in everyday life. This constant effort of appropriation maintains a certain form of freedom and quietude. While I experiment a lot on my own everyday life, I also try to structure my design teachings and research activities so that I can explore and progress on these inquiries further.  

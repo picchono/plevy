@@ -3,7 +3,8 @@ slug: master_design-art_contextes_techniques_usages
 title: "Master Design · Art, contextes, techniques, usages"
 layout: course
 searchFilter: Course
-date: 2025-02-05T16:27:15+02:00
+date: 2026-09-01T16:27:15+02:00
+start: 2026
 subsection: diploma
 Diploma:
     level1:
@@ -35,8 +36,7 @@ collaboration:
         name: "École Média Art du Grand Chalon"
         web: "https://emafructidor.com/ema/"
         heig: 1.5
-frontphoto: "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?q=80&w=1080"
-frontphotomini: "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?q=80&w=500"
+frontphoto: "1ZxXzSoYyqo12BRs6DlKTIndboW6dAZMs"
 photocredit: 
     cred: "Maksym Kaharlytskyi"
     link: "https://unsplash.com/@qwitka"

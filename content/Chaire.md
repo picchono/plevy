@@ -16,8 +16,7 @@ institution:
     web: "https://www.cnam.fr/"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'eindhoven', 'pratiques_transformatives']
 description: "La Chaire de Design Jean Prouvé est un lieu bienveillant consacré au développement du rôle de la pratique et de la recherche en design dans la société et la culture. Elle prend comme horizon l'expression du beau au travers des matérialités et des pratiques réflexives du quotidien."
-frontphoto: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
-frontphotomini: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
+frontphoto: "1eDSZNUKEs_FaUFK7vFKpRuTD-EY-v3Ha"
 notEverything: true
 notListed: true
 noPagesearch: true

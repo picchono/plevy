@@ -21,7 +21,7 @@ ects: 4
 teacher:
     teacher1:
         name: "Pierre Lévy"
-frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
+frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 ---
 ## Portfolio annoté
 Le portfolio annoté vise à *examiner des exemples spécifiques de pratiques pour trouver des orientations pour le travail et, en discutant de la manière dont ces exemples étaient pertinents pour nous, de commencer à développer un  réflexion au travers du design*.

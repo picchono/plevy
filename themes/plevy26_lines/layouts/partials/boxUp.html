@@ -1,11 +1,11 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
-{{ $Img := print .context.Params.frontphotomini }}
+{{ $Img := print .context.Params.frontphoto }}
 <div class='menuBox {{ .context.Section  }} {{- if eq .context.Params.status "ended" }} ended{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
     data-date="{{ .context.Date }}" data-section="{{ .context.Section  }}">
     <a class="boxIso newpad-y{{ if .context.Section}} {{ .context.Section }}{{ end }}" href="{{ .context.Permalink }}">
         <span class="headUpMain">
-            <span class="headUpImg duotone" style="background-image: url('{{ $Img | safeURL }}');"></span>
+            <span class="headUpImg duotone" style="background-image: url('https://drive.google.com/thumbnail?id={{- $Img -}}&sz=w500');"></span>
             <span class="headUpTitle">
                 <h2 class="boxTitleIn">{{- .context.Title
                     |safeHTML }}{{if eq .context.Params.status "ended"}} ({{- i18n "ended" -}}){{ end

@@ -19,8 +19,7 @@ notEverything: true
 notListed: true
 noPagesearch: true
 description: "デザインチェア 「ジャン・プルーヴェ」は、社会と文化におけるデザインの実践と研究の役割の発展に捧げられた温かい場所です。日常の物質性と省察的な実践を通じて美を表現することを視野に入れています。"
-frontphoto: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
-frontphotomini: "https://upload.wikimedia.org/wikipedia/commons/6/61/Jean_prouv%C3%A9%2C_sedia_smontabile_%28CB_22_poi_n._301%29%2C_1947_ca.JPG"
+frontphoto: "1eDSZNUKEs_FaUFK7vFKpRuTD-EY-v3Ha"
 video:
     video1:
         youtube: "2iE0PFu51CM"

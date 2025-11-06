@@ -1912,7 +1912,7 @@ div.highlight pre {
 }
 
 .imgAddons {
-  @apply absolute flex justify-end items-end align-bottom transition-colors duration-500 ease-in-out;
+  @apply absolute rounded-lg flex justify-end items-end align-bottom transition-colors duration-500 ease-in-out;
   font-size: 0.8vw;
 }
 

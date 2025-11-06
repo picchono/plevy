@@ -3,6 +3,12 @@ slug: La-diversité-dans-lenseignement-du-design-et-des-métiers-dart-doit-faire
 title: "La diversité dans l'enseignement du design et des métiers d'art doit faire école"
 subsection: writing
 layout: writing
+institution:
+    heig: 1
+    logo: cnam
+    short: Cnam
+    name: "Conservatoire national des Arts et Métiers"
+    web: "https://www.cnam.fr/"
 searchFilter: Writing
 date: 2023-05-20T13:38:26+02:00
 authors: "Pierre Lévy"

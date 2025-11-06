@@ -20,7 +20,7 @@ ects: 4
 teacher:
     teacher1:
         name: "Pierre Lévy"
-frontphoto: "https://live.staticflickr.com/65535/52427464765_8fe12aeeee_h.jpg"
+frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
 ---
 ## Introduction
 Cette UE propose une vue d'ensemble des pratiques de la recherche en design, art et création, afin d’atteindre deux objectifs pédagogiques. Il s’agit d’abord de contextualiser l'implication de la pratique du design, de l’art ou de la création en recherche, et de développer une approche de recherche au travers de ces pratiques. Il s’agit ensuite de fournir des ressources (connaissances, outils, méthodologies, réseaux...) utiles à la recherche engagée sur une pratique, et de permettre un développement en autonomie des ressources utiles à la pratique de la recherche.
