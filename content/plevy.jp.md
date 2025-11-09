@@ -14,8 +14,7 @@ photogallery:
     image1:
         order: 1
         name: "Pierre Lévy"
-        src: "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg"
-        img: "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg"
+        img: "17j4DUOADwcZx_U0GJX8zfzqFtKdQAWmE"
 ---
 
 **レヴィ・ピエール**

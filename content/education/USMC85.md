@@ -16,22 +16,22 @@ code: USMC85
 subsection: course
 lectures:
     Introduction:
-        order: o
+        order: 0
         link: "introduction"
         title: "Introduction"
-    HTML:
+    Rhetoric:
         order: 1
         link: "rhetoric"
         title: "Rhetoric"
-    CSS:
+    Writing:
         order: 2
         link: "writing"
         title: "Writing"
-    Miro:
+    Visualising:
         order: 3
         link: "visualising"
         title: "Visualising"
-    Notion:
+    Presenting:
         order: 4
         link: "presenting"
         title: "Presenting"
