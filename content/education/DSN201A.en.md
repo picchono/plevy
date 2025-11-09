@@ -45,11 +45,6 @@ lectures:
         title: "L'évaluation"
 link:
     1: ["page institutionelle", "institutional", "https://www.cnam-paris.fr/choisir-ma-formation/catalogue-des-formations/pratiques-de-recherche-en-design-art-et-creation-1349639.kjsp?RF=1493737534092"]
-encapsulation:
-    CS11400A: 
-        title: "CS11400A · Certificat de spécialisation d'ingénierie de la culture et de la création"
-        link: "https://formation.cnam.fr/rechercher-par-discipline/certificat-de-specialisation-d-ingenierie-de-la-culture-et-de-la-creation-1322095.kjsp"
-        img: "https://images.unsplash.com/photo-1632127255731-469370df58c3?q=80&w=500"
 ---
 Cette UE propose une vue d'ensemble des pratiques de la recherche en design, art et création, afin d’atteindre deux objectifs pédagogiques. Il s’agit d’abord de contextualiser l'implication de la pratique du design, de l’art ou de la création en recherche, et de développer une approche de recherche au travers de ces pratiques. Il s’agit ensuite de fournir des ressources (connaissances, outils, méthodologies, réseaux...) utiles à la recherche au travers d’une pratique, et de permettre un développement en autonomie des ressources utiles à la pratique de la recherche.
 

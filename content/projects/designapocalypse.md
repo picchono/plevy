@@ -1,7 +1,6 @@
 ---
 slug: design-apocalypse-manifesto
 title: "Design et apocalypse, un manifesto"
-projecttype: general
 layout: single
 searchFilter: Project
 subsection: project

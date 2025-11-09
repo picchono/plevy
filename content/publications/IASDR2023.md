@@ -28,7 +28,7 @@ citation:
         1: ["De Sainz", "D.", "D."]
         2: ["Galluzzo", "L.", "L."]
         3: ["Rizzo", "F.", "F."]
-        3: ["Spallazzo", "D.", "D."]
+        4: ["Spallazzo", "D.", "D."]
     firstpage: "online"
     publisher: ["School of Design, Politecnico di Milano", "Milan, Italy"]
     doi: "10.21606/iasdr.2023.361"

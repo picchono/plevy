@@ -6,7 +6,6 @@ tags: ['séminaire', 'médiums', 'médialité', 'anthropologie_symétrique']
 draft: false
 front: true
 frontdescription: "Un séminaire en collaboration entre la Chaire Design Jean Prouvé du CNAM et CY Design Research"
-searchFilter: MediumsDesign
 milestone: mediums
 layout: single
 searchFilter: Event

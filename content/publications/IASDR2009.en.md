@@ -21,9 +21,9 @@ shortConf: "IASDR 2009"
 citation:
     authors:
         1: ["Levy", "Pierre", "P."]
-        3: ["Yamanaka", "Toshimasa", "T."]
+        2: ["Yamanaka", "Toshimasa", "T."]
         3: ["Ono", "Kenta", "K."]
-        3: ["Watanabe", "Makoto", "M."]
+        4: ["Watanabe", "Makoto", "M."]
     year: 2009
     title: "Prospective psychophysiological approach for Kansei design: knowledge sharing between psychophysiology and design"
     proceedings: "the Proceedings of International Association of Societies of Design Research Conference 2009 - IASDR09"

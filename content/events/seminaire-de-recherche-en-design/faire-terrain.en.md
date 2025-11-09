@@ -1,5 +1,5 @@
 ---
-title: "Faire terrain : le design comme pratique située de recherche (postponed)"
+title: "Faire terrain : le design comme pratique située de recherche (repoussé)"
 prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:
     partner1:
@@ -21,7 +21,7 @@ intervenants:
         logo: 110bis
         height: 5
         link: "https://www.education.gouv.fr/110-bis-le-lab-d-innovation-publique-de-l-education-nationale-100157"
-        photo: "https://1drv.ms/i/s!AnQx_v88q65QgczFP5NuHmygev43xxo?embed=1&width=3024&height=4032"
+        photo: "1NgvcpQuceyTcIyMRbkzUX-AQ2JZwlkxV"
         bio: "<p>Designer et chercheur en design, Dorian Reunkrilerk travaille sur les modes de médiation au design permettant de penser une approche située et intégrative du design au sein des organisations. Actuellement en poste au 110 bis, lab d’innovation publique du Ministère de l’éducation nationale, sa pratique nourrit un travail de recherche sur les enjeux d’intégrations du design au sein des environnements administratifs de la fonction publique d’état.</p>"
 institution:
     heig: 1
@@ -33,13 +33,11 @@ date: 2025-05-15T18:00:00+02:00
 subsection: seminar
 layout: single
 description: "Cette intervention s’attache à rendre compte d’une pratique de terrain dans le cadre d’une recherche en design menée durant 3 ans au sein d’une industrie de la métallurgie (menée au sein d’une thèse CIFRE)."
-frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=1000"
-frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=500"
+frontphoto: "1NgvcpQuceyTcIyMRbkzUX-AQ2JZwlkxV"
 photogallery:
     image1:
         order: 1
         name: "Faire terrain : le design comme pratique située de recherche, par Dorian Reunkrilerk"
-        src: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=500"
-        img: "https://1drv.ms/i/s!AnQx_v88q65QgczFQCcIBWYfQ_rrdFY?embed=1&height=3448"
+        img: "1Ew7C39yaIsJf8Gr0z3wf1xalrzga3TyZ"
 ---
 Cette intervention s’attache à rendre compte d’une pratique de terrain dans le cadre d’une recherche en design menée durant 3 ans au sein d’une industrie de la métallurgie (menée au sein d’une thèse CIFRE). Elle détaille les manières d’entrer en correspondances avec un terrain considéré comme « peu propice au design » et comment ces manières ont nourrit directement les contributions de cette thèse sur les modalités de collaborations entre design et ingénierie. En filigrane, il s’agit de montrer l’importance de construire des méthodologies situées et adaptées pour nourrir une pratique de design inscrit dans une volonté de recherche.

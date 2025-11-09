@@ -21,7 +21,7 @@ intervenants:
         logo: mano
         height: 1.5
         link: "https://www.manoarchitecture.com/"
-        photo: "https://1drv.ms/i/s!AnQx_v88q65Qgc2SNO15FRMOF_Bzz_U?embed=1&width=500"
+        photo: "1ZV5vyLg0DkXflEQznVlBywHbX1qDKurX"
         bio: "<p>Benjamin Loiseau est architecte et docteur en architecture. Il dirige MANO, une agence d'architecture spécialisée dans la conception participative. Ses travaux de recherche portent sur les processus de conception en architecture et la place que les usagers peuvent y prendre.</p>"
 institution:
     heig: 1
@@ -33,14 +33,12 @@ date: 2025-04-03T18:00:00+02:00
 subsection: seminar
 layout: single
 description: "Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception. Elle mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et en discutera des questions méthodologiques pertinentes."
-frontphoto: "https://1drv.ms/i/s!AnQx_v88q65QgdGabg2R34tNLEOo-hY?embed=1&width=1920"
-frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65QgdGabg2R34tNLEOo-hY?embed=1&width=500"
+frontphoto: "1ZV5vyLg0DkXflEQznVlBywHbX1qDKurX"
 photogallery:
     image1:
         order: 1
         name: "Conception avec usagers en architecture : vers un indice de profondeur de participation, par Benjamin Loiseau"
-        src: "https://1drv.ms/i/s!AnQx_v88q65Qgc2SMyOxQBw4lcOV7Ak?embed=1&width=500"
-        img: "https://1drv.ms/i/s!AnQx_v88q65Qgc2SMyOxQBw4lcOV7Ak?embed=1&width=1386"
+        img: "16HKBtYIE9dLIx5bCMrg3DxnpcuYwa8Qw"
 video:
     video1:
         title: "Conception avec usagers en architecture : vers un indice de profondeur de participation"

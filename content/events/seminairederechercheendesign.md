@@ -6,7 +6,6 @@ tags: ['séminaire', 'design', 'création', 'méthodologie']
 draft: false
 front: true
 frontdescription: "Un séminaire de recherche en design et création"
-searchFilter: DSN201
 bodyclass: "seminar"
 milestone: mediums
 layout: single
@@ -42,6 +41,7 @@ photocredit:
 link:
     1: ["poster", "paper", "https://1drv.ms/b/s!AnQx_v88q65QgcCbKLZVHK3YRuvCaps?e=SzwP9D"]
     2: ["DSN201 · Initiation à recherche en design, art et création", "website", "http://localhost:1313/teaching/initiation-a-la-recherche-en-design-art-creation/"]
+    3: ["Aller au Cnam", "website", "https://presentation.cnam.fr/adresses-et-plans-d-acces/"]
 code: seminaire-de-recherche-en-design
 sessions:
     objet:
@@ -63,10 +63,7 @@ photogallery:
     image1:
         order: 1
         name: "Séminaire méthodologique de recherche en design"
-        src: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=400"
-        img: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=1413"
-link: 
-    1: ["Aller au Cnam", "website", "https://presentation.cnam.fr/adresses-et-plans-d-acces/"]
+        img: "1MLq4lkgkfW1CtMisf3Z5_r5B1PWRpJMw"
 ---
 Le séminaire de méthodologie « Pratiques de recherche en design et création » est co-animé par le laboratoire Dicen-IDF et la chaire Design Jean Prouvé du Cnam. Principalement dédié aux étudiants en master, aux jeunes chercheurs, doctorant·e·s ou aspirants à le devenir, il invite les membres des communautés de recherche liées aux domaines du design et de la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances.
 

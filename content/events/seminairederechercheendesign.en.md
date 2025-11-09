@@ -6,7 +6,6 @@ tags: ['séminaire', 'design', 'création', 'méthodologie']
 draft: false
 front: true
 frontdescription: "Un séminaire de recherche en design et création"
-searchFilter: DSN201
 bodyclass: "seminar"
 milestone: mediums
 layout: single
@@ -42,6 +41,7 @@ photocredit:
 link:
     1: ["poster", "paper", "https://1drv.ms/b/s!AnQx_v88q65QgcCbKLZVHK3YRuvCaps?e=SzwP9D"]
     2: ["DSN201 · Initiation à recherche en design, art et création", "website", "http://localhost:1313/teaching/initiation-a-la-recherche-en-design-art-creation/"]
+    3: ["Ways to Cnam", "website", "https://www.cnam.eu/maps-and-contacts/"]
 code: seminaire-de-recherche-en-design
 sessions:
     objet:
@@ -63,10 +63,7 @@ photogallery:
     image1:
         order: 1
         name: "Séminaire méthodologique de recherche en design"
-        src: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=400"
-        img: "https://1drv.ms/i/s!AnQx_v88q65Qgcu8PvxWO1ZMj5aDJPo?embed=1&width=1413"
-link: 
-    1: ["Ways to Cnam", "website", "https://www.cnam.eu/maps-and-contacts/"]
+        img: "1MLq4lkgkfW1CtMisf3Z5_r5B1PWRpJMw"
 ---
 The ‘Research practices in design and creation’ methodology seminar is organised and run jointly by the Dicen-IDF laboratory and the Jean Prouvé Design Chair at the National Conservatory of Arts and Craft (Cnam). Primarily aimed at master's students, young researchers, doctoral candidates and those aspiring to become such, it invites members of research communities linked to the fields of design and creation to contribute together to a better understanding of the methodological issues involved in research as a place for exploration, discussion and the dissemination of ideas and knowledge.
 

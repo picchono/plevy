@@ -10,7 +10,6 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2025-09-26T12:55:15+02:00
-subsection: course
 description: "The major aim of this course is to improve students' scientific or technical presentation skills, focusing on the roles and the effects of involved media in presenting a project (e.g., a poster, an artefact, a video...)."
 frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 code: USMC85
@@ -38,14 +37,14 @@ lectures:
         title: "Presenting"
 encapsulation:
     MR11601C: 
-        title: "MR11601C · Master Informatique, Computer Networks and IoT Systems"
-        link: "https://formation.cnam.fr/rechercher-par-discipline/master-computer-networks-and-iot-systems-1208709.kjsp"
+        page: "Master-Info-IoT.md"
+        code: "MR11601C"
     MR14602A: 
-        title: "MR14602A · Master Telecommunications and Networks"
-        link: "https://formation.cnam.fr/rechercher-par-discipline/master-sciences-technologies-sante-mention-reseaux-et-telecommunication-parcours-international-telecommunications-and-networks-1085672.kjsp"
+        page: "Master-Info-TIC.md"
+        code: "MR14602A"
     MR15101A: 
-        title: "MR15101A · Master Structural Mechanics and Coupled Systems"
-        link: "https://formation.cnam.fr/rechercher-par-discipline/master-informatique-parcours-traitement-de-l-information-et-exploitation-des-donnees-tried--813201.kjsp"
+        page: "Master-Meca.md"
+        code: "MR15101A"
 fronttop: true
 link:
     1: ["Moodle page", "link", "https://par.moodle.lecnam.net/mod/forum/index.php?id=27980"]

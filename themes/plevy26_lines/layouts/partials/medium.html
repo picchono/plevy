@@ -133,12 +133,12 @@
         </div>
         {{ end }}
         {{ if .Params.intervenants }}{{ range .Params.intervenants }}
-        <div class="pack-item w-full md:min-w-96 md:max-w-192">
+        <div class="pack-item w-full newpad-t md:min-w-96 md:max-w-192">
             <div class="newpad-b line-b flex flex-col">
                 <div class="flex flex-col md:flex-row">
-                    <div class="place-self-center h-74 w-auto md:w-74 photoItem" data-src="{{ .photo }}"
+                    <div class="place-self-center h-74 w-auto md:w-74 photoItem" data-src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w3000"
                         aria-label="See image">
-                        <img loading="lazy" src="{{ .photo }}" alt="{{ .photo }}" title="{{ .name }}"
+                        <img loading="lazy" src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w500" alt="{{ .photo }}" title="{{ .name }}"
                             class="rounded object-cover h-74 w-auto md:w-74" data-pagefind-index-attrs="title,alt">
                     </div>
                     <div class="py-6 md:py-0 md:pl-6">
@@ -175,21 +175,18 @@
         <div class="line-b newpad-y" data-cat-sort="4">{{ partial "citation.html" . }}</div>
         {{ end }}
         {{ if .Params.encapsulation }}
-        <div class="pageBlock newpad-y" data-cat-sort="1">
+        <div class="pageBlock newpad-y" data-cat-sort="1" id="headUp">
             {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
-            <div class="linkBlock">
-                {{ range .Params.encapsulation }}
-                <a class="linkBox" href="{{ absURL .link }}">
-                    <div class="titleLink">{{ .title }}</div>
-                    {{ if .img }}<div class="titleLink">
-                        <div class="duotone imgLink" style="background-image: url('{{ .img | safeURL }}');" a
-                            lt="{{ .title }}"></div>
-                    </div>{{ end }}
-                </a>
+            <div class="headUp_blocks">
+            {{ range .Params.encapsulation }}
+                <script>console.log({{ .page }})</script>
+                {{ with $.Site.GetPage "page" .page }}
+                    {{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}
                 {{ end }}
+            {{ end }}
             </div>
-        </div>{{ end }}
-
+        </div>
+        {{ end }}
         {{ if .Params.diploma}}
         <div class="pageBlock newpad-y flex flex-row flex-wrap" data-cat-sort="1">
             {{ range sort .Params.diploma }}

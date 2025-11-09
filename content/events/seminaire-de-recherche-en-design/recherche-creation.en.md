@@ -20,7 +20,7 @@ intervenants:
         logo: ensad
         height: 6
         link: "https://www.ensadlab.fr"
-        photo: "https://1drv.ms/i/c/50aeab3cfffe3174/UQR0Mf7_PKuuIIBQ_W0zAAAAAO-nhOkEcE4N62I?embed=1&width=800"
+        photo: "1puEmf5cWcc_oIDi0GkSJQgR6CcwiWGAh"
         bio: "est artiste et enseignant-chercheur (habilité à diriger des recherches) à l'École nationale supérieure des Arts Décoratifs (EnsAD) - Université Paris Sciences et Lettres (PSL), où il dirige le groupe de recherche Reflective Interaction d'EnsadLab (laboratoire de l'EnsAD).</p><p>Il vit et travaille à Paris. Avec plus de 100 expositions collectives et 20 expositions personnelles, ses œuvres sont régulièrement exposées en Europe et à travers le monde. Pour ses travaux de recherche-création il collabore avec des scientifiques de toutes disciplines et des laboratoires de recherche en ingénierie : Institut FEMTO-ST (Franche-Comté Électronique Mécanique Thermique et Optique – Sciences et Technologies), CEA (Commissariat à l’énergie atomique et aux énergies alternatives, Saclay), ISIR (Institut des Systèmes Intelligents et de Robotique, Sorbonne Université-CNRS), etc.</p><p>En relation étroite avec sa pratique artistique, Samuel Bianchini a entrepris un travail théorique qui donne lieu à de fréquentes publications. Il a publié plus de 70 textes et 7 livres dont, l’un des premiers ouvrages sur la recherche-création : Recherche & Création. Art, technologie, pédagogie, innovation, Montrouge, Éd. Burozoïque et École nationale supérieure d'art de Nancy, 2009 ; repris en format électronique en janvier 2012, par Art Book Magazine [www.artbookmagazine.com]. Il a également fondé la revue internationale visuelle multi-supports .able éditée par Actar (Barcelone, New York) et lancée en mars 2023."
 institution:
     heig: 1
@@ -32,14 +32,12 @@ date: 2025-04-24T18:00:00+02:00
 subsection: seminar
 layout: single
 description: "La recherche-création est en plein essor, au point qu’elle dépasse même les frontières des arts et des arts appliqués. Mais comment la développer dans le champ académique, tout en garantissant sa qualité artistique et sa reconnaissance professionnelle, en premier lieu dans le monde de l'art et du design ?"
-frontphoto: "https://1drv.ms/i/s!AnQx_v88q65Qgc3be2sEvBOXbQdfZ-8?embed=1&width=1000"
-frontphotomini: "https://1drv.ms/i/s!AnQx_v88q65Qgc3be2sEvBOXbQdfZ-8?embed=1&width=500"
+frontphoto: "1puEmf5cWcc_oIDi0GkSJQgR6CcwiWGAh"
 photogallery:
     image1:
         order: 1
         name: "Recherche-création : de la pratique réflexive à la publicisation, par Samuel Bianchini"
-        src: "https://1drv.ms/i/s!AnQx_v88q65Qgc3be2sEvBOXbQdfZ-8?embed=1&width=500"
-        img: "https://1drv.ms/i/s!AnQx_v88q65Qgc3be2sEvBOXbQdfZ-8?embed=1&width=1200"
+        img: "1QR5FDFjOP-DDv5o33KR_GHPC5J9u9ofW"
 link:
     1: ["Dispotheque", "website", "https://www.dispotheque.org"]
     2: ["reflective interaction", "website", "https://reflectiveinteraction.ensadlab.fr"]
