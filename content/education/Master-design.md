@@ -9,6 +9,9 @@ Diploma:
     level1:
         type: "Master"
         name: "Arts, Lettres et Langues & Science, Technologie et Société"
+    level2:
+        type: "Mention"
+        name: "Design"
 description: "L'objectif de ce Master est de former des créateurs capables de concevoir leur projet professionnel, d’inventer leur pratique de design de manière prospective en intégrant l’évolution des sociétés et des contextes culturels et techniques sans cesse redéfinis."
 institution:
     heig: 1
@@ -21,11 +24,13 @@ frontphotomini: "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewr
 link:
     1: ["page institutionelle", "institutional", "https://formation.cnam.fr/rechercher-par-discipline/master-arts-lettres-langues-mention-design-parcours-creation-projets-transdisciplinarite-1085664.kjsp"]
     2: ["fiche RNCP", "fiche", "https://www.francecompetences.fr/recherche/rncp/39314"]
-Parcours:
+parcours:
     MR15001A:
+        page: "Master-CESAAP.md"
         code: MR15001A
         order: 2
     MR15001B:
+        page: "Master-ACTU.md"
         code: MR15001B
         order: 1
 RNCP: 39314

@@ -19,5 +19,5 @@ photocredit:
     link: "https://unsplash.com/@sanneschroeder"
 code: MR15101A
 notListed: true
-redicrect: "https://www.lmssc.cnam.fr/MRI/home.html"
+redirect: "https://www.lmssc.cnam.fr/MRI/home.html"
 ---

@@ -43,7 +43,6 @@ layout: single
 searchFilter: Teaching
 searchWeight: 1
 notListed: true
-place: "Cnam"
 level: "master"
 language: French
 ects: 4

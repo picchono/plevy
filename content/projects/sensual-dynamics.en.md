@@ -19,7 +19,6 @@ perceptq: true
 researchpage: true
 research: 
     -  perceptq
-place: "TU/e, The Netherlands"
 level: "master"
 language: English
 ects: 5

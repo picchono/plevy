@@ -4,7 +4,7 @@
     <div class="rightBlockIn">
         <div id="content" data-cat-sort="100">{{ .Content }}</div>
         <div id="headUp">
-            <div class="headUp_blocks">
+            <div class="headInPage_blocks">
                 {{ if .Params.Parcours }}
                 {{ $teach := where .Site.Pages "Section" "in" (slice "courses") }}
                 {{ $count := 0 }}
@@ -13,7 +13,7 @@
                 {{ range $teach }}
                 {{ if eq .Params.code $parc }}
                 {{ $count = add $count 1 }}
-                {{- partial "boxUp.html" ( dict "context" . "cou" $count ) -}}
+                {{- partial "boxInPage.html" ( dict "context" . "cou" $count ) -}}
                 {{ end }}{{ end }}
                 {{ end }}
                 {{ end }}

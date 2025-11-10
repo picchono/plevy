@@ -250,24 +250,25 @@ function setSplide() {
       gap: 'calc(4 * var(--pageBorder-width))',
       mediaQuery: 'min',
       breakpoints: {
-        1024: {
+        768: {
           perPage: 2,
         },
-        1536: {
+        1024: {
           perPage: 3,
         },
-        2048: {
+        1536: {
           perPage: 4,
+        },
+        2048: {
+          perPage: 5,
+        },
+        2560: {
+          perPage: 6,
         }
       }
     }).mount();
   };
 };
-
-document.addEventListener("scrollend", (event) => {
-
-});
-
 
 window.addEventListener('load', function (event) {
   

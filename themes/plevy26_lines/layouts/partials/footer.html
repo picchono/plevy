@@ -22,12 +22,12 @@
 {{ if compare.Gt ($related | len) 1}}
 
 <div id="headUp">
-    <div class="headUp_blocks">
+    <div class="headInPage_blocks">
         {{ $count := 0}}
         {{ range sort $related "Date" "desc" }}
         {{ if ne .Permalink (.Site.BaseURL | absURL ) }}
         {{ $count = add $count 1 }}
-        {{- partial "boxUp.html" ( dict "context" . "cou" $count ) -}}
+        {{- partial "boxInPage.html" ( dict "context" . "cou" $count ) -}}
         {{ end }}
         {{ end }}
     </div>

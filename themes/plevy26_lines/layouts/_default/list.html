@@ -1,19 +1,19 @@
 {{ define "main" }}
 <div id="headUp">
-    <div class="headUp_blocks">
+    <div class="headInPage_blocks">
         {{ $count := 0 }}
         {{ if .Params.listchaire}}
         {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
         {{ if ne .Params.notListed true }}{{ if .Params.chaire }}
         {{ $count = add $count 1 }}
-        {{- partial "boxUp.html" ( dict "context" . "cou" $count) -}}
+        {{- partial "boxInPage.html" ( dict "context" . "cou" $count) -}}
         {{ end }}{{ end }}{{ end }}
         {{ else if isset .Params "member" }}
         {{$memb := .Params.member}}
         {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
         {{ if ne .Params.notListed true }}{{ if in .Params.members $memb }}
         {{ $count = add $count 1 }}
-        {{- partial "boxUp.html" ( dict "context" . "cou" $count) -}}
+        {{- partial "boxInPage.html" ( dict "context" . "cou" $count) -}}
         {{ end }}{{ end }}{{ end }}
         {{ end }}
     </div>

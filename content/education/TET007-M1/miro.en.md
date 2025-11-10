@@ -13,7 +13,6 @@ layout: single
 searchFilter: Teaching
 searchWeight: 1
 notListed: true
-place: "Cnam"
 level: "bachelor"
 language: French
 ects: 4

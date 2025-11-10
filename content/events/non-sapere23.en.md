@@ -26,7 +26,7 @@ collaboration:
         heig: 1.2
 date: 2023-10-16T14:00:00+02:00
 reference: "This seminar aims to launch the third session of the school of not-Knowing. The first began in September 2022 at the French Institute in Milan and culminated in the form of a first exhibition in the same place in January 2024."
-frontphoto: "https://civic-city.org/nonsapere/wp-content/uploads/2023/10/CNAM-question-mark-1.jpg"
+frontphoto: "13eFoXa8ShCmDcsFWti_blHW6WwGOP1PH"
 link:
     1: ["website", "website", "https://civic-city.org/nonsapere/cnam-seminary/"]
 video:
@@ -37,8 +37,7 @@ photogallery:
     image1:
         order: 1
         name: "non sapere seminar programme at Cnam"
-        src: "https://civic-city.org/nonsapere/wp-content/uploads/2023/10/SOCIAL-SCHOOLS.jpg"
-        img: "https://civic-city.org/nonsapere/wp-content/uploads/2023/10/SOCIAL-SCHOOLS.jpg"
+        img: "13eFoXa8ShCmDcsFWti_blHW6WwGOP1PH"
 ---
 This seminar aims to launch the third session of the school of not-Knowing. The first began in September 2022 at the French Institute in Milan and culminated in the form of a first exhibition in the same place in January 2024. During the second phase the exhibition of around a hundred panels circulated Florence and Rome. New schools joined the initial project by adding new visuals. This set will be presented in Porto as part of the Design Biennale from October 21, 2023, with the support of the French Institute of Portugal.  
 The third phase is being organized on the basis of around thirty schools and universities, coming from France, Italy, Portugal, Germany, Poland, India and Madagascar. 

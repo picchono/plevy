@@ -11,13 +11,13 @@ institution:
 date: 2011-09-03T16:27:15+02:00
 start: 2011
 end: 2014
+status: ended
 draft: false
 perceptq: true
 researchpage: true
 subsection: course
 research: 
     -  perceptq
-place: "TU/e, The Netherlands"
 level: "master"
 language: English
 ects: 5
@@ -50,20 +50,16 @@ teacher:
         name: "Jeroen Peeters"
     teacher13:
         name: "Teun Vinken"
-frontphoto: "https://live.staticflickr.com/65535/50588234436_9b6fac5112.jpg"
+frontphoto: "1j58xy9xyp2Jy4HVuV2cYtk7Xx-9bg4qH"
 photogallery:
     image1:
         order: 1
         name: "Designing Quality in Interaction theory poster"
-        src: "https://live.staticflickr.com/65535/50587487708_461af3be1e_q.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50587487708/in/album-72157716601045922/"
-        img: "https://live.staticflickr.com/65535/50587487708_18d51525b6_o.jpg"
+        img: "1j58xy9xyp2Jy4HVuV2cYtk7Xx-9bg4qH"
     image2:
         order: 2
         name: "Kees and Caroline, making and discussing the DQI theory poster"
-        src: "https://live.staticflickr.com/65535/50588234391_de75f14135_q.jpg"
-        img: "https://live.staticflickr.com/65535/50588234391_10f2409e2f_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50588234391/in/album-72157716601045922/"
+        img: "1nxmIv39mj0JDfeQESiihrEs4mBE9yBgB"
 ---
 In this two-week workshop, theories of interaction design are explained and explored through applications. The DQI approach to Interaction Design is theory informed. This means that theory inspires and even guides the way we look at interaction, and the way we design for interaction and experience.
 

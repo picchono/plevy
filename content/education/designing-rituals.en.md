@@ -20,7 +20,6 @@ everyday: true
 researchpage: true
 research: 
     -  everyday
-place: "TU/e, The Netherlands"
 level: "master"
 language: English
 ects: 5

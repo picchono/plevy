@@ -56,10 +56,9 @@ collaboration:
         name: "École Supérieure des Arts Appliqués Duperré"
         web: "https://duperre.org"
         heig: 1.5
-frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
+frontphoto: "1I4nuJD3-gsKQuLQn87kZWPskjsMQXleN"
 code: MR15001A
-lectures:
+teaching:
     PUDS01:
         order: 1
         link: "PUDS01"

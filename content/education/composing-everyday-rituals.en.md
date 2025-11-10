@@ -15,7 +15,6 @@ layout: single
 searchFilter: Teaching
 subsection: course
 status: ended
-place: "TU/e, The Netherlands"
 level: "master"
 language: English
 ects: 5
