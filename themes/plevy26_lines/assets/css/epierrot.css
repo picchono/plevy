@@ -172,7 +172,7 @@ html.light {
   --color-primary-bg: rgb(247, 247, 247);
   --color-secondary-bg: var(--color-pageborder-bg);
   /* C2DEDC 9CC1C2 FBE4B3 */
-  --color-tertiary-bg: #FFDB66;
+  --color-tertiary-bg: #EFEFEF;
   --color-pageborder-bg: #080808;
   --color-primary-text: #292929;
   --color-secondary-text: #9e9e9e;
