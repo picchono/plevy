@@ -247,7 +247,6 @@ function setSplide() {
       arrows: true,
       drag: 'free',
       snap: true,
-      gap: 'calc(4 * var(--pageBorder-width))',
       mediaQuery: 'min',
       breakpoints: {
         768: {

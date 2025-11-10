@@ -11,7 +11,7 @@
                 <h2 class="boxTitleIn">{{- .context.Title
                     |safeHTML }}{{if eq .context.Params.status "ended"}} ({{- i18n "ended" -}}){{ end
                     }}</h2>
-                <span>
+                <span class="flex flex-col justify-end">
                     <span class="headUpDescription">
                         {{ if eq .context.Section "publications" }}<span class="boxInfo">
                             {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
