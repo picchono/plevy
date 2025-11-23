@@ -17,7 +17,8 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2016-02-03T16:27:15+02:00
-abstract: "This research focuses on what happens to our relationship with objects when they come alive and engage in reciprocal communication with us.<br/>An (es)sense research project by Kevin N. Andersen"
+abstract: "This research focuses on what happens to our relationship with objects when they come alive and engage in reciprocal communication with us.<br/>An (es)sense research project"
+projectby: "Kevin N. Andersen"
 frontphoto: "https://live.staticflickr.com/65535/50588234241_aacf38c26b.jpg"
 video:
     video1:

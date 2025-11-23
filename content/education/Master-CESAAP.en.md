@@ -100,8 +100,7 @@ link:
     2: ["guide", "guide", "https://ensaama.net/site/content/1-home/pdf-reserve/m2_masterdesign_academie_du_climat.pdf"]
 video:
     video1:
-        vimeo: "504830775" 
-        title: "Master Design · Parcours Création, Projet, Transdisciplinarité"
+        vimeo: "504830775"
 ---
 
 Créée à la rentrée 2015 par la Conférence des écoles supérieures d’arts appliqués de Paris - Césaap -, la formation Design : création, projet, transdisciplinarité est un diplôme Master 2 délivré par le Conservatoire National des Arts et Métiers - CNAM -. Elle réunit des étudiants issus des différents champs du design.

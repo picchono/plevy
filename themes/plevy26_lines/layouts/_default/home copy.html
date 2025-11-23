@@ -3,12 +3,12 @@
 <div id="headUp">
     <div class="headInPage_blocks">
         {{ $page := $.Site.GetPage "page" "chaire.md" }}
-        {{ with $page }}{{- partial "boxInPage.html" ( dict "context" . "sort" 100) -}}{{ end }}
+        {{ with $page }}{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}{{ end }}
         {{ $page := $.Site.GetPage "page" "plevy.md" }}
-        {{ with $page }}{{- partial "boxInPage.html" ( dict "context" . "sort" 100) -}}{{ end }}
+        {{ with $page }}{{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}{{ end }}
         {{ range .Site.RegularPages }}
         {{ if eq .Params.fronttop true }}
-        {{- partial "boxInPage.html" ( dict "context" . ) -}}
+        {{- partial "boxUp.html" ( dict "context" . ) -}}
         {{ end }}
         {{ end }}
     </div>

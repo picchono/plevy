@@ -1,0 +1,9 @@
+{{ define "main" }}{{ $langu := .Site.Language.Lang }}
+<div class="mainBlock newpad-y newpad-l">
+    <div class="mainBlockIn">
+        {{ if .Content }}
+        <div class="newpad-b" data-cat-sort="10">{{ .Content }}</div>
+        {{ end }}
+    </div>
+    </div>
+    {{ end }}

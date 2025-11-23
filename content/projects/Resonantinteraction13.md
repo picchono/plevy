@@ -14,7 +14,8 @@ institution:
     colo: "#c72125"
 date: 2013-12-10T16:27:15+02:00
 frontphoto: "https://live.staticflickr.com/65535/50587487333_028a281cc7.jpg"
-abstract: "Resonnant interaction, on irresistibleness through design - By Kevin Andersen"
+abstract: "Resonnant interaction, on irresistibleness through design"
+projectby: "Kevin Andersen"
 video:
     video1:
         youtube: "hn51850hNvo"

@@ -1,0 +1,71 @@
+{{ $photonb := len .Params.photogallery }}
+<div class="w-full newpad-y" data-cat-sort="2">
+    <div class="flex flex-row" id="lightgallery">
+        {{ range sort .Params.photogallery "order" "asc" }}
+        <div class="place-self-center {{ if eq $photonb 1 }}h-74{{ else }}h-32{{ end }} p-0.5 w-auto photoItem" data-src="https://drive.google.com/thumbnail?id={{- .img -}}&sz=w3000" aria-label="See image"><img loading="lazy" src="https://drive.google.com/thumbnail?id={{- .img -}}&sz=w500" title="{{ .name }}" alt="{{ .name }}" class="rounded" data-pagefind-index-attrs="title,alt"></div>
+        {{ end }}
+    </div>
+</div>
+
+{{ $lg_js := resources.Get "js/lg.js" | minify }}
+<script src="{{ $lg_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ $lg_css := resources.Get "css/lg.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $lg_css := $lg_css | minify }}
+<link rel="stylesheet" href="{{ $lg_css.Permalink }}" media="all">
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+{{ $lgvideo_js := resources.Get "js/lgvideo.js" | minify }}
+<script src="{{ $lgvideo_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ $lgvideo_css := resources.Get "css/lgvideo.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $lgvideo_css := $lgvideo_css | minify }}
+<link rel="stylesheet" href="{{ $lgvideo_css.Permalink }}" media="all" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+{{ $lghash_js := resources.Get "js/lghash.js" | minify }}
+<script src="{{ $lghash_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+{{ $lgfullscreen_js := resources.Get "js/lgfullscreen.js" | minify }}
+<script src="{{ $lgfullscreen_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ $lgfullscreen_css := resources.Get "css/lgfullscreen.css" | postCSS (dict "config" "./postcss.config.js") }}
+{{ $lgfullscreen_css := $lgfullscreen_css | minify }}
+<link rel="stylesheet" href="{{ $lgfullscreen_css.Permalink }}" media="all"  crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            licenseKey: "86E42556-05764516-9C2C8B36-B8B2858F",
+            plugins: [lgVideo, lgFullscreen, lgHash],
+            selector: '.photoItem',
+            speed: 500,
+            download: false,
+            loop: true,
+            mode: "lg-fade",
+            nextHtml: ">",
+            prevHtml: "<",
+            showBarsAfter: 2000,
+            showMaximizeIcon: false,
+            videojs: true,
+            getCaptionFromTitleOrAlt: true,
+        videoMaxWidth: "1080px",
+        videojs: true,
+        vimeoPlayerParams: {
+            byline : 0,
+            portrait : 0,
+            color : 'CCCCCC'
+        },
+        youTubePlayerParams: {
+            modestbranding : 1,
+            showinfo : 0,
+            controls : 0
+        },
+        loadYouTubePoster: true
+        });
+</script>
+
+<style>
+    @font-face {
+        font-family: "lg";
+        src: url(/lg.woff2) format("truetype");
+    }
+</style>

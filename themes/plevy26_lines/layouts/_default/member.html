@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="rightBlock newpad-y newpad-l">
-    <div class="rightBlockIn">
+<div class="mainBlock newpad-y newpad-l">
+    <div class="mainBlockIn">
         {{ if .Content}}<div id="content" data-cat-sort="101">{{ .Content }}</div>{{ end }}
         {{ with index .Site.Data.plevy .Site.Language.Lang }}
         <div class="flex flex-row w-full border-b border-secondary-text">

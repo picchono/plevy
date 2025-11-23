@@ -380,23 +380,27 @@ body:not(#menu) main.pack {
 }
 
 /* Blocks */
-.rightBlock {
+.mainBlock {
   @apply w-full lg:w-1/2 flex flex-col justify-start pb-16 md:pb-0;
 }
 
 @media only screen and (min-width: 768px) {
-  .rightBlock {
+  .mainBlock {
     @apply h-full border-l border-secondary-text;
   }
 }
 
 .leftBlock {
   @apply w-full lg:w-1/2 flex flex-col justify-start pb-16 md:pb-0;
-  padding: var(--pageBorder-width);
-  padding-left: 0;
+  padding: var(--pageBorder-width) 0;
 }
 
 @media only screen and (min-width: 768px) {
+  .leftBlock {
+    padding: var(--pageBorder-width);
+    padding-left: 0;
+  }
+
   .leftBlockIn {
     @apply h-full;
     padding-right: var(--pageBorder-width);
@@ -527,12 +531,19 @@ div#splideArchive {
 
 /* headUp & headInPage */
 
-.headInPage_blocks, .headUp_blocks {
+.headInPage_blocks,
+.headUp_blocks {
   @apply flex flex-col flex-nowrap sm:flex-row sm:flex-wrap justify-around w-full;
 }
 
+@media only screen and (min-width: 768px) {
+  .headUp_blocks {
+    @apply newpad-r line-r;
+  }
+}
+
 .headUp_blocks a.boxIso {
-  @apply flex flex-row flex-nowrap justify-between w-full h-full text-right transition-all duration-500 ease-in-out bg-tertiary-bg rounded-none md:rounded-lg;
+  @apply flex flex-row flex-nowrap justify-between w-full h-full text-right transition-all duration-500 ease-in-out bg-tertiary-bg;
 }
 
 .headUp_blocks a.boxIso:hover {
@@ -550,7 +561,7 @@ div#splideArchive {
 }
 
 .headUp_blocks a.boxIso .headUpImg {
-  @apply w-full md:w-1/2 h-full newpad-r overflow-hidden transition-all duration-500 ease-in-out rounded-none md:rounded-l-lg;
+  @apply w-full md:w-1/2 h-full newpad-r overflow-hidden transition-all duration-500 ease-in-out;
   aspect-ratio: 1.66;
 }
 
@@ -740,11 +751,15 @@ a.floatImg::after {
 }
 
 .headUp_blocks .menuBox:last-child {
+  margin-bottom: 0 !important;
+}
+
+.headUp_blocks .menuBox:last-child {
   border-bottom: 0;
 }
 
 .headUp_blocks .boxTitle span {
-  @apply p-2 text-lg font-bold rounded-lg;
+  @apply p-2 text-lg font-bold;
   background-color: rgba(255, 255, 255, 0.7);
 }
 

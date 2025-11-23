@@ -1,0 +1,286 @@
+<div class="mediumSection">
+    <div class="lefttBlockIn">
+        <div class="pageTitle newpad-b">
+            <div class="text-left items-start">
+                <h1>{{ .Params.title |safeHTML }}{{if eq .Params.status "ended"}}
+                    ({{- i18n "ended" -}}){{ end }}</h1>
+                {{ if .Params.authors }}
+                <p class="italic" data-pagefind-weight="6">{{ .Params.authors }},
+                    {{ dateFormat "02 Jan 2006" .Date }}</p>
+                {{ end }}
+                {{ if .Params.prezfor }}
+                <p class="italic newpad-y" data-pagefind-weight="6">{{- i18n "by" }}
+                    {{ $len := len .Params.intervenants}}
+                    {{ $count := 0 }}
+                    {{ range .Params.intervenants }}
+                    <span data-pagefind-filter="author">{{ .name }}</span>
+                    {{ $count = add $count 1 }}
+                    {{ if ne $count $len -}}, {{ end }}
+                    {{ end }}
+                    {{ i18n "for" }} <span data-pagefind-filter="institution">{{ .Params.prezfor }}</span>, {{
+                    dateFormat
+                    "02 Jan 2006 - 15h04" .Date }}
+                </p>
+                {{ end }}
+            </div>
+            {{ if .Params.collaboration }}
+            <div class="flex flex-row flex-wrap items-center pt-10">
+                {{ range sort .Params.collaboration }}
+                <a href="{{ .web }}" target="_blank" class="collab" data-pagefind-weight="4">
+                    {{ if .colo }}
+                    {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6 mr-10") -}}
+                    {{else}}
+                    {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-6 mr-10" ) -}}
+                    {{ end }}
+                </a>
+                {{ end }}
+            </div>
+            {{ else if .Params.institution }}
+            <div class="flex flex-row flex-wrap items-center pt-10">
+                <a href="{{ .Params.institution.web }}" target="_blank" class="collab" data-pagefind-weight="3">
+                    {{ if .Params.institution.colo }}
+                    {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig
+                    "colo"
+                    .Params.institution.colo) -}}
+                    {{else}}
+                    {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig) -}}
+                    {{ end }}
+                </a>
+            </div>
+            {{ end }}
+        </div>
+
+        {{ if ne .Params.layout "list" }}
+        {{ if .Params.executive}}
+        <div class="pack-item w-full italic text-sm" data-cat-sort="1">
+            <div class="newpad-y">
+                <p>{{ .Params.executive }}</p>
+            </div>
+        </div>
+        {{ end }}
+        {{ if and (.Params.abstract) (ne .Params.layout "publi") }}
+        <div class="pack-item w-full" data-cat-sort="1">
+            <div class="newpad-y">
+                <b class="text-epierrot">{{ partial "subTitle.html" (dict "txt" (i18n "abstract")) }}</b>
+                {{ .Params.abstract |safeHTML }}{{if .Params.projectby }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ if eq .Params.layout "about" }}{{- if .Params.frontphoto }}
+        <img src="" data-toset="{{ .Params.frontphoto | absURL }}"
+            class="pack-item newpad-b line-b w-full md:w-1/3 md:max-w-96 imag object-cover" alt="{{ .Params.title }}"
+            width="500" height="240" data-cat-sort="1" />
+        {{ end }}{{ end -}}
+        {{ if .Params.schedule }}
+        <div class="pack-item w-full" data-cat-sort="1">
+            <div class="newpad-b line-b">
+                <p>{{ .Params.schedule |safeHTML }}</p>
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.tablecontent }}
+        <div class="pack-item w-full" data-cat-sort="1">
+            <div class="newpad-b line-b" id="toc">
+                <h2 data-pagefind-weight="0.5">{{ i18n "tableOfContent"}}</h2>
+                <div class="tablecontent" data-pagefind-weight="0.5"></div>
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.photogallery }}
+        {{ partial "photogallery.html" . }}
+        {{ end }}
+        {{ if .Params.video}}
+        {{ partial "video.html" . }}
+        {{ end }}
+        {{ if .Params.calendar }}
+        <div class="pack-item w-full" data-cat-sort="0.5">
+            <div class="newpad-b line-b">{{ partial "subTitle.html" (dict "txt" (i18n "calendar")) }}<br />
+                {{ range .Params.calendar }}
+                <div class="listoutside pb-3">{{ . | safeHTML }}</div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.lectures}}
+        <div class="pageBlock" data-cat-sort="3">
+            {{ partial "subTitle.html" (dict "txt" (i18n "lectures")) }}
+            <div class="linkBlock">
+                {{ $cod := .Params.code }}
+                {{ range sort .Params.lectures "order" "asc" }}
+                <a class="linkBox" href="{{if .redirect }}{{ .redirect }}{{ else }}../{{ $cod }}/{{ .link }}{{ end -}}">
+                    <b>{{ $cod }}/{{ .order }}&nbsp;&middot;&nbsp;</b>
+                    {{- replace .Title " | " "&middot;" |safeHTML -}}</a>
+                {{ end }}
+
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.sessions }}
+        {{ $code := .Params.code }}
+        <div class="pageBlock" data-cat-sort="3">
+            {{ partial "subTitle.html" (dict "txt" (i18n "sessions")) }}
+            {{ range sort .Params.sessions "date" "desc" }}
+            <div class="linkBlock">
+                {{ $targ := (print .link ".md") }}
+                {{ $page := $.Site.GetPage "page" $targ }}
+                {{ with $page }}
+                <a class="linkBox" href=".Permalink">
+                    <b>{{ dateFormat "02 January 2006" .Date }} -
+                        {{ if .Params.intervenants }}{{ $len := len .Params.intervenants }}
+                        {{ $count := 0 }}
+                        {{ range .Params.intervenants }}
+                        {{ .name -}}
+                        {{ $count = add $count 1 }}
+                        {{- if ne $count $len -}}, {{ end }}
+                        {{ end }}{{ end }}</b> · {{ replace .Title " | " "&middot;" |safeHTML -}}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ if .Params.intervenants }}{{ range .Params.intervenants }}
+        <div class="pack-item w-full newpad-t md:min-w-96 md:max-w-192">
+            <div class="newpad-b flex flex-col">
+                <div class="flex flex-col md:flex-row">
+                    <div class="place-self-center h-74 w-auto md:w-74 photoItem"
+                        data-src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w3000" aria-label="See image">
+                        <img loading="lazy" src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w500"
+                            alt="{{ .photo }}" title="{{ .name }}" class="rounded object-cover h-74 w-auto md:w-74"
+                            data-pagefind-index-attrs="title,alt">
+                    </div>
+                    <div class="py-6 md:py-0 md:pl-6">
+                        <div class="text-3xl font-bold mt-4" data-cat-sort="6">{{ .name }}</div>
+                        <div><i>{{ i18n "speaker" }}</i></div>
+                        <a href="{{ .link }}" class="affiliationLogo">{{ partial "icons.html" (dict "ico" .logo "hei"
+                            .height)
+                            -}}</a>
+                    </div>
+                </div>
+                {{ if .bio }}<div class="mt-6">{{ .bio | safeHTML }}</div>{{ end }}
+            </div>
+        </div>
+        {{ end }}{{ end }}
+        {{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start">
+            <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
+            <div class="ml-2 w-auto lg:w-full py-1">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}
+                {{ range sort .Params.redirectlecture "order" "asc" }}
+                <a class="" href="{{ .link }}" target="_blank" rel="noreferrer"><b>{{ $cod }}.{{ .order
+                        }}&nbsp;&middot;&nbsp;</b>
+                    {{- replace .Title " | " "&middot;" |safeHTML -}}</a><br>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.updating }}
+        <div class="pack-item w-full" data-cat-sort="2">
+            <div class="newpad-b line-b bg-epierrot ">
+                <p class="italic font-bold text-primary-bg text-lg">Currently updating</p>
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.citation }}
+        <div class="newpad-y font-bold" data-cat-sort="4">
+            {{ partial "citation.html" . }}</div>
+        {{ end }}
+        {{ if .Params.encapsulation }}
+        <div class="pageBlock" data-cat-sort="1">
+            {{ partial "subTitle.html" (dict "txt" (i18n "encapsulation")) }}
+            <div class="linkBlock">
+                {{ range .Params.encapsulation }}
+                {{ with $.Site.GetPage "page" .page }}
+                <a class="linkBox block pb-4" href="{{ .Permalink }}"><b>{{- replace .Title " | " "&middot;" |safeHTML
+                        }}</b> - {{ .Params.institution.name }}</a>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.diploma}}
+        <div class="pageBlock flex flex-col" data-cat-sort="1">
+            {{ range sort .Params.diploma }}
+            <div class="flex flex-row flex-wrap">
+                <div class="newpad-r w-1/5 font-bold">{{ .type }}</div>
+                <div class="newpad-l w-4/5">{{ .name }}</div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ if .Params.parcours }}
+        <div class="pageBlock" data-cat-sort="1">
+            {{ partial "subTitle.html" (dict "txt" (i18n "parcours")) }}
+            <div class="linkBlock">
+                {{ range .Params.parcours }}
+                {{ with $.Site.GetPage "page" .page }}
+                <a class="linkBox block pb-4" href="{{ .Permalink }}"><b>{{- replace .Title " | " "&middot;" |safeHTML
+                        }}</b> - {{ .Params.institution.name }}</a>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+        {{ end }}
+        {{ if or .Params.place .Params.visio }}
+        <div class="pack-item w-full" data-cat-sort="1">
+            <div class="newpad-b line-b">
+                {{ partial "subTitle.html" (dict "txt" (i18n "venue")) }}<br />
+                <p>{{ dateFormat "02 January 2006" .Date }} - {{ dateFormat "15h04" .Date }}</p>
+                {{ if .Params.place }}<p class="">{{ .Params.place |safeHTML }}</p>{{ end }}
+                {{ if .Params.visio }}{{ with .Params.visio }}
+                {{ $icon := "teams" }}
+                {{ if ne .media "Teams" }}{{ $icon := "teams" }}{{ end }}
+                {{ $text := i18n "linkvisio" }}
+                <a href='{{ .link }}' target="_blank" class="doclinkButton newpad-y py-5" rel="noreferrer"
+                    aria-label="Get {{ $icon }}"><span>{{- partial "icons.html" (dict "hei" 1.5 "ico" $icon "cla"
+                        "doclinkIcon"
+                        ) -}}</span>&nbsp;&nbsp;<span>{{ $text }}</span></a>
+                {{ end }}{{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ if eq .Params.layout "presentation" }}
+        <div class="w-full invisible lg:visible newpad-y line-b" id="QR" data-cat-sort="1">
+            <div class="place-self-center w-auto" aria-label="See QR">
+                <span id="qrcode" class="block h-0 lg:h-62 w-0 lg:w-62 bg-white newpad rounded-lg"></span>
+            </div>
+        </div>
+        {{ end }}
+        {{ if eq .Params.layout "member" }}
+        {{ with index .Site.Data.plevy .Site.Language.Lang }}
+        <div class="flex flex-col newpad-t">
+            {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink"
+                rel="noreferrer" aria-label="{{ .icon }}" title="{{ .icon }}">{{- partial "icons.html" (dict "ico"
+                .icon "hei" 1) -}}<span>{{ .icon }}</span></a>{{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        {{ if eq .Params.layout "programme"}}
+        {{ $targ := .Params.milestone }}
+        <div class="pageBlock" data-cat-sort="3">
+            {{ partial "subTitle.html" (dict "txt" (i18n "publications")) }}
+            <div class="">
+                {{ range (where .Site.Pages "Section" "publications") }}
+                {{ range .Pages }}
+                {{ if in .Params.research $targ }}
+                <a class="inline-block pb-4" href="{{ .Permalink }}">{{ partial "citationlink.html" . }}</a>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        <div class="pageBlock" data-cat-sort="3">
+            {{ partial "subTitle.html" (dict "txt" (i18n "projects")) }}
+            <div class="linkBlock">
+                {{ range (where .Site.Pages "Section" "projects") }}
+                {{ range .Pages }}
+                {{ if in .Params.research $targ }}
+                <a class="linkBox linkBox pb-4" href="{{ .Permalink }}"><b>{{ .Title }}</b>{{if .Params.projectby }} · {{ .Params.projectby }}{{ end }}</a>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>

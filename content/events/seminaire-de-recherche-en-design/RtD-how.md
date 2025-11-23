@@ -1,5 +1,6 @@
 ---
 title: "Research through Design – yes but how? (repoussé)"
+slug: "RtD-how"
 prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:
     partner1:

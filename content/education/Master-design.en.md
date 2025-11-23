@@ -20,7 +20,6 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 frontphoto: "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=80&w=5196&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-frontphotomini: "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 link:
     1: ["institutional page", "institutional", "https://formation.cnam.fr/rechercher-par-discipline/master-arts-lettres-langues-mention-design-parcours-creation-projets-transdisciplinarite-1085664.kjsp"]
     2: ["fiche RNCP", "fiche", "https://www.francecompetences.fr/recherche/rncp/39314"]

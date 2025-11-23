@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+
+<div class="mainBlock newpad-y">
+    <div class="mainBlockIn">
+        <b class="text-epierrot">{{ partial "subTitle.html" (dict "txt" (i18n "abstract")) }}</b>
+        <div id="content">{{ .Params.abstract |safeHTML }}</div>
+        {{ if .Content}}<div id="content" class="md:py-10" data-cat-sort="100">{{ .Content }}</div>{{ end }}
+    </div>
+</div>
+{{ end }}

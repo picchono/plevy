@@ -125,7 +125,7 @@
                 {{ $targ := (print .link ".md") }}
                 {{ $page := $.Site.GetPage "page" $targ }}
                 {{ with $page }}
-                {{- partial "boxInPage.html" ( dict "context" . ) -}}
+                {{- partial "boxUp.html" ( dict "context" . ) -}}
                 {{ end }}
                 {{ end }}
             </div>
@@ -174,13 +174,13 @@
         <div class="line-b newpad-y" data-cat-sort="4">{{ partial "citation.html" . }}</div>
         {{ end }}
         {{ if .Params.encapsulation }}
-        <div class="pageBlock newpad-y" data-cat-sort="1" id="headUp">
+        <div class="pageBlock newpad-y" data-cat-sort="1" id="splideArchive">
             {{ partial "slash.html" (dict "txt" (i18n "encapsulation")) }}
             <div class="headInPage_blocks">
             {{ range .Params.encapsulation }}
                 <script>console.log({{ .page }})</script>
                 {{ with $.Site.GetPage "page" .page }}
-                    {{- partial "boxInPage.html" ( dict "context" . "sort" 100) -}}
+                    {{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}
                 {{ end }}
             {{ end }}
             </div>
@@ -202,7 +202,7 @@
             {{ range .Params.parcours }}
                 <script>console.log({{ .page }})</script>
                 {{ with $.Site.GetPage "page" .page }}
-                    {{- partial "boxInPage.html" ( dict "context" . "sort" 100) -}}
+                    {{- partial "boxUp.html" ( dict "context" . "sort" 100) -}}
                 {{ end }}
             {{ end }}
             </div>

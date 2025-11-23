@@ -1,5 +1,6 @@
 ---
 title: "Reconstrained design"
+slug: "reconstrained-design"
 prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:
     partner1:

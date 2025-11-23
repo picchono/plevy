@@ -1,5 +1,6 @@
 ---
 title: "Conception avec usagers en architecture : vers un indice de profondeur de participation"
+slug: "usagers-architecture"
 prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
 collaboration:
     partner1:

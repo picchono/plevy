@@ -1,5 +1,5 @@
 ---
-slug: pierre-levy
+slug: about-pierre-levy
 title: "Pierre Lévy"
 subsection: presentation
 layout: presentation
