@@ -6,7 +6,7 @@
         end }}
         {{ if .sect }}
         <div class="menuBoxCount">
-            <div>0{{ .sect }}</div>
+            <div>{{ if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}</div>
             <div>{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }}</div>
         </div>
         {{ else }}
@@ -76,7 +76,7 @@
             </div>
             {{ if .context.Params.frontphoto }}
             <div class="boxIsoImg duotone newpad"
-                style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w800');">
+                style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');">
             </div>
             {{ end }}
         </a>

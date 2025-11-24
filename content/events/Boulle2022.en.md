@@ -30,5 +30,5 @@ collaboration:
 date: 2022-09-16T09:30:52+02:00
 reference: "Lévy, P. (2022). La beauté du motif japonais, presented at École Boulle, Paris, France. September 09th, 2022."
 abstract: "'Nature converted into pattern is much more beautiful than nature as it is given'. This surprising sentence written by the Japanese intellectual Yanagi Soetsu, founder of the mingei movement, invites us to reflect on the place of pattern in Japanese aesthetic culture. This reflection will provide the opportunity to discuss a Japanese perspective of beauty in craft and design, notably by addressing the notion of emptiness, irregularity and ainsity."
-frontphoto: "https://live.staticflickr.com/65535/52380628492_83188331f3_m.jpg"
+frontphoto: "1hpb6HILdTwJce2Cpu-bJNKkq0tMBuibv"
 ---

@@ -24,7 +24,7 @@ tags: ['ritual', 'everyday', 'education']
 teacher:
     teacher1:
         name: "Pierre Lévy"
-frontphoto: "https://live.staticflickr.com/65535/50745083156_228d7fcf01.jpg"
+frontphoto: "121xcoruNSPkrCRsLV1dVfb8kkopLqadZ"
 video:
     video1:
         youtube: "MzcGlR0fOB0"

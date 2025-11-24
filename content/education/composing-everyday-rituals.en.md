@@ -26,7 +26,7 @@ teacher:
         name: "Pierre Lévy"
     teacher2:
         name: "Bart Hengeveld"
-frontphoto: "https://live.staticflickr.com/65535/50745191742_6be71a3f8b.jpg"
+frontphoto: "1bWXGVoh_GltW6zjPBBIlEInxxK9Fau8k"
 video:
     video1:
         youtube: "LFyiVdHnb00"

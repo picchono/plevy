@@ -16,8 +16,7 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-frontphoto: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=5070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-frontphotomini: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=70&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+frontphoto: "1xp0WlG-6PswMwlvzFPzIeUc6kYsOhaux"
 link:
     1: ["institutional page", "institutional", "https://recherche.cnam.fr/ecole-doctorale-abbe-gregoire/ecole-doctorale-abbe-gregoire-ed-546--470086.kjsp"]
 ---

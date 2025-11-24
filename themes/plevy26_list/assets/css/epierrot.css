@@ -140,7 +140,7 @@ html.light {
   /* C2DEDC 9CC1C2 FBE4B3 */
   --color-tertiary-bg: oklch(86.9% 0.022 252.894);
   --color-pageborder-bg: #fff;
-  --color-primary-text: #292929;
+  --color-primary-text: #181818;
   --color-secondary-text: #9e9e9e;
   --color-epierrot: #ED6763;
   /* 006284 116A7B 344672 */
@@ -536,7 +536,7 @@ a.logohome:hover .lh {
 }
 
 .boxIsoImg {
-  @apply block w-full self-end;
+  @apply block w-full self-end rounded;
   aspect-ratio: 2;
 }
 

@@ -14,8 +14,7 @@ date: 2021-09-01T16:27:15+02:00
 subsection: course
 status: ended
 description: "Cette UE forme à une culture numérique permettant de s'engager dans des recherches d'information et des synthèses utiles à la vie professionnelle principalement sur le web."
-frontphoto: "https://live.staticflickr.com/65535/52427464795_ba3f91d0d1_h.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/52427464795_85db7912a3_n.jpg"
+frontphoto: "1Ag_ZGaXRsHj99nJ-KxRBLMJYT1wVNzZL"
 link:
     1: ["page institutionelle", "institutional", "https://formation.cnam.fr/rechercher-par-discipline/recherche-d-informations-theorie-et-pratique-sur-le-web-208885.kjsp?RF="]
 ---

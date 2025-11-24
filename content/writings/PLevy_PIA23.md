@@ -3,17 +3,17 @@ slug: La-diversité-dans-lenseignement-du-design-et-des-métiers-dart-doit-faire
 title: "La diversité dans l'enseignement du design et des métiers d'art doit faire école"
 subsection: writing
 layout: writing
-searchFilter: Writing
-date: 2023-05-20T13:38:26+02:00
-authors: "Pierre Lévy"
 institution:
     heig: 1
     logo: cnam
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-abstract: "A reflection on current and future design and craft education, written as part of the <i>PIA 4 Diagnostic Culture et création en mutations (2CM) - Compétences et métiers d'avenir France 2030</i>, directed by Lucie Marinier."
-frontphoto: "https://live.staticflickr.com/65535/52973013075_ba1a01105f_z.jpg"
+searchFilter: Writing
+date: 2023-05-20T13:38:26+02:00
+authors: "Pierre Lévy"
+abstract: "Une réflexion sur l’enseignement du design et des métiers d’art, présent et à venir, écrite dans le cadre du PIA 4 Diagnostic Culture et création en mutations (2CM) - Compétences et métiers d'avenir France 2030, dirigé par Lucie Marinier."
+frontphoto: "1dpEshb9ZepNtGgrdhS-Zj4zZXVE8u_iC"
 citation:
     authors:
         1: ["Levy", "Pierre", "P."]

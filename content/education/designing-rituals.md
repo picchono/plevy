@@ -28,7 +28,7 @@ abstract: "The aim of this course is to address these qualities embodied in ritu
 teacher:
     teacher1:
         name: "Pierre Lévy"
-frontphoto: "https://live.staticflickr.com/7501/27123383616_f2c3675f0c.jpg"
+frontphoto: "1AA6xY5AWiW61i8DVE8Q7RGPoJIuD2c7T"
 video:
     video1:
         youtube: "QzCO9uz9Ens"

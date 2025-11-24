@@ -14,7 +14,7 @@ institution:
     colo: "#c72125"
 date: 2015-04-15T16:27:15+02:00
 abstract: "The design process is taken into society by creating infrastructures where designers work together with stakeholders in jointly creating experienceable propositions that can evolve over time.<br/><i>Doctoral dissertation of Carl Megens and Michel Peeters</i>"
-frontphoto: "https://live.staticflickr.com/65535/50587487683_7f4b641542.jpg"
+frontphoto: "1y1c4todusgqe3TsCMriVWGePmfaj-Qta"
 link:
     1: ["dissertation", "dissertation", "https://research.tue.nl/files/3900778/771700.pdf"]
     2: ["website", "website", "https://doi.org/10.6100/IR771700"]
