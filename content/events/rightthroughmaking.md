@@ -22,13 +22,6 @@ frontphoto: "1hADk5o_X9phTknRfb5Sx3QJddBuguMrH"
 link:
     1: ["dissertation", "dissertation", "https://research.tue.nl/en/publications/rights-through-making-skills-for-pervasive-ethics"]
     2: ["website", "website", "https://ambratrotto.com/2012/05/15/192/"]
-photogallery:
-    image1:
-        order: 1
-        name: "Rights through Making - Skills for Pervasive Ethics, by Ambra Trotto"
-        src: "https://live.staticflickr.com/65535/50587487818_8e986d2ef1_q.jpg"
-        img: "https://live.staticflickr.com/65535/50587487818_47598b8e9a_o.png"
-        link: "hhttps://www.flickr.com/photos/27221668@N05/50587487818/in/album-72157716601045922/"
 ---
 
 

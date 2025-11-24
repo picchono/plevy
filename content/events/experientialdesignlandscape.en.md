@@ -22,9 +22,7 @@ photogallery:
     image1:
         order: 1
         name: "Experiential design landscapes : how to design for behaviour change, towards an active lifestyle, by Carl Megens and Michel Peeters"
-        src: "https://live.staticflickr.com/65535/50587487683_d4994a5f87_q.jpg"
-        img: "https://live.staticflickr.com/65535/50587487683_b794092136_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50587487683/in/album-72157716601045922"
+        img: "1y1c4todusgqe3TsCMriVWGePmfaj"
 video:
     video1:
         vimeo: "75554988"

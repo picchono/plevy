@@ -26,9 +26,7 @@ photogallery:
     image1:
         order: 1
         name: "People Place Process: A self-reflection tool to become a professional in design thinking, based on pedagogical action research, by Véronique Hillen"
-        src: "https://live.staticflickr.com/65535/50587487463_7b03cd97f3_q.jpg"
-        img: "https://live.staticflickr.com/65535/50587487463_e36d404751_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50587487463/in/album-72157716601045922"
+        img: "1Ei0UnBA6bNh-PA9U-YDFJ5km0cBlIp3I"
 ---
 
 The nature of design thinking projects requires a great capacity to solve situated-inquiry problems (versus technical problem solving – Schön). Design thinking requires practitioners to become reflective professionals. This piece of research provides a protocol and tools to guide their journey of self-reflection:
