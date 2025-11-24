@@ -3,24 +3,39 @@
     <section class="home">
         <div id="navDesktop">
             <h1 class="invisible md:visible mb-0 md:mb-4"><span class="inline-block w-8">&nbsp;</span>Index</h1>
+            <div class="nav_item">
+                <h2 class="section-introduction"><span class="inline-block w-8">00 </span>Introduction</h2>
+                {{ $page := $.Site.GetPage "page" "chaire.md" }}
+                {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
+                    data-targslug="{{ .Slug }}">
+                    <span class="text-secondary-text">00|01 ·</span> {{ .Title }}
+                </div>{{ end }}
+                {{ $page := $.Site.GetPage "page" "plevy.md" }}
+                {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
+                    data-targslug="{{ .Slug }}">
+                    <span class="text-secondary-text">00|01 ·</span> {{ .Title }}
+                </div>{{ end }}
+            </div>
             {{ $i := 1 }}
             {{ range .Sections }}
             {{ $j := 1 }}
             <div class="nav_item">
                 {{ $sec := .Slug }}
-                <h2 class="section-{{- $sec -}}"><span class="inline-block w-8">{{ if eq (( string $i ) | len ) 1 }}0{{ end }}{{ $i }} </span>{{ .Title }}</h2>
+                <h2 class="section-{{- $sec -}}"><span class="inline-block w-8">{{ if eq (( string $i ) | len ) 1 }}0{{
+                        end }}{{ $i }} </span>{{ .Title }}</h2>
                 {{ range .Pages }}
                 {{ if ne .Params.notListed true }}
-                <div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'  data-targslug="{{ .Slug }}">
-                    <span class="text-secondary-text">{{ if eq (( string $i ) | len ) 1 }}0{{ end }}{{ $i }}|{{ if eq (( string $j ) | len ) 1 }}0{{ end }}{{ $j }} · </span>
-                    {{ if in  ( slice "events" "presentations" "writings" ) .Section }}{{ dateFormat "2006/01" .Date }}
+                <div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}' data-targslug="{{ .Slug }}">
+                    <span class="text-secondary-text">{{ if eq (( string $i ) | len ) 1 }}0{{ end }}{{ $i }}|{{ if eq ((
+                        string $j ) | len ) 1 }}0{{ end }}{{ $j }} · </span>
+                    {{ if in ( slice "events" "presentations" "writings" ) .Section }}{{ dateFormat "2006/01" .Date }}
                     {{ else }}{{ dateFormat "2006" .Date }}{{ end }}
-                     · {{ .Title }}
+                    · {{ .Title }}
                 </div>
                 {{ $j = add $j 1 }}
                 {{ end }}
                 {{ end }}
-            {{ $i = add $i 1 }}
+                {{ $i = add $i 1 }}
             </div>
             {{ end }}
         </div>
@@ -52,9 +67,11 @@
     <section class="site-content">
         {{ partial "title.html" . }}
         {{ $page := $.Site.GetPage "page" "chaire.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "1") -}}{{ end }}
+        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "1") -}}{{
+        end }}
         {{ $page := $.Site.GetPage "page" "plevy.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "2") -}}{{ end }}
+        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "2") -}}{{
+        end }}
         {{ $s := 1 }}
         {{ range .Sections }}
         {{ $p := 1 }}
