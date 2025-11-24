@@ -642,10 +642,11 @@ section.site-content {
 }
 
 #btnPhonBtn {
-  @apply fixed h-8 md:h-0 w-8 md:w-0;
-  top: calc(3 * var(--pageBorder-width));
-  left: calc (2 * var(--pageBorder-width));
-  fill: var(--color-primary-text)
+  @apply fixed p-2 md:p-0 bg-primary-bg;
+  top: calc(2 * var(--pageBorder-width));
+  left: calc(2 * var(--pageBorder-width));
+  fill: var(--color-primary-text);
+  z-index: 1000;
 }
 
 #btnPhonBtn:hover {

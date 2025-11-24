@@ -26,7 +26,7 @@
         </div>
         <div class="btnPhon">
             <button id="btnPhonBtn" style="display: none;">
-                <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 28 28" fill="none" height="2rem" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M4 7C4 6.44771 4.44772 6 5 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H5C4.44772 8 4 7.55229 4 7Z"
                         fill="#000000" />
@@ -51,10 +51,10 @@
     </section>
     <section class="site-content">
         {{ partial "title.html" . }}
-        {{ $page := $.Site.GetPage "page" "plevy.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true) -}}{{ end }}
         {{ $page := $.Site.GetPage "page" "chaire.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true) -}}{{ end }}
+        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "1") -}}{{ end }}
+        {{ $page := $.Site.GetPage "page" "plevy.md" }}
+        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "2") -}}{{ end }}
         {{ $s := 1 }}
         {{ range .Sections }}
         {{ $p := 1 }}
