@@ -23,15 +23,11 @@ photogallery:
     image2:
         order: 1
         name: "Designing for Systemic Change"
-        src: "https://live.staticflickr.com/65535/50588234361_fe97b6c92f_q.jpg"
-        img: "https://live.staticflickr.com/65535/50588234361_32ff9557cd_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50588234361/in/album-72157716601045922"
+        img: "1-8rZawGqTOcP1VDlhDrncs1ST4OuowdR"
     image1:
         order: 2
         name: "Designing for Systemic Change discussion panel"
-        src: "https://live.staticflickr.com/65535/50588234376_3d06da380b_q.jpg"
-        img: "https://live.staticflickr.com/65535/50588234376_992def5802_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50588234376/in/album-72157716601045922"
+        img: "1fTzUIt-TTM0iOJbfDNBeuNVTfsw1P_7a"
 video:
     video1:
         vimeo: "300183498"
