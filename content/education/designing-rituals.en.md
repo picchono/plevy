@@ -38,159 +38,107 @@ photogallery:
     image1:
         order: 1
         name: "Description of the 'Welcoming with tea' ritual"
-        src: "https://live.staticflickr.com/65535/50754485482_8658bbac09_q.jpg"
-        img: "https://live.staticflickr.com/65535/50754485482_521fd44f36_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322831880/in/album-72157712524917571"
+        img: "1bGeyiqapyDJLoW-lBoggC6WeVfn8M6Hs"
     image2:
         order: 2
         name: "Discussion with tea masters"
-        src: "https://live.staticflickr.com/7306/16322831880_184d7b8ae6_q.jpg"
-        img: "https://live.staticflickr.com/7306/16322831880_c70c8e73d3_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322831880/in/album-72157712524917571"
+        img: "1Au2WjRsVwWZxY6oe8GGso3aUG72wQQP5"
     image3:
         order: 3
         name: "Experimenting with tea"
-        src: "https://live.staticflickr.com/8667/16509304472_68cb16ab90_q.jpg"
-        img: "https://live.staticflickr.com/8667/16509304472_f12d1919b6_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16509304472/in/album-72157712524917571"
+        img: "1OOUuhnX0Nnc81L4eclAAo4Lgv2Fuc2iP"
     image5:
         order: 5
         name: "Experimenting with cookies"
-        src: "https://live.staticflickr.com/8574/16324365297_607b4016e6_q.jpg"
-        img: "https://live.staticflickr.com/8574/16324365297_b5ee171577_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16324365297/in/album-72157712524917571"
+        img: "1jopTwa66O73mX4cFXj7BI8QG1PWUM27F"
     image6:
         order: 6
         name: "Experimenting with gestures"
-        src: "https://live.staticflickr.com/7453/16508583161_9445f325ca_q.jpg"
-        img: "https://live.staticflickr.com/7453/16508583161_bc192d362e_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16508583161/in/album-72157712524917571"
+        img: "1jLyhsf9M_DHJUfPz_eDood9tICStBnjo"
     image7:
         order: 7
         name: "Tea set"
-        src: "https://live.staticflickr.com/8676/16509320162_52e68dbcf5_q.jpg"
-        img: "https://live.staticflickr.com/8676/16509320162_c163b28723_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16509320162/in/album-72157712524917571"
+        img: "1vDiQSKe9xjaEmF0LeZLFdlFEKmyhPmYO"
     image8:
         order: 8
         name: "Dedicated designed tools"
-        src: "https://live.staticflickr.com/7359/16509316162_509ff143be_q.jpg"
-        img: "https://live.staticflickr.com/7359/16509316162_9b340d7ef6_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16509316162/in/album-72157712524917571"
+        img: "1N69mk5CAahUK4OJnNzTPgWo0o8xWC7Nt"
     image9:
         order: 9
         name: "Invitations"
-        src: "https://live.staticflickr.com/8607/16322605138_a42c093ac1_q.jpg"
-        img: "https://live.staticflickr.com/8607/16322605138_90571b9bd0_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322605138/in/album-72157712524917571"
+        img: "1UuaCaM1oJAecXvunq4rtXlPqJjsBOlyX"
     image10:
         order: 10
         name: "Complete set"
-        src: "https://live.staticflickr.com/7381/16322866460_e0b09e6c59_q.jpg"
-        img: "https://live.staticflickr.com/7381/16322866460_e9d751b5ef_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322866460/in/album-72157712524917571"
+        img: "13q01UmckYq4ChA5TaiPBwYA38sBTlCYW"
     image11:
         order: 11
         name: "Making tea"
-        src: "https://live.staticflickr.com/8616/16324025709_eaba625619_q.jpg"
-        img: "https://live.staticflickr.com/8616/16324025709_242cfd5361_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16324025709/in/album-72157712524917571"
+        img: "1XQEraq9hG2qmgKvDwYTtcSdqfOeclOUn"
     image12:
         order: 12
         name: "Discussions while making tea"
-        src: "https://live.staticflickr.com/7436/16324391627_73c2ef7e67_q.jpg"
-        img: "https://live.staticflickr.com/7436/16324391627_9acd7ae1ea_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16324391627/in/album-72157712524917571"
+        img: "1zkSotHuSFhcXJ150CG635LamjqbfJZBi"
     image13:
         order: 13
         name: "Tea ustensils"
-        src: "https://live.staticflickr.com/7387/16324074039_4b2679251c_q.jpg"
-        img: "https://live.staticflickr.com/7387/16324074039_a8a4a6c246_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16324074039/in/album-72157712524917571"
+        img: "1yUMr4t5FP8rzALyqkmy2Aw6uRAHMT8xY"
     image14:
         order: 14
         name: "Tea ustensils"
-        src: "https://live.staticflickr.com/7364/15887782744_68b92a9507_q.jpg"
-        img: "https://live.staticflickr.com/7364/15887782744_3ba823c215_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/15887782744/in/album-72157712524917571"
+        img: "1_cffg4IZrFovf9XBBA7CyHvXX4xX-EkL"
     image15:
         order: 15
         name: "Tea ustensils"
-        src: "https://live.staticflickr.com/7387/16509327302_aaa4b66915_q.jpg"
-        img: "https://live.staticflickr.com/7387/16509327302_b313fd19d6_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16509327302/in/album-72157712524917571"
+        img: "1U-Fdr5DfEb3na7ZG_vkvM4937f5Pb2nQ"
     image16:
         order: 16
         name: "Tea coaster"
-        src: "https://live.staticflickr.com/8637/16324437017_75cdd3027b_q.jpg"
-        img: "https://live.staticflickr.com/8637/16324437017_dc001a4873_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16324437017/in/album-72157712524917571"
+        img: "1OFnMh6EycVlEvk-yOYQkJVbzVBHUv13B"
     image17:
         order: 17
-        name: "Unwrapping the tea set"
-        src: "https://live.staticflickr.com/65535/50754927401_41fba6d33c_q.jpg"
-        img: "https://live.staticflickr.com/65535/50754927401_8bba3f75ab_o.gif"
-        link: "https://www.flickr.com/photos/27221668@N05/50754927401/in/dateposted-public"
+        name: "Unwrapping the set"
+        img: "1-qVThEh7DELrk8gHYo45B5pGK-yXHEI0"
     image20:
         order: 20
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7472/27123383286_29cee80803_q.jpg"
-        img: "https://live.staticflickr.com/7472/27123383286_6b6d447510_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123383286/in/album-72157712523784411"
+        img: "1Mh1NU51xq7Z2hEwFMGjllAYgA37s9L9X"
     image21:
         order: 21
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7443/27123383156_4014791229_q.jpg"
-        img: "https://live.staticflickr.com/7443/27123383156_36cbe33e9e_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123383156/in/album-72157712523784411"
+        img: "1PyG8lrapaBIZxysvxJMRow3Nt_ThAtpg"
     image22:
         order: 22
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7126/27123383836_33b4bbdd94_q.jpg"
-        img: "https://live.staticflickr.com/7126/27123383836_419612c92f_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123383836/in/album-72157712523784411"
+        img: "1ebQs5S_IyrNMt13Lkn3lE-U0gGrc32EM"
     image23:
         order: 23
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7481/27123384466_fb74decf10_q.jpg"
-        img: "https://live.staticflickr.com/7481/27123384466_82047b0580_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123384466/in/album-72157712523784411"
+        img: "1PVeTI1W4uLFMiieiN7LQRjqbvwpqMDnw"
     image24:
         order: 24
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7670/27123385236_b7c4c5e7dc_q.jpg"
-        img: "https://live.staticflickr.com/7670/27123385236_579ed452d5_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123385236/in/album-72157712523784411"
+        img: "1fO7FXiBqvJ2o3-YqDMo1ixZu5IRjVYwf"
     image25:
         order: 25
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7146/26550557524_f754800cda_q.jpg"
-        img: "https://live.staticflickr.com/7146/26550557524_399a07d933_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/26550557524/in/album-72157712523784411"
+        img: "1oxZHT15mNNOKzIhBP7mXkvERwVjxgLp5"
     image26:
         order: 26
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7743/27123381086_9f2d22f7b5_q.jpg"
-        img: "https://live.staticflickr.com/7743/27123381086_3de7d0899c_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123381086/in/album-72157712523784411"
+        img: "1rQeohcyE1Cb0EJHkvo11uOO0sDng922I"
     image27:
         order: 27
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7484/26552015993_4746371332_q.jpg"
-        img: "https://live.staticflickr.com/7484/26552015993_985a08bd9a_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/26552015993/in/album-72157712523784411"
+        img: "1fU-_7598j5VELoJx6eMKJ1NBqE2XUEzN"
     image28:
         order: 28
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7054/27123382386_5ca73d44fe_q.jpg"
-        img: "https://live.staticflickr.com/7054/27123382386_469d9bc348_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123382386/in/album-72157712523784411"
+        img: "1DTXrrpTurv6jnzMKtdIovvomZTA39q_z"
     image29:
         order: 29
         name: "Tea Together"
-        src: "https://live.staticflickr.com/7643/27123382246_d940d0644c_q.jpg"
-        img: "https://live.staticflickr.com/7643/27123382246_36c637fa6e_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/27123382246/in/album-72157712523784411"
+        img: "1pMqH87gZnBBPyjS6U_bKZI9fcpb_yTDO"
 ---
 Our lives are a collection of rituals. The way we wake up, the way we leave or enter our home, the way we prepare our suitcase before going on a trip are just simple examples of the many rituals each of us have constructed and that structure our everyday lives. These rituals are not rigid procedures, but a seemingly established series of activities from which experiential meaning emerges, and by which personal values are expressed.
 
