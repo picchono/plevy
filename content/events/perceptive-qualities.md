@@ -18,7 +18,7 @@ institution:
     colo: "#c72125"
 date: 2013-05-23T16:27:15+02:00
 abstract: "On May 3rd 2013, Eva Deckers has received a Ph.D. degree CUM LAUDE on the topic of Perceptive Qualities in System of Interactive Products."
-frontphoto: "https://live.staticflickr.com/65535/50587487588_02e31ae420.jpg"
+frontphoto: "1aClH6VsbMJhxL1vIAN6-I-FEvxAq7VUx"
 link:
     1: ["dissertation", "dissertation", "https://pure.tue.nl/ws/portalfiles/portal/3644790/753907.pdf"]
     2: ["news", "news", "https://www.tue.nl/nieuws/nieuwsoverzicht/eva-deckers-cum-laude-gepromoveerd/"]

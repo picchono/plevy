@@ -14,7 +14,7 @@ institution:
     colo: "#c72125"
 date: 2012-10-12T16:27:15+02:00
 abstract: "Light through Culture is an international design school which explores the theme of complexity in learning environments."
-frontphoto: "https://live.staticflickr.com/65535/50587487263_eab0753e4b.jpg"
+frontphoto: "1XG-I1TEX5_oHWBEfd_JjVVrPAub3nUsK"
 video:
     video1:
         title: "Shift"

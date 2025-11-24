@@ -19,7 +19,7 @@ institution:
     colo: "#c72125"
 date: 2012-09-03T16:27:15+02:00
 abstract: "The Practice of Constructive Design Research is a conversation proposed by Stoffel Kuenen at the DRS2014 conference.</i>"
-frontphoto: "https://live.staticflickr.com/65535/50587487593_401ed67d43.jpg"
+frontphoto: "1WqAq8fzi4OmRD9-2MQxjMSYF2xURRAPm"
 video:
     video1:
         vimeo: "99922352"

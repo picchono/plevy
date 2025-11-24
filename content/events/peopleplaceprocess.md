@@ -18,7 +18,7 @@ institution:
     colo: "#c72125"
 date: 2017-05-23T16:27:15+02:00
 abstract: "The nature of design thinking projects requires a great capacity to solve situated-inquiry problems (versus technical problem solving – Schön). Design thinking requires practitioners to become reflective professionals. This piece of research provides a protocol and tools to guide their journey of self-reflection.<br/><i>Doctoral dissertation of Véronique Hillen</i>"
-frontphoto: "https://live.staticflickr.com/65535/50587487463_7b03cd97f3.jpg"
+frontphoto: "1Ei0UnBA6bNh-PA9U-YDFJ5km0cBlIp3I"
 link:
     5: ["dissertation", "dissertation", "https://research.tue.nl/files/65720264/20170523_Hillen.pdf"]
     2: ["site web", "website", "https://research.tue.nl/en/publications/people-place-process-a-self-reflection-tool-to-become-a-professio"]

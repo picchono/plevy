@@ -43,8 +43,7 @@ collaboration:
         web: "https://www.etis-lab.fr/"
         heig: 2.2
         colo: "#32c2df"
-frontphoto: "https://images.unsplash.com/photo-1624719507903-7d8b41c7c9cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80"
-frontphotomini: "https://images.unsplash.com/photo-1624719507903-7d8b41c7c9cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=70"
+frontphoto: "1Pu8ASnzn952B45b7A5SjGOdWCcL4xqrB"
 photocredit: 
     cred: "Kilimanjaro STUDIOz"
     link: "https://unsplash.com/@kilimanjarostudioz"

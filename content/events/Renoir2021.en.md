@@ -29,7 +29,7 @@ collaboration:
         heig: 1.5
 date: 2021-11-18T10:30:52+02:00
 reference: "Je voudrais m'intéresser aujourd'hui à la place des méthodes et des pratiques en design, et décrire leur entre-deux comme un lieu de développement des pratiques, c'est-à-dire comme moment d'apprentissage réflexif sur la pratique."
-frontphoto: "https://live.staticflickr.com/65535/51741030752_0ed1b66327.jpg"
+frontphoto: "1wkK_h7HlHyIhlqMVlXsBQ4IYsWwemH9M"
 photocredit: 
     cred: "the students of Lycée Auguste Renoir"
     link: "https://ecole-lycee-renoir-paris.fr/"

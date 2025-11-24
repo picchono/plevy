@@ -3,11 +3,11 @@
 <div class="mainBlock newpad-y newpad-l">
     <div class="mainBlockIn">
         {{ if .Content}}
-        <div class="w-full newpad-b line-b" data-cat-sort="110">
+        <div class="w-full newpad-b" data-cat-sort="110">
             {{ .Content }}
         </div>
         {{ end }}
-        <div id="Slides" class="newpad-b line-b">
+        <div id="Slides" class="newpad-b">
             {{ if .Params.slides }}
             {{ $slid := .Params.slides }}
             {{ $ord := 1 }}

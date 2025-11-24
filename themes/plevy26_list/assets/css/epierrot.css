@@ -451,7 +451,6 @@ a.logohome:hover .lh {
 
 /* Pagefind search */
 .pagefind-ui__result {
-  @apply line-b;
   padding: var(--pageBorder-width) !important;
 }
 

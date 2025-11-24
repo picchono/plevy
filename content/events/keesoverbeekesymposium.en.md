@@ -19,7 +19,7 @@ institution:
     colo: "#c72125"
 date: 2018-10-09T16:27:15+02:00
 abstract: "Preceeding the inaugural lecture of prof. Stephan Wensveen, you are cordially invited to attend the Kees Overbeeke symposium at the Senaatszaal in the Auditorium, on Friday, October 19, 2018.<br/><i>On the legacy of Prof. Kees Overbeeke</i>"
-frontphoto: "https://live.staticflickr.com/65535/50587487628_cabb76f433.jpg"
+frontphoto: "16b4xkZyucwGZ4Tb1D6Gx10Vc6Yun7483"
 link:
     1: ["presentation", "presentation", "/publications/contemplating-the-impossible/"]
     2: ["programme", "programme", "https://1drv.ms/b/s!AnQx_v88q65Q1-tOF82yeT5mikXnBw"]

@@ -1,4 +1,3 @@
-
 ---
 slug: the-eindhoven-school
 title: "Systems Design - The Eindhoven School"
@@ -15,7 +14,7 @@ institution:
     colo: "#c72125"
 date: 2012-12-12T16:27:15+02:00
 abstract: "While we are starting to understand how to design for interaction through the integrating of form, interaction and function, the next challenge is already in sight: designing for systems."
-frontphoto: "https://live.staticflickr.com/65535/50588233741_0d25b7c9d9.jpg"
+frontphoto: "1I3xEo5f9j0w_vvnuRA6cr1vhA3iZuXaF"
 ---
 
 The future of design is unclear, as designerly responsibilities are changing. The emphasis used to be on form and production, but as the products to be designed have changed, design has changed. With an interactive product the designer needs to consider not only the form but also the temporal aspects of the product?s interaction and behaviour, and even the specifics of its functionality. While we are starting to understand how to design for interaction through the integrating of form, interaction and function, the next challenge is already in sight: designing for systems.
