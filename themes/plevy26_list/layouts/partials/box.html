@@ -41,7 +41,7 @@
                         {{ $count = add $count 1 }}
                         {{- if ne $count $len -}}, {{ end }}
                         {{ end }}<br>{{ end }}
-                        @ {{ .context.Params.institution.name }}
+                        {{ .context.Params.institution.name }}
                         {{ else if eq .context.Section "presentations" }}
                         {{ i18n "for" }}{{ if .context.Params.collaboration }}
                         {{ $len := len .context.Params.collaboration }}
@@ -62,7 +62,7 @@
                         {{ $count = add $count 1 }}
                         {{- if ne $count $len -}}, {{ end }}
                         {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
-                        {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}@ {{
+                        {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}{{
                         .context.Params.institution.name }}{{ end }}{{ end }}
                     </div>
                 </div>
