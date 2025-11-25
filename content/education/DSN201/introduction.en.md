@@ -26,7 +26,7 @@ frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
 Cette UE propose une vue d'ensemble des pratiques de la recherche en design, art et création, afin d’atteindre deux objectifs pédagogiques. Il s’agit d’abord de contextualiser l'implication de la pratique du design, de l’art ou de la création en recherche, et de développer une approche de recherche au travers de ces pratiques. Il s’agit ensuite de fournir des ressources (connaissances, outils, méthodologies, réseaux...) utiles à la recherche engagée sur une pratique, et de permettre un développement en autonomie des ressources utiles à la pratique de la recherche.
 Cette UE vise donc à initier des praticiens à la recherche au travers de leur propre pratique. Elle vise plus spécifiquement un public de professionnels dont l’activité s’inscrit dans un processus de création (artistique, culturelle, scientifique et technique, idéation…) tant dans le domaine manuel et technique que dans le domaine du projet soucieux de valoriser leur pratique professionnelle à travers un travail de recherche.
 
-Elle est enfin structurée par une série de cours, de discussions et d'un séminaire de méthodologie de recherche en design et création](https://plevy.fr/events/seminaire-de-recherche-en-design/). La discussion et l'échange font la qualité désirée de ce cours.
+Elle est enfin structurée par une série de cours, de discussions et d'un [séminaire de méthodologie de recherche en design et création](https://plevy.fr/events/seminaire-de-recherche-en-design/). La discussion et l'échange font la qualité désirée de ce cours.
 
 ## Compétences visées
 - s’approprier les enjeux d’une pratique de recherche en design, art et création,

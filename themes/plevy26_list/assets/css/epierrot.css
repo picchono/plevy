@@ -154,14 +154,14 @@ html.light {
 }
 
 html.dark {
-  --color-primary-bg: oklch(27.9% 0.041 260.031);
+  --color-primary-bg: oklch(26.9% 0 0);
   --color-secondary-bg: var(--color-pageborder-bg);
   /* 6c868d */
   --color-tertiary-bg: #555555;
   --color-pageborder-bg: #000;
   --color-primary-text: #e1e1e1;
   --color-secondary-text: #e1e1e1;
-  --color-epierrot: #fab92d;
+  --color-epierrot: #ED6763;
   /* 2CCBCB */
   --color-borders: #fafafa;
   --blend-mode-before: hard-light;
@@ -505,12 +505,19 @@ a.logohome:hover .lh {
 
 /* menuBox */
 .menuBox {
-  @apply relative w-full border-b border-secondary-text flex flex-row justify-between items-start transition-all duration-700 ease-in-out;
+  @apply relative w-full border-b border-secondary-text flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
 }
 
-.menuBox.off,
-.menuBox.off * {
-  @apply h-0 p-0 m-0 opacity-0
+.menuBox.hid,
+.menuBox.hid * {
+  height: 0 !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  border: 0 !important;
 }
 
 .menuBoxCount {
@@ -537,6 +544,8 @@ a.logohome:hover .lh {
 .boxIsoImg {
   @apply block w-full self-end rounded;
   aspect-ratio: 2;
+  background-position: center;
+  background-size: cover;
 }
 
 /* duotone */
@@ -589,7 +598,6 @@ a.linkBox:hover .duotone::after {
   display: block;
 }
 
-
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
@@ -599,6 +607,14 @@ section.home {
 section.site-content {
   @apply max-w-132 w-full;
   margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  #menu section.home,
+  #menu section.site-content {
+    overflow: auto;
+    height: calc(100vh - (6 * var(--pageBorder-width)));
+  }
 }
 
 @media (max-width: 768px) {
@@ -834,6 +850,22 @@ ul.toc__sublist {
   @apply text-epierrot bg-primary-bg;
 }
 
+/* content */
+#content h1 {
+  @apply text-3xl font-bold pt-8 pb-3;
+}
+
+#content h2 {
+  @apply text-2xl font-bold pt-6 pb-2;
+}
+
+#content h3 {
+  @apply text-xl font-bold pt-4 pb-0;
+}
+
+#content h1 {
+  @apply text-xl italic pt-4 pb-0;
+}
 
 /* print */
 @media print {

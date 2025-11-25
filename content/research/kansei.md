@@ -1,5 +1,6 @@
 ---
 title: "Kansei studies, kansei design"
+slug: programme-kansei
 date: 2003-10-16T20:03:12+02:00
 draft: false
 searchFilter: Research

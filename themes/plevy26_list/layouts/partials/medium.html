@@ -49,7 +49,16 @@
             </div>
             {{ end }}
         </div>
-
+        {{ if .Params.diploma}}
+        <div class="pageBlock flex flex-col" data-cat-sort="1">
+            {{ range sort .Params.diploma }}
+            <div class="flex flex-row flex-wrap">
+                <div class="newpad-r w-1/5 font-bold">{{ .type }}</div>
+                <div class="newpad-l w-4/5">{{ .name }}</div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
         {{ if ne .Params.layout "list" }}
         {{ if .Params.executive}}
         <div class="pack-item w-full italic text-sm" data-cat-sort="1">
@@ -193,16 +202,6 @@
                 {{ end }}
                 {{ end }}
             </div>
-        </div>
-        {{ end }}
-        {{ if .Params.diploma}}
-        <div class="pageBlock flex flex-col" data-cat-sort="1">
-            {{ range sort .Params.diploma }}
-            <div class="flex flex-row flex-wrap">
-                <div class="newpad-r w-1/5 font-bold">{{ .type }}</div>
-                <div class="newpad-l w-4/5">{{ .name }}</div>
-            </div>
-            {{ end }}
         </div>
         {{ end }}
         {{ if .Params.parcours }}

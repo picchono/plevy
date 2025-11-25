@@ -1,6 +1,6 @@
 ---
 title: "Japanese philosophy inspired design framework"
-slug: japanese_philosophy-inspired_design_framework
+slug: programme-japanese_philosophy-inspired_design_framework
 date: 2020-10-16T20:04:12+02:00
 draft: false
 searchFilter: Research

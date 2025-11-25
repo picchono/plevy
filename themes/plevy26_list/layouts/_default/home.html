@@ -3,7 +3,7 @@
     <section class="home">
         <div id="navDesktop">
             <h1 class="invisible md:visible mb-0 md:mb-4"><span class="inline-block w-8">&nbsp;</span>Index</h1>
-            <div class="nav_item">
+            <div class="nav_item" data-section="introduction">
                 <h2 class="section-introduction"><span class="inline-block w-8">00 </span>Introduction</h2>
                 {{ $page := $.Site.GetPage "page" "chaire.md" }}
                 {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
@@ -19,7 +19,7 @@
             {{ $i := 1 }}
             {{ range .Sections }}
             {{ $j := 1 }}
-            <div class="nav_item">
+            <div class="nav_item" data-section="{{ .Section }}">
                 {{ $sec := .Slug }}
                 <h2 class="section-{{- $sec -}}"><span class="inline-block w-8">{{ if eq (( string $i ) | len ) 1 }}0{{
                         end }}{{ $i }} </span>{{ .Title }}</h2>
@@ -67,10 +67,10 @@
     <section class="site-content">
         {{ partial "title.html" . }}
         {{ $page := $.Site.GetPage "page" "chaire.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "1") -}}{{
+        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 1) -}}{{
         end }}
         {{ $page := $.Site.GetPage "page" "plevy.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" "2") -}}{{
+        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 2) -}}{{
         end }}
         {{ $s := 1 }}
         {{ range .Sections }}
