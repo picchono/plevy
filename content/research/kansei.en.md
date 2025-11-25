@@ -7,7 +7,7 @@ milestone: kansei
 layout: programme
 subsection: research-programme
 current: false
-frontphoto: "https://live.staticflickr.com/65535/50588234291_6e3bf5346a.jpg"
+frontphoto: "1OX7gi9Vk76up5Y6Rj5fHlCDU4roPXXvh"
 quote: 
     quoteline: "A piece of waka makes your heart abate and kansei, which is a virtue of waka."
     quoteauthor: "Yoshida"

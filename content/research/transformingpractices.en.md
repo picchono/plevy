@@ -9,8 +9,7 @@ subsection: research-programme
 updating: true
 current: true
 front: true
-frontphoto: "https://live.staticflickr.com/65535/50748120498_6b11000fa3.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/50748120498_6b11000fa3_q.jpg"
+frontphoto: "1ddEFzzMpMjE4lfq9XUGrXUcw4W9tTZSj"
 quote: 
     quoteline: "Every experience enacted and undergone modiﬁes the one who acts and undergoes, while this modiﬁcation affects, whether we wish it or not, the quality of subsequent experiences. For it is a somewhat different person who enters into them."
     quoteauthor: "Dewey"

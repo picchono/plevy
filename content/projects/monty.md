@@ -19,7 +19,7 @@ institution:
 date: 2012-09-03T16:27:15+02:00
 abstract: "Due to its curious nature Monty might not always be focused on what you are doing. He can however be temporarily motivated to move towards a particular area on your desk."
 projectby: "Rens Alkemade"
-frontphoto: "https://live.staticflickr.com/65535/50588356187_5d84aee544.jpg"
+frontphoto: "1sqXXuRnl4i0ma-YYe2S3cdU23F5ymrtb"
 video:
     video1:
         youtube: "KYEstjI4bHM"

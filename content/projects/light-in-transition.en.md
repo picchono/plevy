@@ -19,7 +19,7 @@ institution:
 date: 2012-09-03T16:27:15+02:00
 abstract: "Intelligent products and systems are omnipresent, weave into our everyday life, and consequently have the power to transform our society. Adoption of these systems in our environments invites for exploring further how we interact with our environment."
 projectby: "Nadine Amersvoort"
-frontphoto: "https://live.staticflickr.com/65535/50752237877_5ac9f2e6ef.jpg"
+frontphoto: "1FxvUIPJcVmYld0eLFFb9Gpeyf4J_aOUE"
 video:
     video1:
         youtube: "NgoCTCaAQIs"

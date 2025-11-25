@@ -8,7 +8,7 @@ layout: programme
 subsection: research-programme
 updating: true
 current: false
-frontphoto: "https://live.staticflickr.com/65535/50587487253_18c3b30ebd.jpg"
+frontphoto: "1OCV84I23bxeFlGB5uCJGgs4d3WPgPDbK"
 quote: 
     quoteline: "And thoses who were seen dancing were thought to be insane by those who could not hear the music."
     quoteauthor: "Friederich Nietsche"

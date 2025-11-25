@@ -19,7 +19,7 @@ institution:
 date: 2014-09-03T16:27:15+02:00
 abstract: "Nobody ever said that defying gravity is easy! · a final bachelor project"
 projectby: "Alex Jurtan"
-frontphoto: "https://live.staticflickr.com/65535/50752466091_ef1d8b1aa2.jpg"
+frontphoto: "153TacRJRtIvFmP4JdJqb7RTLXJU1fKzE"
 video:
     video1:
         youtube: "5KLFBjKArgw"

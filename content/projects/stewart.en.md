@@ -19,8 +19,7 @@ institution:
 date: 2019-09-03T16:27:15+02:00
 abstract: "Stewart is a tactile interface designed for a fully autonomous car · a final bachelor project"
 projectby: "Felix Ros"
-frontphoto: "https://live.staticflickr.com/65535/50587487223_bd344a0976.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/50587487223_bd344a0976_q.jpg"
+frontphoto: "1uljXYZ8kyICh3H04bMub1xAQj1RT8Dgb"
 photogallery:
     image1:
         order: 1

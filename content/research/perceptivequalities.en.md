@@ -7,7 +7,7 @@ milestone: perceptq
 layout: programme
 subsection: research-programme
 current: false
-frontphoto: "https://live.staticflickr.com/65535/50587487253_18c3b30ebd.jpg"
+frontphoto: "1OCV84I23bxeFlGB5uCJGgs4d3WPgPDbK"
 quote:
     quoteline: "Et ceux qui dansaient furent considérés comme fous par ceux qui ne pouvaient entendre la musique."
     quoteauthor: "Friederich Nietsche"

@@ -34,15 +34,12 @@ citation:
     publisher: ["Technische Universiteit Eindhoven", "Eindhoven, the Netherlands"]
 reference: "Trotto, A., Hummels, C.C.M., Levy, P., Peeters, J.P.A., van der Veen, R., Yoo, D., Johansson, M., Smith, M.L., & van der Zwan, S. (2021). Designing for Transforming Practices: Maps and Journeys. Eindhoven: Technische Universiteit Eindhoven."
 abstract: "This collection of infographics is a visual journey through the development, the application, and the communication of our approach in designing for transforming practices. This is a collection of perspectives: how do we view and shape societal transformation through a dialogue across different standpoints? While the work is grounded in design research as the driving tradition of knowledge production, the collection embraces multiple kinds: disciplinary, cultural, social, and organisational perspectives. It respects the systemic nature of the act of transforming. The purpose of the upcoming pages is not to propose clear-cut solutions regarding how to achieve societal goals, but rather to sketch a landscape of learnings, experiences, and opportunities for a specific kind of transformation to happen. One could see this collection as a teaser for a bigger journey through uncharted territories of transforming practices. Buckle up and we hope you enjoy the journey."
-frontphoto: "https://live.staticflickr.com/65535/51755582524_fe0ba516d0.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/51755582524_fe0ba516d0_m.jpg"
+frontphoto: "1q_TgiFRxiE18t61JN8Ic5RZQ_5YjCEVO"
 photogallery:
     image1:
         order: 1
         name: "Cover"
-        src: "https://live.staticflickr.com/65535/51755582524_fe0ba516d0_q.jpg"
-        img: "https://live.staticflickr.com/65535/51755582524_c0444d4b62_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322831880/in/album-72157712524917571"
+        img: "1q_TgiFRxiE18t61JN8Ic5RZQ_5YjCEVO"
     image2:
         order: 2
         name: "Page 1"

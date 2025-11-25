@@ -15,7 +15,7 @@ institution:
 date: 2014-06-03T16:27:15+02:00
 abstract: "What does data feel like?"
 projectby: "by Sander Dijkhuis"
-frontphoto: "https://live.staticflickr.com/65535/50588234476_49a3be3d7a.jpg"
+frontphoto: "19ZzGqUnE_CZqbqaTNK6FcCKqidEegGsa"
 video:
     video1:
         vimeo: "117098895"

@@ -18,7 +18,7 @@ institution:
     colo: "#c72125"
 date: 2020-04-26T13:38:26+02:00
 abstract: "Transforming Practices (TP) considers the transformations of our societies, dealing with major societal issues, local challenges for social resilience, or everyday activities, as well as their interrelations. Envisioning transformative practices, we question through designing the how, who, why and what of design for these major societal issues."
-frontphoto: "https://live.staticflickr.com/65535/50587487838_a4cac5da91.jpg"
+frontphoto: "16NgREbsaYRVKYRy2Whm3AT8NEBd9O3Pm"
 link:
     1: ["website", "website", "https://transformativepractices.net"]
 ---

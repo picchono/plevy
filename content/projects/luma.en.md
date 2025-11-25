@@ -19,7 +19,7 @@ institution:
 date: 2012-09-03T16:27:15+02:00
 abstract: "This research project focuses on how to design for perceptive activity in artifacts in order for crossing in perception of expressivity between person and artifact to happen."
 projectby: "Koen Beljaars"
-frontphoto: "https://live.staticflickr.com/65535/50752154141_2f7e727c12.jpg"
+frontphoto: "1IK0oElrTnLrQn4UklzBG8LOw3UTQpyjt"
 video:
     video1:
         youtube: "26-jLds5K28"

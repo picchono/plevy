@@ -19,7 +19,7 @@ institution:
 date: 2012-09-03T16:27:15+02:00
 abstract: "Passage is a kansei design project on the in-between space carried out in 2012"
 projectby: "Gracia Goh, Chiyong Lim, and Kate Vermeyen"
-frontphoto: "https://live.staticflickr.com/65535/50588356177_7cb3292ae0.jpg"
+frontphoto: "10E7Pk4d4SXRTw8gJoL6vOZn115ND34ZB"
 photogallery:
     image1:
         order: 1

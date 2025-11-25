@@ -13,7 +13,7 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2013-12-10T16:27:15+02:00
-frontphoto: "https://live.staticflickr.com/65535/50587487333_028a281cc7.jpg"
+frontphoto: "1SEZPBKk8AG0TrhiNPuAur4bWeLBR4mO4"
 abstract: "Resonnant interaction, on irresistibleness through design"
 projectby: "Kevin Andersen"
 video:

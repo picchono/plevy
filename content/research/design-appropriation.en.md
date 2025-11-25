@@ -8,7 +8,7 @@ layout: programme
 subsection: research-programme 
 main: true
 current: true
-frontphoto: "https://live.staticflickr.com/65535/49323077051_672cd0fdf4.jpg"
+frontphoto: "1Ehy24qu4dzh2JDB1fePXKsdif8RFqgfP"
 quote:
     quoteline: "Étudier la vie quotidienne serait une entreprise parfaitement ridicule,et d’abord condamnée à ne rien saisir de son objet, si l’on ne se proposait pas explicitementd’étudier la vie quotidienne afin de la transformer."
     quoteauthor: "Guy Debord"

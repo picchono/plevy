@@ -18,7 +18,7 @@ institution:
     colo: "#c72125"
 date: 2019-09-03T16:27:15+02:00
 abstract: "In this Design Fiction project, several potential healthcare futures are explored in a collaboration between Philips Design, Eindhoven University of Technology, Design Academy Eindhoven, and Frank Kolkman."
-frontphoto: "https://live.staticflickr.com/65535/50589711141_29f4051b45.jpg"
+frontphoto: "1YpaDfGBiw9IJfFlBeoVQol1tAEXpcBSC"
 photogallery:
     image5:
         order: 5

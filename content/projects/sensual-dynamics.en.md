@@ -30,7 +30,7 @@ teacher:
         name: "Eva Deckers"
     teacher3:
         name: "Michael Cruz Restrepo"
-frontphoto: "https://live.staticflickr.com/65535/50587487253_18c3b30ebd.jpg"
+frontphoto: "1uljXYZ8kyICh3H04bMub1xAQj1RT8Dgb"
 video:
     video1:
         youtube: "h1Lz3rEXNKQ"

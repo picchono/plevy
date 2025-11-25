@@ -8,7 +8,7 @@ layout: programme
 subsection: research-programme
 main: true
 current: true
-frontphoto: "https://live.staticflickr.com/65535/49323077051_672cd0fdf4.jpg"
+frontphoto: "1Ehy24qu4dzh2JDB1fePXKsdif8RFqgfP"
 quote:
     quoteline: "Studying the everyday life would be an absurd undertaking, and anyway fated to catch nothing of its object, if studying the everyday life would explicitly be with the intention to transform it."
     quoteauthor: "Guy Debord"

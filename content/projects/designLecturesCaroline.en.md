@@ -14,7 +14,7 @@ institution:
 date: 2019-09-03T16:27:15+02:00
 abstract: "A series of recorded lectures on design"
 projectby: "prof.dr.ir. Caroline Hummels @TU/e."
-frontphoto: "https://live.staticflickr.com/65535/51394261905_3ea3abd6c2.jpg"
+frontphoto: "1TbGkxACY5Q68C6JuePB7RQx6UBLLC92U"
 video:
     video1:
         vimeo: "106548027"

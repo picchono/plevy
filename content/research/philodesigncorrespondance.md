@@ -8,8 +8,7 @@ layout: programme
 subsection: research-programme
 current: true
 front: true
-frontphoto: "https://live.staticflickr.com/65535/50697812518_d1292b5cce.jpg"
-frontphotomini: "https://live.staticflickr.com/65535/50697812518_d1292b5cce_q.jpg"
+frontphoto: "1yK9W7K77iDh5NI_T-DmkuQFeF567Qw7b"
 ---
 
 intro

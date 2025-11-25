@@ -13,7 +13,7 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2021-06-17T10:27:15+02:00
-frontphoto: "https://live.staticflickr.com/65535/51253775095_9eccca2c5c.jpg"
+frontphoto: "1Im-HX2VAwBL_VCRNBKS49BhgnvAFUP1j"
 abstract: "A video on the role and the engagement of design in the time of expected apocalypse. A manifesto"
 projectby: "Gion van den Broek, Nils Hollestelle, Lupe van Ratingen, Roshni Suresh, Yvonne Ubbink, and Joep Vossen"
 video:
