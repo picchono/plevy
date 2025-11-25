@@ -1,52 +1,51 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-<div class="mainBlock newpad-y newpad-l">
-    <div class="mainBlockIn">
-        {{ if .Content}}
-        <div class="w-full newpad-b" data-cat-sort="110">
-            {{ .Content }}
-        </div>
-        {{ end }}
-        <div id="Slides" class="newpad-b">
-            {{ if .Params.slides }}
-            {{ $slid := .Params.slides }}
-            {{ $ord := 1 }}
-            <div class="flex flex-row flex-wrap" id="lightgallery">
-                {{ range $slid }}
-                {{ $typ := index . 0 }}
+<section class="site-content">
+    {{ if .Content}}
+    <div class="w-full" data-cat-sort="110">
+        {{ .Content }}
+    </div>
+    {{ end }}
+    <div id="Slides" class="">
+        {{ if .Params.slides }}
+        {{ $slid := .Params.slides }}
+        {{ $ord := 1 }}
+        <div class="flex flex-row flex-wrap" id="lightgallery">
+            {{ $s := 1 }}
+            {{ range $slid }}
+            {{ $typ := index . 0 }}
                 {{ if eq $typ "img" }}
-                <a class="galImg place-self-center w-24 mr-4 mb-4" href="{{ index . 1 }}"
+                <a class="boxIso w-full newpad-y"
+                    href="{{- index . 1 -}}"
                     aria-label="See image {{ $ord }}" data-custom-prop="abc">
-                    <img class="rounded-lg object-cover" loading="lazy" src="{{ index . 1 }}?embed=1&width=400"
-                        alt="{{ index . 2}}" title="{{ index . 2}}"></a>
+                    <div class="boxIsoImg duotone newpad"
+                        style="background-image: url('{{- index . 1 -}}');">
+                    </div>
+                </a>
                 {{ else if eq $typ "google" }}
-                <a class="place-self-center w-24 mr-4 mb-4" href="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w3200"
+                <a class="boxIso w-full newpad-y"
+                    href="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w3200"
                     aria-label="See image {{ $ord }}" data-custom-prop="abc">
-                    <img class="rounded-lg object-cover" loading="lazy" src="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w500"
-                        alt="{{ index . 2}}" title="{{ index . 2}}"></a>
+                    <div class="boxIsoImg duotone newpad"
+                        style="background-image: url('https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w400');">
+                    </div>
+                </a>
                 {{ else if eq $typ "mov"}}
                 <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}"
-                    class="place-self-center w-24 mr-4 mb-4">
-                    <img class="rounded-xs object-cover" loading="lazy" src="{{ index . 2 }}" alt="video {{ $ord }}">
+                    class="boxIso w-full newpad-y">
+                     <div class="boxIsoImg newpad"
+                        style="background-image: url('{{ index . 2 }}');" alt="video {{ $ord }}">
+                    </div>
                 </a>
                 {{ end }}
                 {{ $ord = add $ord 1 }}
-                {{ end }}
-            </div>
             {{ end }}
         </div>
+        {{ end }}
     </div>
-</div>
+</section>
 {{ $qr_js := resources.Get "js/qrgen.js" | minify }}
 <script src="{{ $qr_js.Permalink }}"></script>
-<script>
-    let viewportWidth = Math.round(Math.min((window.innerWidth * 1.5), 3840));
-    let viewportHeight = Math.round(Math.min((window.innerHeight * 1.5), 3840));
-    const galimag = document.querySelectorAll('.galImg');
-    galimag.forEach((elt) => {
-        elt.href += "?embed=1&width=" + viewportWidth + "&height=" + viewportHeight;
-    });
-</script>
 <script defer="defer">
     const qrcode = new QRCode(document.getElementById('qrcode'), {
         text: {{ .Page.Permalink }},

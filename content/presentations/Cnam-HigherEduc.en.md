@@ -25,7 +25,7 @@ collaboration:
         colo: "#c1002a"
         heig: 1
 date: 2025-06-14T16:27:15+02:00
-frontphoto: "https://upload.wikimedia.org/wikipedia/commons/6/67/Mus%C3%A9e_du_Conservatoire_national_des_Arts_et_M%C3%A9tiers_-_panoramio.jpg"
+frontphoto: "IY3FTudW5vOiUECUTbRH1Vcp9kvaHO2"
 description: "Une brève présentation du Cnam dans le paysage du système français de l'enseignement supérieur."
 slides: [
     ["google", "1-IY3FTudW5vOiUECUTbRH1Vcp9kvaHO2"],

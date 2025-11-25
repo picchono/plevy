@@ -766,7 +766,7 @@ section.site-content {
 
 #lightgallery>a {
   @apply border-0 w-auto;
-  aspect-ratio: 1;
+  aspect-ratio: 2;
 }
 
 #lightgallery>a:hover {
@@ -780,6 +780,11 @@ section.site-content {
 
 #lightgallery .imag {
   @apply rounded
+}
+
+img.lg-object {
+  padding: calc(2 * var(--pageBorder-width));
+  border-radius: calc(4 * var(--pageBorder-width));
 }
 
 /* mainBlock */

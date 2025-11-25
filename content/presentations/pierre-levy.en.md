@@ -10,7 +10,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2024-12-19T16:27:15+02:00
-frontphoto: "https://1drv.ms/i/c/50aeab3cfffe3174/IQRwbWbHsQEfRq7jRHhgQkAZAejQ-TOEfwNyMPMThew3e5M?q=80&w=600"
+frontphoto: "1x5G1gahNaS3tw8jsVfL4W88fa3P9jiUL"
 description: "A brief introduction"
 slides: [
     ["google", "1x5G1gahNaS3tw8jsVfL4W88fa3P9jiUL"],

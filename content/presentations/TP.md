@@ -25,7 +25,7 @@ collaboration:
         colo: "#c1002a"
         heig: 1
 date: 2024-12-10T16:27:15+02:00
-frontphoto: "https://1drv.ms/i/c/50aeab3cfffe3174/IQRwbWbHsQEfRq7jRHhgQkAZAejQ-TOEfwNyMPMThew3e5M?q=80&w=600"
+frontphoto: "1bxEWDzsbVrxwSPXcyTvr7esE-YbuzcoR"
 description: "Une brève introduction"
 slides: [
     ["google", "1bxEWDzsbVrxwSPXcyTvr7esE-YbuzcoR"],

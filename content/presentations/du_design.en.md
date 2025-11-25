@@ -10,7 +10,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2024-12-19T16:27:15+02:00
-frontphoto: "https://images.unsplash.com/photo-1680813999409-b6109c96e554?q=80&w=600"
+frontphoto: "1vcDsNRTPAphF9FVA48oApL6pnXBt_UmP"
 description: "Une courte introduction au design."
 slides: [
     ["google", "1vcDsNRTPAphF9FVA48oApL6pnXBt_UmP"],
