@@ -805,7 +805,7 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-  @apply w-full max-w-240;
+  @apply w-full max-w-192;
 }
 
 /* docLink */
