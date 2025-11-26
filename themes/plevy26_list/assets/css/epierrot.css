@@ -276,7 +276,12 @@ main {
 /* title */
 #entete {
   @apply flex flex-col border-b border-secondary-text max-w-132 w-full self-end;
-  padding-left: calc(2rem + var(--pageBorder-width));
+}
+
+@media (min-width: 768px) {
+  #entete {
+    padding-left: calc(2rem + var(--pageBorder-width));
+  }
 }
 
 .titleTop {
@@ -477,7 +482,7 @@ a.logohome:hover .lh {
   height: calc(100vh - 2.5rem - (84px * var(--pagefind-ui-scale)) - 2 * var(--pageBorder-width));
 }
 
-@media screen and (min-width: 628px) {
+@media screen and (min-width: 768px) {
 
   .pagefind-ui,
   .pagefind-ui__results-area,
@@ -610,6 +615,7 @@ section.site-content {
 }
 
 @media (min-width: 768px) {
+
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
