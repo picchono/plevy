@@ -607,6 +607,7 @@ a.linkBox:hover .duotone::after {
 /* - Modal pour le mobile) - */
 section.home {
   @apply max-w-132;
+  padding-right: var(--pageBorder-width);
 }
 
 section.site-content {
