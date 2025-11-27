@@ -17,13 +17,6 @@
 		"url": "https://plevy.fr"
 	},
 	"social": {
-		"cv": {
-			"order": 1,
-			"type": "Curriculum vitae",
-			"username": "Pierre Levy",
-			"url": "/en/plevy/cv/",
-			"icon": "cv"
-		},
 		"photo": {
 			"order": 2,
 			"type": "PHoto",

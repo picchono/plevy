@@ -51,16 +51,6 @@
                      {{ end }}
                   </div>
                   {{ end }}
-                  {{ if isset . "projects" }}
-                  <div class="pt-4 leading-6 text-sm">
-                     {{ range sort .projects "order" "asc" }}
-                     <b class="vert text-sm leading-6">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n
-                     "since" }}
-                     {{ .start }}{{ else }}{{ .start }} -
-                     {{ .end }}{{ end }})
-                     {{ end }}
-                  </div>
-                  {{ end }}
                </div>
             </div>
             {{ end }}{{ end }}
@@ -78,56 +68,6 @@
                      {{ .country |safeHTML }}{{end }}{{ end }}
                      {{ if isset . "comment" }}<br />{{ .comment |safeHTML }}{{ end }}
                   </div>
-                  {{ if isset . "associations" }}<div class="mb-4">
-                     {{ range sort .associations "start" "asc" }}
-                     <div class="border-l-4 border-epierrot m-0 pl-3">{{ .title |safeHTML }}
-                        ({{ if eq .end "none" }}{{ i18n "since" }}
-                        {{ .start }}{{ else }}{{ .start }} -
-                        {{ .end }}{{ end }})</div>
-                     {{ end }}
-                  </div>{{ end }}
-                  {{ if isset . "activities" }}
-                  <div class="pt-4 leading-6 text-sm">
-                     {{ range sort .activities "start" "asc" }}
-                     <b class="vert text-sm">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "Since" }}
-                     {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }})
-                     {{ end }}
-                  </div>
-                  {{ end }}
-               </div>
-            </div>
-            {{ end }}{{ end }}
-         </div>
-      </div>
-      <div class="flex flex-col mt-0">
-         <h2 class="">{{ i18n "ParralPro" }}</h2>
-         <div class="flex flex-col">{{ range sort .proParallel "start" "desc" }}{{ if ne .end "none" }}
-            <div class="flex flex-row mb-6">
-               <div class="w-1/6 pr-6">{{ if eq .start .end }}{{- .start -}}{{ else }}{{- .start }} - {{ .end -}}{{ end
-                  }}</div>
-               <div class="w-5/6 pl-6">
-                  <div class="border-l-4 border-epierrot pl-3"><b>{{ .title }}</b>
-                     {{ if isset . "institution" }} - {{ .institution |safeHTML }}{{ if isset . "country" }},
-                     {{ .country |safeHTML }}{{end }}{{ end }}
-                     {{ if isset . "comment" }}<br />{{ .comment |safeHTML }}{{ end }}
-                  </div>
-                  {{ if isset . "associations" }}<div class="mb-4">
-                     {{ range sort .associations "start" "desc" }}
-                     <div class="border-l-4 border-epierrot m-0 pl-3">{{ .title |safeHTML }}
-                        ({{ if eq .end "none" }}{{ i18n "since" }}
-                        {{ .start }}{{ else }}{{ .start }} -
-                        {{ .end }}{{ end }})</div>{{ if isset . "comment" }} <span class="text-sm italic">{{ .comment
-                        |safeHTML }}</span>{{ end }}
-                     {{ end }}
-                  </div>{{ end }}
-                  {{ if isset . "activities" }}
-                  <div class="pt-4 leading-6 text-sm">
-                     {{ range sort .activities "start" "desc" }}
-                     <b class="vert text-sm">{{ .title |safeHTML }}</b> ({{ if eq .end "none" }}{{ i18n "Since" }}
-                     {{ .start }}{{ else }}{{ .start }}-{{ .end }}{{ end }})
-                     {{ end }}
-                  </div>
-                  {{ end }}
                </div>
             </div>
             {{ end }}{{ end }}
@@ -148,7 +88,7 @@
          <h2>{{ i18n "other" }}</h2>
          <div class="flex flex-row flex-wrap">
             <div class="w-1/6 pr-6"></div>
-            <div class="w-5/6 pl-6 flex flex-col justify-between md:flex-row flex-wrap">
+            <div class="w-5/6 md:w-3/6 pl-6 flex flex-col justify-between md:flex-row flex-wrap">
                <div class="border-l-4 border-epierrot pl-3">
                   {{ $list := (where site.Pages "Section" "publications") }}
                   {{ $len := (len $list) }}
@@ -167,58 +107,58 @@
                   {{ end }}
                </div>
                {{ end }}
-               <div class="flex flex-col flex-wrap">
-                  {{ with $.Site.GetPage "cv" }}
-                  {{ $qr1 := .Permalink }}
-                  <div class="flex flex-row flex-wrap justify-start items-end md:px-6 pt-6 md:pt-0 mt-10 md:mt-0">
-                     <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
-                        <a id="qrcode1" href="{{- $qr1 -}}" rel="noreferrer"
-                           class="block h-24 md:h-32 w-24 md:w-32 md:mb-8 md:p-2 bg-white rounded-lg"></a>
-                     </div>
-                     <div class="pl-4 comment pb-2">
-                        <a href="{{- $qr1 -}}" rel="noreferrer">&nbsp;<b>{{- i18n "Cvdetail" }}</b>&nbsp;<br>&nbsp;{{
-                           .Permalink }}&nbsp;</a>
-                     </div>
-                     <script defer="defer">
-                        window.addEventListener('load', function (event) {
-                           const qrcode1 = new QRCode(document.getElementById('qrcode1'), {
-                              text: {{ $qr1 }},
-                           width: 500,
-                           height: 500,
-                           colorDark: '#000',
-                           colorLight: '#fff',
-                           correctLevel: QRCode.CorrectLevel.H
+            </div>
+            <div class="w-full md:w-2/6 flex flex-row md:flex-col flex-wrap">
+               {{ with $.Site.GetPage "cv" }}
+               {{ $qr1 := .Permalink }}
+               <div class="flex flex-col flex-wrap justify-start items-start pt-6 md:pt-0 mt-10 md:mt-0">
+                  <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
+                     <a id="qrcode1" href="{{- $qr1 -}}" rel="noreferrer"
+                        class="block h-24 md:h-32 w-24 md:w-32 md:mb-8 md:p-2 bg-white rounded-lg"></a>
+                  </div>
+                  <div class="comment">
+                     <a href="{{- $qr1 -}}" rel="noreferrer">&nbsp;<b>{{- i18n "Cvdetail" }}</b>&nbsp;<br>&nbsp;{{
+                        .Permalink }}&nbsp;</a>
+                  </div>
+                  <script defer="defer">
+                     window.addEventListener('load', function (event) {
+                        const qrcode1 = new QRCode(document.getElementById('qrcode1'), {
+                           text: {{ $qr1 }},
+                        width: 500,
+                        height: 500,
+                        colorDark: '#000',
+                        colorLight: '#fff',
+                        correctLevel: QRCode.CorrectLevel.H
                         });
                     });
-                     </script>
+                  </script>
+               </div>
+               {{ end }}
+               <div class="flex flex-col flex-wrap justify-start items-start pl-10 md:pl-0 pt-6 md:pt-0 mt-10">
+                  {{ with $.Site.GetPage "cvcomplete" }}
+                  {{ $qr2 := .Permalink }}
+                  <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
+                     <a id="qrcode2" href="{{- $qr2 -}}" rel="noreferrer"
+                        class="block h-24 md:h-32 w-24 md:w-32 md:p-2 bg-white rounded-lg"></a>
                   </div>
-                  {{ end }}
-                  <div class="flex flex-row flex-wrap justify-start items-end md:px-6 py-6">
-                     {{ with $.Site.GetPage "cvcomplete" }}
-                     {{ $qr2 := .Permalink }}
-                     <div class="flex-shrink-0 flex-grow-0 h-24 md:h-32 w-24 md:w-32">
-                        <a id="qrcode2" href="{{- $qr2 -}}" rel="noreferrer"
-                           class="block h-24 md:h-32 w-24 md:w-32 md:p-2 bg-white rounded-lg"></a>
-                     </div>
-                     <div class="pl-4 comment pb-2">
-                        <script>console.log('qr2', {{ print $qr2 }});</script>
-                        <a href='{{- $qr2 -}}' rel="noreferrer">&nbsp;<b>{{- i18n "CvComplete" }}</b>&nbsp;<br>&nbsp;{{-
-                           $qr2 -}}&nbsp;</a>
-                     </div>
-                     <script defer="defer">
-                        window.addEventListener('load', function (event) {
-                           const qrcode2 = new QRCode(document.getElementById('qrcode2'), {
-                              text: {{ $qr2 }},
-                           width: 500,
-                           height: 500,
-                           colorDark: '#000',
-                           colorLight: '#fff',
-                           correctLevel: QRCode.CorrectLevel.H
+                  <div class="comment">
+                     <script>console.log('qr2', {{ print $qr2 }});</script>
+                     <a href='{{- $qr2 -}}' rel="noreferrer">&nbsp;<b>{{- i18n "CvComplete" }}</b>&nbsp;<br>&nbsp;{{-
+                        $qr2 -}}&nbsp;</a>
+                  </div>
+                  <script defer="defer">
+                     window.addEventListener('load', function (event) {
+                        const qrcode2 = new QRCode(document.getElementById('qrcode2'), {
+                           text: {{ $qr2 }},
+                        width: 500,
+                        height: 500,
+                        colorDark: '#000',
+                        colorLight: '#fff',
+                        correctLevel: QRCode.CorrectLevel.H
                             });
                         });
-                     </script>
-                     {{ end }}
-                  </div>
+                  </script>
+                  {{ end }}
                </div>
             </div>
          </div>

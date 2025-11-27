@@ -280,6 +280,7 @@ main {
 
 @media (min-width: 768px) {
   #entete {
+    @apply newpad-r;
     padding-left: calc(2rem + var(--pageBorder-width));
   }
 }
@@ -606,12 +607,11 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
-  @apply max-w-132;
-  padding-right: var(--pageBorder-width);
+  @apply max-w-132 newpad;
 }
 
 section.site-content {
-  @apply max-w-132 w-full;
+  @apply max-w-132 w-full newpad;
   margin-top: 0;
 }
 
@@ -620,7 +620,7 @@ section.site-content {
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
-    height: calc(100vh - (6 * var(--pageBorder-width)));
+    height: calc(100vh - (4 * var(--pageBorder-width)));
   }
 }
 
@@ -735,7 +735,7 @@ section.site-content {
 
 /* middle section */
 .mediumSection {
-  @apply md:max-w-132 w-full newpad-r;
+  @apply md:max-w-132 w-full newpad;
 }
 
 .mediumSection h1 {
@@ -757,15 +757,18 @@ section.site-content {
 
 /* links */
 
-.smalllink {
+.smalllink,
+.smalllinkcv {
   @apply flex flex-row justify-start items-center py-2;
 }
 
-.smalllink * {
+.smalllink *,
+.smalllinkcv * {
   @apply transition-all duration-500 ease-in-out;
 }
 
-.smalllink span {
+.smalllink span,
+.smalllinkcv span {
   @apply pl-4 text-primary-text font-bold;
 }
 
@@ -779,6 +782,14 @@ section.site-content {
 
 .smalllink:hover span {
   @apply text-epierrot;
+}
+
+.smalllinkcv span a {
+  @apply text-primary-text cursor-pointer;
+}
+
+.smalllinkcv span a:hover {
+  @apply text-epierrot bg-primary-bg;
 }
 
 /* lightgallery */
@@ -812,7 +823,7 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-  @apply w-full max-w-192;
+  @apply w-full max-w-192 newpad;
 }
 
 /* docLink */
@@ -872,6 +883,11 @@ ul.toc__sublist {
 
 #content h1 {
   @apply text-xl italic pt-4 pb-0;
+}
+
+/* cv */
+#cv h1 {
+  @apply text-3xl font-bold pt-8 pb-3;
 }
 
 /* print */

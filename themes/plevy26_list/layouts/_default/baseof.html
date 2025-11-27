@@ -5,7 +5,7 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}">
-  <main data-pagefind-body class="newpad">
+  <main data-pagefind-body>
     {{ if not .IsHome }}{{ partial "title.html" . }}{{ end }}
     <div class="flex flex-col lg:flex-row justify-between">
       {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}

@@ -206,9 +206,9 @@ function MenuToggle() {
         el.classList.add('open');
         let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
         if (vw > 768) {
-          document.querySelector('section.site-content').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 30, behavior: 'smooth'});
+          document.querySelector('section.site-content').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth'});
         } else {
-          window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 30, behavior: 'smooth'});
+          window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth'});
         }
       };
     });

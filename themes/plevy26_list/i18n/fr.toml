@@ -430,3 +430,12 @@ other="Tout le contenu"
 
 [sessions]
 other="Sessions"
+
+[short]
+other="court"
+
+[detailled]
+other="détaillé"
+
+[complete]
+other="complet"
