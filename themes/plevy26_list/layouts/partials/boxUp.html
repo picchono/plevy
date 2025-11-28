@@ -38,7 +38,7 @@
                             {{ $count = add $count 1 }}
                             {{- if eq $count $len -}}, {{ end }}{{ end }}
                             {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
-                        </span>{{ else if eq .context.Section "education" }}<span class="boxInfo">
+                        </span>{{ else if eq .context.Section "teaching" }}<span class="boxInfo">
                             {{ if .context.Params.collaboration }}{{ $len := len .context.Params.collaboration }}
                             {{ $count := 0 }}
                             {{ range .context.Params.collaboration }}
