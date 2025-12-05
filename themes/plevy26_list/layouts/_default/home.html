@@ -3,8 +3,8 @@
     <section class="home">
         <div id="navDesktop">
             <h1 class="invisible md:visible mb-0 md:mb-4"><span class="inline-block w-8">&nbsp;</span>Index</h1>
-            <div class="nav_item" data-section="introduction">
-                <h2 class="section-introduction"><span class="inline-block w-8">00 </span>Introduction</h2>
+            <h2 class="section-introduction"><span class="inline-block w-8">00 </span>Introduction</h2>
+            <div class="nav_item section-introduction" data-section="introduction">
                 {{ $page := $.Site.GetPage "page" "chaire.md" }}
                 {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
                     data-targslug="{{ .Slug }}">
@@ -19,10 +19,10 @@
             {{ $i := 1 }}
             {{ range .Sections }}
             {{ $j := 1 }}
-            <div class="nav_item" data-section="{{ .Section }}">
-                {{ $sec := .Slug }}
-                <h2 class="section-{{- $sec -}}"><span class="inline-block w-8">{{ if eq (( string $i ) | len ) 1 }}0{{
+            {{ $sec := .Slug }}
+            <h2 class="section-{{- $sec -}}"><span class="inline-block w-8">{{ if eq (( string $i ) | len ) 1 }}0{{
                         end }}{{ $i }} </span>{{ .Title }}</h2>
+                <div class="nav_item section-{{- $sec -}}" data-section="{{ .Section }}">
                 {{ range .Pages }}
                 {{ if ne .Params.notListed true }}
                 <div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}' data-targslug="{{ .Slug }}">

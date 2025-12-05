@@ -1,6 +1,6 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
 <div id="{{- .context.Slug }}"
-    class='menuBox {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }}{{ if eq .pag 1 }} startSection{{ end }}{{- if eq .context.Params.status "ended" }} ended{{ end -}}'
+    class='menuBox {{ if .context.Section}}section-{{ .context.Section }}{{ else }}section-introduction{{ end }}{{ if eq .pag 1 }} startSection{{ end }}{{- if eq .context.Params.status "ended" }} ended{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
     data-date="{{ .context.Date }}" data-section="{{ .context.Section  }}">
         {{ if .sect }}

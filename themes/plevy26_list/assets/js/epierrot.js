@@ -195,150 +195,157 @@ function toggleTheme() {
 })();
 
 function MenuToggle() {
-  document.querySelectorAll('.nav_item').forEach(function (el) {
+  document.querySelectorAll("h2[class^='section-']").forEach(function (el) {
     el.addEventListener("click", function () {
+      secti = el.className;
       el.classList.contains('open') ? targClosed = false : targClosed = true;
-      secti = el.getAttribute('data-section');
-      document.querySelectorAll('.nav_item').forEach(function (clo) {
+      //close everything
+      document.querySelectorAll("h2[class^='section-'], .nav_item").forEach(function (clo) {
         clo.classList.remove('open');
       });
       if (targClosed) {
+        // si la section était fermée, l'ouvrir
         el.classList.add('open');
+        document.querySelectorAll(".nav_item").forEach(function (clo) {
+          if (clo.classList.contains(secti)) {
+            clo.classList.add('open');
+          }
+        });
+        //scroll au premier bloc de cette section
         let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
         if (vw > 768) {
-          document.querySelector('section.site-content').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth'});
+          document.querySelector('section.site-content').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth' });
         } else {
-          window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth'});
+          window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth' });
         }
       };
     });
-    document.querySelectorAll('.pageTitle').forEach(function (to) {
-      to.addEventListener("click", function (e) {
-        e.preventDefault();
-        targe = to.getAttribute('data-targslug');
-        scrollTarg = document.getElementById(targe);
-        mobileModal.style.display = "none";
-        let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-        if (vw > 768) {
-          document.querySelector('section.site-content').scroll({ top: scrollTarg.offsetTop - 30, behavior: 'smooth' });
-        } else {
-          window.scroll({ top: scrollTarg.offsetTop - 30, behavior: 'smooth' });
-        }
-      });
+  });
+  document.querySelectorAll('.pageTitle').forEach(function (to) {
+    to.addEventListener("click", function () {
+      targe = to.getAttribute('data-targslug');
+      scrollTarg = document.getElementById(targe);
+      mobileModal.style.display = "none";
+      let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+      if (vw > 768) {
+        document.querySelector('section.site-content').scroll({ top: scrollTarg.offsetTop - 28, behavior: 'smooth' });
+      } else {
+        window.scroll({ top: scrollTarg.offsetTop - 28, behavior: 'smooth' });
+      }
     });
-  })
+  });
 }
 
 // Search
 window.addEventListener('load', function (event) {
-    new PagefindUI({
-      element: "#search",
-      showSubResults: true,
-      showImages: true,
-      showEmptyFilters: false,
-      resetStyles: false,
-      debounceTimeoutMs: 0,
-      autofocus: true,
-      excerptLength: 100
-    });
-
-    const searchTrigger = document.querySelector(".nav-link-search");
-    const modal = document.getElementById("searchmodal");
-    searchTrigger.addEventListener("click", (ev) => {
-      ev.preventDefault();
-      // Show modal using Micromodal or similar
-      MicroModal.show("searchmodal", {
-        onClose: () => {
-          // Optional: blur other elements
-        },
-        disableFocus: false,
-        disableScroll: true,
-        showEmptyFilters: false
-      });
-      // Focus the search input
-      document.querySelector(".pagefind-ui__search-input").focus();
-    });
-
-    externalLinks();
-    MicroModal.init({});
-    if (document.getElementById("toc")) tableContent();
-    if (document.querySelector("pre")) AddCopyButtons();
-    if (document.querySelector(".nav_item")) MenuToggle();
+  new PagefindUI({
+    element: "#search",
+    showSubResults: true,
+    showImages: true,
+    showEmptyFilters: false,
+    resetStyles: false,
+    debounceTimeoutMs: 0,
+    autofocus: true,
+    excerptLength: 100
   });
 
-  /* Front menu */
-  document.addEventListener('DOMContentLoaded', function () {
+  const searchTrigger = document.querySelector(".nav-link-search");
+  const modal = document.getElementById("searchmodal");
+  searchTrigger.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    // Show modal using Micromodal or similar
+    MicroModal.show("searchmodal", {
+      onClose: () => {
+        // Optional: blur other elements
+      },
+      disableFocus: false,
+      disableScroll: true,
+      showEmptyFilters: false
+    });
+    // Focus the search input
+    document.querySelector(".pagefind-ui__search-input").focus();
+  });
 
-    const specialSection = document.getElementById("navDesktop");
-    const originalParent = specialSection.parentNode; // L'endroit où la section doit être sur PC
+  externalLinks();
+  MicroModal.init({});
+  if (document.getElementById("toc")) tableContent();
+  if (document.querySelector("pre")) AddCopyButtons();
+  if (document.querySelector(".nav_item")) MenuToggle();
+});
 
-    const mobileModal = document.getElementById("mobileModal");
-    const modalPlaceholder = document.getElementById("mobileModal-content-placeholder");
-    const openBtn = document.getElementById("btnPhonBtn");
-    const closeBtn = document.querySelector(".mobileModalCloseBtn");
+/* Front menu */
+document.addEventListener('DOMContentLoaded', function () {
 
-    /**
-     * Gère l'adaptation du contenu en fonction de la taille de l'écran.
-     * @param {number} width La largeur actuelle de la fenêtre.
-     */
-    function handleContentAdaptation(width) {
+  const specialSection = document.getElementById("navDesktop");
+  const originalParent = specialSection.parentNode; // L'endroit où la section doit être sur PC
 
-      const isMobile = width <= 768;
+  const mobileModal = document.getElementById("mobileModal");
+  const modalPlaceholder = document.getElementById("mobileModal-content-placeholder");
+  const openBtn = document.getElementById("btnPhonBtn");
+  const closeBtn = document.querySelector(".mobileModalCloseBtn");
 
-      if (isMobile) {
-        // --- Mode Mobile : Déplacer le contenu dans la modal ---
+  /**
+   * Gère l'adaptation du contenu en fonction de la taille de l'écran.
+   * @param {number} width La largeur actuelle de la fenêtre.
+   */
+  function handleContentAdaptation(width) {
 
-        // 1. Déplacer le contenu
-        if (specialSection.parentNode !== modalPlaceholder) {
-          modalPlaceholder.appendChild(specialSection);
-        }
-        // 2. Afficher le bouton d'ouverture
-        openBtn.style.display = 'block';
+    const isMobile = width <= 768;
 
-      } else {
-        // --- Mode Desktop : Remettre le contenu à sa place originale ---
+    if (isMobile) {
+      // --- Mode Mobile : Déplacer le contenu dans la modal ---
 
-        // 1. Remettre le contenu à son parent initial
-        if (specialSection.parentNode !== originalParent) {
-          originalParent.insertBefore(specialSection, originalParent.children[2]); // Remis avant <p>Fin du contenu...</p>
-        }
-        // 2. Cacher le bouton d'ouverture et la modal
-        openBtn.style.display = 'none';
-        mobileModal.style.display = 'none';
+      // 1. Déplacer le contenu
+      if (specialSection.parentNode !== modalPlaceholder) {
+        modalPlaceholder.appendChild(specialSection);
       }
+      // 2. Afficher le bouton d'ouverture
+      openBtn.style.display = 'block';
+
+    } else {
+      // --- Mode Desktop : Remettre le contenu à sa place originale ---
+
+      // 1. Remettre le contenu à son parent initial
+      if (specialSection.parentNode !== originalParent) {
+        originalParent.insertBefore(specialSection, originalParent.children[2]); // Remis avant <p>Fin du contenu...</p>
+      }
+      // 2. Cacher le bouton d'ouverture et la modal
+      openBtn.style.display = 'none';
+      mobileModal.style.display = 'none';
     }
+  }
 
-    // --- Logique d'Ouverture/Fermeture de la Modal ---
+  // --- Logique d'Ouverture/Fermeture de la Modal ---
 
-    // Ouvrir la modal
-    openBtn.onclick = function () {
-      mobileModal.style.display = "block";
-    }
+  // Ouvrir la modal
+  openBtn.onclick = function () {
+    mobileModal.style.display = "block";
+  }
 
-    // Fermer la modal via le bouton X
-    closeBtn.onclick = function () {
+  // Fermer la modal via le bouton X
+  closeBtn.onclick = function () {
+    mobileModal.style.display = "none";
+  }
+
+  // Fermer la modal si l'utilisateur clique en dehors
+  window.onclick = function (event) {
+    if (event.target === mobileModal) {
       mobileModal.style.display = "none";
     }
+  }
 
-    // Fermer la modal si l'utilisateur clique en dehors
-    window.onclick = function (event) {
-      if (event.target === mobileModal) {
-        mobileModal.style.display = "none";
-      }
-    }
+  // --- Écouteurs d'Événements ---
 
-    // --- Écouteurs d'Événements ---
+  // 1. Exécuter au chargement de la page
+  handleContentAdaptation(window.innerWidth);
 
-    // 1. Exécuter au chargement de la page
-    handleContentAdaptation(window.innerWidth);
-
-    // 2. Exécuter lors du redimensionnement de la fenêtre
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        handleContentAdaptation(window.innerWidth);
-      }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
-    });
-
+  // 2. Exécuter lors du redimensionnement de la fenêtre
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      handleContentAdaptation(window.innerWidth);
+    }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
   });
+
+});

@@ -72,6 +72,10 @@ body {
   --entete-height: 4rem;
 }
 
+body#menu {
+  padding: 0;
+}
+
 .bordTop,
 .bordBottom,
 .bordLeft,
@@ -270,12 +274,12 @@ h2 {
 
 main {
   @apply flex flex-col w-full;
-  min-height: calc(100vh - (4 * var(--pageBorder-width)));
+  min-height: 100vh;
 }
 
 /* title */
 #entete {
-  @apply flex flex-col border-b border-secondary-text max-w-132 w-full self-end;
+  @apply flex flex-col newpad-b border-b border-secondary-text max-w-132 w-full self-end;
 }
 
 @media (min-width: 768px) {
@@ -286,7 +290,7 @@ main {
 }
 
 .titleTop {
-  @apply flex flex-row min-h-24 justify-between w-full items-center;
+  @apply flex flex-row min-h-14 justify-between w-full items-center;
 }
 
 /* logohome */
@@ -511,7 +515,7 @@ a.logohome:hover .lh {
 
 /* menuBox */
 .menuBox {
-  @apply relative w-full border-b border-secondary-text flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
+  @apply relative w-full max-w-132 border-b border-secondary-text flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
 }
 
 .menuBox.hid,
@@ -607,11 +611,15 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
-  @apply max-w-132 newpad;
+  @apply max-w-132;
+  height: 100vh;
+  padding: calc(3 * var(--pageBorder-width));
 }
 
 section.site-content {
-  @apply max-w-132 w-full newpad;
+  @apply w-full grow flex flex-col items-end justify-start;
+  height: 100vh;
+  padding: calc(3 * var(--pageBorder-width));
   margin-top: 0;
 }
 
@@ -620,11 +628,13 @@ section.site-content {
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
-    height: calc(100vh - (4 * var(--pageBorder-width)));
   }
 }
 
 @media (max-width: 768px) {
+  section.home {
+    height: 0 !important;
+  }
   section.site-content {
     margin-top: calc(3 * var(--pageBorder-width));
   }
@@ -700,8 +710,13 @@ section.site-content {
   }
 }
 
+#menu h2[class^='section-'],
 #menu .nav_item {
   @apply cursor-pointer;
+}
+
+#menu h2[class^='section-'].open {
+  @apply mt-4;
 }
 
 #menu div.nav_item.open {
