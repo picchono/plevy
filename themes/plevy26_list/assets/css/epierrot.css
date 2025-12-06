@@ -768,8 +768,7 @@ section.site-content {
 }
 
 .linkBlock {
-  @apply w-full flex flex-col newpad-y;
-  padding: var(--pageBorder-width) var(--pageBorder-width) 0 0;
+  @apply w-full flex flex-col;
 }
 
 .linkBlock .linkBox {
@@ -778,6 +777,10 @@ section.site-content {
 
 .linkBlock .linkBox:hover {
   @apply text-primary-text bg-primary-bg;
+}
+
+.pageBlock {
+  @apply newpad-r newpad-t w-full;
 }
 
 /* links */
@@ -848,7 +851,7 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-  @apply w-full max-w-192 newpad;
+  @apply w-full max-w-192 md:mt-16 newpad;
 }
 
 /* docLink */

@@ -1,4 +1,4 @@
-{{ range sort .Params.video }}<div class="w-full newpad-y" data-cat-sort="2">
+{{ range sort .Params.video }}<div class="pageBlock" data-cat-sort="2">
     {{ if isset . "youtube" }}
     <div class="videoFrame w-full">
         <div class="embed-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube | safeURL }}"

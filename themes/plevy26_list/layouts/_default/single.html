@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
         {{ if .Content}}
-        <div class="mainBlock newpad-l">
+        <div class="mainBlock">
             <div class="mainBlockIn">
                 {{ if .Params.playlist}}
                 {{ partial "playlist.html" . }}

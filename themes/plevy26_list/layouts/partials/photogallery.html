@@ -1,5 +1,5 @@
 {{ $photonb := len .Params.photogallery }}
-<div class="w-full newpad-y" data-cat-sort="2">
+<div class="pageBlock" data-cat-sort="2">
     <div class="flex flex-row" id="lightgallery">
         {{ range sort .Params.photogallery "order" "asc" }}
         <div class="place-self-center {{ if eq $photonb 1 }}h-74{{ else }}h-32{{ end }} p-0.5 w-auto photoItem" data-src="https://drive.google.com/thumbnail?id={{- .img -}}&sz=w3000" aria-label="See image"><img loading="lazy" src="https://drive.google.com/thumbnail?id={{- .img -}}&sz=w500" title="{{ .name }}" alt="{{ .name }}" class="rounded" data-pagefind-index-attrs="title,alt"></div>
