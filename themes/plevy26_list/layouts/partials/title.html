@@ -1,26 +1,27 @@
-<div id="entete">
-    <div class="titleTop">
-    <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}" aria-label="Pierre Lévy">
-        {{ partial "icons.html" (dict "ico" "pierrelevy" "hei" 7 "cla" "lh") -}}
-    </a>
-    {{ partial "settings.html" . }}
-    </div>
+<div id="enteteBox">
+    <div id="entete">
+        <div class="titleTop">
+            <a class="logohome strok" href="{{ .Site.BaseURL | absURL }}" aria-label="Pierre Lévy">
+                {{ partial "icons.html" (dict "ico" "pierrelevy" "hei" 7 "cla" "lh") -}}
+            </a>
+            {{ partial "settings.html" . }}
+        </div>
 
 
-    {{ $intro := $.Site.GetPage "page" "intro.md" }}
-    {{ with $intro }}
-    {{ if .Params.active }}<div class="py-16">{{ .Content }}</div>{{ end }}
-    {{ end }}
-    {{ if false }}
-    <div class="flex flex-row mt-12">
-        <a class="iconhome strok" href="https://gohugo.io/" aria-label="Go to cnam website">{{ partial
-            "icons.html" (dict "ico" "hugo" "hei" 1) -}}</a>
-        <a class="iconhome" href="https://github.com/picchono/plevyfr" aria-label="Go to github">{{ partial
-            "icons.html" (dict "ico" "github" "hei" 1) -}}</a>
-        <a class="iconhome" href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
-            aria-label="Go to cc">{{
-            partial "icons.html" (dict "ico" "cc" "hei" 1) -}}</a>
+        {{ $intro := $.Site.GetPage "page" "intro.md" }}
+        {{ with $intro }}
+        {{ if .Params.active }}<div class="py-16">{{ .Content }}</div>{{ end }}
+        {{ end }}
+        {{ if false }}
+        <div class="flex flex-row mt-12">
+            <a class="iconhome strok" href="https://gohugo.io/" aria-label="Go to cnam website">{{ partial
+                "icons.html" (dict "ico" "hugo" "hei" 1) -}}</a>
+            <a class="iconhome" href="https://github.com/picchono/plevyfr" aria-label="Go to github">{{ partial
+                "icons.html" (dict "ico" "github" "hei" 1) -}}</a>
+            <a class="iconhome" href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+                aria-label="Go to cc">{{
+                partial "icons.html" (dict "ico" "cc" "hei" 1) -}}</a>
+        </div>
+        {{ end }}
     </div>
-    {{ end }}
 </div>
-{{if not .IsHome }}<div class="h-16">&nbsp;</div>{{ end }} 
