@@ -413,9 +413,7 @@ a.logohome:hover .lh {
 }
 
 
-#Slides .boxIso {
-  @apply md:max-w-132;
-}
+
 
 /* search */
 #search {
@@ -834,6 +832,10 @@ section.site-content {
 
 #lightgallery {
   @apply w-full h-auto flex flex-row flex-wrap;
+}
+
+#lightgallery .boxIso {
+  @apply md:max-w-132;
 }
 
 #lightgallery>a {
