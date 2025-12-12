@@ -1,6 +1,14 @@
 {
     "description": "Doctoral thesis jury",
     "list": {
+        "Audrey Brugnoli": {
+            "date": "2025-12-08",
+            "type": "Rapporteur and President of the doctoral defence",
+            "candidate": "Audrey Brugnoli",
+            "place": "PSL Research University, at École Nationale Supérieure des Arts Décoratifs",
+            "title": "Peaux Éthiques - Interfaces et enveloppes cutanées : pour un design sociotechnique des dispositifs médicaux à l’Hôpital Necker – Enfants Malades",
+            "language": "French"
+        },
         "Estelle Berger HDR": {
             "date": "2025-02-10",
             "type": "Rapporteur and President of the jury fo the Habilitation à diriger des recherches",

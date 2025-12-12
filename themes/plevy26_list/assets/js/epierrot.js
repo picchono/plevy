@@ -236,6 +236,21 @@ function MenuToggle() {
   });
 }
 
+function indexHome() {
+  document.getElementById("indexHome").addEventListener("click", (ev) => {
+    document.querySelectorAll("h2[class^='section-'], .nav_item").forEach(function (clo) {
+      clo.classList.remove('open');
+    });
+    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    if (vw > 768) {
+      document.querySelector('section.site-content').scroll({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scroll({ top: 0, behavior: 'smooth' });
+    }
+  });
+}
+
+
 // Search
 window.addEventListener('load', function (event) {
   new PagefindUI({
@@ -271,6 +286,7 @@ window.addEventListener('load', function (event) {
   if (document.getElementById("toc")) tableContent();
   if (document.querySelector("pre")) AddCopyButtons();
   if (document.querySelector(".nav_item")) MenuToggle();
+  if (document.getElementById("indexHome")) indexHome();
 });
 
 /* Front menu */

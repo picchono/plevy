@@ -1,9 +1,17 @@
 {
     "description": "Jurys de doctorat",
     "list": {
+        "Audrey Brugnoli": {
+            "date": "2025-12-08",
+            "type": "Rapporteur et président du jury de la défense doctorale",
+            "candidate": "Audrey Brugnoli",
+            "place": "Université de recherche Paris Science et Lettres – PSL Research University, à l'École Nationale Supérieure des Arts Décoratifs",
+            "title": "Peaux Éthiques - Interfaces et enveloppes cutanées : pour un design sociotechnique des dispositifs médicaux à l’Hôpital Necker – Enfants Malades",
+            "language": "français"
+        },
         "Estelle Berger HDR": {
             "date": "2025-02-10",
-            "type": "Rapporteur and président du jury d'habilitation à diriger des recherches",
+            "type": "Rapporteur et président du jury d'habilitation à diriger des recherches",
             "candidate": "Estelle Berger",
             "place": "Université de Bordeaux-Montaigne",
             "title": "Le design comme posture - un décentrement avec la philosophie du yoga",
