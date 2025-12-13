@@ -1,6 +1,14 @@
 {
     "description": "Doctoral thesis jury",
     "list": {
+        "Ioana Ocnarescu HDR": {
+            "date": "2025-12-10",
+            "type": "Rapporteur and President of the jury fo the Habilitation à diriger des recherches",
+            "candidate": "Ioana Ocnarescu",
+            "place": "Institut Polytechnique of Paris, prepared at Telecom Paris, France",
+            "title": "Simulation Design: an experience-based exploration of emerging landscapes",
+            "language": "English"
+        },
         "Audrey Brugnoli": {
             "date": "2025-12-08",
             "type": "Rapporteur and President of the doctoral defence",

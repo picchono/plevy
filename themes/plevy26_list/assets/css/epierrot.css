@@ -831,7 +831,7 @@ section.site-content {
 /* lightgallery */
 
 #lightgallery {
-  @apply w-full h-auto flex flex-row flex-wrap;
+  @apply w-full h-auto flex flex-col justify-end flex-wrap;
 }
 
 #lightgallery .boxIso {
