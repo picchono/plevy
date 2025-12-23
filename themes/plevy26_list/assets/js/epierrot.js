@@ -231,6 +231,10 @@ function MenuToggle() {
         document.querySelector('section.site-content').scroll({ top: scrollTarg.offsetTop - 42, behavior: 'smooth' });
       } else {
         window.scroll({ top: scrollTarg.offsetTop - 42, behavior: 'smooth' });
+        scrollTarg.classList.add('foc');
+        setTimeout(function () {
+          scrollTarg.classList.remove('foc');
+        }, 2000);
       }
     });
   });
