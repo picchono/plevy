@@ -5,24 +5,18 @@
             <h1 class="invisible md:visible mb-0 md:mb-4"><span class="inline-block w-8">&nbsp;</span><span id="indexHome">Index</span></h1>
             <h2 class="section-introduction"><span class="inline-block w-8">00 </span>Introduction</h2>
             <div class="nav_item section-introduction" data-section="introduction">
-                {{ $page := $.Site.GetPage "page" "chaire.md" }}
-                {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
-                    data-targslug="{{ .Slug }}">
-                    <span class="text-secondary-text">00|01 ·</span> {{ .Title }}
-                </div>{{ end }}
-                {{ $page := $.Site.GetPage "page" "plevy.md" }}
+                {{ $page := $.Site.GetPage "page" "pierre-levy/" }}
                 {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
                     data-targslug="{{ .Slug }}">
                     <span class="text-secondary-text">00|01 ·</span> {{ .Title }}
                 </div>{{ end }}
             </div>
             {{ $i := 1 }}
-            {{ range .Sections }}
+            {{ range .Sections }}{{ if ne .Slug "pierre-levy" }}
             {{ $j := 1 }}
             {{ $sec := .Slug }}
-            <h2 class="section-{{- $sec -}}"><span class="inline-block w-8">{{ if eq (( string $i ) | len ) 1 }}0{{
-                        end }}{{ $i }} </span>{{ .Title }}</h2>
-                <div class="nav_item section-{{- $sec -}}" data-section="{{ .Section }}">
+            <h2 class="section-{{- $sec -}}"><span class="inline-block w-8">{{ if eq (( string $i ) | len ) 1 }}0{{ end }}{{ $i }} </span>{{ .Title }}</h2>
+            <div class="nav_item section-{{- $sec -}}" data-section="{{ .Section }}">
                 {{ range .Pages }}
                 {{ if ne .Params.notListed true }}
                 <div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}' data-targslug="{{ .Slug }}">
@@ -37,7 +31,7 @@
                 {{ end }}
                 {{ $i = add $i 1 }}
             </div>
-            {{ end }}
+            {{ end }}{{ end }}
         </div>
         <div class="btnPhon">
             <button id="btnPhonBtn" style="display: none;">
@@ -66,14 +60,11 @@
     </section>
     <section class="site-content">
         {{ partial "title.html" . }}
-        {{ $page := $.Site.GetPage "page" "chaire.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 1) -}}{{
-        end }}
-        {{ $page := $.Site.GetPage "page" "plevy.md" }}
-        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 2) -}}{{
-        end }}
+        {{ $page := $.Site.GetPage "page" "pierre-levy/" }}
+        {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 1) -}}
+        {{ end }}
         {{ $s := 1 }}
-        {{ range .Sections }}
+        {{ range .Sections }}{{ if ne .Slug "pierre-levy" }}
         {{ $p := 1 }}
         {{ range .Pages }}
         {{ if ne .Params.notListed true }}
@@ -82,7 +73,7 @@
         {{ end }}
         {{ end }}
         {{ $s = add $s 1 }}
-        {{ end }}
+        {{ end }}{{ end }}
     </section>
 </div>
 {{ end }}

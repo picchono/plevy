@@ -235,13 +235,14 @@
         </div>
         {{ end }}
         {{ if eq .Params.layout "member" }}
+        {{ $nom := .Slug }}
         {{ with index .Site.Data.plevy .Site.Language.Lang }}
-        <div class="pageBlock flex flex-col newpad-t">
+        <div class="pageBlock flex flex-col newpad-t newpad-l">
             <div class="smalllinkcv">
                 {{- partial "icons.html" (dict "ico" "cv" "hei" 1) -}}<span>cv :: <a
-                        href='{{ $.Site.BaseURL}}/plevy/cvlight' target="_blank">{{ i18n "short" }}</a> · <a
-                        href='{{ $.Site.BaseURL}}/plevy/cv' target="_blank">{{ i18n "detailled" }}</a> · <a
-                        href='{{ $.Site.BaseURL}}/plevy/cvcomplete' target="_blank">{{ i18n "complete" }}</a></span>
+                        href='{{ $.Site.BaseURL}}{{ $nom }}/cvlight' target="_blank">{{ i18n "short" }}</a> · <a
+                        href='{{ $.Site.BaseURL}}{{ $nom }}/cv' target="_blank">{{ i18n "detailled" }}</a> · <a
+                        href='{{ $.Site.BaseURL}}{{ $nom }}/cvcomplete' target="_blank">{{ i18n "complete" }}</a></span>
             </div>
             {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink"
                 rel="noreferrer" aria-label="{{ .icon }}" title="{{ .icon }}">{{- partial "icons.html" (dict "ico"

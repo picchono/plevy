@@ -93,8 +93,8 @@ body#menu {
 .bordLeft,
 .bordRight {
   top: 0;
-  width: calc(2 * var(--pageBorder-width));
   height: 100vh;
+  width: calc(2 * var(--pageBorder-width));
 }
 
 .bordTop {
@@ -139,15 +139,13 @@ html {
 }
 
 html.light {
-  --color-primary-bg: oklch(96.8% 0.007 247.896);
+  --color-primary-bg: #f4f4f4;/*oklch(96.8% 0.007 247.896)*/
   --color-secondary-bg: var(--color-pageborder-bg);
-  /* C2DEDC 9CC1C2 FBE4B3 */
-  --color-tertiary-bg: oklch(86.9% 0.022 252.894);
-  --color-pageborder-bg: #fff;
+  --color-tertiary-bg: #c3baad; /*oklch(86.9% 0.022 252.894)*/
+  --color-pageborder-bg: #fefdfa; /*#fff*/
   --color-primary-text: #181818;
-  --color-secondary-text: #9e9e9e;
-  --color-epierrot: #ED6763;
-  /* 006284 116A7B 344672 */
+  --color-secondary-text: #605F4B; /*#9e9e9e*/
+  --color-epierrot: #C46B57; /*#ED6763*/
   --color-borders: #1c1c1c;
   --blend-mode-before: color;
   --blend-mode-after: screen;
@@ -192,7 +190,8 @@ a {
   display: inline;
 }
 
-a:hover, div.menuBox.foc>.boxIso {
+a:hover,
+div.menuBox.foc>.boxIso {
   @apply text-primary-bg bg-epierrot;
 }
 
@@ -279,7 +278,7 @@ main {
 
 /* title */
 #enteteBox {
-  @apply newpad max-w-132 self-end;
+  @apply newpad max-w-132 self-end w-full;
 }
 
 body#menu #enteteBox {
@@ -295,13 +294,10 @@ body#menu #enteteBox {
   #entete {
     padding-left: var(--pageBorder-width);
   }
-  body#menu #entete {
-    padding-left: calc(2rem + var(--pageBorder-width));
-  }
 }
 
 .titleTop {
-  @apply flex flex-row min-h-14 justify-between w-full items-center;
+  @apply flex flex-row min-h-14 justify-end w-full items-center;
 }
 
 /* logohome */
@@ -323,6 +319,7 @@ a.logohome .lh {
   stroke-width: 0.03;
   stroke-dasharray: 2.7;
   animation: logoanim 3s ease-out;
+  max-width: 14rem; 
 }
 
 @keyframes logoanim {
@@ -638,6 +635,7 @@ section.site-content {
 }
 
 @media (min-width: 768px) {
+
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
@@ -648,6 +646,7 @@ section.site-content {
   section.home {
     height: 0 !important;
   }
+
   section.site-content {
     padding-top: 0;
   }
@@ -697,6 +696,13 @@ section.site-content {
 
 #btnPhonBtn:hover {
   fill: var(--color-epierrot);
+}
+
+/* ImgLink */
+.imgLink img {
+  max-height: 6rem;
+  max-width: 18rem;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -831,7 +837,7 @@ section.site-content {
 /* lightgallery */
 
 #lightgallery {
-  @apply w-full h-auto flex flex-col justify-end flex-wrap;
+  @apply w-full h-auto flex flex-col justify-start flex-wrap;
 }
 
 #lightgallery .boxIso {
@@ -934,28 +940,37 @@ ul.toc__sublist {
 @media print {
   @page {
     margin: 1.2cm 1.2cm 1.2cm 3cm;
-    font-size: 10pt;
-
-    @bottom-right {
-      content: counter(page) " / " counter(pages);
-    }
+    font-size: 11pt;
   }
 
   :root {
     @apply font-sans bg-white text-black leading-6 box-border;
-    background-color: var(--color-pageborder-bg);
   }
 
   *,
   html,
-  body {
+  body, main {
     @apply bg-white text-black text-base border-pageborder-bg;
     font-size: 11pt;
     line-height: 1.4rem;
     margin: 0;
     float: none;
     font-variant-ligatures: common-ligatures;
+    background-color: #fff !important;
   }
+
+  html.light, html.dark {
+  --color-primary-bg: white;
+  --color-secondary-bg: white
+  /* C2DEDC 9CC1C2 FBE4B3 */
+  --color-tertiary-bg: white;
+  --color-pageborder-bg: #fff;
+  --color-primary-text: black;
+  --color-secondary-text: black;
+  --color-epierrot: #ED6763;
+  /* 006284 116A7B 344672 */
+  --color-borders: black;
+}
 
   a[href^="http://"].pdf::after,
   a[href^="https://"].pdf::after {
@@ -992,7 +1007,7 @@ ul.toc__sublist {
   a:active,
   a:visited,
   .comment {
-    @apply border-0 text-epierrot;
+    @apply border-0 text-black;
     text-decoration: none !important;
     font-weight: inherit;
   }
@@ -1007,7 +1022,7 @@ ul.toc__sublist {
 
   /* fixing base.css for print */
   .revers {
-    @apply bg-secondary-bg text-primary-text pb-1 pt-0.5 mr-2 rounded-sm md:rounded transition-colors duration-700 ease-in-out inline;
+    @apply bg-white text-black pb-1 pt-0.5 mr-2 rounded-sm md:rounded transition-colors duration-700 ease-in-out inline;
     box-shadow: none;
     box-decoration-break: clone;
   }
@@ -1022,8 +1037,7 @@ ul.toc__sublist {
   }
 
   .filterOption.revers:hover {
-    @apply text-primary-text bg-secondary-bg;
-    box-shadow: 0.75rem 0 0 var(--color-secondary-bg), -0.75rem 0 0 var(--color-secondary-bg);
+    @apply text-black bg-white;
   }
 
   .backButton,

@@ -229,12 +229,13 @@ function MenuToggle() {
       let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
       if (vw > 768) {
         document.querySelector('section.site-content').scroll({ top: scrollTarg.offsetTop - 42, behavior: 'smooth' });
-      } else {
-        window.scroll({ top: scrollTarg.offsetTop - 42, behavior: 'smooth' });
         scrollTarg.classList.add('foc');
+        console.log(scrollTarg);
         setTimeout(function () {
           scrollTarg.classList.remove('foc');
-        }, 2000);
+        }, 1500);
+      } else {
+        window.scroll({ top: scrollTarg.offsetTop - 42, behavior: 'smooth' });
       }
     });
   });
