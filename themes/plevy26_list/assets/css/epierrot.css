@@ -141,7 +141,7 @@ html {
 html.light {
   --color-primary-bg: #f4f4f4;/*oklch(96.8% 0.007 247.896)*/
   --color-secondary-bg: var(--color-pageborder-bg);
-  --color-tertiary-bg: #DFD5C2; /*oklch(86.9% 0.022 252.894)*/
+  --color-tertiary-bg: #d7d5d2; /*oklch(86.9% 0.022 252.894)*/
   --color-pageborder-bg: #fefdfa; /*#fff*/
   --color-primary-text: #181818;
   --color-secondary-text: #605F4B; /*#9e9e9e*/
