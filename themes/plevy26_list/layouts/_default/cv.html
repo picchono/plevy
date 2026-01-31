@@ -157,13 +157,12 @@
                <div class="border-l-4 border-epierrot pl-3">
                   {{ $list := (where site.Pages "Section" "publications") }}
                   {{ $len := (len $list) }}
-                  {{ i18n "publications" }} & {{ i18n "editions" }}&nbsp;&nbsp;<b>{{ $len }}</b><br />
-                  {{ .projects.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .projects.list }} ({{
-                     .projects.totalfinance }})</b><br />
-                  {{ .awards.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .awards.list }}</b><br />
-                  {{ .directiontheses.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directiontheses.list }}</b><br />
-                  {{ if ne (len .directionHDR.list) 0 }}{{ .directionHDR.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directionHDR.list }}{{ end }}
-                  {{ .jurysdoctoraux.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .jurysdoctoraux.list }}</b><br />
+                  {{ if ne $len 0 }}{{ i18n "publications" }} & {{ i18n "editions" }}&nbsp;&nbsp;<b>{{ $len }}</b><br />{{ end }}
+                  {{ if ne (len .projects.list) 0 }}{{ .projects.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .projects.list }} ({{ .projects.totalfinance }})</b><br />{{ end }}
+                  {{ if ne (len .awards.list) 0 }}{{ .awards.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .awards.list }}</b><br />{{ end }}
+                  {{ if ne (len .directiontheses.list) 0 }}{{ .directiontheses.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directiontheses.list }}</b><br />{{ end }}
+                  {{ if ne (len .directionHDR.list) 0 }}{{ .directionHDR.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .directionHDR.list }}</b><br />{{ end }}
+                  {{ if ne (len .jurysdoctoraux.list) 0 }}{{ .jurysdoctoraux.description |safeHTML }}&nbsp;&nbsp;<b>{{ len .jurysdoctoraux.list }}</b><br />{{ end }}
                   <br />
                   {{range sort .identity.registration "ord" "asc"}}
                   {{ .name }}&nbsp;&nbsp;<a href="{{ .url -}}{{- .code }}" target="_blank" rel="noreferrer">{{ .code

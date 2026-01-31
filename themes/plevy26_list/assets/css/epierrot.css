@@ -366,7 +366,7 @@ a.logohome:hover .lh {
 }
 
 #languageMode {
-  @apply bg-transparent h-full text-sm line-l newpad-l flex flex-row items-center justify-between;
+  @apply bg-transparent h-full flex flex-row items-center justify-between;
 }
 
 #languageMode>span {
@@ -374,7 +374,7 @@ a.logohome:hover .lh {
 }
 
 #languageMode a {
-  @apply bg-transparent inline-block text-primary-text hover:text-epierrot border-0 newpad-r transition-all duration-700 ease-in-out;
+  @apply bg-transparent inline-block text-primary-text font-bold hover:text-epierrot border-0 newpad-r transition-all duration-700 ease-in-out;
 }
 
 #languageMode a:hover {
