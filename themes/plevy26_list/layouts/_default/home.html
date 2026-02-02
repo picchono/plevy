@@ -7,7 +7,7 @@
                 {{ $page := $.Site.GetPage "page" "pierre-levy/" }}
                 {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
                     data-targslug="{{ .Slug }}">
-                    <span class="text-secondary-text">00|01 ·</span> {{ .Title }}
+                    <span>00|01 ·</span> {{ .Title }}
                 </div>{{ end }}
             </div>
             {{ $i := 1 }}
@@ -19,7 +19,7 @@
                 {{ range .Pages }}
                 {{ if ne .Params.notListed true }}
                 <div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}' data-targslug="{{ .Slug }}">
-                    <span class="text-secondary-text">{{ if eq (( string $i ) | len ) 1 }}0{{ end }}{{ $i }}|{{ if eq ((
+                    <span>{{ if eq (( string $i ) | len ) 1 }}0{{ end }}{{ $i }}|{{ if eq ((
                         string $j ) | len ) 1 }}0{{ end }}{{ $j }} · </span>
                     <span>{{ if in ( slice "events" "presentations" "writings" ) .Section }}{{ dateFormat "2006/01" .Date }}
                     {{ else }}{{ dateFormat "2006" .Date }}{{ end }} · </span>

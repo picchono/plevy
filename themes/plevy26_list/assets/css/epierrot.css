@@ -145,7 +145,7 @@ html.light {
   --color-tertiary-bg: #d7d5d2; /*oklch(86.9% 0.022 252.894)*/
   --color-pageborder-bg: #fefdfa; /*#fff*/
   --color-primary-text: #003560;
-  --color-secondary-text: #605F4B; /*#9e9e9e*/
+  --color-secondary-text: #91afc8; /*#9e9e9e*/
   --color-epierrot: #C46B57; /*#ED6763*/
   --blend-mode-before: color;
   --blend-mode-after: screen;
@@ -254,19 +254,19 @@ h2 {
 }
 
 .line-t {
-  @apply border-t border-secondary-text;
+  @apply border-t border-primary-text;
 }
 
 .line-b {
-  @apply border-b border-secondary-text;
+  @apply border-b border-primary-text;
 }
 
 .line-l {
-  @apply border-l border-secondary-text;
+  @apply border-l border-primary-text;
 }
 
 .line-r {
-  @apply border-r border-secondary-text;
+  @apply border-r border-primary-text;
 }
 
 main {
@@ -403,6 +403,10 @@ a.logohome:hover .lh {
   fill: var(--color-primary-text);
 }
 
+.pagetheme .slider:hover svg {
+  fill: var(--color-epierrot);
+}
+
 .pagetheme input:not(:checked)+.slider svg:last-child {
   opacity:0;
 }
@@ -527,7 +531,7 @@ a.logohome:hover .lh {
 
 /* menuBox */
 .menuBox {
-  @apply relative w-full max-w-132 border-b border-secondary-text flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
+  @apply relative w-full max-w-132 border-b border-primary-text flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
 }
 
 .menuBox.hid,
