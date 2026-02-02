@@ -58,7 +58,7 @@
 
     </section>
     <section class="site-content">
-        <div class="flex flex-row w-full max-w-132 justify-start newpad-b line-b"><span class="w-8">&nbsp;</span><span class="newpad-l">{{ partial "settings.html" . }}</span></div>
+        <div class="flex flex-row w-full max-w-132 justify-start newpad-b line-b"><span class="w-8">&nbsp;</span><span class="w-full newpad-l">{{ partial "settings.html" . }}</span></div>
         {{ $page := $.Site.GetPage "page" "pierre-levy/" }}
         {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 1) -}}
         {{ end }}
