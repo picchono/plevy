@@ -27,7 +27,7 @@
 		},
 		"photo": {
 			"order": 2,
-			"type": "PHoto",
+			"type": "Photo",
 			"username": "PLevy",
 			"url": "https://live.staticflickr.com/65535/54134834097_f5279a0ce4_k.jpg",
 			"icon": "photo"
@@ -38,6 +38,13 @@
 			"username": "levypier",
 			"url": "/en/plevy/publis/",
 			"icon": "publis"
+		},
+		"hal": {
+			"order": 4,
+			"type": "Hal",
+			"username": "pierre-levy",
+			"url": "https://cv.hal.science/pierre-levy",
+			"icon": "hal"
 		},
 		"linkedin": {
 			"order": 4,
@@ -110,8 +117,8 @@
 		},
 		"hal": {
 			"name": "hal",
-			"code": "751380",
-			"url": "https://hal.science/search/index/?q=*&authIdPerson_i=",
+			"code": "pierre-levy",
+			"url": "https://cv.hal.science/",
 			"ord": 2
 		},
 		"IdRef": {

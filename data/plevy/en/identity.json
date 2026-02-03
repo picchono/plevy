@@ -31,6 +31,13 @@
 			"url": "/en/plevy/publis/",
 			"icon": "publis"
 		},
+		"hal": {
+			"order": 4,
+			"type": "Hal",
+			"username": "pierre-levy",
+			"url": "https://cv.hal.science/pierre-levy",
+			"icon": "hal"
+		},
 		"linkedin": {
 			"order": 4,
 			"type": "linkedIn",
@@ -102,8 +109,8 @@
 		},
 		"hal": {
 			"name": "hal",
-			"code": "751380",
-			"url": "https://hal.science/search/index/?q=*&authIdPerson_i=",
+			"code": "pierre-levy",
+			"url": "https://cv.hal.science/",
 			"ord": 2
 		},
 		"IdRef": {
