@@ -140,7 +140,7 @@ html {
 }
 
 html.light {
-  --color-primary-bg: #f0edee;/*EAE7DC*/
+  --color-primary-bg: #f1f0ed;/*EAE7DC*/
   --color-secondary-bg: var(--color-pageborder-bg);
   --color-tertiary-bg: #d7d5d2;
   --color-pageborder-bg: #FFF;
