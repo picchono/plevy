@@ -47,7 +47,8 @@ encapsulation:
         code: "MR15101A"
 fronttop: true
 link:
-    1: ["Moodle page", "link", "https://par.moodle.lecnam.net/mod/forum/index.php?id=27980"]
+    1: ["Courses", "courses" , "https://plevy.craft.me/USMC85"]
+    2: ["Moodle page", "link", "https://par.moodle.lecnam.net/mod/forum/index.php?id=27980"]
 
 ---
 {{< slash "Description" >}}

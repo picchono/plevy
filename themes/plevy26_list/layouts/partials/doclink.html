@@ -4,10 +4,8 @@
       <div class="flex flex-row">
             {{ $icon := index . 1 }}
             {{ $text := index . 0 }}
-            <div class="inline-block pr-4 w-1/5">{{ $icon -}}</div>
             <a href='{{ index . 2 }}' target="_blank" class="docLink w-4/5" rel="noreferrer"
-                  aria-label="Get {{ index . 0 }}">{{
-                  $text }}</a>
+                  aria-label="Get {{ index . 0 }}">{{ $text }}</a>
       </div>
       {{ end }}
 </div>

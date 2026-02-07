@@ -103,6 +103,7 @@
                 {{ end }}
         </div>
         {{ end }}
+        {{if false }}
         {{ if .Params.lectures}}
         <div class="pageBlock" data-cat-sort="3">
             {{ partial "subTitle.html" (dict "txt" (i18n "lectures")) }}
@@ -115,6 +116,7 @@
                 {{ end }}
             </div>
         </div>
+        {{ end }}
         {{ end }}
         {{ if .Params.sessions }}
         {{ $code := .Params.code }}
