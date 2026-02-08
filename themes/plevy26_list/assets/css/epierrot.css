@@ -143,7 +143,7 @@ html.light {
   --color-primary-bg: #f1f0ed;/*EAE7DC*/
   --color-secondary-bg: var(--color-pageborder-bg);
   --color-tertiary-bg: #d7d5d2;
-  --color-pageborder-bg: #FFF;
+  --color-pageborder-bg: var(--color-primary-bg);
   --color-primary-text: #3d3d3f;/*2a1841*/
   --color-secondary-text: #6b7e85; /*715596*/
   --color-epierrot: #c94731; /*b21556*/
@@ -160,7 +160,7 @@ html.dark {
   --color-secondary-bg: var(--color-pageborder-bg);
   /* 6c868d */
   --color-tertiary-bg: #282a2d;
-  --color-pageborder-bg: #000;
+  --color-pageborder-bg: var(--color-primary-bg);
   --color-primary-text: #e8e5e4;
   --color-secondary-text: #94817a;
   --color-epierrot: #c94731;
@@ -353,7 +353,7 @@ a.logohome:hover .lh {
 
 /* The switch - the box around the slider */
 .pagetheme .switch {
-  @apply relative inline-block h-5 w-5;
+  @apply relative inline-block h-4 w-4;
 }
 
 /* Hide default HTML checkbox */
@@ -399,12 +399,14 @@ a.logohome:hover .lh {
 
 /* The slider */
 .pagetheme .slider svg {
-  @apply absolute left-0 right-0 top-0 cursor-pointer w-5 h-5 transition-colors duration-700 ease-in-out;
+  @apply absolute left-0 right-0 top-0 cursor-pointer w-4 h-4 transition-colors duration-700 ease-in-out;
   fill: var(--color-primary-text);
 }
 
 .pagetheme .slider:hover svg {
   fill: var(--color-epierrot);
+  height: 1rem;
+  width: 1rem;
 }
 
 .pagetheme input:not(:checked)+.slider svg:last-child {
@@ -441,7 +443,7 @@ a.logohome:hover .lh {
 }
 
 .searchlaunch .searchButton svg.searchSvg {
-  @apply h-6 w-4;
+  @apply h-4 w-4;
   fill: var(--color-primary-text);
 }
 
@@ -531,7 +533,7 @@ a.logohome:hover .lh {
 
 /* menuBox */
 .menuBox {
-  @apply relative w-full max-w-132 border-b border-primary-text flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
+  @apply relative newpad w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
 }
 
 .menuBox.hid,
@@ -560,7 +562,7 @@ a.logohome:hover .lh {
 
 /* boxIso */
 .boxIso {
-  @apply w-full h-full newpad text-primary-text flex-grow flex-shrink flex flex-col justify-between items-start;
+  @apply w-full h-full text-primary-text flex-grow flex-shrink flex flex-col md:flex-row justify-between items-start rounded-xl;
 }
 
 .boxMeta {
@@ -568,10 +570,13 @@ a.logohome:hover .lh {
 }
 
 .boxIsoImg {
-  @apply block w-full self-end rounded;
-  aspect-ratio: 2;
+  @apply block w-full h-full min-h-44 self-end rounded-xl;
   background-position: center;
   background-size: cover;
+}
+
+.boxIso:hover .boxIsoImg {
+  @apply rounded-t-none md:rounded-l-none;
 }
 
 /* duotone */
@@ -583,14 +588,14 @@ a.logohome:hover .lh {
 }
 
 .duotone::before {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded-b-xl md:rounded-r-xl;
   background-color: var(--color-tertiary-bg);
   content: '';
   mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded-b-xl md:rounded-r-xl;
   background-color: var(--color-primary-text);
   content: '';
   mix-blend-mode: var(--blend-mode-after);
@@ -627,15 +632,15 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
-  @apply max-w-132;
+  @apply w-full md:w-1/3;
   height: 100vh;
-  padding: calc(3 * var(--pageBorder-width));
+  padding: calc(2 * var(--pageBorder-width));
 }
 
 section.site-content {
-  @apply w-full grow flex flex-col items-end justify-start;
+  @apply w-full md:w-2/3 grow flex flex-col items-start justify-start;
   height: 100vh;
-  padding: calc(3 * var(--pageBorder-width));
+  padding: 0;
   margin-top: 0;
 }
 
@@ -643,6 +648,10 @@ section.site-content {
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
+  }
+  
+  section.site-content {
+    padding: calc(2 * var(--pageBorder-width)) 0 calc(2 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width));
   }
 }
 
@@ -693,8 +702,8 @@ section.site-content {
 
 #btnPhonBtn {
   @apply fixed md:p-0 bg-primary-bg;
-  top: calc(2 * var(--pageBorder-width));
-  left: calc(2 * var(--pageBorder-width));
+  top: var(--pageBorder-width);
+  left: 0;
   fill: var(--color-primary-text);
   z-index: 1000;
   padding: 0.9rem 0 0 0.9rem;
