@@ -3,8 +3,6 @@
         <div class="titleTop">
             {{ partial "settings.html" . }}
         </div>
-
-
         {{ $intro := $.Site.GetPage "page" "intro.md" }}
         {{ with $intro }}
         {{ if .Params.active }}<div class="py-16">{{ .Content }}</div>{{ end }}

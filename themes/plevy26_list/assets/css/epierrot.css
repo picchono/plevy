@@ -276,7 +276,7 @@ main {
 
 /* title */
 #enteteBox {
-  @apply newpad max-w-132 self-end w-full;
+  @apply newpad max-w-132 self-start w-full;
 }
 
 body#menu #enteteBox {
@@ -640,7 +640,6 @@ section.site-content {
 }
 
 @media (min-width: 768px) {
-
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
@@ -650,6 +649,7 @@ section.site-content {
 @media (max-width: 768px) {
   section.home {
     height: 0 !important;
+    width: 100% !important;
   }
 
   section.site-content {
@@ -692,11 +692,12 @@ section.site-content {
 }
 
 #btnPhonBtn {
-  @apply fixed p-2 md:p-0 bg-primary-bg;
+  @apply fixed md:p-0 bg-primary-bg;
   top: calc(2 * var(--pageBorder-width));
   left: calc(2 * var(--pageBorder-width));
   fill: var(--color-primary-text);
   z-index: 1000;
+  padding: 0.9rem 0 0 0.9rem;
 }
 
 #btnPhonBtn:hover {
