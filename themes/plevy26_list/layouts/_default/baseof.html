@@ -5,12 +5,9 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}">
-  <main data-pagefind-body>
-    {{ if not .IsHome }}{{ partial "title.html" . }}{{ end }}
-    <div class="flex flex-col lg:flex-row justify-around">
-      {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
-      {{- block "main" . }}{{- end }}
-    </div>
+  <main data-pagefind-body class="flex flex-col lg:flex-row justify-around">
+    {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
+    {{- block "main" . }}{{- end }}
   </main>
   <div class="bordTop"></div>
   <div class="bordBottom"></div>

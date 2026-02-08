@@ -65,15 +65,10 @@ body {
 }
 
 body {
-  @apply relative bg-primary-bg text-primary-text min-h-screen;
+  @apply relative bg-primary-bg text-primary-text min-h-screen p-0;
   --pageBorder-width: 1rem;
   --entete-height: 10vh;
-  padding: calc(2 * var(--pageBorder-width));
   --entete-height: 4rem;
-}
-
-body#menu {
-  padding: 0;
 }
 
 .bordTop,
@@ -307,42 +302,9 @@ a.logohome:hover {
   @apply bg-transparent;
 }
 
-a.logohome .lh {
-  @apply inline-block bg-transparent h-auto w-full transition-colors duration-700 ease-in-out;
-  content: ' ';
-  stroke: transparent;
-  stroke-dashoffset: 0;
+a.logohome svg {
+  @apply h-4 w-4;
   fill: var(--color-primary-text);
-  transition: all 0.7s ease-in-out;
-  stroke-width: 0.03;
-  stroke-dasharray: 2.7;
-  animation: logoanim 3s ease-out;
-  max-width: 14rem; 
-}
-
-@keyframes logoanim {
-  0% {
-    stroke-dashoffset: 2.7;
-    stroke: var(--color-epierrot);
-    fill: transparent;
-  }
-
-  80% {
-    stroke-dashoffset: 0;
-    stroke: var(--color-epierrot);
-    fill: transparent;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-    stroke: transparent;
-    fill: var(--color-primary-text);
-  }
-}
-
-a.logohome:hover .lh {
-  fill: var(--color-epierrot);
-  stroke: var(--color-epierrot);
 }
 
 /* settings */
@@ -789,7 +751,8 @@ section.site-content {
 
 /* middle section */
 .mediumSection {
-  @apply md:max-w-132 w-full newpad;
+  @apply w-full md:w-1/3;
+  padding: calc(2 * var(--pageBorder-width));
 }
 
 .mediumSection h1 {
@@ -810,6 +773,10 @@ section.site-content {
 
 .pageBlock {
   @apply newpad-r newpad-t w-full;
+}
+
+.postTitle {
+  padding: calc(2 * var(--pageBorder-width)) 0;
 }
 
 /* links */
@@ -884,7 +851,7 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-  @apply w-full max-w-192 md:mt-16 newpad;
+  @apply w-full md:w-2/3 max-w-7xl md:mt-16 newpad;
 }
 
 /* docLink */
