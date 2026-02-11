@@ -13,7 +13,7 @@
     {{ end }}
     <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }} min-h-70"
         href="{{ .context.Permalink }}">
-        <div class="w-full md:w-1/2 flex flex-col items-start newpad">
+        <div class="w-full md:w-1/3 h-full flex flex-col items-start newpad border-0 md:border-r border-dotted border-primary-text">
             <h2 class='boxTitle'>{{- .context.Title |safeHTML }}</h2>
             {{ if not .intro }}
             <div class="boxMeta">
@@ -67,15 +67,16 @@
                 </div>
             </div>
             {{ end }}
-            <div class="newpad-y text-sm">
-                {{ if .context.Description }}{{ .context.Description }}
-                {{ else if .context.Params.Reference }}{{ .context.Params.Reference | safeHTML }}
-                {{ else if .context.Params.Abstract }}{{ .context.Params.Abstract | safeHTML }}{{if .Params.projectby
-                }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}{{ end }}
-            </div>
+
         </div>
-        <div class="boxIsoImg duotone newpad w-full md:w-1/2"
-            style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');">
+        <div class="w-full md:w-1/3 h-full newpad text-sm">
+            {{ if .context.Description }}{{ .context.Description }}
+            {{ else if .context.Params.Reference }}{{ .context.Params.Reference | safeHTML }}
+            {{ else if .context.Params.Abstract }}{{ .context.Params.Abstract | safeHTML }}{{if .Params.projectby
+            }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}{{ end }}
+        </div>
+        <div class="w-full md:w-1/3 h-full newpad-l border-0 md:border-l border-dotted border-primary-text">
+            <div class="w-full h-full boxIsoImg duotone" style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');"></div>
         </div>
     </a>
 </div>

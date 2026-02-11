@@ -72,9 +72,7 @@ body {
 }
 
 .bordTop,
-.bordBottom,
-.bordLeft,
-.bordRight {
+.bordBottom {
   @apply fixed bg-primary-bg transition-colors duration-700 ease-in-out z-50;
 }
 
@@ -85,13 +83,6 @@ body {
   height: calc(2 * var(--pageBorder-width));
 }
 
-.bordLeft,
-.bordRight {
-  top: 0;
-  height: 100vh;
-  width: calc(2 * var(--pageBorder-width));
-}
-
 .bordTop {
   top: 0;
   background-color: var(--color-pageborder-bg);
@@ -99,16 +90,6 @@ body {
 
 .bordBottom {
   bottom: 0;
-  background-color: var(--color-pageborder-bg);
-}
-
-.bordLeft {
-  left: 0;
-  background-color: var(--color-pageborder-bg);
-}
-
-.bordRight {
-  right: 0;
   background-color: var(--color-pageborder-bg);
 }
 
@@ -495,7 +476,11 @@ a.logohome svg {
 
 /* menuBox */
 .menuBox {
-  @apply relative newpad w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
+  @apply relative newpad w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out border-t border-dotted border-primary-text;
+}
+
+.menuBox:last-child {
+  @apply border-b;
 }
 
 .menuBox.hid,
@@ -524,22 +509,27 @@ a.logohome svg {
 
 /* boxIso */
 .boxIso {
-  @apply w-full h-full text-primary-text flex-grow flex-shrink flex flex-col md:flex-row justify-between items-start rounded-xl;
+  @apply w-full h-full text-primary-text flex-grow flex-shrink flex flex-col md:flex-row justify-between items-start;
+}
+
+.boxIso>div{
+  @apply transition-all duration-700 ease-in-out;
+}
+
+.boxIso:hover>div {
+  border-color: transparent !important;
 }
 
 .boxMeta {
-  @apply w-full flex flex-row flex-wrap justify-between;
+  @apply w-full flex flex-row flex-wrap justify-between pt-4;
 }
 
 .boxIsoImg {
-  @apply block w-full h-full min-h-44 self-end rounded-xl;
+  @apply block w-full h-full min-h-44 self-end;
   background-position: center;
   background-size: cover;
 }
 
-.boxIso:hover .boxIsoImg {
-  @apply rounded-t-none md:rounded-l-none;
-}
 
 /* duotone */
 .duotone {
@@ -550,14 +540,14 @@ a.logohome svg {
 }
 
 .duotone::before {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded-b-xl md:rounded-r-xl;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
   background-color: var(--color-tertiary-bg);
   content: '';
   mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded-b-xl md:rounded-r-xl;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
   background-color: var(--color-primary-text);
   content: '';
   mix-blend-mode: var(--blend-mode-after);
@@ -594,7 +584,7 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
-  @apply w-full md:w-1/3;
+  @apply w-full md:w-1/3 flex flex-col items-end justify-start;
   height: 100vh;
   padding: calc(2 * var(--pageBorder-width));
 }
@@ -613,7 +603,7 @@ section.site-content {
   }
   
   section.site-content {
-    padding: calc(2 * var(--pageBorder-width)) 0 calc(2 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width));
+    padding: calc(2 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width)) 0;
   }
 }
 
