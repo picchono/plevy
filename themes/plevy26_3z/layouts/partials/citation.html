@@ -1,0 +1,54 @@
+{{ with .Params.citation }}
+{{ if .authors }}
+    {{ $auth := .authors }}
+    {{ $lea := len $auth }}
+    {{ $ord := 1 }}
+    {{ range $auth }}
+        {{- if ne $ord 1 -}}{{- if eq $ord $lea }} & {{- else -}}, {{- end -}}{{- end }}
+        <span data-pagefind-filter="author[content]" content="{{- index . 0 }} {{ index . 1 -}}">{{ index . 0 -}}, {{ index . 2 -}}</span>
+        {{- $ord = add $ord 1 -}}
+    {{ end }}
+    {{ if .year }}(<span data-pagefind-filter="year">{{ .year -}}</span>).{{- end -}}
+    {{ if .title }} <span data-pagefind-filter="title">{{ .title -}}</span>{{ if .technical_report_number}} ({{- .technical_report_number -}}){{- end -}}.{{- end -}}
+{{ end }}
+{{ if .editors }}
+    {{ $edito := .editors }}
+    {{ $lee := len $edito }}
+    {{ $ord := 1 }}
+    {{ if ne $.Params.publitype "edition" }}
+        In {{ range $edito }}
+        {{ if ne $ord 1 -}}{{- if eq $ord $lee }} & {{- else -}}, {{- end -}}{{- end }}
+        {{ index . 2 }}, {{ index . 0 -}}
+        {{ $ord = add $ord 1 }}
+        {{ end }} (Eds.), 
+    {{ else }}
+        {{ range $edito }}
+        {{ if ne $ord 1 -}}{{- if eq $ord $lee }} & {{- else -}}, {{- end -}}{{- end }}
+        {{ index . 0 -}}, {{ index . 2 }} 
+        {{ $ord = add $ord 1 }}
+        {{ end }} (Eds.). 
+        {{ if .year }} {{ .year -}}. {{ end -}}
+    {{ end }}
+{{ end }}
+{{ if .journal}}
+    <span data-pagefind-filter="journal">{{- .journal -}}</span>
+    {{ if eq $.Params.publitype "edition" }}{{- if .title }}: {{ .title -}}{{- end -}}{{- end -}}
+    {{- if .number -}}. {{ .number }}{{ if .volume}}({{ .volume }}){{ end -}}{{ end }}
+    {{- if .pages -}}, {{ if eq .pages "online" }}online{{ else }}{{ .pages }}{{ end }}{{- end -}}.
+{{ end }}
+{{ if .proceedings }}
+    {{ if .editors }}{{ else }}In {{ end }}<span data-pagefind-filter="proceedings">{{ .proceedings }}</span>
+    {{- if .number -}}, {{ .number }}{{ if .volume}}({{ .volume }}){{ end -}} {{ end }}
+    {{ if .firstpage }}({{ if eq .firstpage "CD" }}[on CD]{{ else if eq .firstpage "online" }}online{{ else }}pp. {{ .firstpage }}-{{ .lastpage }}{{ end }}).{{- end }}
+{{ end }}
+{{ if .booktitle }}
+    {{ .booktitle }}
+    {{ if .firstpage }}({{ if eq .firstpage "CD" }}[on CD]{{ else if eq .firstpage "online" }}online{{ else }}pp. {{ .firstpage }}-{{ .lastpage }}{{ end }}).{{- end }}
+{{ end }}
+{{ if .publisher }}{{ index .publisher 1 -}}{{ if ne (index .publisher 0) "" -}}: {{ index .publisher 0 -}}{{ end }}.{{ end }}
+{{ if .technical_report_institution }}{{ .technical_report_institution }}.{{ end }}
+{{ if .school }}{{ index .school 1 -}}{{ if ne (index .school 0) "" -}}: {{ index .school 0 -}}{{ end }}.{{ end }}
+{{- if .isbn }}ISBN: {{ .isbn }}. {{- end -}}
+{{- if .issn }}ISSN: {{ .issn }}. {{- end -}}
+{{ if .doi }} <a href="https://doi.org/{{- .doi -}}" rel="noreferrer">https://doi.org/{{- .doi -}}</a>{{ end }}
+{{ end }}
