@@ -1,0 +1,28 @@
+<div class="pl-10 pr-24">
+    {{ if .Params.collaboration }}
+    <div class="flex flex-wrap items-center">
+        {{ range sort .Params.collaboration }}
+        <a href="{{ .web }}" target="_blank" class="collab">
+            {{ if .colo }}
+            {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo) -}}
+            {{else}}
+            {{ partial "icons.html" (dict "ico" .logo "hei" .heig) -}}
+            {{ end }}
+        </a>
+        {{ end }}
+    </div>
+    {{ else if .Params.institution }}
+    <div class="flex flex-wrap items-center">
+        <a href="{{ .Params.institution.web }}" target="_blank" class="collab">
+            {{ if .Params.institution.colo }}
+            {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei"
+            .Params.institution.heig "colo"
+            .Params.institution.colo) -}}
+            {{else}}
+            {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei"
+            .Params.institution.heig) -}}
+            {{ end }}
+        </a>
+    </div>
+    {{ end }}
+</div>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $rresearch := where .Site.Pages "Section" "research" }}
+{{range $rresearch}}
+{{ if ne .Params.bodyclass "Research" }}
+<div class="w-full py-1 px-2.5">
+    <a class="py-1 rounded bg-primary-bg" href="{{ .Permalink }}">
+        <span class="font-medium text-xl text-epierrot">{{- .Title -}}&nbsp;</span>{{ if isset .Params
+        "quote" }}<span class="italic text-epierrot">{{- .Params.quote.quoteline -}}&nbsp;&mdash;&nbsp;{{-
+            .Params.quote.quoteauthor -}}&nbsp;({{- .Params.quote.quotedate -}})</span>{{ end }}
+        <div id="content" class="hidden invisible h-0 w-0">{{ .Content }} {{ .Section }} {{ dateFormat "02 January 2006"
+            .Date }} {{ dateFormat "2006-01-02T15:04:05-07:00" .Date }} {{ .Params.abstract }}</div>
+    </a>
+</div>
+{{ end }}
+{{ end }}
+{{ end }}

@@ -246,7 +246,7 @@ h2 {
 }
 
 main {
-  @apply flex flex-col w-full;
+  @apply max-w-screen-2xl flex flex-col w-full;
   min-height: 100vh;
 }
 
@@ -588,7 +588,7 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section#level1 {
-  @apply w-full md:w-1/4 h-full flex flex-row items-center justify-between;
+  @apply w-full md:w-2/5 h-full flex flex-row items-center justify-start;
   height: 100vh;
   padding: calc(2 * var(--pageBorder-width));
 }
@@ -608,41 +608,22 @@ section#level1 #sections {
 
 section#level1 #sections h1.mainSection {
   @apply cursor-pointer transition-all duration-500 ease-in-out;
-  font-size: calc(1.4vw);
+  font-size: calc(1.8vw);
   text-transform: uppercase;
 }
 
-section#level2 {
-  @apply w-full h-screen md:w-1/4;
-  padding: calc(2 * var(--pageBorder-width));
-  margin: 0 0;
-}
-
-section#level2 div.subsections {
-  @apply w-full flex flex-col justify-center items-center;
-  height: 100vh;
-  padding: 10vh 0;
-}
-
-section#level2 div.subsections h2.subsection {
-  @apply newpad-y cursor-pointer transition-all duration-500 ease-in-out;
-  font-size: calc(1.2vw);
-}
-
-
-section#level1 #sections h1.mainSection:hover, section#level2 div.subsections h2.subsection:hover {
+section#level1 #sections h1.mainSection:hover {
   @apply text-epierrot;
 }
 
 section#site-content {
-  @apply w-full md:w-1/2 grow flex flex-col items-end justify-start;
+  @apply w-full md:w-3/5 grow flex flex-col items-end justify-start;
   height: 100vh;
   padding: calc(2 * var(--pageBorder-width));
 }
 
 @media (min-width: 768px) {
   #menu section#level1,
-  #menu section#level2,
   #menu section#site-content {
     overflow: auto;
   }
