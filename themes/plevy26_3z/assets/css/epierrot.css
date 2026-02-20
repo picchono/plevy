@@ -122,7 +122,7 @@ html.light {
   --color-pageborder-bg: var(--color-primary-bg);
   --color-primary-text: #3d3d3f;/*2a1841*/
   --color-secondary-text: #6b7e85; /*715596*/
-  --color-epierrot: #c94731; /*b21556*/
+  --color-epierrot: #E34234; /*b21556*/
   --blend-mode-before: color;
   --blend-mode-after: screen;
 
@@ -132,14 +132,14 @@ html.light {
 }
 
 html.dark {
-  --color-primary-bg: #2c2c2c; /*oklch(26.9% 0 0)*/
+  --color-primary-bg: #1c1c1c; /*oklch(26.9% 0 0)*/
   --color-secondary-bg: var(--color-pageborder-bg);
   /* 6c868d */
   --color-tertiary-bg: #282a2d;
   --color-pageborder-bg: var(--color-primary-bg);
   --color-primary-text: #e8e5e4;
   --color-secondary-text: #94817a;
-  --color-epierrot: #c94731;
+  --color-epierrot: #E34234;
   --blend-mode-before: saturation;
   --blend-mode-after: hard-light;
 
@@ -201,15 +201,6 @@ h2 {
   @apply text-lg font-bold;
 }
 
-h1.mainSection {
-  font-size: 2.5vh;
-  text-transform: uppercase;
-}
-
-h2.subsection {
-  font-size: 2vh;
-}
-
 .newpad {
   padding: var(--pageBorder-width);
 }
@@ -268,6 +259,9 @@ body#menu #enteteBox {
   padding: 0 !important;
 }
 
+main {
+  @apply flex flex-col lg:flex-row justify-start overflow-hidden;
+}
 
 #entete {
   @apply flex flex-col border-secondary-text max-w-132 w-full self-end newpad-b line-b;
@@ -485,7 +479,8 @@ a.logohome svg {
 
 /* menuBox */
 .menuBox {
-  @apply relative newpad w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out border-t border-dotted border-primary-text;
+  @apply relative w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
+  padding: calc(2 * var(--pageBorder-width));
 }
 
 .menuBox:last-child {
@@ -534,7 +529,7 @@ a.logohome svg {
 }
 
 .boxIsoImg {
-  @apply block w-full h-full min-h-32 self-end;
+  @apply block w-full h-full min-h-64 self-end;
   background-position: center;
   background-size: cover;
 }
@@ -593,7 +588,7 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section#level1 {
-  @apply w-full md:w-1/4 h-full flex flex-row items-center justify-start border-r border-primary-text;
+  @apply w-full md:w-1/4 h-full flex flex-row items-center justify-between;
   height: 100vh;
   padding: calc(2 * var(--pageBorder-width));
 }
@@ -601,34 +596,53 @@ section#level1 .optionSection {
   @apply flex flex-col items-center justify-center newpad border-r border-dotted border-primary-text;
   padding-left: 0;
 }
+
 section#level1 .level1spec {
   height: calc(2 * var(--pageBorder-width));
 }
 
 section#level1 #sections {
   @apply h-full flex flex-col justify-around items-start;
-  padding: 10vh 0 10vh calc(2 * var(--pageBorder-width));
+  padding: 10vh 3vh;
+}
+
+section#level1 #sections h1.mainSection {
+  @apply cursor-pointer transition-all duration-500 ease-in-out;
+  font-size: calc(1.4vw);
+  text-transform: uppercase;
 }
 
 section#level2 {
-  @apply w-full md:w-1/4 h-full flex flex-row items-center justify-start border-r border-primary-text;
-  height: 100vh;
+  @apply w-full h-screen md:w-1/4;
   padding: calc(2 * var(--pageBorder-width));
+  margin: 0 0;
 }
 
-section#level2 #subsections {
-  @apply h-full flex flex-col justify-around items-start;
+section#level2 div.subsections {
+  @apply w-full flex flex-col justify-center items-center;
+  height: 100vh;
   padding: 10vh 0;
 }
 
+section#level2 div.subsections h2.subsection {
+  @apply newpad-y cursor-pointer transition-all duration-500 ease-in-out;
+  font-size: calc(1.2vw);
+}
+
+
+section#level1 #sections h1.mainSection:hover, section#level2 div.subsections h2.subsection:hover {
+  @apply text-epierrot;
+}
+
 section#site-content {
-  @apply w-full md:w-1/2 grow flex flex-col items-start justify-start;
+  @apply w-full md:w-1/2 grow flex flex-col items-end justify-start;
   height: 100vh;
   padding: calc(2 * var(--pageBorder-width));
 }
 
 @media (min-width: 768px) {
   #menu section#level1,
+  #menu section#level2,
   #menu section#site-content {
     overflow: auto;
   }
@@ -966,7 +980,7 @@ ul.toc__sublist {
   --color-pageborder-bg: #fff;
   --color-primary-text: black;
   --color-secondary-text: black;
-  --color-epierrot: #ED6763;
+  --color-epierrot: #E34234;
   /* 006284 116A7B 344672 */
   --color-borders: black;
 }

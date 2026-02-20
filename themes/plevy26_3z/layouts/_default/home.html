@@ -15,7 +15,7 @@
         {{ end }}{{ end }}
     </div>
 </section>
-<section id="level2"><div id="subsections">
+<section id="level2">
     {{ $s := 1 }}
     {{ range .Sections }}{{ if ne .Slug "pierre-levy" }}
     {{ $subsec := slice}}
@@ -28,9 +28,10 @@
     {{ end }}
     {{ $s = add $s 1 }}
     {{ $subsec = $subsec | uniq }}{{ $subsec = $subsec | sort }}
-    {{ range $subsec }}
-        <h2 class="subsection">{{ . }}</h2>
-    {{ end }}
+    {{$titl := .Title}}
+    <div class="subsections">{{- if le 2 (( $subsec ) | len ) }}{{ range $subsec }}
+        <h2 class="subsection">{{ i18n . }}</h2>
+    {{ end }}{{ end }}</div>
     {{ end }}{{ end }}
 </section>
 <section id="site-content">

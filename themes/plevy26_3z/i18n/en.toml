@@ -444,3 +444,6 @@ other="detailled"
 
 [complete]
 other="complete"
+
+[none]
+other="none"
