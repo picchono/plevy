@@ -1,7 +1,6 @@
 {{if not .IsHome }}<div class="absolute top-2 lg:top-3 left-2 lg:left-3 z-40"><a class="text-primary-text "
     href="{{ .Site.BaseURL | absURL }}">{{ partial "icons.html" (dict "ico" "back" "hei" "1.7") -}}</a></div>{{ end }}
 <div class='grid grid-cols-1 lg:grid-cols-3'>
-    {{ partial "settings.html" . }}
     <div class="case">
         <h1 class="text-3xl font-bold" id="FrontTitle">{{ .Params.title |safeHTML }}</h1>
     </div>
