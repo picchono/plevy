@@ -527,7 +527,7 @@ a.logohome svg {
 
 /* boxIso */
 .boxIso {
-  @apply w-full h-full min-h-56 text-primary-text flex-grow flex-shrink flex flex-col md:flex-row justify-between items-start;
+  @apply rounded-2xl w-full h-full min-h-56 text-primary-text flex-grow flex-shrink flex flex-col md:flex-row justify-between items-start;
 }
 
 .boxIso>div {
@@ -551,21 +551,21 @@ a.logohome svg {
 
 /* duotone */
 .duotone {
-  @apply inline-block relative transition-all duration-700 ease-in-out;
+  @apply inline-block relative transition-all duration-700 ease-in-out rounded-lg;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .duotone::before {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded-lg;
   background-color: var(--color-tertiary-bg);
   content: '';
   mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded-lg;
   background-color: var(--color-primary-text);
   content: '';
   mix-blend-mode: var(--blend-mode-after);
