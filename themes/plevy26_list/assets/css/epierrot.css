@@ -317,7 +317,7 @@ a.logohome svg {
 }
 
 #languageMode {
-  @apply pl-4 md:pl-0 pt-10 md:pt-0 h-16 w-auto md:w-16 md:h-auto bg-transparent flex flex-row md:flex-col items-center justify-between border-0 md:border-r border-dotted border-primary-text;
+  @apply pl-4 md:pl-0 py-10 h-16 w-auto md:w-16 md:h-auto bg-transparent flex flex-row md:flex-col items-center justify-between border-0 md:border-r border-dotted border-primary-text;
 }
 
 #languageMode>span {
@@ -333,7 +333,7 @@ a.logohome svg {
 }
 
 #settingOptions {
-  @apply pt-10 md:pt-0 w-auto md:w-16 flex flex-row md:flex-col justify-between items-center border-r border-dotted border-primary-text;
+  @apply pt-10 w-auto md:w-16 flex flex-row md:flex-col justify-between items-center border-r border-dotted border-primary-text;
 }
 
 #settingOptions>div {
