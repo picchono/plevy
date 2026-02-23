@@ -200,7 +200,7 @@ function MenuToggle() {
       secti = el.className;
       el.classList.contains('open') ? targClosed = false : targClosed = true;
       //close everything
-      document.querySelectorAll("h2[class^='section-'], .nav_item").forEach(function (clo) {
+      document.querySelectorAll("h2[class^='section-'], .nav_item, section.home").forEach(function (clo) {
         clo.classList.remove('open');
       });
       if (targClosed) {
@@ -210,6 +210,9 @@ function MenuToggle() {
           if (clo.classList.contains(secti)) {
             clo.classList.add('open');
           }
+        });
+        document.querySelectorAll("section.home").forEach(function (hom) {
+            hom.classList.add('open');
         });
         //scroll au premier bloc de cette section
         let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)

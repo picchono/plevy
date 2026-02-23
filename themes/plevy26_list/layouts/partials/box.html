@@ -11,7 +11,7 @@
     {{ else }}
     <div class="menuBoxCount"></div>
     {{ end }}
-    <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }} min-h-70"
+    <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }}"
         href="{{ .context.Permalink }}">
         <div class="w-full md:w-1/3 h-full flex flex-col items-start newpad border-0 md:border-r border-dotted border-primary-text">
             <h2 class='boxTitle'>{{- .context.Title |safeHTML }}</h2>
