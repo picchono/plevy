@@ -1,7 +1,141 @@
-/*@import "tailwindcss";*/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: ['Mulish', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif'];
+  --font-family-mono: ['SFMono-Regular', 'Menlo'];
+  --font-weight-normal: 400;
+  --font-weight-bold: 800;
+
+  --width-42: 10.5rem;
+  --width-62: 15.5rem;
+  --width-68: 17rem;
+  --width-70: 17.5rem;
+  --width-74: 18.5rem;
+  --width-76: 19rem;
+  --width-84: 21rem;
+  --width-88: 22rem;
+  --width-96: 24rem;
+  --width-104: 26rem;
+  --width-118: 29.5rem;
+  --width-132: 33rem;
+  --width-140: 35rem;
+  --width-144: 36rem;
+  --width-154: 38.5rem;
+  --width-188: 47rem;
+  --width-192: 48rem;
+  --width-216: 54rem;
+  --width-3block: 75rem;
+  --width-large: 47.2rem;
+
+  --height-42: 10.5rem;
+  --height-62: 15.5rem;
+  --height-68: 17rem;
+  --height-70: 17.5rem;
+  --height-74: 18.5rem;
+  --height-76: 19rem;
+  --height-84: 21rem;
+  --height-88: 22rem;
+  --height-96: 24rem;
+  --height-100: 25rem;
+  --height-104: 26rem;
+  --height-132: 33rem;
+  --height-144: 36rem;
+  --height-154: 38.5rem;
+  --height-216: 54rem;
+
+  --margin-21: 5.3rem;
+  --margin-22: 5.5rem;
+  --margin-26: 6.5rem;
+  --margin-30: 7.5rem;
+  --margin-34: 8.5rem;
+  --margin-43: 10.75rem;
+  --margin-54: 13.5rem;
+  --margin-58: 14.5rem;
+  --margin-70: 17.5rem;
+  --margin-74: 18.5rem;
+  --margin-84: 21rem;
+  --margin-96: 24rem;
+  --margin-144: 36rem;
+  --margin-154: 38.5rem;
+  --margin-216: 54rem;
+
+  --min-width-42: 10.5rem;
+  --min-width-16: 4rem;
+  --min-width-70: 17.5rem;
+  --min-width-72: 18rem;
+  --min-width-96: 24rem;
+  --min-width-104: 26rem;
+  --min-width-132: 33rem;
+  --min-width-136: 34rem;
+  --min-width-144: 36rem;
+  --min-width-154: 38.5rem;
+  --min-width-192: 48rem;
+  --min-width-216: 54rem;
+  --min-width-240: 60rem;
+
+  --max-width-42: 10.5rem;
+  --max-width-16: 4rem;
+  --max-width-70: 17.5rem;
+  --max-width-72: 18rem;
+  --max-width-96: 24rem;
+  --max-width-104: 26rem;
+  --max-width-132: 33rem;
+  --max-width-136: 34rem;
+  --max-width-144: 36rem;
+  --max-width-154: 38.5rem;
+  --max-width-192: 48rem;
+  --max-width-216: 54rem;
+  --max-width-240: 60rem;
+
+  --min-height-42: 10.5rem;
+  --min-height-16: 4rem;
+  --min-height-70: 17.5rem;
+  --min-height-72: 18rem;
+  --min-height-96: 24rem;
+  --min-height-104: 26rem;
+  --min-height-132: 33rem;
+  --min-height-136: 34rem;
+  --min-height-144: 36rem;
+  --min-height-154: 38.5rem;
+  --min-height-192: 48rem;
+  --min-height-216: 54rem;
+  --min-height-240: 60rem;
+
+  --max-height-42: 10.5rem;
+  --max-height-16: 4rem;
+  --max-height-70: 17.5rem;
+  --max-height-72: 18rem;
+  --max-height-96: 24rem;
+  --max-height-104: 26rem;
+  --max-height-132: 33rem;
+  --max-height-136: 34rem;
+  --max-height-144: 36rem;
+  --max-height-154: 38.5rem;
+  --max-height-192: 48rem;
+  --max-height-216: 54rem;
+  --max-height-240: 60rem;
+
+  --line-height-14: 3.5rem;
+
+  --inset-16: 4rem;
+  --inset-32: 8rem;
+  --inset-48: 12rem;
+
+  --border-width-16: 16px;
+
+  --color-primary-bg: var(--color-primary-bg);
+  --color-secondary-bg: var(--color-secondary-bg);
+  --color-tertiary-bg: var(--color-tertiary-bg);
+  --color-pageborder-bg: var(--color-pageborder-bg);
+  --color-primary-text: var(--color-primary-text);
+  --color-secondary-text: var(--color-secondary-text);
+  --color-epierrot: var(--color-epierrot);
+  --color-borders: var(--color-borders);
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --spacing-newpad: var(--pageBorder-width);
+}
 
 :root {
   @apply font-sans text-primary-text leading-6 box-border;
@@ -174,8 +308,8 @@ div.menuBox.foc>.boxIso {
   @apply text-primary-bg bg-epierrot;
 }
 
-a svg,menuBox
-svg {
+a svg,
+menuBox svg {
   fill: var(--color-primary-text);
 }
 
@@ -206,49 +340,6 @@ h2 {
   @apply text-lg font-bold;
 }
 
-.newpad {
-  padding: var(--pageBorder-width);
-}
-
-.newpad-x {
-  padding: 0 var(--pageBorder-width);
-}
-
-.newpad-y {
-  padding: var(--pageBorder-width) 0;
-}
-
-.newpad-t {
-  padding-top: var(--pageBorder-width);
-}
-
-.newpad-r {
-  padding-right: var(--pageBorder-width);
-}
-
-.newpad-b {
-  padding-bottom: var(--pageBorder-width);
-}
-
-.newpad-l {
-  padding-left: var(--pageBorder-width);
-}
-
-.line-t {
-  @apply border-t border-primary-text;
-}
-
-.line-b {
-  @apply border-b border-primary-text;
-}
-
-.line-l {
-  @apply border-l border-primary-text;
-}
-
-.line-r {
-  @apply border-r border-primary-text;
-}
 
 main {
   @apply flex flex-col w-full;
@@ -257,7 +348,7 @@ main {
 
 /* title */
 #enteteBox {
-  @apply newpad max-w-132 self-start w-full;
+  @apply p-newpad max-w-132 self-start w-full;
 }
 
 body#menu #enteteBox {
@@ -266,7 +357,7 @@ body#menu #enteteBox {
 
 
 #entete {
-  @apply flex flex-col border-secondary-text max-w-132 w-full self-end newpad-b line-b;
+  @apply flex flex-col border-secondary-text max-w-132 w-full self-end pb-newpad border-b border-primary-text;
 }
 
 @media (min-width: 768px) {
@@ -337,11 +428,13 @@ a.logohome svg {
 }
 
 #settingOptions>div {
-  @apply newpad-r;
+  @apply pr-newpad;
 }
 
 @media screen and (min-width: 768px) {
-  #settingOptions>div, #settingOptions>a {
+
+  #settingOptions>div,
+  #settingOptions>a {
     padding: 0 0 var(--pageBorder-width) 0;
   }
 }
@@ -492,7 +585,7 @@ a.logohome svg {
 
 /* menuBox */
 .menuBox {
-  @apply relative newpad-y w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
+  @apply relative  w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -514,7 +607,7 @@ a.logohome svg {
 }
 
 .menuBoxCount {
-  @apply w-8 newpad-y flex-shrink-0 flex-grow-0 flex flex-col justify-start;
+  @apply w-8 py-newpad flex-shrink-0 flex-grow-0 flex flex-col justify-start;
 }
 
 .menuBoxCount>div {
@@ -586,7 +679,7 @@ a.linkBox:hover .duotone::after {
 
 /* search modal */
 #searchmodal {
-  @apply fixed z-50 newpad transition-all duration-700 ease-in-out bg-primary-bg;
+  @apply fixed z-50 p-newpad transition-all duration-700 ease-in-out bg-primary-bg;
   display: none;
 
   top: calc(2 * var(--pageBorder-width));
@@ -612,7 +705,7 @@ section.home.open {
 }
 
 section.site-content {
-  @apply w-full md:w-3/5 grow flex flex-col items-start justify-start newpad;
+  @apply w-full md:w-3/5 grow flex flex-col items-start justify-start p-newpad;
   height: 100vh;
   margin-top: 0;
 }
@@ -780,7 +873,7 @@ section.site-content {
 
 /* middle section */
 .mediumSection {
-  @apply w-full md:w-1/3 newpad;
+  @apply w-full md:w-1/3 p-newpad;
   padding-top: calc(2 * var(--pageBorder-width) + 4rem);
 }
 
@@ -808,7 +901,7 @@ section.site-content {
 }
 
 .pageBlock {
-  @apply newpad-r newpad-t w-full;
+  @apply pr-newpad pt-newpad  w-full;
 }
 
 .postTitle {
@@ -887,7 +980,7 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-  @apply w-full md:w-2/3 max-w-4xl md:mt-16 newpad;
+  @apply w-full md:w-2/3 max-w-4xl md:mt-16 p-newpad;
 }
 
 /* docLink */

@@ -8,7 +8,7 @@
                 {{ dateFormat "02 Jan 2006" .Date }}</p>
             {{ end }}
             {{ if .Params.prezfor }}
-            <p class="italic newpad-y" data-pagefind-weight="6">{{- i18n "by" }}
+            <p class="italic py-newpad" data-pagefind-weight="6">{{- i18n "by" }}
                 {{ $len := len .Params.intervenants}}
                 {{ $count := 0 }}
                 {{ range .Params.intervenants }}
@@ -52,7 +52,7 @@
     <div class="pageBlock flex flex-col" data-cat-sort="1">
         {{ range sort .Params.diploma }}
         <div class="flex flex-row flex-wrap">
-            <div class="newpad-r w-1/5 font-bold">{{ .type }}</div>
+            <div class="pr-newpad w-1/5 font-bold">{{ .type }}</div>
             <div class="w-4/5">{{ .name }}</div>
         </div>
         {{ end }}
@@ -221,7 +221,7 @@
         {{ $icon := "teams" }}
         {{ if ne .media "Teams" }}{{ $icon := "teams" }}{{ end }}
         {{ $text := i18n "linkvisio" }}
-        <a href='{{ .link }}' target="_blank" class="doclinkButton newpad-y py-5" rel="noreferrer"
+        <a href='{{ .link }}' target="_blank" class="doclinkButton py-newpad py-5" rel="noreferrer"
             aria-label="Get {{ $icon }}"><span>{{- partial "icons.html" (dict "hei" 1.5 "ico" $icon "cla"
                 "doclinkIcon"
                 ) -}}</span>&nbsp;&nbsp;<span>{{ $text }}</span></a>
@@ -229,16 +229,16 @@
     </div>
     {{ end }}
     {{ if eq .Params.layout "presentation" }}
-    <div class="pageBlock invisible lg:visible newpad-y" id="QR" data-cat-sort="1">
+    <div class="pageBlock invisible lg:visible py-newpad" id="QR" data-cat-sort="1">
         <div class="place-self-start w-auto" aria-label="See QR">
-            <span id="qrcode" class="block h-0 lg:h-62 w-0 lg:w-62 bg-white newpad rounded-lg"></span>
+            <span id="qrcode" class="block h-0 lg:h-62 w-0 lg:w-62 bg-white pr-newpadounded-lg"></span>
         </div>
     </div>
     {{ end }}
     {{ if eq .Params.layout "member" }}
     {{ $nom := .Slug }}
     {{ with index .Site.Data.plevy .Site.Language.Lang }}
-    <div class="pageBlock flex flex-col newpad-t newpad-l">
+    <div class="pageBlock flex flex-col pt-newpad pl-newpad">
         <div class="smalllinkcv">
             {{- partial "icons.html" (dict "ico" "cv" "hei" 1) -}}<span>cv :: <a
                     href='{{ $.Site.BaseURL}}{{ $nom }}/cvlight' target="_blank">{{ i18n "short" }}</a> · <a

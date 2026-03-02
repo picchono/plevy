@@ -36,17 +36,14 @@
 <link rel="stylesheet" href="{{ $css.epierrot.url }}" media="all">
 {{ end }}
 {{ else }}
-{{ $epierrot_css := resources.Get "css/epierrot.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $epierrot_css := $epierrot_css | minify }}
+{{ $epierrot_css := resources.Get "css/epierrot.css" | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $epierrot_css.Permalink }}" media="all">
 {{ end }}
 
-{{ $splide_css := resources.Get "css/splide.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $splide_css := $splide_css | minify }}
+{{ $splide_css := resources.Get "css/splide.css" | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $splide_css.Permalink }}" media="all">
 
-{{ $mulish_css := resources.Get "css/mulish.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $mulish_css := $mulish_css | minify }}
+{{ $mulish_css := resources.Get "css/mulish.css" | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $mulish_css.Permalink }}" media="all">
  
 {{ partial "opengraph.html" . }}
