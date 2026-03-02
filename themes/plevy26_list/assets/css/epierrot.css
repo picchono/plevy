@@ -200,9 +200,6 @@ body {
 
 body {
   @apply relative bg-primary-bg text-primary-text min-h-screen p-0;
-  --pageBorder-width: 1rem;
-  --entete-height: 10vh;
-  --entete-height: 4rem;
 }
 
 .bordTop,
@@ -247,6 +244,10 @@ html {
   --pagefind-ui-image-border-radius: 1rem !important;
   --pagefind-ui-image-box-ratio: 3 / 2 !important;
   --pagefind-ui-font: 'Mulish', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif';
+
+  --pageBorder-width: 1rem;
+  --entete-height: 10vh;
+  --entete-height: 4rem;
 }
 
 html.light {
@@ -408,7 +409,7 @@ a.logohome svg {
 }
 
 #languageMode {
-  @apply pl-4 md:pl-0 py-10 h-16 w-auto md:w-16 md:h-auto bg-transparent flex flex-row md:flex-col items-center justify-between border-0 md:border-r border-dotted border-primary-text;
+  @apply pl-4 md:pl-0 pt-10 md:pb-10 h-16 w-auto md:w-16 md:h-auto bg-transparent flex flex-row md:flex-col items-center justify-between border-0 md:border-r border-dotted border-primary-text;
 }
 
 #languageMode>span {
@@ -585,7 +586,7 @@ a.logohome svg {
 
 /* menuBox */
 .menuBox {
-  @apply relative  w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
+  @apply relative w-full max-w-7xl flex flex-row justify-between items-start transition-all duration-500 ease-in-out;
 }
 
 @media (min-width: 768px) {
