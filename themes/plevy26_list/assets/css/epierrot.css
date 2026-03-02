@@ -125,7 +125,7 @@ html.light {
   /*2a1841*/
   --color-secondary-text: #6b7e85;
   /*715596*/
-  --color-epierrot: #c94731;
+  --color-epierrot: #e34334;
   /*b21556*/
   --blend-mode-before: color;
   --blend-mode-after: screen;
@@ -144,7 +144,7 @@ html.dark {
   --color-pageborder-bg: var(--color-primary-bg);
   --color-primary-text: #e8e5e4;
   --color-secondary-text: #94817a;
-  --color-epierrot: #c94731;
+  --color-epierrot: #e34334;
   --blend-mode-before: saturation;
   --blend-mode-after: hard-light;
 
@@ -987,7 +987,7 @@ ul.toc__sublist {
     --color-pageborder-bg: #fff;
     --color-primary-text: black;
     --color-secondary-text: black;
-    --color-epierrot: #ED6763;
+    --color-epierrot: #e34334;
     /* 006284 116A7B 344672 */
     --color-borders: black;
   }
