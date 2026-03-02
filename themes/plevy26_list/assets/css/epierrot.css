@@ -343,7 +343,7 @@ h2 {
 
 
 main {
-  @apply flex flex-col w-full;
+  @apply flex flex-col md:flex-row justify-start w-full;
   min-height: 100vh;
 }
 
@@ -730,7 +730,7 @@ section.site-content {
   }
 
   section.site-content {
-    padding-top: 0;
+    padding-top: var(--pageBorder-width);
   }
 }
 

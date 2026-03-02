@@ -5,7 +5,7 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}">
-  <main data-pagefind-body class="flex flex-col md:flex-row justify-start">
+  <main data-pagefind-body>
     {{ partial "settings.html" . }}
     {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
     {{- block "main" . }}{{- end }}
