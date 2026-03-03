@@ -15,25 +15,25 @@
             {{ range $slid }}
             {{ $typ := index . 0 }}
                 {{ if eq $typ "img" }}
-                <a class="boxIso w-full py-newpad"
+                <a class="boxIso w-full mb-10"
                     href="{{- index . 1 -}}"
                     aria-label="See image {{ $ord }}" data-custom-prop="abc">
-                    <div class="boxIsoImg duotone p-newpad"
+                    <div class="boxIsoImg duotone"
                         style="background-image: url('{{- index . 1 -}}');">
                     </div>
                 </a>
                 {{ else if eq $typ "google" }}
-                <a class="boxIso w-full py-newpad"
+                <a class="boxIso w-fulll mb-10"
                     href="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w3200"
                     aria-label="See image {{ $ord }}" data-custom-prop="abc">
-                    <div class="boxIsoImg duotone p-newpad"
+                    <div class="boxIsoImg duotone"
                         style="background-image: url('https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w400');">
                     </div>
                 </a>
                 {{ else if eq $typ "mov"}}
                 <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}"
-                    class="boxIso w-full py-newpad">
-                     <div class="boxIsoImg p-newpad"
+                    class="boxIso w-fulll mb-10">
+                     <div class="boxIsoImg"
                         style="background-image: url('{{ index . 2 }}');" alt="video {{ $ord }}">
                     </div>
                 </a>

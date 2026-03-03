@@ -637,9 +637,10 @@ a.logohome svg {
 }
 
 .boxIsoImg {
-  @apply block w-full h-full min-h-44 self-end;
+  @apply block w-full min-h-44;
   background-position: center;
   background-size: cover;
+  aspect-ratio: 1.77;
 }
 
 
