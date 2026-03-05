@@ -17,10 +17,11 @@
             <h2 class='boxTitle'>{{- .context.Title |safeHTML }}</h2>
             {{ if not .intro }}
             <div class="boxMeta">
-                <div>{{ .context.Section | humanize }}</div>
+                {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
+                <div>{{ $sectio | humanize }}</div>
                 <div>
-                    {{ if or ( eq .Section "event" ) ( eq .Section "presentations" ) }}{{ dateFormat "Jan 2006"
-                    .Date }}
+                    {{ if or ( eq .context.Section "events" ) ( eq .context.Section "presentations" ) }}{{ dateFormat "01 January 2006" .context.Date }}
+                    {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" ) }}{{ dateFormat "2006" .context.Date }}
                     {{ else }}
                         {{ dateFormat "2006" .context.Date }} · 
                         {{if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
@@ -38,11 +39,11 @@
                     {{ if .context.Params.intervenants }}{{ $len := len .context.Params.intervenants }}
                     {{ $count := 0 }}
                     {{ range .context.Params.intervenants }}
-                    {{ .name -}}
+                    <span class="inline-block font-bold pt-4">{{ .name -}}</span>
                     {{ $count = add $count 1 }}
                     {{- if ne $count $len -}}, {{ end }}
+                    <br>{{ .affiliation }}
                     {{ end }}<br>{{ end }}
-                    {{ .context.Params.institution.name }}
                     {{ else if eq .context.Section "presentations" }}
                     {{ i18n "for" }}{{ if .context.Params.collaboration }}
                     {{ $len := len .context.Params.collaboration }}

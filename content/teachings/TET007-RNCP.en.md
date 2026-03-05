@@ -12,6 +12,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2021-09-01T16:27:15+02:00
+end: 2023
 subsection: course
 status: ended
 description: "Cette UE forme à une culture numérique permettant de s'engager dans des recherches d'information et des synthèses utiles à la vie professionnelle principalement sur le web."
