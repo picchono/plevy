@@ -9,6 +9,7 @@ institution:
     colo: "#c72125"
 date: 2019-11-04T00:55:28+02:00
 start: 2019
+end: 2021
 draft: false
 layout: single
 searchFilter: Teaching

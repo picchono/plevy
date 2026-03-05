@@ -12,7 +12,7 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-abstract: "A reflection on current and future design and craft education, written as part of the <i>PIA 4 Diagnostic Culture et création en mutations (2CM) - Compétences et métiers d'avenir France 2030</i>, directed by Lucie Marinier."
+abstract: "A reflection on current and future design and craft education"
 frontphoto: "1dpEshb9ZepNtGgrdhS-Zj4zZXVE8u_iC"
 citation:
     authors:

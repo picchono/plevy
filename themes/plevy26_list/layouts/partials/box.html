@@ -17,14 +17,15 @@
             <h2 class='boxTitle'>{{- .context.Title |safeHTML }}</h2>
             {{ if not .intro }}
             <div class="boxMeta">
-                <div class="w-1/2 pr-2">
-                    {{ .context.Section | humanize }}
-                </div>
-                <div class="w-1/2 pl-2">
+                <div>{{ .context.Section | humanize }}</div>
+                <div>
                     {{ if or ( eq .Section "event" ) ( eq .Section "presentations" ) }}{{ dateFormat "Jan 2006"
                     .Date }}
-                    {{ else }}{{ dateFormat "2006" .context.Date }}{{ end }}
-                    {{if eq .context.Params.status "ended"}} · {{ i18n "ended" -}}{{ end }}
+                    {{ else }}
+                        {{ dateFormat "2006" .context.Date }} · 
+                        {{if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
+                        {{ else }}{{ time.Now | time.Format "2006" }}{{ end }}
+                    {{ end }}
                 </div>
                 <div class="w-full">
                     {{ if eq .context.Section "publications" }}

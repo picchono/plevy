@@ -636,7 +636,7 @@ a.logohome svg {
 }
 
 .boxMeta {
-  @apply w-full flex flex-row flex-wrap justify-between pt-4;
+  @apply w-full flex flex-col flex-wrap justify-start pt-4;
 }
 
 .boxIsoImg {
