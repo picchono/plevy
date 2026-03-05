@@ -17,17 +17,6 @@
             <h2 class='boxTitle'>{{- .context.Title |safeHTML }}</h2>
             {{ if not .intro }}
             <div class="boxMeta">
-                {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
-                <div>{{ $sectio | humanize }}</div>
-                <div>
-                    {{ if or ( eq .context.Section "events" ) ( eq .context.Section "presentations" ) }}{{ dateFormat "01 January 2006" .context.Date }}
-                    {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" ) }}{{ dateFormat "2006" .context.Date }}
-                    {{ else }}
-                        {{ dateFormat "2006" .context.Date }} · 
-                        {{if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
-                        {{ else }}{{ time.Now | time.Format "2006" }}{{ end }}
-                    {{ end }}
-                </div>
                 <div class="w-full">
                     {{ if eq .context.Section "publications" }}
                     {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
@@ -39,7 +28,7 @@
                     {{ if .context.Params.intervenants }}{{ $len := len .context.Params.intervenants }}
                     {{ $count := 0 }}
                     {{ range .context.Params.intervenants }}
-                    <span class="inline-block font-bold pt-4">{{ .name -}}</span>
+                    <span class="inline-block font-bold">{{ .name -}}</span>
                     {{ $count = add $count 1 }}
                     {{- if ne $count $len -}}, {{ end }}
                     <br>{{ .affiliation }}
@@ -66,6 +55,17 @@
                     {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
                     {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}{{
                     .context.Params.institution.name }}{{ end }}{{ end }}
+                </div>
+                {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
+                <div class="pt-4">{{ $sectio | humanize }}</div>
+                <div>
+                    {{ if or ( eq .context.Section "events" ) ( eq .context.Section "presentations" ) }}{{ dateFormat "01 January 2006" .context.Date }}
+                    {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" ) }}{{ dateFormat "2006" .context.Date }}
+                    {{ else }}
+                        {{ dateFormat "2006" .context.Date }} · 
+                        {{if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
+                        {{ else }}{{ time.Now | time.Format "2006" }}{{ end }}
+                    {{ end }}
                 </div>
             </div>
             {{ end }}
