@@ -251,8 +251,7 @@ html {
 }
 
 html.light {
-  --color-primary-bg: #f4f5f5
-  ;
+  --color-primary-bg: #f4f5f5;
   /*f1f0ed*/
   --color-secondary-bg: var(--color-pageborder-bg);
   --color-tertiary-bg: #d7d5d2;
