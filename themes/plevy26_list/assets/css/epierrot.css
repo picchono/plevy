@@ -413,11 +413,11 @@ a.logohome svg {
 }
 
 #languageMode>span {
-  @apply pr-4 md:pr-0 relative bg-transparent text-epierrot font-bold inline-block;
+  @apply text-lg pr-4 md:pr-0 md:pb-2 relative bg-transparent text-epierrot font-bold inline-block;
 }
 
 #languageMode a {
-  @apply pr-4 md:pr-0 bg-transparent inline-block text-primary-text font-bold hover:text-epierrot border-0 transition-all duration-700 ease-in-out;
+  @apply text-lg pr-4 md:pr-0 md:pb-2 bg-transparent inline-block text-primary-text font-bold hover:text-epierrot border-0 transition-all duration-700 ease-in-out;
 }
 
 #languageMode a:hover {
@@ -436,7 +436,7 @@ a.logohome svg {
 
   #settingOptions>div,
   #settingOptions>a {
-    padding: 0 0 var(--pageBorder-width) 0;
+    padding: 0 0 calc(1.5 * var(--pageBorder-width)) 0;
   }
 }
 
@@ -452,14 +452,14 @@ a.logohome svg {
 
 /* The slider */
 .pagetheme .slider svg {
-  @apply absolute left-0 right-0 top-0 cursor-pointer w-4 h-4 transition-colors duration-700 ease-in-out;
+  @apply absolute left-0 right-0 top-0 cursor-pointer w-6 h-6 transition-colors duration-700 ease-in-out;
   fill: var(--color-primary-text);
 }
 
 .pagetheme .slider:hover svg {
   fill: var(--color-epierrot);
-  height: 1rem;
-  width: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .pagetheme input:not(:checked)+.slider svg:last-child {
