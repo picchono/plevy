@@ -4,7 +4,7 @@
 
 <body id="cv" class="overflow-x-hidden lg:overflow-x-auto">
    <main class="md:container lg:mx-auto bg-primary-bg lg:my-16 py-6 px-2 lg:p-14">
-      {{ with index .Site.Data.plevy .Site.Language.Lang }}
+      {{ with index hugo.Data.plevy .Site.Language.Lang }}
       <h1 class="mb-30 mt-22">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR · Publications</h1>
       <div class="grid grid-cols-7 gap-x-6 mb-10">
          <div><b>{{ i18n "name" }}</b></div>

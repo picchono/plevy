@@ -26,8 +26,8 @@
 {{ return $icon_resized }}
 {{ end }}
 
-{{ $css := .Site.Data.assets.css }}
-{{ $js := .Site.Data.assets.js }}
+{{ $css := hugo.Data.assets.css }}
+{{ $js := hugo.Data.assets.js }}
 
 {{ if $css.epierrot.url }}
 {{ if $css.epierrot.version }}

@@ -381,7 +381,7 @@ a.logohome:hover {
 }
 
 a.logohome svg {
-  @apply h-4 w-4;
+  @apply h-6 w-6;
   fill: var(--color-primary-text);
 }
 
@@ -390,6 +390,12 @@ a.logohome svg {
 
 .menuSetting {
   @apply pl-16 md:pl-0 absolute w-full md:w-16 h-12 md:h-screen flex flex-row md:flex-col items-center md:justify-center;
+}
+
+@media screen and (max-width: 768px) {
+  .menuSetting {
+    padding-left: var(--pageBorder-width) !important;
+  }
 }
 
 .pagetheme {

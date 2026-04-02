@@ -237,7 +237,7 @@
     {{ end }}
     {{ if eq .Params.layout "member" }}
     {{ $nom := .Slug }}
-    {{ with index .Site.Data.plevy .Site.Language.Lang }}
+    {{ with index hugo.Data.plevy .Site.Language.Lang }}
     <div class="pageBlock flex flex-col pt-newpad pl-newpad">
         <div class="smalllinkcv">
             {{- partial "icons.html" (dict "ico" "cv" "hei" 1) -}}<span>cv :: <a

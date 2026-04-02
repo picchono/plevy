@@ -3,7 +3,7 @@
 {{- partial "head.html" . -}}
 
 <body id="cv" class="my-7 mx-3">
-   {{ with index .Site.Data.plevy .Site.Language.Lang }}
+   {{ with index hugo.Data.plevy .Site.Language.Lang }}
    
    <div class="container mx-auto">
       <h1 class="mb-30 mt-22">{{ .identity.title }} {{ .identity.firstname }} {{ .identity.lastname }}, HDR</h1>
