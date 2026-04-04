@@ -274,7 +274,7 @@
             {{ range (where .Site.Pages "Section" "publications") }}
             {{ range .Pages }}
             {{ if in .Params.research $targ }}
-            <a class="block p-4 rounded-lg" href="{{ .Permalink }}">{{ partial "citationlink.html" . }}</a>
+            <a class="block p-4 rounded-lg mb-4" href="{{ .Permalink }}">{{ partial "citationlink.html" . }}</a>
             {{ end }}
             {{ end }}
             {{ end }}
