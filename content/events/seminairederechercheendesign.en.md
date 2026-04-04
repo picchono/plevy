@@ -14,7 +14,6 @@ subsection: seminar
 main: true
 current: true
 description: "Ce séminaire, dédié aux jeunes chercheurs ou aspirants à le devenir, invite les communautés de recherche liées au design et à la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances."
-fronttop: true
 institution:
     heig: 1
     logo: cnam
@@ -63,7 +62,7 @@ photogallery:
     image1:
         order: 1
         name: "Séminaire méthodologique de recherche en design"
-        img: "1MLq4lkgkfW1CtMisf3Z5_r5B1PWRpJMw"
+        img: "1DsuDGz3dFT9gmeCicLfg4dCnry9zaTSe"
 ---
 The ‘Research practices in design and creation’ methodology seminar is organised and run jointly by the Dicen-IDF laboratory and the Jean Prouvé Design Chair at the National Conservatory of Arts and Craft (Cnam). Primarily aimed at master's students, young researchers, doctoral candidates and those aspiring to become such, it invites members of research communities linked to the fields of design and creation to contribute together to a better understanding of the methodological issues involved in research as a place for exploration, discussion and the dissemination of ideas and knowledge.
 

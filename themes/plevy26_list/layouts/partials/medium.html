@@ -119,25 +119,29 @@
     {{ end }}
     {{ if .Params.sessions }}
     {{ $code := .Params.code }}
-    <div class="pageBlock" data-cat-sort="3">
+    <div class="pageBlock" data-cat-sort="1">
         {{ partial "subTitle.html" (dict "txt" (i18n "sessions")) }}
-        {{ range sort .Params.sessions "date" "desc" }}
         <div class="linkBlock">
+            {{ range sort .Params.sessions "date" "desc" }}
             {{ $targ := (print .link ".md") }}
             {{ $page := $.Site.GetPage "page" $targ }}
+            {{ $interv := "" }}
             {{ with $page }}
-            <a class="linkBox" href="{{ .Permalink }}">
-                <b>{{ dateFormat "02 January 2006" .Date }} -
-                    {{ if .Params.intervenants }}{{ $len := len .Params.intervenants }}
-                    {{ $count := 0 }}
-                    {{ range .Params.intervenants }}
-                    {{ .name -}}
-                    {{ $count = add $count 1 }}
-                    {{- if ne $count $len -}}, {{ end }}
-                    {{ end }}{{ end }}</b> · {{ replace .Title " | " "&middot;" |safeHTML -}}</a>
+            {{ if .Params.intervenants }}{{ $len := len .Params.intervenants }}
+            {{ $count := 0 }}
+            {{ range .Params.intervenants }}
+            {{ $comma := ""}}
+            {{ $count = add $count 1 }}
+            {{- if ne $count $len -}}{{ $comma := ", "}}{{ end }}
+            {{ $interv = (print $interv $comma .name) -}}
+            {{ end }}
+            {{ end }}
+            {{ $datitl := print (dateFormat "02 January 2006" .Date) " · " $interv }}
+            {{ partial "boxLink.html" (dict "lin" .Permalink "photo" .Params.frontphoto "titl" $datitl "subtitl"
+            (replace .Title " | " "&middot;" |safeHTML)) }}
+            {{ end }}
             {{ end }}
         </div>
-        {{ end }}
     </div>
     {{ end }}
     {{ if .Params.intervenants }}{{ range .Params.intervenants }}
@@ -190,8 +194,8 @@
         <div class="linkBlock">
             {{ range .Params.encapsulation }}
             {{ with $.Site.GetPage "page" .page }}
-            <a class="linkBox block pb-4" href="{{ .Permalink }}"><b>{{- replace .Title " | " "&middot;" |safeHTML
-                    }}</b> - {{ .Params.institution.name }}</a>
+            {{ partial "boxLink.html" (dict "lin" .Permalink "photo" .Params.frontphoto "titl" (replace .Title " | "
+            "&middot;" |safeHTML) "subtitl" .Params.institution.name) }}
             {{ end }}
             {{ end }}
         </div>
@@ -203,14 +207,24 @@
         <div class="linkBlock">
             {{ range .Params.parcours }}
             {{ with $.Site.GetPage "page" .page }}
-            <a class="linkBox block pb-4" href="{{ .Permalink }}"><b>{{- replace .Title " | " "&middot;" |safeHTML
-                    }}</b> - {{ .Params.institution.name }}</a>
+            {{ partial "boxLink.html" (dict "lin" .Permalink "photo" .Params.frontphoto "titl" (replace .Title " | "
+            "&middot;" |safeHTML) "subtitl" .Params.institution.name) }}
             {{ end }}
             {{ end }}
         </div>
     </div>
     {{ end }}
-    {{ if .Params.link }}{{ partial "doclink.html" . }}{{ end }}
+    {{ if .Params.link }}
+    {{ partial "subTitle.html" (dict "txt" (i18n "links")) }}
+    <div class="linkBlock">
+        {{ range .Params.link }}
+        <div class="flex flex-row">
+            {{ partial "boxLink.html" (dict "lin" (index . 2) "icon" (index . 1) "titl" (replace (index . 0) " | "
+            "&middot;" |safeHTML)) }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
     {{ end }}
     {{ if or .Params.place .Params.visio }}
     <div class="pageBlock" data-cat-sort="1">
@@ -256,11 +270,11 @@
     {{ $targ := .Params.milestone }}
     <div class="pageBlock" data-cat-sort="3">
         {{ partial "subTitle.html" (dict "txt" (i18n "publications")) }}
-        <div class="">
+        <div class="flex flex-col">
             {{ range (where .Site.Pages "Section" "publications") }}
             {{ range .Pages }}
             {{ if in .Params.research $targ }}
-            <a class="inline-block pb-4" href="{{ .Permalink }}">{{ partial "citationlink.html" . }}</a>
+            <a class="block p-4 rounded-lg" href="{{ .Permalink }}">{{ partial "citationlink.html" . }}</a>
             {{ end }}
             {{ end }}
             {{ end }}
@@ -272,8 +286,8 @@
             {{ range (where .Site.Pages "Section" "projects") }}
             {{ range .Pages }}
             {{ if in .Params.research $targ }}
-            <a class="linkBox linkBox pb-4" href="{{ .Permalink }}"><b>{{ .Title }}</b>{{if .Params.projectby }} ·
-                {{ .Params.projectby }}{{ end }}</a>
+           {{ partial "boxLink.html" (dict "lin" .Permalink "photo" .Params.frontphoto "titl" (replace .Title " | "
+            "&middot;" |safeHTML) "subtitl" .Params.projectby) }}
             {{ end }}
             {{ end }}
             {{ end }}

@@ -35,7 +35,6 @@ collaboration:
         web: "https://www.dicen-idf.org/"
         heig: 1.8
 frontphoto: "1MLq4lkgkfW1CtMisf3Z5_r5B1PWRpJMw"
-fronttop: true
 photocredit: 
     cred: "Nadine van Amersvoort"
 link:
@@ -63,7 +62,7 @@ photogallery:
     image1:
         order: 1
         name: "Séminaire méthodologique de recherche en design"
-        img: "1MLq4lkgkfW1CtMisf3Z5_r5B1PWRpJMw"
+        img: "1DsuDGz3dFT9gmeCicLfg4dCnry9zaTSe"
 ---
 Le séminaire de méthodologie « Pratiques de recherche en design et création » est co-animé par le laboratoire Dicen-IDF et la chaire Design Jean Prouvé du Cnam. Principalement dédié aux étudiants en master, aux jeunes chercheurs, doctorant·e·s ou aspirants à le devenir, il invite les membres des communautés de recherche liées aux domaines du design et de la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances.
 

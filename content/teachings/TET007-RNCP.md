@@ -1,6 +1,6 @@
 ---
-slug: TET007-RNCP-Approche_pratique_du_numerique_et_la_recherche_d_information
-title: "TET007-RNCP · Approche pratique du numérique et la recherche d'information"
+slug: Approche_pratique_du_numerique_et_la_recherche_d_information-RNCP
+title: "Approche pratique du numérique et la recherche d'information · RNCP"
 layout: single
 searchFilter: Teaching
 teaching: 'TET007-RNCP'

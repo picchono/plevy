@@ -1,6 +1,6 @@
 ---
-slug: USMC85-Dialoguing
-title: "USMC85 · Dialoguing"
+slug: Dialoguing
+title: "Dialoguing"
 layout: single
 searchFilter: Teaching
 institution:
@@ -45,9 +45,8 @@ encapsulation:
     MR15101A: 
         page: "Master-Meca.md"
         code: "MR15101A"
-fronttop: true
 link:
-    1: ["Courses", "courses" , "https://plevy.craft.me/USMC85"]
+    1: ["Courses", "course" , "https://plevy.craft.me/USMC85"]
     2: ["Moodle page", "link", "https://par.moodle.lecnam.net/mod/forum/index.php?id=27980"]
 
 ---

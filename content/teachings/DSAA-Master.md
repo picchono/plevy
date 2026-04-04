@@ -40,7 +40,6 @@ code: ENSAAMADSAA
 link:
     1: ["Ensaama", "website", "https://ensaama.net"]
     3: ["DSAA-Master", "website", "https://ensaama.net/site/home/formations/dsaa"]
-fronttop: true
 ---
 L’Arrêté du 17 février 2025 relatif au diplôme supérieur d’arts appliqués entre en vigueur à compter de la rentrée universitaire 2025. Le Diplôme Supérieur d’Arts Appliqués sanctionne un niveau correspondant à l’obtention de 120 crédits européens au-delà du grade licence (DNMADE) ou licence (180 crédits ECTS). Il est inscrit au niveau 7 de la nomenclature interministérielle des niveaux de formation.
 

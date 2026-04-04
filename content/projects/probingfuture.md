@@ -23,33 +23,23 @@ photogallery:
     image5:
         order: 5
         name: "(​Jordy Alblas, Nesrin Güneş, Sam Kragtwijk, Clarissa Schmitt)"
-        src: "https://live.staticflickr.com/65535/50589711141_29f4051b45_q.jpg"
-        img: "https://live.staticflickr.com/65535/50589711141_b2ac7b0a72_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/49322588808/in/album-72157712496729493"
+        img: "1ExgsG5EvPvHxKuMwcQ0lrN3veCad9Yaz"
     image4:
         order: 4
         name: "Habitania (​Jordy Alblas, Jade Badra, Jip Geven, Arisha Isaeva - photography by Juuke Schoorl)"
-        src: "https://live.staticflickr.com/65535/50587487388_5a9406c0b3_q.jpg"
-        img: "https://live.staticflickr.com/65535/50587487388_21a64569fc_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50588233976/in/album-72157716601045922"
+        img: "1q9Kr38zfIXDmFJ5O4Y5DAHkYEZoYgdOe"
     image3:
         order: 3
         name: "Immortalia (​Erik Melander, Pollyana Moss, Viki Oh, Clarissa Schmitt - photography by Juuke Schoorl)"
-        src: "https://live.staticflickr.com/65535/50587487398_3594faee15_q.jpg"
-        img: "https://live.staticflickr.com/65535/50587487398_296cd62a81_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50587487388/in/album-72157716601045922"
+        img: ""
     image2:
         order: 2
         name: "Etherea (Nesrin Güneş, Kai Landolt, Lisa Li, Lara Villa - photography by Juuke Schoorl)"
-        src: "https://live.staticflickr.com/65535/50587487398_04bd5d4854_q.jpg"
-        img: "https://live.staticflickr.com/65535/50587487398_c8459fd15e_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50587487398/in/album-72157716601045922"
+        img: "1uPX2wwIKVYzM1mrFl6LJDZYDKwknsuZq"
     image1:
         order: 1
         name: "Gaia (Kimia Amir-Moazami, Daan Colussi, Xander Cummins, Sam Kragtwijk - photography by Juuke Schoorl)"
-        src: "https://live.staticflickr.com/65535/50588234006_8ee2d36b5e_q.jpg"
-        img: "https://live.staticflickr.com/65535/50588234006_ffdbefd792_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50588234006/in/album-72157716601045922"
+        img: "1gglQ9sw9tCg5xfnQX7PYhb81QjTiducL"
 ---
 
 How would our world look like 20, 30, 40 or 50 years from now? Will we monitor each individual on the planet to live a low-risk life? Will we replace organs, eyes, or other parts of our body with artificial alternatives? Will we upload our brains and live on a server? Or do we seek ways to embrace a life more related to mother earth? In this Design Fiction project, several potential healthcare futures are explored. The project is a collaboration between Philips Design, Eindhoven University of Technology, Design Academy Eindhoven, and Frank Kolkman.  

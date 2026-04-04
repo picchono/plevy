@@ -45,7 +45,6 @@ link:
     1: ["e|m|a", "website", "https://emafructidor.com/ema"]
     2: ["Cnam", "website", "#"]
     3: ["Certificat", "website", "https://bedeo.cnam.fr/public/cursus/view/CS11400A"]
-fronttop: true
 ---
 Cette formation entend à cet effet associer la pratique artistique, la connaissance technique et l'attention aux
 usages pour deux types de métiers :

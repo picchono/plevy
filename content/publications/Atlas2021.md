@@ -43,21 +43,15 @@ photogallery:
     image2:
         order: 2
         name: "Page 1"
-        src: "https://live.staticflickr.com/65535/51755181703_afa60aa1ee_q.jpg"
-        img: "https://live.staticflickr.com/65535/51755181703_3c07e78277_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322831880/in/album-72157712524917571"
+        img: "1mTU_zQaLyQHjP3L_mcXhmXt433vzaU4H"
     image3:
         order: 3
         name: "Page 2"
-        src: "https://live.staticflickr.com/65535/51755810820_a96b9b833a_q.jpg"
-        img: "https://live.staticflickr.com/65535/51755810820_d4288c9711_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322831880/in/album-72157712524917571"
+        img: "1n30F-AXj7V6cyvj5YWVvGsfJMlxtA_tv"
     image4:
         order: 4
         name: "Page 3"
-        src: "https://live.staticflickr.com/65535/51755580844_082ecf4102_q.jpg"
-        img: "https://live.staticflickr.com/65535/51755580844_becea4e042_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/16322831880/in/album-72157712524917571"
+        img: "1RmSw0mPPnvrj6ZvvHVXFJZGbvjaMS1G2"
 link:
     6: ["book", "book", "https://1drv.ms/b/s!AnQx_v88q65QgYKfYHDPnTFHuyVQlXA"]
 ---

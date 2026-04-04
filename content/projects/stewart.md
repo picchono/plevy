@@ -24,27 +24,19 @@ photogallery:
     image1:
         order: 1
         name: "Stewart, by Felix Ros"
-        src: "https://live.staticflickr.com/65535/50618705761_e798cf813b_q.jpg"
-        img: "https://live.staticflickr.com/65535/50618705761_103c4b5a2d_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50618703736/in/album-72157716601045922"
+        img: "1voORAZrZisaAyikJe4_JUq-tGmWRC5tW"
     image2:
         order: 2
         name: "Stewart, by Felix Ros"
-        src: "https://live.staticflickr.com/65535/50618703736_1c6e750c9b_q.jpg"
-        img: "https://live.staticflickr.com/65535/50618703736_88db6b9f24_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50618703736/in/album-72157716601045922"
+        img: "1i_qHK_sUBykX8k8SToVBx2vfR1GPx1IS"
     image3:
         order: 3
         name: "Stewart, by Felix Ros"
-        src: "https://live.staticflickr.com/65535/50618814352_2548c49aa2_q.jpg"
-        img: "https://live.staticflickr.com/65535/50618814352_6e2f5bd7ac_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50618814352/in/album-72157716601045922"
+        img: "1xmQUM0SWLba-XRv7UhtVMiHvM-TLbH7x"
     image4:
         order: 4
         name: "Stewart, by Felix Ros"
-        src: "https://live.staticflickr.com/65535/50618707631_79285cf4b1_q.jpg"
-        img: "https://live.staticflickr.com/65535/50618707631_c2e52a52ac_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50618707631/in/album-72157716601045922"
+        img: "13PmSeYlPaupkbhiDoKPQBJqj8rYFjSQO"
 video:
     video1:
         vimeo: "129643275"

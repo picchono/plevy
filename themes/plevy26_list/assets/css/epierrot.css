@@ -193,7 +193,6 @@ body {
   letter-spacing: 0.01rem;
   line-height: var(--lineHeight);
   font-display: swap;
-  font-weight: normal;
   scroll-behavior: smooth;
   font-variant-ligatures: common-ligatures;
 }
@@ -657,6 +656,8 @@ a.logohome svg {
 }
 
 
+
+
 /* duotone */
 .duotone {
   @apply inline-block relative transition-all duration-700 ease-in-out rounded-lg;
@@ -920,11 +921,28 @@ section.site-content {
 }
 
 .linkBlock .linkBox {
-  @apply text-epierrot;
+  @apply text-epierrot rounded-xl flex flex-row justify-start items-center;
+  padding: calc(0.5 * var(--pageBorder-width));
+  margin-bottom: calc(0.5 * var(--pageBorder-width));
 }
 
 .linkBlock .linkBox:hover {
-  @apply text-primary-text bg-primary-bg;
+  @apply text-primary-bg bg-epierrot;
+}
+
+.linkBlock .linkBox .boxIsoImg {
+  @apply w-20 h-20; 
+  aspect-ratio: 1;
+  min-height:auto;
+}
+
+.linkBlock .linkBox .boxIsoIcon svg {
+  @apply w-4 h-4 transition-all duration-500 ease-in-out;
+  fill: var(--color-primary-text);
+}
+
+.linkBlock .linkBox:hover .boxIsoIcon svg {
+  fill: var(--color-primary-bg);
 }
 
 .pageBlock {
@@ -975,7 +993,7 @@ section.site-content {
 /* lightgallery */
 
 #lightgallery {
-  @apply w-full h-auto flex flex-col justify-start flex-wrap;
+  @apply w-full h-auto flex justify-start flex-wrap;
 }
 
 #lightgallery .boxIso {
@@ -1007,7 +1025,8 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-  @apply w-full md:w-2/3 max-w-4xl md:mt-16 p-newpad;
+  @apply w-full md:w-2/3 max-w-4xl md:mt-16;
+  padding: 0 calc(4 * var(--pageBorder-width));
 }
 
 /* docLink */

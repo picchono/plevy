@@ -1,0 +1,8 @@
+<a class="linkBox pt-4" href="{{ .lin }}">
+    {{ if .photo }}
+        <span class="boxIsoImg duotone rounded-lg inline-block" style="background-image: url('https://drive.google.com/thumbnail?id={{- .photo | safeHTML -}}&sz=w500');"></span>
+    {{ else if .icon }}
+        <span class="boxIsoIcon rounded-lg inline-block">{{ partial "icons.html" (dict "ico" .icon) }}</span>
+    {{ end }}
+    <span class="pl-4 inline-block"><b>{{ .titl }}</b>{{ if .subtitl }} - {{ .subtitl }}{{ end }}</span>
+</a>

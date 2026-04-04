@@ -24,9 +24,7 @@ photogallery:
     image1:
         order: 1
         name: "Passage (ChiYong Lim, Gracia Goh, Kate Vermeyen)"
-        src: "https://live.staticflickr.com/65535/50588356177_7cb3292ae0_q.jpg"
-        img: "https://live.staticflickr.com/65535/50588356177_44e190111f_o.jpg"
-        link: "https://www.flickr.com/photos/27221668@N05/50588356177/in/album-72157716601045922"
+        img: "10E7Pk4d4SXRTw8gJoL6vOZn115ND34ZB"
 video:
     video1:
         vimeo: "41910928"

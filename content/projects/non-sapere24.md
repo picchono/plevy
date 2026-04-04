@@ -43,20 +43,20 @@ link:
 photogallery:
     image4:
         order: 4
-        src: "https://live.staticflickr.com/65535/53535808910_0d268b560d_n.jpg"
-        img: "https://live.staticflickr.com/65535/53535808910_591b866830_h.jpg"
+        name: "Ruedi Baur at non-sapere"
+        img: "1miOHIOqmuur49DW-2loKFdF9j6G4ofAD"
     image3:
         order: 3
-        src: "https://live.staticflickr.com/65535/53535701174_463a215aa6_n.jpg"
-        img: "https://live.staticflickr.com/65535/53535701174_91127944f1_h.jpg"
+        name: "non-sapere 2024"
+        img: "1apnBbDwZ2TUKEPfQ1v9MK4putEcA6lKQ"
     image2:
         order: 2
-        src: "https://live.staticflickr.com/65535/53535809215_44e44f1a97_n.jpg"
-        img: "https://live.staticflickr.com/65535/53535809215_572ae644ec_h.jpg"
+        name: "non-sapere 2024"
+        img: "1mjvVb1SNZE4149HWUhL4rciEe-Vk3V5U"
     image1:
         order: 1
-        src: "https://live.staticflickr.com/65535/53535702119_9960dec251_n.jpg"
-        img: "https://live.staticflickr.com/65535/53535702119_a83735db72_h.jpg"
+        name: "Participants to non-sapere 2024"
+        img: "17zBdjO2S3KqnTgHC4CJmSUgiuxdRtR6m"
 ---
 
 [![Cahier](https://s3-eu-west-1.amazonaws.com/com.ulule.media/presales/2/3/5/1/8/1/181532/cahier-2.ByMQDN0o59.jpg "Cahier de l'école du non-savoir")](https://civic-city.org/nonsapere/cahier-civic-city-3/)
@@ -101,3 +101,5 @@ How are we living in this world? - **Musashino Art University, Japan**
 &nbsp;
 
 [*Et plus ici*](https://civic-city.org/nonsapere/topics-2/)
+
+&nbsp;
