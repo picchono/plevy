@@ -34,7 +34,7 @@ collaboration:
         name: "Dispositifs d’Information et de Communication à l’Ère Numérique – Paris, Ile de France (EA 7339)"
         web: "https://www.dicen-idf.org/"
         heig: 1.8
-frontphoto: "1MLq4lkgkfW1CtMisf3Z5_r5B1PWRpJMw"
+frontphoto: "1DsuDGz3dFT9gmeCicLfg4dCnry9zaTSe"
 photocredit: 
     cred: "Nadine van Amersvoort"
 link:
