@@ -392,12 +392,6 @@ a.logohome svg {
   @apply pl-16 md:pl-0 absolute w-full md:w-16 h-12 md:h-screen flex flex-row md:flex-col items-center md:justify-center;
 }
 
-@media screen and (max-width: 768px) {
-  .menuSetting {
-    padding-left: var(--pageBorder-width) !important;
-  }
-}
-
 .pagetheme {
   @apply flex flex-col justify-center items-start;
 }
@@ -1027,7 +1021,13 @@ img.lg-object {
 /* mainBlock */
 .mainBlock {
   @apply w-full md:w-2/3 max-w-4xl md:mt-16;
-  padding: 0 calc(4 * var(--pageBorder-width));
+  padding: calc(4 * var(--pageBorder-width)) var(--pageBorder-width);
+}
+
+@media (min-width: 768px) {
+  .mainBlock {
+    padding: 0 calc(4 * var(--pageBorder-width));
+  }
 }
 
 /* docLink */
