@@ -389,7 +389,7 @@ a.logohome svg {
 /* light dark theme */
 
 .menuSetting {
-  @apply pl-16 md:pl-0 absolute w-full md:w-16 h-12 md:h-screen flex flex-row md:flex-col items-center md:justify-center;
+  @apply pl-newpad md:pl-0 absolute w-full md:w-16 h-12 md:h-screen flex flex-row md:flex-col items-center md:justify-center;
 }
 
 .pagetheme {

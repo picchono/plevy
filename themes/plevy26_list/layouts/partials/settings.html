@@ -1,4 +1,4 @@
-<div class="menuSetting" data-pagefind-ignore>
+<div class="menuSetting"{{if .IsHome}} style="padding-left: calc(4 * var(--pageBorder-width)) !important;"{{ end }} data-pagefind-ignore>
         <div id="settingOptions">
                 {{ if not .IsHome }}<a class="block logohome" href='{{ absURL "" }}'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
