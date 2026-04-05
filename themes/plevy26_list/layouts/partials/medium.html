@@ -25,13 +25,14 @@
         {{ if .Params.collaboration }}
         <div class="flex flex-row flex-wrap items-center pt-10">
             {{ range sort .Params.collaboration }}
-            <a href="{{ .web }}" target="_blank" class="collab" data-pagefind-weight="4">
+            <div class="collab"><a href="{{ .web }}" target="_blank" data-pagefind-weight="4">
                 {{ if .colo }}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6 mr-10") -}}
+                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6") -}}
                 {{else}}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-6 mr-10" ) -}}
+                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-6" ) -}}
                 {{ end }}
             </a>
+            </div>
             {{ end }}
         </div>
         {{ else if .Params.institution }}
@@ -179,9 +180,7 @@
     {{ end }}
     {{ if .Params.updating }}
     <div class="pageBlock" data-cat-sort="2">
-        <div class="bg-epierrot ">
-            <p class="italic font-bold text-primary-bg text-lg">Currently updating</p>
-        </div>
+        <div class="bg-epierrot p-4 rounded-lg italic font-bold text-primary-bg text-lg">Currently updating</div>
     </div>
     {{ end }}
     {{ if .Params.citation }}

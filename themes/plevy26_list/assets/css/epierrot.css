@@ -1038,6 +1038,12 @@ img.lg-object {
   @apply text-primary-text bg-primary-bg;
 }
 
+/* logo */
+.collab {
+  padding: 0 calc(2 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width)) 0;
+}
+
+
 /* video */
 .embed-wrapper {
   @apply overflow-hidden relative;
