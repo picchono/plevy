@@ -310,6 +310,7 @@ div.menuBox.foc>.boxIso {
 
 a svg,
 menuBox svg {
+  @apply transition-all duration-500 ease-in-out;
   fill: var(--color-primary-text);
 }
 

@@ -27,9 +27,9 @@
             {{ range sort .Params.collaboration }}
             <div class="collab"><a href="{{ .web }}" target="_blank" data-pagefind-weight="4">
                 {{ if .colo }}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-6") -}}
+                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-8") -}}
                 {{else}}
-                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-6" ) -}}
+                {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-8" ) -}}
                 {{ end }}
             </a>
             </div>
