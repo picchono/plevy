@@ -25,25 +25,23 @@
         {{ if .Params.collaboration }}
         <div class="flex flex-row flex-wrap items-center pt-10">
             {{ range sort .Params.collaboration }}
-            <div class="collab"><a href="{{ .web }}" target="_blank" data-pagefind-weight="4">
+            <a href="{{ .web }}" class="collab" target="_blank" data-pagefind-weight="4">
                 {{ if .colo }}
                 {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-8") -}}
                 {{else}}
                 {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-8" ) -}}
                 {{ end }}
             </a>
-            </div>
             {{ end }}
         </div>
         {{ else if .Params.institution }}
         <div class="flex flex-row flex-wrap items-center pt-10">
-            <a href="{{ .Params.institution.web }}" target="_blank" class="collab" data-pagefind-weight="3">
+            <a href="{{ .Params.institution.web }}" target="_blank" class="collab" data-pagefind-weight="4">
                 {{ if .Params.institution.colo }}
                 {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig
-                "colo"
-                .Params.institution.colo) -}}
+                "colo" .Params.institution.colo "cla" "max-h-8") -}}
                 {{else}}
-                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig) -}}
+                {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig "cla" "max-h-8") -}}
                 {{ end }}
             </a>
         </div>
@@ -149,7 +147,7 @@
     <div class="pageBlock md:min-w-96 md:max-w-192">
         <div class="flex flex-col">
             <div class="flex flex-col md:flex-row">
-                <div class="place-self-center h-74 w-auto md:w-74 photoItem"
+                <div class="place-self-center h-74 w-auto md:w-74 rounded-lg photoItem"
                     data-src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w3000" aria-label="See image">
                     <img loading="lazy" src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w500"
                         alt="{{ .photo }}" title="{{ .name }}" class="rounded object-cover h-74 w-auto md:w-74"

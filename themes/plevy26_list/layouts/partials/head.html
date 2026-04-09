@@ -72,8 +72,9 @@
 {{ $micromodal_js := resources.Get "js/micromodal.js" | minify }}
 <script defer src="{{ $micromodal_js.Permalink }}"></script>
 
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="/pagefind/pagefind-ui.js"></script>
+<script src="/pagefind/pagefind.js"></script>
+<link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-component-ui.js" type="module"></script>
 
 {{ if .Params.citation }}{{ partial "citationmeta.html" . }}{{ end }}
 

@@ -36,7 +36,7 @@ collaboration:
         logo: dicen
         name: "Dispositifs d’Information et de Communication à l’Ère Numérique – Paris, Ile de France (EA 7339)"
         web: "https://www.dicen-idf.org/"
-        heig: 1.8
+        heig: 1.2
     partner4:
         logo: etis
         name: "Equipes Traitement de l'Information et Systèmes (UMR CNRS 8051)"

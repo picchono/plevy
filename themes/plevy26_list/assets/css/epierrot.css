@@ -250,7 +250,7 @@ html {
 }
 
 html.light {
-  --color-primary-bg: #f4f5f5;
+  --color-primary-bg: #e7e3de;
   /*f1f0ed*/
   --color-secondary-bg: var(--color-pageborder-bg);
   --color-tertiary-bg: #d7d5d2;
@@ -389,7 +389,7 @@ a.logohome svg {
 /* light dark theme */
 
 .menuSetting {
-  @apply pl-newpad md:pl-0 absolute w-full md:w-16 h-12 md:h-screen flex flex-row md:flex-col items-center md:justify-center;
+  @apply pl-newpad md:pl-0 absolute md:fixed w-full md:w-16 h-12 md:h-screen flex flex-row md:flex-col items-center md:justify-center;
 }
 
 .pagetheme {
@@ -470,7 +470,9 @@ a.logohome svg {
   opacity: 0;
 }
 
-
+#qrcode {
+  @apply bg-white p-4 rounded-xl;
+}
 
 /* search */
 #search {
@@ -624,7 +626,7 @@ a.logohome svg {
 /* boxIso */
 .boxIso {
   @apply rounded-2xl w-full h-74 min-h-56 text-primary-text grow-0 shrink-0 flex flex-col md:flex-row justify-between items-start;
-  margin-bottom: var(--pageBorder-width);
+  margin: 0 calc(0.5 * var(--pageBorder-width)) calc(0.5 * var(--pageBorder-width)) 0;
 }
 
 #menu .boxIso {

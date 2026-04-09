@@ -261,16 +261,16 @@ function indexHome() {
 
 // Search
 window.addEventListener('load', function (event) {
-  new PagefindUI({
-    element: "#search",
-    showSubResults: true,
-    showImages: true,
-    showEmptyFilters: false,
-    resetStyles: false,
-    debounceTimeoutMs: 0,
-    autofocus: true,
-    excerptLength: 100
-  });
+  async function searchPage(term) {
+    const pagefind = await import("/_pagefind/pagefind.js");
+    const search = await pagefind.search(term);
+    
+    // search.results is an array of result objects
+    // You must call .data() on each result to get the actual content
+    const fiveResults = await Promise.all(search.results.slice(0, 5).map(r => r.data()));
+    
+    console.log(fiveResults);
+}
 
   const searchTrigger = document.querySelector(".nav-link-search");
   const modal = document.getElementById("searchmodal");
