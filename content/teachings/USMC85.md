@@ -9,7 +9,7 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-date: 2025-09-26T12:55:15+02:00
+date: 2024-09-26T12:55:15+02:00
 description: "The major aim of this course is to improve students' scientific or technical presentation skills, focusing on the roles and the effects of involved media in presenting a project (e.g., a poster, an artefact, a video...)."
 frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 code: USMC85

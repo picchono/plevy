@@ -64,7 +64,7 @@
                     {{ else }}
                         {{ dateFormat "2006" .context.Date }} · 
                         {{if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
-                        {{ else }}{{ time.Now | time.Format "2006" }}{{ end }}
+                        {{ else }}...{{ end }}
                     {{ end }}
                 </div>
             </div>
