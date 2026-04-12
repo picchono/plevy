@@ -392,6 +392,11 @@ a.logohome svg {
   @apply pl-newpad md:pl-0 absolute md:fixed w-full md:w-16 h-12 md:h-screen flex flex-row md:flex-col items-center md:justify-center;
 }
 
+@media screen and (max-width: 768px) {
+  #menu .menuSetting{
+    padding-left: calc(4 * var(--pageBorder-width)) !important;
+  }
+}
 .pagetheme {
   @apply flex flex-col justify-center items-start;
 }
