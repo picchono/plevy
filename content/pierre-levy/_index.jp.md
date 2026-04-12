@@ -5,7 +5,6 @@ date: 2025-01-28T00:55:28+02:00
 draft: false
 layout: member
 searchFilter: about
-pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "フランス・国立工芸院教授"
 shortdescription: "フランス・国立工芸院教授, デザインチェア 「ジャン・プルーヴェ」"

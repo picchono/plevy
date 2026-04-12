@@ -5,7 +5,6 @@ date: 2025-01-28T00:55:28+02:00
 draft: false
 layout: member
 searchFilter: about
-pict: "PLevy_front22.webp"
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "Professor at the National Conservatory of Arts & Crafts, holder of the Chair of design Jean Prouvé, and member of the Dicen-IDF laboratory"
 shortdescription: "Professor of Cnam, Chair of Design Jean Prouvé"

@@ -7,7 +7,7 @@
 <body id="{{ .Params.bodyclass }}">
   <main data-pagefind-body>
     {{ partial "settings.html" . }}
-    {{if (and (not .IsHome) (ne .Params.layout "intro")) }}{{ partial "medium.html" . }}{{ end }}
+    {{if (and (not .IsHome) (ne .Params.layout "test")) }}{{ partial "medium.html" . }}{{ end }}
     {{- block "main" . }}{{- end }}
   </main>
   <div class="bordTop"></div>

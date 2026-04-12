@@ -51,13 +51,16 @@ textarea::placeholder {
 *,
 html,
 body {
-  font-size: 16px;
   font-stretch: 100%;
   letter-spacing: 0.01rem;
   line-height: var(--lineHeight);
   font-display: swap;
   scroll-behavior: smooth;
   font-variant-ligatures: common-ligatures;
+}
+
+html.body {
+  font-size: 16px;
 }
 
 body {
@@ -616,6 +619,11 @@ section.site-content {
   }
 }
 
+.svgHome {
+  display: inline; 
+  margin: 0 0.5rem;
+  vertical-align: baseline;
+}
 .imgAddons {
   @apply absolute flex justify-end items-end align-bottom transition-all duration-500 ease-in-out;
     font-size: 0.8vw;
@@ -809,6 +817,25 @@ section.site-content {
 }
 
 .linkBlock .linkBox:hover .boxIsoIcon svg {
+  fill: var(--color-primary-bg);
+}
+
+.linkHome {
+  @apply inline-block text-epierrot font-bold rounded-lg;
+  padding: 0 calc(0.25 * var(--pageBorder-width));
+  vertical-align: baseline;
+}
+
+.linkHome:hover {
+  @apply text-primary-bg bg-epierrot;
+}
+
+.linkHome svg {
+  @apply transition-all duration-500 ease-in-out;
+  fill: var(--color-primary-text);
+}
+
+.linkHome:hover svg {
   fill: var(--color-primary-bg);
 }
 
