@@ -1,8 +1,19 @@
 ---
-title: "intro"
+member: PLevy
+title: "Pierre Lévy"
+slug: "intro"
+bodyclass: menu
 date: 2020-10-24T00:55:28+02:00
 draft: false
-active: false
+layout: intro
+searchFilter: about
+pict: "PLevy_front22.webp"
+tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
+description: "Pierre Lévy est professeur du Conservatoire national des Arts et Métiers, titulaire de la Chaire design Jean Prouvé, et membre du laboratoire Dicen-IDF."
+frontphoto: "https://live.staticflickr.com/65535/52087507002_3726776470_o.jpg"
+frontphotomini: "https://live.staticflickr.com/65535/51393282608_d943089e8d.jpg"
 ---
 
-testing
+Pierre Lévy is a professor at the Conservatoire National des Arts et Métiers, holder of the Chair of design Jean Prouvé, and member of the Dicen-IDF laboratory (EA 7339). He holds an engineering degree in mechanical engineering (UT Compiègne, France), a Ph.D in kansei (affective) science (University of Tsukuba, Japan) and an HDR in information and communication sciences (UT Compiègne, France). He has lived for nearly 10 years in Japan (where he worked in industry and then in several Japanese universities) and 12 years in the Netherlands (at the Eindhoven University of Technology).
+
+His work focuses on the relationship between the creative moments that are the design practice and the appropriation in everyday practices. This work is based on theories related to embodiment, reflexive practices, and Japanese philosophy and thinking. Through this research, Pierre Lévy discusses the posture and societal role of design, and more generally of reflexive practices, in the service of transforming everyday life.

@@ -1,7 +1,7 @@
 ---
 member: PLevy
-title: "Chaire of design Jean Prouvé"
-slug: "cdjp"
+title: "Pierre Lévy"
+slug: "plevy"
 bodyclass: menu
 date: 2020-10-24T00:55:28+02:00
 draft: false

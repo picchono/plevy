@@ -71,7 +71,7 @@
             {{ end }}
 
         </div>
-        <div class="w-full md:w-1/3 h-full p-newpad text-sm">
+        <div class="menuBoxDesc">
             {{ if .context.Description }}{{ .context.Description }}
             {{ else if .context.Params.Reference }}{{ .context.Params.Reference | safeHTML }}
             {{ else if .context.Params.Abstract }}{{ .context.Params.Abstract | safeHTML }}{{if .Params.projectby
