@@ -22,7 +22,7 @@ order = [".webp", ".jpg$", ".gif$"]
   pattern = "^sitemap\\.xml$"
   contentType = "application/xml"
   gzip = true
-  
+
 [build]
   useResourceCacheWhen = "never"
 
