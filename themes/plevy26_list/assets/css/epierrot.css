@@ -966,7 +966,7 @@ section.site-content {
 
 @media (min-width: 768px) {
   .contentIntro {
-  padding: 0 calc(6*var(--pageBorder-width)) 0 20%;
+  padding: 0 calc(var(--pageBorder-width)) 0 20%;
   }
 }
 
