@@ -1,4 +1,4 @@
-<div class="mediumSection">
+<div class="mediumSection">{{ if ne .Params.layout "test" }}
     <div class="postTitle">
         <div class="text-left items-start">
             <h1>{{ .Params.title |safeHTML }}{{if eq .Params.status "ended"}}
@@ -291,4 +291,4 @@
         </div>
     </div>
     {{ end }}
-</div>
+{{ end }}</div>

@@ -929,7 +929,7 @@ section.site-content {
 }
 
 .linkBlock .linkBox {
-  @apply text-epierrot rounded-xl flex flex-row justify-start items-center;
+  @apply text-sm text-epierrot rounded-xl flex flex-row justify-start items-center;
   padding: calc(0.5 * var(--pageBorder-width));
   margin-bottom: calc(0.5 * var(--pageBorder-width));
 }
@@ -953,21 +953,15 @@ section.site-content {
   fill: var(--color-primary-bg);
 }
 
+.contentIntro {
+  @apply max-w-4xl;
+  padding: 0 calc(var(--pageBorder-width));
+}
+
 .linkHome {
   @apply text-epierrot rounded flex-row justify-center items-center transition-all duration-500 ease-in-out h-6;
   vertical-align: baseline;
   display: inline-flex;
-}
-
-.contentIntro {
-  @apply max-w-6xl;
-  padding: 0 calc(var(--pageBorder-width));
-}
-
-@media (min-width: 768px) {
-  .contentIntro {
-  padding: 0 calc(var(--pageBorder-width)) 0 20%;
-  }
 }
 
 .linkHome:hover {
@@ -983,7 +977,7 @@ section.site-content {
 }
 
 .linkHome svg {
-  @apply absolute transition-all duration-500 ease-in-out opacity-0;
+  @apply absolute transition-all duration-500 ease-in-out opacity-0 px-0.5;
   fill: var(--color-primary-text);
 }
 

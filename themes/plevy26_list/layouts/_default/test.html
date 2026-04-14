@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="intro min-h-screen min-w-screen flex flex-row justify-start items-center">
+<section class="intro min-h-screen flex flex-row justify-start items-center">
     {{ $page := $.Site.GetPage "page" "testing" }}
     {{ with $page }}
     <div class="contentIntro">{{ .Content }}</div>
