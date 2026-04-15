@@ -1,4 +1,4 @@
-{{ if or (strings.HasPrefix (.Get 1) "http://") (strings.HasPrefix (.Get 1) "https://") }}
+{{- if or (strings.HasPrefix (.Get 1) "http://") (strings.HasPrefix (.Get 1) "https://") }}
     <a class="linkHome" href="{{.Get 1}}">
 {{ else }}
     {{ $page := $.Site.GetPage "page" (.Get 1) }}

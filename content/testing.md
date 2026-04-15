@@ -19,6 +19,6 @@ Ses activités d'enseignement au Cnam portent sur l'{{< link "initiation de la r
 
 Il est titulaire d’un diplôme d’ingénieur en génie mécanique de l'{{< link "Université de Technologie de Compiègne (UTC)" "https://www.utc.fr" "UTC" >}}, d’un doctorat en science du kansei (de l’affectif) de l'{{< link "Université de Tsukuba" "https://www.tsukuba.ac.jp" "Tsukuba" >}}, Japon et d’une HDR en sciences de l’information et de la communication de l'{{< link "UTC" "https://www.utc.fr" "UTC" >}}. Il a vécu pendant près de 10 ans au Japon (où il a travaillé dans l’industrie puis dans plusieurs universités japonaises) et 12 ans aux Pays-Bas (à l'{{< link "Université de Technologie d'Eindhoven (TU/e)" "https://www.tue.nl/en/" "TUe">}}).
 
-Il est de plus chercheur associé au {{< link "Département de Design Industriel" "https://www.tue.nl/en/our-university/departments/industrial-design" "TUe" >}} de {{< link "TU/e" "https://www.tue.nl/en/" "TUe">}}.
+Il est de plus chercheur associé au {{< link "Département de Design Industriel de TU/e" "https://www.tue.nl/en/our-university/departments/industrial-design" "TUe" >}}.
 
-Pour en savoir plus, {{< link "tout est là" "https://plevy.fr" "PlevyIcon">}}
+Pour en savoir plus, {{< link "tout est là" "https://plevy.fr" "ici">}}
