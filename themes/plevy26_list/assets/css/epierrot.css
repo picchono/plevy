@@ -389,6 +389,12 @@ a.logohome svg {
   fill: var(--color-primary-text);
 }
 
+.bgImg {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
+}
+
 /* settings */
 /* light dark theme */
 

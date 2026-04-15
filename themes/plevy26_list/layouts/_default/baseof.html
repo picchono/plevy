@@ -4,7 +4,7 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{- partial "head.html" . -}}
 
-<body id="{{ .Params.bodyclass }}">
+<body id="{{ .Params.bodyclass }}" {{ if .Params.bgpict}}class="bgImg" style="background-image:url({{- .Site.BaseURL -}}{{- .Params.bgpict -}})"{{ end }}>
   <main data-pagefind-body>
     {{ partial "settings.html" . }}
     {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
