@@ -911,7 +911,7 @@ section.site-content {
   @apply text-epierrot bg-transparent;
 }
 
-pa .mobileModal {
+.mobileModal {
   display: none;
   position: fixed;
   z-index: 1000;
