@@ -5,7 +5,7 @@ bodyclass: menu
 date: 2020-10-24T00:55:28+02:00
 draft: false
 layout: test
-bgpict: "Pierre_Levy.png"
+bgpict: "Pierre_Levya.png"
 searchFilter: about
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "Pierre Lévy est professeur du Conservatoire national des Arts et Métiers, titulaire de la Chaire design Jean Prouvé, et membre du laboratoire Dicen-IDF."

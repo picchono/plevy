@@ -3,7 +3,7 @@ license = 'MIT'
 licenselink = 'https://github.com/picchono/CDJP'
 description = 'Theme for the CDJP website'
 
-version = "1.2"
+version = "2.0"
 
 # Taxonomy terms
 tags = ['blog', 'tailwindcss', 'responsive', 'multilingual', 'dark', 'personal']

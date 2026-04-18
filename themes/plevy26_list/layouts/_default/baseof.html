@@ -5,13 +5,15 @@
 {{- partial "head.html" . -}}
 
 <body id="{{ .Params.bodyclass }}" {{ if .Params.bgpict}}class="bgImg" style="background-image:url({{- .Site.BaseURL -}}{{- .Params.bgpict -}})"{{ end }}>
+  {{ partial "settings.html" . }}
   <main data-pagefind-body>
-    {{ partial "settings.html" . }}
     {{if not .IsHome }}{{ partial "medium.html" . }}{{ end }}
     {{- block "main" . }}{{- end }}
   </main>
-  <div class="bordTop"></div>
-  <div class="bordBottom"></div>
+  <div class="bordTop">&nbsp;</div>
+  <div class="bordBottom">&nbsp;</div>
+  <div class="bordRight">&nbsp;</div>
+  <div class="bordLeft">&nbsp;</div>
 </body>
 
 </html>
