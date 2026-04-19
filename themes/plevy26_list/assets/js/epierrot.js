@@ -217,9 +217,9 @@ function MenuToggle() {
         //scroll au premier bloc de cette section
         let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
         if (vw > 768) {
-          document.querySelector('section.site-content').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth' });
+          document.querySelector('section.site-content').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 48, behavior: 'smooth' });
         } else {
-          window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 28, behavior: 'smooth' });
+          window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 48, behavior: 'smooth' });
         }
       };
     });
@@ -231,14 +231,14 @@ function MenuToggle() {
       mobileModal.style.display = "none";
       let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
       if (vw > 768) {
-        document.querySelector('section.site-content').scroll({ top: scrollTarg.offsetTop - 28, behavior: 'smooth' });
+        document.querySelector('section.site-content').scroll({ top: scrollTarg.offsetTop - 48, behavior: 'smooth' });
         scrollTarg.classList.add('foc');
         console.log(scrollTarg);
         setTimeout(function () {
           scrollTarg.classList.remove('foc');
         }, 1500);
       } else {
-        window.scroll({ top: scrollTarg.offsetTop - 28, behavior: 'smooth' });
+        window.scroll({ top: scrollTarg.offsetTop - 48, behavior: 'smooth' });
       }
     });
   });

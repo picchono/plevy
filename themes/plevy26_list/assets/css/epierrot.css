@@ -277,11 +277,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
   .bordTop::before,
   .bordTop::after {
     top: calc(2 * var(--pageBorder-width));
-    left: var(--pageBorder-width);
   }
 }
 
@@ -294,9 +292,17 @@ body {
 
 .bordLeft::before,
 .bordLeft::after {
-  top: var(--pageBorder-width);
+  top: calc(4 * var(--pageBorder-width));
   right: var(--pageBorder-width);
   transform: rotate(90deg);
+}
+
+
+@media screen and (min-width: 768px) {
+  .bordLeft::before,
+  .bordLeft::after {
+    top: calc(2 * var(--pageBorder-width));
+  }
 }
 
 .bordRight::before,
@@ -487,7 +493,7 @@ a.logohome svg {
   @apply fixed flex flex-row justify-start items-center z-30;
   padding-left: calc(2 * var(--pageBorder-width)) !important;
   height: calc(4 * var(--pageBorder-width)) !important;
-  width: 66% !important;
+  width: 100% !important;
   background-color: var(--color-pageborder-bg);
   border-radius: 0 0 calc(0.5 * var(--pageBorder-width)) 0;
 }
@@ -495,7 +501,7 @@ a.logohome svg {
 #menu .menuSetting {
   padding-left: calc(2 * var(--pageBorder-width) + 2rem) !important;
 }
-
+/*
 .menuSetting::before {
   @apply transition-all duration-700 ease-in-out;
   position: fixed;
@@ -520,13 +526,13 @@ a.logohome svg {
   top: calc(1 * var(--pageBorder-width));
   left: 66%;
 }
-
+*/
 
 @media screen and (min-width: 768px) {
   .menuSetting {
     padding-left: calc(1.5 * var(--pageBorder-width)) !important;
     height: calc(2 * var(--pageBorder-width)) !important;
-    width: 33% !important;
+    /*width: 33% !important;*/
   }
 
   .menuSetting::before,
@@ -739,7 +745,7 @@ a.logohome svg {
 
 @media (min-width: 768px) {
   .menuBox {
-    padding: var(--pageBorder-width);
+    padding: var(--pageBorder-width) 0;
   }
 }
 
@@ -858,7 +864,8 @@ a.linkBox:hover .duotone::after {
 section.home {
   @apply w-full md:w-2/5 flex flex-col md:flex-row items-center justify-start;
   height: 100vh;
-  padding: var(--pageBorder-width) calc(2 * var(--pageBorder-width));
+  padding: calc(2 * var(--pageBorder-width));
+  padding-bottom: var(--pageBorder-width);
 }
 
 section.home.open {
@@ -873,14 +880,14 @@ section.site-content {
 }
 
 @media (min-width: 768px) {
-
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
   }
 
   section.site-content {
-    padding: var(--pageBorder-width) calc(2 * var(--pageBorder-width));
+    padding: calc(2 * var(--pageBorder-width));
+    padding-bottom: var(--pageBorder-width);
     margin-top: 0;
   }
 }
