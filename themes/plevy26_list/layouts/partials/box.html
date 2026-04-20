@@ -57,8 +57,8 @@
                     .context.Params.institution.name }}{{ end }}{{ end }}
                 </div>
                 {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
-                <div class="pt-4">{{ $sectio | humanize }}</div>
-                <div>
+                <div class="pt-4 text-xs">{{ $sectio | humanize }}</div>
+                <div class="text-xs">
                     {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
                     {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" )  ( eq .context.Section "presentations" )}}{{ dateFormat "2006" .context.Date }}
                     {{ else }}
