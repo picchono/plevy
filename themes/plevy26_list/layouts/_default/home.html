@@ -67,14 +67,12 @@
     {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 2) -}}
     {{ end }}
     {{ $s := 1 }}
-    {{ range .Sections }}{{ if or (ne .Slug "pierre-levy")  (ne .Slug "chaire")}}
+    {{ range .Sections }}{{ if ne .Slug "pierre-levy" }}
     {{ $p := 1 }}
-    {{ range .Pages }}
-    {{ if ne .Params.notListed true }}
+    {{ range .Pages }}{{ if ne .Params.notListed true }}
     {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
     {{ $p = add $p 1 }}
-    {{ end }}
-    {{ end }}
+    {{ end }}{{ end }}
     {{ $s = add $s 1 }}
     {{ end }}{{ end }}
 </section>
