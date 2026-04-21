@@ -8,6 +8,11 @@
                 data-targslug="{{ .Slug }}">
                 <span>00|01 ·</span> {{ .Title }}
             </div>{{ end }}
+            {{ $page := $.Site.GetPage "page" "chaire/" }}
+            {{ with $page }}<div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}'
+                data-targslug="{{ .Slug }}">
+                <span>00|02 ·</span> {{ .Title }}
+            </div>{{ end }}
         </div>
         {{ $i := 1 }}
         {{ range .Sections }}{{ if ne .Slug "pierre-levy" }}
@@ -58,8 +63,11 @@
     {{ $page := $.Site.GetPage "page" "pierre-levy/" }}
     {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 1) -}}
     {{ end }}
+    {{ $page := $.Site.GetPage "page" "chaire/" }}
+    {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 2) -}}
+    {{ end }}
     {{ $s := 1 }}
-    {{ range .Sections }}{{ if ne .Slug "pierre-levy" }}
+    {{ range .Sections }}{{ if or (ne .Slug "pierre-levy")  (ne .Slug "chaire")}}
     {{ $p := 1 }}
     {{ range .Pages }}
     {{ if ne .Params.notListed true }}

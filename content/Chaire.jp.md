@@ -14,11 +14,24 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
+collaboration:
+    partner1:
+        logo: cnam
+        short: Cnam
+        name: "Conservatoire national des Arts et Métiers"
+        web: "https://www.cnam.fr/"
+        heig: 1
+    partner2:
+        logo: jprouve
+        short: Chaire design
+        name: "Chaire design Jean Prouvé"
+        web: "#"
+        heig: 2
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'eindhoven', 'transforming_practices']
 notEverything: true
 notListed: true
 noPagesearch: true
-description: "デザインチェア 「ジャン・プルーヴェ」は、社会と文化におけるデザインの実践と研究の役割の発展に捧げられた温かい場所です。日常の物質性と省察的な実践を通じて美を表現することを視野に入れています。"
+description: "デザインチェア 「ジャン・プルーヴェ」は、社会と文化におけるデザインの実践と研究の役割の発展に捧げられた温かい場所です。"
 frontphoto: "1eDSZNUKEs_FaUFK7vFKpRuTD-EY-v3Ha"
 video:
     video1:

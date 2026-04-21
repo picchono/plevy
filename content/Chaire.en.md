@@ -14,11 +14,24 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
+collaboration:
+    partner1:
+        logo: cnam
+        short: Cnam
+        name: "Conservatoire national des Arts et Métiers"
+        web: "https://www.cnam.fr/"
+        heig: 1
+    partner2:
+        logo: jprouve
+        short: Chaire design
+        name: "Chaire design Jean Prouvé"
+        web: "#"
+        heig: 2
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'eindhoven', 'pratiques_transformatives']
 notEverything: true
 notListed: true
 noPagesearch: true
-description: "The Jean Prouvé Chair in Design is a welcoming space dedicated to developing the role of design practice and research in society and culture. Its focus is on expressing beauty through everyday materials and reflective practices."
+description: "The Jean Prouvé Chair in Design is a welcoming space dedicated to developing the role of design practice and research in society and culture. "
 frontphoto: "1eDSZNUKEs_FaUFK7vFKpRuTD-EY-v3Ha"
 video:
     video1:
