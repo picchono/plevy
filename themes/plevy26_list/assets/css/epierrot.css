@@ -324,15 +324,6 @@ html {
   --color-borders: transparent;
   --color-borders: var(--color-primary-text);
 
-  --pagefind-ui-scale: 1 !important;
-  --pagefind-ui-text: var(--color-primary-text) !important;
-  --pagefind-ui-background: var(--color-primary-bg) !important;
-  --pagefind-ui-border-width: 0 !important;
-  --pagefind-ui-border-radius: 1rem !important;
-  --pagefind-ui-image-border-radius: 1rem !important;
-  --pagefind-ui-image-box-ratio: 3 / 2 !important;
-  --pagefind-ui-font: 'Mulish', 'Noto Sans JP', 'Hiragino Maru Pro', 'sans-serif';
-
   --pageBorder-width: 1.5rem;
   --entete-height: 10vh;
   --entete-height: 4rem;
@@ -358,10 +349,6 @@ html.light {
   /*b21556*/
   --blend-mode-before: color;
   --blend-mode-after: screen;
-
-  --pagefind-ui-primary: var(--color-epierrot) !important;
-  --pagefind-ui-border: #eeeeee !important;
-  --pagefind-ui-tag: #eeeeee !important;
 }
 
 html.dark {
@@ -376,10 +363,6 @@ html.dark {
   --color-epierrot: #e34334;
   --blend-mode-before: saturation;
   --blend-mode-after: hard-light;
-
-  --pagefind-ui-primary: #eeeeee !important;
-  --pagefind-ui-border: #152028 !important;
-  --pagefind-ui-tag: #152028 !important;
 }
 
 p {
@@ -680,60 +663,6 @@ a.logohome svg {
   top: 5px;
   right: 0;
   cursor: pointer;
-}
-
-/* Pagefind search */
-.pagefind-ui__result {
-  padding: calc(0.5 * var(--pageBorder-width)) !important;
-}
-
-.pagefind-ui__results-area,
-.pagefind-ui__filter-panel {
-  overflow-y: auto;
-  height: auto;
-}
-
-.pagefind-ui__result-link {
-  @apply transition-all duration-700 ease-in-out;
-  text-decoration: none !important;
-  border: 0;
-}
-
-.pagefind-ui__result-link:hover {
-  color: var(--color-epierrot) !important;
-  background-color: transparent !important;
-  text-decoration: none !important;
-}
-
-.pagefind-ui__drawer {
-  overflow-y: auto;
-  height: calc(100vh - 2.5rem - (84px * var(--pagefind-ui-scale)) - 2 * calc(0.5 * var(--pageBorder-width)));
-}
-
-@media screen and (min-width: 768px) {
-
-  .pagefind-ui,
-  .pagefind-ui__results-area,
-  .pagefind-ui__filter-panel {
-    height: calc(100vh - 2.5rem - (84px * var(--pagefind-ui-scale)) - 4 * calc(0.5 * var(--pageBorder-width)));
-  }
-}
-
-.pagefind-ui__search-clear {
-  right: calc(3rem * var(--pagefind-ui-scale)) !important;
-  font-weight: 500;
-  background-color: transparent !important;
-}
-
-.pagefind-ui__search-input {
-  border-bottom: 1px solid var(--color-secondary-text) !important;
-  background-color: transparent !important;
-  border-radius: 0 !important;
-}
-
-.pagefind-ui__result-excerpt {
-  font-size: 0.9rem !important;
-  line-height: 1rem !important;
 }
 
 /* menuBox */

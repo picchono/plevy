@@ -258,45 +258,6 @@ function indexHome() {
   });
 }
 
-
-// Search
-window.addEventListener('load', function (event) {
-  async function searchPage(term) {
-    const pagefind = await import("/_pagefind/pagefind.js");
-    const search = await pagefind.search(term);
-    
-    // search.results is an array of result objects
-    // You must call .data() on each result to get the actual content
-    const fiveResults = await Promise.all(search.results.slice(0, 5).map(r => r.data()));
-    
-    console.log(fiveResults);
-}
-
-  const searchTrigger = document.querySelector(".nav-link-search");
-  const modal = document.getElementById("searchmodal");
-  searchTrigger.addEventListener("click", (ev) => {
-    ev.preventDefault();
-    // Show modal using Micromodal or similar
-    MicroModal.show("searchmodal", {
-      onClose: () => {
-        // Optional: blur other elements
-      },
-      disableFocus: false,
-      disableScroll: true,
-      showEmptyFilters: false
-    });
-    // Focus the search input
-    document.querySelector(".pagefind-ui__search-input").focus();
-  });
-
-  externalLinks();
-  MicroModal.init({});
-  if (document.getElementById("toc")) tableContent();
-  if (document.querySelector("pre")) AddCopyButtons();
-  if (document.querySelector(".nav_item")) MenuToggle();
-  if (document.getElementById("indexHome")) indexHome();
-});
-
 /* Front menu */
 document.addEventListener('DOMContentLoaded', function () {
 
