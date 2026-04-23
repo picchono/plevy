@@ -544,7 +544,7 @@ a.logohome svg {
 
 @media screen and (min-width: 768px) {
   .menuSetting {
-    padding-left: calc(1.5 * var(--pageBorder-width)) !important;
+    padding-left: calc(2 * var(--pageBorder-width)) !important;
     height: calc(2 * var(--pageBorder-width)) !important;
     /*width: 33% !important;*/
   }
@@ -556,7 +556,7 @@ a.logohome svg {
   }
 
   #menu .menuSetting {
-    padding-left: calc(1.5 * var(--pageBorder-width)) !important;
+    padding-left: calc(2 * var(--pageBorder-width)) !important;
   }
 }
 
@@ -967,7 +967,7 @@ section.site-content {
 
 @media (min-width: 768px) {
   .mediumSection {
-    padding: calc(4 * var(--pageBorder-width));
+    padding: calc(4 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width));
     margin-top: 0;
   }
 }
