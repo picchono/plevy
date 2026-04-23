@@ -197,6 +197,7 @@ function toggleTheme() {
 function MenuToggle() {
   document.querySelectorAll("h2[class^='section-']").forEach(function (el) {
     el.addEventListener("click", function () {
+      console.log("MenuToggle");
       secti = el.className;
       el.classList.contains('open') ? targClosed = false : targClosed = true;
       //close everything
