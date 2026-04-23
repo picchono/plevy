@@ -74,4 +74,10 @@
 
 {{ if .Params.citation }}{{ partial "citationmeta.html" . }}{{ end }}
 
+<link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-component-ui.js" type="module"></script>
+
+<pagefind-modal-trigger></pagefind-modal-trigger>
+<pagefind-modal></pagefind-modal>
+
 {{ end }}

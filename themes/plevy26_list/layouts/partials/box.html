@@ -78,7 +78,7 @@
             }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}{{ end }}
         </div>
         <div class="w-full md:w-1/3 h-full p-newpad">
-            {{ if .context.Params.frontphoto }}<div class="w-full h-full boxIsoImg duotone rounded-lg" style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');"></div>
+            {{ if .context.Params.frontphoto }}<div class="w-full h-full boxIsoImg duotone rounded" style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');"></div>
             {{ else }}<div class="w-full h-full boxIsoImg"></div>{{ end }}
         </div>
     </a>
