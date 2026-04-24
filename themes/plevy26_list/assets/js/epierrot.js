@@ -334,4 +334,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
   });
 
+  MenuToggle();
 });
