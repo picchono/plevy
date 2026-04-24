@@ -591,6 +591,7 @@ a.logohome svg {
 }
 
 pagefind-modal-trigger {
+  @apply transition-all duration-700 ease-in-out;
   position: fixed !important;
   z-index: 100 !important;
   top: calc(0.2 * var(--pageBorder-width)) !important;
