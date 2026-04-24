@@ -500,68 +500,20 @@ a.logohome svg {
 }
 
 /* settings */
-/* light dark theme */
 
 .menuSetting {
-  @apply fixed flex flex-row justify-between items-center z-30;
-  padding: 0 calc(9 * var(--pageBorder-width)) 0 calc(2 * var(--pageBorder-width)) !important;
+  @apply fixed flex flex-row justify-end items-center z-30;
+  padding: 0 calc(var(--pageBorder-width) + 186px)0 calc(2 * var(--pageBorder-width))!important;
   height: calc(4 * var(--pageBorder-width)) !important;
   width: 100% !important;
   background-color: var(--color-pageborder-bg);
   border-radius: 0 0 calc(0.5 * var(--pageBorder-width)) 0;
 }
 
-#menu .menuSetting {
-  padding-left: calc(2 * var(--pageBorder-width) + 2rem) !important;
-}
-
-/*
-.menuSetting::before {
-  @apply transition-all duration-700 ease-in-out;
-  position: fixed;
-  content: " ";
-  width: var(--pageBorder-width);
-  height: var(--pageBorder-width);
-  background-color: var(--color-pageborder-bg);
-}
-
-.menuSetting::after {
-  @apply transition-all duration-700 ease-in-out;
-  position: fixed;
-  content: " ";
-  width: var(--pageBorder-width);
-  height: var(--pageBorder-width);
-  background-color: var(--color-primary-bg);
-  border-radius: calc(0.5 * var(--pageBorder-width)) 0px 0px 0px;
-}
-
-.menuSetting::before,
-.menuSetting::after {
-  top: calc(1 * var(--pageBorder-width));
-  left: 66%;
-}
-*/
-
 @media screen and (min-width: 768px) {
   .menuSetting {
-    padding-left: calc(2 * var(--pageBorder-width)) !important;
     height: calc(2 * var(--pageBorder-width)) !important;
-    /*width: 33% !important;*/
   }
-
-  .menuSetting::before,
-  .menuSetting::after {
-    top: calc(1 * var(--pageBorder-width));
-    left: 33%;
-  }
-
-  #menu .menuSetting {
-    padding-left: calc(2 * var(--pageBorder-width)) !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #menu .menuSetting {}
 }
 
 .pagetheme {
@@ -603,7 +555,7 @@ a.logohome svg {
 }
 
 #settingOptions>div {
-  @apply pr-newpad;
+  @apply pr-4;
 }
 
 .introChair {

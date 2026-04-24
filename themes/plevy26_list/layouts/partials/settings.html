@@ -1,14 +1,5 @@
 <div class="menuSetting" data-pagefind-ignore>
-        {{ if .IsTranslated }}
-        <div id="languageMode">
-                <span>{{ .Language.LanguageName }}</span>
-                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
-                        rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu">{{
-                        .Language.LanguageName }}</a>
-                {{ end }}
-        </div>
-        {{ end }}
-                <div id="settingOptions">
+        <div id="settingOptions">
                 {{ if not .IsHome }}<a class="block logohome" href='{{ absURL "" }}'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square"
                                 viewBox="0 0 16 16">
@@ -37,4 +28,14 @@
                         <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
                 </div>
         </div>
+        {{ if .IsTranslated }}
+        <div id="languageMode">
+                <span>{{ .Language.LanguageName }}</span>
+                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
+                        rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu">{{
+                        .Language.LanguageName }}</a>
+                {{ end }}
+        </div>
+        {{ end }}
+                
 </div>
