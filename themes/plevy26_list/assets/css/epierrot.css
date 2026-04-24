@@ -207,7 +207,7 @@ html.body {
 }
 
 body {
-  @apply relative bg-primary-bg text-primary-text min-h-screen p-0;
+  @apply relative bg-primary-bg text-primary-text min-h-screen p-0 transition-colors duration-700 ease-in-out;;
 }
 
 .bordTop,
@@ -395,6 +395,7 @@ html.dark {
   --pf-error-text-secondary: var(--color-epierrot);
 }
 
+
 p {
   @apply mb-4;
 }
@@ -502,12 +503,11 @@ a.logohome svg {
 /* settings */
 
 .menuSetting {
-  @apply fixed flex flex-row justify-end items-center z-30;
+  @apply fixed flex flex-row justify-end items-center z-30 transition-colors duration-700 ease-in-out;
   padding: 0 calc(var(--pageBorder-width) + 186px)0 calc(2 * var(--pageBorder-width))!important;
   height: calc(4 * var(--pageBorder-width)) !important;
   width: 100% !important;
   background-color: var(--color-pageborder-bg);
-  border-radius: 0 0 calc(0.5 * var(--pageBorder-width)) 0;
 }
 
 @media screen and (min-width: 768px) {
