@@ -179,7 +179,8 @@
 
   /* Sizing */
   --pf-input-height: 36px;
-  --pf-input-font-size: 16px; /* Keep at 16px+ to prevent iOS auto-zoom on focus */
+  --pf-input-font-size: 16px;
+  /* Keep at 16px+ to prevent iOS auto-zoom on focus */
   --pf-summary-font-size: 12px;
   --pf-result-title-font-size: 14px;
   --pf-result-excerpt-font-size: 13px;
@@ -188,7 +189,8 @@
   --pf-results-display: flex;
   --pf-results-flex-direction: column;
   --pf-results-flex-wrap: nowrap;
-  --pf-results-columns: none; /* grid-template-columns value, used when display is grid */
+  --pf-results-columns: none;
+  /* grid-template-columns value, used when display is grid */
   --pf-results-gap: 8px;
 
   --pf-border-radius: calc(0.5 * var(--pageBorder-width));
@@ -239,12 +241,6 @@
   background: var(--color-epierrot);
 }
 
-*,
-::before,
-::after {
-  border-color: transparent;
-}
-
 input::-moz-placeholder,
 textarea::-moz-placeholder,
 input::placeholder,
@@ -270,7 +266,8 @@ html.body {
 }
 
 body {
-  @apply relative bg-primary-bg text-primary-text min-h-screen p-0 transition-colors duration-700 ease-in-out;;
+  @apply relative bg-primary-bg text-primary-text min-h-screen p-0 transition-colors duration-700 ease-in-out;
+  ;
 }
 
 .bordTop,
@@ -321,8 +318,8 @@ body {
   @apply transition-all duration-700 ease-in-out;
   position: fixed;
   content: " ";
-  width: calc( 0.5 * var(--pageBorder-width));
-  height: calc( 0.5 * var(--pageBorder-width));
+  width: calc(0.5 * var(--pageBorder-width));
+  height: calc(0.5 * var(--pageBorder-width));
   background-color: var(--color-pageborder-bg);
 }
 
@@ -333,8 +330,8 @@ body {
   @apply transition-all duration-700 ease-in-out;
   position: fixed;
   content: " ";
-  width: calc( 0.5 * var(--pageBorder-width));
-  height: calc( 0.5 * var(--pageBorder-width));
+  width: calc(0.5 * var(--pageBorder-width));
+  height: calc(0.5 * var(--pageBorder-width));
   background-color: var(--color-primary-bg);
   border-radius: calc(0.25 * var(--pageBorder-width)) 0px 0px 0px;
 }
@@ -1227,7 +1224,10 @@ ul.toc__sublist {
 @media print {
   @page {
     margin: 1.2cm 1.2cm 1.2cm 3cm;
-    font-size: 11pt;
+    font-size: 10pt;
+    @left-bottom {
+      content: counter(page) '/' counter(pages);
+    }
   }
 
   :root {
@@ -1238,13 +1238,17 @@ ul.toc__sublist {
   html,
   body,
   main {
-    @apply bg-white text-black text-base border-pageborder-bg;
-    font-size: 11pt;
+    @apply bg-white text-black text-base;
+    font-size: 10pt;
     line-height: 1.4rem;
     margin: 0;
     float: none;
     font-variant-ligatures: common-ligatures;
     background-color: #fff !important;
+  }
+
+  a, a:visited {
+    color: black !important;
   }
 
   html.light,
@@ -1257,8 +1261,7 @@ ul.toc__sublist {
     --color-primary-text: black;
     --color-secondary-text: black;
     --color-epierrot: #e34334;
-    /* 006284 116A7B 344672 */
-    --color-borders: black;
+    --color-borders: #e34334;
   }
 
   a[href^="http://"].pdf::after,
@@ -1266,85 +1269,23 @@ ul.toc__sublist {
     content: " [" attr(href) "]";
   }
 
-  b i {
-    @apply font-bold italic;
-  }
-
-  main,
-  .frame {
-    @apply border-none py-0 my-0;
-  }
-
-  div.level1,
-  p {
-    margin-bottom: 0.5rem;
-  }
-
-  div.level1,
-  p,
-  i,
-  li,
-  h1 {
-    page-break-before: auto;
-    page-break-inside: avoid;
-    text-overflow: ellipsis;
-    float: none;
-  }
-
-  a,
-  a:hover,
-  a:active,
-  a:visited,
-  .comment {
-    @apply border-0 text-black;
-    text-decoration: none !important;
-    font-weight: inherit;
-  }
-
-  h1 {
-    @apply text-4xl mb-20 mt-0;
-  }
-
   h2 {
-    @apply text-lg pt-2;
+    @apply pt-6;
   }
 
-  /* fixing base.css for print */
-  .revers {
-    @apply bg-white text-black pb-1 pt-0.5 mr-2 rounded-sm md:rounded transition-colors duration-700 ease-in-out inline;
-    box-shadow: none;
-    box-decoration-break: clone;
-  }
-
-  .revers::after {
-    content: " |";
-  }
-
-  .filterOption.revers {
-    @apply my-1 mr-8 font-bold pt-1;
-    box-shadow: none;
-  }
-
-  .filterOption.revers:hover {
-    @apply text-black bg-white;
-  }
 
   .backButton,
-  #languageMode {
-    @apply invisible h-0 w-0 p-0 m-0;
-  }
-
-  .videoFrame {
-    @apply invisible h-0 w-0 p-0 m-0;
-  }
-
-  .videoLink {
-    @apply visible h-auto w-auto;
-  }
-
+  #languageMode,
+  .videoFrame,
   #search,
   #footer,
-  #CDJPlogo {
-    @apply invisible h-0 w-0 p-0 m-0;
+  #CDJPlogo,
+  pagefind-modal-trigger {
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
+
 }

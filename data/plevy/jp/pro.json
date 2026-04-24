@@ -16,7 +16,7 @@
                     "start": "2021",
                     "end": "none",
                     "title": "Member of the <a href='https://innovation.cnam.fr' target='_blank' rel='noreferrer' title='Équipe Pédagogique Nationale EPN16 - Innovation'>EPN16 - Innovation</a>",
-                    "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés..",
+                    "comment": "L'Équipe Pédagogique Nationale Innovation (EPN16) du CNAM propose des formations liées au management, à l'innovation, au design et à la création, à la prospective, aux techniques et sociétés.",
                     "main": true
                 },
                 "dicenidf": {
@@ -30,7 +30,7 @@
                 "CF22": {
                     "order": 3,
                     "start": "2022",
-                    "end": "none",
+                    "end": "2026",
                     "title": "Elected member of the Education Council (conseil des formations)",
                     "main": false
                 },
