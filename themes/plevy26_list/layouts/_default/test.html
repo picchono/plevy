@@ -1,8 +1,13 @@
 {{ define "main" }}
-<section class="intro min-h-screen flex flex-row justify-start items-center">
-    {{ $page := $.Site.GetPage "page" "testing" }}
-    {{ with $page }}
-    <div class="contentIntro">{{ .Content }}</div>
-    {{ end }}
-</section>
+
+<div class="mainBlock">
+    <div class="mainBlockIn">
+        <div class="intro">
+            {{ $page := $.Site.GetPage "page" "testing" }}
+            {{ with $page }}
+            <div class="contentIntro" id="content">{{ .Content }}</div>
+            {{ end }}
+        </div>
+    </div>
+</div>
 {{ end }}
