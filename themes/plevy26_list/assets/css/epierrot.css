@@ -772,14 +772,10 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
-  @apply w-full md:w-2/5 flex flex-col md:flex-row items-center justify-start;
+  @apply w-full md:w-2/5 flex flex-col md:flex-row items-start justify-start;
   height: 100vh;
   padding: calc(2 * var(--pageBorder-width));
   padding-bottom: var(--pageBorder-width);
-}
-
-section.home.open {
-  align-items: flex-start !important;
 }
 
 section.site-content {
@@ -917,8 +913,8 @@ section.site-content {
 
 #menu h2[class^='section-'] {
   font-variant-caps: small-caps;
-  padding: min(1.5vw, 3vh) 0;
-  font-size: min(2vw, 4vh);
+  padding: calc((100vh - (3 * var(--pageBorder-width)))/32) 0;
+  font-size: calc((100vh - (3 * var(--pageBorder-width)))/32);
 }
 
 @media (max-width: 768px) {
@@ -937,7 +933,7 @@ section.site-content {
 }
 
 #menu div.nav_item.open {
-  @apply mb-4;
+  @apply ml-4;
 }
 
 #menu h2[class^="section-"] {
@@ -958,7 +954,7 @@ section.site-content {
 }
 
 #menu div.nav_item.open div.pageTitle {
-  @apply max-h-24 pt-2 text-primary-text;
+  @apply max-h-24 p-2 pr-0 text-primary-text;
 }
 
 #menu div.nav_item.open div.pageTitle.ended {

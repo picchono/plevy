@@ -103,8 +103,6 @@ function tableContent() {
       this.className += " current";
     });
   }
-
-  //console.log(links);
 }
 
 /* copy button in pre fields */
@@ -197,11 +195,10 @@ function toggleTheme() {
 function MenuToggle() {
   document.querySelectorAll("h2[class^='section-']").forEach(function (el) {
     el.addEventListener("click", function () {
-      console.log("MenuToggle");
       secti = el.className;
       el.classList.contains('open') ? targClosed = false : targClosed = true;
       //close everything
-      document.querySelectorAll("h2[class^='section-'], .nav_item, section.home").forEach(function (clo) {
+      document.querySelectorAll("h2[class^='section-'], .nav_item").forEach(function (clo) {
         clo.classList.remove('open');
       });
       if (targClosed) {
@@ -212,10 +209,7 @@ function MenuToggle() {
             clo.classList.add('open');
           }
         });
-        document.querySelectorAll("section.home").forEach(function (hom) {
-            hom.classList.add('open');
-        });
-        //scroll au premier bloc de cette section
+        //scroll au premier bloc de cette section à droite
         let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
         if (vw > 768) {
           document.querySelector('section.site-content').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 48, behavior: 'smooth' });
@@ -234,7 +228,6 @@ function MenuToggle() {
       if (vw > 768) {
         document.querySelector('section.site-content').scroll({ top: scrollTarg.offsetTop - 48, behavior: 'smooth' });
         scrollTarg.classList.add('foc');
-        console.log(scrollTarg);
         setTimeout(function () {
           scrollTarg.classList.remove('foc');
         }, 1500);
