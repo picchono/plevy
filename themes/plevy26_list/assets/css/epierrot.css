@@ -840,7 +840,7 @@ section.site-content {
 .mobileModal-content {
   background-color: var(--color-primary-bg);
   margin: calc(0.5 * var(--pageBorder-width));
-  padding: calc(0.5 * var(--pageBorder-width));
+  padding: calc(1.5 * var(--pageBorder-width));
   width: calc(100vw - (2 * calc(0.5 * var(--pageBorder-width))));
   border-radius: calc(0.5 * var(--pageBorder-width));
   box-shadow: 0 calc(calc(0.5 * var(--pageBorder-width)) / 3) calc(0.5 * var(--pageBorder-width)) rgba(0, 0, 0, 0.5);
