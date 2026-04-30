@@ -913,8 +913,8 @@ section.site-content {
 
 #menu h2[class^='section-'] {
   font-variant-caps: small-caps;
-  padding: calc((100vh - (3 * var(--pageBorder-width)))/32) 0;
-  font-size: calc((100vh - (3 * var(--pageBorder-width)))/32);
+  padding: calc((100vh - (3 * var(--pageBorder-width)))/48) 0;
+  font-size: calc((100vh - (3 * var(--pageBorder-width)))/48);
 }
 
 @media (max-width: 768px) {
