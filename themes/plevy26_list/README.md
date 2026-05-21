@@ -51,7 +51,7 @@ title = "Hugo Theme Tailwind Example Site"
 author = "Your Name"
 copyright = "Your Name"
 paginate = 10
-languageCode = "en"
+locale = "en"
 theme = "tailwind"
 
 [params]

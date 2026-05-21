@@ -30,10 +30,10 @@
         </div>
         {{ if .IsTranslated }}
         <div id="languageMode">
-                <span>{{ .Language.LanguageName }}</span>
-                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Language.LanguageName }}"
-                        rel="noreferrer" aria-label="Change to {{ .Language.LanguageName }}" class="langu">{{
-                        .Language.LanguageName }}</a>
+                <span>{{ .Site.Language.Label }}</span>
+                {{ range .Translations }}<a href="{{ .Permalink }}" title="{{ i18n .Site.Language.Label }}"
+                        rel="noreferrer" aria-label="Change to {{ .Site.Language.Label }}" class="langu">{{
+                        .Site.Language.Label }}</a>
                 {{ end }}
         </div>
         {{ end }}

@@ -1,5 +1,5 @@
 baseURL = "https://plevy.fr"
-languageCode = "fr-FA"
+locale = "fr-FA"
 title = "Pierre Lévy"
 theme = "plevy26_list"
 defaultContentLanguage = "fr"
@@ -24,6 +24,8 @@ order = [".webp", ".jpg$", ".gif$"]
   gzip = true
 
 [build]
+  [build.buildStats]
+    enable = true
   useResourceCacheWhen = "never"
 
 [privacy.disqus]
@@ -52,14 +54,14 @@ merge = "deep"
 
 [languages]
   [languages.fr]
-    languageName = "FR"
-    languageCode = "fr-FA"
+    label = "FR"
+    locale = "fr-FA"
     weight = 1
   [languages.en]
-    languageName = "EN"
-    languageCode = "en-GB"
+    label = "EN"
+    locale = "en-GB"
     weight = 2
   [languages.jp]
-    languageName = "JP"
-    languageCode = "jp-JA "
+    label = "JP"
+    locale = "jp-JA"
     weight = 3

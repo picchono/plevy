@@ -66,30 +66,54 @@
 
 {{ $lg_js := resources.Get "js/lg.js" | minify }}
 <script src="{{ $lg_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{{ $lg_css := resources.Get "css/lg.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $lg_css := $lg_css | minify }}
-<link rel="stylesheet" href="{{ $lg_css.Permalink }}" media="all">
+{{ with resources.Get "css/lg.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script src="https://www.youtube.com/player_api"></script>
 
 {{ $lgvideo_js := resources.Get "js/lgvideo.js" | minify }}
 <script src="{{ $lgvideo_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{{ $lgvideo_css := resources.Get "css/lgvideo.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $lgvideo_css := $lgvideo_css | minify }}
-<link rel="stylesheet" href="{{ $lgvideo_css.Permalink }}" media="all" crossorigin="anonymous"
-    referrerpolicy="no-referrer">
-
+{{ with resources.Get "css/lgvideo.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 {{ $lghash_js := resources.Get "js/lghash.js" | minify }}
 <script src="{{ $lghash_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 {{ $lgfullscreen_js := resources.Get "js/lgfullscreen.js" | minify }}
 <script src="{{ $lgfullscreen_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{{ $lgfullscreen_css := resources.Get "css/lgfullscreen.css" | postCSS (dict "config" "./postcss.config.js") }}
-{{ $lgfullscreen_css := $lgfullscreen_css | minify }}
-<link rel="stylesheet" href="{{ $lgfullscreen_css.Permalink }}" media="all" crossorigin="anonymous"
-    referrerpolicy="no-referrer">
+{{ with resources.Get "css/lgfullscreen.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 <script type="text/javascript">
     lightGallery(document.getElementById('lightgallery'), {

@@ -29,22 +29,44 @@
 {{ $css := hugo.Data.assets.css }}
 {{ $js := hugo.Data.assets.js }}
 
-{{ if $css.epierrot.url }}
-{{ if $css.epierrot.version }}
-<link rel="stylesheet" href="{{ printf $css.epierrot.url $css.epierrot.version }}" media="all">
-{{ else }}
-<link rel="stylesheet" href="{{ $css.epierrot.url }}" media="all">
-{{ end }}
-{{ else }}
-{{ $epierrot_css := resources.Get "css/epierrot.css" | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $epierrot_css.Permalink }}" media="all">
+{{ with resources.Get "css/epierrot.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
-{{ $splide_css := resources.Get "css/splide.css" | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $splide_css.Permalink }}" media="all">
+{{ with resources.Get "css/splide.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
-{{ $mulish_css := resources.Get "css/mulish.css" | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $mulish_css.Permalink }}" media="all">
+{{ with resources.Get "css/mulish.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
  
 {{ partial "opengraph.html" . }}
 {{ partial "x_cards.html" . }}
