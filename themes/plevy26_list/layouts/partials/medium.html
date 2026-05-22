@@ -90,9 +90,6 @@
     {{ if .Params.photogallery }}
     {{ partial "photogallery.html" . }}
     {{ end }}
-    {{ if .Params.video}}
-    {{ partial "video.html" . }}
-    {{ end }}
     {{ if .Params.calendar }}
     <div class="pageBlock" data-cat-sort="0.5">
         {{ partial "subTitle.html" (dict "txt" (i18n "calendar")) }}<br />

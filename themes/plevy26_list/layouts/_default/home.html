@@ -26,9 +26,10 @@
             <div class='pageTitle {{- if eq .Params.status "ended" }} ended{{ end -}}' data-targslug="{{ .Slug }}">
                 <span>{{ if eq (( string $i ) | len ) 1 }}0{{ end }}{{ $i }}|{{ if eq ((
                     string $j ) | len ) 1 }}0{{ end }}{{ $j }} · </span>
-                <span>{{ if in ( slice "events" "presentations" "writings" ) .Section }}{{ dateFormat "2006/01" .Date }}
-                    {{ else }}{{ dateFormat "2006" .Date }}{{ end }} · </span>
-                <span>{{ .Title }}</span>
+                {{ if in ( slice "teachings" "courses" ) .Section }} {{ else }}<span>
+                        {{ if in ( slice "events" "presentations" "writings" ) .Section }}{{ dateFormat "2006/01" .Date }}
+                    {{ else }}{{ dateFormat "2006" .Date }}{{ end }} · </span>{{ end }}
+                {{ .Title }}
             </div>
             {{ $j = add $j 1 }}
             {{ end }}

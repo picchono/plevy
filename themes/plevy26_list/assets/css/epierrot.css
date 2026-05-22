@@ -668,7 +668,7 @@ pagefind-modal-trigger {
 
 @media (min-width: 768px) {
   .menuBox {
-    padding: var(--pageBorder-width) 0;
+    padding: var(--pageBorder-width);
   }
 }
 
@@ -769,14 +769,14 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
-  @apply w-full md:w-2/5 flex flex-col md:flex-row items-start justify-start;
+  @apply w-full md:w-1/3 flex flex-col md:flex-row items-start justify-start;
   height: 100vh;
-  padding: calc(2 * var(--pageBorder-width));
+  padding: calc(3 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width));
   padding-bottom: var(--pageBorder-width);
 }
 
 section.site-content {
-  @apply w-full md:w-3/5 grow flex flex-col items-start justify-start;
+  @apply w-full md:w-2/3 grow flex flex-col items-end justify-start;
   height: 100vh;
   margin-top: calc(2 * var(--pageBorder-width));
   padding: var(--pageBorder-width) calc(2 * var(--pageBorder-width));
@@ -910,7 +910,7 @@ section.site-content {
 #menu h2[class^='section-'] {
   font-variant-caps: small-caps;
   padding: calc((100vh - (3 * var(--pageBorder-width))) / 80) 0;
-  font-size: calc((100vh - (3 * var(--pageBorder-width))) / 32);
+  font-size: calc(var(--text-base) * 1.7);
 }
 
 #menu h2[class^="section-"], #menu div.nav_item {
@@ -960,6 +960,10 @@ section.site-content {
 #menu h2[class^="section-"]:hover,
 #menu div.pageTitle:hover {
   @apply text-epierrot bg-primary-bg;
+}
+
+.pageTitle>span {
+  font-size: 0.8rem;
 }
 
 /* middle section */
