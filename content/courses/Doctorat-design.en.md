@@ -9,7 +9,7 @@ Diploma:
     level1:
         type: "Doctorat"
         name: "Arts, Design & Society"
-description: "La mention « Arts, Design et Société » de l’École Doctorale Abbé Grégoire (ED 546) porte sur un ensemble de disciplines liant création et société. C’est à cette intersection que la recherche doctorale de cette mention trouve sa pertinence, entre considérations épistémologiques, artistiques et industrielles, sociétales et écologiques, entre création, conception et innovation."
+description: "The ‘Arts, Design and Society’ specialisation at the Abbé Grégoire Doctoral School (ED 546) covers a range of disciplines that link creativity and society, encompassing epistemological, artistic, industrial, societal and ecological considerations, and spanning creation, design and innovation."
 institution:
     heig: 1
     logo: cnam
