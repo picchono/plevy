@@ -67,19 +67,6 @@
     {{ end }}
   {{ end }}
 {{ end }}
- 
-{{ with resources.Get "css/euclid.css" }}
-  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
-  {{ with . | css.TailwindCSS $opts }}
-    {{ if hugo.IsDevelopment }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}">
-    {{ else }}
-      {{ with . | fingerprint }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
 
 {{ partial "opengraph.html" . }}
 {{ partial "x_cards.html" . }}
