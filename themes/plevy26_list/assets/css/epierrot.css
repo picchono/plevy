@@ -697,6 +697,7 @@ pagefind-modal-trigger {
 
 #menu .boxIso {
   @apply h-full;
+  width: calc(100% - 2 * var(--pageBorder-width));
 }
 
 .boxIso>div {
@@ -790,8 +791,8 @@ section.site-content {
   }
 
   section.site-content {
-    padding: calc(2 * var(--pageBorder-width));
-    padding-bottom: var(--pageBorder-width);
+    padding-top:  calc(2 * var(--pageBorder-width));
+    padding-right: var(--pageBorder-width);
     margin-top: 0;
   }
 }
