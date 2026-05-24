@@ -409,7 +409,8 @@ html.light {
   /*f1f0ed*/
   --color-secondary-bg: var(--color-pageborder-bg);
   --color-tertiary-bg: #d7d5d2;
-  --color-pageborder-bg: #f5f5f5;
+  --color-pageborder-bg: var(--color-primary-bg);
+  /*#f5f5f5*/
   --color-primary-text: #181818;
   /*2a1841*/
   --color-secondary-text: #6b7e85;
@@ -426,7 +427,8 @@ html.dark {
   --color-secondary-bg: var(--color-pageborder-bg);
   /* 6c868d */
   --color-tertiary-bg: #282a2d;
-  --color-pageborder-bg: #181818;
+  --color-pageborder-bg: var(--color-primary-bg);
+  /* #181818; */
   --color-primary-text: #e8e5e4;
   --color-secondary-text: #94817a;
   --color-epierrot: #e34334;
