@@ -18,7 +18,7 @@ order = [".webp", ".jpg$", ".gif$"]
   # An arbitrary name for this target.
   name = "plevy-deploy"
   [deployment.matchers]
-  # Set custom content type for /sitemap.xml 
+  # Set custom content type for /sitemap.xml
   pattern = "^sitemap\\.xml$"
   contentType = "application/xml"
   gzip = true
@@ -27,6 +27,10 @@ order = [".webp", ".jpg$", ".gif$"]
   [build.buildStats]
     enable = true
   useResourceCacheWhen = "never"
+
+[security]
+  # Allows both Markdown and HTML files in the content folder
+  allowContent = ['^text/markdown$', '^text/html$']
 
 [privacy.disqus]
 disable = true

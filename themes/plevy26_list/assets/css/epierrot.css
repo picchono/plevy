@@ -311,7 +311,7 @@ body {
   right: 0;
   background-color: var(--color-pageborder-bg);
 }
-
+ /*
 .bordTop::before,
 .bordBottom::before,
 .bordLeft::before,
@@ -380,6 +380,7 @@ body {
   left: var(--pageBorder-width);
   transform: rotate(270deg);
 }
+*/
 
 html {
   background-color: transparent;
@@ -567,7 +568,7 @@ a.logohome svg {
 
 .menuSetting {
   @apply fixed flex flex-row justify-end items-center z-30 transition-colors duration-700 ease-in-out;
-  padding: 0 calc(var(--pageBorder-width) + 186px) 0 calc(1.5 * var(--pageBorder-width)) !important;
+  padding: 0 calc(3 * var(--pageBorder-width) + 186px) 0 calc(2 * var(--pageBorder-width)) !important;
   height: calc(4 * var(--pageBorder-width)) !important;
   width: 100% !important;
   background-color: var(--color-pageborder-bg);
@@ -658,7 +659,7 @@ pagefind-modal-trigger {
   position: fixed !important;
   z-index: 100 !important;
   top: calc(0.2 * var(--pageBorder-width)) !important;
-  right: calc(1 * var(--pageBorder-width)) !important;
+  right: calc(3 * var(--pageBorder-width)) !important;
 }
 
 /* menuBox */
