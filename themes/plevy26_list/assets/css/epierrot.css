@@ -514,6 +514,9 @@ h2 {
   @apply text-lg font-bold;
 }
 
+h2 {
+    @apply pt-6;
+}
 
 main {
   @apply flex flex-col md:flex-row justify-start w-full;
