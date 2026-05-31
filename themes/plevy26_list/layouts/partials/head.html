@@ -55,7 +55,7 @@
   {{ end }}
 {{ end }}
 
-{{ with resources.Get "css/mulish.css" }}
+{{ with resources.Get "css/euclid.css" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
   {{ with . | css.TailwindCSS $opts }}
     {{ if hugo.IsDevelopment }}

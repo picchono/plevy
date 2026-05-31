@@ -2,7 +2,7 @@
 @source "../../hugo_stats.json";
 
 @theme {
-  --font-family-sans: Mulish, 'Noto Sans JP', 'Hiragino Maru Pro', sans-serif;
+  --font-family-sans: 'Euclid Circular B', 'Noto Sans JP', 'Hiragino Maru Pro', sans-serif;
   --font-family-mono: SFMono-Regular, Menlo;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
@@ -175,7 +175,7 @@
   --pf-outline-offset: 2px;
 
   /* Typography */
-  --pf-font: Mulish, sans-serif;
+  --pf-font: 'Euclid Circular B', sans-serif;
 
   /* Sizing */
   --pf-input-height: 36px;
