@@ -605,11 +605,11 @@ a.logohome svg {
 }
 
 #languageMode>span {
-  @apply pr-4 relative bg-transparent text-epierrot font-bold inline-block;
+  @apply pr-2 md:pr-4 relative bg-transparent text-epierrot font-bold inline-block;
 }
 
 #languageMode a {
-  @apply pr-4 bg-transparent inline-block text-primary-text font-bold hover:text-epierrot border-0 transition-all duration-700 ease-in-out;
+  @apply pr-2 md:pr-4 bg-transparent inline-block text-primary-text font-bold hover:text-epierrot border-0 transition-all duration-700 ease-in-out;
 }
 
 #languageMode a:hover {
@@ -622,7 +622,7 @@ a.logohome svg {
 }
 
 #settingOptions>div {
-  @apply pr-4;
+  @apply pr-2 md:pr-4;
 }
 
 .introChair {

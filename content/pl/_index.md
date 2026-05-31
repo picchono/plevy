@@ -1,6 +1,6 @@
 ---
 title: "Pierre Lévy"
-slug: "pierre-levy"
+slug: "pl"
 date: 2025-01-28T00:55:28+02:00
 draft: false
 layout: member

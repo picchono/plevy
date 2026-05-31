@@ -11,7 +11,7 @@ tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "Pierre Lévy est professeur du Conservatoire national des Arts et Métiers, titulaire de la Chaire design Jean Prouvé, et membre du laboratoire Dicen-IDF."
 ---
 
-{{< link "Pierre Lévy" "https://plevy.fr/pierre-levy/" "pierrelevy" >}} est professeur du {{< link "Conservatoire national des Arts et Métiers" "https://www.cnam.fr" "cnam" >}}, titulaire de la {{< link "Chaire design Jean Prouvé" "https://www.chaire-design.fr" "jprouve" >}}, et membre du laboratoire {{< link "Dicen (EA 7339)" "https://www.dicen-idf.org" "dicen" >}}. 
+{{< link "Pierre Lévy" "https://plevy.fr/pl/" "pierrelevy" >}} est professeur du {{< link "Conservatoire national des Arts et Métiers" "https://www.cnam.fr" "cnam" >}}, titulaire de la {{< link "Chaire design Jean Prouvé" "https://www.chaire-design.fr" "jprouve" >}}, et membre du laboratoire {{< link "Dicen (EA 7339)" "https://www.dicen-idf.org" "dicen" >}}. 
 
 Nourris par les théories liées à l’*embodiment* et par la philosophie et la pensée japonaise, ses travaux de recherche proposent un décentrage culturel du design pour travailler la relation entre moments créatifs institutionnalisés (les arts, le design, les ingénieries...) et moments créatifs du quotidien non-institutionnalisés (l’appropriation, le détournement...). Au travers de cette recherche, Pierre Lévy discute de l'attitude, du rôle sociétal et des limites du design au service des pratiques transformatives.
 
