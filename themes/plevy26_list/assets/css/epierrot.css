@@ -2,7 +2,7 @@
 @source "../../hugo_stats.json";
 
 @theme {
-  --font-family-sans: 'Euclid Circular B', 'Noto Sans JP', 'Hiragino Maru Pro', sans-serif;
+  --font-family-sans: 'Euclid', 'Noto Sans JP', 'Hiragino Maru Pro', sans-serif;
   --font-family-mono: SFMono-Regular, Menlo;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
