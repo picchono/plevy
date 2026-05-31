@@ -165,7 +165,7 @@
     </div>
     {{ end }}{{ end }}
     {{ if .Params.redirectlecture}}<div class="lg:w-full max-w-xl flex flex-row justify-start items-start">
-        <b class="revers w-32 flex-shrink-0 px-1">{{ i18n "courses" }}</b>
+        <b class="revers w-32 shrink-0 px-1">{{ i18n "courses" }}</b>
         <div class="ml-2 w-auto lg:w-full py-1">{{ $cod := .Params.code }}{{ $plink := .Params.photocredit.link }}
             {{ range sort .Params.redirectlecture "order" "asc" }}
             <a class="" href="{{ .link }}" target="_blank" rel="noreferrer"><b>{{ $cod }}.{{ .order
@@ -231,7 +231,7 @@
         {{ $icon := "teams" }}
         {{ if ne .media "Teams" }}{{ $icon := "teams" }}{{ end }}
         {{ $text := i18n "linkvisio" }}
-        <a href='{{ .link }}' target="_blank" class="doclinkButton py-newpad py-5" rel="noreferrer"
+        <a href='{{ .link }}' target="_blank" class="doclinkButton py-5" rel="noreferrer"
             aria-label="Get {{ $icon }}"><span>{{- partial "icons.html" (dict "hei" 1.5 "ico" $icon "cla"
                 "doclinkIcon"
                 ) -}}</span>&nbsp;&nbsp;<span>{{ $text }}</span></a>
