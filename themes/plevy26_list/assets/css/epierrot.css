@@ -514,7 +514,7 @@ h2 {
   @apply text-lg font-bold;
 }
 
-h2 {
+h2:not(.boxTitle) {
     @apply pt-6;
 }
 
