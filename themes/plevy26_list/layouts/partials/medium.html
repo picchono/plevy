@@ -4,8 +4,10 @@
             <h1>{{ .Params.title |safeHTML }}{{if eq .Params.status "ended"}}
                 ({{- i18n "ended" -}}){{ end }}</h1>
             {{ if .Params.authors }}
-            <p class="italic" data-pagefind-weight="6">{{ .Params.authors }},
+            <p class="mt-4 italic" data-pagefind-weight="6">{{ .Params.authors }},
                 {{ dateFormat "02 Jan 2006" .Date }}</p>
+            {{ else if .Params.completename }}
+            <p class="mt-4 italic" data-pagefind-weight="6">{{ .Params.completename }}</p>
             {{ end }}
             {{ if .Params.prezfor }}
             <p class="italic py-newpad" data-pagefind-weight="6">{{- i18n "by" }}
@@ -246,7 +248,7 @@
     {{ if eq .Params.layout "member" }}
     {{ $nom := .Slug }}
     {{ with index hugo.Data.plevy .Site.Language.Lang }}
-    <div class="pageBlock flex flex-col pt-newpad pl-newpad">
+    <div class="pageBlock flex flex-col pt-newpad pl-2">
         <div class="smalllinkcv">
             {{- partial "icons.html" (dict "ico" "cv" "hei" 1) -}}<span>cv :: <a
                     href='{{ $.Site.BaseURL}}{{ $nom }}/cvlight' target="_blank">{{ i18n "short" }}</a> · <a

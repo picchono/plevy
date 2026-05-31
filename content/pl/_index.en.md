@@ -4,6 +4,7 @@ slug: "pierre-levy"
 date: 2025-01-28T00:55:28+02:00
 draft: false
 layout: member
+completename: "Prof.dr.ing. Pierre Lévy, HDR"
 searchFilter: about
 tags: ['Pierre', 'Lévy', 'design', 'kansei', 'paris', 'transforming_practices']
 description: "Professor at the National Conservatory of Arts & Crafts, holder of the Chair of design Jean Prouvé, and member of the Dicen-IDF laboratory"
