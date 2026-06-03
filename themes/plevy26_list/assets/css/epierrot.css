@@ -149,12 +149,12 @@
   --pf-text: #1c1c1c;
   --pf-text-secondary: #666;
   --pf-text-muted: #767676;
-  --pf-background: #fff;
+  --pf-background: var(--color-primary-bg) !important;
   --pf-border: transparent;
   --pf-border-focus: transparent;
   --pf-skeleton: #eee;
   --pf-skeleton-shine: #f5f5f5;
-  --pf-hover: #f5f5f5;
+  --pf-hover: var(--color-primary-bg) !important;
   --pf-mark: #1a1a1a;
   --pf-scroll-shadow: rgba(0, 0, 0, 0.08);
 
@@ -416,8 +416,8 @@ html.light {
   /*2a1841*/
   --color-secondary-text: #6b7e85;
   /*715596*/
-  --color-epierrot: #e34334;
-  /*b21556*/
+  --color-epierrot: rgb(227 142 132);
+  /*rgb(109 169 210) or #e34334*/
   --blend-mode-before: color;
   --blend-mode-after: screen;
 }
@@ -432,7 +432,7 @@ html.dark {
   /* #181818; */
   --color-primary-text: #e8e5e4;
   --color-secondary-text: #94817a;
-  --color-epierrot: #e34334;
+  --color-epierrot: rgb(227 142 132);
   --blend-mode-before: saturation;
   --blend-mode-after: hard-light;
 
