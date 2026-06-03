@@ -416,8 +416,8 @@ html.light {
   /*2a1841*/
   --color-secondary-text: #6b7e85;
   /*715596*/
-  --color-epierrot: rgb(227 142 132);
-  /*rgb(109 169 210) or #e34334*/
+  --color-epierrot: rgb(109 169 210);
+  /*rgb(227 142 132) or #e34334*/
   --blend-mode-before: color;
   --blend-mode-after: screen;
 }
