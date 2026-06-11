@@ -701,8 +701,7 @@ pagefind-modal-trigger {
 }
 
 #menu .boxIso {
-  @apply h-full;
-  width: calc(100% - 2 * var(--pageBorder-width));
+  @apply h-full w-full;
 }
 
 .boxIso>div {
@@ -741,7 +740,7 @@ pagefind-modal-trigger {
 
 .duotone::after {
   @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded;
-  background-color: var(--color-primary-text);
+  background-color: var(--color-primary-bg);
   content: '';
   mix-blend-mode: var(--blend-mode-after);
   opacity: 0.4;
@@ -915,7 +914,6 @@ section.site-content {
 }
 
 #menu h2[class^='section-'] {
-  font-variant-caps: small-caps;
   padding: calc((100vh - (3 * var(--pageBorder-width))) / 80) 0;
   font-size: calc(var(--text-base) * 1.7);
 }
