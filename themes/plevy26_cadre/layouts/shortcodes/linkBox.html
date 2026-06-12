@@ -1,0 +1,4 @@
+<a class="linkBox" href="{{.Get 1}}">
+    <span class="titleLink">{{ .Get 0 |safeHTML }}</span>
+    {{ if .Get 2 }}<span class="imgLink"><img src="{{.Get 2}}" alt="{{ .Get 0 }}"></span>{{ end }}
+</a>

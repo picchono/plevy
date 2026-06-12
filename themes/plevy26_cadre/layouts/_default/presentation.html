@@ -1,0 +1,200 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+<section class="site-content">
+    {{ if .Content}}
+    <div class="w-full" data-cat-sort="110">
+        {{ .Content }}
+    </div>
+    {{ end }}
+    <div id="Slides" class="">
+        {{ if .Params.slides }}
+        {{ $slid := .Params.slides }}
+        {{ $ord := 1 }}
+        <div class="flex flex-row flex-wrap" id="lightgallery">
+            {{ $s := 1 }}
+            {{ range $slid }}
+            {{ $typ := index . 0 }}
+                {{ if eq $typ "img" }}
+                <a class="boxIso w-full mb-10"
+                    href="{{- index . 1 -}}"
+                    aria-label="See image {{ $ord }}" data-custom-prop="abc">
+                    <div class="boxIsoImg duotone"
+                        style="background-image: url('{{- index . 1 -}}');">
+                    </div>
+                </a>
+                {{ else if eq $typ "google" }}
+                <a class="boxIso w-fulll mb-10"
+                    href="https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w3200"
+                    aria-label="See image {{ $ord }}" data-custom-prop="abc">
+                    <div class="boxIsoImg duotone"
+                        style="background-image: url('https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w400');">
+                    </div>
+                </a>
+                {{ else if eq $typ "mov"}}
+                <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}"
+                    class="boxIso w-fulll mb-10">
+                     <div class="boxIsoImg"
+                        style="background-image: url('{{ index . 2 }}');" alt="video {{ $ord }}">
+                    </div>
+                </a>
+                {{ end }}
+                {{ $ord = add $ord 1 }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ $qr_js := resources.Get "js/qrgen.js" | minify }}
+<script src="{{ $qr_js.Permalink }}"></script>
+<script defer="defer">
+    const qrcode = new QRCode(document.getElementById('qrcode'), {
+        text: {{ .Page.Permalink }},
+    width: 1000,
+        height: 1000,
+            colorDark: '#000',
+                colorLight: '#fff',
+                    correctLevel: QRCode.CorrectLevel.H
+    });
+</script>
+
+<style>
+    @font-face {
+        font-family: "lg";
+        src: url(/lg.woff2) format("truetype");
+    }
+</style>
+
+{{ $lg_js := resources.Get "js/lg.js" | minify }}
+<script src="{{ $lg_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ with resources.Get "css/lg.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="https://www.youtube.com/player_api"></script>
+
+{{ $lgvideo_js := resources.Get "js/lgvideo.js" | minify }}
+<script src="{{ $lgvideo_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ with resources.Get "css/lgvideo.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $lghash_js := resources.Get "js/lghash.js" | minify }}
+<script src="{{ $lghash_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+{{ $lgfullscreen_js := resources.Get "js/lgfullscreen.js" | minify }}
+<script src="{{ $lgfullscreen_js.Permalink }}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ with resources.Get "css/lgfullscreen.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        licenseKey: "86E42556-05764516-9C2C8B36-B8B2858F",
+        plugins: [lgVideo, lgFullscreen, lgHash], //
+        speed: 500,
+        extraProps: ['customProp'],
+        download: false,
+        loop: false,
+        mode: "lg-fade",
+        controls: false,
+        nextHtml: ">",
+        prevHtml: "<",
+        showBarsAfter: 2000,
+        videojs: true,
+        getCaptionFromTitleOrAlt: false,
+        videoMaxWidth: "1080px",
+        videojs: true,
+        vimeoPlayerParams: {
+            byline: 0,
+            portrait: 0,
+            color: 'CCCCCC'
+        },
+        loadYoutubeThumbnail: true,
+        youTubePlayerParams: {
+            modestbranding: 1,
+            autoplay: 1,
+            showinfo: 0,
+            controls: 1,
+            rel: 0
+        },
+        loadYouTubePoster: true
+    });
+
+
+    window.addEventListener('load', function (event) {
+        // Select the node that will be observed for mutations
+        const targetNode = document.getElementById("lg-inner-1");
+        // Options for the observer (which mutations to observe)
+        const config = { attributes: true, childList: true, subtree: true };
+        // Callback function to execute when mutations are observed
+        const callback = (mutationList, observer) => {
+            observer.disconnect();
+            var imag = document.querySelectorAll('div.lg-current img.lg-object');
+            imag.forEach(function (im, index) {
+                var rect = im.getBoundingClientRect();
+                var rightIm = rect.right;
+                var bottomIm = rect.bottom;
+                var nextSibling = im.nextElementSibling;
+                if (!(nextSibling && nextSibling.className === "imgAddons")) {
+                    var newDiv = document.createElement('div');
+                    newDiv.innerHTML = '{{- .Title -}}&nbsp{{ if false }}(' + im.getAttribute('alt') + ')&nbsp;{{ end }}-&nbsp;{{- now | time.Format "02/01/2006" -}}&nbsp;-&nbsp;<a href="mailto:pierre.levy@lecnam.net">pierre.levy@lecnam.net</a>';
+                    newDiv.className = 'imgAddons';
+                    im.parentNode.insertBefore(newDiv, im.nextSibling);
+                }
+                var newAd = document.querySelectorAll('div.imgAddons');
+                newAd.forEach(function (nA, index) {
+                    nA.style.cssText = "right: calc(100vw - " + rightIm + "px + (3.5 * var(--pageBorder-width)));bottom:calc(100vh - " + bottomIm + "px + (2.5 * var(--pageBorder-width)));";
+                });
+            });
+            observer.observe(targetNode, config);
+        };
+
+        // Create an observer instance linked to the callback function
+        const observer = new MutationObserver(callback);
+
+        // Start observing the target node for configured mutations
+        observer.observe(targetNode, config);
+    });
+
+    window.addEventListener("resize", function () {
+        var imag = document.querySelectorAll('div.lg-current img.lg-object');
+        imag.forEach(function (im, index) {
+            var rect = im.getBoundingClientRect();
+            var rightIm = rect.right;
+            var bottomIm = rect.bottom;
+            var nextSibling = im.nextElementSibling;
+            if (nextSibling && nextSibling.className === "imgAddons") {
+                nextSibling.style.cssText = "right: calc(101vw - " + rightIm + "px);bottom:calc(100.8vh - " + bottomIm + "px);";
+            }
+        });
+    });
+</script>
+{{ end }}

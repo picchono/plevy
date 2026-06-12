@@ -1,0 +1,86 @@
+{{ if ne (dateFormat "2006" .context.Date) "0001" }}
+<div id="{{- .context.Slug }}"
+    class='menuBox {{ if and (.context.Section) (ne .context.Section "pl") }}section-{{ .context.Section }}{{ else }}section-introduction{{ end }}{{ if eq .pag 1 }} startSection{{ end }}{{- if eq .context.Params.status "ended" }} ended{{ end -}}'
+    aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
+    data-date="{{ .context.Date }}" data-section="{{ .context.Section  }}">
+    {{ if .sect }}
+    <div class="menuBoxCount">
+        <div>{{ if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}</div>
+        <div>{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }}</div>
+    </div>
+    {{ else }}
+    <div class="menuBoxCount"></div>
+    {{ end }}
+    <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }}"
+        href="{{ .context.Permalink }}">
+        <div class="w-full md:w-1/3 h-full flex flex-col items-start p-newpad">
+            <h2 class='boxTitle'>{{- .context.Title |safeHTML }}</h2>
+            {{ if not .intro }}
+            <div class="boxMeta">
+                <div class="w-full">
+                    {{ if eq .context.Section "publications" }}
+                    {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
+                    {{ if .context.Params.shortBook }}{{ .context.Params.shortBook }}{{ end }}
+                    {{ if .context.Params.shortJournal }}{{ .context.Params.shortJournal }}{{ end }}
+                    {{ if .context.Params.shortSection }}In {{ .context.Params.shortSection }}{{ end }}
+                    {{ if .context.Params.shortMemoire }}{{ .context.Params.shortMemoire }}{{ end }}
+                    {{ else if eq .context.Section "events" }}
+                    {{ if .context.Params.intervenants }}{{ $len := len .context.Params.intervenants }}
+                    {{ $count := 0 }}
+                    {{ range .context.Params.intervenants }}
+                    <span class="inline-block font-bold">{{ .name -}}</span>
+                    {{ $count = add $count 1 }}
+                    {{- if ne $count $len -}}, {{ end }}
+                    <br>{{ .affiliation }}
+                    {{ end }}<br>{{ end }}
+                    {{ else if eq .context.Section "presentations" }}
+                    {{ i18n "for" }}{{ if .context.Params.collaboration }}
+                    {{ $len := len .context.Params.collaboration }}
+                    {{ $count := 0 }}
+                    {{ $intitut := .context.Params.institution.name }}
+                    {{ range .context.Params.collaboration }}
+                    {{ if ne .name $intitut }}{{ .name -}}
+                    {{ $count = add $count 1 }}
+                    {{- if eq $count $len -}}, {{ end }}{{ end }}
+                    {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
+                    {{ else if eq .context.Section "teaching" }}
+                    {{ .context.Params.institution.name }}
+                    {{ else if eq .context.Section "courses" }}
+                    {{ if .context.Params.collaboration }}{{ $len := len .context.Params.collaboration }}
+                    {{ $count := 0 }}
+                    {{ range .context.Params.collaboration }}
+                    {{ .name -}}
+                    {{ $count = add $count 1 }}
+                    {{- if ne $count $len -}}, {{ end }}
+                    {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
+                    {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}{{
+                    .context.Params.institution.name }}{{ end }}{{ end }}
+                </div>
+                {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
+                <div class="pt-4 text-sm">{{ $sectio | humanize }}</div>
+                <div class="text-sm">
+                    {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
+                    {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" )  ( eq .context.Section "presentations" )}}{{ dateFormat "2006" .context.Date }}
+                    {{ else }}
+                        {{ dateFormat "2006" .context.Date }} ·
+                        {{if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
+                        {{ else }}...{{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+        </div>
+        <div class="menuBoxDesc">
+            {{ if .context.Description }}{{ .context.Description }}
+            {{ else if .context.Params.Reference }}{{ .context.Params.Reference | safeHTML }}
+            {{ else if .context.Params.Abstract }}{{ .context.Params.Abstract | safeHTML }}{{if .Params.projectby
+            }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}{{ end }}
+        </div>
+        <div class="w-full md:w-1/3 h-full p-newpad">
+            {{ if .context.Params.frontphoto }}<div class="w-full h-full boxIsoImg duotone rounded" style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');"></div>
+            {{ else }}<div class="w-full h-full boxIsoImg"></div>{{ end }}
+        </div>
+    </a>
+</div>
+{{ end }}
