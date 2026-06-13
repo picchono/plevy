@@ -5,6 +5,7 @@ layout: course
 searchFilter: Course
 date: 2025-09-09T16:27:15+02:00
 subsection: diploma
+start: 2026
 Diploma:
     level1:
         type: "Master"

@@ -1,3 +1,4 @@
 {{ $tar := .Scratch.Get "part" }}
 {{ $targ := add "side/" $tar ".html"}}
+{{ partial "subTitle.html" (dict "txt" (i18n $targ)) }}
 {{ partial $targ . }}

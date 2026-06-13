@@ -1,6 +1,11 @@
 <div class="sideSection">
     {{ .Scratch.Set "part" "title" }}{{ partial "side/_base.html" . }}
     {{ if ne .Params.layout "list" }}
+        {{ if .Params.authors }}{{ .Scratch.Set "part" "authors" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.completename }}{{ .Scratch.Set "part" "completename" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.prezfor }}{{ .Scratch.Set "part" "prezfor" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.collaboration }}{{ .Scratch.Set "part" "collaboration" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.institution }}{{ .Scratch.Set "part" "institution" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.diploma}}{{ .Scratch.Set "part" "diploma" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.executive}}{{ .Scratch.Set "part" "executive" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if and (.Params.abstract) (ne .Params.layout "publi") }}{{ .Scratch.Set "part" "abstract" }}{{ partial "side/_base.html" . }}{{ end }}
@@ -23,5 +28,5 @@
         {{ if eq .Params.layout "member" }}{{ .Scratch.Set "part" "member" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if eq .Params.layout "programme"}}{{ .Scratch.Set "part" "programme" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ end }}
-        {{ end }}
+    {{ end }}
 </div>

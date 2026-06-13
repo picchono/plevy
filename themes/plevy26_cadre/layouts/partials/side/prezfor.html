@@ -1,0 +1,12 @@
+<p class="italic py-newpad" data-pagefind-weight="6">{{- i18n "by" }}
+    {{ $len := len .Params.intervenants}}
+    {{ $count := 0 }}
+    {{ range .Params.intervenants }}
+    <span data-pagefind-filter="author">{{ .name }}</span>
+    {{ $count = add $count 1 }}
+    {{ if ne $count $len -}}, {{ end }}
+    {{ end }}
+    {{ i18n "for" }} <span data-pagefind-filter="institution">{{ .Params.prezfor }}</span>, {{
+    dateFormat
+    "02 Jan 2006 - 15h04" .Date }}
+</p>

@@ -2,7 +2,9 @@
 {{ $langu := .Site.Language.Lang }}
 <div class="mainBlock">
     <div class="mainBlockIn">
+        {{ partial "subTitle.html" (dict "txt" (i18n "calendar")) }}
         <div id="content" data-cat-sort="100">{{ .Content }}</div>
+        {{ partial "subTitle.html" (dict "txt" (i18n "calendar")) }}
         <div id="headUp">
             <div class="headInPage_blocks">
                 {{ if .Params.Parcours }}

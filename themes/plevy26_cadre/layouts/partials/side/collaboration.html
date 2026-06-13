@@ -1,0 +1,11 @@
+<div class="flex flex-row flex-wrap items-center pt-10">
+    {{ range sort .Params.collaboration }}
+    <a href="{{ .web }}" class="collab" target="_blank" data-pagefind-weight="4">
+        {{ if .colo }}
+        {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-8") -}}
+        {{else}}
+        {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-8" ) -}}
+        {{ end }}
+    </a>
+    {{ end }}
+</div>

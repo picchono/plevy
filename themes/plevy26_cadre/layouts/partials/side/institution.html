@@ -1,0 +1,10 @@
+<div class="flex flex-row flex-wrap items-center pt-10">
+    <a href="{{ .Params.institution.web }}" target="_blank" class="collab" data-pagefind-weight="4">
+        {{ if .Params.institution.colo }}
+        {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig
+        "colo" .Params.institution.colo "cla" "max-h-8") -}}
+        {{else}}
+        {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig "cla" "max-h-8") -}}
+        {{ end }}
+    </a>
+</div>
