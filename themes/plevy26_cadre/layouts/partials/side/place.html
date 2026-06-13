@@ -1,0 +1,14 @@
+<div class="pageBlock" data-cat-sort="1">
+    {{ partial "subTitle.html" (dict "txt" (i18n "venue")) }}<br />
+    <p>{{ dateFormat "02 January 2006" .Date }} - {{ dateFormat "15h04" .Date }}</p>
+    {{ if .Params.place }}<p class="">{{ .Params.place |safeHTML }}</p>{{ end }}
+    {{ if .Params.visio }}{{ with .Params.visio }}
+    {{ $icon := "teams" }}
+    {{ if ne .media "Teams" }}{{ $icon := "teams" }}{{ end }}
+    {{ $text := i18n "linkvisio" }}
+    <a href='{{ .link }}' target="_blank" class="doclinkButton py-5" rel="noreferrer"
+        aria-label="Get {{ $icon }}"><span>{{- partial "icons.html" (dict "hei" 1.5 "ico" $icon "cla"
+            "doclinkIcon"
+            ) -}}</span>&nbsp;&nbsp;<span>{{ $text }}</span></a>
+    {{ end }}{{ end }}
+</div>

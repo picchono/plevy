@@ -1,5 +1,4 @@
-{{ if .Params.redirect }}
-<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+{{ if .Params.redirect }}<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Locale }}'>
 {{- partial "head.html" . -}}
@@ -7,8 +6,8 @@
 <body id="{{ .Params.bodyclass }}"{{ if .Params.bgpict}} class="bgImg" style="background-image:url({{- .Site.BaseURL -}}{{- .Params.bgpict -}})"{{ end }}>
   {{ partial "settings.html" . }}
   <main data-pagefind-body>
-    {{- block "main" . }}{{- end }}
-    {{ partial "side.html" . }}
+    {{- block "main" . }}{{ end -}}
+    {{ partial "_side.html" . }}
   </main>
   <div class="bordTop">&nbsp;</div>
   <div class="bordBottom">&nbsp;</div>

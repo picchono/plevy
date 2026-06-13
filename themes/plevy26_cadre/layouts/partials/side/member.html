@@ -1,0 +1,15 @@
+
+{{ $nom := .Slug }}
+{{ with index hugo.Data.plevy .Site.Language.Lang }}
+<div class="pageBlock flex flex-col pt-newpad pl-2">
+    <div class="smalllinkcv">
+        {{- partial "icons.html" (dict "ico" "cv" "hei" 1) -}}<span>cv :: <a
+                href='{{ $.Site.BaseURL}}{{ $nom }}/cvlight' target="_blank">{{ i18n "short" }}</a> · <a
+                href='{{ $.Site.BaseURL}}{{ $nom }}/cv' target="_blank">{{ i18n "detailled" }}</a> · <a
+                href='{{ $.Site.BaseURL}}{{ $nom }}/cvcomplete' target="_blank">{{ i18n "complete" }}</a></span>
+    </div>
+    {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink" rel="noreferrer"
+        aria-label="{{ .icon }}" title="{{ .icon }}">{{- partial "icons.html" (dict "ico"
+        .icon "hei" 1) -}}<span>{{ .icon }}</span></a>{{ end }}
+</div>
+{{ end }}

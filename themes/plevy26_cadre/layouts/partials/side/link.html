@@ -1,0 +1,9 @@
+    {{ partial "subTitle.html" (dict "txt" (i18n "links")) }}
+    <div class="linkBlock">
+        {{ range .Params.link }}
+        <div class="flex flex-row">
+            {{ partial "boxLink.html" (dict "lin" (index . 2) "icon" (index . 1) "titl" (replace (index . 0) " | "
+            "&middot;" |safeHTML)) }}
+        </div>
+        {{ end }}
+    </div>

@@ -1,0 +1,27 @@
+
+{{ $targ := .Params.milestone }}
+<div class="pageBlock" data-cat-sort="3">
+    {{ partial "subTitle.html" (dict "txt" (i18n "publications")) }}
+    <div class="flex flex-col">
+        {{ range (where .Site.Pages "Section" "publications") }}
+        {{ range .Pages }}
+        {{ if in .Params.research $targ }}
+        <a class="block p-4 rounded-lg mb-4" href="{{ .Permalink }}">{{ partial "citationlink.html" . }}</a>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
+<div class="pageBlock" data-cat-sort="3">
+    {{ partial "subTitle.html" (dict "txt" (i18n "projects")) }}
+    <div class="linkBlock">
+        {{ range (where .Site.Pages "Section" "projects") }}
+        {{ range .Pages }}
+        {{ if in .Params.research $targ }}
+       {{ partial "boxLink.html" (dict "lin" .Permalink "photo" .Params.frontphoto "titl" (replace .Title " | "
+        "&middot;" |safeHTML) "subtitl" .Params.projectby) }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>

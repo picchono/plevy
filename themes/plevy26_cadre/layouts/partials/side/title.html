@@ -1,0 +1,50 @@
+<div class="postTitle">
+    <div class="text-left items-start">
+        <h1>{{ .Params.title |safeHTML }}{{if eq .Params.status "ended"}}
+            ({{- i18n "ended" -}}){{ end }}</h1>
+        {{ if .Params.authors }}
+        <p class="mt-4 italic" data-pagefind-weight="6">{{ .Params.authors }},
+            {{ dateFormat "02 Jan 2006" .Date }}</p>
+        {{ else if .Params.completename }}
+        <p class="mt-4 italic" data-pagefind-weight="6">{{ .Params.completename }}</p>
+        {{ end }}
+        {{ if .Params.prezfor }}
+        <p class="italic py-newpad" data-pagefind-weight="6">{{- i18n "by" }}
+            {{ $len := len .Params.intervenants}}
+            {{ $count := 0 }}
+            {{ range .Params.intervenants }}
+            <span data-pagefind-filter="author">{{ .name }}</span>
+            {{ $count = add $count 1 }}
+            {{ if ne $count $len -}}, {{ end }}
+            {{ end }}
+            {{ i18n "for" }} <span data-pagefind-filter="institution">{{ .Params.prezfor }}</span>, {{
+            dateFormat
+            "02 Jan 2006 - 15h04" .Date }}
+        </p>
+        {{ end }}
+    </div>
+    {{ if .Params.collaboration }}
+    <div class="flex flex-row flex-wrap items-center pt-10">
+        {{ range sort .Params.collaboration }}
+        <a href="{{ .web }}" class="collab" target="_blank" data-pagefind-weight="4">
+            {{ if .colo }}
+            {{ partial "icons.html" (dict "ico" .logo "hei" .heig "colo" .colo "cla" "max-h-8") -}}
+            {{else}}
+            {{ partial "icons.html" (dict "ico" .logo "hei" .heig "cla" "max-h-8" ) -}}
+            {{ end }}
+        </a>
+        {{ end }}
+    </div>
+    {{ else if .Params.institution }}
+    <div class="flex flex-row flex-wrap items-center pt-10">
+        <a href="{{ .Params.institution.web }}" target="_blank" class="collab" data-pagefind-weight="4">
+            {{ if .Params.institution.colo }}
+            {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig
+            "colo" .Params.institution.colo "cla" "max-h-8") -}}
+            {{else}}
+            {{ partial "icons.html" (dict "ico" .Params.institution.logo "hei" .Params.institution.heig "cla" "max-h-8") -}}
+            {{ end }}
+        </a>
+    </div>
+    {{ end }}
+</div>

@@ -1,0 +1,27 @@
+<div class="sideSection">
+    {{ .Scratch.Set "part" "title" }}{{ partial "side/_base.html" . }}
+    {{ if ne .Params.layout "list" }}
+        {{ if .Params.diploma}}{{ .Scratch.Set "part" "diploma" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.executive}}{{ .Scratch.Set "part" "executive" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if and (.Params.abstract) (ne .Params.layout "publi") }}{{ .Scratch.Set "part" "abstract" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if eq .Params.layout "about" }}{{ if .Params.frontphoto }}{{ .Scratch.Set "part" "frontphoto" }}{{ partial "side/_base.html" . }}{{ end }}{{ end }}
+        {{ if .Params.schedule }}{{ .Scratch.Set "part" "schedule" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.tablecontent }}{{ .Scratch.Set "part" "tablecontent" }}{{ partial "side/_base.html" . }}{ end }}
+        {{ if .Params.photogallery }}{{ partial "photogallery.html" . }}{{ end }}
+        {{ if .Params.calendar }}{{ .Scratch.Set "part" "calendar" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.lectures}}{{ .Scratch.Set "part" "lectures" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.sessions }}{{ .Scratch.Set "part" "sessions" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.intervenants }}{{ .Scratch.Set "part" "intervenants" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.redirectlecture}}{{ .Scratch.Set "part" "redirectlecture" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.updating}}{{ .Scratch.Set "part" "updating" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.citation}}{{ .Scratch.Set "part" "citation" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.encapsulation}}{{ .Scratch.Set "part" "encapsulation" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.parcours}}{{ .Scratch.Set "part" "parcours" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.link}}{{ .Scratch.Set "part" "link" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if or .Params.place .Params.visio }}{{ .Scratch.Set "part" "place" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if eq .Params.layout "presentation" }}{{ .Scratch.Set "part" "presentation" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if eq .Params.layout "member" }}{{ .Scratch.Set "part" "member" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if eq .Params.layout "programme"}}{{ .Scratch.Set "part" "programme" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ end }}
+        {{ end }}
+</div>

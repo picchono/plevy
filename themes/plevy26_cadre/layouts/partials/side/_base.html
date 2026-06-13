@@ -1,0 +1,3 @@
+{{ $tar := .Scratch.Get "part" }}
+{{ $targ := add "side/" $tar ".html"}}
+{{ partial $targ . }}

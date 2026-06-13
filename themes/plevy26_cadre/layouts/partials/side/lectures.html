@@ -1,0 +1,11 @@
+<div class="pageBlock" data-cat-sort="3">
+    {{ partial "subTitle.html" (dict "txt" (i18n "lectures")) }}
+    <div class="linkBlock">
+        {{ $cod := .Params.code }}
+        {{ range sort .Params.lectures "order" "asc" }}
+        <a class="linkBox" href="{{if .redirect }}{{ .redirect }}{{ else }}../{{ $cod }}/{{ .link }}{{ end -}}">
+            <b>{{ $cod }}/{{ .order }}&nbsp;&middot;&nbsp;</b>
+            {{- replace .Title " | " "&middot;" |safeHTML -}}</a>
+        {{ end }}
+    </div>
+</div>

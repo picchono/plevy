@@ -1,0 +1,11 @@
+<div class="pageBlock" data-cat-sort="1">
+    {{ partial "subTitle.html" (dict "txt" (i18n "encapsulation")) }}
+    <div class="linkBlock">
+        {{ range .Params.encapsulation }}
+        {{ with $.Site.GetPage "page" .page }}
+        {{ partial "boxLink.html" (dict "lin" .Permalink "photo" .Params.frontphoto "titl" (replace .Title " | "
+        "&middot;" |safeHTML) "subtitl" .Params.institution.name) }}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>

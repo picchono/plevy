@@ -1,0 +1,8 @@
+ <div class="pageBlock flex flex-col" data-cat-sort="1">
+     {{ range sort .Params.diploma }}
+     <div class="flex flex-row flex-wrap">
+         <div class="pr-newpad w-1/5 font-bold">{{ .type }}</div>
+         <div class="w-4/5">{{ .name }}</div>
+     </div>
+     {{ end }}
+ </div>
