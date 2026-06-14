@@ -1001,7 +1001,7 @@ section.site-content {
 }
 
 .sideBlockIn>div {
-    @apply my-6 py-1 border-t border-primary-text;
+    @apply my-6 py-1 border-t border-dotted border-primary-text;
 }
 
 @media (min-width: 768px) {
@@ -1160,7 +1160,7 @@ img.lg-object {
 }
 
 .mainBlockIn {
-    @apply my-6 py-1 border-t border-primary-text;
+    @apply my-6 py-1 border-t border-dotted border-primary-text;
     max-width: min(var(--container-3xl), 75%);
 }
 

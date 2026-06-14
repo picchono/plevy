@@ -2600,6 +2600,8 @@ section.site-content {
   margin-block: calc(var(--spacing) * 6);
   border-top-style: var(--tw-border-style);
   border-top-width: 1px;
+  --tw-border-style: dotted;
+  border-style: dotted;
   border-color: var(--color-primary-text);
   padding-block: calc(var(--spacing) * 1);
 }
@@ -2803,6 +2805,8 @@ img.lg-object {
   margin-block: calc(var(--spacing) * 6);
   border-top-style: var(--tw-border-style);
   border-top-width: 1px;
+  --tw-border-style: dotted;
+  border-style: dotted;
   border-color: var(--color-primary-text);
   padding-block: calc(var(--spacing) * 1);
   max-width: min(var(--container-3xl), 75%);
