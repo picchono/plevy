@@ -1,6 +1,6 @@
 
 {{ $code := .Params.code }}
-<div class="pageBlock" data-cat-sort="1">
+<div data-cat-sort="1">
     {{ partial "subTitle.html" (dict "txt" (i18n "sessions")) }}
     <div class="linkBlock">
         {{ range sort .Params.sessions "date" "desc" }}

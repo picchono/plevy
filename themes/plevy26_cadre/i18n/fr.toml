@@ -354,6 +354,9 @@ other="Nouvelles"
 [institutional-page]
 other="Page institutionnelle"
 
+[link]
+other="Liens"
+
 [links]
 other="Liens"
 
@@ -446,3 +449,12 @@ other="complet"
 
 [title]
 other="titre"
+
+[institution]
+other="institution"
+
+[collaboration]
+other="collaboration"
+
+[authors]
+other="par"

@@ -1,5 +1,4 @@
-<div class="pageBlock" data-cat-sort="1">
-    {{ partial "subTitle.html" (dict "txt" (i18n "venue")) }}<br />
+<div data-cat-sort="1">
     <p>{{ dateFormat "02 January 2006" .Date }} - {{ dateFormat "15h04" .Date }}</p>
     {{ if .Params.place }}<p class="">{{ .Params.place |safeHTML }}</p>{{ end }}
     {{ if .Params.visio }}{{ with .Params.visio }}

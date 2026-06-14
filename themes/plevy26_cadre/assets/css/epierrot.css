@@ -518,12 +518,7 @@ h2:not(.boxTitle) {
 }
 
 h3 {
-    @apply mt-20 mb-6 border-t border-primary-text self-baseline;
-}
-
-
-h3:first-child {
-    @apply mt-4;
+    @apply text-base font-normal;
 }
 
 main {
@@ -579,14 +574,14 @@ a.logohome svg {
 
 .menuSetting {
   @apply fixed flex flex-row justify-end items-center z-30 transition-colors duration-700 ease-in-out;
-  padding: 0 calc(3 * var(--pageBorder-width) + 186px) 0 calc(2 * var(--pageBorder-width)) !important;
+  padding: 0 calc(0.5 * var(--pageBorder-width) + 186px) 0 calc(0.5 * var(--pageBorder-width)) !important;
   height: calc(4 * var(--pageBorder-width)) !important;
-  width: 100% !important;
   background-color: var(--color-pageborder-bg);
 }
 
 @media screen and (min-width: 768px) {
   .menuSetting {
+      width:  calc(33% + 0.5 * var(--pageBorder-width));
     height: calc(2 * var(--pageBorder-width)) !important;
   }
 }
@@ -982,8 +977,7 @@ section.site-content {
 
 /* middle section */
 .sideSection {
-  @apply w-full;
-  padding: 0 var(--pageBorder-width);
+  @apply w-full flex flex-col items-stretch place-content-stretch justify-stretch flex-wrap;
   margin: calc(2 * var(--pageBorder-width)) 0;
 }
 
@@ -994,7 +988,26 @@ section.site-content {
 }
 
 .sideSection h1 {
-  @apply text-4xl font-bold -m-1;
+  @apply text-4xl font-bold;
+}
+
+.sideBlock {
+    @apply w-full flex flex-col;
+}
+
+.sideBlockIn {
+    @apply w-full h-full;
+    padding: 0 0 0 calc(0.5 * var(--pageBorder-width));
+}
+
+.sideBlockIn>div {
+    @apply my-6 py-1 border-t border-primary-text;
+}
+
+@media (min-width: 768px) {
+    .sideBlock {
+        @apply flex-row grow-0 shrink-0;
+    }
 }
 
 .linkBlock {
@@ -1002,9 +1015,7 @@ section.site-content {
 }
 
 .linkBlock .linkBox {
-  @apply text-sm text-epierrot rounded-xl flex flex-row justify-start items-center;
-  padding: calc(0.5 * var(--pageBorder-width));
-  margin-bottom: calc(0.5 * var(--pageBorder-width));
+    margin-bottom: calc(0.5 * var(--pageBorder-width));
 }
 
 .linkBlock .linkBox:hover {
@@ -1063,9 +1074,6 @@ section.site-content {
   @apply opacity-100;
   fill: var(--color-primary-bg);
 }
-}
-.pageBlock {
-  @apply pr-newpad pt-newpad w-full;
 }
 
 /* links */
@@ -1141,20 +1149,21 @@ img.lg-object {
 /* mainBlock */
 .mainBlock {
   @apply w-full;
-  padding: calc(3 * var(--pageBorder-width));
+  padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 
 @media (min-width: 768px) {
   .mainBlock {
     @apply w-2/3;
-    padding: 0 var(--pageBorder-width);
     margin: calc(2 * var(--pageBorder-width)) 0;
   }
 }
 
 .mainBlockIn {
-    @apply max-w-3xl;
+    @apply my-6 py-1 border-t border-primary-text;
+    max-width: min(var(--container-3xl), 75%);
 }
+
 /* docLink */
 .docLink {
   @apply inline-block font-bold;
@@ -1167,7 +1176,7 @@ img.lg-object {
 /* logo */
 .collab {
   @apply transition-all duration-700 ease-in-out;
-  padding: 0 var(--pageBorder-width) var(--pageBorder-width) 0;
+  padding: 0.25rem 0 calc(0.5 * var(--pageBorder-width)) 0;
 }
 
 .collab:hover {

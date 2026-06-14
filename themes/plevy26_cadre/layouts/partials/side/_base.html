@@ -1,4 +1,12 @@
 {{ $tar := .Scratch.Get "part" }}
 {{ $targ := add "side/" $tar ".html"}}
-{{ partial "subTitle.html" (dict "txt" (i18n $targ)) }}
-{{ partial $targ . }}
+{{ if eq $tar "title" }}
+<div class="sideBlock">
+    <div class="sideBlockIn"><div>{{ partial $targ . }}</div></div>
+</div>
+{{ else }}
+<div class="sideBlock">
+    <div class="sideBlockIn"><div>{{ partial "subTitle.html" (dict "txt" (i18n $tar)) }}</div></div>
+    <div class="sideBlockIn"><div>{{ partial $targ . }}</div></div>
+</div>
+{{ end }}

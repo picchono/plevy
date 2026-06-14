@@ -352,6 +352,9 @@ other="Headlines"
 [institutional-page]
 other="Institutional page"
 
+[link]
+other="Links"
+
 [links]
 other="Links"
 
@@ -450,3 +453,12 @@ other="complete"
 
 [title]
 other="title"
+
+[institution]
+other="institution"
+
+[collaboration]
+other="collaboration"
+
+[authors]
+other="by"

@@ -1,5 +1,4 @@
-<div class="pageBlock" data-cat-sort="0.5">
-    {{ partial "subTitle.html" (dict "txt" (i18n "calendar")) }}<br />
+<div data-cat-sort="0.5">
     {{ range .Params.calendar }}
     <div class="listoutside pb-3">{{ . | safeHTML }}</div>
     {{ end }}

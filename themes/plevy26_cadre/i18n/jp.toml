@@ -184,3 +184,15 @@ other="メンバー"
 
 [title]
 other="title"
+
+[institution]
+other="institution"
+
+[collaboration]
+other="collaboration"
+
+[authors]
+other="by"
+
+[link]
+other="links"

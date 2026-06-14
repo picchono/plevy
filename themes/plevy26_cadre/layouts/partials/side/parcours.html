@@ -1,5 +1,4 @@
-<div class="pageBlock" data-cat-sort="1">
-    {{ partial "subTitle.html" (dict "txt" (i18n "parcours")) }}
+<div data-cat-sort="1">
     <div class="linkBlock">
         {{ range .Params.parcours }}
         {{ with $.Site.GetPage "page" .page }}

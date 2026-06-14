@@ -1,5 +1,4 @@
-<div class="pageBlock" data-cat-sort="3">
-    {{ partial "subTitle.html" (dict "txt" (i18n "lectures")) }}
+<div data-cat-sort="3">
     <div class="linkBlock">
         {{ $cod := .Params.code }}
         {{ range sort .Params.lectures "order" "asc" }}

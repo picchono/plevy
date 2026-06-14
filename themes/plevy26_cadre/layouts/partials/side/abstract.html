@@ -1,4 +1,3 @@
-<div class="pageBlock" data-cat-sort="1">
-<b class="text-epierrot">{{ partial "subTitle.html" (dict "txt" (i18n "abstract")) }}</b>
+<div data-cat-sort="1">
     {{ .Params.abstract |safeHTML }}{{if .Params.projectby }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}
 </div>
