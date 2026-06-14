@@ -770,14 +770,14 @@ a.linkBox:hover .duotone::after {
 /* Home Page menu */
 /* - Modal pour le mobile) - */
 section.home {
-  @apply w-full md:w-1/3 flex flex-col md:flex-row items-start justify-start;
+  @apply w-full md:w-1/3 max-w-3xl flex flex-col md:flex-row items-start justify-start;
   height: 100vh;
   padding: calc(3 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width));
   padding-bottom: var(--pageBorder-width);
 }
 
 section.site-content {
-  @apply grow flex flex-col items-end justify-start;
+  @apply w-full md:w-1/3 max-w-6xl grow flex flex-col items-end justify-start;
   width: 33% !important;
   height: 100vh;
   margin: calc(2 * var(--pageBorder-width)) 0;
@@ -788,13 +788,6 @@ section.site-content {
   #menu section.home,
   #menu section.site-content {
     overflow: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  section.home {
-    height: 0 !important;
-    width: 100% !important;
   }
 }
 
@@ -959,14 +952,8 @@ section.site-content {
 
 /* middle section */
 .sideSection {
-  @apply w-full flex flex-col items-stretch place-content-stretch justify-stretch flex-wrap;
+  @apply w-full md:w-1/3 max-w-xl flex flex-col items-stretch place-content-stretch justify-stretch flex-wrap;
   margin: calc(2 * var(--pageBorder-width)) 0;
-}
-
-@media (min-width: 768px) {
-  .sideSection {
-    @apply w-1/3;
-  }
 }
 
 .sideSection h1 {
