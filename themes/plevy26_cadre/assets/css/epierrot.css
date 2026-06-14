@@ -267,7 +267,8 @@ html.body {
 }
 
 body {
-  @apply relative bg-primary-bg text-primary-text min-h-screen p-0 transition-colors duration-700 ease-in-out;
+  @apply relative bg-primary-bg text-primary-text min-h-screen transition-colors duration-700 ease-in-out;
+  padding-right: var(0.5 * var(--pageBorder-width));
 }
 
 .bordTop,
@@ -670,45 +671,36 @@ pagefind-modal-trigger {
 
 /* menuBox */
 .menuBox {
-  @apply relative max-w-7xl flex flex-row justify-between items-start transition-all duration-700 ease-in-out;
-  padding: 0 calc(0.5 * var(--pageBorder-width)) calc(0.5 * var(--pageBorder-width)) 0;
-  width: calc(100% - calc(2 * var(--pageBorder-width)));
+  @apply relative w-full flex flex-row justify-between items-start transition-all duration-700 ease-in-out;
 }
 
-@media (min-width: 768px) {
-  .menuBox {
-    padding: var(--pageBorder-width);
-  }
+.menuBox:first-child {
+    @apply mt-6;
 }
 
 .menuBoxCount {
-  @apply w-8 py-newpad flex-shrink-0 flex-grow-0 flex flex-col justify-start;
-}
-
-.menuBoxCount>div {
-  @apply font-bold;
-}
-
-.menuBoxCount>div:first-child {
-  @apply border-b border-primary-text;
+  @apply text-xs;
 }
 
 .menuBoxDesc {
-  @apply w-full md:w-1/3 h-full p-newpad text-sm;
+  @apply w-full md:w-1/3 h-full text-sm;
 }
 
 /* boxIso */
 .boxIso {
-  @apply rounded-md w-full h-74 min-h-56 text-primary-text grow-0 shrink-0 flex flex-col md:flex-row justify-between items-start;
-  margin: 0 0 calc(0.5 * var(--pageBorder-width)) 0;
-}
-
-#menu .boxIso {
-  @apply h-full w-full;
+  @apply w-full h-full text-primary-text grow-0 shrink-0 flex flex-col md:flex-row justify-between items-start;
 }
 
 .boxIso>div {
-  @apply transition-all duration-700 ease-in-out;
+    @apply w-full md:w-1/3 h-full shrink-0 grow-0;
+}
+
+.boxIso>div:not(:last-child) {
+    padding: 0 calc(0.5 * var(--pageBorder-width)) 0 0;
+}
+
+.boxIso>div>div {
+  @apply h-full w-full flex flex-col items-start justify-between border-t border-dotted border-primary-text transition-all duration-700 ease-in-out;
 }
 
 .boxIso:hover>div {
@@ -716,7 +708,7 @@ pagefind-modal-trigger {
 }
 
 .boxMeta {
-  @apply w-full flex flex-col flex-wrap justify-start pt-4;
+  @apply w-full flex flex-col flex-wrap justify-start;
 }
 
 .boxIsoImg {
@@ -728,21 +720,21 @@ pagefind-modal-trigger {
 
 /* duotone */
 .duotone {
-  @apply inline-block relative transition-all duration-700 ease-in-out rounded;
+  @apply inline-block relative transition-all duration-700 ease-in-out;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .duotone::before {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
   background-color: var(--color-tertiary-bg);
   content: '';
   mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
-  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out rounded;
+  @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
   background-color: var(--color-primary-bg);
   content: '';
   mix-blend-mode: var(--blend-mode-after);
@@ -788,8 +780,8 @@ section.site-content {
   @apply grow flex flex-col items-end justify-start;
   width: 33% !important;
   height: 100vh;
-  margin-top: calc(2 * var(--pageBorder-width));
-  padding: var(--pageBorder-width) calc(2 * var(--pageBorder-width));
+  margin: calc(2 * var(--pageBorder-width)) 0;
+  padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 
 @media (min-width: 768px) {
@@ -797,22 +789,12 @@ section.site-content {
   #menu section.site-content {
     overflow: auto;
   }
-
-  section.site-content {
-    padding-top:  calc(2 * var(--pageBorder-width));
-    padding-right: var(--pageBorder-width);
-    margin-top: 0;
-  }
 }
 
 @media (max-width: 768px) {
   section.home {
     height: 0 !important;
     width: 100% !important;
-  }
-
-  section.site-content {
-    padding-top: calc(0.5 * var(--pageBorder-width));
   }
 }
 
@@ -1052,7 +1034,7 @@ section.site-content {
 
 @media (min-width: 768px) {
 .linkHome {
-  @apply text-epierrot rounded inline md:flex-row md:justify-center md:items-center transition-all duration-700 ease-in-out h-6;
+  @apply text-epierrot inline md:flex-row md:justify-center md:items-center transition-all duration-700 ease-in-out h-6;
   vertical-align: baseline;
   display: inline-flex;
 }

@@ -31,7 +31,6 @@
     --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
-    --container-7xl: 80rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -355,9 +354,6 @@
   }
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
-  }
-  .my-2 {
-    margin-block: calc(var(--spacing) * 2);
   }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
@@ -1066,6 +1062,9 @@
   .capitalize {
     text-transform: capitalize;
   }
+  .uppercase {
+    text-transform: uppercase;
+  }
   .italic {
     font-style: italic;
   }
@@ -1754,7 +1753,6 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: var(--color-primary-bg);
-  padding: calc(var(--spacing) * 0);
   color: var(--color-primary-text);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1763,6 +1761,7 @@ body {
   transition-duration: 700ms;
   --tw-ease: var(--ease-in-out);
   transition-timing-function: var(--ease-in-out);
+  padding-right: var(0.5 * var(--pageBorder-width));
 }
 .bordTop, .bordBottom, .bordLeft, .bordRight {
   position: fixed;
@@ -2180,7 +2179,7 @@ pagefind-modal-trigger {
 .menuBox {
   position: relative;
   display: flex;
-  max-width: var(--container-7xl);
+  width: 100%;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
@@ -2191,36 +2190,17 @@ pagefind-modal-trigger {
   transition-duration: 700ms;
   --tw-ease: var(--ease-in-out);
   transition-timing-function: var(--ease-in-out);
-  padding: 0 calc(0.5 * var(--pageBorder-width)) calc(0.5 * var(--pageBorder-width)) 0;
-  width: calc(100% - calc(2 * var(--pageBorder-width)));
 }
-@media (min-width: 768px) {
-  .menuBox {
-    padding: var(--pageBorder-width);
-  }
+.menuBox:first-child {
+  margin-top: calc(var(--spacing) * 6);
 }
 .menuBoxCount {
-  display: flex;
-  width: calc(var(--spacing) * 8);
-  flex-shrink: 0;
-  flex-grow: 0;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-block: var(--spacing-newpad);
-}
-.menuBoxCount>div {
-  --tw-font-weight: var(--font-weight-bold);
-  font-weight: var(--font-weight-bold);
-}
-.menuBoxCount>div:first-child {
-  border-bottom-style: var(--tw-border-style);
-  border-bottom-width: 1px;
-  border-color: var(--color-primary-text);
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
 }
 .menuBoxDesc {
   height: 100%;
   width: 100%;
-  padding: var(--spacing-newpad);
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   @media (width >= 48rem) {
@@ -2229,26 +2209,42 @@ pagefind-modal-trigger {
 }
 .boxIso {
   display: flex;
-  height: var(--height-74);
-  min-height: calc(var(--spacing) * 56);
+  height: 100%;
   width: 100%;
   flex-shrink: 0;
   flex-grow: 0;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  border-radius: var(--radius-md);
   color: var(--color-primary-text);
   @media (width >= 48rem) {
     flex-direction: row;
   }
-  margin: 0 0 calc(0.5 * var(--pageBorder-width)) 0;
-}
-#menu .boxIso {
-  height: 100%;
-  width: 100%;
 }
 .boxIso>div {
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  @media (width >= 48rem) {
+    width: calc(1 / 3 * 100%);
+  }
+}
+.boxIso>div:not(:last-child) {
+  padding: 0 calc(0.5 * var(--pageBorder-width)) 0 0;
+}
+.boxIso>div>div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-top-style: var(--tw-border-style);
+  border-top-width: 1px;
+  --tw-border-style: dotted;
+  border-style: dotted;
+  border-color: var(--color-primary-text);
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -2266,7 +2262,6 @@ pagefind-modal-trigger {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-top: calc(var(--spacing) * 4);
 }
 .boxIsoImg {
   display: block;
@@ -2279,7 +2274,6 @@ pagefind-modal-trigger {
 .duotone {
   position: relative;
   display: inline-block;
-  border-radius: 0.25rem;
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -2298,7 +2292,6 @@ pagefind-modal-trigger {
   display: block;
   height: 100%;
   width: 100%;
-  border-radius: 0.25rem;
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -2317,7 +2310,6 @@ pagefind-modal-trigger {
   display: block;
   height: 100%;
   width: 100%;
-  border-radius: 0.25rem;
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -2383,26 +2375,18 @@ section.site-content {
   justify-content: flex-start;
   width: 33% !important;
   height: 100vh;
-  margin-top: calc(2 * var(--pageBorder-width));
-  padding: var(--pageBorder-width) calc(2 * var(--pageBorder-width));
+  margin: calc(2 * var(--pageBorder-width)) 0;
+  padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 @media (min-width: 768px) {
   #menu section.home, #menu section.site-content {
     overflow: auto;
-  }
-  section.site-content {
-    padding-top: calc(2 * var(--pageBorder-width));
-    padding-right: var(--pageBorder-width);
-    margin-top: 0;
   }
 }
 @media (max-width: 768px) {
   section.home {
     height: 0 !important;
     width: 100% !important;
-  }
-  section.site-content {
-    padding-top: calc(0.5 * var(--pageBorder-width));
   }
 }
 .imgAddons {
@@ -2673,7 +2657,6 @@ section.site-content {
   .linkHome {
     display: inline;
     height: calc(var(--spacing) * 6);
-    border-radius: 0.25rem;
     color: var(--color-epierrot);
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
