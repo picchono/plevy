@@ -29,7 +29,8 @@
         {{ if eq .Params.layout "programme"}}{{ .Scratch.Set "part" "programme" }}{{ partial "side/_base.html" . }}{{ end }}
     {{ end }}{{ else }}
         {{ if .Params.subtitle }}{{ .Scratch.Set "part" "subtitle" }}{{ partial "side/_base.html" . }}{{ end }}
-        {{ if .Params.photogallery }}{{ .Scratch.Set "part" "photogallery" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.completename }}{{ .Scratch.Set "part" "completename" }}{{ partial "side/_base.html" . }}
+        {{ else if .Params.photogallery }}{{ .Scratch.Set "part" "photogallery" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ .Scratch.Set "part" "front_pro" }}{{ partial "side/_base.html" . }}
         {{ .Scratch.Set "part" "front_publis" }}{{ partial "side/_base.html" . }}
     {{ end }}

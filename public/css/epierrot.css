@@ -356,8 +356,14 @@
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
   }
   .my-7 {
     margin-block: calc(var(--spacing) * 7);
@@ -1060,9 +1066,6 @@
   .capitalize {
     text-transform: capitalize;
   }
-  .uppercase {
-    text-transform: uppercase;
-  }
   .italic {
     font-style: italic;
   }
@@ -1665,7 +1668,7 @@
   line-height: calc(var(--spacing) * 6);
   color: var(--color-primary-text);
   --st-dropshadow: 7px 7px 8px #00000044;
-  --lineHeight: 1.75;
+  --lineHeight: 1.5;
   color-scheme: light dark;
   --pf-text: #1c1c1c;
   --pf-text-secondary: #666;

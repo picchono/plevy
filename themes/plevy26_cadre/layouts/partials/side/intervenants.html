@@ -1,20 +1,19 @@
+{{ $ta := .Scratch.Get "par" }}
 {{ range .Params.intervenants }}
-<div class="md:min-w-96 md:max-w-192">
-    <div class="flex flex-col">
-        <div class="flex flex-col md:flex-row">
-            <div class="place-self-center h-74 w-auto md:w-74 rounded-xl photoItem"
-                data-src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w3000" aria-label="See image">
-                <img loading="lazy" src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w500"
-                    alt="{{ .photo }}" title="{{ .name }}" class="rounded object-cover h-74 w-auto md:w-74"
-                    data-pagefind-index-attrs="title,alt">
-            </div>
-            <div class="py-6 md:py-0 md:pl-6">
-                <div class="text-3xl font-bold mt-4" data-cat-sort="6">{{ .name }}</div>
-                <div><i>{{ i18n "speaker" }}</i></div>
-                <a href="{{ .link }}" class="affiliationLogo">{{ partial "icons.html" (dict "ico" .logo "hei" .height) -}}</a>
-            </div>
+<div class="sideBlockIn"><div>
+    <div class="flex flex-row">
+        <div class="w-1/2">
+            <div>{{ partial "subTitle.html" (dict "txt" (i18n $ta)) }}</div>
+            <div class="text-2xl font-bold my-6" data-cat-sort="6">{{ .name }}</div>
+            <a href="{{ .link }}" class="affiliationLogo">{{ partial "icons.html" (dict "ico" .logo "hei" .height) -}}</a>
         </div>
-        {{ if .bio }}<div class="mt-6">{{ .bio | safeHTML }}</div>{{ end }}
+        <div class="w-1/2 place-self-center rounded-xl photoItem"
+        data-src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w3000" aria-label="See image">
+            <img loading="lazy" src="https://drive.google.com/thumbnail?id={{ .photo }}&sz=w500"
+            alt="{{ .photo }}" title="{{ .name }}" class="rounded object-cover h-74 w-auto md:w-74"
+            data-pagefind-index-attrs="title,alt">
+        </div>
     </div>
-</div>
+{{ if .bio }}<div class="w-full mt-6">{{ .bio | safeHTML }}</div>{{ end }}
+</div></div>
 {{ end }}

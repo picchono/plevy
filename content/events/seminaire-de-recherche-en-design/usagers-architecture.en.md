@@ -35,11 +35,6 @@ subsection: seminar
 layout: single
 description: "Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception. Elle mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et en discutera des questions méthodologiques pertinentes."
 frontphoto: "1ZV5vyLg0DkXflEQznVlBywHbX1qDKurX"
-photogallery:
-    image1:
-        order: 1
-        name: "Conception avec usagers en architecture : vers un indice de profondeur de participation, par Benjamin Loiseau"
-        img: "16HKBtYIE9dLIx5bCMrg3DxnpcuYwa8Qw"
 video:
     video1:
         title: "Conception avec usagers en architecture : vers un indice de profondeur de participation"

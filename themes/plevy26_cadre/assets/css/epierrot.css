@@ -142,7 +142,7 @@
 :root {
   @apply font-sans text-primary-text leading-6 box-border;
   --st-dropshadow: 7px 7px 8px #00000044;
-  --lineHeight: 1.75;
+  --lineHeight: 1.5;
   color-scheme: light dark;
 
   /* search */

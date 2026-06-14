@@ -4,6 +4,8 @@
 <div class="sideBlock">
     <div class="sideBlockIn"><div>{{ partial $targ . }}</div></div>
 </div>
+{{ else if in "intervenants completename" $tar }}
+<div class="sideBlock">{{ .Scratch.Set "par" $tar }}{{ partial $targ . }}</div>
 {{ else }}
 <div class="sideBlock">
     <div class="sideBlockIn"><div>{{ partial "subTitle.html" (dict "txt" (i18n $tar)) }}</div></div>

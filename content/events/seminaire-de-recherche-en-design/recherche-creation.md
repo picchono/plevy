@@ -34,11 +34,6 @@ subsection: seminar
 layout: single
 description: "La recherche-création est en plein essor, au point qu’elle dépasse même les frontières des arts et des arts appliqués. Mais comment la développer dans le champ académique, tout en garantissant sa qualité artistique et sa reconnaissance professionnelle, en premier lieu dans le monde de l'art et du design ?"
 frontphoto: "1puEmf5cWcc_oIDi0GkSJQgR6CcwiWGAh"
-photogallery:
-    image1:
-        order: 1
-        name: "Recherche-création : de la pratique réflexive à la publicisation, par Samuel Bianchini"
-        img: "1QR5FDFjOP-DDv5o33KR_GHPC5J9u9ofW"
 link:
     1: ["Dispotheque", "website", "https://www.dispotheque.org"]
     2: ["reflective interaction", "website", "https://reflectiveinteraction.ensadlab.fr"]

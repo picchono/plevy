@@ -2,7 +2,7 @@
 member: PLevy
 title: "Pierre Lévy"
 slug: "plevy"
-subtitle: "prof.dr.ing. Pierre Lévy, HDR"
+completename: "prof.dr.ing. Pierre Lévy, HDR"
 bodyclass: menu
 date: 2020-10-24T00:55:28+02:00
 draft: false

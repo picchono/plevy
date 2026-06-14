@@ -38,11 +38,6 @@ frontphoto: "1d3BFTF5QVHDkmAyhUYEHbUEORwC6tBda"
 link:
     1: ["reconstrained.design", "website", "https://reconstrained.design"]
     2: ["crapfutures", "website", "http://crapfutures.tumblr.com"]
-photogallery:
-    image1:
-        order: 1
-        name: "Reconstrained design, by James Auger"
-        img: "1KoOy7IfEpn9ZFdZXuP73I0kKzzGgISO2"
 video:
     video1:
         title: "Reconstrained design"
@@ -54,4 +49,4 @@ Design practice always happens under a particular set of forces or conditions, c
 
 But constraints also exist in more covert, abstract or oblique forms, such as national infrastructure systems like energy grids. These become so normalised that they force designers to simply design for or within the dominant paradigm. Myths of progress act to reduce the technological future to recycled utopian imaginaries that maintain the status quo and divert attention from its fundamental flaws, and constraints imposed by design's economic relationship with the market encourage, among other things, questionable approaches to resources, labour, distribution and repair.
 
-This presentation will firstly explore some of the more dominant oblique constraints and the ways in which they negatively influence the role and purpose of design. The second part will describe the approach of Reconstrained Design, which takes the identified constraints and develops ways to reverse, work around or simply ignore them. This expands the potential of the design and the designer's ability to radically rethink modes of practice.  
+This presentation will firstly explore some of the more dominant oblique constraints and the ways in which they negatively influence the role and purpose of design. The second part will describe the approach of Reconstrained Design, which takes the identified constraints and develops ways to reverse, work around or simply ignore them. This expands the potential of the design and the designer's ability to radically rethink modes of practice.
