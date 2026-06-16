@@ -1,8 +1,9 @@
 {{ define "main" }}
 {{ $langu := .Site.Language.Lang }}
-<section class="site-content">
+<div class="mainsection">
     {{ if .Content}}
-    <div class="w-full" data-cat-sort="110">
+    <div class="w-full" data-cat-sort="110">{{ .Content}}</div>
+</div>
         {{ .Content }}
     </div>
     {{ end }}

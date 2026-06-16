@@ -62,7 +62,7 @@
 
 </section>
 {{ end }}
-<section class="site-content">
+<div class="mainsection">
     {{ $page := $.Site.GetPage "page" "pl/" }}
     {{ with $page }}{{- partial "box.html" ( dict "context" . "sort" 100 "intro" true "sect" "0" "pag" 1) -}}
     {{ end }}
@@ -78,5 +78,5 @@
     {{ end }}{{ end }}
     {{ $s = add $s 1 }}
     {{ end }}{{ end }}
-</section>
+</div>
 {{ end }}
