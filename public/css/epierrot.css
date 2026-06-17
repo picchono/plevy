@@ -1040,9 +1040,6 @@
   .text-red-800 {
     color: var(--color-red-800);
   }
-  .text-secondary-text {
-    color: var(--color-secondary-text);
-  }
   .text-slate-50 {
     color: var(--color-slate-50);
   }
@@ -2607,6 +2604,7 @@ section.home {
   }
 }
 .sideBlockIn.more {
+  cursor: pointer;
   padding: calc(var(--spacing) * 0);
 }
 .sideBlockIn.more>div {
@@ -2615,6 +2613,17 @@ section.home {
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   color: var(--color-primary-bg);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 700ms;
+  transition-duration: 700ms;
+  --tw-ease: var(--ease-in-out);
+  transition-timing-function: var(--ease-in-out);
+}
+.sideBlockIn.more:hover>div {
+  background-color: var(--color-secondary-bg);
+  color: var(--color-primary-text);
 }
 .annexSection {
   display: flex;

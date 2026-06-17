@@ -984,13 +984,16 @@ section.home {
 }
 
 .sideBlockIn.more {
-    @apply p-0;
+    @apply p-0 cursor-pointer;
 }
 
 .sideBlockIn.more>div {
-    @apply text-base m-0 bg-epierrot text-primary-bg;
+    @apply text-base m-0 bg-epierrot text-primary-bg transition-all duration-700 ease-in-out;
 }
 
+.sideBlockIn.more:hover>div {
+    @apply bg-secondary-bg text-primary-text;
+}
 /* annex Section */
 .annexSection {
   @apply w-full flex flex-col grow-0 shrink-0 items-stretch place-content-stretch justify-stretch flex-wrap;
