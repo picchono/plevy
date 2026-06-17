@@ -6,13 +6,22 @@
     <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }}"
         href="{{ .context.Permalink }}">
         <div><div class="h-full flex flex-col items-start justify-between">
-            <h2 class='boxTitle'>
-            {{ if .sect }}
-            <span class="menuBoxCount">{{ if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}|{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }} ·</span>
-            {{ else }}
-            <span class="menuBoxCount"></span>
-            {{ end }}
-            {{- .context.Title |safeHTML }}</h2>
+            <div>{{ if .sect }}
+                {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
+                <span class="menuBoxCount"><b>{{ if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}|{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }} ·
+                    {{ $sectio | humanize }}</b><br/>
+                {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
+                {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" )  ( eq .context.Section "presentations" )}}{{ dateFormat "2006" .context.Date }}
+                {{ else }}
+                    {{ dateFormat "2006" .context.Date }}/
+                    {{- if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
+                    {{ else }}...{{ end }}
+                {{ end }}</span>
+                {{ else }}
+                <span class="menuBoxCount"></span>
+                {{ end }}
+                <h2 class='boxTitle pt-4'>{{- .context.Title |safeHTML }}</h2>
+            </div>
             {{ if not .intro }}
             <div class="boxMeta">
                 <div class="w-full py-4">
@@ -53,17 +62,6 @@
                     {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
                     {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}{{
                     .context.Params.institution.name }}{{ end }}{{ end }}
-                </div>
-                {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
-                <div class="text-sm">{{ $sectio | humanize }}</div>
-                <div class="text-sm">
-                    {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
-                    {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" )  ( eq .context.Section "presentations" )}}{{ dateFormat "2006" .context.Date }}
-                    {{ else }}
-                        {{ dateFormat "2006" .context.Date }} ·
-                        {{if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
-                        {{ else }}...{{ end }}
-                    {{ end }}
                 </div>
             </div>
             {{ end }}

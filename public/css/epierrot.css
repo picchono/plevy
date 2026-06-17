@@ -2190,12 +2190,11 @@ pagefind-modal-trigger {
   --tw-ease: var(--ease-in-out);
   transition-timing-function: var(--ease-in-out);
 }
-.menuBox:first-child {
-  margin-top: calc(var(--spacing) * 6);
-}
 .menuBoxCount {
   font-size: var(--text-xs);
   line-height: var(--tw-leading, var(--text-xs--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
 }
 .menuBoxDesc {
   height: 100%;
@@ -2219,6 +2218,9 @@ pagefind-modal-trigger {
   @media (width >= 48rem) {
     flex-direction: row;
   }
+}
+.menuBox.ended .boxIso {
+  opacity: 40% !important;
 }
 .boxIso>div {
   height: 100%;
@@ -2254,6 +2256,9 @@ pagefind-modal-trigger {
 }
 .boxIso:hover>div {
   border-color: transparent !important;
+}
+.menuBox.ended:hover .boxIso {
+  opacity: 100% !important;
 }
 .boxMeta {
   display: flex;
@@ -2319,7 +2324,7 @@ pagefind-modal-trigger {
   background-color: var(--color-primary-bg);
   content: '';
   mix-blend-mode: var(--blend-mode-after);
-  opacity: 0.4;
+  opacity: 0.2;
 }
 a.boxIso:hover .duotone::before, a.linkBox:hover .duotone::before {
   mix-blend-mode: var(--blend-mode-before);
@@ -2377,7 +2382,7 @@ section.home {
   justify-content: flex-start;
   width: 33% !important;
   height: 100vh;
-  margin: calc(2 * var(--pageBorder-width)) 0;
+  margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
   padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 @media (min-width: 768px) {

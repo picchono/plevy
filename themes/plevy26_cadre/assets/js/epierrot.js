@@ -204,8 +204,8 @@ function MenuToggle() {
       } else {
         window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 72, behavior: 'smooth' });
       }
-      document.querySelectorAll("."+secti).forEach(function (to) {
-        to.classList.add('foc');
+      document.querySelectorAll("." + secti).forEach(function (to) {
+        if (!to.classList.contains('ended')) to.classList.add('foc');
         setTimeout(function () {
           to.classList.remove('foc');
         }, 1500);
