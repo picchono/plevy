@@ -78,7 +78,7 @@
     {{ end }}{{ end }}{{ end }}
     <div class="sideBlock section-{{- .Slug -}}">
         <div class="sideBlockIn more p-0">
-            <div>&nbsp;+ {{ i18n .Slug  | humanize }}&hellip;</div>
+            <a href="{{ .Slug }}">&nbsp;+ {{ i18n .Slug  | humanize }}&hellip;</a>
         </div>
     </div>
     {{ $s = add $s 1 }}

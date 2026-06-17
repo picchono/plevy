@@ -254,6 +254,7 @@ textarea::placeholder {
 html,
 body {
   font-family: var(--font-family-sans);
+  font-size: 14px;
   font-stretch: 100%;
   letter-spacing: 0.01rem;
   line-height: var(--lineHeight);
@@ -984,15 +985,16 @@ section.home {
 }
 
 .sideBlockIn.more {
-    @apply p-0 cursor-pointer;
+    @apply p-0;
 }
 
-.sideBlockIn.more>div {
-    @apply text-base m-0 bg-epierrot text-primary-bg transition-all duration-700 ease-in-out;
+.sideBlockIn.more>a {
+    @apply inline-block w-full m-0 border-t text-base text-primary-text bg-secondary-bg border-dotted border-primary-text transition-all duration-700 ease-in-out;
+    padding: calc(0.5 * var(--pageBorder-width)) 0;
 }
 
-.sideBlockIn.more:hover>div {
-    @apply bg-secondary-bg text-primary-text;
+.sideBlockIn.more:hover>a {
+    @apply bg-epierrot text-primary-bg;
 }
 /* annex Section */
 .annexSection {
