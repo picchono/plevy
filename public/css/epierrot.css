@@ -1040,6 +1040,9 @@
   .text-red-800 {
     color: var(--color-red-800);
   }
+  .text-secondary-text {
+    color: var(--color-secondary-text);
+  }
   .text-slate-50 {
     color: var(--color-slate-50);
   }
@@ -1821,7 +1824,7 @@ html {
 }
 html.light {
   --color-primary-bg: rgb(240, 239, 235);
-  --color-secondary-bg: var(--color-pageborder-bg);
+  --color-secondary-bg: rgb(236, 216, 220);
   --color-tertiary-bg: #d7d5d2;
   --color-pageborder-bg: var(--color-primary-bg);
   --color-primary-text: #181818;
@@ -2266,6 +2269,8 @@ pagefind-modal-trigger {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
 }
 .boxIsoImg {
   display: block;
@@ -2600,6 +2605,16 @@ section.home {
     flex-grow: 0;
     flex-direction: row;
   }
+}
+.sideBlockIn.more {
+  padding: calc(var(--spacing) * 0);
+}
+.sideBlockIn.more>div {
+  margin: calc(var(--spacing) * 0);
+  background-color: var(--color-epierrot);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  color: var(--color-primary-bg);
 }
 .annexSection {
   display: flex;

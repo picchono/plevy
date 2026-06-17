@@ -18,6 +18,7 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2013-09-10T20:07:29+02:00
+frontpage: true
 shortJournal: "Interactions 20(6)"
 citation:
     authors:

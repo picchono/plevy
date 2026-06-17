@@ -408,7 +408,7 @@ html {
 html.light {
   --color-primary-bg: rgb(240, 239, 235);
   /*pantone clour dancer 11-4201*/
-  --color-secondary-bg: var(--color-pageborder-bg);
+  --color-secondary-bg: rgb(236, 216, 220);
   --color-tertiary-bg: #d7d5d2;
   --color-pageborder-bg: var(--color-primary-bg);
   /*#f5f5f5*/
@@ -710,7 +710,7 @@ pagefind-modal-trigger {
     opacity:100% !important;
 }
 .boxMeta {
-  @apply w-full flex flex-col flex-wrap justify-start;
+  @apply w-full flex flex-col flex-wrap justify-start text-sm;
 }
 
 .boxIsoImg {
@@ -981,6 +981,14 @@ section.home {
     .sideBlock {
         @apply flex-row grow-0 shrink-0;
     }
+}
+
+.sideBlockIn.more {
+    @apply p-0;
+}
+
+.sideBlockIn.more>div {
+    @apply text-base m-0 bg-epierrot text-primary-bg;
 }
 
 /* annex Section */

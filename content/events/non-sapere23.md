@@ -25,6 +25,7 @@ collaboration:
         colo: "var(--color-primary-text)"
         heig: 1.2
 date: 2023-10-16T14:00:00+02:00
+frontpage: true
 reference: "Ce séminaire vise à lancer la troisième session de l'école du non-savoir. La première a débuté en septembre 2022 à l'Institut français de Milan et a abouti sous la forme d'une première exposition au même endroit en janvier 2024."
 frontphoto: "13eFoXa8ShCmDcsFWti_blHW6WwGOP1PH"
 link:

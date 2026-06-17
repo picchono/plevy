@@ -2,6 +2,7 @@
 slug: seminaire-de-recherche-en-design
 title: "Seminar on methods in design research"
 date: 2025-01-28T10:04:12+02:00
+frontpage: true
 tags: ['séminaire', 'design', 'création', 'méthodologie']
 draft: false
 front: true

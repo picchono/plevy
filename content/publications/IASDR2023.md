@@ -16,6 +16,7 @@ institution:
     web: "https://www.cnam.fr"
     colo: "#c1002a"
 date: 2023-10-09T15:00:40+02:00
+frontpage: true
 shortConf: "IASDR 2023"
 citation:
     authors:
@@ -39,4 +40,3 @@ link:
     1: ["paper", "paper", "https://1drv.ms/b/s!AnQx_v88q65QgY7KZqdI5PrTZ1uufYk?e=FJSSHe"]
     8: ["proceedings", "proceedings", "https://dl.designresearchsociety.org/iasdr/iasdr2023/fullpapers/108/"]
 ---
-

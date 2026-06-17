@@ -30,6 +30,7 @@ collaboration:
         web: "https://www.chaire-design.fr"
         heig: 2.5
 date: 2022-05-18T10:30:52+02:00
+frontpage: true
 reference: "Lévy, P. (2022). Le moment du design - Lecture inaugurale de la Chaire de Design Jean Prouvé, presented at Conservatoire National des Arts et Métiers, Paris, France. May 13th, 2022."
 frontphoto: "12E648kLebZ8HJ20e8Oe6IMEB3fmY3Li_"
 photogallery:

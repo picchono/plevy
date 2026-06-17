@@ -4,6 +4,7 @@ title: "Doctorat mention Arts, Design et Société"
 layout: course
 searchFilter: Course
 date: 2023-09-01T16:27:15+02:00
+frontpage: true
 subsection: diploma
 Diploma:
     level1:
@@ -49,4 +50,4 @@ Finalement, considérant la relative jeunesse de la recherche en design et en m�
 
 &nbsp;
 
-L’ambition de la mention « Arts, Design et Société » de l’École Doctorale Abbé Grégoire est donc claire : développer et porter une recherche doctorale réalisée au travers de la pratique des métiers d’art, du design et de l’architecture, dont les implications de développement et de transformation portent à la fois sur des aspects théoriques des disciplines concernées, sur leur épistémologie, leur pratique, ainsi qu’à leur contribution sociale et industrielle. 
+L’ambition de la mention « Arts, Design et Société » de l’École Doctorale Abbé Grégoire est donc claire : développer et porter une recherche doctorale réalisée au travers de la pratique des métiers d’art, du design et de l’architecture, dont les implications de développement et de transformation portent à la fois sur des aspects théoriques des disciplines concernées, sur leur épistémologie, leur pratique, ainsi qu’à leur contribution sociale et industrielle.

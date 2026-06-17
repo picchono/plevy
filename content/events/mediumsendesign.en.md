@@ -3,6 +3,7 @@ slug: mediums-in-design
 title: "Mediums in design"
 tags: ['seminar', 'mediums', 'mediality', 'symetrical_anthropology']
 date: 2021-12-11T20:04:12+02:00
+frontpage: true
 draft: false
 front: true
 frontdescription: "A collaborative seminar between the CNAM Chair of Design Jean Prouvé and CY Design Research"

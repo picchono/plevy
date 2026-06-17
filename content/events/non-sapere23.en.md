@@ -25,6 +25,7 @@ collaboration:
         colo: "var(--color-primary-text)"
         heig: 1.2
 date: 2023-10-16T14:00:00+02:00
+frontpage: true
 reference: "This seminar aims to launch the third session of the school of not-Knowing. The first began in September 2022 at the French Institute in Milan and culminated in the form of a first exhibition in the same place in January 2024."
 frontphoto: "13eFoXa8ShCmDcsFWti_blHW6WwGOP1PH"
 link:

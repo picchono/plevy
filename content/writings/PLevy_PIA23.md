@@ -11,6 +11,7 @@ institution:
     web: "https://www.cnam.fr/"
 searchFilter: Writing
 date: 2023-05-20T13:38:26+02:00
+frontpage: true
 authors: "Pierre Lévy"
 abstract: "Une réflexion sur l’enseignement du design et des métiers d’art, présent et à venir"
 frontphoto: "1dpEshb9ZepNtGgrdhS-Zj4zZXVE8u_iC"

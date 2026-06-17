@@ -5,6 +5,7 @@ subsection: writing
 layout: writing
 searchFilter: Writing
 date: 2023-05-20T13:38:26+02:00
+frontpage: true
 authors: "Pierre Lévy"
 institution:
     heig: 1

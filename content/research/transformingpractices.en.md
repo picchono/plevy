@@ -2,6 +2,7 @@
 title: "Pratiques transformatives"
 slug: programme-TP
 date: 2020-09-16T20:03:12+02:00
+frontpage: true
 draft: false
 searchFilter: Research
 milestone: transformpractices

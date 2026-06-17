@@ -9,6 +9,7 @@ institution:
     web: "https://www.cnam.fr"
     colo: "#c1002a"
 date: 2022-04-01T17:03:37+02:00
+frontpage: true
 shortSection: "The Next Renaissance - Culture and Creativity shaping Europe"
 citation:
     authors:

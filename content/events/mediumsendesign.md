@@ -2,6 +2,7 @@
 slug: mediums-in-design
 title: "Médiums en design"
 date: 2021-12-11T20:04:12+02:00
+frontpage: true
 tags: ['séminaire', 'médiums', 'médialité', 'anthropologie_symétrique']
 draft: false
 front: true

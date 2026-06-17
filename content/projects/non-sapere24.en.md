@@ -35,6 +35,7 @@ collaboration:
         web: "https://www.institutfrancais.com/fr"
         heig: 2
 date: 2024-01-31T10:30:52+02:00
+frontpage: true
 reference: "The School of not-knowing is based on the conviction that dialogue between art, design, science and society can open up new horizons for understanding and apprehending known and yet-to-be-discovered worlds."
 frontphoto: "1XL3utNE8rPZrcpIz3ATmbTqWSLYuPXH4"
 link:

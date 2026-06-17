@@ -2,6 +2,7 @@
 title: "Qualités perceptives"
 slug: programme-perceptive-qualities
 date: 2015-10-16T20:03:12+02:00
+frontpage: true
 draft: false
 searchFilter: Research
 milestone: perceptq

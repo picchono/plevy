@@ -2,6 +2,7 @@
 title: "Kansei studies, kansei design"
 slug: programme-kansei
 date: 2003-10-16T20:03:12+02:00
+frontpage: true
 draft: false
 searchFilter: Research
 milestone: kansei
@@ -16,4 +17,3 @@ quote:
 ---
 
 For over three decades, kansei engineering has expanded greatly and has become a significant discipline both in the industrial and the academic worlds. In this paper, I present the current situation of kansei engineering, and plead for the emancipation of other disciplines, as part of kansei research as well. By reconstructing the historical path of kansei research and exploring the variety of disciplines within kansei research, I point out the opportunities for kansei design to emerge. Whereas kansei engineering and kansei science have found their roots in scientifically established approaches (respectively engineering and brain science), kansei design intends to return to earlier Japanese philosophical or cultural works to rediscover the essence of kansei, and to use them as inspirational means for design. This new discipline certainly needs to be elaborated further.
-

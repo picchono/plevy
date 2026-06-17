@@ -27,6 +27,7 @@ collaboration:
         colo: "var(--color-primary-text)"
         heig: 1.2
 date: 2024-09-26T16:00:00+02:00
+frontpage: true
 reference: "Duwa, J., Zacklad, M. & Lévy, P. (2024). Le design est-il une science humaine ?, presented at l'École Estienne, Paris, France. February 27th, 2023."
 frontphoto: "1Y2qZAfZhGTnEdLE2h-HPUGNb0rXi-exy"
 video:

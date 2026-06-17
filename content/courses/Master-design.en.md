@@ -4,6 +4,7 @@ title: "Master Design"
 layout: course
 searchFilter: Course
 date: 2021-10-01T16:27:15+02:00
+frontpage: true
 subsection: diploma
 Diploma:
     level1:
