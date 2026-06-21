@@ -1,0 +1,11 @@
+/* TEAM */
+	Me: Pierre Lévy
+	Contact: pierre_levy [at] outlook.com
+	From: France
+
+/* THANKS */
+	Hugo
+    Web: https://gohugo.io/
+
+    Netlify
+    https://www.netlify.com/

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide Bold.eot');
+    src: local('Euclide Bold'),
+        url('Euclide Bold.eot?#iefix') format('embedded-opentype'),
+        url('Euclide Bold.woff2') format('woff2'),
+        url('Euclide Bold.woff') format('woff'),
+        url('Euclide Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide Bold Italic.eot');
+    src: local('Euclide Bold Italic'),
+        url('Euclide Bold Italic.eot?#iefix') format('embedded-opentype'),
+        url('Euclide Bold Italic.woff2') format('woff2'),
+        url('Euclide Bold Italic.woff') format('woff'),
+        url('Euclide Bold Italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide SemiBold.eot');
+    src: local('Euclide SemiBold'),
+        url('Euclide SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Euclide SemiBold.woff2') format('woff2'),
+        url('Euclide SemiBold.woff') format('woff'),
+        url('Euclide SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide SemiBold Italic.eot');
+    src: local('Euclide SemiBold Italic'),
+        url('Euclide SemiBold Italic.eot?#iefix') format('embedded-opentype'),
+        url('Euclide SemiBold Italic.woff2') format('woff2'),
+        url('Euclide SemiBold Italic.woff') format('woff'),
+        url('Euclide SemiBold Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide Regular.eot');
+    src: local('Euclide Regular'),
+        url('Euclide Regular.eot?#iefix') format('embedded-opentype'),
+        url('Euclide Regular.woff2') format('woff2'),
+        url('Euclide Regular.woff') format('woff'),
+        url('Euclide Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide Italic.eot');
+    src: local('Euclide Italic'),
+        url('Euclide Italic.eot?#iefix') format('embedded-opentype'),
+        url('Euclide Italic.woff2') format('woff2'),
+        url('Euclide Italic.woff') format('woff'),
+        url('Euclide Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide Light.eot');
+    src: local('Euclide Light'),
+        url('Euclide Light.eot?#iefix') format('embedded-opentype'),
+        url('Euclide Light.woff2') format('woff2'),
+        url('Euclide Light.woff') format('woff'),
+        url('Euclide Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclide';
+    font-display: swap;
+    src: url('Euclide Light Italic.eot');
+    src: local('Euclide Light Italic'),
+        url('Euclide Light Italic.eot?#iefix') format('embedded-opentype'),
+        url('Euclide Light Italic.woff2') format('woff2'),
+        url('Euclide Light Italic.woff') format('woff'),
+        url('Euclide Light Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
