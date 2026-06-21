@@ -9,6 +9,13 @@
         </div>
     </div></div>
     <div class="sideBlockIn"><div>
-        <p data-pagefind-weight="6">{{ .Params.completename }}</p>
+        {{ $page := $.Site.GetPage "page" "pl/" }}
+        <div class="pb-4"><a data-pagefind-weight="6" href="{{ $page.Permalink }}"><b>{{ .Params.completename }}</b></a></div>
+        {{ with index hugo.Data.plevy .Site.Language.Lang }}{{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
+        <div class="pb-2">{{ .title }}</div>
+        {{ if isset . "extra" }}<div class="pb-2">{{ .extra |safeHTML }}</div>{{end }}
+        {{ if isset . "description" }}<div class="pb-2">{{ .description |safeHTML }}</div>{{ end }}
+        {{ if isset . "associations" }}{{ range sort .associations "order" "asc" }}<div class="pb-2">{{ .titleshort |safeHTML }}</div>{{ end }}{{ end }}
+        {{ end }}{{ end }}{{ end }}
     </div></div>
 </div>

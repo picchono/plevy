@@ -1,7 +1,7 @@
 baseURL = "https://plevy.fr"
 locale = "fr-FA"
 title = "Pierre Lévy"
-theme = "plevy26_list"
+theme = "plevy26_cadre"
 defaultContentLanguage = "fr"
 ignoreErrors = ["error-disable-taxonomy", "warning-goldmark-raw-html"]
 

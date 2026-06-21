@@ -466,11 +466,11 @@ other="by"
 [photogallery]
 other="photo"
 
-[front_pro]
-other="Activities"
+[front_more]
+other="More"
 
-[front_publis]
-other="Publications"
+[front_current]
+other="Currently"
 
 [intervenants]
 other="speaker"

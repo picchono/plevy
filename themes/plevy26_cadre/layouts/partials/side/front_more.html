@@ -1,0 +1,19 @@
+<div class="sideBlock">
+    <div class="sideBlockIn"><div>{{ i18n "front_more" }}</div></div>
+    <div class="sideBlockIn"><div>
+    <a href="{{ $.Site.BaseURL}}pl/cvlight" target="_blank" class="smalllink" rel="noreferrer"
+        aria-label='cv {{ i18n "short" }}' title='cv {{ i18n "short" }}'>{{- partial "icons.html" (dict "ico"
+        "cv" "hei" 1) -}}<span>cv · {{ i18n "short" }}</span></a>
+    <a href="{{ $.Site.BaseURL}}pl/cv" target="_blank" class="smalllink" rel="noreferrer"
+        aria-label='cv {{ i18n "detailled" }}' title='cv {{ i18n "detailled" }}'>{{- partial "icons.html" (dict "ico"
+        "cv" "hei" 1) -}}<span>cv · {{ i18n "detailled" }}</span></a>
+    <a href="{{ $.Site.BaseURL}}pl/cvcomplete" target="_blank" class="smalllink" rel="noreferrer"
+        aria-label='cv {{ i18n "complete" }}' title='cv {{ i18n "complete" }}'>{{- partial "icons.html" (dict "ico"
+        "cv" "hei" 1) -}}<span>cv · {{ i18n "complete" }}</span></a>
+    <br>
+    {{ with index hugo.Data.plevy .Site.Language.Lang }}
+    {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink" rel="noreferrer"
+    aria-label="{{ .icon }}" title="{{ .icon }}">{{- partial "icons.html" (dict "ico"
+    .icon "hei" 1) -}}<span>{{ .icon }}</span></a>{{ end }}{{ end}}
+    </div></div>
+</div>

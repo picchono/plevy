@@ -200,11 +200,11 @@ other="links"
 [photogallery]
 other="photo"
 
-[front_pro]
-other="Activities"
+[front_more]
+other="More"
 
-[front_publis]
-other="Publications"
+[front_current]
+other="Currently"
 
 [more]
 other="more"

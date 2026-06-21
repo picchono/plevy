@@ -1132,7 +1132,7 @@ section.site-content {
 
 img.lg-object {
   padding: var(--pageBorder-width);
-  border-radius: calc(2 * var(--pageBorder-width));
+  border-radius: calc(1.5 * var(--pageBorder-width));
 }
 
 /* mainBlock */

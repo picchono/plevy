@@ -1,21 +1,15 @@
 {{ define "main" }}
-<div id="headUp">
-    <div class="headInPage_blocks">
-        {{ $count := 0 }}
-        {{ if .Params.listchaire}}
-        {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
-        {{ if ne .Params.notListed true }}{{ if .Params.chaire }}
-        {{ $count = add $count 1 }}
-        {{- partial "boxUp.html" ( dict "context" . "cou" $count) -}}
-        {{ end }}{{ end }}{{ end }}
-        {{ else if isset .Params "member" }}
-        {{$memb := .Params.member}}
-        {{ range where .Site.Pages "Section" "in" (slice .Params.zone) }}
-        {{ if ne .Params.notListed true }}{{ if in .Params.members $memb }}
-        {{ $count = add $count 1 }}
-        {{- partial "boxUp.html" ( dict "context" . "cou" $count) -}}
-        {{ end }}{{ end }}{{ end }}
-        {{ end }}
+{{ $langu := .Site.Language.Lang }}
+{{ $lis := .Slug }}
+<div class="mainsection">
+        {{ $s := 1 }}
+        {{ range $.Site.Sections }}{{ if eq .Slug $lis }}
+        {{ $p := 1 }}
+        {{ range .Pages }}{{ if ne .Params.notListed true }}
+        {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
+        {{ $p = add $p 1 }}
+        {{ end }}{{ end }}
+        {{ $s = add $s 1 }}
+        {{ end }}{{ end }}
     </div>
-</div>
 {{ end }}

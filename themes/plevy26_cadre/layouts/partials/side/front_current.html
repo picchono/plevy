@@ -1,0 +1,5 @@
+{{ range .Site.RegularPages }}
+{{ if eq .Params.currentblock true }}
+    <div div="pb-2"><a href="{{ .Permalink }}">{{ .Title }}</a> ({{ i18n .Section | singularize }})</div>
+{{ end }}
+{{ end }}

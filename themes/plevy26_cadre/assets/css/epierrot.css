@@ -254,7 +254,6 @@ textarea::placeholder {
 html,
 body {
   font-family: var(--font-family-sans);
-  font-size: 14px;
   font-stretch: 100%;
   letter-spacing: 0.01rem;
   line-height: var(--lineHeight);
@@ -263,8 +262,8 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
-html.body {
-  font-size: 16px;
+html,body {
+    font-size: 16px;
 }
 
 body {
@@ -400,7 +399,7 @@ html {
   --entete-height: 4rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
     --pageBorder-width: 0.6rem;
   }
@@ -542,7 +541,7 @@ body#menu #enteteBox {
   @apply flex flex-col max-w-132 w-full self-end pb-newpad border-b border-primary-text;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #entete {
     padding-left: calc(0.5 * var(--pageBorder-width));
   }
@@ -575,16 +574,16 @@ a.logohome svg {
 /* settings */
 
 .menuSetting {
-  @apply fixed flex flex-row justify-end items-center z-30 transition-colors duration-700 ease-in-out;
+  @apply fixed flex flex-row justify-start items-end z-30 transition-colors duration-700 ease-in-out;
   padding: 0 calc(0.5 * var(--pageBorder-width) + 186px) 0 calc(0.5 * var(--pageBorder-width)) !important;
-  height: calc(4 * var(--pageBorder-width)) !important;
+  height: calc(3 * var(--pageBorder-width)) !important;
   background-color: var(--color-pageborder-bg);
 }
 
 @media screen and (min-width: 768px) {
   .menuSetting {
-      width:  calc(33% + 0.5 * var(--pageBorder-width));
-    height: calc(2 * var(--pageBorder-width)) !important;
+    padding-bottom: calc(0.5 * var(--pageBorder-width)) !important;
+    width:  calc(33% + 0.5 * var(--pageBorder-width));
   }
 }
 
@@ -622,7 +621,7 @@ a.logohome svg {
 }
 
 #settingOptions {
-  @apply w-full flex flex-row justify-between items-center;
+  @apply w-auto flex flex-row justify-start items-center;
   height: var(--pageBorder-width);
 }
 
@@ -701,15 +700,29 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div>div {
-  @apply h-full w-full flex flex-col items-start justify-between border-t border-dotted border-primary-text transition-all duration-700 ease-in-out;
+  @apply h-full w-full flex flex-col items-start justify-between border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .boxIso>div>div {
+        @apply border-t;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boxIso>div:first-child>div {
+        @apply border-t;
+    }
 }
 
 .boxIso:hover>div {
   border-color: transparent !important;
 }
+
 .menuBox.ended:hover .boxIso {
     opacity:100% !important;
 }
+
 .boxMeta {
   @apply w-full flex flex-col flex-wrap justify-start text-sm;
 }
@@ -720,6 +733,15 @@ pagefind-modal-trigger {
   background-size: cover;
   aspect-ratio: 1.77;
 }
+
+#Slides .boxIso {
+    @apply w-full mb-4 mr-4;
+}
+
+#Slides .boxIso>div {
+    width: 100% !important;
+}
+
 
 /* duotone */
 .duotone {
@@ -782,14 +804,12 @@ section.home {
 }
 
 .mainsection {
-  @apply w-full grow-0 shrink-0 flex flex-col items-end justify-start;
-  width: 33% !important;
-  height: 100vh;
+  @apply w-full h-full grow-0 shrink-0 flex flex-col items-end justify-start;
   margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
   padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mainsection {
       overflow: auto;
       width: min(50%, 60rem) !important;
@@ -869,7 +889,7 @@ section.home {
   padding: 1rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   #special-section {
     display: none !important;
@@ -906,7 +926,7 @@ section.home {
   @apply transition-all duration-700 ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #menu h2[class^='section-'] {
     padding: calc(0.5 * var(--pageBorder-width)) 0;
     font-size: 1.5rem;
@@ -949,11 +969,11 @@ section.home {
 
 /* side section */
 .sideSection {
-  @apply w-full flex flex-col grow-0 shrink-0 items-stretch place-content-stretch justify-stretch flex-wrap;
+  @apply w-full flex flex-col flex-nowrap grow-0 shrink-0 items-stretch place-content-stretch justify-stretch;
   margin: calc(2 * var(--pageBorder-width)) 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .sideSection {
         overflow: auto;
         width: min(33%, 40rem) !important;
@@ -975,10 +995,22 @@ section.home {
 }
 
 .sideBlockIn>div {
-    @apply my-6 py-1 border-t border-dotted border-primary-text;
+    @apply my-6 py-1 border-0 border-dotted border-primary-text;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    .sideBlockIn:first-child>div {
+        @apply border-t;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sideBlockIn>div {
+        @apply border-t;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .sideBlock {
         @apply flex-row grow-0 shrink-0;
     }
@@ -1002,7 +1034,7 @@ section.home {
   margin: calc(2 * var(--pageBorder-width)) 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .annexSection {
         overflow: auto;
         width: min(16.5%, 20rem) !important;
@@ -1055,7 +1087,7 @@ section.home {
     @apply inline-block h-0 p-0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 .linkHome {
   @apply text-epierrot inline md:flex-row md:justify-center md:items-center transition-all duration-700 ease-in-out h-6;
   vertical-align: baseline;
@@ -1083,9 +1115,8 @@ section.home {
 
 /* links */
 
-.smalllink,
-.smalllinkcv {
-  @apply flex flex-row justify-start items-center py-2;
+.smalllink,.smalllinkcv {
+  @apply flex flex-row justify-start items-center;
 }
 
 .smalllink *,
@@ -1130,7 +1161,6 @@ section.home {
 
 #lightgallery>a {
   @apply border-0 w-auto;
-  aspect-ratio: 2;
 }
 
 #lightgallery>a:hover {
@@ -1148,7 +1178,7 @@ section.home {
 
 img.lg-object {
   padding: var(--pageBorder-width);
-  border-radius: calc(2 * var(--pageBorder-width));
+  border-radius: calc(1.5 * var(--pageBorder-width));
 }
 
 /* mainBlock */
@@ -1158,7 +1188,7 @@ img.lg-object {
   padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mainBlock {
     @apply w-2/3;
   }

@@ -462,11 +462,11 @@ other="par"
 [photogallery]
 other="photo"
 
-[front_pro]
-other="Activités"
+[front_more]
+other="Plus"
 
-[front_publis]
-other="Publications"
+[front_current]
+other="Actuellement"
 
 [intervenants]
 other="intervenant"

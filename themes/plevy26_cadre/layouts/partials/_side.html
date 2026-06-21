@@ -1,6 +1,16 @@
 <div class="sideSection">
     {{ .Scratch.Set "part" "title" }}{{ partial "side/_base.html" . }}
-    {{ if ne .Params.layout "home" }}{{ if ne .Params.layout "list" }}
+    {{ if eq .Params.layout "home" }}
+        {{ if .Params.subtitle }}{{ .Scratch.Set "part" "subtitle" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.completename }}{{ .Scratch.Set "part" "completename" }}{{ partial "side/_base.html" . }}
+        {{ else if .Params.photogallery }}{{ .Scratch.Set "part" "photogallery" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ $j := 0 }}{{ range .Site.RegularPages }}{{ if eq .Params.currentblock true }}{{ $j = add $j 1 }}{{ end}}{{ end}}
+        {{ if ge $j 1 }}{{ .Scratch.Set "part" "front_current" }}{{ partial "side/_base.html" . }}{{ end }}
+
+        {{ .Scratch.Set "part" "front_description" }}{{ partial "side/_base.html" . }}
+        {{ .Scratch.Set "part" "front_more" }}{{ partial "side/_base.html" . }}
+    {{ else }}
+    {{ if ne .Params.layout "list" }}
         {{ if .Params.subtitle }}{{ .Scratch.Set "part" "subtitle" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.authors }}{{ .Scratch.Set "part" "authors" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.completename }}{{ .Scratch.Set "part" "completename" }}{{ partial "side/_base.html" . }}{{ end }}
@@ -27,11 +37,5 @@
         {{ if eq .Params.layout "presentation" }}{{ .Scratch.Set "part" "presentation" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if eq .Params.layout "member" }}{{ .Scratch.Set "part" "member" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if eq .Params.layout "programme"}}{{ .Scratch.Set "part" "programme" }}{{ partial "side/_base.html" . }}{{ end }}
-    {{ end }}{{ else }}
-        {{ if .Params.subtitle }}{{ .Scratch.Set "part" "subtitle" }}{{ partial "side/_base.html" . }}{{ end }}
-        {{ if .Params.completename }}{{ .Scratch.Set "part" "completename" }}{{ partial "side/_base.html" . }}
-        {{ else if .Params.photogallery }}{{ .Scratch.Set "part" "photogallery" }}{{ partial "side/_base.html" . }}{{ end }}
-        {{ .Scratch.Set "part" "front_pro" }}{{ partial "side/_base.html" . }}
-        {{ .Scratch.Set "part" "front_publis" }}{{ partial "side/_base.html" . }}
-    {{ end }}
+    {{ end }}{{ end }}
 </div>
