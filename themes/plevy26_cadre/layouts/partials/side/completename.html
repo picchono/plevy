@@ -9,7 +9,7 @@
         </div>
     </div></div>
     <div class="sideBlockIn"><div>
-        {{ $page := $.Site.GetPage "page" "pl/" }}
+        {{ $page := $.Site.GetPage "page" "pierre-levy/" }}
         <div class="pb-4"><a data-pagefind-weight="6" href="{{ $page.Permalink }}"><b>{{ .Params.completename }}</b></a></div>
         {{ with index hugo.Data.plevy .Site.Language.Lang }}{{ range sort .pro "order" "desc" }}{{ if eq .end "none" }}
         <div class="pb-2">{{ .title }}</div>
