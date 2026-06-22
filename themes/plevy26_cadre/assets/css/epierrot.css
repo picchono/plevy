@@ -513,7 +513,7 @@ a.logohome svg {
 @media (min-width: 768px) {
     .menuSetting {
     padding-bottom: calc(0.5 * var(--pageBorder-width)) !important;
-    width:    calc(33% + 0.5 * var(--pageBorder-width));
+    width: min(33%,40rem) !important;
     }
 }
 
