@@ -331,8 +331,8 @@ html {
 }
 
 html.light {
-    --color-primary-bg: rgb(240, 239, 235);
-    /*pantone clour dancer 11-4201*/
+    --color-primary-bg: white;
+    /*pantone clour dancer 11-4201 rgb(240, 239, 235)*/
     --color-secondary-bg: rgb(236, 216, 220);
     --color-tertiary-bg: #d7d5d2;
     --color-pageborder-bg: var(--color-primary-bg);
@@ -387,7 +387,6 @@ html.dark {
 body {
     @apply relative bg-primary-bg text-primary-text min-h-screen transition-colors duration-700 ease-in-out;
     padding-right: var(0.5 * var(--pageBorder-width));
-    background-color: var(--color-primary-bg);
 }
 
 p {
