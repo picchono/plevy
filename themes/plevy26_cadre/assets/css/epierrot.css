@@ -966,7 +966,7 @@ section.home {
 
 .sectionBlock>a {
     @apply text-primary-bg bg-epierrot text-center flex flex-col justify-center items-center;
-    padding: calc(50% - 5px);
+    width: calc(50% - 5px);
 }
 
 .sectionBlock>a:hover {
