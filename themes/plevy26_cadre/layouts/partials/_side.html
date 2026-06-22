@@ -8,7 +8,7 @@
         {{ if ge $j 1 }}{{ .Scratch.Set "part" "front_current" }}{{ partial "side/_base.html" . }}{{ end }}
 
         {{ .Scratch.Set "part" "front_description" }}{{ partial "side/_base.html" . }}
-        {{ .Scratch.Set "part" "front_more" }}{{ partial "side/_base.html" . }}
+        {{ .Scratch.Set "part" "front_links" }}{{ partial "side/_base.html" . }}
     {{ else }}
     {{ if ne .Params.layout "list" }}
         {{ if .Params.subtitle }}{{ .Scratch.Set "part" "subtitle" }}{{ partial "side/_base.html" . }}{{ end }}
