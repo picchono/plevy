@@ -228,6 +228,20 @@ function indexHome() {
   });
 }
 
+
+function matchHeightToWidth() {
+  const squareDiv = document.querySelectorAll('.sectionBlock>a');
+  if (squareDiv) {
+    squareDiv.forEach(function (squa) {
+      // Get the current computed width of the element
+      const currentWidth = squa.getBoundingClientRect().width;
+      // Apply that width value to the height
+      squa.style.height = `${currentWidth}px`;
+    });
+  }
+}
+
+
 /* Front menu */
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -304,4 +318,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   MenuToggle();
+  matchHeightToWidth();
 });
+
+window.addEventListener('resize', matchHeightToWidth);

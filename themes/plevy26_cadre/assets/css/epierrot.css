@@ -614,7 +614,7 @@ pagefind-modal-trigger {
 }
 
 .menuBoxDesc {
-    @apply w-full h-full text-sm p-1;
+    @apply w-full h-full text-xs p-1;
 }
 
 /* boxIso */
@@ -965,7 +965,7 @@ section.home {
 }
 
 .sectionBlock>a {
-    @apply text-primary-bg bg-epierrot w-1/2 h-1/2 flex flex-col justify-center items-center;
+    @apply text-primary-bg bg-epierrot text-center w-1/2 flex flex-col justify-center items-center;
 }
 
 .sectionBlock>a:hover {
