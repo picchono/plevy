@@ -333,7 +333,7 @@ html {
 html.light {
     --color-primary-bg: white;
     --color-secondary-bg: rgb(240, 239, 235);
-    /*pantone clour dancer 11-4201;*/
+    /*pantone clour dancer 11-4201*/
     --color-tertiary-bg: #d7d5d2;
     --color-pageborder-bg: var(--color-primary-bg);
     /*#f5f5f5*/
@@ -342,6 +342,7 @@ html.light {
     --color-secondary-text: #6b7e85;
     /*715596*/
     --color-epierrot: rgb(187 38 73);
+    /*pantone viva mangenta 18-1750*/
     /*rgb(227 142 132) or #e34334*/
     --blend-mode-before: color;
     --blend-mode-after: screen;
