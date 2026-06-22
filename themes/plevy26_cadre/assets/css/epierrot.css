@@ -600,20 +600,25 @@ pagefind-modal-trigger {
 
 /* menuBox */
 .menuBox {
-    @apply relative w-full flex flex-row justify-between items-start transition-all duration-700 ease-in-out;
+    @apply relative w-full md:w-1/2 p-1 flex flex-col justify-around flex-wrap;
+    height: 30rem;
+}
+
+.menuBox:nth-child(-n+2) {
+    @apply pt-0;
 }
 
 .menuBoxCount {
-    @apply text-xs font-normal;
+    @apply text-xs font-normal px-1;
 }
 
 .menuBoxDesc {
-    @apply w-full md:w-1/3 h-full text-sm;
+    @apply w-full h-full text-sm p-1;
 }
 
 /* boxIso */
 .boxIso {
-    @apply w-full h-full text-primary-text grow-0 shrink-0 flex flex-col md:flex-row justify-between items-start;
+    @apply w-full h-full text-primary-text grow-0 shrink-0 flex flex-col justify-between items-start border-t border-dotted border-primary-text;
 }
 
 .menuBox.ended .boxIso {
@@ -621,7 +626,7 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div {
-    @apply w-full md:w-1/3 h-full shrink-0 grow-0;
+    @apply w-full;
 }
 
 .boxIso>div:not(:last-child) {
@@ -629,13 +634,7 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div>div {
-    @apply h-full w-full flex flex-col items-start justify-between border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
-}
-
-@media (min-width: 768px) {
-    .boxIso>div>div {
-        @apply border-t;
-    }
+    @apply h-full w-full flex flex-col items-start justify-end border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -657,10 +656,10 @@ pagefind-modal-trigger {
 }
 
 .boxIsoImg {
-    @apply block w-full min-h-44;
+    @apply block w-full;
     background-position: center;
     background-size: cover;
-    aspect-ratio: 1.77;
+    aspect-ratio: 1;
 }
 
 #Slides .boxIso {
@@ -733,13 +732,14 @@ section.home {
 }
 
 .mainsection {
-    @apply w-full h-full grow-0 shrink-0 flex flex-col items-end justify-start;
+    @apply w-full h-full p-1 grow-0 shrink-0 flex flex-col items-end justify-start;
     margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
     padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 
 @media (min-width: 768px) {
     .mainsection {
+        @apply flex-row flex-wrap;
         overflow: auto;
         width: min(50%, 60rem) !important;
         height: calc(100vh - 4 * var(--pageBorder-width));
@@ -913,10 +913,10 @@ section.home {
 .sideSection h1 {
     @apply text-4xl font-bold;
 }
-
 .sideBlock {
-    @apply w-full flex flex-col;
+    @apply w-full flex flex-row justify-end items-start;
 }
+
 
 .sideBlockIn {
     @apply w-full h-full;
@@ -957,6 +957,24 @@ section.home {
 .sideBlockIn.more:hover>a {
     @apply bg-epierrot text-primary-bg;
 }
+
+.sectionBlock {
+    @apply w-full md:w-1/2 p-1 flex flex-col justify-end items-end;
+    height: 29rem;
+}
+
+.sectionBlock>a {
+    @apply text-primary-bg bg-epierrot w-1/2 h-1/2 flex flex-col justify-center items-center;
+}
+
+.sectionBlock>a:hover {
+    @apply text-epierrot bg-secondary-bg;
+}
+
+.sectionBlock>a>span {
+    @apply flex flex-col;
+}
+
 /* annex Section */
 .annexSection {
     @apply w-full flex flex-col grow-0 shrink-0 items-stretch place-content-stretch justify-stretch flex-wrap;

@@ -57,12 +57,12 @@
     {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
     {{ $p = add $p 1 }}
     {{ end }}{{ end }}{{ end }}
-    <div class="sideBlock section-{{- .Slug -}}">
-        <div class="sideBlockIn more p-0">
-            <a href="{{ .Slug }}">&nbsp;+ {{ i18n .Slug  | humanize }}&hellip;</a>
-        </div>
-    </div>
     {{ $s = add $s 1 }}
+    <div class="sectionBlock section-{{- .Slug -}}">
+        <a class="menuBox more" href="{{ .Slug }}">
+            <span>&nbsp;+ {{ i18n .Slug  | humanize }}&hellip;</span>
+        </a>
+    </div>
     {{ end }}{{ end }}
 </div>
 {{ end }}

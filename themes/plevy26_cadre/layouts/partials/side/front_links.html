@@ -1,7 +1,4 @@
-<div class="sideBlock">
-    <div class="sideBlockIn"><div><h3>{{ i18n "front_links" }}</h3></div></div>
-    <div class="sideBlockIn"><div>
-    <a href="{{ $.Site.BaseURL}}pl/cvlight" target="_blank" class="smalllink" rel="noreferrer"
+<a href="{{ $.Site.BaseURL}}pl/cvlight" target="_blank" class="smalllink" rel="noreferrer"
         aria-label='cv {{ i18n "short" }}' title='cv {{ i18n "short" }}'>{{- partial "icons.html" (dict "ico"
         "cv" "hei" 1) -}}<span>cv · {{ i18n "short" }}</span></a>
     <a href="{{ $.Site.BaseURL}}pl/cv" target="_blank" class="smalllink" rel="noreferrer"
@@ -15,5 +12,3 @@
     {{ range sort .identity.social "order" }}<a href="{{ .url }}" target="_blank" class="smalllink" rel="noreferrer"
     aria-label="{{ .icon }}" title="{{ .icon }}">{{- partial "icons.html" (dict "ico"
     .icon "hei" 1) -}}<span>{{ .icon }}</span></a>{{ end }}{{ end}}
-    </div></div>
-</div>
