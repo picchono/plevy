@@ -965,7 +965,8 @@ section.home {
 }
 
 .sectionBlock>a {
-    @apply text-primary-bg bg-epierrot text-center w-1/2 flex flex-col justify-center items-center transition-all duration-75 ease-in-out;
+    @apply text-primary-bg bg-epierrot text-center flex flex-col justify-center items-center transition-all duration-75 ease-in-out;
+    padding: calc(50% - 5px);
 }
 
 .sectionBlock>a:hover {
