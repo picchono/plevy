@@ -10,12 +10,12 @@
             {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
             <span class="menuBoxCount"><b>
                 {{ if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}|{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }} ·
-                {{ $sectio | humanize }}<br/>
+                {{ $sectio | humanize }} ·
                 {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
                 {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" )  ( eq .context.Section "presentations" )}}{{ dateFormat "2006" .context.Date }}
-                {{ else }}{{ dateFormat "2006" .context.Date }}/{{ end }}
+                {{ else }}{{ dateFormat "2006" .context.Date }}/
                 {{- if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
-                {{ else }}...{{ end }}
+                {{ else }}...{{ end }}{{ end }}
             </b></span>
             {{ else }}
                 <span class="menuBoxCount"></span>
