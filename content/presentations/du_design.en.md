@@ -37,7 +37,7 @@ slides: [
     ["google", "1OPmGJEEeGioTqiQrhv0lGQdgHzvGoOfj"],
     ["google", "1RO-6_gLH2vqFaMX2hVHa_JrM0hrmNtFs"],
     ["google", "1ZRtp2bWRb4PV23mhNBeXp-bmguIN0Qsq"],
-    ["mov", "//www.youtube.com/hn51850hNvo", "https://t4.ftcdn.net/jpg/05/70/95/23/360_F_570952330_CNAEsHgrLRrMNnIREbu2ktiDu4gbiILK.jpg"],
+    ["youtube", "hn51850hNvo"],
     ["google", "1hIhDreCY50IG6wL0Eyev2yzpvyu2IkJg"],
     ["google", "1iuaRSFBLtSMUSu6fWDx1rlkL_wb7fXW2"],
     ["google", "18X5vHCQSyF7cBkbp-guCYRi2oadGYhF8"],
@@ -46,7 +46,7 @@ slides: [
     ["google", "1DsJu8adGJ7rAEm83zIIBOps_KoiEVmo4"],
     ["google", "1_7dIqf1YiABnZjO3AOMIIy4g9JqWn0L3"],
     ["mov", "//vimeo.com/129643275", "https://i.vimeocdn.com/video/521210607-fc658f04897560006456ac99b1fa4a92d9780af1a4da09152bb6837202211505-d_2400"],
-    ["mov", "//youtu.be/TlDSDFgTwsQ", "https://t4.ftcdn.net/jpg/05/70/95/23/360_F_570952330_CNAEsHgrLRrMNnIREbu2ktiDu4gbiILK.jpg"],
+    ["youtube", "TlDSDFgTwsQ"],
     ["google", "1R2nf9dJTpoJAIYt_RhnWB0kK2C7ctSKa"]
 ]
 ---

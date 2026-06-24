@@ -1,6 +1,6 @@
 ---
-slug: design-theory_dialogue
-title: "Dialogue entre Design et Théorie"
+slug: design-research-inscription
+title: "Inscription de la recherche en design"
 subsection: presentation
 layout: presentation
 institution:

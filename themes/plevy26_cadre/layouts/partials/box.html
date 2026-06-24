@@ -21,7 +21,7 @@
                 <span class="menuBoxCount"></span>
             {{ end }}
             <h2 class='boxTitle py-6 px-1'>{{- .context.Title |safeHTML }}</h2>
-            <div class="boxMeta"><div class="w-full py-2 px-1">
+            <div class="boxMeta px-1">
                 {{ if eq .context.Section "publications" }}
                 {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
                 {{ if .context.Params.shortBook }}{{ .context.Params.shortBook }}{{ end }}
@@ -59,7 +59,7 @@
                 {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
                 {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}{{
                 .context.Params.institution.name }}{{ end }}{{ end }}
-                </div></div>
+            </div>
         </div>
         <div class="flex flex-row justify-between items-end">
             <div class="w-1/2 h-full pr-1">

@@ -601,7 +601,7 @@ pagefind-modal-trigger {
 /* menuBox */
 .menuBox {
     @apply relative w-full md:w-1/2 p-1 flex flex-col justify-around flex-wrap;
-    height: 30rem;
+    height: 25rem;
 }
 
 .menuBox:nth-child(-n+2) {
@@ -663,13 +663,12 @@ pagefind-modal-trigger {
 }
 
 #Slides .boxIso {
-    @apply w-full mb-4 mr-4;
+    @apply w-40 mb-4 mr-4;
 }
 
 #Slides .boxIso>div {
     width: 100% !important;
 }
-
 
 /* duotone */
 .duotone {
@@ -960,11 +959,11 @@ section.home {
 
 .sectionBlock {
     @apply w-full md:w-1/2 p-1 flex flex-col justify-end items-end;
-    height: 29rem;
+    height: 25rem;
 }
 
 .sectionBlock>a {
-    @apply text-primary-bg bg-epierrot text-center flex flex-col justify-center items-center;
+    @apply h-1/2 text-primary-bg bg-epierrot text-center flex flex-col justify-center items-center;
     width: calc(50% - 5px);
 }
 

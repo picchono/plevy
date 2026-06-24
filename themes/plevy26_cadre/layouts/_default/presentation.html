@@ -31,6 +31,13 @@
                         style="background-image: url('https://drive.google.com/thumbnail?id={{- index . 1 -}}&sz=w400');">
                     </div>
                 </a>
+                {{ else if eq $typ "youtube"}}
+                <a data-lg-size="1280-720" data-src="//www.youtube.com/{{ index . 1 }}" data-poster="https://i3.ytimg.com/vi/{{ index . 1 }}/maxresdefault.jpg"
+                    class="boxIso">
+                     <div class="boxIsoImg"
+                        style="background-image: url('https://i3.ytimg.com/vi/{{ index . 1 }}/maxresdefault.jpg');" alt="video {{ $ord }}">
+                    </div>
+                </a>
                 {{ else if eq $typ "mov"}}
                 <a data-lg-size="1280-720" data-src="{{ index . 1 }}" data-poster="{{ index . 2 }}"
                     class="boxIso">
