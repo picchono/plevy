@@ -25,6 +25,7 @@ collaboration:
         colo: "#c1002a"
         heig: 1
 date: 2025-01-25T16:27:15+02:00
+license: cc_bysa
 frontphoto: "10iwprsFcit2M8BJOPDm6WWmXUdX91Bkb"
 description: "La pratique du design au travers de ses enjeux et de son histoire."
 slides: [

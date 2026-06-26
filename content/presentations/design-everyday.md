@@ -10,6 +10,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2024-12-19T16:27:15+02:00
+license: cc_bysa
 frontphoto: "1Jgd-oG0PvoXaEXooPVtMMjrgm1Y0zhNk"
 description: "Une approche sur le design du quotidien"
 slides: [

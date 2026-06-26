@@ -10,6 +10,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2024-12-19T16:27:15+02:00
+license: cc_bysa
 frontphoto: "1nRle21d4qty7x6xPHIBlbXoQRWC9XMk5"
 description: "Présentation du design d'interaction tangible"
 slides: [

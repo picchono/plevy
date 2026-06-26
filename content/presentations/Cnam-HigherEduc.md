@@ -25,6 +25,7 @@ collaboration:
         colo: "#c1002a"
         heig: 1
 date: 2025-06-14T16:27:15+02:00
+license: cc_bysa
 frontphoto: "1-IY3FTudW5vOiUECUTbRH1Vcp9kvaHO2"
 description: "Une brève présentation du Cnam dans le paysage du système français de l'enseignement supérieur."
 slides: [

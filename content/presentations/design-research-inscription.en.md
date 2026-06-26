@@ -10,6 +10,7 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2024-12-19T16:27:15+02:00
+license: cc_bysa
 frontphoto: "1zdHQO2gHvt1X2yBMb1XRb_07uFYvBS89"
 description: "A reflection on design for the everyday"
 slides: [
