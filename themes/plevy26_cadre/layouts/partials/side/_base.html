@@ -8,7 +8,7 @@
 <div class="sideBlock">{{ .Scratch.Set "par" $tar }}{{ partial $targ . }}</div>
 {{ else }}
 <div class="sideBlock">
-    <div class="sideBlockIn"><div><h3>{{ i18n  $tar }}</h3></div></div>
+    <div class="sideBlockIn"><div><h3>{{ i18n  $tar | humanize }}</h3></div></div>
     <div class="sideBlockIn"><div>{{ partial $targ . }}</div></div>
 </div>
 {{ end }}

@@ -12,6 +12,7 @@ institution:
 date: 2024-12-19T16:27:15+02:00
 frontphoto: "1nRle21d4qty7x6xPHIBlbXoQRWC9XMk5"
 description: "Présentation du design d'interaction tangible"
+license: cc_bysa
 slides: [
     ["google", "1nRle21d4qty7x6xPHIBlbXoQRWC9XMk5"],
     ["google", "1_IUKFnSeXt5GcCFYYzdjph8A-366Jyjn"],
@@ -39,6 +40,6 @@ slides: [
     ["youtube", "_E4e_uQTPxQ"],
     ["google", "1D7GAl5Hyzw5RpKGrStPyCriqEzcsxg0r"],
     ["youtube", "G1g8bIIFwTA"],    
-    ["google", "1R2nf9dJTpoJAIYt_RhnWB0kK2C7ctSKa"]
+    ["google", "1R2nf9dJTpoJAIYt_RhnWB0kK2C7ctSKa"],
 ]
 ---
