@@ -25,7 +25,9 @@ collaboration:
         colo: "#c1002a"
         heig: 1
 date: 2024-12-10T16:27:15+02:00
-license: cc_bysa
+license: 
+    type: cc_bysa
+    link: https://creativecommons.org/licenses/by-sa/4.0/
 frontpage: true
 frontphoto: "167CBM0Te8OHjMFi6VBG_mgdlkuA4aFBs"
 description: "A brief introduction"

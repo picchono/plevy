@@ -10,7 +10,9 @@ institution:
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
 date: 2024-12-19T16:27:15+02:00
-license: cc_bysa
+license: 
+    type: cc_bysa
+    link: https://creativecommons.org/licenses/by-sa/4.0/
 frontpage: true
 frontphoto: "1x5G1gahNaS3tw8jsVfL4W88fa3P9jiUL"
 description: "A brief introduction"

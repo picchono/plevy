@@ -314,11 +314,10 @@ document.addEventListener('DOMContentLoaded', function () {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
       handleContentAdaptation(window.innerWidth);
+      matchHeightToWidth();
     }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
   });
-
+  externalLinks();
   MenuToggle();
   matchHeightToWidth();
 });
-
-window.addEventListener('resize', matchHeightToWidth);
