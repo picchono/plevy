@@ -503,16 +503,17 @@ a.logohome svg {
 /* settings */
 
 .menuSetting {
-    @apply fixed flex flex-row justify-start items-end z-30 transition-colors duration-700 ease-in-out;
-    padding: 0 calc(0.5 * var(--pageBorder-width) + 186px) 0 calc(0.5 * var(--pageBorder-width)) !important;
-    height: calc(3 * var(--pageBorder-width)) !important;
+    @apply w-full fixed flex flex-row justify-start items-center z-30 transition-colors duration-700 ease-in-out;
+    padding: var(--pageBorder-width) calc(.5 * var(--pageBorder-width) + 186px) var(--pageBorder-width) calc(40px + .5 * var(--pageBorder-width))!important;
+    height: calc(35px + var(--pageBorder-width)) !important;
     background-color: var(--color-pageborder-bg);
 }
 
 @media (min-width: 768px) {
     .menuSetting {
-    padding-bottom: calc(0.5 * var(--pageBorder-width)) !important;
-    width: min(33%,40rem) !important;
+        @apply items-end;
+        padding-bottom: calc(0.5 * var(--pageBorder-width)) !important;
+        width: min(33%,40rem) !important;
     }
 }
 
@@ -594,8 +595,17 @@ pagefind-modal-trigger {
     @apply transition-all duration-700 ease-in-out;
     position: fixed !important;
     z-index: 100 !important;
-    top: calc(1.1 * var(--pageBorder-width)) !important;
-    left: min(calc(33% - 180px), 460px) !important;
+    top: calc(0.5 * var(--pageBorder-width)) !important;
+    left: auto !important;
+    right: calc(0.5 * var(--pageBorder-width)) !important;
+}
+
+@media (min-width: 768px) {
+    pagefind-modal-trigger {
+        top: calc(1.1 * var(--pageBorder-width)) !important;
+        left: min(calc(33% - 180px), 460px) !important;
+        right: auto !important;
+    }
 }
 
 /* menuBox */
@@ -635,12 +645,6 @@ pagefind-modal-trigger {
 
 .boxIso>div>div {
     @apply h-full w-full flex flex-col items-start justify-end border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
-}
-
-@media (max-width: 768px) {
-    .boxIso>div:first-child>div {
-        @apply border-t mt-4;
-    }
 }
 
 .boxIso:hover>div {
@@ -796,7 +800,7 @@ section.home {
 
 #btnPhonBtn {
     @apply fixed md:p-0;
-    top: calc(0.5 * var(--pageBorder-width));
+    top: var(--pageBorder-width);
     left: var(--pageBorder-width);
     z-index: 1000;
 }
@@ -958,8 +962,14 @@ section.home {
 }
 
 .sectionBlock {
-    @apply w-full md:w-1/2 p-1 flex flex-col justify-end items-end;
+    @apply w-full p-1 flex flex-col justify-center items-center border-t border-dotted border-primary-text;
     height: 25rem;
+}
+
+@media (min-width: 768px) {
+    .sectionBlock {
+        @apply w-1/2 justify-end items-end border-t-0;
+    }
 }
 
 .sectionBlock>a {
@@ -1221,4 +1231,8 @@ ul.toc__sublist {
 /* cv */
 #cv h1 {
     @apply text-3xl font-bold pt-8 pb-3;
+}
+
+#cv pagefind-modal-trigger {
+    @apply invisible;
 }

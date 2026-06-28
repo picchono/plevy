@@ -23,17 +23,6 @@ function showPic() {
   }, 100);
 }
 
-//open external link in new tab
-function externalLinks() {
-  for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
-    var b = c[a];
-    b.getAttribute("href") &&
-      b.hostname !== location.hostname &&
-      (b.target = "_blank") &&
-      (b.rel = "noreferrer");
-  }
-}
-
 //create a table of content if #toc exists
 function tableContent() {
   //Get all headings only from the actual contents.
@@ -243,15 +232,15 @@ function matchHeightToWidth() {
 
 
 /* Front menu */
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
+  const specialSection = document.getElementById('navDesktop');
+  if (specialSection !== null) {
+    const originalParent = specialSection.parentNode; // L'endroit où la section doit être sur PC
 
-  const specialSection = document.getElementById("navDesktop");
-  const originalParent = specialSection.parentNode; // L'endroit où la section doit être sur PC
-
-  const mobileModal = document.getElementById("mobileModal");
-  const modalPlaceholder = document.getElementById("mobileModal-content-placeholder");
-  const openBtn = document.getElementById("btnPhonBtn");
-  const closeBtn = document.querySelector(".mobileModalCloseBtn");
+    const mobileModal = document.getElementById("mobileModal");
+    const modalPlaceholder = document.getElementById("mobileModal-content-placeholder");
+    const openBtn = document.getElementById("btnPhonBtn");
+    const closeBtn = document.querySelector(".mobileModalCloseBtn");
 
   /**
    * Gère l'adaptation du contenu en fonction de la taille de l'écran.
@@ -302,22 +291,28 @@ document.addEventListener('DOMContentLoaded', function () {
       mobileModal.style.display = "none";
     }
   }
-
-  // --- Écouteurs d'Événements ---
-
-  // 1. Exécuter au chargement de la page
   handleContentAdaptation(window.innerWidth);
-
-  // 2. Exécuter lors du redimensionnement de la fenêtre
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      handleContentAdaptation(window.innerWidth);
-      matchHeightToWidth();
-    }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
-  });
-  externalLinks();
   MenuToggle();
+
+}
   matchHeightToWidth();
+
+
+  // Select all links starting with http or https
+  // Exclude those containing your domain (e.g., example.com)
+  const links = document.querySelectorAll('a[href^="http"]:not([href*="plevy.fr"])');
+  links.forEach(link => {
+    // Add nofollow, noopener, and noreferrer
+    link.setAttribute('rel', 'noopener noreferrer nofollow');
+    link.setAttribute('target', '_blank');
+  });
+});
+
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    handleContentAdaptation(window.innerWidth);
+    matchHeightToWidth();
+  }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
 });
