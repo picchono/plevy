@@ -36,6 +36,8 @@ function externalLinks() {
 
 //create a table of content if #toc exists
 function tableContent() {
+
+  console.log("toc");
   //Get all headings only from the actual contents.
   var contentContainer = document.getElementById("content"); // Add this div to the html
   var headings = contentContainer.querySelectorAll("h2,h3,h4"); // You can do as many or as few headings as you need.
@@ -252,7 +254,37 @@ function indexHome() {
   });
 }
 
-/* Front menu */
+/**
+ * Gère l'adaptation du contenu en fonction de la taille de l'écran.
+ * @param {number} width La largeur actuelle de la fenêtre.
+ */
+function handleContentAdaptation(width) {
+  const isMobile = width <= 768;
+
+  if (isMobile) {
+    // --- Mode Mobile : Déplacer le contenu dans la modal ---
+
+    // 1. Déplacer le contenu
+    if (specialSection.parentNode !== modalPlaceholder) {
+      modalPlaceholder.appendChild(specialSection);
+    }
+    // 2. Afficher le bouton d'ouverture
+    openBtn.style.display = 'block';
+
+  } else {
+    // --- Mode Desktop : Remettre le contenu à sa place originale ---
+
+    // 1. Remettre le contenu à son parent initial
+    if (specialSection.parentNode !== originalParent) {
+      originalParent.insertBefore(specialSection, originalParent.children[2]); // Remis avant <p>Fin du contenu...</p>
+    }
+    // 2. Cacher le bouton d'ouverture et la modal
+    openBtn.style.display = 'none';
+    mobileModal.style.display = 'none';
+  }
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
 
   const specialSection = document.getElementById("navDesktop");
@@ -262,37 +294,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalPlaceholder = document.getElementById("mobileModal-content-placeholder");
   const openBtn = document.getElementById("btnPhonBtn");
   const closeBtn = document.querySelector(".mobileModalCloseBtn");
-
-  /**
-   * Gère l'adaptation du contenu en fonction de la taille de l'écran.
-   * @param {number} width La largeur actuelle de la fenêtre.
-   */
-  function handleContentAdaptation(width) {
-
-    const isMobile = width <= 768;
-
-    if (isMobile) {
-      // --- Mode Mobile : Déplacer le contenu dans la modal ---
-
-      // 1. Déplacer le contenu
-      if (specialSection.parentNode !== modalPlaceholder) {
-        modalPlaceholder.appendChild(specialSection);
-      }
-      // 2. Afficher le bouton d'ouverture
-      openBtn.style.display = 'block';
-
-    } else {
-      // --- Mode Desktop : Remettre le contenu à sa place originale ---
-
-      // 1. Remettre le contenu à son parent initial
-      if (specialSection.parentNode !== originalParent) {
-        originalParent.insertBefore(specialSection, originalParent.children[2]); // Remis avant <p>Fin du contenu...</p>
-      }
-      // 2. Cacher le bouton d'ouverture et la modal
-      openBtn.style.display = 'none';
-      mobileModal.style.display = 'none';
-    }
-  }
 
   // --- Logique d'Ouverture/Fermeture de la Modal ---
 
@@ -313,6 +314,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  MenuToggle();
+  tableContent();
+
   // --- Écouteurs d'Événements ---
 
   // 1. Exécuter au chargement de la page
@@ -327,5 +331,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
   });
 
-  MenuToggle();
 });

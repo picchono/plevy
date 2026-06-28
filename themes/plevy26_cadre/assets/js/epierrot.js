@@ -296,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 }
   matchHeightToWidth();
+  tableContent();
 
 
   // Select all links starting with http or https

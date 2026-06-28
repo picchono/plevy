@@ -28,4 +28,13 @@
         </div>
     </div>
 </div></div>
+{{ else }}
+{{ if .Params.tablecontent }}
+<div class="annexSection" data-cat-sort="1"><div class="sideBlock"><div class="sideBlockIn">
+    <div id="toc">
+        <b data-pagefind-weight="0.5">{{ i18n "tableOfContent"}}</b>
+        <div class="tablecontent" data-pagefind-weight="0.5"></div>
+    </div>
+</div></div></div>
+{{ end }}
 {{ end }}
