@@ -504,9 +504,13 @@ a.logohome svg {
 
 .menuSetting {
     @apply w-full fixed flex flex-row justify-start items-center z-30 transition-colors duration-700 ease-in-out;
-    padding: var(--pageBorder-width) calc(.5 * var(--pageBorder-width) + 186px) var(--pageBorder-width) calc(40px + .5 * var(--pageBorder-width))!important;
-    height: calc(35px + var(--pageBorder-width)) !important;
+    padding: var(--pageBorder-width) calc(.5 * var(--pageBorder-width) + 186px) var(--pageBorder-width) calc(0.5 * var(--pageBorder-width))!important;
+    height: calc(32px + calc(1.5 * var(--pageBorder-width)))!important;
     background-color: var(--color-pageborder-bg);
+}
+
+#menu .menuSetting {
+    padding-left: calc(40px + .5 * var(--pageBorder-width)) !important;
 }
 
 @media (min-width: 768px) {
@@ -514,6 +518,9 @@ a.logohome svg {
         @apply items-end;
         padding-bottom: calc(0.5 * var(--pageBorder-width)) !important;
         width: min(33%,40rem) !important;
+    }
+    #menu .menuSetting {
+        padding-left: calc(0.5 * var(--pageBorder-width)) !important;
     }
 }
 
