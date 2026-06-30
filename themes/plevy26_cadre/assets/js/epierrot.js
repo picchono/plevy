@@ -1,9 +1,13 @@
-/* sleep the js script */
+/*
+ * sleep the js script
+ */
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-/* image loading */
+/*
+ * image loading
+ */
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
