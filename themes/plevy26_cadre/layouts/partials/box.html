@@ -1,6 +1,6 @@
 {{ if ne (dateFormat "2006" .context.Date) "0001" }}
 <div id="{{- .context.Slug }}"
-    class='menuBox {{ if and (.context.Section) (ne .context.Section "pl") }}section-{{ .context.Section }}{{ else }}section-introduction{{ end }}{{ if eq .pag 1 }} startSection{{ end }}{{- if eq .context.Params.status "ended" }} ended{{ end -}}'
+    class='menuBox {{ if and (.context.Section) (ne .context.Section "pl") }}section-{{ .context.Section }}{{ else }}section-introduction{{ end }}{{ if eq .pag 1 }} startSection{{ end }}{{- if .context.Params.end }} ended{{ end -}}'
     aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
     data-date="{{ .context.Date }}" data-section="{{ .context.Section  }}">
     <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }}"
@@ -14,7 +14,7 @@
                 {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
                 {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" )  ( eq .context.Section "presentations" )}}{{ dateFormat "2006" .context.Date }}
                 {{ else }}{{ dateFormat "2006" .context.Date }}/
-                {{- if eq .context.Params.status "ended"}}{{ .context.Params.end }} ({{ i18n "ended" -}})
+                {{- if .context.Params.end }}{{ .context.Params.end }} ({{ i18n "ended" -}})
                 {{ else }}...{{ end }}{{ end }}
             </b></span>
             {{ else }}

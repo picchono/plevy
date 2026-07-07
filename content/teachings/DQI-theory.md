@@ -11,7 +11,6 @@ institution:
 date: 2011-09-03T16:27:15+02:00
 start: 2011
 end: 2014
-status: ended
 draft: false
 perceptq: true
 researchpage: true

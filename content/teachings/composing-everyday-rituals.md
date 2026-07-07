@@ -14,7 +14,6 @@ draft: false
 layout: single
 searchFilter: Teaching
 subsection: course
-status: ended
 level: "master"
 language: English
 ects: 5

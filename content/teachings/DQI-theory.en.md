@@ -15,7 +15,6 @@ draft: false
 layout: single
 searchFilter: Teaching
 subsection: course
-status: ended
 perceptq: true
 researchpage: true
 research: 

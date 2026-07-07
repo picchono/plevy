@@ -15,7 +15,6 @@ draft: false
 layout: single
 searchFilter: Teaching
 subsection: course
-status: ended
 everyday: true
 researchpage: true
 research: 
