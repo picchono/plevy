@@ -444,7 +444,7 @@ h2 {
     @apply text-lg font-bold;
 }
 
-h2:not(.boxTitle) {
+h2:not(:first-child) {
     @apply pt-6;
 }
 
@@ -1224,7 +1224,7 @@ ul.toc__sublist {
 }
 
 #content h2 {
-    @apply text-2xl font-bold pt-6 pb-2;
+    @apply text-2xl font-bold pb-2;
 }
 
 #content h3 {

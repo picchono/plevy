@@ -29,11 +29,13 @@ function showPic() {
 
 //create a table of content if #toc exists
 function tableContent() {
+  var tocContainer = document.getElementById("toc");
+  if (!tocContainer) return;
+
   //Get all headings only from the actual contents.
   var contentContainer = document.getElementById("content"); // Add this div to the html
   var headings = contentContainer.querySelectorAll("h2,h3,h4"); // You can do as many or as few headings as you need.
 
-  var tocContainer = document.getElementById("toc"); // Add this div to the HTML
   // create ul element and set the attributes.
   var ul = document.createElement("ul");
 
@@ -236,7 +238,7 @@ function matchHeightToWidth() {
 
 
 /* Front menu */
-document.addEventListener('DOMContentLoaded', () => {
+function frontMenu() {
   const specialSection = document.getElementById('navDesktop');
   if (specialSection !== null) {
     const originalParent = specialSection.parentNode; // L'endroit où la section doit être sur PC
@@ -246,78 +248,80 @@ document.addEventListener('DOMContentLoaded', () => {
     const openBtn = document.getElementById("btnPhonBtn");
     const closeBtn = document.querySelector(".mobileModalCloseBtn");
 
-  /**
-   * Gère l'adaptation du contenu en fonction de la taille de l'écran.
-   * @param {number} width La largeur actuelle de la fenêtre.
-   */
-  function handleContentAdaptation(width) {
+    /**
+     * Gère l'adaptation du contenu en fonction de la taille de l'écran.
+     * @param {number} width La largeur actuelle de la fenêtre.
+     */
+    function handleContentAdaptation(width) {
 
-    const isMobile = width <= 768;
+      const isMobile = width <= 768;
 
-    if (isMobile) {
-      // --- Mode Mobile : Déplacer le contenu dans la modal ---
+      if (isMobile) {
+        // --- Mode Mobile : Déplacer le contenu dans la modal ---
 
-      // 1. Déplacer le contenu
-      if (specialSection.parentNode !== modalPlaceholder) {
-        modalPlaceholder.appendChild(specialSection);
+        // 1. Déplacer le contenu
+        if (specialSection.parentNode !== modalPlaceholder) {
+          modalPlaceholder.appendChild(specialSection);
+        }
+        // 2. Afficher le bouton d'ouverture
+        openBtn.style.display = 'block';
+
+      } else {
+        // --- Mode Desktop : Remettre le contenu à sa place originale ---
+
+        // 1. Remettre le contenu à son parent initial
+        if (specialSection.parentNode !== originalParent) {
+          originalParent.insertBefore(specialSection, originalParent.children[2]); // Remis avant <p>Fin du contenu...</p>
+        }
+        // 2. Cacher le bouton d'ouverture et la modal
+        openBtn.style.display = 'none';
+        mobileModal.style.display = 'none';
       }
-      // 2. Afficher le bouton d'ouverture
-      openBtn.style.display = 'block';
-
-    } else {
-      // --- Mode Desktop : Remettre le contenu à sa place originale ---
-
-      // 1. Remettre le contenu à son parent initial
-      if (specialSection.parentNode !== originalParent) {
-        originalParent.insertBefore(specialSection, originalParent.children[2]); // Remis avant <p>Fin du contenu...</p>
-      }
-      // 2. Cacher le bouton d'ouverture et la modal
-      openBtn.style.display = 'none';
-      mobileModal.style.display = 'none';
     }
-  }
 
-  // --- Logique d'Ouverture/Fermeture de la Modal ---
+    // --- Logique d'Ouverture/Fermeture de la Modal ---
 
-  // Ouvrir la modal
-  openBtn.onclick = function () {
-    mobileModal.style.display = "block";
-  }
+    // Ouvrir la modal
+    openBtn.onclick = function () {
+      mobileModal.style.display = "block";
+    }
 
-  // Fermer la modal via le bouton X
-  closeBtn.onclick = function () {
-    mobileModal.style.display = "none";
-  }
-
-  // Fermer la modal si l'utilisateur clique en dehors
-  window.onclick = function (event) {
-    if (event.target === mobileModal) {
+    // Fermer la modal via le bouton X
+    closeBtn.onclick = function () {
       mobileModal.style.display = "none";
     }
+
+    // Fermer la modal si l'utilisateur clique en dehors
+    window.onclick = function (event) {
+      if (event.target === mobileModal) {
+        mobileModal.style.display = "none";
+      }
+    }
   }
-  handleContentAdaptation(window.innerWidth);
-  MenuToggle();
-
 }
-  matchHeightToWidth();
-  tableContent();
 
-
-  // Select all links starting with http or https
-  // Exclude those containing your domain (e.g., example.com)
+function outLinks() {
   const links = document.querySelectorAll('a[href^="http"]:not([href*="plevy.fr"])');
   links.forEach(link => {
     // Add nofollow, noopener, and noreferrer
     link.setAttribute('rel', 'noopener noreferrer nofollow');
     link.setAttribute('target', '_blank');
   });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  frontMenu();
+  MenuToggle();
+  matchHeightToWidth();
+  tableContent();
+  outLinks();
 });
 
 let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
-    handleContentAdaptation(window.innerWidth);
+    frontMenu();
     matchHeightToWidth();
   }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
 });
