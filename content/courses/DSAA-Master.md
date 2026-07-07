@@ -17,7 +17,7 @@ Diploma:
     level3:
         type: "Parcours"
         name: "DSAA Master @Ensaama"
-description: "The craft and design school Ensaama and the Cnam jointly award the Higher Diploma in Applied Arts, equivalent to a master's degree (120 ECTS credits at level 7)."
+description: "L'Ensaama et le Cnam délivrent conjointement le diplôme supérieur d'arts appliqués, équivalent à un master (120 crédits ECTS de niveau 7)."
 institution:
     heig: 1
     logo: cnam

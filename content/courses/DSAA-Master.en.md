@@ -17,7 +17,7 @@ Diploma:
     level3:
         type: "Parcours"
         name: "DSAA Master @Ensaama"
-description: "Ce parcours, organisé par une convention entre la Communauté l’agglomération du Grand Chalon, l’e|m|a, le CCR de Bourgogne Franche-Comté, et le Cnam, entend former des artistes ou des techniciens ayant une pratique artistique poussée aux techniques et à l’ingénierie liée à leur pratique (matériaux, outils…)."
+description: "The craft and design school Ensaama and the Cnam jointly award the Higher Diploma in Applied Arts, equivalent to a master's degree (120 ECTS credits at level 7)."
 institution:
     heig: 1
     logo: cnam
