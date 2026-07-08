@@ -944,6 +944,9 @@ section.home {
 }
 
 @media (min-width: 768px) {
+    .sideBlock:first-child>.sideBlockIn>div {
+        margin-top: 0 !important;
+    }
     .sideBlockIn>div {
         @apply border-t;
     }
