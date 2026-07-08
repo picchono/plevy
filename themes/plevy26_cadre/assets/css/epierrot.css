@@ -277,7 +277,7 @@ html,body {
 .bordBottom {
     left: 0;
     width: 100vw;
-    height: var(--pageBorder-width);
+    height: calc(0.5 * var(--pageBorder-width));
 }
 
 .bordTop {
@@ -743,7 +743,7 @@ section.home {
 
 .mainsection {
     @apply w-full h-full p-1 grow-0 shrink-0 flex flex-col items-start justify-start;
-    margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
+    margin: calc(3 * var(--pageBorder-width)) 0 calc(0.5 * var(--pageBorder-width)) 0;
     padding: 0 calc(0.5 * var(--pageBorder-width));
 }
 
@@ -752,7 +752,7 @@ section.home {
         @apply flex-row flex-wrap;
         overflow: auto;
         width: min(50%, 60rem) !important;
-        height: calc(100vh - 4 * var(--pageBorder-width));
+        height: calc(100vh - 3.5 * var(--pageBorder-width));
     }
 }
 
@@ -909,14 +909,14 @@ section.home {
 /* side section */
 .sideSection {
     @apply w-full flex flex-col flex-nowrap grow-0 shrink-0 items-stretch place-content-stretch justify-stretch;
-    margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
+    margin: calc(3 * var(--pageBorder-width)) 0 calc(0.5 * var(--pageBorder-width)) 0;
 }
 
 @media (min-width: 768px) {
     .sideSection {
         overflow: auto;
         width: min(33%, 40rem) !important;
-        height: calc(100vh - 4 * var(--pageBorder-width));
+        height: calc(100vh - 3.5 * var(--pageBorder-width));
     }
 }
 
@@ -998,14 +998,14 @@ section.home {
 /* annex Section */
 .annexSection {
     @apply w-full flex flex-col grow-0 shrink-0 items-stretch place-content-stretch justify-stretch flex-wrap;
-    margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
+    margin: calc(3 * var(--pageBorder-width)) 0 calc(0.5 * var(--pageBorder-width)) 0;
 }
 
 @media (min-width: 768px) {
     .annexSection {
         overflow: auto;
         width: min(16.5%, 20rem) !important;
-        height: calc(100vh - 4 * var(--pageBorder-width));
+        height: calc(100vh - 3.5 * var(--pageBorder-width));
     }
 }
 
