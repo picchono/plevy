@@ -752,7 +752,7 @@ section.home {
         @apply flex-row flex-wrap;
         overflow: auto;
         width: min(50%, 60rem) !important;
-        height: calc(100vh - 5 * var(--pageBorder-width));
+        height: calc(100vh - 4 * var(--pageBorder-width));
     }
 }
 
@@ -909,14 +909,14 @@ section.home {
 /* side section */
 .sideSection {
     @apply w-full flex flex-col flex-nowrap grow-0 shrink-0 items-stretch place-content-stretch justify-stretch;
-    margin: calc(2 * var(--pageBorder-width)) 0;
+    margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
 }
 
 @media (min-width: 768px) {
     .sideSection {
         overflow: auto;
         width: min(33%, 40rem) !important;
-        height: calc(100vh - 5 * var(--pageBorder-width));
+        height: calc(100vh - 4 * var(--pageBorder-width));
     }
 }
 
@@ -995,14 +995,14 @@ section.home {
 /* annex Section */
 .annexSection {
     @apply w-full flex flex-col grow-0 shrink-0 items-stretch place-content-stretch justify-stretch flex-wrap;
-    margin: calc(2 * var(--pageBorder-width)) 0;
+    margin: calc(3 * var(--pageBorder-width)) 0 var(--pageBorder-width) 0;
 }
 
 @media (min-width: 768px) {
     .annexSection {
         overflow: auto;
         width: min(16.5%, 20rem) !important;
-        height: calc(100vh - 5 * var(--pageBorder-width));
+        height: calc(100vh - 4 * var(--pageBorder-width));
     }
 }
 
