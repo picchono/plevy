@@ -61,17 +61,18 @@
                 .context.Params.institution.name }}{{ end }}{{ end }}
             </div>
         </div>
-        <div class="flex flex-row justify-between items-end">
-            <div class="w-1/2 h-full pr-1">
+        <div class="menuBoxDesc"><div>
+            {{ if .context.Description }}{{ .context.Description }}
+            {{ else if .context.Params.Reference }}{{ .context.Params.Reference | safeHTML }}
+            {{ else if .context.Params.Abstract }}{{ .context.Params.Abstract | safeHTML }}{{if .Params.projectby
+            }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}{{ end }}
+        </div></div>
+        <div class="menuBoxPhoto">
+            <div class="w-full h-full">
                 {{ if .context.Params.frontphoto }}<div class="boxIsoImg duotone" style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');"></div>
                 {{ else }}<div class="boxIsoImg"></div>{{ end }}
             </div>
-                <div class="menuBoxDesc"><div>
-                    {{ if .context.Description }}{{ .context.Description }}
-                    {{ else if .context.Params.Reference }}{{ .context.Params.Reference | safeHTML }}
-                    {{ else if .context.Params.Abstract }}{{ .context.Params.Abstract | safeHTML }}{{if .Params.projectby
-                    }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}{{ end }}
-                </div></div>
+
         </div>
     </a>
 </div>

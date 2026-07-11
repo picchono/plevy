@@ -195,9 +195,9 @@ function MenuToggle() {
       //scroll au premier bloc de cette section à droite
       let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
       if (vw > 768) {
-        document.querySelector('div.mainsection').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 68, behavior: 'smooth' });
+        document.querySelector('div.mainsection').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 119, behavior: 'smooth' });
       } else {
-        window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 68, behavior: 'smooth' });
+        window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 119, behavior: 'smooth' });
       }
       document.querySelectorAll("." + secti).forEach(function (to) {
         if (!to.classList.contains('ended')) to.classList.add('foc');
@@ -312,7 +312,7 @@ function outLinks() {
 document.addEventListener('DOMContentLoaded', () => {
   frontMenu();
   MenuToggle();
-  matchHeightToWidth();
+  //matchHeightToWidth();
   tableContent();
   outLinks();
 });
@@ -322,6 +322,6 @@ window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
     frontMenu();
-    matchHeightToWidth();
+    //matchHeightToWidth();
   }, 200); // Délais pour éviter trop d'appels pendant le redimensionnement
 });

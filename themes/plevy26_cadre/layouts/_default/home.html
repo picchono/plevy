@@ -52,17 +52,17 @@
 <div class="mainsection">
     {{ $s := 1 }}
     {{ range .Sections }}{{ if ne .Slug "pl" }}
+    <div class="sectionBlock section-{{- .Slug -}}">
+        <a class="menuBox more" href="{{ .Slug }}">
+            <span>{{ i18n .Slug  | humanize }}</span>
+        </a>
+    </div>
     {{ $p := 1 }}
     {{ range .Pages }}{{ if ne .Params.notListed true }}{{ if .Params.frontpage }}
     {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
     {{ $p = add $p 1 }}
     {{ end }}{{ end }}{{ end }}
     {{ $s = add $s 1 }}
-    <div class="sectionBlock section-{{- .Slug -}}">
-        <a class="menuBox more" href="{{ .Slug }}">
-            <span>&nbsp;+ {{ i18n .Slug  | humanize }}&hellip;</span>
-        </a>
-    </div>
     {{ end }}{{ end }}
 </div>
 {{ end }}

@@ -617,12 +617,11 @@ pagefind-modal-trigger {
 
 /* menuBox */
 .menuBox {
-    @apply relative w-full md:w-1/2 p-1 flex flex-col justify-around flex-wrap;
-    height: 25rem;
+    @apply relative w-full flex flex-col justify-around flex-wrap border-t border-dotted border-primary-text;
 }
 
-.menuBox:nth-child(-n+2) {
-    @apply pt-0;
+.menuBox.more {
+    @apply py-2;
 }
 
 .menuBoxCount {
@@ -635,7 +634,7 @@ pagefind-modal-trigger {
 
 /* boxIso */
 .boxIso {
-    @apply w-full h-full text-primary-text grow-0 shrink-0 flex flex-col justify-between items-start border-t border-dotted border-primary-text;
+    @apply w-full h-full text-primary-text grow-0 shrink-0 flex flex-row justify-between items-start;
 }
 
 .menuBox.ended .boxIso {
@@ -643,7 +642,7 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div {
-    @apply w-full;
+    @apply w-2/5 grow;
 }
 
 .boxIso>div:not(:last-child) {
@@ -651,7 +650,7 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div>div {
-    @apply h-full w-full flex flex-col items-start justify-end border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
+    @apply h-full w-full flex flex-col items-start justify-start border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
 }
 
 .boxIso:hover>div {
@@ -679,6 +678,18 @@ pagefind-modal-trigger {
 
 #Slides .boxIso>div {
     width: 100% !important;
+}
+
+.menuBoxPhoto {
+    @apply flex flex-row justify-between items-end;
+    width: 0 !important;
+    flex-grow: 0 !important;
+}
+
+@media (min-width: 768px) {
+.menuBoxPhoto {
+    width: 20% !important;
+}
 }
 
 /* duotone */
@@ -749,7 +760,6 @@ section.home {
 
 @media (min-width: 768px) {
     .mainsection {
-        @apply flex-row flex-wrap;
         overflow: auto;
         width: min(50%, 60rem) !important;
         height: calc(100vh - 3.5 * var(--pageBorder-width));
@@ -972,23 +982,15 @@ section.home {
 }
 
 .sectionBlock {
-    @apply w-full p-1 flex flex-col justify-center items-center border-t border-dotted border-primary-text;
-    height: 25rem;
-}
-
-@media (min-width: 768px) {
-    .sectionBlock {
-        @apply w-1/2 justify-end items-end border-t-0;
-    }
+    @apply w-full flex flex-col justify-center;
 }
 
 .sectionBlock>a {
-    @apply h-1/2 text-primary-bg bg-epierrot text-center flex flex-col justify-center items-center;
-    width: calc(50% - 5px);
+    @apply text-primary-text bg-secondary-bg font-bold text-xl flex flex-col justify-center;
 }
 
 .sectionBlock>a:hover {
-    @apply text-epierrot bg-secondary-bg;
+    @apply text-primary-bg bg-epierrot;
 }
 
 .sectionBlock>a>span {
@@ -1027,7 +1029,7 @@ section.home {
 }
 
 .linkBlock .linkBox .boxIsoImg {
-    @apply w-20 h-20;
+    @apply w-12 h-12;
     aspect-ratio: 1;
     min-height: auto;
 }
