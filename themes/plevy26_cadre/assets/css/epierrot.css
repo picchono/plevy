@@ -1152,7 +1152,7 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-    @apply w-full md:w-2/3 max-w-4xl;
+    @apply w-full md:w-2/3 max-w-2xl;
     margin: calc(2 * var(--pageBorder-width)) 0;
     padding: 0 calc(0.5 * var(--pageBorder-width));
 }
