@@ -650,7 +650,7 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div>div {
-    @apply h-full w-full flex flex-col items-start justify-start border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
+    @apply w-full flex flex-col items-start justify-start border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
 }
 
 .boxIso:hover>div {
@@ -662,7 +662,7 @@ pagefind-modal-trigger {
 }
 
 .boxMeta {
-    @apply w-full flex flex-col flex-wrap justify-start text-sm;
+    @apply w-full flex flex-col flex-wrap justify-start text-sm p-1;
 }
 
 .boxIsoImg {

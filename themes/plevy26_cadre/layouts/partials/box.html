@@ -5,7 +5,7 @@
     data-date="{{ .context.Date }}" data-section="{{ .context.Section  }}">
     <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }}"
         href="{{ .context.Permalink }}">
-        <div class="flex flex-col items-start justify-start">
+        <div class="h-full flex flex-col items-start justify-between">
             {{ if .sect }}
             {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
             <span class="menuBoxCount"><b>
@@ -21,7 +21,7 @@
                 <span class="menuBoxCount"></span>
             {{ end }}
             <h2 class='boxTitle py-6 px-1'>{{- .context.Title |safeHTML }}</h2>
-            <div class="boxMeta px-1">
+            <div class="boxMeta">
                 {{ if eq .context.Section "publications" }}
                 {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
                 {{ if .context.Params.shortBook }}{{ .context.Params.shortBook }}{{ end }}
@@ -38,27 +38,27 @@
                 <br>{{ .affiliation }}
                 {{ end }}<br>{{ end }}
                 {{ else if eq .context.Section "presentations" }}
-                {{ i18n "for" }}{{ if .context.Params.collaboration }}
+                {{ if .context.Params.collaboration }}
                 {{ $len := len .context.Params.collaboration }}
                 {{ $count := 0 }}
                 {{ $intitut := .context.Params.institution.name }}
                 {{ range .context.Params.collaboration }}
-                {{ if ne .name $intitut }}{{ .name -}}
+                {{ if ne .name $intitut }}{{ .short -}}
                 {{ $count = add $count 1 }}
                 {{- if eq $count $len -}}, {{ end }}{{ end }}
-                {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
+                {{ end }}{{ else }} {{ .context.Params.institution.short }}{{ end }}
                 {{ else if eq .context.Section "teaching" }}
-                {{ .context.Params.institution.name }}
+                {{ .context.Params.institution.short }}
                 {{ else if eq .context.Section "courses" }}
                 {{ if .context.Params.collaboration }}{{ $len := len .context.Params.collaboration }}
                 {{ $count := 0 }}
                 {{ range .context.Params.collaboration }}
-                {{ .name -}}
+                {{ .short -}}
                 {{ $count = add $count 1 }}
                 {{- if ne $count $len -}}, {{ end }}
-                {{ end }}{{ else }} {{ .context.Params.institution.name }}{{ end }}
-                {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.name }}{{
-                .context.Params.institution.name }}{{ end }}{{ end }}
+                {{ end }}{{ else }} {{ .context.Params.institution.short }}{{ end }}
+                {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.short }}{{
+                .context.Params.institution.short }}{{ end }}{{ end }}
             </div>
         </div>
         <div class="menuBoxDesc"><div>
