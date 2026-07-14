@@ -621,7 +621,7 @@ pagefind-modal-trigger {
 }
 
 .menuBox.more {
-    @apply py-2;
+    @apply pb-2;
 }
 
 .menuBoxCount {
