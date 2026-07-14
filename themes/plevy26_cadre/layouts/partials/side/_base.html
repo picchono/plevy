@@ -4,7 +4,7 @@
 <div class="sideBlock">
     <div class="sideBlockIn"><div>{{ partial $targ . }}</div></div>
 </div>
-{{ else if in (slice "intervenants" "completename") $tar }}
+{{ else if in (slice "intervenants" "completename" "front_description") $tar }}
 <div class="sideBlock">{{ .Scratch.Set "par" $tar }}{{ partial $targ . }}</div>
 {{ else }}
 <div class="sideBlock">
