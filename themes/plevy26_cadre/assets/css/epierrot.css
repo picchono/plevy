@@ -629,7 +629,7 @@ pagefind-modal-trigger {
 }
 
 .menuBoxDesc {
-    @apply w-full h-full text-xs p-1;
+    @apply w-full h-full text-xs p-1 wrap-break-word;
 }
 
 /* boxIso */
@@ -650,7 +650,7 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div>div {
-    @apply w-full flex flex-col items-start justify-start border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
+    @apply w-full border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
 }
 
 .boxIso:hover>div {
