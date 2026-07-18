@@ -240,7 +240,7 @@ function matchHeightToWidth() {
 /* Front menu */
 function frontMenu() {
   const specialSection = document.getElementById('navDesktop');
-  if (specialSection !== null) {
+  if (specialSection) {
     const originalParent = specialSection.parentNode; // L'endroit où la section doit être sur PC
 
     const mobileModal = document.getElementById("mobileModal");

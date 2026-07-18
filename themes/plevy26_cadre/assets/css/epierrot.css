@@ -694,7 +694,7 @@ pagefind-modal-trigger {
 
 /* duotone */
 .duotone {
-    @apply inline-block relative transition-all duration-700 ease-in-out;
+    @apply /*inline-block*/ relative transition-all duration-700 ease-in-out;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
