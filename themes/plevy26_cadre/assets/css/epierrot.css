@@ -132,11 +132,17 @@
     --color-primary-text: var(--color-primary-text);
     --color-secondary-text: var(--color-secondary-text);
     --color-epierrot: var(--color-epierrot);
+    --color-title: var(--color-title);
     --color-borders: var(--color-borders);
     --color-transparent: transparent;
     --color-current: currentColor;
 
-    --spacing-newpad: var(--pageBorder-width);
+    --spacing-pad: 2rem;
+    --spacing-unit-1: 20rem;
+    --spacing-unit-2: 40rem;
+    --spacing-unit-3: 60rem;
+    --spacing-unit-4: 80rem;
+
 }
 
 :root {
@@ -193,7 +199,7 @@
     /* grid-template-columns value, used when display is grid */
     --pf-results-gap: 8px;
 
-    --pf-border-radius: calc(0.5 * var(--pageBorder-width));
+    --pf-border-radius: calc(0.5 * var(--spacing-pad));
     --pf-image-width: 64px;
     --pf-image-height: 48px;
 
@@ -266,46 +272,6 @@ html,body {
     font-size: 16px;
 }
 
-.bordTop,
-.bordBottom,
-.bordLeft,
-.bordRight {
-    @apply fixed transition-colors duration-700 ease-in-out z-10;
-}
-
-.bordTop,
-.bordBottom {
-    left: 0;
-    width: 100vw;
-    height: calc(0.5 * var(--pageBorder-width));
-}
-
-.bordTop {
-    top: 0;
-    background-color: var(--color-pageborder-bg);
-}
-
-.bordBottom {
-    bottom: 0;
-    background-color: var(--color-pageborder-bg);
-}
-
-.bordLeft,
-.bordRight {
-    top: 0;
-    height: 100vh;
-    width: var(--pageBorder-width);
-}
-
-.bordLeft {
-    left: 0;
-    background-color: var(--color-pageborder-bg);
-}
-
-.bordRight {
-    right: 0;
-    background-color: var(--color-pageborder-bg);
-}
 
 html {
     background-color: transparent;
@@ -316,19 +282,14 @@ html {
     --color-primary-text: transparent;
     --color-secondary-text: transparent;
     --color-epierrot: transparent;
+    --color-title: transparent;
     --color-borders: transparent;
     --color-borders: var(--color-primary-text);
 
-    --pageBorder-width: 1.5rem;
     --entete-height: 10vh;
     --entete-height: 4rem;
 }
 
-@media (max-width: 768px) {
-    html {
-        --pageBorder-width: 0.6rem;
-    }
-}
 
 html.light {
     --color-primary-bg: white;
@@ -344,6 +305,8 @@ html.light {
     --color-epierrot: rgb(187 38 73);
     /*pantone viva mangenta 18-1750*/
     /*rgb(227 142 132) or #e34334*/
+    --color-title: #0DA7A1;
+    --color-borders: #ccc;
     --blend-mode-before: color;
     --blend-mode-after: screen;
 }
@@ -358,7 +321,9 @@ html.dark {
     /* #181818; */
     --color-primary-text: #e8e5e4;
     --color-secondary-text: #94817a;
-    --color-epierrot: #44bbca;
+    --color-epierrot: #0A97AA;
+    --color-title: #FE5F55;
+    --color-borders: #e8e5e4;
     --blend-mode-before: saturation;
     --blend-mode-after: hard-light;
 
@@ -387,7 +352,48 @@ html.dark {
 
 body {
     @apply relative bg-primary-bg text-primary-text min-h-screen transition-colors duration-700 ease-in-out;
-    padding-right: var(0.5 * var(--pageBorder-width));
+    padding-right: var(0.5 * var(--spacing-pad));
+}
+
+.bordTop,
+.bordBottom,
+.bordLeft,
+.bordRight {
+    @apply fixed transition-colors duration-700 ease-in-out z-10;
+}
+
+.bordTop,
+.bordBottom {
+    left: 0;
+    width: 100vw;
+    height: calc(0.5 * var(--spacing-pad));
+}
+
+.bordTop {
+    top: 0;
+    background-color: var(--color-pageborder-bg);
+}
+
+.bordBottom {
+    bottom: 0;
+    background-color: var(--color-pageborder-bg);
+}
+
+.bordLeft,
+.bordRight {
+    top: 0;
+    height: 100vh;
+    width: var(--spacing-pad);
+}
+
+.bordLeft {
+    left: 0;
+    background-color: var(--color-pageborder-bg);
+}
+
+.bordRight {
+    right: 0;
+    background-color: var(--color-pageborder-bg);
 }
 
 p {
@@ -399,7 +405,7 @@ b i {
 }
 
 a {
-    @apply text-epierrot transition-colors duration-1000 ease-in-out;
+    @apply text-epierrot transition-colors duration-700 ease-in-out;
     font-size: inherit;
     font-weight: inherit;
     transition: all 1s ease-in-out;
@@ -425,6 +431,13 @@ span {
     font-size: inherit;
     font-weight: inherit;
     font-style: inherit;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 ul {
@@ -456,9 +469,22 @@ main {
     @apply bg-primary-bg flex flex-col md:flex-row justify-start w-full transition-all duration-700 ease-in-out;
 }
 
+main>div {
+    @apply w-full flex flex-col flex-nowrap grow-0 shrink-0 items-stretch place-content-stretch justify-stretch;
+    margin: calc(2 * var(--spacing-pad)) 0 calc(0.5 * var(--spacing-pad)) 0;
+}
+
+@media (min-width: 768px) {
+    main>div {
+        @apply  p-10;
+        overflow: auto;
+        height: calc(100vh - 2.5 * var(--spacing-pad));
+    }
+}
+
 /* title */
 #enteteBox {
-    @apply p-newpad max-w-132 self-start w-full;
+    @apply p-pad max-w-132 self-start w-full;
 }
 
 body#menu #enteteBox {
@@ -467,12 +493,12 @@ body#menu #enteteBox {
 
 
 #entete {
-    @apply flex flex-col max-w-132 w-full self-end pb-newpad border-b border-primary-text;
+    @apply flex flex-col max-w-132 w-full self-end pb-pad border-b border-borders;
 }
 
 @media (min-width: 768px) {
     #entete {
-    padding-left: calc(0.5 * var(--pageBorder-width));
+    padding-left: calc(0.5 * var(--spacing-pad));
     }
 }
 
@@ -504,23 +530,23 @@ a.logohome svg {
 
 .menuSetting {
     @apply w-full fixed flex flex-row justify-start items-center z-30 transition-colors duration-700 ease-in-out;
-    padding: var(--pageBorder-width) calc(.5 * var(--pageBorder-width) + 186px) var(--pageBorder-width) calc(0.5 * var(--pageBorder-width))!important;
-    height: calc(32px + calc(1.5 * var(--pageBorder-width)))!important;
+    /*padding: var(--spacing-pad) calc(var(--spacing-pad) + 186px) var(--spacing-pad) var(--spacing-pad) !important;*/
+    height: calc(2 * var(--spacing-pad))!important;
     background-color: var(--color-pageborder-bg);
 }
 
 #menu .menuSetting {
-    padding-left: calc(40px + .5 * var(--pageBorder-width)) !important;
+    padding-left: calc(var(--spacing-pad) + 40px) !important;
 }
 
 @media (min-width: 768px) {
     .menuSetting {
-        @apply items-end;
-        padding-bottom: calc(0.5 * var(--pageBorder-width)) !important;
+        @apply items-center;
         width: min(33%,40rem) !important;
+        padding-left: calc(1.75 * var(--spacing-pad)) !important;
     }
     #menu .menuSetting {
-        padding-left: calc(0.5 * var(--pageBorder-width)) !important;
+        padding-left: calc(1.25 * var(--spacing-pad)) !important;
     }
 }
 
@@ -542,7 +568,7 @@ a.logohome svg {
 
 #languageMode {
     @apply w-auto bg-transparent flex flex-row items-center justify-center;
-    height: var(--pageBorder-width);
+    height: var(--spacing-pad);
 }
 
 #languageMode>span {
@@ -559,7 +585,7 @@ a.logohome svg {
 
 #settingOptions {
     @apply w-auto flex flex-row justify-start items-center;
-    height: var(--pageBorder-width);
+    height: var(--spacing-pad);
 }
 
 #settingOptions>div {
@@ -602,14 +628,14 @@ pagefind-modal-trigger {
     @apply transition-all duration-700 ease-in-out;
     position: fixed !important;
     z-index: 100 !important;
-    top: calc(0.5 * var(--pageBorder-width)) !important;
+    top: calc(0.5 * var(--spacing-pad)) !important;
     left: auto !important;
-    right: calc(0.5 * var(--pageBorder-width)) !important;
+    right: calc(0.5 * var(--spacing-pad)) !important;
 }
 
 @media (min-width: 768px) {
     pagefind-modal-trigger {
-        top: calc(1.1 * var(--pageBorder-width)) !important;
+        top: calc(1.1 * var(--spacing-pad)) !important;
         left: min(calc(33% - 180px), 460px) !important;
         right: auto !important;
     }
@@ -617,7 +643,8 @@ pagefind-modal-trigger {
 
 /* menuBox */
 .menuBox {
-    @apply relative w-full flex flex-col justify-around flex-wrap border-t border-dotted border-primary-text;
+    @apply relative w-full flex flex-col justify-around flex-wrap mb-4 rounded-sm;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .menuBox.more {
@@ -625,7 +652,11 @@ pagefind-modal-trigger {
 }
 
 .menuBoxCount {
-    @apply text-xs font-normal px-1;
+    @apply text-xs font-normal px-1 text-epierrot transition-all duration-700 ease-in-out;
+}
+
+a.boxIso:hover .menuBoxCount {
+    @apply text-primary-bg;
 }
 
 .menuBoxDesc {
@@ -642,15 +673,15 @@ pagefind-modal-trigger {
 }
 
 .boxIso>div {
-    @apply w-2/5 grow;
+    @apply w-unit-1 grow-0;
 }
 
 .boxIso>div:not(:last-child) {
-    padding: 0 calc(0.5 * var(--pageBorder-width)) 0 0;
+    padding: calc(0.5 * var(--spacing-pad));
 }
 
 .boxIso>div>div {
-    @apply w-full border-0 border-dotted border-primary-text transition-all duration-700 ease-in-out;
+    @apply w-full border-0 border-solid border-borders transition-all duration-700 ease-in-out;
 }
 
 .boxIso:hover>div {
@@ -694,21 +725,21 @@ pagefind-modal-trigger {
 
 /* duotone */
 .duotone {
-    @apply /*inline-block*/ relative transition-all duration-700 ease-in-out;
+    @apply /*inline-block*/ relative rounded-r-sm transition-all duration-700 ease-in-out;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .duotone::before {
-    @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
+    @apply block w-full h-full absolute top-0 left-0 rounded-r-sm transition-all duration-700 ease-in-out;
     background-color: var(--color-tertiary-bg);
     content: '';
     mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
-    @apply block w-full h-full absolute top-0 left-0 transition-all duration-700 ease-in-out;
+    @apply block w-full h-full absolute top-0 left-0 rounded-r-sm transition-all duration-700 ease-in-out;
     background-color: var(--color-primary-bg);
     content: '';
     mix-blend-mode: var(--blend-mode-after);
@@ -731,12 +762,12 @@ a.linkBox:hover .duotone::after,
 
 /* search modal */
 #searchmodal {
-    @apply fixed z-50 p-newpad transition-all duration-700 ease-in-out bg-primary-bg;
+    @apply fixed z-50 p-pad transition-all duration-700 ease-in-out bg-primary-bg;
     display: none;
-    top: var(--pageBorder-width);
-    left: var(--pageBorder-width);
-    width: calc(100vw - 4 * calc(0.5 * var(--pageBorder-width)));
-    height: calc(100vh - 4 * calc(0.5 * var(--pageBorder-width)));
+    top: var(--spacing-pad);
+    left: var(--spacing-pad);
+    width: calc(100vw - 2.5 * calc(0.5 * var(--spacing-pad)));
+    height: calc(100vh - 2.5 * calc(0.5 * var(--spacing-pad)));
 }
 
 #searchmodal.is-open {
@@ -748,21 +779,13 @@ a.linkBox:hover .duotone::after,
 section.home {
     @apply w-full md:w-1/3 max-w-4xl flex flex-col md:flex-row items-start justify-start;
     height: 100vh;
-    padding: calc(3 * var(--pageBorder-width)) calc(2 * var(--pageBorder-width));
-    padding-bottom: var(--pageBorder-width);
-}
-
-.mainsection {
-    @apply w-full h-full p-1 grow-0 shrink-0 flex flex-col items-start justify-start;
-    margin: calc(3 * var(--pageBorder-width)) 0 calc(0.5 * var(--pageBorder-width)) 0;
-    padding: 0 calc(0.5 * var(--pageBorder-width));
+    padding: calc(2 * var(--spacing-pad)) calc(2 * var(--spacing-pad));
+    padding-bottom: var(--spacing-pad);
 }
 
 @media (min-width: 768px) {
     .mainsection {
-        overflow: auto;
         width: min(50%, 60rem) !important;
-        height: calc(100vh - 3.5 * var(--pageBorder-width));
     }
 }
 
@@ -795,11 +818,11 @@ section.home {
 
 .mobileModal-content {
     background-color: var(--color-primary-bg);
-    margin: calc(0.5 * var(--pageBorder-width));
-    padding: calc(1.5 * var(--pageBorder-width));
-    width: calc(100vw - (2 * calc(0.5 * var(--pageBorder-width))));
-    border-radius: calc(0.5 * var(--pageBorder-width));
-    box-shadow: 0 calc(calc(0.5 * var(--pageBorder-width)) / 3) calc(0.5 * var(--pageBorder-width)) rgba(0, 0, 0, 0.5);
+    margin: calc(0.5 * var(--spacing-pad));
+    padding: calc(1.5 * var(--spacing-pad));
+    width: calc(100vw - (2 * calc(0.5 * var(--spacing-pad))));
+    border-radius: calc(0.5 * var(--spacing-pad));
+    box-shadow: 0 calc(calc(0.5 * var(--spacing-pad)) / 3) calc(0.5 * var(--spacing-pad)) rgba(0, 0, 0, 0.5);
 }
 
 .mobileModalCloseBtn {
@@ -817,8 +840,8 @@ section.home {
 
 #btnPhonBtn {
     @apply fixed md:p-0;
-    top: var(--pageBorder-width);
-    left: var(--pageBorder-width);
+    top: var(--spacing-pad);
+    left: var(--spacing-pad);
     z-index: 1000;
 }
 
@@ -846,19 +869,19 @@ section.home {
 
     .mobile-only-btn-container {
     text-align: center;
-    margin: calc(0.5 * var(--pageBorder-width));
+    margin: calc(0.5 * var(--spacing-pad));
     }
 
     #openMobileModalBtn {
     display: block !important;
-    padding: calc(0.5 * var(--pageBorder-width));
+    padding: calc(0.5 * var(--spacing-pad));
     background-color: var(--color-primary-text);
     color: var(--color-primary-bg);
     border: none;
-    border-radius: calc(calc(0.5 * var(--pageBorder-width)) / 2);
+    border-radius: calc(calc(0.5 * var(--spacing-pad)) / 2);
     cursor: pointer;
     font-size: 1rem;
-    margin: calc(0.5 * var(--pageBorder-width));
+    margin: calc(0.5 * var(--spacing-pad));
     }
 }
 
@@ -877,7 +900,7 @@ section.home {
 
 @media (max-width: 768px) {
     #menu h2[class^='section-'] {
-    padding: calc(0.5 * var(--pageBorder-width)) 0;
+    padding: calc(0.5 * var(--spacing-pad)) 0;
     font-size: 1.5rem;
     }
 }
@@ -917,16 +940,9 @@ section.home {
 }
 
 /* side section */
-.sideSection {
-    @apply w-full flex flex-col flex-nowrap grow-0 shrink-0 items-stretch place-content-stretch justify-stretch;
-    margin: calc(3 * var(--pageBorder-width)) 0 calc(0.5 * var(--pageBorder-width)) 0;
-}
-
 @media (min-width: 768px) {
     .sideSection {
-        overflow: auto;
-        width: min(33%, 40rem) !important;
-        height: calc(100vh - 3.5 * var(--pageBorder-width));
+        width: min(33%, var(--spacing-unit-2)) !important;
     }
 }
 
@@ -934,32 +950,17 @@ section.home {
     @apply text-4xl font-bold;
 }
 .sideBlock {
-    @apply w-full flex flex-row justify-end items-start;
+    padding: calc(0.5 * var(--spacing-pad));
 }
 
+.sideBlock>.cadreBlock {
+    @apply w-full  flex flex-row justify-start items-start rounded-sm;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 .sideBlockIn {
     @apply w-full h-full;
-    padding: 0 0 0 calc(0.5 * var(--pageBorder-width));
-}
-
-.sideBlockIn>div {
-    @apply my-6 py-1 border-0 border-dotted border-primary-text;
-}
-
-@media (max-width: 768px) {
-    .sideBlockIn:first-child>div {
-        @apply border-t;
-    }
-}
-
-@media (min-width: 768px) {
-    .sideBlock:first-child>.sideBlockIn>div {
-        margin-top: 0 !important;
-    }
-    .sideBlockIn>div {
-        @apply border-t;
-    }
+    padding: calc(0.5 * var(--spacing-pad));
 }
 
 @media (min-width: 768px) {
@@ -973,8 +974,8 @@ section.home {
 }
 
 .sideBlockIn.more>a {
-    @apply inline-block w-full m-0 border-t text-base text-primary-text bg-secondary-bg border-dotted border-primary-text transition-all duration-700 ease-in-out;
-    padding: calc(0.5 * var(--pageBorder-width)) 0;
+    @apply inline-block w-full m-0 border text-base text-primary-text bg-secondary-bg border-solid border-borders transition-all duration-700 ease-in-out;
+    padding: calc(0.5 * var(--spacing-pad)) 0;
 }
 
 .sideBlockIn.more:hover>a {
@@ -998,21 +999,14 @@ section.home {
 }
 
 /* annex Section */
-.annexSection {
-    @apply w-full flex flex-col grow-0 shrink-0 items-stretch place-content-stretch justify-stretch flex-wrap;
-    margin: calc(3 * var(--pageBorder-width)) 0 calc(0.5 * var(--pageBorder-width)) 0;
-}
-
 @media (min-width: 768px) {
     .annexSection {
-        overflow: auto;
         width: min(16.5%, 20rem) !important;
-        height: calc(100vh - 3.5 * var(--pageBorder-width));
     }
 }
 
 .annexSection .sideBlockIn {
-    padding: 0 calc(0.5 * var(--pageBorder-width)) 0 0;
+    padding: 0 calc(0.5 * var(--spacing-pad)) 0 0;
 }
 
 /* linkBox */
@@ -1021,7 +1015,7 @@ section.home {
 }
 
 .linkBlock .linkBox {
-    margin-bottom: calc(0.5 * var(--pageBorder-width));
+    margin-bottom: calc(0.5 * var(--spacing-pad));
 }
 
 .linkBlock .linkBox:hover {
@@ -1045,7 +1039,7 @@ section.home {
 
 .contentIntro {
     @apply max-w-4xl;
-    padding: 0 calc(calc(0.5 * var(--pageBorder-width)));
+    padding: 0 calc(calc(0.5 * var(--spacing-pad)));
 }
 
 .linkHome>span {
@@ -1146,25 +1140,20 @@ section.home {
 }
 
 img.lg-object {
-    padding: var(--pageBorder-width);
-    border-radius: calc(1.5 * var(--pageBorder-width));
+    padding: var(--spacing-pad);
+    border-radius: calc(1.5 * var(--spacing-pad));
 }
 
 /* mainBlock */
 .mainBlock {
-    @apply w-full md:w-2/3 max-w-2xl;
-    margin: calc(2 * var(--pageBorder-width)) 0;
-    padding: 0 calc(0.5 * var(--pageBorder-width));
+    @apply w-full max-w-unit-3;
+    margin: calc(2 * var(--spacing-pad)) 0;
+    padding: 0 calc(0.5 * var(--spacing-pad));
 }
 
-@media (min-width: 768px) {
-    .mainBlock {
-    @apply w-2/3;
-    }
-}
 
 .mainBlockIn {
-    @apply my-6 py-1 border-t border-dotted border-primary-text;
+    @apply my-6 py-1 border border-solid border-borders;
 }
 
 /* docLink */
@@ -1179,7 +1168,7 @@ img.lg-object {
 /* logo */
 .collab {
     @apply transition-all duration-700 ease-in-out;
-    padding: 0.25rem 0 calc(0.5 * var(--pageBorder-width)) 0;
+    padding: 0.25rem 0 calc(0.5 * var(--spacing-pad)) 0;
 }
 
 .collab:hover {

@@ -8,7 +8,7 @@
         <div class="h-full flex flex-col items-start justify-between">
             {{ if .sect }}
             {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
-            <span class="menuBoxCount"><b>
+            <span class="menuBoxCount {{ $sectio }}"><b>
                 {{ if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}|{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }} ·
                 {{ $sectio | humanize }} ·
                 {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
@@ -58,7 +58,8 @@
                 {{- if ne $count $len -}}, {{ end }}
                 {{ end }}{{ else }} {{ .context.Params.institution.short }}{{ end }}
                 {{ else if eq .context.Section "projects" }}{{ if .context.Params.institution.short }}{{
-                .context.Params.institution.short }}{{ end }}{{ end }}
+                .context.Params.institution.short }}{{ end }}
+                {{ else }}<span>&nbsp;</span>{{ end }}
             </div>
         </div>
         <div class="menuBoxDesc"><div>

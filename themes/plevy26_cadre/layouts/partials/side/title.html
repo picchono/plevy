@@ -1,2 +1,1 @@
-    <h1>{{ .Params.title |safeHTML }}{{if eq .Params.status "ended"}}
-        ({{- i18n "ended" -}}){{ end }}</h1>
+<h1 class="sideBlockIn">{{ .Params.title |safeHTML }}{{if eq .Params.status "ended"}}({{- i18n "ended" -}}){{ end }}</h1>

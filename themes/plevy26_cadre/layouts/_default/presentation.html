@@ -179,7 +179,7 @@
                 }
                 var newAd = document.querySelectorAll('div.imgAddons');
                 newAd.forEach(function (nA, index) {
-                    nA.style.cssText = "right: calc(100vw - " + rightIm + "px + (1.7 * var(--pageBorder-width)));bottom:calc(100vh - " + bottomIm + "px + (1.5 * var(--pageBorder-width)));";
+                    nA.style.cssText = "right: calc(100vw - " + rightIm + "px + (1.7 * var(--spacing-pad)));bottom:calc(100vh - " + bottomIm + "px + (1.5 * var(--spacing-pad)));";
                 });
             });
             observer.observe(targetNode, config);

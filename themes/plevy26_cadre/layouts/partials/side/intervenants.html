@@ -1,6 +1,5 @@
 {{ $ta := .Scratch.Get "par" }}
 {{ range .Params.intervenants }}
-<div class="sideBlockIn"><div>
     <div class="flex flex-row">
         <div class="w-1/2">
             <div>{{ partial "subTitle.html" (dict "txt" (i18n $ta)) }}</div>
@@ -15,5 +14,4 @@
         </div>
     </div>
 {{ if .bio }}<div class="w-full mt-6">{{ .bio | safeHTML }}</div>{{ end }}
-</div></div>
 {{ end }}
