@@ -266,6 +266,8 @@ body {
     font-display: swap;
     scroll-behavior: smooth;
     font-variant-ligatures: common-ligatures;
+
+    scrollbar-width: none;
 }
 
 html,body {
