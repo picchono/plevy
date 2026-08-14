@@ -399,7 +399,11 @@ body {
 }
 
 p {
-    @apply mb-4;
+    @apply mt-4;
+}
+
+p:first-child {
+    @apply mt-0;
 }
 
 b i {
@@ -467,6 +471,18 @@ h3 {
     @apply text-base font-bold;
 }
 
+table {
+    @apply mt-2 mb-8;
+}
+
+thead {
+    @apply text-left bg-secondary-bg;
+}
+
+th, td {
+    @apply p-1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 main {
     @apply bg-primary-bg flex flex-col md:flex-row justify-start w-full transition-all duration-700 ease-in-out;
 }
@@ -1224,7 +1240,7 @@ ul.toc__sublist {
 }
 
 #content h3 {
-    @apply text-xl font-bold pt-4 pb-0;
+    @apply text-xl font-bold pt-8 pb-4;
 }
 
 #content h1 {

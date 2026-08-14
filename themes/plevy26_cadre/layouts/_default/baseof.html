@@ -1,5 +1,4 @@
 {{ if .Params.redirect }}<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
-<!DOCTYPE html>
 <html lang='{{ .Site.Language.Locale }}'>
 {{- partial "head.html" . -}}
 
@@ -11,11 +10,6 @@
         {{ partial "annex.html" . }}
   </main>
   <div class="bordBottom">&nbsp;</div>
-  {{ if false }}
-  <div class="bordTop">&nbsp;</div>
-  <div class="bordRight">&nbsp;</div>
-  <div class="bordLeft">&nbsp;</div>
-{{ end }}
 </body>
 
 </html>

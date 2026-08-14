@@ -1,2 +1,6 @@
-# Add below lines to exclude OS settings and caches
 .DS_Store
+public/
+resources/
+node_modules/
+.hugo_build.lock
+hugo_stats.json

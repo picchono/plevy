@@ -2,7 +2,9 @@ module.exports = {
   important: true,
   content: [
     "./themes/**/layouts/**/*.html",
-    "./layouts/**/*.html"
+    "./layouts/**/*.html",
+    "./content/**/*.md",
+    "./content/**/*.html"
   ],
   theme: {
     fontFamily: {
@@ -144,7 +146,7 @@ module.exports = {
       colors: {
         'primary-bg': 'var(--color-primary-bg)',
         'secondary-bg': 'var(--color-secondary-bg)',
-        'tertiary-bg': 'var(--color-tertiary-bg)', 
+        'tertiary-bg': 'var(--color-tertiary-bg)',
         'pageborder-bg': 'var(--color-pageborder-bg)',
         'primary-text': 'var(--color-primary-text)',
         'secondary-text': 'var(--color-secondary-text)',

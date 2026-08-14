@@ -1,6 +1,6 @@
 {{- with $.Params.frontphoto -}}
 <meta name="x:card" content="summary_large_image"/>
-<meta name="x:image" content="{{ index . | absURL }}"/>
+<meta name="x:image" content="https://drive.google.com/thumbnail?id={{ index . }}&sz=w1000"/>
 {{ else -}}
 {{- $images := $.Resources.ByType "image" -}}
 {{- $featured := $images.GetMatch "*feature*" -}}

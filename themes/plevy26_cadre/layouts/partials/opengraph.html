@@ -6,7 +6,7 @@
 {{ else if .Params.featuredImage -}}
 <meta property="og:image" content="{{ .Params.featuredImage | absURL }}" />
 {{ else if .Params.frontphoto -}}
-<meta property="og:image" content="{{ .Params.frontphoto | absURL }}" />
+<meta property="og:image" content="https://drive.google.com/thumbnail?id={{ .Params.frontphoto }}&sz=w1000" />
 {{ end -}}
 
 <meta property="og:url" content="{{ .Permalink }}" />

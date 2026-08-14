@@ -1,18 +1,17 @@
 baseURL = "https://plevy.fr"
-locale = "fr-FA"
+locale = "fr-FR"
 title = "Pierre Lévy"
 theme = "plevy26_cadre"
 defaultContentLanguage = "fr"
 ignoreErrors = ["error-disable-taxonomy", "warning-goldmark-raw-html"]
 
-DefaultContentLanguage = "fr"
 copyright = "plevy.fr"
 
 [Params]
 favicon = "icon.png"
 removePathAccents = true
 
-[deployement]
+[deployment]
 order = [".webp", ".jpg$", ".gif$"]
   [deployment.targets]
   # An arbitrary name for this target.
@@ -31,26 +30,8 @@ order = [".webp", ".jpg$", ".gif$"]
 [security]
   # Allows both Markdown and HTML files in the content folder
   allowContent = ['^text/markdown$', '^text/html$']
-
-[privacy.disqus]
-disable = true
-
-[privacy.googleAnalytics]
-disable = true
-
-[privacy.instagram]
-disable = true
-
-[privacy.x]
-disable = true
-
-[privacy.vimeo]
-disable = true
-privacyEnhanced = true
-
-[privacy.youtube]
-disable = true
-privacyEnhanced = true
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^npx$', '^tailwindcss$']
 
 [minify]
 minifyOutput = true
@@ -59,7 +40,7 @@ merge = "deep"
 [languages]
   [languages.fr]
     label = "FR"
-    locale = "fr-FA"
+    locale = "fr-FR"
     weight = 1
   [languages.en]
     label = "EN"
@@ -67,5 +48,5 @@ merge = "deep"
     weight = 2
   [languages.jp]
     label = "JP"
-    locale = "jp-JA"
+    locale = "ja-JP"
     weight = 3
