@@ -1,6 +1,6 @@
 ---
 slug: du-design
-title: "Du design"
+title: "About design"
 subsection: presentation
 layout: presentation
 institution:
@@ -15,7 +15,7 @@ license:
     link: https://creativecommons.org/licenses/by-sa/4.0/
 frontpage: true
 frontphoto: "1vcDsNRTPAphF9FVA48oApL6pnXBt_UmP"
-description: "Une courte introduction au design."
+description: "A short introduction to design."
 slides: [
     ["google", "1vcDsNRTPAphF9FVA48oApL6pnXBt_UmP"],
     ["google", "14i8wjTfKix1Tr4S87L1lw7a1945IXLqG"],

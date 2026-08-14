@@ -1,6 +1,6 @@
 ---
 slug: TET007-RNCP-Approche_pratique_du_numerique_et_la_recherche_d_information
-title: "TET007-RNCP · Approche pratique du numérique et la recherche d'information"
+title: "TET007-RNCP · Practical approach to digital and information research"
 layout: single
 searchFilter: Teaching
 teaching: 'TET007-RNCP'
@@ -14,13 +14,13 @@ institution:
 date: 2021-09-01T16:27:15+02:00
 end: 2023
 subsection: course
-description: "Cette UE forme à une culture numérique permettant de s'engager dans des recherches d'information et des synthèses utiles à la vie professionnelle principalement sur le web."
+description: "This course trains in digital culture to engage in information research and syntheses useful for professional life, mainly on the web."
 frontphoto: "1Ag_ZGaXRsHj99nJ-KxRBLMJYT1wVNzZL"
 link:
     1: ["institutional page", "institutional", "https://formation.cnam.fr/rechercher-par-discipline/recherche-d-informations-theorie-et-pratique-sur-le-web-208885.kjsp?RF="]
 ---
-{{< slash "Compétences visées" >}}
+{{< slash "Targeted skills" >}}
 
-- Posséder une culture numérique de base- Disposer de méthodes de recherche d'information utiles
-- Connaître les ressources utiles et principes d'organisation de l'information sur le Web permettant de réaliser des recherches
-- Appréhender les principes du Web 2.0 et de la gestion de sa présence numérique permettant de faciliter divers type de recherches
+- Possess a basic digital culture and have useful information research methods
+- Know the relevant resources and principles of information organisation on the Web for conducting research
+- Understand the principles of Web 2.0 and managing one's digital presence to facilitate various types of research

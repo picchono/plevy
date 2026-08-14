@@ -1,5 +1,5 @@
 ---
-title: "Matter of Transformation"
+title: "Matière de transformation"
 institution:
     heig: 1
     logo: TUe
@@ -88,19 +88,19 @@ photogallery:
         img: "1DSPXdbOOy0hZ_52mssf8nZwEIPcJ-x29"
 ---
 
-This elective invites students to consider and deepen (both hands-on and through reflection) their understanding of the relationship between aesthetics and various concepts from human sciences that are at stake in the design process for transformation, including philosophy, psychology, sociology and economics.</p>
-For this aim, three frameworks are introduced and discussed (examples):
-- complex thinking,
-- learning,
-- lenses & perspectives,
-- embodied theories,
-- post-phenomenology,
-- transition theories.
+Cet électif invite les étudiants à considérer et approfondir (à la fois de manière pratique et par la réflexion) leur compréhension de la relation entre l'esthétique et divers concepts des sciences humaines qui sont en jeu dans le processus de design pour la transformation, incluant la philosophie, la psychologie, la sociologie et l'économie.</p>
+Pour cet objectif, trois cadres sont introduits et discutés (exemples) :
+- la pensée complexe,
+- l'apprentissage,
+- les lentilles et perspectives,
+- les théories incarnées,
+- la post-phénoménologie,
+- les théories de la transition.
 
-Throughout the elective, students analyse the implication of these frameworks on the designs they create (as aesthetics propositions), and of designs on these frameworks. To reflect on their practice based on the three frameworks, students visualise all noticeable shifts in their designs, in their processes and in relations between and within these frameworks.  
+Tout au long de l'électif, les étudiants analysent l'implication de ces cadres sur les designs qu'ils créent (en tant que propositions esthétiques), et l'impact des designs sur ces cadres. Pour réfléchir à leur pratique sur base des trois cadres, les étudiants visualisent tous les changements remarquables dans leurs designs, dans leurs processus et dans les relations entre et au sein de ces cadres.  
 
-This reflection will be supported by a frequential redesign of an everyday design, seen as an embodied experience of an aesthetical and ethical proposition.
+Cette réflexion sera soutenue par un redesign fréguel d'un design du quotidien, vu comme une expérience incarnée d'une proposition esthétique et éthique.
 
-{{< slash "Learning objectives" >}}
-- Identify, structure and illustrate relations between design (as aesthetical propositions) and other disciplinary fields within human and social sciences,
-- Reflect on the impact of design on society and on oneself.
+{{< slash "Objectifs d'apprentissage" >}}
+- Identifier, structurer et illustrer les relations entre le design (en tant que propositions esthétiques) et d'autres champs disciplinaires au sein des sciences humaines et sociales ;
+- Réfléchir à l'impact du design sur la société et sur soi-même.

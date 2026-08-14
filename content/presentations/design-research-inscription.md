@@ -14,7 +14,7 @@ license:
     type: cc_bysa
     link: https://creativecommons.org/licenses/by-sa/4.0/
 frontphoto: "1zdHQO2gHvt1X2yBMb1XRb_07uFYvBS89"
-description: "A reflection on design for the everyday"
+description: "Une réflexion sur le design du quotidien"
 slides: [
     ["google", "1zdHQO2gHvt1X2yBMb1XRb_07uFYvBS89"],
     ["google", "19TT4FXyxP3HrIi_0YdC448ZEDGzBSTld"],

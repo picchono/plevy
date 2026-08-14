@@ -1,6 +1,6 @@
 ---
 slug: dsaa-master-ensaama
-title: "Ensaama · DSAA valant grade master"
+title: "Ensaama · DSAA granting master's degree"
 layout: course
 searchFilter: Course
 date: 2025-09-09T16:27:15+02:00
@@ -43,13 +43,13 @@ link:
     1: ["Ensaama", "website", "https://ensaama.net"]
     3: ["DSAA-Master", "website", "https://ensaama.net/site/home/formations/dsaa"]
 ---
-Depuis l’Arrêté du 17 février 2025 relatif au diplôme supérieur d’arts appliqués Le présent arrêté entre en vigueur à compter de la rentrée universitaire 2025, le Diplôme Supérieur d’Arts Appliqués sanctionne un niveau correspondant à l’obtention de 120 crédits européens au-delà du grade licence (DNMADE) ou licence (180 crédits ECTS). Il est inscrit au niveau 7 de la nomenclature interministérielle des niveaux de formation.
+Following the Decree of 17 February 2025 relating to the Higher Diploma in Applied Arts — which enters into force from the 2025 academic year — the Higher Diploma in Applied Arts certifies a level corresponding to the acquisition of 120 European credits beyond the bachelor's degree (DNMADE) or licence (180 ECTS credits). It is registered at level 7 of the interministerial nomenclature of training levels.
 
-Le DSAA atteste l'acquisition d'un socle de connaissances et de compétences dans les champs disciplinaires et pluridisciplinaires des arts appliqués. Il certifie la formation de futurs professionnels capables d'exercer des responsabilités de pilotage de projet au service de l’innovation. Il élabore des stratégies de design et de métiers d’art, en interaction avec les multiples acteurs qui interviennent en amont, au cœur et en aval du processus de création.
+The DSAA certifies the acquisition of a foundation of knowledge and competencies in the disciplinary and multidisciplinary fields of applied arts. It certifies the training of future professionals capable of exercising project management responsibilities in the service of innovation. It develops design and craft strategies, in interaction with the multiple actors involved upstream, at the heart, and downstream of the creation process.
 
-Le DSAA s’attache à préparer des étudiants en formation tant à l’insertion professionnelle directe qu’à la poursuite en cycle de recherche vers l’obtention d’un diplôme de niveau 8 (doctorat).
+The DSAA prepares students in training both for direct professional integration and for continuation in research cycles leading to a level 8 qualification (doctorate).
 
-Le DSAA assure un socle commun de savoirs, savoir-faire théoriques, méthodologiques, appliqués et pratiques, une pratique en langue vivante étrangère, une pratique du numérique conforme aux référentiels nationaux des certificats informatiques et internet de l’enseignement supérieur ainsi qu’une période de 12 à 16 semaines d’expérience en milieu professionnel.
-Le DSAA offre l'opportunité de partenariats et de mobilités à l’international.
+The DSAA provides a common foundation of knowledge, theoretical, methodological, applied and practical skills, a foreign language practice, a digital practice compliant with national standards for higher education computer certificates, and a period of 12 to 16 weeks of professional experience.
+The DSAA offers opportunities for international partnerships and mobility.
 
-L’ENSAAMA est conventionnée avec le CNAM, Conservatoire national des arts et métiers.
+ENSAAMA has an agreement with CNAM, Conservatoire national des arts et métiers.

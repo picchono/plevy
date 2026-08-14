@@ -1,5 +1,5 @@
 ---
-title: "Design and appropriation"
+title: "Design et appropriation"
 slug: programme-design-and-appropriation
 date: 2020-10-16T20:04:12+02:00
 draft: false
@@ -11,7 +11,7 @@ main: true
 current: true
 frontphoto: "1Ehy24qu4dzh2JDB1fePXKsdif8RFqgfP"
 quote:
-    quoteline: "Studying the everyday life would be an absurd undertaking, and anyway fated to catch nothing of its object, if studying the everyday life would explicitly be with the intention to transform it."
+    quoteline: "Étudier la vie quotidienne serait une entreprise absurde, et de toute façon vouée à ne rien saisir de son objet, si l'on ne se proposait pas explicitement de l'étudier afin de la transformer."
     quoteauthor: "Guy Debord"
     quotedate: "1961"
 photogallery:

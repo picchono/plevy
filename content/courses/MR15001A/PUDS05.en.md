@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - PUDS05 / UE16 · Projet en design"
+title: "Master CESAAP - PUDS05 / UE16 · Design project"
 institution:
     heig: 1
     logo: cnam
@@ -53,21 +53,21 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignants" >}} JC Valleran · Antoine Fermey · Clémence Mergy
+{{< slash "Teachers" >}} JC Valleran · Antoine Fermey · Clémence Mergy
 
-{{< slash "Projets et accréditation" >}}
-1. préciser, élargir et actualiser
-2. se positionner individuellement et organiser les collaborations
-3. accréditation
+{{< slash "Projects and accreditation" >}}
+1. specify, broaden and update
+2. position oneself individually and organise collaborations
+3. accreditation
 
 &nbsp;
 
-L'intensif Welcome UE12 a permis d'expérimenter les collaborations et de définir des problématiques et des sujets liés à la résidence. Les étudiants définissent dans ce temps consacré à la démarche de projet en design :
-- le collectif transdisciplinaire
-- les collaboration au sein de l'institution hôte, mais également avec des intervenants extérieurs, designers, entreprises, chercheurs, enseignants, experts
-- les objectifs du projet
-- la nature des contributions individuelles en lien avec le parcours de professionnalisation
-- les modalités de production
-- les nécessités matérielles et les ressources (atelier des écoles, soutien technique, gisements de matières d'œuvre, etc)
-- les modalités de restitution du projet
-- les perspectives de stages en fonction du projet et/ou du parcours de professionnalisation
+The Welcome intensive (UE12) allowed students to experiment with collaborations and to define issues and topics related to the residency. Students define in this time devoted to the design project approach:
+- the transdisciplinary collective
+- collaborations within the host institution, but also with external contributors, designers, companies, researchers, teachers, experts
+- project objectives
+- the nature of individual contributions in relation to the professionalisation pathway
+- production modalities
+- material requirements and resources (school workshops, technical support, sources of reusable materials, etc.)
+- project presentation modalities
+- internship prospects based on the project and/or the professionalisation pathway

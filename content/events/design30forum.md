@@ -14,22 +14,22 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2019-09-03T16:27:15+02:00
-abstract: "Design 3.0 Forum aims to raise and discuss the challenging issues in design research, education and practice in this newly emerging paradigm we now face with new forms of end-user products such as intelligent products and services, DIY/fabrication tools, and IoTs. These new forms of products and services change the ways people interact with them and shape their everyday lives."
+abstract: "Le Design 3.0 Forum vise à soulever et discuter les défis dans la recherche, l'éducation et la pratique en design dans ce nouveau paradigme émergent auquel nous faisons face avec de nouvelles formes de produits finaux tels que les produits et services intelligents, les outils de fabrication/DIY, et les IoT. Ces nouvelles formes de produits et services modifient la façon dont les gens interagissent avec eux et façonnent leur vie quotidienne."
 frontphoto: "1zKWE6H5SU30_CEx-idVSBatcp2n6XnIK"
 ---
 
 {{< slash "DESIGN 3.0 FORUM" >}}
 
-Introduction by **Dr. Ki-Young Nam, KAIST**  
-Congratulatory Remark by **Prof. Kun-pyo Lee**
+Introduction par **Dr. Ki-Young Nam, KAIST**  
+Remarque de félicitations par **Prof. Kun-pyo Lee**
 
-**Professor Rachel Cooper, Lancaster University**  
-| Context-setting for the theme: Design for Public Sector and Social Innovation  
-**Professor Martyn Evans, MMU**  
-| Design for policy  
+**Professeur Rachel Cooper, Lancaster University**  
+| Mise en contexte du thème : Design pour le secteur public et l'innovation sociale  
+**Professeur Martyn Evans, MMU**  
+| Design pour les politiques publiques  
 **Dr. Edward Hyunwook Hwangbo, PDR**  
-| Design for policy  
-**Dr. Pierre Levy, TU Einthoven**  
-| Interaction design for society  
-**Professor John Vines, Northumbria University**  
-| Digital civics
+| Design pour les politiques publiques  
+**Dr. Pierre Levy, TU Eindhoven**  
+| Design d'interaction pour la société  
+**Professeur John Vines, Northumbria University**  
+| Civisme numérique

@@ -1,6 +1,6 @@
 ---
 slug: Master-2-ingenierie-culture-creation
-title: "Master 2 Ingénierie de la culture et de la création"
+title: "Master 2 Engineering of culture and creation"
 layout: course
 searchFilter: Course
 date: 2026-09-01T16:27:15+02:00

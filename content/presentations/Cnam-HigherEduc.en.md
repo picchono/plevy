@@ -29,7 +29,7 @@ license:
     type: cc_bysa
     link: https://creativecommons.org/licenses/by-sa/4.0/
 frontphoto: "IY3FTudW5vOiUECUTbRH1Vcp9kvaHO2"
-description: "Une brève présentation du Cnam dans le paysage du système français de l'enseignement supérieur."
+description: "A brief presentation of Cnam in the landscape of the French higher education system."
 slides: [
     ["google", "1-IY3FTudW5vOiUECUTbRH1Vcp9kvaHO2"],
     ["google", "1R0QrxkImHZTO_0eobNqh1eXTcM-Y1-N_"],

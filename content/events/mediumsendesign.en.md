@@ -35,7 +35,7 @@ collaboration:
         colo: "#ffe700"
     partner3:
         logo: dicen
-        name: "Dispositifs d’Information et de Communication à l’Ère Numérique – Paris, Ile de France (EA 7339)"
+        name: "Dispositifs d'Information et de Communication à l'Ère Numérique – Paris, Ile de France (EA 7339)"
         web: "https://www.dicen-idf.org/"
         heig: 1.2
     partner4:
@@ -58,61 +58,61 @@ video:
         speaker: "Annie Gentes & Pierre Lévy"
         youtube: "zuRKSxYacJ0"
     video2:
-        title: "S01E02 Matérialité et durabilité de l’œuvre d’art, du musée à l’espace public, cas d’œuvres d’art contemporain"
+        title: "S01E02 Materiality and sustainability of the artwork, from the museum to public space, cases of contemporary art works"
         speaker: "Lucie Marinier"
         youtube: "TdkoRidRJSY"
     video3:
-        title: "S01E03 De la médiation au design au design de la médiation"
+        title: "S01E03 From mediation in design to design of mediation"
         speaker: "Dorian Reunkrilerk"
         youtube: "Lp8Pu5oO96k"
     video4:
-        title: "S01E04 Le concret en philosophie"
+        title: "S01E04 The concrete in philosophy"
         speaker: "Anne-Françoise Schmid"
         youtube: "VcZ3luJohNI"
 ---
-## Séminaire les Médiums en design, pour une anthropologie symétrique du design – 2022
+## Mediums in Design seminar, for a symmetrical anthropology of design – 2022
 
-Le séminaire « les Médiums en design » est co-animé par CY Design Research, Dicen-IDF et la chaire Design Jean Prouvé du CNAM. Il invite les membres de la communauté de recherche en design à contribuer à la compréhension du design comme éco-système fait d’humains et de non-humains, de vivants et de non-vivants structurant et structuré par les pratiques et les réalisations.
+The "Mediums in Design" seminar is co-led by CY Design Research, Dicen-IDF and the Jean Prouvé Chair of Design at CNAM. It invites members of the design research community to contribute to the understanding of design as an ecosystem made of humans and non-humans, of living and non-living, structuring and structured by practices and achievements.
 
-### Design ? une conversation avec des matériaux
+### Design? A conversation with materials
 
-Dans les années 80, les recherches en design ont amorcé un tournant qui a remis en scène la matérialité des pratiques du design. Parmi les fondateurs de cette recherche, Donald Schön (1992) parle de l’activité du designer comme d’une « conversation avec les matériaux » : pour lui les matériaux sont aussi bien des mots, des paroles avec lesquelles on joue et sur lesquelles on revient, que des dessins qui permettent de préfigurer les architectures ou objets à venir.
+In the 1980s, design research initiated a turn that brought back the materiality of design practices to the forefront. Among the founders of this research, Donald Schön (1992) describes the designer's activity as a "conversation with materials": for him, materials are as much words, speeches that we play with and return to, as drawings that allow prefiguring future architectures or objects.
 
-### Agentivité des mediums du design et pratiques incarnées
+### Agency of design mediums and embodied practices
 
-La recherche en design s’est aussi inspirée pour une bonne part des anthropologues des cultures matérielles (Knappett & Malafouris, 2008; Ingold, 2007) qui attirent l’attention sur ce que le medium fait au designer et s’intéressent aux pratiques incarnées du design.
+Design research has also largely drawn inspiration from anthropologists of material cultures (Knappett & Malafouris, 2008; Ingold, 2007) who draw attention to what the medium does to the designer and focus on embodied design practices.
 
-### Propriétés physiques mais aussi sociales et culturelles
+### Physical but also social and cultural properties
 
-Ces recherches aujourd’hui rencontrent les media studies aussi bien anglo-saxonnes (McLuhan, 1965; Mitchell & Hansen, 2010; Hayles, 2004) mais aussi la philosophie Allemande des médias (Kittler et al., 2018; Mersch et al., 2018)) et les recherches francophones en SIC (Jeanneret, 2000; Bonaccorsi & Flon, 2014)).
+This research now meets both Anglo-Saxon media studies (McLuhan, 1965; Mitchell & Hansen, 2010; Hayles, 2004) and German philosophy of media (Kittler et al., 2018; Mersch et al., 2018) and French-speaking research in information and communication sciences (Jeanneret, 2000; Bonaccorsi & Flon, 2014).
 
-En effet, depuis le fameux « le medium est le message », on se rend compte à quel point le support n’est pas transparent derrière le message, ou pour le dire en termes de sémiotique (Fontanille, 2015) le plan de l’expression ne disparaît par derrière le plan du contenu. Même le numérique présente une matérialité sensible qu’il faut prendre en considération. En France, ce sont les historiens du livre (Chartier et al., 2001), de l’écriture (Christin, 2009) et des chercheurs en sciences de l’information et de la communication (Jeanneret, 2008) qui ont compris l’importance de revenir sur les incarnations, les métamorphoses, les légitimations, et les circulations de ce qui fait médiation entre notre réalité psychique et le monde extérieur, aussi bien que ce qui fait lien entre nous.
+Indeed, since the famous "the medium is the message", we realize how the support is not transparent behind the message, or to put it in semiotic terms (Fontanille, 2015) the plane of expression does not disappear behind the plane of content. Even the digital presents a sensible materiality that must be taken into consideration. In France, it is the historians of the book (Chartier et al., 2001), of writing (Christin, 2009) and researchers in information and communication sciences (Jeanneret, 2008) who understood the importance of returning to the embodiments, metamorphoses, legitimations, and circulations of what makes mediation between our psychic reality and the external world, as well as what creates bonds between us.
 
-### Médiation et médialité
+### Mediation and mediality
 
-Plus largement encore, c’est une théorie de la médialité qui rencontre les théories du design : en effet, pour changer le monde, il ne faut pas être complètement pris dans ce monde. Il nous faut un entre deux, des espaces et des objets de médiation, qui permettent à la fois de relier et de mettre à distance pour composer et recomposer des alternatives à ce qui nous entoure (Guillory, 2010; Gentes, 2017).
+More broadly still, it is a theory of mediality that meets design theories: indeed, to change the world, one must not be completely caught in this world. We need an in-between, spaces and objects of mediation, which allow both connecting and creating distance to compose and recompose alternatives to what surrounds us (Guillory, 2010; Gentes, 2017).
 
-### Une histoire des médiums
+### A history of mediums
 
-Ainsi, les recherches centrées sur les médiums du design s’intéressent non seulement à l’agentivité des matériaux mais aussi à la façon dont le designer fait sens avec les matières qui s’inscrivent dans une culture et une histoire de leurs mises en œuvre (Greenberg, 1971). Le bois par exemple ne présente pas que des propriétés chimiques et mécaniques, il s’inscrit aussi dans une culture du bois : les valeurs sociales qui lui sont associées, et dans les traditions de son utilisation : pour des objets utilitaires mais aussi pour des sculptures.
+Thus, research focused on design mediums is interested not only in the agency of materials but also in how the designer makes meaning with materials that are inscribed in a culture and a history of their implementation (Greenberg, 1971). Wood, for example, not only presents chemical and mechanical properties, it is also inscribed in a culture of wood: the social values associated with it, and in the traditions of its use: for utilitarian objects but also for sculptures.
 
-Le rôle des mediums et la relation qui est entretenu entre le designer et ces mediums évoluent de plus dans la temporalité du projet et dans celle de l’usage (Levy, 2020). D’un côté, la variété et la pluralité des fonctions du prototype au sein du projet en fait un medium au cœur du déploiement du projet. De l’autre côté, l’appropriation est un moment d’évolution du sens.
+The role of mediums and the relationship maintained between the designer and these mediums also evolve over the temporality of the project and that of use (Levy, 2020). On one hand, the variety and plurality of the prototype's functions within the project makes it a medium at the heart of the project's deployment. On the other hand, appropriation is a moment of evolution of meaning.
 
-### Quels médiums pour le design d’aujourd’hui ?
+### What mediums for today's design?
 
-Aujourd’hui, le design ne traite plus seulement du bois ou du plastique, mais du vivant, de nos modalités d’être ensemble, et des technologies qui organisent notre vie. De la terre à l’IA, il y a plus d’un pas et pour les designers contemporains des enjeux colossaux. Quelles sont les caractéristiques de ces nouveaux matériaux du design ? Quelles sont les méthodes de travail de ces nouveaux médiums ? Comment former à ces nouveaux matériaux du design ?
+Today, design no longer deals only with wood or plastic, but with the living, our ways of being together, and the technologies that organize our lives. From earth to AI, there is more than one step and for contemporary designers colossal challenges. What are the characteristics of these new design materials? What are the working methods of these new mediums? How to train for these new design materials?
 
-Le séminaire « les médiums en design » invite ceux qui se questionnent sur leurs pratiques, qui s’interrogent sur leurs méthodes à rejoindre la communauté de recherche formée par CY Design Research, Dicen-IDF et la chaire Design Jean Prouvé CNAM pour échanger sur ces questions.
+The "Mediums in Design" seminar invites those who question their practices, who interrogate their methods, to join the research community formed by CY Design Research, Dicen-IDF and the Jean Prouvé Chair of Design CNAM to exchange on these questions.
 
-La revue Sciences du design est associée à ce travail : nous proposerons aux auteurs qui ont abordé ces questions de faire une présentation de leur article.
+The journal Sciences du design is associated with this work: we will invite authors who have addressed these questions to present their paper.
 
-### Bibliographie
+### Bibliography
 
-Bonaccorsi, J., & Flon, É. (2014). La « variation » médiatique: D’un fondamental sémiotique à un enjeu d’innovation industrielle. Les Enjeux de l’information et de la communication, n° 15/2(2), 3–10.
+Bonaccorsi, J., & Flon, É. (2014). La « variation » médiatique: D'un fondamental sémiotique à un enjeu d'innovation industrielle. Les Enjeux de l'information et de la communication, n° 15/2(2), 3–10.
 
-Chartier, R., Collectif, & Cavallo, G. (2001). Histoire de la lecture dans le monde occidental (Édition : [Ed. augm. d’une bibliogr. rev. et augm.]). Seuil.
+Chartier, R., Collectif, & Cavallo, G. (2001). Histoire de la lecture dans le monde occidental (Édition : [Ed. augm. d'une bibliogr. rev. et augm.]). Seuil.
 
-Christin, A.-M. (2009). L’Image écrite ou La déraison graphique (Enlarged édition). Flammarion.
+Christin, A.-M. (2009). L'Image écrite ou La déraison graphique (Enlarged édition). Flammarion.
 
 Fontanille, J. (2015). Formes de vie. Presses universitaires de Liège. [https://doi.org/10.4000/books.pulg.2207](https://doi.org/10.4000/books.pulg.2207)
 
@@ -126,7 +126,7 @@ Hayles, N. K. (2004). Print Is Flat, Code Is Deep: The Importance of Media-Speci
 
 Ingold, T. (2007). Materials against materiality. Archaeological Dialogues, 14(1), 1–16. [https://doi.org/10.1017/S1380203807002127](https://doi.org/10.1017/S1380203807002127)
 
-Jeanneret, Y. (2000). Y a-t-il (vraiment) des technologies de l’information ? Presses Universitaires du Septentrion.
+Jeanneret, Y. (2000). Y a-t-il (vraiment) des technologies de l'information ? Presses Universitaires du Septentrion.
 
 Jeanneret, Y. (2008). Penser la trivialité: Volume 1, La vie triviale des êtres culturels. Hermes Science Publications.
 

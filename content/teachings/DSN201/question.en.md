@@ -1,5 +1,5 @@
 ---
-title: "DSN201 · La question de recherche"
+title: "DSN201 · The research question"
 slug: "question-de-recherche"
 institution:
     heig: 1
@@ -22,85 +22,84 @@ teacher:
         name: "Pierre Lévy"
 frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
 ---
-## La question de recherche
-La question de recherche est un élément charnière dans le développement d’une recherche, **entre une observation du contexte d’étude et une analyse dirigée** qui tentera de faire une proposition de savoir original. Elle est souvent la suite logique de l’élucidation du contexte d’étude (nous nous trouvons dans telle situation, avec tels enjeux et inconnus, donc notre question de recherche est telle). Elle précède l’énonciation de la conduite de la recherche (qui bien sûr repose sur la question de recherche).
+## The research question
+The research question is a pivotal element in the development of a research project, **between an observation of the study context and a directed analysis** that will attempt to make a proposal of original knowledge. It is often the logical follow-up to the elucidation of the study context (we find ourselves in such a situation, with such stakes and unknowns, so our research question is such). It precedes the statement of the research conduct (which of course relies on the research question).
 
-La question de recherche est donc motrice dans la conduite de la recherche, et justifie les moyens engagés dans la recherche et l’oriente. Couplée à l’hypothèse de recherche, qui normalement la suit, **elle est le fondement de la recherche** et de l’article scientifique.
+The research question is therefore the driving force behind the research conduct, and justifies the resources engaged in the research and its direction. Coupled with the research hypothesis, which normally follows it, **it is the foundation of the research** and of the scientific article.
 
-### Pertinence de la question de recherche
-La pertinence d’une question de recherche se manifeste par la compréhension du contexte dans lequel elle se formalise, par son originalité (c’est-à-dire le fait que la réponse soit encore inconnue), par son actualité, par son opérabilité (on peut y répondre scientifiquement) et par sa clarté (il sera possible de déterminer clairement si la question a été résolue ou non). Elle est d’autant plus appréciée si elle offre une perspective nouvelle sur un sujet débattu au sein de la communauté de recherche.
+### Relevance of the research question
+The relevance of a research question manifests through the understanding of the context in which it is formalised, through its originality (i.e., the fact that the answer is still unknown), through its timeliness, through its operability (it can be answered scientifically) and through its clarity (it will be possible to clearly determine whether the question has been resolved or not). It is all the more appreciated if it offers a new perspective on a topic debated within the research community.
 
-Dans le domaine de la médecine, certains critères sont décrits pour élaborer une bonne question de recherche (adaptée ici) :
-- **Faisabilité:** La question doit tenir compte des limites et des problèmes liés au travail de recherche.
-    - On doit pouvoir **avoir accès aux ressources nécessaires** pour potentiellement pouvoir obtenir des données suffisantes (eg, quantité et qualité des sujets interrogés, accès à la littérature sur le sujet…),
-    - On doit **avoir une expertise technique suffisante** pour manipuler les outils ou autres moyens nécessaires pour mener l’expérimentation. Cela implique les compétences, l’équipement, l’expérience nécessaires pour concevoir l’expérimentation, recruter les sujets, mesurer les variables, diriger l’analyse et discuter les résultats. Il est souvent recommandé de faire appel à des techniques et méthodes connues et reconnues, au lieu d’en élaborer une soi-même.
-    - On doit avoir **les moyens temporels et financiers** pour accomplir la recherche. Un comité d’éthique, par exemple, peut être très chronophage et compromettre la recherche. La nécessité de voyager, d’utiliser du matériel coûteux… peut également être une difficulté mettant en danger l’activité de recherche.
-    - Une question trop ouverte peut également détériorer la qualité de la recherche. Il est très souvent préférable d’élaborer une question de recherche restreinte, ce qui en améliorera son efficacité.
-- **Intérêt**: Si l’on est la seule personne à s’intéresser à la question, c’est mauvais signe…
-    - Il est bon de s’assurer que la réponse à la question intéressera autant des collègues du champ de recherche (ce qui permet de valider la possibilité que cette recherche participe à «la discussion scientifique») que d'autres personnes (ce qui permet de valider qu’il peut y avoir un intérêt probablement pratique au-delà de la recherche elle-même). La vérification de cet intérêt engage donc la construction d’un narratif de recherche, lequel permettra une validation de la clarté et de l’intérêt potentiel de la recherche, ainsi qu’une visibilité accrue du projet.
-    - L’intérêt d’une recherche peut être posé par le fait que cette recherche tente de confirmer, réfuter ou augmenter des résultats précédents, ou au contraire qu’elle tente de proposer un nouveau savoir, qu’il faudra justifier durant l’élaboration de la question de recherche ou de l’hypothèse.
-    - Un intérêt personnel peut également être mis en avant, p. ex., visibilité pour contribuer à un appel à projet de recherche financé.
-- **Éthique** : La question éthique d’une recherche demande principalement une **approbation d’un comité éthique institutionnel**. Celui-ci juge du respect et de la protection des personnes engagées dans la recherche. La difficulté du processus et sa temporalité peuvent être un risque pour l’exécution de la recherche.
-- **Pertinence** : La pertinence de la question de recherche peut concerner plusieurs aspects, et se résume le plus souvent à se poser la question de l’impact du résultat de la recherche sur ces aspects :
-    - La pertinence dans la discussion de la communauté scientifique,
-    - La pertinence liée au savoir scientifique,
-    - La pertinence sociale ou industrielle,
-    - La pertinence par rapport à de futures questions de recherche.
+In the field of medicine, certain criteria are described for developing a good research question (adapted here):
+- **Feasibility:** The question must take into account the limits and problems related to the research work.
+    - One must be able to **have access to the necessary resources** to potentially obtain sufficient data (e.g., quantity and quality of subjects questioned, access to literature on the topic...),
+    - One must **have sufficient technical expertise** to handle the tools or other means necessary to conduct the experimentation. This involves the skills, equipment, and experience necessary to design the experimentation, recruit subjects, measure variables, conduct the analysis and discuss the results. It is often recommended to use known and recognised techniques and methods, rather than developing one's own.
+    - One must have **the temporal and financial means** to carry out the research. An ethics committee, for example, can be very time-consuming and compromise the research. The need to travel, use expensive equipment... can also be a difficulty that jeopardises the research activity.
+    - A question that is too open can also deteriorate the quality of the research. It is very often preferable to develop a restricted research question, which will improve its effectiveness.
+- **Interest**: If you are the only person interested in the question, that's a bad sign...
+    - It is good to ensure that the answer to the question will interest both colleagues in the research field (which validates the possibility that this research participates in "the scientific discussion") and other people (which validates that there can probably be a practical interest beyond the research itself). Verifying this interest therefore involves constructing a research narrative, which will allow validation of the clarity and potential interest of the research, as well as increased visibility of the project.
+    - The interest of research can be posed by the fact that this research attempts to confirm, refute or increase previous results, or on the contrary that it attempts to propose new knowledge, which will need to be justified during the development of the research question or hypothesis.
+    - A personal interest can also be put forward, e.g., visibility to contribute to a call for funded research projects.
+- **Ethics**: The ethical question of research primarily requires **approval from an institutional ethics committee**. This judges the respect and protection of people engaged in the research. The difficulty of the process and its temporality can be a risk for the execution of the research.
+- **Relevance**: The relevance of the research question can concern several aspects, and most often boils down to asking the question of the impact of the research results on these aspects:
+    - Relevance in the discussion of the scientific community,
+    - Relevance related to scientific knowledge,
+    - Social or industrial relevance,
+    - Relevance for future research questions.
 
-La question de recherche demande donc une bonne connaissance de l’état de l’art récent autour du sujet qu’elle traite (pour éviter de tenter de répondre à une question déjà résolue). La revue de littérature est essentielle. Une discussion avec des experts reconnus sur le sujet peut également être bénéfique.
+The research question therefore requires good knowledge of the recent state of the art around the topic it addresses (to avoid trying to answer a question that has already been resolved). The literature review is essential. A discussion with recognised experts on the topic can also be beneficial.
 
-De nouvelles techniques, de nouveaux outils, de nouveaux contextes d’études… sont des opportunités pour questionner des sujets sous de nouveaux angles, et donc de façon originale et actuelle par rapport aux nouvelles ressources accessibles.
+New techniques, new tools, new study contexts... are opportunities to question topics from new angles, and thus in an original and timely way in relation to the new accessible resources.
 
-### La forme de la question de recherche
-Dans sa forme, elle peut bien sûr être écrite de façon directe ou indirecte. Exemple se basant sur (Deckers et al., 2013), combinant la question et l’hypothèse de recherche:
+### The form of the research question
+In its form, it can of course be written directly or indirectly. Example based on (Deckers et al., 2013), combining the research question and hypothesis:
 
-**Version directe**: how do the experiences of people and the interaction between person and artefact change comparing explorative, active and following behaviours [of the artefact]. Following the theoretical outline related to human-human interaction, we hypothesise that the experience of the perceptual crossing [caused by the explorative behaviour] between person and artefact will positively impact the appreciation in interaction.
+**Direct version**: how do the experiences of people and the interaction between person and artefact change comparing explorative, active and following behaviours [of the artefact]. Following the theoretical outline related to human-human interaction, we hypothesise that the experience of the perceptual crossing [caused by the explorative behaviour] between person and artefact will positively impact the appreciation in interaction.
 
-**Version indirecte** (originale): In this experiment, the explorative behaviour is compared to the active and the following behaviour to see what the effect is on the experience of people and the interaction between person and artefact. When perceptual crossing between person and artefact happens, this will, following the theoretical outline, cause the person to feel involved in the situation. You will come to appreciate that you affect and are affected by the artefact. An artefact and a person can build a common history in the course of their interaction.
+**Indirect version** (original): In this experiment, the explorative behaviour is compared to the active and the following behaviour to see what the effect is on the experience of people and the interaction between person and artefact. When perceptual crossing between person and artefact happens, this will, following the theoretical outline, cause the person to feel involved in the situation. You will come to appreciate that you affect and are affected by the artefact. An artefact and a person can build a common history in the course of their interaction.
 
-## La question, l’hypothèse et la stratégie
-Une question de recherche s’accompagne le plus souvent d’une hypothèse de recherche, celle à laquelle la question de recherche tente de répondre, et d’une stratégie de recherche, celle qui va permettre d’y répondre. La faisabilité et la clarté de cette stratégie de recherche démontrent souvent la capacité et l’efficacité de la recherche à apporter une réponse satisfaisante.
+## The question, the hypothesis and the strategy
+A research question is most often accompanied by a research hypothesis, which the research question attempts to answer, and a research strategy, which will allow answering it. The feasibility and clarity of this research strategy often demonstrate the capacity and effectiveness of the research to provide a satisfactory answer.
 
-L’élaboration de la stratégie de recherche doit être faite avec rigueur pour prévoir en amont les risques et les difficultés éventuelles, et pour les éviter si possible ou s’y préparer sinon.
+The development of the research strategy must be done rigorously to anticipate risks and potential difficulties, and to avoid them if possible or prepare for them otherwise.
 
-La question de recherche, l’hypothèse de recherche et la stratégie de recherche sont les fondements de la pratique ; de leur élaboration découle la qualité de l’exécution de la recherche. Il est donc conseillé d’être continuellement critique pendant des moments, et d’exposer ces éléments à des collègues, pour recevoir des recommandations d’amélioration avant que ce ne soit trop tard.
+The research question, the research hypothesis and the research strategy are the foundations of practice; the quality of the research execution depends on their development. It is therefore advisable to be continually critical during these moments, and to expose these elements to colleagues, to receive recommendations for improvement before it is too late.
 
-## La question, l’hypothèse et la stratégie
-Une question de recherche s’accompagne le plus souvent d’une hypothèse de recherche, celle à laquelle la question de recherche tente de répondre, et d’une stratégie de recherche, celle qui va permettre d’y répondre. La faisabilité et la clarté de cette stratégie de recherche démontrent souvent la capacité et l’efficacité de la recherche à apporter une réponse satisfaisante.
-L’élaboration de la stratégie de recherche doit être faite avec rigueur pour prévoir en amont les risques et les difficultés éventuelles, et pour les éviter si possible ou s’y préparer sinon.
-La question de recherche, l’hypothèse de recherche et la stratégie de recherche sont les fondements de la pratique ; de leur élaboration découle la qualité de l’exécution de la recherche. Il est donc conseillé d’être continuellement critique pendant des moments, et d’exposer ces éléments à des collègues, pour recevoir des recommandations d’amélioration avant que ce ne soit trop tard.
+## The question, the hypothesis and the strategy
+A research question is most often accompanied by a research hypothesis, which the research question attempts to answer, and a research strategy, which will allow answering it. The feasibility and clarity of this research strategy often demonstrate the capacity and effectiveness of the research to provide a satisfactory answer.
+The development of the research strategy must be done rigorously to anticipate risks and potential difficulties, and to avoid them if possible or prepare for them otherwise.
+The research question, the research hypothesis and the research strategy are the foundations of practice; the quality of the research execution depends on their development. It is therefore advisable to be continually critical during these moments, and to expose these elements to colleagues, to receive recommendations for improvement before it is too late.
 
-### L'hypothèse de recherche
-Une hypothèse est **une proposition ou une supposition vérifiable** sur une relation entre deux ou plusieurs variables. Elle est construite à partir des connaissances existantes, établies par l'état de l'art, d'observations. La recherche consiste le plus souvent à tester l'hypothèse par l'expérimentation (c.-à-d., empiriquement).
+### The research hypothesis
+A hypothesis is **a verifiable proposition or supposition** about a relationship between two or more variables. It is built from existing knowledge, established by the state of the art, from observations. Research most often consists of testing the hypothesis through experimentation (i.e., empirically).
 
-Souvent, deux hypothèses se confrontent:
-- l'*hypothèse nulle* suppose qu'il n'y a aucune relation ou aucun effet entre les variables,
-- l'*hypothèse alternative* suppose qu'il existe une relation ou un effet.
+Often, two hypotheses are confronted:
+- the *null hypothesis* assumes that there is no relationship or effect between the variables,
+- the *alternative hypothesis* assumes that there is a relationship or effect.
 
-La **qualité d'une hypothèse** s'évalue par:
-- sa clarté, sa précision et sa concision, ainsi que celles de ses variables,
-- correctement contextualisée,
-- la possibilité de la tester : évaluable et falsifiable (il doit être possible de tenter de prouver qu’elle est fausse).
-### Évaluer l'hypothèse de recherche
-Une hypothèse est évaluée le plus souvent par:
-- la conception de l’étude
-    - Choisir un **type de recherche** (quantitative, qualitative ou mixte).
-    - Définir l’**échantillon**, les **outils de collecte** de données et **opérationnaliser les variables**.
-- la collecte des données
-    - Recueillir les données par des **enquêtes**, **expériences**, **entretiens** ou **observations**.
-    - Veiller à la **fiabilité** et à la **validité** des instruments utilisés.
--  l’analyse des données
-    - Utiliser des **tests statistiques** appropriés (test t, ANOVA, régression, etc.) pour les données quantitatives.
-    - Pour les données qualitatives, utiliser des méthodes comme l’**analyse thématique** ou l’**analyse de contenu**.
-- l’interprétation des **résultats**
-    - Si les résultats **rejettent l’hypothèse nulle** et soutiennent l’hypothèse alternative, celle-ci est **validée**.
-    - Sinon, on **retient l’hypothèse nulle**, sans toutefois la prouver : on ne peut que dire qu’elle **n’a pas été rejetée**.
-- la présentation des résultats
-    - Inclure des indicateurs comme la **significativité statistique**, la **taille de l’effet** et les **intervalles de confiance**.
-    - Discuter des **implications**, des **limites** de l’étude, et des **perspectives de recherche**.
-### Le cas de l'hypothèse physique 
-En recherche au travers du design, le prototype prend souvent le rôle :
-- d'hypothèse physique (*physical hypothesis with **sufficient product qualities*** - Frens, 2006, p. 185), 
-- d'hypothèse incarnée (*embodied hypothesis with **sufficient system qualities***- Hengeveld, 2011, p. 200),
-- ou d'hypothèse comportementale (*behavioural hypothesis with **sufficient behavioural qualities*** - Deckerd, 2013, p. 28).
-
+The **quality of a hypothesis** is evaluated by:
+- its clarity, precision and concision, as well as those of its variables,
+- properly contextualised,
+- the possibility of testing it: evaluable and falsifiable (it must be possible to attempt to prove it wrong).
+### Evaluating the research hypothesis
+A hypothesis is most often evaluated by:
+- the study design
+    - Choosing a **type of research** (quantitative, qualitative or mixed).
+    - Defining the **sample**, the **data collection tools** and **operationalising the variables**.
+- data collection
+    - Collecting data through **surveys**, **experiments**, **interviews** or **observations**.
+    - Ensuring the **reliability** and **validity** of the instruments used.
+- data analysis
+    - Using appropriate **statistical tests** (t-test, ANOVA, regression, etc.) for quantitative data.
+    - For qualitative data, using methods such as **thematic analysis** or **content analysis**.
+- interpretation of **results**
+    - If the results **reject the null hypothesis** and support the alternative hypothesis, it is **validated**.
+    - Otherwise, the **null hypothesis is retained**, without however proving it: one can only say that it **has not been rejected**.
+- presentation of results
+    - Including indicators such as **statistical significance**, **effect size** and **confidence intervals**.
+    - Discussing **implications**, **limitations** of the study, and **research perspectives**.
+### The case of the physical hypothesis
+In research through design, the prototype often takes the role:
+- of physical hypothesis (*physical hypothesis with **sufficient product qualities*** - Frens, 2006, p. 185),
+- of embodied hypothesis (*embodied hypothesis with **sufficient system qualities***- Hengeveld, 2011, p. 200),
+- or of behavioural hypothesis (*behavioural hypothesis with **sufficient behavioural qualities*** - Deckerd, 2013, p. 28).

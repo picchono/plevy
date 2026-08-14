@@ -1,5 +1,5 @@
 ---
-title: "Transforming practices"
+title: "Pratiques transformatives"
 slug: programme-TP
 date: 2020-09-16T20:03:12+02:00
 frontpage: true
@@ -13,9 +13,9 @@ current: true
 front: true
 frontphoto: "1ddEFzzMpMjE4lfq9XUGrXUcw4W9tTZSj"
 quote: 
-    quoteline: "Every experience enacted and undergone modiﬁes the one who acts and undergoes, while this modiﬁcation affects, whether we wish it or not, the quality of subsequent experiences. For it is a somewhat different person who enters into them."
+    quoteline: "Toute expérience accomplie et subie modifie celui qui agit et subit, tandis que cette modification affecte, que nous le voulions ou non, la qualité des expériences ultérieures. Car c'est une personne quelque peu différente qui y prend part."
     quoteauthor: "Dewey"
     quotedate: "2015:35"
 ---
 
-**The aim of our research program is to foster social resilience by focusing on transforming practices and societies. We do so by designing and evaluating in complex socio-technical systems.**
+**L'objectif de notre programme de recherche est de favoriser la résilience sociale en nous concentrant sur la transformation des pratiques et des sociétés. Nous y parvenons en concevant et en évaluant des systèmes socio-techniques complexes.**

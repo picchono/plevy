@@ -1,6 +1,6 @@
 ---
 slug: direct-interaction-design
-title: "Direct interaction design"
+title: "Design d'interaction directe"
 tags: ['interaction', 'musashino-AU']
 layout: single
 searchFilter: Event
@@ -14,5 +14,5 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2013-11-19T21:29:03+01:00
-reference: "Lévy, P. (2013). Direct interaction design, presented at Musashino Art University, Tokyo, Japan. November 19th, 2013."
+reference: "Lévy, P. (2013). Design d'interaction directe, présenté à Musashino Art University, Tokyo, Japon. 19 novembre 2013."
 ---

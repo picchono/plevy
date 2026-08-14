@@ -1,6 +1,6 @@
 ---
 slug: design-research-inscription
-title: "Inscription de la recherche en design"
+title: "Inscription of design research"
 subsection: presentation
 layout: presentation
 institution:

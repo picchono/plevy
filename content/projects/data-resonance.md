@@ -1,6 +1,6 @@
 ---
 slug: data-resonance
-title: "Data Resonance"
+title: "Résonance des données"
 layout: single
 searchFilter: Project
 subsection: project
@@ -13,8 +13,8 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2014-06-03T16:27:15+02:00
-abstract: "What does data feel like?"
-projectby: "by Sander Dijkhuis"
+abstract: "Quel est le ressenti des données ?"
+projectby: "par Sander Dijkhuis"
 frontphoto: "19ZzGqUnE_CZqbqaTNK6FcCKqidEegGsa"
 video:
     video1:
@@ -22,6 +22,6 @@ video:
         title: "Data resonance"
         speaker: "Sander Dijkhuis"
 ---
-What does data feel like? Data Resonance makes the table resonate with surrounding Wi-Fi traffic. Qualities of the digital signals are translated to something you can feel. This gives you a sense of activity at the workplace that is otherwise quiet and hidden. It creates a feedback loop about your own network usage, and a new connection with the activity of colleagues.  
-Data Resonance is inspired by how the traditional shared workshop acted as an extension of the craftsperson’s body. You saw and heard your colleagues work, and awareness of their activity influenced what you did. Now that much of our creative work happens on the screen, we lost something. With Data Resonance, we become more aware again of colleague’s work in a calm way: we notice when someone is dealing with heavy traffic and when people are taking a break, or just tune in to the rhythms of data that flow through space.  
+Quel est le ressenti des données ? Résonance des données fait résonner la table avec le trafic Wi-Fi environnant. Les qualités des signaux numériques sont traduites en quelque chose que vous pouvez ressentir. Cela donne une perception de l'activité sur le lieu de travail qui est autrement silencieuse et cachée. Cela crée une boucle de rétroaction sur votre propre utilisation du réseau, et une nouvelle connexion avec l'activité des collègues.  
+Résonance des données s'inspire de la manière dont l'atelier partagé traditionnel agissait comme une extension du corps de l'artisan. Vous voyiez et entendiez le travail de vos collègues, et la conscience de leur activité influençait ce que vous faisiez. Maintenant qu'une grande partie de notre travail créatif se déroule sur l'écran, nous avons perdu quelque chose. Avec Résonance des données, nous redevenons plus conscients du travail des collègues de manière apaisée : nous remarquons quand quelqu'un traite un trafic intense et quand les gens font une pause, ou nous nous accordons simplement aux rythmes des données qui traversent l'espace.  
 *- Sander Dijkhuis -*

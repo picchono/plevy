@@ -1,13 +1,13 @@
 
 ---
 slug: Master-transition-numerique-codesign
-title: "Master Transition numérique responsable et co-design"
+title: "Master Responsible digital transition and co-design"
 layout: course
 searchFilter: Course
 date: 2024-09-01T16:27:15+02:00
 start: 2024
 subsection: diploma
-description: "Le master forme aux métiers de l'accompagnement de la transition numérique par le co-design dans les organisations et à la recherche dans ce domaine, en mettant l'accent sur les services d'information et de communication et la gestion de projet et en s'inscrivant dans les piliers du développement durable, notamment social et socio-économique."
+description: "The master's programme trains for professions supporting digital transition through co-design in organisations and research in this field, with a focus on information and communication services and project management, grounded in the pillars of sustainable development, notably social and socio-economic."
 institution:
     heig: 1
     logo: cnam

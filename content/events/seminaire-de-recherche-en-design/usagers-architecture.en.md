@@ -1,7 +1,7 @@
 ---
-title: "Conception avec usagers en architecture : vers un indice de profondeur de participation"
+title: "Design with users in architecture: towards a depth of participation index"
 slug: "usagers-architecture"
-prezfor: "le séminaire de méthodologie Pratiques de recherche en design et création"
+prezfor: "the methodological seminar Research Practices in Design and Creation"
 collaboration:
     partner1:
         logo: cnam
@@ -12,7 +12,7 @@ collaboration:
     partner2:
         logo: dicen
         short: Dicen-idf
-        name: "Dispositifs d’Information et de Communication à l’Ère Numérique – Paris, Ile de France (EA 7339)"
+        name: "Dispositifs d'Information et de Communication à l'Ère Numérique – Paris, Ile de France (EA 7339)"
         web: "https://www.dicen-idf.org/"
         heig: 1.2
 intervenants:
@@ -33,12 +33,12 @@ institution:
 date: 2025-04-03T18:00:00+02:00
 subsection: seminar
 layout: single
-description: "Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception. Elle mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et en discutera des questions méthodologiques pertinentes."
+description: "This talk explores participation in architecture by analysing how it can be integrated into the design process. It will highlight the gap between prescribed and experiential participation and discuss relevant methodological issues."
 frontphoto: "1ZV5vyLg0DkXflEQznVlBywHbX1qDKurX"
 video:
     video1:
-        title: "Conception avec usagers en architecture : vers un indice de profondeur de participation"
+        title: "Design with users in architecture: towards a depth of participation index"
         speaker: "Benjamin Loiseau"
         youtube: "l-wdQWDoXPQ"
 ---
-Cette conférence explore la participation en architecture en analysant comment elle peut être intégrée dans le processus de conception. En nous appuyant sur un projet de rénovation de logements sociaux en difficulté, la véritable profondeur de cette participation sera examinée à l’aide d’un indice développé pour évaluer le rôle effectif des différents types d'acteurs dans ces processus. L’intervention mettra en évidence l’écart entre la participation prescrite et la participation expérientielle et discutera des questions méthodologiques pertinentes pour l’analyse des interactions entre les concepteurs et les usagers dans ces processus.
+This talk explores participation in architecture by analysing how it can be integrated into the design process. Drawing on a social housing renovation project in difficulty, the actual depth of this participation will be examined using an index developed to assess the effective role of the different types of actors in these processes. The presentation will highlight the gap between prescribed participation and experiential participation and discuss methodological issues relevant to the analysis of interactions between designers and users in these processes.

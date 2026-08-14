@@ -1,5 +1,5 @@
 ---
-title: "USMC85 · Writing"
+title: "USMC85 · Écriture"
 slug: "writing"
 institution:
     heig: 1
@@ -24,87 +24,87 @@ frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 ---
 
 ## Introduction
-**Writing** is the act of creating a persistent representation of human language *(Wikipedia on writing)*. It is both a cognitive and social activity  
-**Writing** is a means :
-- to create durable traces of content,
-- to transmit information over time,
-- to externalise one's thoughts for reflexion.
+**L'écriture** est l'acte de créer une représentation persistante du langage humain *(Wikipedia on writing)*. C'est à la fois une activité cognitive et sociale.
+**L'écriture** est un moyen :
+- de créer des traces durables de contenu,
+- de transmettre de l'information à travers le temps,
+- d'externaliser ses pensées pour la réflexion.
 
 ## Structure
-A text is usually composed of paragraph, in which are sentences, in which are words.
-- the **text** demonstrates a point on a topic (to be convincing).
-- the **paragraph** brings an argument to the demonstration.
-- The **sentence** provides an information (not two) usefull to bring forth the argument.
-- The **word** specify the elements involved in the piece of information (either being an object or an action).
+Un texte est généralement composé de paragraphes, dans lesquels se trouvent des phrases, dans lesquelles se trouvent des mots.
+- le **texte** démontre un point sur un sujet (pour convaincre).
+- le **paragraphe** apporte un argument à la démonstration.
+- la **phrase** fournit une information (pas deux) utile pour soutenir l'argument.
+- le **mot** spécifie les éléments impliqués dans l'information (soit un objet, soit une action).
 
 &nbsp;
 
-When you write, or more importantly review a writing you have done before submitting it, check each sentence asking yourself if:
-- is this sentence useful for the argument I am trying to provide. If not, remove it and read again the paragraph.
-- is the words are the proper ones or is there better ones. If not, look for better ones.
-- is my argument is clear. If not.. do it again.
+Quand vous écrivez, ou plus important encore quand vous relisez un texte que vous avez écrit avant de le soumettre, vérifiez chaque phrase en vous demandant si :
+- cette phrase est utile pour l'argument que j'essaie de fournir. Sinon, retirez-la et relisez le paragraphe.
+- les mots sont les bons ou s'il y en a de meilleurs. Sinon, cherchez de meilleurs mots.
+- mon argument est clair. Sinon... recommencez.
 
-## Proposition of a structure of text
-### IMRAD papers
-There are many ways a text can be structured, especially depending on the style (plain, middle, grand). Yet here is a proposition for a safe (i.e. classic) structure:
-- **Title:** A clear, engaging title that encapsulates the project. A good title is memorable, and tells well what we will read.
-(**Bonus, yet not easy:** A good spoiler engage well the reader and empower the rhetoric. The reader should be strongly engaged and motivated/curious to know more.)  
-- **Contextualising the project:** Providing a brief overview of the current state of the field, the place and the context of the project, the related issues helps to figure out why it matters. Discuss the societal, ecological, technical, or cultural motivations behind the research. Why is this work necessary? What gaps does it address?
-- **Research Problem/Challenge:** Clearly defining the specific problem or question your research will tackle structures all the approach you will take and underline the significancy of the project in relation with the context.
-- **Objectives:** Outlining the primary goals of the research creates a link with the problem/challenge and will support the choice of the
-- **Methodology:** Be brief on explaining what is to be done, what the technology involved, what the measurement/analysis approaches. Be specific (plain style).
-- **Output:** Briefly describe what you expect to find.
-- **Outcome:** Reopen the discussion by describing the potential implications of your findings for society, ecology, technology, or culture.
-- **Conclusion:** One or two sentences to get from the problem/challenge to the contributions to the field or to the society.
-- **References** (if applicable): Include key literature or prior research that supports your project.
+## Proposition de structure de texte
+### Articles IMRaD
+Il existe de nombreuses façons de structurer un texte, notamment en fonction du style (simple, moyen, sublime). Voici toutefois une proposition de structure sûre (c'est-à-dire classique) :
+- **Titre :** Un titre clair et engageant qui encapsule le projet. Un bon titre est mémorable, et indique bien ce que nous allons lire.
+(**Bonus, mais pas facile :** Un bon spoiler engage bien le lecteur et renforce la rhétorique. Le lecteur doit être fortement engagé et motivé/curieux d'en savoir plus.)
+- **Contextualisation du projet :** Fournir un bref aperçu de l'état actuel du domaine, du lieu et du contexte du projet, des enjeux liés, aide à comprendre pourquoi c'est important. Discuter des motivations sociétales, écologiques, techniques ou culturelles derrière la recherche. Pourquoi ce travail est-il nécessaire ? Quelles lacunes adresse-t-il ?
+- **Problème/Enjeu de recherche :** Définir clairement le problème ou la question spécifique que votre recherche va traiter structure toute l'approche et souligne la signification du projet par rapport au contexte.
+- **Objectifs :** Décrire les objectifs principaux de la recherche crée un lien avec le problème/enjeu et soutiendra le choix de la
+- **Méthodologie :** Soyez bref sur ce qui doit être fait, les technologies impliquées, les approches de mesure/analyse. Soyez spécifique (style simple).
+- **Résultats attendus :** Décrivez brièvement ce que vous vous attendez à trouver.
+- **Conséquences :** Rouvrez la discussion en décrivant les implications potentielles de vos résultats pour la société, l'écologie, la technologie ou la culture.
+- **Conclusion :** Une ou deux phrases pour passer du problème/enjeu aux contributions au domaine ou à la société.
+- **Références** (si applicable) : Inclure la littérature clé ou les recherches antérieures qui soutiennent votre projet.
 
-## Tools
-There are many tools to write a text:
-- do not underestimate handwriting!  
-- [OnlyOffice](https://www.onlyoffice.com/) / [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) / [OpenOffice Writer](https://www.openoffice.org/product/writer.html)  
-- MS word/Google docs  
-- [LaTeX](https://en.wikipedia.org/wiki/LaTeX) (via [Overleaf](https://www.overleaf.com/) or by [installing it](https://www.latex-project.org/get/))  
+## Outils
+Il existe de nombreux outils pour écrire un texte :
+- ne sous-estimez pas l'écriture manuscrite !
+- [OnlyOffice](https://www.onlyoffice.com/) / [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) / [OpenOffice Writer](https://www.openoffice.org/product/writer.html)
+- MS word/Google docs
+- [LaTeX](https://en.wikipedia.org/wiki/LaTeX) (via [Overleaf](https://www.overleaf.com/) ou en [l'installant](https://www.latex-project.org/get/))
 - [Markdown](https://en.wikipedia.org/wiki/Markdown) (eg. [Obsidian](https://obsidian.md/) / [Logseq](https://logseq.com/) / [VSCodium](https://vscodium.com/) / [Vim](https://www.vim.org/) / [Neovim](https://neovim.io/))
-- publishing apps
+- applications de publication
 
-## References
-Referring others' work that is used in your text is important for multiple reasons:
-- contextualise your work 
-- contribute to a community of work 
-- validate the depth of your work 
-- acknowledge others' work 
-- specify your own contribution   
+## Références
+Référer le travail des autres qui est utilisé dans votre texte est important pour plusieurs raisons :
+- contextualiser votre travail
+- contribuer à une communauté de travail
+- valider la profondeur de votre travail
+- reconnaître le travail des autres
+- spécifier votre propre contribution
 
 &nbsp;
 
-- **Tools**: [Zotero](https://www.zotero.org/)  (and its AI plugin - [ARIA](https://github.com/lifan0127/ai-research-assistant))| [Mendeley](https://www.mendeley.com/reference-management/reference-manager)
-- **Repository**: [Cnam Library](https://bibliotheques.cnam.fr/opac/.do?sysb=ep)!
+- **Outils** : [Zotero](https://www.zotero.org/)  (et son plugin IA - [ARIA](https://github.com/lifan0127/ai-research-assistant))| [Mendeley](https://www.mendeley.com/reference-management/reference-manager)
+- **Bibliothèque** : [Bibliothèque du Cnam](https://bibliotheques.cnam.fr/opac/.do?sysb=ep)!
 
-## Publishing
-- Determine your public and select the places they access.
-- For scientific publications, you may refer to the impact factors of journals (e.g., [SJR](https://www.scimagojr.com/)) and of confernces (e.g., [Conferenceranks](http://www.conferenceranks.com/)).
+## Publication
+- Déterminez votre public et sélectionnez les lieux où il accède.
+- Pour les publications scientifiques, vous pouvez vous référer aux facteurs d'impact des revues (p. ex., [SJR](https://www.scimagojr.com/)) et des conférences (p. ex., [Conferenceranks](http://www.conferenceranks.com/)).
 
-### Impact Factor
-The **impact factor**  (**IF**) or  **journal impact factor**  (**JIF**) of an academic journal is a scientometric index calculated by Clarivate that reflects the yearly mean number of citations of articles published in the last two years in a given journal, as indexed by Clarivate's Web of Science.
+### Facteur d'impact
+Le **facteur d'impact** (**IF**) ou **facteur d'impact de revue** (**JIF**) d'une revue académique est un indice scientométrique calculé par Clarivate qui reflète le nombre moyen annuel de citations d'articles publiés dans les deux dernières années dans une revue donnée, tel qu'indexé par le Web of Science de Clarivate.
 
-As a journal-level metric, it is frequently used as a proxy for the relative importance of a journal within its field; journals with higher impact factor values are given the status of being more important, or carry more prestige in their respective fields, than those with lower values.
+En tant que métrique au niveau de la revue, il est fréquemment utilisé comme proxy de l'importance relative d'une revue dans son domaine ; les revues avec des valeurs de facteur d'impact plus élevées se voient attribuer un statut plus important, ou portent plus de prestige dans leurs domaines respectifs, que celles avec des valeurs plus basses.
 
-While frequently used by universities and funding bodies to decide on promotion and research proposals, it has been criticised for distorting good scientific practices.
-(from wikipedia on impact factor)
+Bien que fréquemment utilisé par les universités et les organismes de financement pour décider des promotions et des propositions de recherche, il a été critiqué pour distordre les bonnes pratiques scientifiques.
+(d'après wikipedia sur le facteur d'impact)
 
-## Writing assignment
-- Take 10min max to write a text about your topic for a layperson - 250 words max
-- Ask AI to do the same (250 words max)
-- Compare and discuss the AI output from your expert perspective (250 words max)
-- You can discuss with your AI to improve its text
-- Propose a new text (as a result of your discussion with the AI and with you own final touch)  **The more concise the better!**
+## Exercice d'écriture
+- Prenez 10 min max pour écrire un texte sur votre sujet pour un non-spécialiste - 250 mots max
+- Demandez à l'IA de faire de même (250 mots max)
+- Comparez et discutez du résultat de l'IA de votre perspective d'expert (250 mots max)
+- Vous pouvez discuter avec votre IA pour améliorer son texte
+- Proposez un nouveau texte (en résultat de votre discussion avec l'IA et avec votre touche finale personnelle) **Le plus concis possible !**
 
-Deliverable: all the texts, all the prompts, and your quick reflections, all  organised in a timely order.
+Livrable : tous les textes, tous les prompts, et vos réflexions rapides, le tout organisé de manière chronologique.
 
-You are assessed on your reflections, the apparent construction towards the construction of a better text, so I can understand why the last one is best.
-The exercise should not take more than 1h.
+Vous êtes évalués sur vos réflexions, la construction apparente vers la construction d'un meilleur texte, afin que je puisse comprendre pourquoi le dernier est le meilleur.
+L'exercice ne devrait pas prendre plus d'1h.
 
 
-To be submitted @ [pierre.levy@lecnam.net](mailto:pierre.levy@lecnam.net) with the following title for the email and for the document: USMC85_writing-\<your SISCOL number\>-«<your Name\>
+À soumettre @ [pierre.levy@lecnam.net](mailto:pierre.levy@lecnam.net) avec le titre suivant pour l'email et pour le document : USMC85_writing-\<votre numéro SISCOL\>-«<votre Nom\>
 
-The format can be preferably in pdf, but can also be in either docx, markdown, LateX or simple text. There is no format imposed, but do not hesitate to propose one (no need to justify unless necessary to understand the document itself). Diagrams, illustrations and tables are not allowed. If necessary, quantitative data should be integrated in the text.
+Le format peut être de préférence en pdf, mais peut aussi être en docx, markdown, LaTeX ou texte simple. Il n'y a pas de format imposé, mais n'hésitez pas à en proposer un (pas besoin de justifier sauf si nécessaire pour comprendre le document lui-même). Les diagrammes, illustrations et tableaux ne sont pas autorisés. Si nécessaire, les données quantitatives doivent être intégrées dans le texte.

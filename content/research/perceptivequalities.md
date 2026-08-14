@@ -1,5 +1,5 @@
 ---
-title: "Perceptive qualities"
+title: "Qualités perceptives"
 slug: programme-perceptive-qualities
 date: 2015-10-16T20:03:12+02:00
 frontpage: true
@@ -12,9 +12,9 @@ updating: true
 current: false
 frontphoto: "1OCV84I23bxeFlGB5uCJGgs4d3WPgPDbK"
 quote: 
-    quoteline: "And thoses who were seen dancing were thought to be insane by those who could not hear the music."
+    quoteline: "Et ceux qui dansaient étaient considérés comme fous par ceux qui ne pouvaient pas entendre la musique."
     quoteauthor: "Friederich Nietsche"
     quotedate: "1885"
 ---
 
-The notion of perceptual crossing indicates the experience of interplay between perceptive activities of multiple beings (train anecdote). Charles Lenay  explained the importance of perceptual crossing in the encounter of the other’s perceptual intentionality, in the mutual attraction of perceptual activities (“they come to start a sort of a dance together”), leading to the constitution of a shared world of emotions. Creating such a connection between beings is often experienced, and it is (and it has been for a long time) a quest in design to build such connection between a being (or user) and an artefact: how to design for perceptual crossing?
+La notion de croisement perceptif indique l'expérience d'un jeu entre les activités perceptives de multiples êtres (anecdote du train). Charles Lenay a expliqué l'importance du croisement perceptif dans la rencontre de l'intentionnalité perceptive d'autrui, dans l'attraction mutuelle des activités perceptives (« elles en viennent à esquisser une sorte de danse ensemble »), conduisant à la constitution d'un monde partagé d'émotions. Créer une telle connexion entre les êtres est une expérience fréquente, et c'est (et c'est depuis longtemps) une quête en design que de construire une telle connexion entre un être (ou utilisateur) et un artefact : comment designer pour le croisement perceptif ?

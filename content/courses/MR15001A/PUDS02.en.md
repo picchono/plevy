@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - PUDS02 / UE12 · Critique et médiation du design"
+title: "Master CESAAP - PUDS02 / UE12 · Design critique and mediation"
 institution:
     heig: 1
     logo: cnam
@@ -53,17 +53,10 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignants" >}} JC Valleran · Antoine Fermey · Clémence Mergy
+{{< slash "Teachers" >}} JC Valleran · Antoine Fermey · Clémence Mergy
 
-Intitulé, intensif Welcome, l'UE vise à organiser le premier temps de la résidence dans une
-démarche d'acculturation. Les étudiants constituent des collectifs de travail qui, au travers de
-visites des différents lieux de l'institution accueillante et de rencontres avec les différents acteurs
-et partenaires de celles-ci, vont identifier des problématiques et proposer des sujets. Ces sujets
-disent le lieu à travers la production d'hypothèses en design. Ces hypothèses sont restituées sous
-la forme d'objets de médiation, ils identifient des territoires de projet et permettent la
-constitution future du collectif d'étudiants, elles permettent également d'envisager des
-collaborations possibles.
+Entitled "Welcome intensive", this UE aims to organise the first phase of the residency as an acculturation process. Students form working collectives which, through visits to the various locations of the host institution and meetings with its various actors and partners, identify issues and propose topics. These topics express the place through the production of design hypotheses. These hypotheses are presented in the form of mediation objects; they identify project territories and allow for the future constitution of the student collective, as well as enabling possible collaborations.
 
-Temps 1 / Acculturation  
-Temps 2 / Problématisation  
-Temps 3 / Restitution
+Phase 1 / Acculturation  
+Phase 2 / Problematization  
+Phase 3 / Presentation

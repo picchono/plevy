@@ -1,6 +1,6 @@
 ---
 slug: design-lecture-caroline-hummels
-title: "Design lectures by Caroline Hummels"
+title: "Leçons de design par Caroline Hummels"
 layout: videopage
 subsection: other
 projecttype: general
@@ -12,124 +12,124 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2019-09-03T16:27:15+02:00
-abstract: "A series of recorded lectures on design"
+abstract: "Une série de cours enregistrés sur le design"
 projectby: "prof.dr.ir. Caroline Hummels @TU/e."
 frontphoto: "1TbGkxACY5Q68C6JuePB7RQx6UBLLC92U"
 video:
     video1:
         vimeo: "106548027"
-        title: "Inaugural lecture"
+        title: "Leçon inaugurale"
         speaker: "Caroline Hummels"
     video2-1:
         vimeo: "73297479"
-        title: "Designing opportunities"
+        title: "Designer des opportunités"
         speaker: "Caroline Hummels"
     video2-2:
         vimeo: "73299672"
-        title: "How to design opportunities"
+        title: "Comment designer des opportunités"
         speaker: "Caroline Hummels"
     video2-3:
         vimeo: "73301577"
-        title: "Challenge for designing opportunities - part 1"
+        title: "Défi pour designer des opportunités - partie 1"
         speaker: "Caroline Hummels"
     video2-4:
         vimeo: "73307716"
-        title: "Challenge for designing opportunities - part 2"
+        title: "Défi pour designer des opportunités - partie 2"
         speaker: "Caroline Hummels"
     video3-1:
         vimeo: "74477283"
-        title: "Embedding the transformative design approach"
+        title: "Intégrer l'approche du design transformateur"
         speaker: "Caroline Hummels"
     video3-2:
         vimeo: "74509420"
-        title: "The aim of reflective transformative design"
+        title: "L'objectif du design transformateur réflexif"
         speaker: "Caroline Hummels"
     video3-3:
         vimeo: "74509429"
-        title: "The reflective transformative design process"
+        title: "Le processus de design transformateur réflexif"
         speaker: "Caroline Hummels"
     video3-4:
         vimeo: "74509475"
-        title: "The reflective transformative design process - an example"
+        title: "Le processus de design transformateur réflexif - un exemple"
         speaker: "Caroline Hummels"
     video3-5:
         vimeo: "74509485"
-        title: "Challenge of transformative design"
+        title: "Le défi du design transformateur"
         speaker: "Caroline Hummels"
     video4-1:
         vimeo: "75042524"
-        title: "Design methods and techniques"
+        title: "Méthodes et techniques de design"
         speaker: "Caroline Hummels"
     video4-2:
         vimeo: "75042498"
-        title: "Brainstorming and family"
+        title: "Brainstorming et famille"
         speaker: "Caroline Hummels"
     video4-3:
         vimeo: "75042473"
-        title: "Intuitive leap"
+        title: "Saut intuitif"
         speaker: "Caroline Hummels"
     video4-4:
         vimeo: "75042442"
-        title: "Melody of interaction"
+        title: "Mélodie de l'interaction"
         speaker: "Caroline Hummels"
     video4-5:
         vimeo: "75042415"
-        title: "Designing in the wild"
+        title: "Designer en contexte réel"
         speaker: "Caroline Hummels"
     video4-6:
         vimeo: "75042377"
-        title: "Sketching and drawing"
+        title: "Esquisser et dessiner"
         speaker: "Caroline Hummels"
     video4-7:
         vimeo: "75042341"
-        title: "Tinkering and prototyping"
+        title: "Bricoler et prototyper"
         speaker: "Caroline Hummels"
     video4-8:
         vimeo: "75042297"
-        title: "Movement-based design"
+        title: "Design basé sur le mouvement"
         speaker: "Caroline Hummels"
     video4-9:
         vimeo: "75042258"
-        title: "Challenge for design methods and techniques"
+        title: "Défi pour les méthodes et techniques de design"
         speaker: "Caroline Hummels"
     video5-1:
         vimeo: "75554943"
-        title: "Design evaluation in context"
+        title: "Évaluation du design en contexte"
         speaker: "Caroline Hummels"
     video5-2:
         vimeo: "75554957"
-        title: "User testing"
+        title: "Tests utilisateurs"
         speaker: "Caroline Hummels"
     video5-3:
         vimeo: "75554975"
-        title: "Co-reflection"
+        title: "Co-réflexion"
         speaker: "Caroline Hummels"
     video5-4:
         vimeo: "75554988"
-        title: "Experiential design landscapes"
+        title: "Paysages de design expérientiel"
         speaker: "Caroline Hummels"
     video5-5:
         vimeo: "75555006"
-        title: "Challenge for design evaluation in context"
+        title: "Défi pour l'évaluation du design en contexte"
         speaker: "Caroline Hummels"
     video6-1:
         vimeo: "76415069"
-        title: "Designing business models"
+        title: "Designer des modèles économiques"
         speaker: "Caroline Hummels"
     video6-2:
         vimeo: "76261819"
-        title: "Business models canvas - customer-business aspects"
+        title: "Canvas de modèles économiques - aspects client-entreprise"
         speaker: "Caroline Hummels"
     video6-3:
         vimeo: "76261829"
-        title: "Business models canvas - key company aspects"
+        title: "Canvas de modèles économiques - aspects clés de l'entreprise"
         speaker: "Caroline Hummels"
     video6-4:
         vimeo: "76261844"
-        title: "Value flow models"
+        title: "Modèles de flux de valeur"
         speaker: "Caroline Hummels"
     video6-5:
         vimeo: "76261859"
-        title: "Challenge for designing business models"
+        title: "Défi pour designer des modèles économiques"
         speaker: "Caroline Hummels"
 ---

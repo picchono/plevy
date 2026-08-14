@@ -1,6 +1,6 @@
 ---
 slug: practice-CDR
-title: "The Practice of Constructive Design Research"
+title: "La pratique de la recherche en design constructif"
 tags: ['Recherche_au_travers_du_design', 'CDR', 'RtD', 'Umeå']
 layout: single
 searchFilter: Event
@@ -18,7 +18,7 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2012-09-03T16:27:15+02:00
-abstract: "The Practice of Constructive Design Research is a conversation proposed by Stoffel Kuenen at the DRS2014 conference.</i>"
+abstract: "La pratique de la recherche en design constructif est une conversation proposée par Stoffel Kuenen lors de la conférence DRS2014.</i>"
 frontphoto: "1WqAq8fzi4OmRD9-2MQxjMSYF2xURRAPm"
 video:
     video1:
@@ -26,10 +26,10 @@ video:
     video2:
         vimeo: "99952357"
 link:
-    1: ["site web", "website", "http://murmurations.kuenen.org/2014/07/07/the-practice-of-constructive-design-research"]
+    1: ["site web", "site web", "http://murmurations.kuenen.org/2014/07/07/the-practice-of-constructive-design-research"]
 ---
 
-***The Practice of Constructive Design Research*** *is a conversation proposed by Stoffel Kuenen at the DRS2014 conference.*
+***La pratique de la recherche en design constructif*** *est une conversation proposée par Stoffel Kuenen lors de la conférence DRS2014.*
 
-*'Catalysts (=invited participants) for the conversation were researchers in this field: Lorenzo Davoli, Mahmoud Keshavarz, Pierre Lévy and Ambra Trotto. In order to feed and frame the conversation, I made a video containing statements taken from interviews with more consolidated researchers: Pelle Ehn, Daniel Fällman, Caroline Hummels, Johan Redström and John Zimmerman.'*  
+*« Les catalyseurs (=participants invités) de la conversation étaient des chercheurs dans ce domaine : Lorenzo Davoli, Mahmoud Keshavarz, Pierre Lévy et Ambra Trotto. Pour alimenter et encadrer la conversation, j'ai réalisé une vidéo contenant des déclarations tirées d'entretiens avec des chercheurs plus confirmés : Pelle Ehn, Daniel Fällman, Caroline Hummels, Johan Redström et John Zimmerman. »*  
 (Stoffel Kuenen)

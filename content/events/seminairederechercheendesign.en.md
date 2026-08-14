@@ -6,7 +6,7 @@ frontpage: true
 tags: ['séminaire', 'design', 'création', 'méthodologie']
 draft: false
 front: true
-frontdescription: "Un séminaire de recherche en design et création"
+frontdescription: "A research seminar in design and creation"
 bodyclass: "seminar"
 milestone: mediums
 layout: single
@@ -14,7 +14,7 @@ searchFilter: Event
 subsection: seminar
 main: true
 current: true
-description: "Ce séminaire invite les communautés de recherche liées au design et à la création à contribuer ensemble à une meilleure compréhension des enjeux méthodologiques en recherche comme lieu d'exploration, de discussion et de dissémination des idées et des connaissances."
+description: "This seminar invites research communities linked to design and creation to contribute together to a better understanding of methodological issues in research as a place for exploration, discussion and dissemination of ideas and knowledge."
 institution:
     heig: 1
     logo: cnam
@@ -40,8 +40,8 @@ photocredit:
     cred: "Nadine van Amersvoort"
 link:
     1: ["poster", "paper", "https://1drv.ms/b/s!AnQx_v88q65QgcCbKLZVHK3YRuvCaps?e=SzwP9D"]
-    2: ["DSN201 · Initiation à recherche en design, art et création", "website", "http://localhost:1313/teaching/initiation-a-la-recherche-en-design-art-creation/"]
-    3: ["Ways to Cnam", "website", "https://www.cnam.eu/maps-and-contacts/"]
+    2: ["DSN201 · Introduction to research in design, art and creation", "website", "http://localhost:1313/teaching/initiation-a-la-recherche-en-design-art-creation/"]
+    3: ["Way to Cnam", "website", "https://www.cnam.eu/maps-and-contacts/"]
 code: seminaire-de-recherche-en-design
 sessions:
     objet:
@@ -62,7 +62,7 @@ sessions:
 photogallery:
     image1:
         order: 1
-        name: "Séminaire méthodologique de recherche en design"
+        name: "Methodological research seminar in design"
         img: "1DsuDGz3dFT9gmeCicLfg4dCnry9zaTSe"
 ---
 The ‘Research practices in design and creation’ methodology seminar is organised and run jointly by the Dicen-IDF laboratory and the Jean Prouvé Design Chair at the National Conservatory of Arts and Craft (Cnam). Primarily aimed at master's students, young researchers, doctoral candidates and those aspiring to become such, it invites members of research communities linked to the fields of design and creation to contribute together to a better understanding of the methodological issues involved in research as a place for exploration, discussion and the dissemination of ideas and knowledge.

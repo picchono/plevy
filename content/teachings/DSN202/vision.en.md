@@ -1,5 +1,5 @@
 ---
-title: "DSN202 · Vision projetée"
+title: "DSN202 · Projected vision"
 slug: "vision-projetee"
 institution:
     heig: 1
@@ -25,9 +25,9 @@ link:
     1: ["Paper on ProVI", "paper", "/publications/provi-a-transforming-vision-emerging-from-reflective-practice/"]
 ---
 
-## La vision projetée
+## Projected vision
 
-La vision projetée est basée sur les travaux de Caroline Hummels et Diane Vinke et du portfolio annoté (cf. cours précédent). 
+Projected vision is based on the work of Caroline Hummels and Diane Vinke and the annotated portfolio (cf. previous course). 
 
 {{<linkBox "Hummels, C. C. M., Vinke, D., Frens, J. W., & Hu, J. (2011). Competency-centered Education for Designing Interactive and Intelligent Products. Creation and Design, 13(2), 4–17." "https://www.researchgate.net/publication/224002816_Competency-centered_Education_for_Designing_Interactive_and_Intelligent_Products">}}
 
@@ -36,37 +36,37 @@ La vision projetée est basée sur les travaux de Caroline Hummels et Diane Vink
 
 ### Introduction
 
-La vision projetée, proposition inspirée du *personal development plan* (Hummels & Vinke, 2009), structure et engage un designer, artisan ou artiste sur une prise de décision quant à son positionnement par rapport au type de pratique, de projet, et de positionnement sociétal qu’il·elle entend avoir. L’objectif est de conduire une réflexion qui permet de former un horizon, à partir duquel on pourra organiser des arguments utiles à la prise de décisions d’actions à venir et de positions à prendre. La vision projetée est donc essentiellement programmatique : tout en utilisant des expériences passées, elle contribue à dessiner un horizon souhaitabe, et un chemin pour avancer vers celui-ci. Et comme pour tout horizon, l’atteindre reste un événement très incertain (en fait, probablement non souhaitable). C’est le chemin qui importe, et le plus souvent il évoluera au fur et à mesure du parcours.
+Projected vision, a proposal inspired by the *personal development plan* (Hummels & Vinke, 2009), structures and engages a designer, craftsperson or artist in making decisions about their positioning in relation to the type of practice, projects, and societal stance they intend to take. The objective is to conduct a reflection that forms a horizon, from which one can organise arguments useful for making decisions about future actions and positions to take. Projected vision is therefore essentially programmatic: while drawing on past experiences, it contributes to sketching a desirable horizon, and a path towards it. And as with any horizon, reaching it remains a very uncertain event (in fact, probably undesirable). It is the journey that matters, and most often it will evolve as the path unfolds.
 
 ### Structure
 
-**Un corpus de projets**
+**A corpus of projects**
 
-La création d’une vision projetée se base sur un corpus de projets à ordonner. Pour cela, on s’inspire du portfolio annoté (Gaver & Bowers, 2012) qui permet un tel travail.
-Les projets sélectionnés peuvent être ceux réalisés par celui ou celle qui travaille sur la vision projetée. S’ils sont nombreux, seuls sont sélectionnés ceux qui ont eu un impact significatif sur le développement en compétences, sur la vision du monde et du design, sur la compréhension de ce que le design est, sur le rapport à la pratique du design… en somme, ceux qui ont « compté ». Les projets d’autres designers, artisans, artistes… peuvent également être sélectionnés. On privilégiera les projets qui ont eu un impact profond sur le rapport au design, qui ont profondément inspiré la pratique, qui ont causé une rupture dans la pratique ou de la vision… encore une fois, ceux qui ont « compté ». Dans tous les cas, la sélection de tout projet doit être clairement justifiable et écrite.
-L’objectif de l’analyse du corpus est de dégager des descripteurs et des dimensions soit communs à ces projets, soit au contraire spécifiques à un ou peu de projets. Ce qui est commun permet de déterminer des constantes ou des tendances. Ce qui est spécifique permet de détecter des expériences uniques, possiblement les ruptures de vision ou de pratique. Ces ruptures peuvent être perçues positivement ou négativement. Un regard positif sur la rupture sera constructif de l’horizon visé et sera en résonance avec celui-ci. Un regard négatif sera limitatif ou en opposition avec l’horizon visé et sera en dissonance avec celui-ci.
-Une sélection de ces descripteurs et de ces dimensions permet donc de mettre en évidence la structure d’un espace dans lequel le·a designer entend évoluer, fixant ce qui est à l’intérieur et à l’extérieur de cet espace. Les bords en sont ainsi tracés.
+Creating a projected vision is based on a corpus of projects to be ordered. For this, we draw inspiration from the annotated portfolio (Gaver & Bowers, 2012) which enables such work.
+The selected projects can be those carried out by the person working on the projected vision. If there are many, only those that have had a significant impact on the development of competencies, on the worldview and understanding of design, on the relationship to design practice... in short, those that "mattered" are selected. Projects by other designers, craftspeople, artists... can also be selected. Priority is given to projects that have had a deep impact on the relationship to design, that have deeply inspired the practice, that have caused a rupture in practice or vision... once again, those that "mattered". In all cases, the selection of any project must be clearly justifiable and written down.
+The objective of the corpus analysis is to identify descriptors and dimensions that are either common to these projects or, on the contrary, specific to one or few projects. What is common allows identifying constants or trends. What is specific allows detecting unique experiences, possibly ruptures of vision or practice. These ruptures can be perceived positively or negatively. A positive view of the rupture will be constructive of the targeted horizon and will resonate with it. A negative view will be limiting or in opposition to the targeted horizon and will be in dissonance with it.
+A selection of these descriptors and dimensions then makes it possible to highlight the structure of a space in which the designer intends to evolve, establishing what is inside and outside this space. Its boundaries are thus drawn.
 
-**Une réflexion synthétique**
+**A synthetic reflection**
 
-La description de ce que contient cet espace devient matière pour une mise en perspective de l’espace lui-même. Une synthèse de ce contenu permet alors de caractériser ce qui est constitutif de l’expérience de celui ou de celle qui travaille sur la vision projetée.
+Describing what this space contains becomes material for putting the space itself into perspective. A synthesis of this content then makes it possible to characterise what constitutes the experience of the person working on the projected vision.
 
-De cette synthèse peuvent être extraits deux éléments constitutifs de la vision projetée.  Tout d’abord un horizon, qui décrit ce vers quoi on souhaite tendre en termes de **type de pratique, de lieu de pratique, d’objet de design, et de positionnement sociétal**. Cet horizon décrit donc plus ou moins directement son identité en tant que designer, artisan ou artiste, **sa pratique située, et les champs d’applications visées**. Ensuite, un discernement de ce qui est atteignable dans le court terme, de ce qui doit être mise en place déjà pour l’atteindre plus tard, et de ce qui reste dans le domaine de l’horizon. 
+From this synthesis, two constitutive elements of the projected vision can be extracted. First, a horizon, which describes what one wishes to tend towards in terms of **type of practice, place of practice, design object, and societal positioning**. This horizon therefore more or less directly describes one's identity as a designer, craftsperson or artist, **one's situated practice, and the targeted fields of application**. Then, a discernment of what is achievable in the short term, of what needs to be put in place already to achieve it later, and of what remains in the realm of the horizon. 
 
-- Pour ce qui est atteignable, on déterminera une série d’actions pour débuter le chemin. Il s’agit ici de considérer ce qui est déjà en place, ce qui l’est presque (e.g., parfaire une compétence, écrire une note d’intention), ce qui peut être stratégisé de façon opérationnelle (e.g., des lectures, des rencontres, des visites, des événements…).
-- Pour ce qui est à atteindre plus tard, il s’agira de voir ce qui peut tout de même être fait dans le court terme, et ce qui doit rester en veille pour pouvoir potentiellement saisir toute opportunité qui se présenterait. Pour le reste, ce qui reste dans le domaine de l’horizon, il s’agit surtout d’en créer un narratif qui permet de compléter la vision.
+- For what is achievable, a series of actions will be determined to begin the journey. This involves considering what is already in place, what is almost in place (e.g., perfecting a skill, writing a statement of intent), what can be strategically planned operationally (e.g., readings, meetings, visits, events...).
+- For what needs to be achieved later, it will be a matter of seeing what can still be done in the short term, and what must remain on standby to potentially seize any opportunity that arises. For the rest, what remains in the realm of the horizon, it is mainly a matter of creating a narrative that completes the vision.
 
-Ce narratif est d’autant plus important qu’il permettra de déterminer, lorsqu’une évaluation de la vision sera faite, les conséquences d’une potentielle différence entre le chemin envisagé et celui effectivement parcouru.
+This narrative is all the more important as it will determine, when an evaluation of the vision is made, the consequences of a potential difference between the envisaged path and the one actually travelled.
 
-Finalement, il faut justement fixer une date d’évaluation de cette vision projetée ainsi formulée. Cette date peut être un jour du calendrier ou un jour lié à un événement, e.g., la fin d’un projet majeur, une période moins intense, une période d’évaluation...
+Finally, a date must be set for evaluating this projected vision as formulated. This date can be a day on the calendar or a day linked to an event, e.g., the end of a major project, a less intense period, an evaluation period...
 
-**Et après**
+**And afterwards**
 
-Cette date est essentielle pour garder une effectivité de la vision projetée. Cette évaluation est primordiale. Non seulement elle permet d’apprécier le chemin parcouru et de revenir sur le chemin si nécessaire, mais elle permet également et surtout de « reformer l’horizon ». Avec le chemin parcouru, on peut se demander légitimement si l’horizon lui-même n’a pas changé, si la vision n’a pas évolué, si les objectifs et les moyens pour y arriver sont toujours pertinents. Il s’agit alors de mettre à jour le portfolio annoté, de l’enrichir de l’expérience passée, pour en garder, voire renforcer ce qui reste, de modifier ce qui doit l’être, et éventuellement d’enlever ce qui n’a plus raison d’être.
+This date is essential for maintaining the effectiveness of the projected vision. This evaluation is paramount. Not only does it allow appreciating the path travelled and returning to the path if necessary, but it also and above all allows "reforming the horizon". With the path travelled, one can legitimately wonder whether the horizon itself has not changed, whether the vision has not evolved, whether the objectives and means to achieve it are still relevant. It is then a matter of updating the annotated portfolio, enriching it with past experience, to keep, or even reinforce what remains, to modify what needs to be, and eventually to remove what no longer has reason to be.
 
-À l’aune des opportunités qui se présentent dans un futur proche, l’analyse viendra certainement à changer pour à la fois faire évoluer l’espace où se forme la vision, qui est l’essence du document, et ensuite redessiner l’horizon et le chemin qui y mène. Les conséquences sur la mise à jour des actions à prendre seront évidentes.
+In light of the opportunities that present themselves in the near future, the analysis will certainly change to both evolve the space where the vision is forming, which is the essence of the document, and then redraw the horizon and the path leading to it. The consequences for updating the actions to take will be obvious.
 
 ### Format
 
-Il n’y a pas de format prédéfini d’une vision projetée, bien qu’il soit nécessaire de suivre une contrainte de travail : la traçabilité de l’analyse et de la réflexion. Cette traçabilité est essentielle pour pouvoir correctement en faire l’évaluation avant sa mise à jour. Il faut en effet pouvoir faire la différence entre la pensée au moment de la formation de cette vision projetée et la pensée rétrospective au moment de son évaluation. Cette différence peut être l’objet d’une réflexion venant enrichir la vision.
-Mais son format n’est pas non plus arbitraire. Comme pour tout travail de design, d’artisanat ou d’art, la forme fait aussi texte ! Sa forme doit donc être l’expression de son auteur, et le signe de son ambition.
+There is no predefined format for a projected vision, although it is necessary to follow a working constraint: the traceability of analysis and reflection. This traceability is essential to be able to correctly evaluate it before updating it. One must indeed be able to distinguish between the thinking at the time of forming this projected vision and the retrospective thinking at the time of its evaluation. This difference can be the object of a reflection to enrich the vision.
+But its format is not arbitrary either. As with any design, craft or art work, form is also text! Its form must therefore be the expression of its author, and the sign of their ambition.

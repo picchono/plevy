@@ -1,6 +1,6 @@
 ---
 slug: shift
-title: "Shift - an installation for the Glow festival"
+title: "Shift - une installation pour le festival Glow"
 layout: single
 searchFilter: Event
 subsection: exhibition
@@ -13,7 +13,7 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2012-10-12T16:27:15+02:00
-abstract: "Light through Culture is an international design school which explores the theme of complexity in learning environments."
+abstract: "Light through Culture est une école de design internationale qui explore le thème de la complexité dans les environnements d'apprentissage."
 frontphoto: "1XG-I1TEX5_oHWBEfd_JjVVrPAub3nUsK"
 video:
     video1:
@@ -21,10 +21,10 @@ video:
         youtube: "gfti3Bd394E"
 ---
 
-***SHIFT is the product of 18 master students working within OPENLIGHT, the creative lab of the Intelligent Lighting Institute at TU/e.***
+***SHIFT est le produit de 18 étudiants de master travaillant au sein d'OPENLIGHT, le laboratoire créatif de l'Intelligent Lighting Institute de la TU/e.***
 
-Our world is in a constant state of transformation. Most of the time, our view of the world will change parallel to this transformation. The changes in the world are often propelled us as an individual, group, generation or country. Are we aware of the influence we have on our environment? The installation allows you to experience and admire this influence by joining forces with others.<br>Your acts have meaning!
+Notre monde est en constante transformation. La plupart du temps, notre vision du monde évolue parallèlement à cette transformation. Les changements dans le monde sont souvent impulsés par nous en tant qu'individu, groupe, génération ou pays. Sommes-nous conscients de l'influence que nous avons sur notre environnement ? L'installation permet de vivre et d'admirer cette influence en unissant ses forces avec celles des autres.<br>Vos actes ont du sens !
 
-Students of the Intelligent Lighting Institute of Eindhoven University of Technology want to make visitors of GLOW 2012 think about the amount of control we have on the changing façade of the world. The visitors will be able to experience individual and collective influence on the world around them by collectively replacing weight.
+Les étudiants de l'Intelligent Lighting Institute de l'Eindhoven University of Technology veulent amener les visiteurs de GLOW 2012 à réfléchir sur le degré de contrôle que nous avons sur la façade changeante du monde. Les visiteurs pourront expérimenter l'influence individuelle et collective sur le monde qui les entoure en remplaçant collectivement du poids.
 
-***Students:*** *Sietse Dols, Rik Vegt, Evy Ansems, Dennis de Klein, Thom van Boheemen, Nick Hermans, Karin Niemantsverdriet, Troy Reugebrink, Tijmen van Gurp, Job Huberts, Daniël van Paesschen, Martijn Peeters, Jelle Tuinhout, Adriaan de Regt, Maxim Sakovic, Freek de Bruijn, Teije Oudshoorn, Tom Kölker.*
+***Étudiants :*** *Sietse Dols, Rik Vegt, Evy Ansems, Dennis de Klein, Thom van Boheemen, Nick Hermans, Karin Niemantsverdriet, Troy Reugebrink, Tijmen van Gurp, Job Huberts, Daniël van Paesschen, Martijn Peeters, Jelle Tuinhout, Adriaan de Regt, Maxim Sakovic, Freek de Bruijn, Teije Oudshoorn, Tom Kölker.*

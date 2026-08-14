@@ -1,6 +1,6 @@
 ---
 slug: DQI-theory
-title: "Designing Quality in Interaction theory"
+title: "Théorie de la qualité en interaction"
 institution:
     heig: 1
     logo: TUe
@@ -60,15 +60,15 @@ photogallery:
         name: "Kees and Caroline, making and discussing the DQI theory poster"
         img: "1nxmIv39mj0JDfeQESiihrEs4mBE9yBgB"
 ---
-In this two-week workshop, theories of interaction design are explained and explored through applications. The DQI approach to Interaction Design is theory informed. This means that theory inspires and even guides the way we look at interaction, and the way we design for interaction and experience.
+Lors de ce workshop de deux semaines, les théories du design d'interaction sont expliquées et explorées à travers des applications. L'approche DQI du design d'interaction est informée par la théorie. Cela signifie que la théorie inspire et même guide la façon dont nous regardons l'interaction, et la façon dont nous concevons pour l'interaction et l'expérience.
 
-{{< slash "Topics" >}}
-- Phenomenology and experience (Merlau-Ponty and Dewey)  
-- Gibsonian theory of perception  
-- Models of interaction: Interaction Frogger  
-- Resonance  
-- Rich Interaction  
-- Societal Design  
-- Craftsmanship
+{{< slash "Sujets" >}}
+- Phénoménologie et expérience (Merlau-Ponty et Dewey)  
+- Théorie gibsonienne de la perception  
+- Modèles d'interaction : Interaction Frogger  
+- Résonance  
+- Interaction riche  
+- Design sociétal  
+- Artisanat
 
-These theories, philosophies and models will be explained first and then  explored in a series of interaction designs, i.e. practical applications.
+Ces théories, philosophies et modèles seront d'abord expliqués puis explorés à travers une série de designs d'interaction, c'est-à-dire d'applications pratiques.

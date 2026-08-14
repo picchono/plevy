@@ -1,6 +1,6 @@
 ---
 slug: irregularite_une_opportunite_societale
-title: "L'irrégularité, une opportunité sociétale"
+title: "Irregularity, a societal opportunity"
 layout: single
 searchFilter: Event
 publitype: presentation
@@ -27,7 +27,7 @@ collaboration:
         heig: 1
 date: 2023-02-27T18:00:00+02:00
 frontpage: true
-reference: "Lévy, P. (2023). L'irrégularité, une opportunité sociétale, presented at l'École Supérieure d'Art et Design de Saint-Étienne, Saint-Étienne, France. February 27th, 2023."
-abstract: "Pierre Lévy est professeur du CNAM, titulaire de la Chaire design Jean Prouvé, et membre du Dicen-IDF (EA 7339). Il a vécu pendant de nombreuses années au Japon et aux Pays-Bas, où il a travaillé sur une perspective culturelle et philosophique japonaise en design, et sur une approche globale portant sur les pratiques transformatives (Transforming practices - TP). En menant une réflexion basée sur des concepts culturels et philosophiques japonais, qu'il travaille dans une perspective constructive pour la pratique du design, son intervention proposera une perspective originale sur le moment du design vis-à-vis des pratiques du quotidien, en s'intéressant notamment à l'irrégularité comme opportunité sociétale et à l'appropriation comme moment de création située du quotidien."
+reference: "Lévy, P. (2023). Irregularity, a societal opportunity, presented at l'École Supérieure d'Art et Design de Saint-Étienne, Saint-Étienne, France. February 27th, 2023."
+abstract: "Pierre Lévy is professor at CNAM, holder of the Jean Prouvé Chair of Design, and member of Dicen-IDF (EA 7339). He lived for many years in Japan and the Netherlands, where he worked on a Japanese cultural and philosophical perspective in design, and on a holistic approach focusing on transformative practices (Transforming practices - TP). By leading a reflection based on Japanese cultural and philosophical concepts, which he works within a constructive perspective for design practice, his presentation will offer an original perspective on the moment of design with regard to everyday practices, focusing in particular on irregularity as a societal opportunity and on appropriation as a moment of situated creation of the everyday."
 frontphoto: "1U9068F6hiIKM7loqwvCUVFmm05cUjq8i"
 ---

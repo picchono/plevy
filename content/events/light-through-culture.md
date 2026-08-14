@@ -1,6 +1,6 @@
 ---
 slug: light-through-culture
-title: "Light through Culture - Experience Human Rights"
+title: "Light through Culture - Vivre les droits humains"
 tags: ['interaction', 'expérience', 'culture', 'exposition', 'droits_humains', 'Sienne']
 layout: single
 searchFilter: Event
@@ -18,13 +18,13 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2012-01-15T16:27:15+02:00
-abstract: "Light through Culture is an international design school which explores the theme of complexity in learning environments.</i>"
+abstract: "Light through Culture est une école de design internationale qui explore le thème de la complexité dans les environnements d'apprentissage.</i>"
 frontphoto: "1c84KyAaeFjuOFqhKYQI8wtHu3Sdg5PV3"
 video:
     video1:
         youtube: "VOGvbvi-HEI"
 ---
 
-Light through Culture is an international design school which explores the theme of complexity in learning environments. The aim of the school is to weave the newest technologies and the rich existing culture into a new canvas for making and thinking. The school was funded in 2011 by Patrizia Marti (University of Siena) and Kees Overbeeke (Technical University of Eindhoven).
+Light through Culture est une école de design internationale qui explore le thème de la complexité dans les environnements d'apprentissage. L'objectif de l'école est de tisser les technologies les plus récentes et la riche culture existante en une nouvelle trame de création et de pensée. L'école a été fondée en 2011 par Patrizia Marti (Université de Sienne) et Kees Overbeeke (Technical University of Eindhoven).
 
-This ehibition proposes a reflection on the individual vs. social perception of human rights, exploring 2 fundamental and controverted articles of the Universal Declaration of Human Rights. Article 13: Everyone has the right to freedom of movement and residence within the borders of each state. Everyone has the right to leave any country, including his own, and to return to his country. Article 19: Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers. Visitors travel through an interactive path, where they experience the application or the negation of such rights. This concurs in stimulating and reinforcing a reflection on their relevance and universality.
+Cette exposition propose une réflexion sur la perception individuelle vs. sociale des droits humains, en explorant 2 articles fondamentaux et controversés de la Déclaration universelle des droits de l'homme. Article 13 : Toute personne a le droit de circuler librement et de choisir sa résidence à l'intérieur d'un État. Toute personne a le droit de quitter tout pays, y compris le sien, et de revenir dans son pays. Article 19 : Toute personne a droit à la liberté d'opinion et d'expression ; ce droit inclut la liberté d'avoir des opinions sans ingérence et de chercher, recevoir et diffuser des informations et des idées par tout moyen de communication, sans considération de frontières. Les visiteurs parcourent un chemin interactif où ils vivent l'application ou la négation de ces droits. Cela contribue à stimuler et renforcer une réflexion sur leur pertinence et leur universalité.

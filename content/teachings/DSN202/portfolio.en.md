@@ -1,5 +1,5 @@
 ---
-title: "DSN202 · Portfolio annoté"
+title: "DSN202 · Annotated portfolio"
 slug: "portfolio-annote"
 institution:
     heig: 1
@@ -22,75 +22,75 @@ teacher:
         name: "Pierre Lévy"
 frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 ---
-## Portfolio annoté
-Le portfolio annoté vise à *examiner des exemples spécifiques de pratiques pour trouver des orientations pour le travail et, en discutant de la manière dont ces exemples étaient pertinents pour nous, de commencer à développer un  réflexion au travers du design*.
+## Annotated portfolio
+The annotated portfolio aims to *examine specific examples of practices to find directions for work and, by discussing how these examples were relevant to us, to begin developing a reflection through design*.
 
-Il se différentie d’approches plus classiques dont le point de départ est une considération théorique (parmi tant de possibilités) pour expliquer des choix, pouvant amener une multitude de solutions. Bien que la théorie aide à structurer la pratique et la reflexion de cette pratique, la relation "imprécise" entre théorie et pratique (d'une théorie peut émerger plusieurs pratiques et une pratique peut être expliquée par plusieurs théories) ne permet pas de se pencher avec attention sur les détails d'une pratique.
-De plus, la théorie risque de proposer une description de ce que la pratique est, de ce que le design est, au lieu de ce qui devrait ou pourrait être.
+It differs from more traditional approaches whose starting point is a theoretical consideration (among many possibilities) to explain choices, potentially leading to a multitude of solutions. Although theory helps structure practice and reflection on that practice, the "imprecise" relationship between theory and practice (from one theory can emerge several practices and one practice can be explained by several theories) does not allow careful attention to the details of a practice.
+Moreover, theory risks proposing a description of what practice is, of what design is, rather than what it should or could be.
 
-Cette perspective questionne donc le design comme une forme de recherche. Comment peut-il structurer une recherche solide? De quoi a-t-il besoin? Au lieu d'aller chercher un n-ième élément d'une discipline voisine, Gaver et alii proposent de se saisir directement de ce que la pratique du design propose.
+This perspective therefore questions design as a form of research. How can it structure solid research? What does it need? Instead of seeking an nth element from a neighbouring discipline, Gaver et alii propose to seize directly on what design practice offers.
 
-Cela permet non seulement de légitimer l'activité du design comme recherche, sans la changer pour ce qui correspondrait plus à l'activité d'autres domaines, mais par une approche plus élaboré de leurs propres approches afin qu'elle apparaisse légitime du point de vue des autres disciplines.
+This not only legitimises design activity as research, without changing it to correspond more to the activity of other fields, but through a more elaborate approach of their own approaches so that it appears legitimate from the point of view of other disciplines.
 
-Le portfolio annoté "offre une façon de présenter les livrables du design en respectant simultanément la particularité et la multidimensionnalité du travail de design, tout en répondant à de nombreuses exigences de la théorie généralisable."
+The annotated portfolio "offers a way of presenting design deliverables while simultaneously respecting the particularity and multidimensionality of design work, while meeting many requirements of generalisable theory."
 
 {{<linkBox "Gaver, B., & Bowers, J. (2012). Annotated Portfolios. Interactions, 19(4), 40–49. https://doi.org/10.1145/2212877.2212889" "https://doi.org/10.1145/2212877.2212889">}}
 
 {{<linkBox "Bowers, J. (2012). The logic of annotated portfolios. Proceedings of the Designing Interactive Systems Conference, 68–77. https://doi.org/10.1145/2317956.2317968" "https://doi.org/10.1145/2317956.2317968">}}
 
-### Logique du portfolio annoté
+### Logic of the annotated portfolio
 
-Tout artefact du design est le résultat d'une multitude de choix, de tout type et souvent complexe. Leur nature peut être liée à :
+Every design artefact is the result of a multitude of choices, of all kinds and often complex. Their nature can be related to:
 
-- la fonction (ce qu'il fait ou ce qu'il mériterait de faire),
-- l'esthétique (forme),
-- la production (matériaux, compétences mises en jeu, outils...),
-- la motivation (pourquoi est-il conçu, pour qu'elle exposition),
-- l'intention (ce que les utilisateur vont en faire, ce qui est préférable),
-- une problématique socio-politique (qu'est-ce que cela va encourager our être en friction avec).
+- function (what it does or what it might deserve to do),
+- aesthetics (form),
+- production (materials, skills involved, tools...),
+- motivation (why it is designed, for what exhibition),
+- intention (what users will make of it, what is preferable),
+- a socio-political issue (what it will encourage or be in friction with).
 
-De ce point de vue les artefacts forment déjà une sorte de prise de position ou une déclaration de la part de ses designers, sur les réponses à apporter ou proposer au challenge adressé.
+From this point of view, artefacts already form a kind of position statement or declaration from their designers, on the responses to bring or propose to the addressed challenge.
 
-Les perspectives autres que celle correspondantes à celles empruntées par les designers n'en sont toutefois pas moins importantes et pertinentes, puisqu'elle soulève des considérations (eg culturelles) qui peuvent avoir été ignorée par les designers, ou incluent dans des considérations inconscientes.
+Perspectives other than those corresponding to those borrowed by designers are nevertheless no less important and relevant, since they raise considerations (e.g. cultural) that may have been ignored by designers, or include unconscious considerations.
 
-Dans la pratique du design, qu'elle soit entrepreneuriale ou académique, l'explication et la justification d'un design se fait également et significativement par les problèmes rencontrés et les choix faits tout au long du processus. On rend donc compte des détails les plus important, qu’ils soient  issus du livrable final ou du processus de design pour l'argument à construire et la perspective à justifier. 
+In design practice, whether entrepreneurial or academic, the explanation and justification of a design is also and significantly done through the problems encountered and the choices made throughout the process. The most important details are therefore accounted for, whether from the final deliverable or the design process, for the argument to be built and the perspective to be justified. 
 
-*Le récit textuel (papier, rapport, descriptions de toute sorte) dans la recherche en design a un caractère indexical* : il indique des aspects du design qui mérite une attention au-delà du projet, une attention pertinente pour la recherche, faisant de ces aspects autant de sujets de discussions dans la communauté. Les récits textuels des artefacts, incluant les aspects théoriques, sont considérés ici comme **des annotations,** par leur capacité d'indexation de l'artefact. Elles obtiennent leur sens et leur pertinence en vertu de leur  lien indiciel avec un artefact. Ce sont donc dans leur relation que du sens est produit.
+*The textual narrative (paper, report, descriptions of all kinds) in design research has an indexical character*: it indicates aspects of design that deserve attention beyond the project, attention relevant to research, making these aspects so many subjects of discussion in the community. The textual narratives of artefacts, including theoretical aspects, are considered here as **annotations**, by their capacity to index the artefact. They obtain their meaning and relevance by virtue of their indexical link with an artefact. It is therefore in their relationship that meaning is produced.
 
-Cela implique que le design doit être clairement annoté pour contribuer correctement à la recherche. Ces annotations ne font pas que décrire les points majeurs de l'artefact. Elles font le lien entre la question de recherche et l'artefact. De ce point de vue, l'artefact annoté peut servir de la même façon que le fait un *énoncé philosophique, identifiant les activités et les qualités jugées importantes pour la recherche et suggérant des façons de les aborder.*
+This implies that design must be clearly annotated to contribute properly to research. These annotations do not merely describe the major points of the artefact. They create the link between the research question and the artefact. From this point of view, the annotated artefact can serve in the same way as a *philosophical statement, identifying the activities and qualities judged important for research and suggesting ways to approach them.*
 
-Le portfolio annoté peut alors servir de façon encore plus pertinente comme alternative à un théorie plus formalisé pour discuter le design à la fois de façon conceptuelle et pratique. Alors qu'un artefact annoté représenterait un point dans l'espace de conception, une collection d'un même design ou d'une même thématique rassemblée en portfolio annoté formerait un espace, une zone de réflexion et permettrait d'en faire émerger les dimensions et donc la perspective du designer.
+The annotated portfolio can then serve even more pertinently as an alternative to a more formalised theory to discuss design both conceptually and practically. While an annotated artefact would represent a point in the design space, a collection of the same design or theme gathered as an annotated portfolio would form a space, an area of reflection and would allow its dimensions and therefore the designer's perspective to emerge.
 
-### Créer un portfolio annoté
+### Creating an annotated portfolio
 
-*Un portfolio annoté est donc un moyen d'expliquer la pensée de design qui conserve un lien indiciel intime avec les artefacts eux-mêmes tout en répondant à des préoccupations plus larges dans la communauté de la recherche.*
+*An annotated portfolio is therefore a way of explaining design thinking that maintains an intimate indexical link with the artefacts themselves while responding to broader concerns in the research community.*
 
-La fabrication d'un portfolio annoté se fait de façon incrémentale, ajoutant un artefact annoté l'un après l'autre.
+The creation of an annotated portfolio is done incrementally, adding one annotated artefact after another.
 
-- Chaque ajout demande de décrire l'ajout dans une forme qui le permet de la placer dans l'espace du portfolio annoté tel qu'il est lorsque l'ajout y entre.
-- Chaque ajout peut également faire évoluer la compréhension de cet espace, et donc revenir sur les artefact annoté déjà introduits pour les décrire à la lumière de la nouvelle forme de l'espace du portfolio annoté. Il est important de rappeler que l'artefact et son annotation s'informe l'un l'autre.
-- *L'importance des annotations dépend de la traçabilité des liens avec la conception, tout comme les conceptions sont éclairées par les annotations.* On note ainsi les proximités (eg similarités ou familiarités) et les distanciations (eg spécificité de l'un par rapport aux autres).
+- Each addition requires describing the addition in a form that allows it to be placed in the space of the annotated portfolio as it is when the addition enters.
+- Each addition can also evolve the understanding of this space, and therefore return to the already introduced annotated artefacts to describe them in light of the new form of the annotated portfolio space. It is important to remember that the artefact and its annotation inform each other.
+- *The importance of annotations depends on the traceability of links with the conception, just as conceptions are illuminated by annotations.* Proximities (e.g. similarities or familiarities) and distanciations (e.g. specificity of one compared to others) are thus noted.
 
-### Fonctionnalités d'un portfolio annoté
+### Functionalities of an annotated portfolio
 
-Les annotations transforment une collection de design en un portfolio, rassemblant des objets individuels en un ensemble systématique de travaux.
+Annotations transform a collection of designs into a portfolio, gathering individual objects into a systematic set of works.
 
-- Les annotations capturent les ressemblances entre les conceptions dans un maillage de similitudes et de différences.
-- En général, un portfolio peut être annoté de plusieurs façons différentes, reflétant des objectifs et des intérêts différents et avec des publics différents à l'esprit.
-- Les annotations et les designs qu'elles annotent s'informent mutuellement. Les artefacts sont éclairés par les annotations. Les annotations sont illustrées par les artefacts.
+- Annotations capture the resemblances between designs in a mesh of similarities and differences.
+- In general, a portfolio can be annotated in several different ways, reflecting different objectives and interests and with different audiences in mind.
+- Annotations and the designs they annotate inform each other. Artefacts are illuminated by annotations. Annotations are illustrated by artefacts.
 
-Nous pensons que l'assemblage d'un ensemble de travaux dans un portfolio annoté peut présenter un certain nombre d'avantages:
+We believe that assembling a set of works in an annotated portfolio can offer a number of advantages:
 
-- rendre compte du style de design d'un projet particulier, d'un studio ou d'une institution.
-- découvrir leurs valeurs esthétiques et sociopolitiques sous-jacentes au design d’un dispositif.
-- faire ressortir des caractéristiques qui n'ont peut-être pas été couvertes dans les analyses d'artefacts uniques. Cela peut faciliter l'évaluation de la valeur de la contribution scientifique et esthétique d'un ensemble de travaux.
+- accounting for the design style of a particular project, studio or institution.
+- discovering their underlying aesthetic and sociopolitical values in the design of a device.
+- bringing out characteristics that may not have been covered in analyses of single artefacts. This can facilitate the evaluation of the value of the scientific and aesthetic contribution of a set of works.
 
-Enfin, les traits caractéristiques des portfolios annotés sont que:
+Finally, the characteristic traits of annotated portfolios are that:
 
-- Les annotations communiquent la nature du portfolio et permettent sa comparaison avec d'autres.
-- Les annotations peuvent façonner la manière dont les artefacts sont appréciés et compris, et la valeur scientifique et esthétique qu'ils peuvent avoir, ainsi que suggérer des possibilités de recherche et de conception futures.
+- Annotations communicate the nature of the portfolio and allow its comparison with others.
+- Annotations can shape the way artefacts are appreciated and understood, and the scientific and aesthetic value they can have, as well as suggest future research and design possibilities.
 
-## Exemple
+## Example
 
 {{<linkBox "Lévy, P., Deckers, E.J.L., & Restrepo Cruz, M. (2012). When Movement Invites to Experience: a Kansei Design Exploration on Senses' Qualities. In the Proceedings of Kansei Engineering and Emotion Research International Conference 2012, KEER12 ([on CD]). Penghu, Taiwan: Japan Society of Kansei Engineering." "https://1drv.ms/b/s!AnQx_v88q65Qv4RcIjMajvoslWM_UA?e=uoT2Qe">}}
 

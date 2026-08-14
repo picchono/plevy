@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - PUDS05 / UE16 · Projet en design"
+title: "Master CESAAP - PUDS05 / UE16 · Design project"
 institution:
     heig: 1
     logo: cnam
@@ -53,16 +53,11 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignants" >}} Marion Nielsen · Patrick Dos Santos · Isabelle Sinclair · Marie Saby
+{{< slash "Teachers" >}} Marion Nielsen · Patrick Dos Santos · Isabelle Sinclair · Marie Saby
 
-Conception de la revue Plateau. Celle-ci est coordonnée par l'équipe enseignante des séminaires
-de recherche UE11 et 15, elle s'appuie sur les productions écrites et iconographiques des
-étudiants :
-- individuellement : contributions libres
-- collectivement : restitution de l'intensif Welcome (UE12) et des séminaires de recherche (UE11
-et 15)
-- collectivement : restitution d'articles dédiés au projet en design (UE17)
+Design of the Plateau journal. It is coordinated by the teaching team of the research seminars UE11 and 15, and is based on the students' written and iconographic productions:
+- individually: open contributions
+- collectively: restitution of the Welcome intensive (UE12) and the research seminars (UE11 and 15)
+- collectively: restitution of articles dedicated to the design project (UE17)
 
-Le comité de rédaction est constitué par les étudiants et les enseignants. Un enseignant en
-édition et design graphique accompagné le projet éditorial jusqu'à la fabrication matérielle de la
-revue.
+The editorial committee is made up of students and teachers. A teacher in publishing and graphic design supports the editorial project through to the physical production of the journal.

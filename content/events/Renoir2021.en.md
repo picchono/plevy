@@ -1,6 +1,6 @@
 ---
 slug: Entre-methodes-et-pratiques-en-design-un-moment-d_apprentissage
-title: "Entre méthodes et pratiques en design - un moment d'apprentissage"
+title: "Between methods and practices in design - a learning moment"
 tags: ['Renoir', 'méthods', 'learning', 'séminaire']
 layout: single
 searchFilter: Event
@@ -42,42 +42,42 @@ photogallery:
         link: "https://ecole-lycee-renoir-paris.fr/index.php/2021/11/11/journee-detude-creer-inventer-innover/"
 ---
 
-## Entre méthodes et pratiques en design - un moment d'apprentissage
+## Between methods and practices in design - a learning moment
 
-***Pierre Lévy, professeur du CNAM, Chaire Design Jean Prouvé***
+***Pierre Lévy, professor at CNAM, Jean Prouvé Chair of Design***
 
-Je voudrais m'intéresser aujourd'hui à la place des méthodes et des pratiques en design, et décrire leur entre-deux comme un lieu de développement des pratiques, c'est-à-dire comme moment d'apprentissage réflexif sur la pratique.
+Today I would like to focus on the place of methods and practices in design, and to describe their in-between as a place of practice development, that is, as a moment of reflexive learning about practice.
 
-### 1. Le design
+### 1. Design
 
-Le premier point d'attention porte sur la notion même de design et la façon dont il est décrit par la propre communauté de recherche en design. Un récent article (Blackler et al., 2021) propose une analyse de vingt ans de discussion sur l'une des listes de diffusion les plus actives et renommées dans le monde (PHD-DESIGN List, n.d.) et portant sur la définition du design. Sa conclusion est comme suit (traduit par l'auteur) :  
-*Malgré un discours robuste autour des perspectives pertinentes sur le design, les discussions de la liste sont et ont été répétitives, sans aucun progrès significatif vers une définition consolidée du design. […] Nous proposons qu'il n'est peut-être pas possible de définir le design de cette manière, et que le domaine devrait s'éloigner de la réitération et discuter de l'importance du rôle du design… (Blackler et al., 2021)*
+The first point of attention concerns the very notion of design and the way it is described by the design research community itself. A recent paper (Blackler et al., 2021) proposes an analysis of twenty years of discussion on one of the most active and renowned mailing lists in the world (PHD-DESIGN List, n.d.) concerning the definition of design. Its conclusion is as follows:
+*Despite a robust discourse around relevant perspectives on design, the list discussions are and have been repetitive, with no significant progress towards a consolidated definition of design. [...] We propose that it may not be possible to define design in this way, and that the field should move away from reiteration and discuss the importance of the role of design... (Blackler et al., 2021)*
 
-On note déjà que la tentative de définir le design semble inaboutie, et les auteurs de l'article suggèrent que cette tentative est inévitablement vouée à ne jamais aboutir. Le design ne se laisse pas définir et il serait temps de passer à autre chose : au lieu de questionner ce qu'est le design (description de l'état), il semble plus judicieux de questionner le rôle du design (description de l'action).
+We can already note that the attempt to define design seems inconclusive, and the authors of the paper suggest that this attempt is inevitably doomed to never succeed. Design cannot be defined and it is time to move on: instead of questioning what design is (description of state), it seems more judicious to question the role of design (description of action).
 
-La résistance du design à la définition semble également être exprimée par Johan Redström (2017) lorsqu'il s'intéresse aux fondations du design (traduit par l'auteur) :  
-*Le design semble fonder son existence sur des complexités issues de dichotomies. De négocier la forme et la function. D'engager l'artisanat et ses compétences, et de travailler avec la production industrielle. De travailler avec des processus ouverts et d'être profondément engagé à la méthode. D'être centré-utilisateur et design-driven. D'être art et science. [...]*  
-*Et le design peut aussi être remarquablement résilient et désireux de s'engager à tout cela, ce qui n'est ni blanc ou noir, mais complexe et coloré. [...]*  
-*La raison pour laquelle on apprécie tellement les dichotomies en design est parce qu'elle permet d'adresser le conflit, la collision, et les contradictions, et d'ouvrir ainsi de nouvelles perspectives et potentiels.*
+Design's resistance to definition also seems to be expressed by Johan Redström (2017) when he addresses the foundations of design:
+*Design seems to base its existence on complexities arising from dichotomies. To negotiate form and function. To engage craft and its skills, and to work with industrial production. To work with open processes and to be deeply committed to method. To be user-centered and design-driven. To be art and science. [...]*
+*And design can also be remarkably resilient and willing to engage with all of this, which is neither black or white, but complex and colorful. [...]*
+*The reason we so appreciate dichotomies in design is because it allows us to address conflict, collision, and contradictions, and thus open up new perspectives and potentials.*
 
-Ce que nous dit Redström est que l'on peut trouver la force du design (certains disent le pouvoir du design, nous dirons sa capacité d'action) au sein des dichotomies. C'est en effet dans la collision, la contradiction ou l'irrégularité (Lévy, 2018, 2019) que des opportunités nouvelles se créent et que des transformations sont possibles. Dans un entendement commun et global, c'est-à-dire sans friction, la transformation est bien moins probable.
+What Redström tells us is that we can find the strength of design (some say the power of design, we will say its capacity for action) within dichotomies. It is indeed in collision, contradiction or irregularity (Lévy, 2018, 2019) that new opportunities are created and transformations become possible. In a common and global understanding, that is, without friction, transformation is far less likely.
 
-La première conclusion est donc ainsi : Le design est insaisissable, et c'est plutôt une bonne nouvelle ! La pratique réflexive ainsi que l'acceptation de plusieurs perspectives et de dichotomies semblent donc pertinentes pour le design.
+The first conclusion is therefore: Design is elusive, and that is rather good news! Reflexive practice as well as the acceptance of multiple perspectives and dichotomies thus seem relevant for design.
 
-### 2. Méthodes et activités
-Les méthodes en design sont essentielles pour la formalisation des processus de conception en design. Elles le sont donc dans l'enseignement puisqu'elles permettent de clarifier un cadre pour le projet et à l'apprenant d'appréhender des complexités précédemment discutées. Elles le sont dans la pratique professionnelle à la fois pour la gestion du projet et pour la communication du et autour du projet.
+### 2. Methods and activities
+Methods in design are essential for the formalization of design processes. They are therefore important in teaching since they allow clarifying a framework for the project and for the learner to grasp the complexities previously discussed. They are important in professional practice both for project management and for the communication of and around the project.
 
-Toutefois, les méthodes existantes, et nous prenons ici pour exemples le double diamant proposé par le Design Council (2019) et le Model MV proposé par Kees Dorst (2015), semblent s'attacher à une séquence ordonnée d'activités prédéfinies, séquence souvent contredite par la pratique.
+However, existing methods, and we take here as examples the double diamond proposed by the Design Council (2019) and the MV Model proposed by Kees Dorst (2015), seem to focus on an ordered sequence of predefined activities, a sequence often contradicted by practice.
 
-La pratique peut être plus fidèlement décrite par les actions situées qui la constituent. C'est ce que propose le Reflective Transformative Design Process (C. Hummels & Frens, 2009) qui propose une perspective effective autant pour la pratique elle-même du design que pour son enseignement. La description d'activités permet de cadrer la pratique sans pour autant imposer un ordre hors contexte. L'expérience montre en effet que le projet doit s'adapter aux ressources accessibles et aux contraintes et opportunités qui se présentent.
+Practice can be more faithfully described by the situated actions that constitute it. This is what the Reflective Transformative Design Process (C. Hummels & Frens, 2009) proposes, offering an effective perspective both for design practice itself and for its teaching. The description of activities allows framing practice without imposing an out-of-context order. Experience indeed shows that the project must adapt to accessible resources and to the constraints and opportunities that arise.
 
-De plus, dans une période où le design s'investit de plus en plus dans l'arène sociale et politique, nous avons développé une nouvelle approche, les pratiques transformatives (C. C. M. Hummels et al., 2019), qui justement reprend cette idée de discuter la pratique au travers d'activités tout en incluant des notions liées entre autres à la participation sociale et à la complexité.
+Moreover, at a time when design is increasingly investing in the social and political arena, we have developed a new approach, transformative practices (C. C. M. Hummels et al., 2019), which precisely takes up this idea of discussing practice through activities while including notions related to social participation and complexity, among others.
 
-Ces approches ne prescrivent ni séquence ni réelle limite aux activités, si bien que la pratique ainsi décrite peut paraitre à la fois déstructurée et omnipotente. Mais c'est justement au travers de l'une des dichotomies proposées par Redström - travailler avec des processus ouverts et d'être profondément engagé à la méthode - qui expose la force de l'association contradictoire formée par la méthode et la pratique, celle d'une activité réflexive possible grâce au delta entre pratique et méthodes, qui invite justement à une réflexion transformative, et donc apprenante, de la pratique du design.
+These approaches prescribe neither sequence nor real limits to activities, so that the practice thus described may appear both deconstructed and omnipotent. But it is precisely through one of the dichotomies proposed by Redström - working with open processes and being deeply committed to method - which exposes the strength of the contradictory association formed by method and practice, that of a reflexive activity made possible by the delta between practice and methods, which precisely invites a transformative, and therefore learning, reflection on design practice.
 
-C'est donc là la seconde conclusion de ma présentation aujourd'hui : Les méthodes et !es activités forment donc une dichotomie en design. C'est au travers de cette dichotomie que la pratique du design s'établit, au travers d'une réflexion transformative et apprenante de la pratique.
+This is therefore the second conclusion of my presentation today: Methods and activities form a dichotomy in design. It is through this dichotomy that design practice establishes itself, through a transformative and learning reflection on practice.
 
-### Bibliographie
+### Bibliography
 Blackler, A., Swann, L., Chamorro-Koc, M., Mohotti, W. A., Balasubramaniam, T., & Nayak, R. (2021). Can We Define Design? Analyzing Twenty Years of Debate on a Large Email Discussion List. She Ji: The Journal of Design, Economics, and Innovation, 7(1), 41-70. https://doi.org/10.1016/j.sheji.2020.11.004
 
 Design Council. (2019). What is the framework for innovation? Design Council's evolved Double Diamond. Design Council. https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond

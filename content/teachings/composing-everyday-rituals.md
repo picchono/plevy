@@ -1,5 +1,5 @@
 ---
-title: "Composing Everyday Rituals"
+title: "Composer les rituels du quotidien"
 institution:
     heig: 1
     logo: TUe
@@ -35,14 +35,14 @@ video:
         youtube: "SEjlUccLlZs"
 ---
 
-Our lives are a collection of rituals. The way we wake up, the way we leave or enter our home, the way we prepare our suitcase before going on a trip are just simple examples of the many rituals each of us have constructed and that structure our everyday lives. These rituals are not rigid procedures, but a seemingly established series of activities from which experiential meaning emerges, and by which personal values are expressed.
-The aim of this course is to address these qualities embodied in rituals from an interaction design perspective, and to explore the relation between the designed artefacts and the rituals they are involved in. Through this exploration, we will gain insights in the relational nature of these influences between the artefacts, subjects, and the ritual (and by extension the experiential meanings and the expressed values). The main focus will be on how to capture, to clarify, and to compose rituals. The final discussion will address the merits of addressing rituals in interaction design, and how to design for meaningful rituals.
+Nos vies sont une collection de rituels. La façon dont nous nous réveillons, dont nous quittons ou entrons dans notre maison, dont nous préparons notre valise avant de partir en voyage sont autant d'exemples simples des nombreux rituels que chacun d'entre nous a construits et qui structurent notre vie quotidienne. Ces rituels ne sont pas des procédures rigides, mais une série d'activités apparemment établies d'où émerge un sens expérientiel, et par lesquelles des valeurs personnelles sont exprimées.
+L'objectif de ce cours est d'aborder ces qualités incarnées dans les rituels du point de vue du design d'interaction, et d'explorer la relation entre les artefacts conçus et les rituels dans lesquels ils sont impliqués. À travers cette exploration, nous acquerrons des connaissances sur la nature relationnelle de ces influences entre les artefacts, les sujets et le rituel (et par extension les significations expérientielles et les valeurs exprimées). L'accent principal sera mis sur la manière de capturer, de clarifier et de composer des rituels. La discussion finale portera sur les mérites d'aborder les rituels en design d'interaction, et sur la manière de concevoir pour des rituels significatifs.
 
-To address this course through a project, we will first focus on a personal everyday ritual, in order to find descriptive elements. We will then explore ways to enrich rituals through a project. Both will be used to contribute to the elaboration of a composing tools for rituals.
-The final day will close the module by a demonstration of the ritual with the newly designed series of artefacts.
+Pour aborder ce cours à travers un projet, nous nous concentrerons d'abord sur un rituel quotidien personnel, afin de trouver des éléments descriptifs. Nous explorerons ensuite des moyens d'enrichir les rituels à travers un projet. Les deux seront utilisés pour contribuer à l'élaboration d'outils de composition pour les rituels.
+Le jour final clôturera le module par une démonstration du rituel avec la nouvelle série d'artefacts conçus.
 
-{{< slash "Learning objectives" >}}
-- Describing rituals;
-- Implementing ritual-related interaction qualities;
-- Arguing the design decisions taken during implementation and their consequences;
-- Assessing or evaluating the ritual-related qualities in interaction.
+{{< slash "Objectifs d'apprentissage" >}}
+- Décrire les rituels ;
+- Implémenter des qualités d'interaction liées aux rituels ;
+- Argumenter les décisions de design prises lors de l'implémentation et leurs conséquences ;
+- Évaluer les qualités liées aux rituels dans l'interaction.

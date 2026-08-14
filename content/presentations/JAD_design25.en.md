@@ -1,6 +1,6 @@
 ---
 slug: designJAD25
-title: "Une histoire commentée du design"
+title: "A commented history of design"
 subsection: presentation
 layout: prez
 institution:
@@ -29,7 +29,7 @@ license:
     type: cc_bysa
     link: https://creativecommons.org/licenses/by-sa/4.0/
 frontphoto: "10iwprsFcit2M8BJOPDm6WWmXUdX91Bkb"
-description: "La pratique du design au travers de ses enjeux et de son histoire."
+description: "The practice of design through its issues and history."
 slides: [
     ["Au début...", "title"],
     ["design-histoire/naissance_du_design", "slide"],

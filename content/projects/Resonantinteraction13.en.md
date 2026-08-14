@@ -1,6 +1,6 @@
 ---
 slug: resonnant-interaction
-title: "Resonnant interaction"
+title: "Resonant interaction"
 layout: single
 searchFilter: Project
 subsection: other
@@ -14,11 +14,11 @@ institution:
     colo: "#c72125"
 date: 2013-12-10T16:27:15+02:00
 frontphoto: "1SEZPBKk8AG0TrhiNPuAur4bWeLBR4mO4"
-abstract: "Resonnant interaction, on irresistibleness through design"
+abstract: "Resonant interaction, on irresistibleness through design"
 projectby: "Kevin Andersen"
 video:
     video1:
         youtube: "hn51850hNvo"
-        title: "Resonnant interaction"
+        title: "Resonant interaction"
         speaker: "Kevin Andersen"
 ---

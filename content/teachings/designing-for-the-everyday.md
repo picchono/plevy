@@ -1,5 +1,5 @@
 ---
-title: "Designing for the everyday"
+title: "Concevoir pour le quotidien"
 institution:
     heig: 1
     logo: TUe
@@ -33,20 +33,20 @@ video:
         youtube: "xLdK9Ri3IWg"
 ---
 
-The everyday is the reality in which we act and perceive through unremarkable experiences. It is about going to sleep, waking up, cleaning, eating, dressing and undressing, reading, drinking tea or coffee… It is therefore in the flow of the infraordinary (Perec, 1989) and the banal, away of the extraordinary and of the memorable. What the everyday is actually less a matter of activity value than a matter of ‘specific mode of manifestation’ (Dewolf, 2008).
+Le quotidien est la réalité dans laquelle nous agissons et percevons à travers des expériences sans éclat. Il s'agit de se coucher, se réveiller, nettoyer, manger, s'habiller et se déshabiller, lire, boire du thé ou du café… Il se trouve donc dans le flux de l'infra-ordinaire (Perec, 1989) et du banal, loin de l'extraordinaire et du mémorable. Ce que le quotidien est réellement relève moins de la valeur de l'activité que d'un 'mode de manifestation spécifique' (Dewolf, 2008).
 
-The aim of this course is to address the qualities embodied in the everyday from an interaction design perspective, and to explore the relation between the designed artefacts and the everyday they are involved in. The main focus will be on how to capture the everyday and to design towards it. A continuous discussion throughout the elective will address the merits of addressing the everyday in interaction design.
+L'objectif de ce cours est d'aborder les qualités incarnées dans le quotidien du point de vue du design d'interaction, et d'explorer la relation entre les artefacts conçus et le quotidien dans lequel ils sont impliqués. L'accent principal sera mis sur la manière de capturer le quotidien et de concevoir en sa direction. Une discussion continue tout au long de l'électif portera sur les mérites d'aborder le quotidien en design d'interaction.
 
-To address this course through a project, we will first focus on a personal everyday ritual, in order to determine descriptive elements. We will then explore ways to approach the everyday through a project.  
-The final day will close the module by a demonstration of the design addressing the students’ inquiry on the everyday, and a discussion on these designs.
+Pour aborder ce cours à travers un projet, nous nous concentrerons d'abord sur un rituel quotidien personnel, afin de déterminer des éléments descriptifs. Nous explorerons ensuite des moyens d'approcher le quotidien à travers un projet.  
+Le jour final clôturera le module par une démonstration du design répondant à l'enquête des étudiants sur le quotidien, et une discussion sur ces designs.
 
-*Describe your street. Describe another one. Compare.  
-Make an inventory of your pockets, of your bag. Wonder about the origin, the use, the future of each of the objects you take out.  
-Question your tea spoons.  
-It matters little to me that these questions are fragmentary, barely indicative of a method, at most of a project. It matters a lot to me that they seem trivial and futile: that’s precisely what makes them as essential, if not more so, as so many others by which we have vainly tried to capture our truth.* (Perec, 1989)
+*Décrivez votre rue. Décrivez-en une autre. Comparez.  
+Faites l'inventaire de vos poches, de votre sac. Étonnez-vous de l'origine, de l'usage, de l'avenir de chacun des objets que vous en sortez.  
+Interrogez vos cuillères à thé.  
+Peu m'importe que ces questions soient fragmentaires, à peine indicatives d'une méthode, au plus d'un projet. M'importe beaucoup qu'elles semblent triviales et futiles : c'est précisément ce qui les rend aussi essentielles, sinon plus, que tant d'autres par lesquelles nous avons vainement tenté de saisir notre vérité.* (Perec, 1989)
 
-{{< slash "Learning objectives" >}}
-- Describing everyday rituals and the everyday;
-- Implementing details related to the everyday through interaction design;
-- Arguing the design decisions taken during implementation and their consequences;
-- Assessing or evaluating the everyday-related qualities in interaction.
+{{< slash "Objectifs d'apprentissage" >}}
+- Décrire les rituels du quotidien et le quotidien ;
+- Implémenter des détails liés au quotidien à travers le design d'interaction ;
+- Argumenter les décisions de design prises lors de l'implémentation et leurs conséquences ;
+- Évaluer les qualités liées au quotidien dans l'interaction.

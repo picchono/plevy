@@ -1,6 +1,6 @@
 ---
 slug: the-multi-disciplinary-nature-of-kansei-research-an-historical-approach
-title: "The multi-disciplinary nature of kansei research: an historical approach"
+title: "La nature multi-disciplinaire de la recherche kansei : une approche historique"
 tags: ['kansei', 'interdisciplinarité']
 layout: single
 searchFilter: Event
@@ -17,8 +17,8 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2012-07-13T15:46:21+02:00
-reference: "Lévy, P. (2012). The multi-disciplinary nature of kansei research: an historical approach. Penghu, Taiwan."
-abstract: "During the last three decades, kansei engineering has expanded greatly and has been highly recognized both in the industrial and the academic worlds. Nowadays, the term ‘kansei engineering’ is so strong in the kansei community that activities related to kansei, but not to engineering, keep on naming themselves kansei engineering research. This prevents the emancipation of other kansei disciplines, the enrichment of the field by the multiplication of point-of-views, and the dialogue between disciplines to understand better what kansei and kansei related disciplines are about. By presenting the historical path of kansei research and exploring the variety of disciplines within kansei research, I point out the multi-disciplinary nature of kansei research. Thereafter, I focus on three disciplines directly related to the making of physical artifacts: kansei engineering, kansei science, and kansei design. Whereas kansei engineering and kansei science have found their roots in scientifically established approaches (respectively engineering and brain science), kansei design intends to return to earlier Japanese philosophical or cultural works to rediscover the essence of kansei, and to use them as inspirational means for design. A case study of kansei research through design is also presented."
+reference: "Lévy, P. (2012). La nature multi-disciplinaire de la recherche kansei : une approche historique. Penghu, Taiwan."
+abstract: "Au cours des trois dernières décennies, l'ingénierie kansei s'est considérablement développée et a été largement reconnue tant dans le monde industriel que dans le monde académique. Aujourd'hui, le terme 'ingénierie kansei' est si fort dans la communauté kansei que les activités liées au kansei, mais pas à l'ingénierie, continuent de se nommer recherche en ingénierie kansei. Cela empêche l'émancipation d'autres disciplines kansei, l'enrichissement du champ par la multiplication des points de vue, et le dialogue entre les disciplines pour mieux comprendre ce que sont le kansei et les disciplines liées au kansei. En présentant le parcours historique de la recherche kansei et en explorant la variété des disciplines au sein de la recherche kansei, je souligne la nature multi-disciplinaire de la recherche kansei. Ensuite, je me concentre sur trois disciplines directement liées à la fabrication d'artefacts physiques : l'ingénierie kansei, la science kansei et le design kansei. Alors que l'ingénierie kansei et la science kansei ont trouvé leurs racines dans des approches scientifiquement établies (respectivement l'ingénierie et la science du cerveau), le design kansei entend revenir à des travaux philosophiques ou culturels japonais antérieurs pour redécouvrir l'essence du kansei, et les utiliser comme moyens d'inspiration pour le design. Une étude de cas de recherche kansei par le design est également présentée."
 video:
     video1:
         youtube: "nVvm8XQRSBE"

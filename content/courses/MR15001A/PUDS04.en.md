@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - PUDS04 / UE17 & UE18 · Médiation du projet en design"
+title: "Master CESAAP - PUDS04 / UE17 & UE18 · Design project mediation"
 institution:
     heig: 1
     logo: cnam
@@ -53,17 +53,9 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignants" >}} JC Valleran · Antoine Fermey · Clémence Mergy · Marion Nielsen · Patrick Dos Santos
+{{< slash "Teachers" >}} JC Valleran · Antoine Fermey · Clémence Mergy · Marion Nielsen · Patrick Dos Santos
 
-Temps d'élaboration et de production du projet de chaque collectif constitué. L'accompagnement
-s'organise sous la forme d'un double tutorat. Un enseignant de la Césaap, un tuteur extérieur
-désigné par le collectif d'étudiants. Celui-ci peut être expert du domaine traité, il peut constituer
-un apport méthodologique, conceptuel ou technique. Il peut également appartenir au champ de
-la sociologie, artistique ou de la communication.
-Ce temps est également dédié à l'organisation des sessions d'atelier au sein des quatre écoles
-Boulle, Duperré, Estienne et Ensaama en fonction des ressources nécessaires à la production des
-projets.
+Time for elaboration and production of each constituted collective's project. The support is organised in the form of a dual tutorial: a Césaap teacher and an external tutor designated by the student collective. The tutor may be an expert in the field being addressed, and can provide methodological, conceptual or technical input. They may also come from the fields of sociology, art or communication.
+This time is also dedicated to the organisation of workshop sessions within the four schools — Boulle, Duperré, Estienne and Ensaama — according to the resources needed for the production of the projects.
 
-Concevoir et organiser à travers une approche scénographique une exposition collective des
-projets en résidence. Concevoir et définir les supports de médiation physiques et numériques en
-lien avec la ou les expositions.
+To design and organise, through a scenographic approach, a collective exhibition of the residency projects. To design and define physical and digital mediation materials linked to the exhibition(s).

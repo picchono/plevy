@@ -1,6 +1,6 @@
 ---
 slug: Cnam-HigherEduc
-title: "Cnam & the French higher education system"
+title: "Cnam et le système d'enseignement supérieur français"
 subsection: presentation
 layout: presentation
 institution:

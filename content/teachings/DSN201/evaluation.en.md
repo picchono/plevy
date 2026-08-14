@@ -1,5 +1,5 @@
 ---
-title: "DSN201 · L'évaluation"
+title: "DSN201 · Assessment"
 slug: "evaluation"
 institution:
     heig: 1
@@ -22,8 +22,8 @@ teacher:
         name: "Pierre Lévy"
 frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
 ---
-## Soumettre le papier
+## Submit the article
 
-## Relecture
+## Peer review
 
-## Modifications
+## Revisions

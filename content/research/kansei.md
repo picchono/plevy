@@ -1,5 +1,5 @@
 ---
-title: "Kansei studies, kansei design"
+title: "Études kansei, design kansei"
 slug: programme-kansei
 date: 2003-10-16T20:03:12+02:00
 frontpage: true
@@ -17,4 +17,4 @@ quote:
     quotedate: "1687"
 ---
 
-For over three decades, kansei engineering has expanded greatly and has become a significant discipline both in the industrial and the academic worlds. In this paper, I present the current situation of kansei engineering, and plead for the emancipation of other disciplines, as part of kansei research as well. By reconstructing the historical path of kansei research and exploring the variety of disciplines within kansei research, I point out the opportunities for kansei design to emerge. Whereas kansei engineering and kansei science have found their roots in scientifically established approaches (respectively engineering and brain science), kansei design intends to return to earlier Japanese philosophical or cultural works to rediscover the essence of kansei, and to use them as inspirational means for design. This new discipline certainly needs to be elaborated further.
+Depuis plus de trois décennies, l'ingénierie kansei s'est considérablement développée et est devenue une discipline importante tant dans le monde industriel qu'académique. Dans cet article, je présente la situation actuelle de l'ingénierie kansei, et plaide pour l'émancipation d'autres disciplines, en tant que partie intégrante de la recherche kansei également. En reconstruisant le parcours historique de la recherche kansei et en explorant la variété des disciplines au sein de la recherche kansei, je souligne les opportunités pour l'émergence du design kansei. Alors que l'ingénierie kansei et la science kansei ont trouvé leurs racines dans des approches scientifiquement établies (respectivement l'ingénierie et les sciences du cerveau), le design kansei entend revenir à des travaux philosophiques ou culturels japonais plus anciens pour redécouvrir l'essence du kansei, et les utiliser comme moyens d'inspiration pour le design. Cette nouvelle discipline nécessite assurément d'être élaborée davantage.

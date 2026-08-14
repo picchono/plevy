@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - PUDS01 / UE11 · Séminaire de recherche"
+title: "Master CESAAP - PUDS01 / UE11 · Research seminar"
 institution:
     heig: 1
     logo: cnam
@@ -53,6 +53,6 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignantes" >}} Marion Nielsen · Isabelle Sinclair · Marie Saby
+{{< slash "Teachers" >}} Marion Nielsen · Isabelle Sinclair · Marie Saby
 
-Le séminaire de recherche définit un thème associé à l'année de formation et au projet. Autour d'une thématique proposée cinq acteurs du champ de la création, de la production et de la culture rencontrent les étudiants à travers des présentations documentée de 2h. Celles-ci donnent lieu à des échanges et des discussions, un collectif d'étudiant est chargé d'accueillir et d'organiser la venue des intervenants invités. La session fait l'objet d'une captation audio-visuelle et textuelle. La thématique retenue entre en résonance avec le lieu de la résidence et les enjeux contemporains, par exemple : en résidence au Mobilier national "Faire collectif", "Mobilier-Immobilier", "La narration", "Nouvelles alchimies", "Hospitalité".
+The research seminar defines a theme associated with the training year and the project. Around a theme proposed by five professionals from the fields of creation, production and culture, students meet through documented 2-hour presentations. These give rise to exchanges and discussions; a group of students is responsible for welcoming and organising the visit of the invited speakers. The session is recorded in audio-visual and textual form. The chosen theme resonates with the residency location and contemporary issues, for example: in residency at the Mobilier national "Collective making", "Furniture-Real estate", "Narrative", "New alchemies", "Hospitality".

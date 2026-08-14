@@ -1,5 +1,5 @@
 ---
-title: "USMC85 · Presenting"
+title: "USMC85 · Présenter"
 slug: "Presenting"
 institution:
     heig: 1
@@ -7,7 +7,7 @@ institution:
     short: Cnam
     name: "Conservatoire national des Arts et Métiers"
     web: "https://www.cnam.fr/"
-description: "Basics of presentation"
+description: "Bases de la présentation"
 date: 2024-10-01T00:55:28+02:00
 draft: false
 layout: presentation

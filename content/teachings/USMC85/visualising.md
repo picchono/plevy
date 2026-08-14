@@ -1,5 +1,5 @@
 ---
-title: "USMC85 · Visualising"
+title: "USMC85 · Visualiser"
 slug: "visualising"
 institution:
     heig: 1
@@ -23,80 +23,80 @@ teacher:
 frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 ---
 
-## EXERCISE - Drawing a map
-Draw the map of the ground floor of Cnam Conté (10min).  
-Compare to the actual map (provided in class)
+## EXERCICE - Dessiner une carte
+Dessinez la carte du rez-de-chaussée du Cnam Conté (10min).  
+Comparez avec la carte réelle (fournie en cours)
 
 
 ## Introduction
-**Visualisation** is any technique for creating images, diagrams, or animations to communicate a message. Visualization through visual imagery has been an effective way to communicate both abstract and concrete ideas since the dawn of humanity (wikipedia).
+La **visualisation** est toute technique permettant de créer des images, diagrammes ou animations pour communiquer un message. La visualisation à travers l'imagerie visuelle a été un moyen efficace de communiquer des idées tant abstraites que concrètes depuis les débuts de l'humanité (wikipedia).
 
-## EXERCISE - Drawing a map
-Draw the map of the ground floor of Cnam Conté (10min).  
-Compare to the actual map (provided in class)
+## EXERCICE - Dessiner une carte
+Dessinez la carte du rez-de-chaussée du Cnam Conté (10min).  
+Comparez avec la carte réelle (fournie en cours)
 
 ## Exemples
-**Cartography**: The Ptolemy world map, reconstituted from Ptolemy's Geographia (circa 150) (source: wikipedia) 
+**Cartographie** : La carte du monde de Ptolémée, reconstituée à partir de la Geographia de Ptolémée (vers 150) (source : wikipedia)
   ![The Ptolemy world map, reconstituted from Ptolemy's Geographia (circa 150). (source: wikipedia)](https://upload.wikimedia.org/wikipedia/commons/2/23/PtolemyWorldMap.jpg)
 
-**History**: Charles Minard's information graphic of Napoleon's march (source: wikipedia)
+**Histoire** : Le graphique d'information de Charles Minard sur la marche de Napoléon (source : wikipedia)
   ![Charles Minard's information graphic of Napoleon's march (source: wikipedia)](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Minard%27s_Map_%28vectorized%29.svg/1600px-Minard%27s_Map_%28vectorized%29.svg.png)
 
-**Socio-economy**: Petroleum flow:
+**Socio-économie** : Flux de pétrole :
   ![Petroleum in ou daily lives (source: https://datavizproject.com)](https://datavizproject.com/wp-content/uploads/examples/oil-flow-daily-lives.jpg)
 
-**Physical dataviz**: Keyboard Frequency Sculpture (source: [https://dataphys.org](https://dataphys.org/))
+**Dataviz physique** : Sculpture de fréquence de clavier (source : [https://dataphys.org](https://dataphys.org/))
   ![Keyboard Frequency Sculpture](http://dataphys.org/list/images/uploads/2014/10/keyboard351-597x360.jpg)
 
-**Cortex Man** - Sensory Model & Motor Model: (source: [https://www.threeding.com](https://www.threeding.com/)) 
+**Cortex Man** - Modèle sensoriel & Modèle moteur : (source : [https://www.threeding.com](https://www.threeding.com/))
   ![Cortex Man - Sensory Model) (source: https://www.threeding.com)](https://cdn.threeding.com/pi/kNiN/4Ybv8FqtCH2xXSegVYkNiN-6A8B.webp)
-  ![Cortex Man - Motor Model (source: https://www.threeding.com)](https://cdn.threeding.com/pi/xFTx/4Ybv8G8M6YnGvPw5XAxFTx-14JAP.webp)
+  ![Cortex Man - Motor Model (source: https://www.threeding.com)](https://cdn.threeding.com/pi/xFTx/4Ybv8G8M6YnGvPwwXAxFTx-14JAP.webp)
 
 
-### Considerations
-- Know your audience and the aim of your communication - This will impact every aspect of the visualisation
-- Tell a story
-- Keep your visualisations simple and digestible
+### Considérations
+- Connaissez votre audience et l'objectif de votre communication - Cela impactera chaque aspect de la visualisation
+- Racontez une histoire
+- Gardez vos visualisations simples et digestes
 
-### Structural elements
-Visualisation focuses on purpose, clarity, inviting and effective communication of data. Key principles include:
-- Have a clear purpose for your visualisation that aligns with the message you want to convey and the way you want the audience to receive your message. Tailoring visuals to the specific audience ensures comprehension and impact.
-- Choose the right visualisation type based on the structure and nature of your data. For example, use Sankey diagrams to show flows, radar charts for comparing variables, waterfall charts for running totals, and Gantt charts for timelines. Select charts that accurately represent the story without clutter.
-- Maintain consistency across the entire work to avoid confusion. 
-- Use predictable layout patterns for an obvious reading flow, so viewers are guided through the story.
-- Avoid clutter, unnecessary decoration (aka chartjunk), and overly complex visuals. Keep designs simple and focused on communicating the essential information. 
-- If you design a dashboard, limit the number of visualisations (3-4 recommended) to aid understanding and engagement. Group related filters or controls and make the dashboard visually attractive and easy to navigate.[](https://www.xenonstack.com/blog/best-practices-data-visualization)
-- Apply colour intentionally and strategically. Use colour to highlight key information and create contrast for readability. Stick to a simple colour palette and use intuitive associations. Avoid using too many colours or shades that blend data.
-- Keep the quality of the visual (resolution for pixels vs vectorialisation) for the type of presentation (print vs screen).
+### Éléments structurels
+La visualisation se concentre sur l'objectif, la clarté, l'invitation et la communication efficace des données. Les principes clés incluent :
+- Ayez un objectif clair pour votre visualisation qui s'aligne sur le message que vous voulez transmettre et la façon dont vous voulez que l'audience reçoive votre message. Adapter les visuels à l'audience spécifique assure la compréhension et l'impact.
+- Choisissez le bon type de visualisation en fonction de la structure et de la nature de vos données. Par exemple, utilisez des diagrammes Sankey pour montrer des flux, des diagrammes radar pour comparer des variables, des diagrammes en cascade pour des totaux cumulés, et des diagrammes de Gantt pour des calendriers. Sélectionnez des graphiques qui représentent fidèlement l'histoire sans encombrement.
+- Maintenez la cohérence dans l'ensemble du travail pour éviter la confusion.
+- Utilisez des schémas de mise en page prévisibles pour un flux de lecture évident, guidant ainsi les spectateurs à travers l'histoire.
+- Évitez l'encombrement, la décoration inutile (aussi appelée « chartjunk ») et les visuels trop complexes. Gardez les designs simples et concentrés sur la communication de l'information essentielle.
+- Si vous concevez un tableau de bord, limitez le nombre de visualisations (3-4 recommandés) pour faciliter la compréhension et l'engagement. Groupez les filtres ou contrôles liés et rendez le tableau de bord visuellement attractif et facile à naviguer.[](https://www.xenonstack.com/blog/best-practices-data-visualization)
+- Appliquez la couleur intentionnellement et stratégiquement. Utilisez la couleur pour mettre en évidence les informations clés et créer du contraste pour la lisibilité. Restez sur une palette de couleurs simple et utilisez des associations intuitives. Évitez d'utiliser trop de couleurs ou de nuances qui mélangent les données.
+- Maintenez la qualité du visuel (résolution pour les pixels vs vectorialisation) adaptée au type de présentation (impression vs écran).
 
-### Tools
-There are many tools to do illustration:
-- do not underestimate drawing by hand!  
-- [Inkscape](https://inkscape.org/) / [Krita](https://krita.org/) / Canva  
+### Outils
+Il existe de nombreux outils pour faire de l'illustration :
+- ne sous-estimez pas le dessin à la main !
+- [Inkscape](https://inkscape.org/) / [Krita](https://krita.org/) / Canva
 - MS PowerPoint/Google slides/Adobe Illustrator
 
 &nbsp;
 
-Visualisations can be supported by visual repositories:
-- **Photos:** [Unsplash](https://unsplash.com/) / [Pexels](https://www.pexels.com/)...  
-- **Illustrations:** [Storyset](https://storyset.com/) / [Smashicons](https://smashicons.com/) / [Iconscout](https://iconscout.com/)...  
-- **Icons:** [Flaticon](https://www.flaticon.com/) / [Google icons](https://fonts.google.com/icons) / [Icones8](https://icones8.fr/icons)...
-- **Fonts:** [Google Fonts](https://fonts.google.com/) / [Fontshare](https://www.fontshare.com/fonts/satoshi) / [Bunny fonts](https://fonts.bunny.net/)...
-- **Color pannel**: [Colorhunt](https://colorhunt.co/) / [Colormind](http://colormind.io/) 
+Les visualisations peuvent être soutenues par des dépôts visuels :
+- **Photos :** [Unsplash](https://unsplash.com/) / [Pexels](https://www.pexels.com/)...
+- **Illustrations :** [Storyset](https://storyset.com/) / [Smashicons](https://smashicons.com/) / [Iconscout](https://iconscout.com/)...
+- **Icônes :** [Flaticon](https://www.flaticon.com/) / [Google icons](https://fonts.google.com/icons) / [Icones8](https://icones8.fr/icons)...
+- **Polices :** [Google Fonts](https://fonts.google.com/) / [Fontshare](https://www.fontshare.com/fonts/satoshi) / [Bunny fonts](https://fonts.bunny.net/)...
+- **Palette de couleurs** : [Colorhunt](https://colorhunt.co/) / [Colormind](http://colormind.io/)
 
 &nbsp;
 
-- [Example of infographics URL](https://1drv.ms/f/c/50aeab3cfffe3174/EnQx_v88q64ggFCnJSwAAAABBTIDv0hZdI9_pdrZQosGCw?e=X8es8a)
+- [Exemple d'URL d'infographies](https://1drv.ms/f/c/50aeab3cfffe3174/EnQx_v88q64ggFCnJSwAAAABBTIDv0hZdI9_pdrZQosGCw?e=X8es8a)
 
 &nbsp;
 
-### Visualising assignment
-Deliverable: all the visualisations, all the prompts, and your quick reflections, all  organised in a timely order.
+### Exercice de visualisation
+Livrable : toutes les visualisations, tous les prompts, et vos réflexions rapides, le tout organisé de manière chronologique.
 
-You are assessed on your reflections, the apparent construction towards the construction of a better text, so I can understand why the last one is best.
-The exercise should not take more than 1h.
+Vous êtes évalués sur vos réflexions, la construction apparente vers la construction d'un meilleur texte, afin que je puisse comprendre pourquoi le dernier est le meilleur.
+L'exercice ne devrait pas prendre plus d'1h.
 
 
-To be submitted @ [pierre.levy@lecnam.net](mailto:pierre.levy@lecnam.net) with the following title for the email and for the document: USMC85_visualising-\<your SISCOL number\>-\<your Name\>
+À soumettre @ [pierre.levy@lecnam.net](mailto:pierre.levy@lecnam.net) avec le titre suivant pour l'email et pour le document : USMC85_visualising-\<votre numéro SISCOL\>-\<votre Nom\>
 
-The format should be in pdf. There is no format imposed, but do not hesitate to propose one (no need to justify unless necessary to understand the document itself). **Diagrams are not allowed.**
+Le format doit être en pdf. Il n'y a pas de format imposé, mais n'hésitez pas à en proposer un (pas besoin de justifier sauf si nécessaire pour comprendre le document lui-même). **Les diagrammes ne sont pas autorisés.**

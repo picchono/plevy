@@ -1,6 +1,6 @@
 ---
 slug: TP
-title: "Pratiques transformatives"
+title: "Transforming practices"
 subsection: presentation
 layout: presentation
 institution:

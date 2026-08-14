@@ -1,6 +1,6 @@
 ---
 slug: master_design-art_contextes_techniques_usages
-title: "Master Design · Art, contextes, techniques, usages"
+title: "Master Design · Art, contexts, techniques, uses"
 layout: course
 searchFilter: Course
 date: 2026-09-01T16:27:15+02:00
@@ -46,16 +46,13 @@ link:
     2: ["Cnam", "website", "#"]
     3: ["Certificat", "website", "https://bedeo.cnam.fr/public/cursus/view/CS11400A"]
 ---
-Cette formation entend à cet effet associer la pratique artistique, la connaissance technique et l'attention aux
-usages pour deux types de métiers :
-- l'exploration artistique via la technique, et donc l'exploration technique via la pratique artistique et le design
-- faire entrer la perspective créatrice et critique de l'art et du design dans le milieu industriel
+This programme aims to combine artistic practice, technical knowledge and attention to uses for two types of professions:
+- artistic exploration through technique, and therefore technical exploration through artistic practice and design
+- bringing the creative and critical perspective of art and design into the industrial environment
 
-Pour cela, les compétences visées sont:
-- une ou plusieurs pratiques artistiques ou en métiers d'art,
-- associées à des connaissances techniques poussées des mediums et des outils intégrant ces pratiques,
-- et à des connaissances liées à l'intégration de ces compétences dans un contexte socio-économique et
-industriel.
+To achieve this, the targeted skills are:
+- one or more artistic practices or craft skills,
+- associated with advanced technical knowledge of the mediums and tools integrating these practices,
+- and knowledge related to the integration of these skills in a socio-economic and industrial context.
 
-Ce parcours intègre de plus le Certificat de spécialisation d'ingénierie de la culture et de la création
-CS11400A.
+This programme also includes the Certificate of Specialisation in Cultural and Creation Engineering CS11400A.

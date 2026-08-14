@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - PUDS07 / UE 14 · Médiation en langue anglaise"
+title: "Master CESAAP - PUDS07 / UE 14 · Mediation in English"
 institution:
     heig: 1
     logo: cnam
@@ -53,9 +53,6 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignante" >}} Fabienne Bego
+{{< slash "Teacher" >}} Fabienne Bego
 
-Accompagnement des différents collectifs de projet vers la médiation audiovisuelle des restitution
-de projet en langue anglaise. Production d'une capsule vidéo communicante afin de restituer la
-synthèse des projets élaborés durant les UE16 et 17. Valorisation de l'approche orale et la
-médiation numérique associée.
+Support for the various project collectives in their audiovisual mediation of project outcomes in English. Production of a communicative video capsule to present the synthesis of the projects developed during UE16 and 17. Emphasis on oral presentation and associated digital mediation.

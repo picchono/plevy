@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - PUDS03 / UE15 · Séminaire de recherche associé"
+title: "Master CESAAP - PUDS03 / UE15 · Associated research seminar"
 institution:
     heig: 1
     logo: cnam
@@ -53,8 +53,6 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignantes" >}} Marion Nielsen · Isabelle Sinclair · Marie Saby
+{{< slash "Teachers" >}} Marion Nielsen · Isabelle Sinclair · Marie Saby
 
-L'UE est associée au contenu du séminaire de recherche du semestre 1. Les captation des
-rencontres avec les différents intervenants font l'objet d'une transcription écrite et documentée
-sous la forme d'article de 10000 signes.
+This UE is associated with the content of the research seminar from semester 1. The recordings of the meetings with the various speakers are transcribed and documented in the form of a 10,000-character article.

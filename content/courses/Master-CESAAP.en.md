@@ -1,6 +1,6 @@
 ---
 slug: master_design-creation_projet_transdisciplinarite
-title: "Master Design · Parcours Création, Projet, Transdisciplinarité"
+title: "Master Design · Track Creation, Project, Transdisciplinarity"
 layout: course
 searchFilter: Course
 date: 2021-10-01T16:27:15+02:00
@@ -18,7 +18,7 @@ Diploma:
     level3:
         type: "Parcours"
         name: "Création, projets, transdisciplinarité"
-description: "Ce master en résidence a pour objectif de favoriser le travail transdisciplinaire sous la forme de collectifs de projets en design en croisant les problématiques de l’institution hôte, les enjeux contemporains sociaux et environnementaux."
+description: "This residential master's programme aims to foster transdisciplinary work through design project collectives, crossing the issues of the host institution with contemporary social and environmental challenges."
 institution:
     heig: 1
     logo: cnam
@@ -35,7 +35,7 @@ collaboration:
     partner2:
         logo: ensaama
         short: Ensaama
-        name: "École Nationale Supérieure des Arts Appliqués et des Métiers d’Art"
+        name: "École Nationale Supérieure des Arts Appliqués et des Métiers d'Art"
         web: "https://ensaama.net/"
         heig: 1
     partner3:
@@ -103,15 +103,15 @@ video:
         vimeo: "504830775"
 ---
 
-Créée à la rentrée 2015 par la Conférence des écoles supérieures d’arts appliqués de Paris - Césaap -, la formation Design : création, projet, transdisciplinarité est un diplôme Master 2 délivré par le Conservatoire National des Arts et Métiers - CNAM -. Elle réunit des étudiants issus des différents champs du design.
+Created at the start of the 2015 academic year by the Conference of Paris higher applied arts schools - Césaap -, the Design: creation, projet, transdisciplinarité programme is a Master 2 degree awarded by the Conservatoire National des Arts et Métiers - CNAM. It brings together students from the various fields of design.
 
-Pour former des designers-chercheurs capables de questionner les formes de l’environnement humain tout autant que leur propre champ disciplinaire, ce master a fait le choix d’un fonctionnement en résidence. Plongés en immersion, les étudiants découvrent, analysent et interrogent l’institution qui les accueille, investissent ses ressources et ses process, identifient et engagent des projets qui ont force de proposition pour l’avenir.
+To train designer-researchers capable of questioning the forms of the human environment as well as their own disciplinary field, this master has chosen a residency-based operation. Plunged into immersion, students discover, analyse and question the host institution, invest its resources and processes, and identify and engage projects that have the power of proposition for the future.
 
-L'Académie du Climat accueille cette expérimentation. Lieu d’intelligence collective et d’action, cette jeune institution souhaite donner les moyens de comprendre, d’expérimenter et de se mobiliser sur les défis climatiques, comme les possibilités d’actions pour construire collectivement les chemins vers un futur désirable.
+The Académie du Climat hosts this experimentation. A place of collective intelligence and action, this young institution aims to provide the means to understand, experiment and mobilise on climate challenges, as well as the possibilities of action to collectively build the paths towards a desirable future.
 
-Les jeunes designers initient des projets collectifs qui investissent tous les champs du design, du protocole de médiation à la production artisanale. Collectivement et individuellement, ils font appel aux ressources de l’institution, entreprennent collectes et inventaires de ces ressources et l'enrichissent, engagent le réemploi de matières d’œuvre, et mobilisent les forces vives de l’institution en proposant, in situ, rencontres, échanges, expertises et partages de connaissances.
+The young designers initiate collective projects that invest all fields of design, from mediation protocols to artisanal production. Collectively and individually, they draw on the institution's resources, undertake collections and inventories of these resources and enrich them, engage in the reuse of materials, and mobilise the institution's vital forces by proposing, in situ, meetings, exchanges, expertise and knowledge sharing.
 
-Le master Design, création, projet, transdisciplinarité propose 20 places aux étudiants issus des Diplômes supérieurs des Arts Appliqués - DSAA - ou d'un master 1 lié aux domaines des arts et du design. Les étudiants sont accueillis en résidence à l'Académie du Climat du mois d'octobre au mois d'avril. Ils sont accompagnés d'enseignants issus des quatre écoles supérieures d'arts appliqués de Paris - Boulle, Duperré, Estienne, Ensaama -. Ils constituent des collectifs de recherche et de création afin d'identifier des enjeux et des sujets adaptés au contexte de la résidence. Les enseignements et le tutorat de projet se développent dans le cadre de l'Académie du Climat pour la résidence, au CNAM pour une partie des cours et sur les plateaux techniques des quatre écoles pour les phases de production.
+The Master Design, création, projet, transdisciplinarité offers 20 places to students holding a Diplôme supérieur des Arts Appliqués - DSAA - or a master 1 related to the fields of art and design. Students are hosted in residency at the Académie du Climat from October to April. They are accompanied by teachers from the four Paris higher applied arts schools - Boulle, Duperré, Estienne, Ensaama. They form research and creation collectives to identify stakes and topics adapted to the residency context. Teaching and project tutoring develop within the framework of the Académie du Climat for the residency, at CNAM for part of the courses, and on the technical platforms of the four schools for the production phases.
 
-Les étudiants conçoivent les contenus éditoriaux de la revue du master - Plateau - et les expositions dédiées à leurs productions.  
-L'année s'achève avec un stage de cinq mois en entreprise ou dans le cadre d'une institution culturelle.
+Students design the editorial content of the master's journal - Plateau - and the exhibitions dedicated to their productions.  
+The year ends with a five-month internship in a company or within a cultural institution.

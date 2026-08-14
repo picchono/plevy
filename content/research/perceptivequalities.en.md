@@ -1,5 +1,5 @@
 ---
-title: "Qualités perceptives"
+title: "Perceptive qualities"
 slug: programme-perceptive-qualities
 date: 2015-10-16T20:03:12+02:00
 frontpage: true
@@ -11,7 +11,7 @@ subsection: research-programme
 current: false
 frontphoto: "1OCV84I23bxeFlGB5uCJGgs4d3WPgPDbK"
 quote:
-    quoteline: "Et ceux qui dansaient furent considérés comme fous par ceux qui ne pouvaient entendre la musique."
+    quoteline: "And those who were seen dancing were thought to be insane by those who could not hear the music."
     quoteauthor: "Friederich Nietsche"
     quotedate: "1885"
 ---

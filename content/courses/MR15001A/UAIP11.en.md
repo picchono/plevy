@@ -1,5 +1,5 @@
 ---
-title: "Master CESAAP - UAIP11 / UE19 · Stage en entreprise"
+title: "Master CESAAP - UAIP11 / UE19 · Company internship"
 institution:
     heig: 1
     logo: cnam
@@ -53,11 +53,8 @@ frontphoto: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd.jpg"
 frontphotomini: "https://live.staticflickr.com/65535/52036439015_8b0d8a9ccd_m.jpg"
 ---
 
-{{< slash "Enseignants" >}} Jean-Christophe Valleran · Antoine Fermey
+{{< slash "Teachers" >}} Jean-Christophe Valleran · Antoine Fermey
 
-Validation du temps de stage professionnel (de 24 semaines minimum) sous la forme d'une restitution orale documentée
-durant une soutenance de 20 minutes.
+Validation of the professional internship period (minimum 24 weeks) through a documented oral presentation during a 20-minute defence.
 
-Restituer les enjeux professionnels, les pratiques spécifiques, l'organisation de l'institution ou de
-l'entreprise, se positionner individuellement par rapport à son cursus, une poursuite d'étude ou
-les perspectives d'intégration professionnelle à l'issue du stage.
+To present the professional issues, specific practices, the organisation of the institution or company, to position oneself individually in relation to one's course of study, further studies or professional integration prospects following the internship.

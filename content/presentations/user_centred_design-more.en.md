@@ -14,7 +14,7 @@ license:
     type: cc_bysa
     link: https://creativecommons.org/licenses/by-sa/4.0/
 frontphoto: "1nRle21d4qty7x6xPHIBlbXoQRWC9XMk5"
-description: "Présentation du design d'interaction tangible"
+description: "Presentation of user-centred design"
 slides: [
     ["google", "17ybzvTgnnAnq9HmsbmY_GFZNWBjDWjBB"],
     ["google", "1nqgcx8MWqLdAc2bQ1h_qoc9NPFweFusr"],

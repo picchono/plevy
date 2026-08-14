@@ -1,6 +1,6 @@
 ---
 slug: kansei-et-kansei-design
-title: "Kansei et kansei design"
+title: "Kansei and kansei design"
 layout: single
 searchFilter: Event
 publitype: presentation
@@ -17,6 +17,6 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2011-03-31T21:21:51+02:00
-reference: "Lévy, P. (2011). Kansei et kansei design, presented at l'École Nationale Supérieure de la Création Industrielle, Paris, France. March 31st, 2011."
-abstract: "Auparavant, il a été maître de conférence en “Service Product Design” a Chiba University et à la Kansei Information Design de University of Tsukuba, au Japon. Docteur en Science de cette même université, il a un master d’ingénieur mécanique de l’Université de Technologie de Compiègne. En tant que chercheur, il s’est intéressé à tous les aspects de partage (des connaissances, espace, temps, compétences, motivation …), conduisant à la socialisation et à la créativité. Il pense que la recherche kansei et le design sont deux approches d’ouverture d’esprit qui peuvent apporter des idées originales aux mondes universitaires, industriels et sociaux. Une approche phénoménologique peut aider à mieux comprendre et à améliorer leurs relations, souvent complexes, avec les différents aspects du monde en réseau."
+reference: "Lévy, P. (2011). Kansei and kansei design, presented at l'École Nationale Supérieure de la Création Industrielle, Paris, France. March 31st, 2011."
+abstract: "Previously, he was a lecturer in 'Service Product Design' at Chiba University and in Kansei Information Design at the University of Tsukuba, Japan. PhD in Science from the same university, he holds a master's degree in mechanical engineering from the Université de Technologie de Compiègne. As a researcher, he has been interested in all aspects of sharing (knowledge, space, time, skills, motivation...), leading to socialization and creativity. He believes that kansei research and design are two open-minded approaches that can bring original ideas to the academic, industrial and social worlds. A phenomenological approach can help to better understand and improve their often complex relationships with the various aspects of the networked world."
 ---

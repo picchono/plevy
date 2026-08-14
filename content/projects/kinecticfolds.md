@@ -1,6 +1,6 @@
 ---
 slug: kinectic-folds-interaction-priming
-title: "Kinectic Folds: Interaction Priming"
+title: "Kinectic Folds : amorcer l'interaction"
 layout: single
 searchFilter: Project
 subsection: project
@@ -17,7 +17,7 @@ institution:
     web: "https://www.tue.nl/en/"
     colo: "#c72125"
 date: 2016-02-03T16:27:15+02:00
-abstract: "This research focuses on what happens to our relationship with objects when they come alive and engage in reciprocal communication with us.<br/>An (es)sense research project"
+abstract: "Cette recherche se concentre sur ce qui arrive à notre relation avec les objets lorsqu'ils prennent vie et s'engagent dans une communication réciproque avec nous.<br/>Un projet de recherche (es)sense"
 projectby: "Kevin N. Andersen"
 frontphoto: "1GP3kpPPTBK2kZ0L-LPWgb1xx8KEVFUOn"
 video:
@@ -27,4 +27,4 @@ video:
         speaker: "Kevin N. Andersen"
 ---
 
-The prototype was inspired by the moment of perceptual crossing that occurs when you meet a stray cat in the street, and a moment of anticipation makes time stand still, as you and the cat try to figure each other out.<br/>Using a single sheet of folded paper and embedding it with motors and custom-built touch-capacitive sensors, an object which breathes and responds to the presence of human touch was designed, creating the perception that the Kinetic Fold is alive.
+Le prototype a été inspiré par le moment de croisement perceptif qui se produit lorsque vous rencontrez un chat errant dans la rue, et qu'un moment d'anticipation fige le temps, alors que vous et le chat essayez de vous comprendre.<br/>En utilisant une seule feuille de papier plié et en y intégrant des moteurs et des capteurs tactiles capacitifs sur mesure, un objet qui respire et répond à la présence du toucher humain a été conçu, créant la perception que le Kinetic Fold est vivant.
