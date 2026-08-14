@@ -1,30 +1,16 @@
 ---
-title: "DSN201 · L'article"
+title: "L'article"
 slug: "article"
-institution:
-    heig: 1
-    logo: cnam
-    short: Cnam
-    name: "Conservatoire national des Arts et Métiers"
-    web: "https://www.cnam.fr/"
-date: 2021-10-01T00:55:28+02:00
-draft: false
+date: 2025-12-14T17:29:31+01:00
 layout: single
-tablecontent: true
 searchFilter: Teaching
-searchWeight: 1
-notListed: true
-level: "bachelor"
-language: French
-ects: 4
-teacher:
-    teacher1:
-        name: "Pierre Lévy"
-frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
+searchWeight: 5
 ---
 ## Formes des articles
 ### Le format IMRaD
 Le format IMRAD est le format classique d'un article, à la fois le format le plus répandu et la base de tous les autres. Il se compose d'une **I**ntroduction, d'une **M**éthode, de **R**ésultats et (***a**nd*) d'une **D**iscussion.
+
+![Structure IMRaD](/teachings/initiation-a-la-recherche/imrad-structure.svg)
 
 {{<linkBox "Wu, Jianguo. “Improving the writing of research papers: IMRAD and beyond.” Landscape Ecology 26, no. 10 (November 2011): 1345–1349. http://dx.doi.org/10.1007/s10980-011-9674-3" "http://dx.doi.org/10.1007/s10980-011-9674-3">}}
 
@@ -37,7 +23,7 @@ Le format IMRAD est le format classique d'un article, à la fois le format le pl
 Une introduction se doit d'être engageante et convaincante, claire et directive.
 
 #### Méthode
-- Materiel d'étude (corpus)
+- Matériel d'étude (corpus)
 - Procedure
 - Méthode d'analyse
 
@@ -53,12 +39,12 @@ Une introduction se doit d'être engageante et convaincante, claire et directive
 - Ouvrir vers de nouveaux horizons (nouvelle question, nouvelle pratique, nouveaux designs...)
 
 #### Résumé
-- **Le résumé n'est pas à propos de l’article, il est l’article.**
+- **Le résumé n'est pas à propos de l'article, il est l'article.**
 - Quels sont le sujet et le défi?
 - Qu'est-ce qui a été fait et comment?
 - Quels sont les résultats?
 
-L’écriture d’un article n’est pas linéaire, elle s’apparente le plus souvent à **ITMRMDIDaAaTK**.
+L'écriture d'un article n'est pas linéaire, elle s'apparente le plus souvent à **ITMRMDIDaAaTK**.
 
 ### Le Pictorial
 L'article de type pictorial met l'image au centre de sa production de savoir. L'image sert alors à articuler et clarifier le savoir exposé dans le pictorial. Elle devient au moins aussi importante que le texte.
@@ -88,10 +74,11 @@ Des exemples sont dans l'article (Blevis et al., 2015)
 - Chacune d'entre elles peut toutefois ne pas se suffire à elle-même. Une combinaison d'images ou un adossement à un texte peut être nécessaire pour une participation significative de l'image à l'argumentation.
 
 {{<linkBox "Blevis, E., Hauser, S., & Odom, W. (2015). Sharing the hidden treasure in pictorials. *Interactions*, *22*(3), 32–43. https://doi.org/10.1145/2755534" "https://doi.org/10.1145/2755534">}}
+
 #### DIS2018 Formats:
 {{<linkBox "Format InDesign" "https://dis.acm.org/2021/wp-content/uploads/2020/12/DIS2021-Pictorials-InDesign-template_Folder.zip">}}
 {{<linkBox "Format Word" "https://dis.acm.org/2021/wp-content/uploads/2020/12/DIS2021-Pictorials-Word-template-Folder.zip">}}
-{{<linkBox "Format Powerpoint" "https://dis.acm.org/2021/wp-content/uploads/2020/12/DIS2021-Pictorials-PowerPoint-template-Folder.zip">}}
+{{<linkBox "Format Powerpoint" "https://dis.acm.org/2021/wp-content/uploads/2020/12/DIS2021-Pictorials-PowerPoint-template_Folder.zip">}}
 
 #### Exemples
 - [Stillness and motion, meaning and form | Proceedings of the 2014 conference on Designing interactive systems](https://doi.org/10.1145/2598510.2602963)
@@ -104,7 +91,7 @@ Des exemples sont dans l'article (Blevis et al., 2015)
 - [Pictorial Unleashed | Proceedings of the 2020 ACM Designing Interactive Systems Conference](http://doi.org/10.1145/3357236.3395570)
 
 #### Évaluation par DIS2018 (adapté)
-##### *Pour l’auteur*
+##### *Pour l'auteur*
 - Le travail nécessite-t-il un format pictural ou serait-il plus clair sous forme textuelle ?
 - La valeur de production des images et/ou des diagrammes est-elle de haute qualité ?
 - Les images/diagrammes sont-ils privilégiés par rapport au texte comme moyen principal de communiquer la contribution de la recherche ?
@@ -123,13 +110,14 @@ Des exemples sont dans l'article (Blevis et al., 2015)
 ### Portfolio annoté
 Le portfolio annoté vise à *examiner des exemples spécifiques de pratiques pour trouver des orientations pour le travail et, en discutant de la manière dont ces exemples étaient pertinents pour nous, à commencer à développer une réflexion au travers du design*.
 
-Il se différencie d’approches plus classiques dont le point de départ est une considération théorique (parmi tant de possibilités) pour expliquer des choix, pouvant amener une multitude de solutions. Bien que la théorie aide à structurer la pratique et la réflexion de cette pratique, la relation "imprécise" entre théorie et pratique (d'une théorie peut émerger plusieurs pratiques et une pratique peut être expliquée par plusieurs théories) ne permet pas de se pencher avec attention sur les détails d'une pratique.
+Il se différencie d'approches plus classiques dont le point de départ est une considération théorique (parmi tant de possibilités) pour expliquer des choix, pouvant amener une multitude de solutions. Bien que la théorie aide à structurer la pratique et la réflexion de cette pratique, la relation "imprécise" entre théorie et pratique (d'une théorie peut émerger plusieurs pratiques et une pratique peut être expliquée par plusieurs théories) ne permet pas de se pencher avec attention sur les détails d'une pratique.
 
 De plus, la théorie risque de proposer une description de ce que la pratique est, de ce que le design est, au lieu de ce qui devrait ou pourrait être.
 
 Cette perspective questionne donc le design comme une forme de recherche. Comment peut-il structurer une recherche solide? De quoi a-t-il besoin? Au lieu d'aller chercher un n-ième élément d'une discipline voisine, Gaver et alii proposent de se saisir directement de ce que la pratique du design propose.
 
 Cela permet non seulement de légitimer l'activité du design comme recherche, sans la changer pour ce qui correspondrait plus à l'activité d'autres domaines, mais par une approche plus élaborée de leurs propres approches afin qu'elle apparaisse légitime du point de vue des autres disciplines.
+
 Le portfolio annoté « offre une façon de présenter les livrables du design en respectant simultanément la particularité et la multidimensionnalité du travail de design, tout en répondant à de nombreuses exigences de la théorie généralisable. »
 
 {{<linkBox "Gaver, B., & Bowers, J. (2012). Annotated Portfolios. Interactions, 19(4), 40–49. https://doi.org/10.1145/2212877.2212889" "https://doi.org/10.1145/2212877.2212889">}}
@@ -148,7 +136,7 @@ De ce point de vue, les artefacts forment déjà une sorte de prise de position 
 
 Les perspectives autres que celles correspondantes à celles empruntées par les designers n'en sont toutefois pas moins importantes et pertinentes, puisqu'elles soulèvent des considérations (p. ex. culturelles) qui peuvent avoir été ignorées par les designers, ou incluent dans des considérations inconscientes.
 
-Dans la pratique du design, qu'elle soit entrepreneuriale ou académique, l'explication et la justification d'un design se font également et significativement par les problèmes rencontrés et les choix faits tout au long du processus. On rend donc compte des détails les plus importants, qu’ils soient issus du livrable final ou du processus de design pour l'argument à construire et la perspective à justifier.
+Dans la pratique du design, qu'elle soit entrepreneuriale ou académique, l'explication et la justification d'un design se font également et significativement par les problèmes rencontrés et les choix faits tout au long du processus. On rend donc compte des détails les plus importants, qu'ils soient issus du livrable final ou du processus de design pour l'argument à construire et la perspective à justifier.
 
 *Le récit textuel (article, rapport, descriptions de toutes sortes) dans la recherche en design a un caractère indexical : il indique des aspects du design qui méritent une attention au-delà du projet, une attention pertinente pour la recherche, faisant de ces aspects autant de sujets de discussion dans la communauté. Les récits textuels des artefacts, incluant les aspects théoriques, sont considérés ici comme **des annotations,** par leur capacité d'indexation de l'artefact. Elles obtiennent leur sens et leur pertinence en vertu de leur lien indiciel avec un artefact. Ce sont donc dans leur relation que du sens est produit.
 
@@ -171,10 +159,12 @@ Les annotations transforment une collection de design en un portfolio, rassembla
 - Les annotations capturent les ressemblances entre les conceptions dans un maillage de similitudes et de différences.
 - En général, un portfolio peut être annoté de plusieurs façons différentes, reflétant des objectifs et des intérêts différents et avec des publics différents à l'esprit.
 - Les annotations et les design qu'elles annotent s'informent mutuellement. Les artefacts sont éclairés par les annotations. Les annotations sont illustrées par les artefacts.
+
 Nous pensons que l'assemblage d'un ensemble de travaux dans un portfolio annoté peut présenter un certain nombre d'avantages:
 - rendre compte du style de design d'un projet particulier, d'un studio ou d'une institution.
-- découvrir leurs valeurs esthétiques et sociopolitiques sous-jacentes au design d’un dispositif.
+- découvrir leurs valeurs esthétiques et sociopolitiques sous-jacentes au design d'un dispositif.
 - faire ressortir des caractéristiques qui n'ont peut-être pas été couvertes dans les analyises d'artefacts uniques. Cela peut faciliter l'évaluation de la valeur de la contribution scientifique et esthétique d'un ensemble de travaux.
+
 Enfin, les traits caractéristiques des portfolios annotés sont que:
 - Les annotations communiquent la nature du portfolio et permettent sa comparaison avec d'autres.
 - Les annotations peuvent façonner la manière dont les artefacts sont appréciés et compris, et la valeur scientifique et esthétique qu'ils peuvent avoir, ainsi que suggérer des possibilités de recherche et de conception futures.

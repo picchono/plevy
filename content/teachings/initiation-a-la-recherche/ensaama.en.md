@@ -25,11 +25,7 @@ frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
 Ce cours a deux intentions:
 - une introduction à la pratique et à la culture de l'enseignement supérieur en DSAA,
 - une introduction aux pratiques de la recherche en design.
-
-&nbsp;
-
 Pour les DSAA1, l'objectif est de comprendre les enjeux d'une pratique réflexive académique.
-
 Pour les DSAA2, l'objectif est de transformer ces enjeux en une série de livrables, dont le plus engageant sera le mémoire.
 
 ## Calendrier 2025-2026
@@ -44,7 +40,7 @@ Pour les DSAA2, l'objectif est de transformer ces enjeux en une série de livrab
 Les méthodes d’enseignement mobilisées pour cette UE sont :
 - des cours magistraux (présence requise) délivrant les bases théoriques et méthodologiques,
 - des travaux dirigés collectifs ou individuels suivant la complémentarité des pratiques portées par les apprenants,
-- le suivi du [séminaire de méthodologie de recherche en design et création](https://plevy.fr/events/seminaire-de-recherche-en-design/).
+- le suivi du [séminaire de méthodologie de recherche en design et création](/events/seminaire-de-recherche-en-design/).
 
 ## Livrables
 - **Proposition de recherche (évaluée ?)**

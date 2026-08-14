@@ -1,32 +1,18 @@
 ---
-title: "DSN201 · The article"
+title: "The article"
 slug: "article"
-institution:
-    heig: 1
-    logo: cnam
-    short: Cnam
-    name: "Conservatoire national des Arts et Métiers"
-    web: "https://www.cnam.fr/"
-date: 2021-10-01T00:55:28+02:00
-draft: false
+date: 2025-12-14T17:29:31+01:00
 layout: single
-tablecontent: true
 searchFilter: Teaching
-searchWeight: 1
-notListed: true
-level: "bachelor"
-language: French
-ects: 4
-teacher:
-    teacher1:
-        name: "Pierre Lévy"
-frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
+searchWeight: 5
 ---
 ## Article formats
 ### The IMRaD format
 The IMRAD format is the classic format of an article, both the most widespread format and the basis of all others. It consists of an **I**ntroduction, **M**ethod, **R**esults and (***a**nd*) **D**iscussion.
 
-{{<linkBox "Wu, Jianguo. \u201cImproving the writing of research papers: IMRAD and beyond.\u201d Landscape Ecology 26, no. 10 (November 2011): 1345\u20131349. http://dx.doi.org/10.1007/s10980-011-9674-3" "http://dx.doi.org/10.1007/s10980-011-9674-3">}}
+![IMRaD structure](/teachings/initiation-a-la-recherche/imrad-structure.svg)
+
+{{<linkBox "Wu, Jianguo. “Improving the writing of research papers: IMRAD and beyond.” Landscape Ecology 26, no. 10 (November 2011): 1345–1349. http://dx.doi.org/10.1007/s10980-011-9674-3" "http://dx.doi.org/10.1007/s10980-011-9674-3">}}
 
 #### Introduction
 - Reason for the research
@@ -88,6 +74,7 @@ Examples are in the article (Blevis et al., 2015)
 - Each of them may however not be sufficient on its own. A combination of images or a backing to a text may be necessary for a significant participation of the image in the argumentation.
 
 {{<linkBox "Blevis, E., Hauser, S., & Odom, W. (2015). Sharing the hidden treasure in pictorials. *Interactions*, *22*(3), 32–43. https://doi.org/10.1145/2755534" "https://doi.org/10.1145/2755534">}}
+
 #### DIS2018 Formats:
 {{<linkBox "InDesign Format" "https://dis.acm.org/2021/wp-content/uploads/2020/12/DIS2021-Pictorials-InDesign-template_Folder.zip">}}
 {{<linkBox "Word Format" "https://dis.acm.org/2021/wp-content/uploads/2020/12/DIS2021-Pictorials-Word-template-Folder.zip">}}
@@ -130,6 +117,7 @@ Moreover, theory risks proposing a description of what practice is, of what desi
 This perspective therefore questions design as a form of research. How can it structure solid research? What does it need? Instead of seeking an nth element from a neighbouring discipline, Gaver et alii propose to seize directly on what design practice offers.
 
 This not only legitimises design activity as research, without changing it to correspond more to the activity of other fields, but through a more elaborate approach of their own approaches so that it appears legitimate from the point of view of other disciplines.
+
 The annotated portfolio "offers a way of presenting design deliverables while simultaneously respecting the particularity and multidimensionality of design work, while meeting many requirements of generalisable theory."
 
 {{<linkBox "Gaver, B., & Bowers, J. (2012). Annotated Portfolios. Interactions, 19(4), 40–49. https://doi.org/10.1145/2212877.2212889" "https://doi.org/10.1145/2212877.2212889">}}
@@ -171,10 +159,12 @@ Annotations transform a collection of designs into a portfolio, gathering indivi
 - Annotations capture the resemblances between designs in a mesh of similarities and differences.
 - In general, a portfolio can be annotated in several different ways, reflecting different objectives and interests and with different audiences in mind.
 - Annotations and the designs they annotate inform each other. Artefacts are illuminated by annotations. Annotations are illustrated by artefacts.
+
 We believe that assembling a set of works in an annotated portfolio can offer a number of advantages:
 - accounting for the design style of a particular project, studio or institution.
 - discovering their underlying aesthetic and sociopolitical values in the design of a device.
 - bringing out characteristics that may not have been covered in analyses of single artefacts. This can facilitate the evaluation of the value of the scientific and aesthetic contribution of a set of works.
+
 Finally, the characteristic traits of annotated portfolios are that:
 - Annotations communicate the nature of the portfolio and allow its comparison with others.
 - Annotations can shape the way artefacts are appreciated and understood, and the scientific and aesthetic value they can have, as well as suggest future research and design possibilities.

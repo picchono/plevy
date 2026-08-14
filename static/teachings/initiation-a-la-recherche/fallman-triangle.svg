@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">Le triangle de recherche en design (Fallman, 2008)</text>
+  
+  <!-- Triangle edges -->
+  <line x1="400" y1="120" x2="180" y2="480" stroke="#bdc3c7" stroke-width="2"/>
+  <line x1="400" y1="120" x2="620" y2="480" stroke="#bdc3c7" stroke-width="2"/>
+  <line x1="180" y1="480" x2="620" y2="480" stroke="#bdc3c7" stroke-width="2"/>
+  
+  <!-- Trajectory (curved arrow along top-right) -->
+  <path d="M 430 145 Q 530 250 600 440" fill="none" stroke="#3498db" stroke-width="2.5" marker-end="url(#arrowhead-blue)" stroke-dasharray="8,4"/>
+  <text x="540" y="280" font-family="Arial, sans-serif" font-size="13" fill="#3498db" font-style="italic">Trajectoire</text>
+  
+  <!-- Loop (curved arrow along bottom) -->
+  <path d="M 220 470 Q 400 430 580 470" fill="none" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowhead)" stroke-dasharray="8,4"/>
+  <text x="400" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#27ae60" font-style="italic">Boucle</text>
+  
+  <!-- Dimension (straight arrow left-right, top area) -->
+  <line x1="200" y1="520" x2="600" y2="520" stroke="#e74c3c" stroke-width="2.5" marker-end="url(#arrowhead-red)"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#e74c3c" font-style="italic">Dimension</text>
+  <text x="200" y="560" text-anchor="start" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">vrai</text>
+  <text x="600" y="560" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">réel</text>
+  
+  <!-- Nodes -->
+  <!-- Design Studies (top) -->
+  <circle cx="400" cy="120" r="55" fill="#3498db" opacity="0.15" stroke="#3498db" stroke-width="2.5"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Design</text>
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Studies</text>
+  <text x="400" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Recherche sur le design</text>
+  <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">Approche analytique</text>
+  
+  <!-- Design Practice (bottom-left) -->
+  <circle cx="180" cy="480" r="55" fill="#e74c3c" opacity="0.15" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="180" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Design</text>
+  <text x="180" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Practice</text>
+  <text x="180" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Recherche pour le design</text>
+  
+  <!-- Design Exploration (bottom-right) -->
+  <circle cx="620" cy="480" r="55" fill="#27ae60" opacity="0.15" stroke="#27ae60" stroke-width="2.5"/>
+  <text x="620" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Design</text>
+  <text x="620" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Exploration</text>
+  <text x="620" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d" font-style="italic">Recherche au travers</text>
+  <text x="620" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">du design</text>
+  
+  <!-- Legend box -->
+  <rect x="20" y="55" width="250" height="85" fill="white" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+  <text x="30" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Types de mouvements</text>
+  <line x1="30" y1="92" x2="60" y2="92" stroke="#3498db" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowhead-blue)"/>
+  <text x="68" y="96" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Trajectoire : glissement subtil entre activités</text>
+  <line x1="30" y1="112" x2="60" y2="112" stroke="#27ae60" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowhead)"/>
+  <text x="68" y="116" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Boucle : mouvement libre entre activités</text>
+  <line x1="30" y1="132" x2="60" y2="132" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  <text x="68" y="136" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Dimension : tension conceptuelle (vrai–réel, etc.)</text>
+  
+  <!-- Footer -->
+  <text x="400" y="588" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#95a5a6">D'après Fallman, D. (2008). Design Issues, 24(3), 4–18.</text>
+</svg>

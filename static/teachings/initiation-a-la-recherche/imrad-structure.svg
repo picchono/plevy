@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+  <rect width="700" height="320" fill="#f8f9fa"/>
+  
+  <text x="350" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Format IMRaD — Structure d'un article de recherche</text>
+  
+  <!-- Blocks -->
+  <!-- Introduction -->
+  <rect x="40" y="55" width="140" height="200" rx="6" fill="#3498db" opacity="0.15" stroke="#3498db" stroke-width="2"/>
+  <text x="110" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">I</text>
+  <text x="110" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Introduction</text>
+  <line x1="55" y1="108" x2="165" y2="108" stroke="#3498db" stroke-width="1"/>
+  <text x="110" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Raison de la</text>
+  <text x="110" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">recherche</text>
+  <text x="110" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">État de l'art</text>
+  <text x="110" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Question de</text>
+  <text x="110" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">recherche</text>
+  <text x="110" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Hypothèse</text>
+  <text x="110" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#3498db" font-style="italic">Engageante</text>
+  <text x="110" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#3498db" font-style="italic">et convaincante</text>
+  
+  <!-- Méthode -->
+  <rect x="200" y="55" width="140" height="200" rx="6" fill="#27ae60" opacity="0.15" stroke="#27ae60" stroke-width="2"/>
+  <text x="270" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">M</text>
+  <text x="270" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Méthode</text>
+  <line x1="215" y1="108" x2="325" y2="108" stroke="#27ae60" stroke-width="1"/>
+  <text x="270" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Matériel d'étude</text>
+  <text x="270" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">(corpus)</text>
+  <text x="270" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Procédure</text>
+  <text x="270" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Méthodes</text>
+  <text x="270" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">d'analyse</text>
+  
+  <!-- Résultats -->
+  <rect x="360" y="55" width="140" height="200" rx="6" fill="#e74c3c" opacity="0.15" stroke="#e74c3c" stroke-width="2"/>
+  <text x="430" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">R</text>
+  <text x="430" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Résultats</text>
+  <line x1="375" y1="108" x2="485" y2="108" stroke="#e74c3c" stroke-width="1"/>
+  <text x="430" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Résultats précis</text>
+  <text x="430" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">et concis</text>
+  <text x="430" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="bold">PAS</text>
+  <text x="430" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="bold">d'interprétation</text>
+  <text x="430" y="202" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Conclusion vs</text>
+  <text x="430" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">hypothèse</text>
+  
+  <!-- Discussion -->
+  <rect x="520" y="55" width="140" height="200" rx="6" fill="#f39c12" opacity="0.15" stroke="#f39c12" stroke-width="2"/>
+  <text x="590" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">D</text>
+  <text x="590" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Discussion</text>
+  <line x1="535" y1="108" x2="645" y2="108" stroke="#f39c12" stroke-width="1"/>
+  <text x="590" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Conclusion à</text>
+  <text x="590" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">partir des résultats</text>
+  <text x="590" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Contribution à la</text>
+  <text x="590" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">question de recherche</text>
+  <text x="590" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Nouvelles questions,</text>
+  <text x="590" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">nouvelles pratiques,</text>
+  <text x="590" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">nouveaux designs</text>
+  
+  <!-- Arrow flow -->
+  <line x1="180" y1="155" x2="200" y2="155" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="340" y1="155" x2="360" y2="155" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="500" y1="155" x2="520" y2="155" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr2)"/>
+  
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Note at bottom -->
+  <rect x="140" y="275" width="420" height="35" fill="white" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+  <text x="350" y="293" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" font-weight="bold">L'écriture d'un article n'est pas linéaire : ITMRMDIDaAaTK</text>
+  <text x="350" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" font-style="italic">(Introduction → Titre → Méthode → Résultats → Méthode → Discussion → ...)</text>
+</svg>

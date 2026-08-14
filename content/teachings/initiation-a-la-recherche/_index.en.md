@@ -16,7 +16,7 @@ frontphoto: "11isvSWp0BCzBThFjQqJsokOUoSSoHaNN"
 photocredit: 
     cred: "Martin Adams"
     link: "https://unsplash.com/@martinadams"
-code: DSN201
+code: initiation-a-la-recherche
 subsection: course
 lectures:
     intro:
@@ -27,14 +27,14 @@ lectures:
         order: 2
         link: "recherche"
         title: "La recherche"
-    question:
-        order: 3
-        link: "question-de-recherche"
-        title: "La question de recherche"
     revue:
-        order: 4
+        order: 3
         link: "revue-de-litterature"
         title: "La revue de littérature"
+    question:
+        order: 4
+        link: "question-de-recherche"
+        title: "La question de recherche"
     article:
         order: 5
         link: "article"
@@ -46,7 +46,7 @@ lectures:
 link:
     1: ["Leçons", "course", "https://plevy.craft.me/Initiation-recherche-design"]
     3: ["page institutionelle", "institutional", "https://bedeo.cnam.fr/public/unite/view/DSN201/2024-11-24"]
-    2: ["Séminaire de recherche", "website", "https://plevy.fr/events/seminaire-de-recherche-en-design"]
+    2: ["Séminaire de recherche", "website", "/events/seminaire-de-recherche-en-design"]
 encapsulation:
     MR15001B: 
         page: "Master-ACTU.md"
@@ -58,7 +58,7 @@ encapsulation:
         page: "Master-culture-creation.md"
         code: "MR15801A"
 ---
-**Ce cours est en partie composé du [Séminaire de recherche en design et création](https://plevy.fr/events/seminaire-de-recherche-en-design/). La participation au cours et au séminaire de recherche est obligatoire pour les apprenants inscrits à DSN201.**
+**Ce cours est en partie composé du [Séminaire de recherche en design et création](/events/seminaire-de-recherche-en-design/). La participation au cours et au séminaire de recherche est obligatoire pour les apprenants inscrits à DSN201.**
 
 Cette UE propose une vue d'ensemble des pratiques de la recherche en design, art et création, afin d’atteindre deux objectifs pédagogiques. Il s’agit d’abord de contextualiser l'implication de la pratique du design, de l’art ou de la création en recherche, et de développer une approche de recherche au travers de ces pratiques. Il s’agit ensuite de fournir des ressources initiales (connaissances, outils, méthodologies, réseaux...) utiles à la recherche au travers d’une pratique, et de permettre un développement en autonomie des ressources utiles à la pratique de la recherche.
 
