@@ -692,6 +692,10 @@ a.boxIso:hover .menuBoxCount {
     @apply text-primary-bg bg-epierrot;
 }
 
+a.boxIso:hover {
+    @apply text-primary-bg;
+}
+
 .menuBoxDesc {
     @apply w-full text-xs p-1 wrap-break-word;
 }
@@ -700,14 +704,14 @@ a.boxIso:hover .menuBoxCount {
     @apply block w-full mb-8;
 }
 /* boxIso */
-.boxIso {
-    @apply w-full h-full text-primary-text grow-0 shrink-0;
+a.boxIso {
+    @apply w-full h-full text-primary-text grow-0 shrink-0 ;
     box-sizing: border-box;
 }
-.boxIso .boxIsoIn {
-    @apply flex flex-row justify-between items-stretch rounded;
-    padding: calc(0.1 * var(--spacing-pad));
+a.boxIso .boxIsoIn {
+    @apply p-4 flex flex-row justify-between items-stretch rounded transition-all duration-700 ease-in-out;
 }
+
 .menuBox.ended .boxIso {
     opacity:40% !important;
 }
