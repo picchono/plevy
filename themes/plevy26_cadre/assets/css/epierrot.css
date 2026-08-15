@@ -713,9 +713,16 @@ a.boxIso:hover .menuBoxCount {
 }
 
 .boxIsoIn>div:not(:first-child):not(:last-child) {
-    padding: calc(0.25 * var(--spacing-pad)) calc(0.5 * var(--spacing-pad));
+    padding: calc(0.125 * var(--spacing-pad));
     flex: 0 0 35%;
 }
+
+@media (min-width: 768px) {
+    .boxIsoIn>div:not(:first-child):not(:last-child) {
+        padding: calc(0.25 * var(--spacing-pad)) calc(0.5 * var(--spacing-pad));
+    }
+}
+
 
 .boxIsoIn>div:first-child {
     align-self: normal;
@@ -1181,13 +1188,22 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-    @apply max-w-unit-3 w-2/3 grow shrink;
+    @apply max-w-unit-3 w-full not-only:grow shrink;
     margin: calc(2 * var(--spacing-pad)) 0 0 0;
     padding: 0 calc(0.5 * var(--spacing-pad));
 }
 
 .mainSide {
-    @apply w-1/12 shrink-0;
+    @apply w-0 shrink-0;
+}
+
+@media (min-width: 768px) {
+    .mainBlock {
+        @apply w-2/3;
+    }
+    .mainSide {
+        @apply w-1/12;
+    }
 }
 
 .mainBlockIn {

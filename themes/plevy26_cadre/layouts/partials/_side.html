@@ -7,7 +7,7 @@
         {{ $j := 0 }}{{ range .Site.RegularPages }}{{ if eq .Params.currentblock true }}{{ $j = add $j 1 }}{{ end}}{{ end}}
         {{ if ge $j 1 }}{{ .Scratch.Set "part" "front_current" }}{{ partial "side/_base.html" . }}{{ end }}
 
-        {{ .Scratch.Set "part" "front_description" }}{{ partial "side/_base.html" . }}
+        {{if false }}{{ .Scratch.Set "part" "front_description" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ .Scratch.Set "part" "front_links" }}{{ partial "side/_base.html" . }}
     {{ else }}
     {{ if ne .Params.layout "list" }}

@@ -16,7 +16,7 @@ photogallery:
         name: "Pierre Lévy"
         img: "17j4DUOADwcZx_U0GJX8zfzqFtKdQAWmE"
 ---
-Pierre Lévy is a professor at the [National conservatory of Arts and Crafts, France](https://www.cnam.fr), holder of the [Chair of design Jean Prouvé](https://www.chaire-design.fr), and member of the [Dicen](https://www.dicen-idf.org) laboratory (EA 7339).
+**Pierre Lévy is a professor at the [National conservatory of Arts and Crafts, France](https://www.cnam.fr), holder of the [Chair of design Jean Prouvé](https://www.chaire-design.fr), and member of the [Dicen](https://www.dicen-idf.org) laboratory (EA 7339).**
 
 Drawing on theories related to *embodiment* as well as Japanese philosophy and thought, his research proposes a cultural decentring of design in order to explore the relationship between institutionalized creative processes (the arts, design, engineering, etc.) and non-institutionalized creative acts of everyday life (appropriation, détournement, etc.). Through this research, Pierre Lévy explores the attitude, societal role, and limitations of design in the service of transformative practices.
 
