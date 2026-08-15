@@ -49,19 +49,29 @@
 
 </section>
 {{ end }}
-<div class="mainsection">
+<div class="mainBlock">
+    {{if false }}<div class="mainMenu">
+        {{ $s := 1 }}
+        {{ range .Sections }}{{ if ne .Slug "pl" }}
+          <span class="section-{{- .Slug -}} flex flex-row flex-wrap justify-start items-center">
+            <a class="px-1 py-0.5 rounded-sm" href="{{ .Slug }}">
+                <div class="inline text-xs">0{{- $s }} ·</div>&nbsp;<div class="inline text-lg font-bold">{{ i18n .Slug  | humanize }}</div></a>&nbsp;/
+        </span>
+        {{ $s = add $s 1 }}{{ end }}{{ end }}
+    </div>{{ end }}
     {{ $s := 1 }}
     {{ range .Sections }}{{ if ne .Slug "pl" }}
-    {{ if false }}<div class="sectionBlock section-{{- .Slug -}}">
-        <a class="menuBox more" href="{{ .Slug }}">
-            <span>{{ i18n .Slug  | humanize }}</span>
-        </a>
-    </div>{{ end }}
     {{ $p := 1 }}
     {{ range .Pages }}{{ if ne .Params.notListed true }}{{ if .Params.frontpage }}
     {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
     {{ $p = add $p 1 }}
     {{ end }}{{ end }}{{ end }}
+    <div class="sectionBlock section-{{- .Slug -}}">
+      <a class="menuSection" href="{{ .Slug }}">
+          <div><span>{{ if eq (( string $s ) | len ) 1 }}0{{ end }}{{ $s }} · </span>
+          <span>{{ i18n .Slug  | humanize }}</span> ⇢</div>
+      </a>
+  </div>
     {{ $s = add $s 1 }}
     {{ end }}{{ end }}
 </div>

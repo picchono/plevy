@@ -2,12 +2,10 @@
 {{ $langu := .Site.Language.Lang }}
         {{ if .Content}}
         <div class="mainBlock">
-            <div class="mainBlockIn">
                 {{ if .Params.playlist}}
                 {{ partial "playlist.html" . }}
                 {{ end }}
                 {{ if .Content}}<div id="content">{{ .Content }}</div>{{ end }}
-            </div>
         </div>
         {{ end }}
     </div>

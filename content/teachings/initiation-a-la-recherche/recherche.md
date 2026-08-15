@@ -14,9 +14,7 @@ searchWeight: 2
 
 #### La recherche vs la science
 
-{{< youtube JR1Ovv3B4FA >}}
-
-[**YouTube** - Science & recherche, quelle différence y a t-il entre ses deux formes d'études ?](https://www.youtube.com/watch?v=JR1Ovv3B4FA)
+{{< video "youtube" "JR1Ovv3B4FA" >}}
 
 [**Arrêtons de confondre les sciences avec la recherche scientifique, par Etienne Klein**](https://www.lexpress.fr/sciences-sante/arretons-de-confondre-les-sciences-avec-la-recherche-scientifique-par-etienne-klein-PZ7B7JEWYRHPRCMVQWCDNAHAQ4)
 
@@ -34,11 +32,7 @@ Cela explique la pertinence de la recherche en design à la fois dans le monde a
 
 ### Approches de recherche en design
 
-![Approches de la recherche en design](/teachings/initiation-a-la-recherche/5-recherche-design.png)
-
-![Triangle de Fallman](https://process.jacklynn.com/wp-content/uploads/2014/11/Thallmantriangle.png)
-
-![Triangle de Fallman - version SVG](/teachings/initiation-a-la-recherche/fallman-triangle.svg)
+{{< photo "Approches de la recherche en design" "1L2Yoi4FIFwhR9o0Hfm5RCy6o2aza-Xxg" >}}
 
 #### 1. Recherche sur le design (*Design studies* - approche analytique)
 
@@ -245,8 +239,6 @@ Pour décrire les relations entre les trois pôles du « Triangle de Fallman » 
 
 ### Programme de recherche
 
-![Programme de recherche en design](/teachings/initiation-a-la-recherche/programme-recherche-cycle.svg)
-
 {{<linkBox "T Binder & J Redström - 2006 - Exemplary Design Research" "https://dl.designresearchsociety.org/drs-conference-papers/drs2006/researchpapers/51">}}
 
 Cette discussion vise non pas une ambition épistémologique (p. ex. sur l'articulation de la connaissance, mais un projet programmatique, c'est-à-dire sur l'organisation de l'activité de recherche.
@@ -340,3 +332,98 @@ Koskinen, I., Zimmerman, J., Binder, T., Redström, J., & Wensveen, S. A. G. (20
 - **Laboratoire** · Un environnement contrôlé pour limiter le bruit, et assurer une certaine stabilité expérimentale.
 - **Terrain** · Un environnement pour rendre compte de la réalité d'un usage, d'une acceptabilité et d'une acceptation, d'une forme d'appropriation.
 - **Exposition** · Un environnement d'attention permettant l'expérimentation temporaire, la critique, le débat.
+
+### Enjeux contemporains
+
+La recherche en design est traversée par plusieurs enjeux contemporains qui questionnent et transforment ses pratiques, ses objets et ses responsabilités.
+
+#### Intelligence artificielle et recherche design
+L'émergence de l'IA générative transforme profondément la recherche en design. Les outils d'IA (génération d'images, de textes, de code, de modèles 3D) introduisent de nouvelles possibilités méthodologiques mais soulèvent également des défis fondamentaux pour la recherche en design.
+
+**Opportunités**
+- **Nouvelles méthodes de conception** — L'IA permet d'explorer rapidement un large espace de solutions, de générer des variantes, ou de combiner des éléments de manière inédite.
+- **Prototypage rapide** — La génération assistée par IA accélère la production de prototypes et d'artefacts de recherche.
+- **Analyse augmentée** — Les outils d'IA facilitent l'analyse de grands corpus (images, textes, données qualitatives) et peuvent révéler des patterns invisibles à l'œil humain.
+
+**Questions de recherche**
+- Comment l'IA transforme-t-elle la créativité du designer et son processus de conception ?
+- Quelle est la place de l'intention humaine dans un design généré par IA ?
+- Comment évaluer la qualité éthique et esthétique des designs produits par IA ?
+- Quels nouveaux rôles émergent pour le designer à l'ère de l'IA (curateur, éditeur, critique) ?
+
+**Enjeux éthiques**
+- **Biais** — Les modèles d'IA reproduisent et amplifient les biais de leurs données d'entraînement.
+- **Propriété intellectuelle** — Qui est l'auteur d'un design généré par IA ?
+- **Transparence** — Comment documenter et évaluer l'usage de l'IA dans le processus de recherche ?
+- **Impact environnemental** — L'entraînement et l'usage des modèles d'IA ont un coût énergétique considérable.
+
+**Références**
+- Foth, M., & Paulos, E. (2023). AI and the future of design research. *She Ji: The Journal of Design, Business, & Society*, *9*(1), 1–12.
+- Koskinen, I. (2023). Design research in the age of AI. *Design Issues*, *39*(2), 5–17. https://doi.org/10.1162/desi_a_00698
+
+#### Design pour la durabilité et Transition Design
+
+Les crises écologiques et sociales contemporaines invitent la recherche en design à repenser ses objets, ses méthodes et ses finalités. Le **Transition Design** propose un cadre pour concevoir des transitions vers des systèmes socio-techniques plus durables.
+
+**Design for Sustainability**
+La recherche en design pour la durabilité explore comment le design peut contribuer à la transition écologique : écoconception, design circulaire, design régénératif, design sobre. Il s'agit de concevoir des artefacts, des services et des systèmes qui minimisent leur impact environnemental et maximisent leur contribution au bien-être.
+
+**Transition Design**
+Proposé par Irwin, Tonkinwise et Kossoff (2020), le Transition Design est une approche qui vise à faciliter les transitions vers des sociétés durables. Il se caractérise par :
+- Une **vision systémique** — Le design est pensé à l'échelle des systèmes (mobilité, alimentation, énergie) et non plus seulement des artefacts.
+- Une **orientation long terme** — Les transitions se déploient sur des décennies, pas des mois.
+- Une **approche stakeholder-oriented** — Toutes les parties prenantes sont impliquées dans la co-construction des transitions.
+- Une **intégration des savoirs** — Les savoirs locaux, traditionnels et scientifiques sont combinés.
+
+**Design for Social Innovation**
+Manzini (2015) propose une vision du design comme levier d'innovation sociale, où les citoyens deviennent co-designers de solutions à des problèmes sociaux et environnementaux. Les makerspaces, les fablabs, les jardins partagés sont des espaces où cette vision se concrétise.
+
+**Transforming Practices**
+La transition vers des modes de vie durables implique une transformation profonde des pratiques quotidiennes. Le programme de recherche *Transforming Practices* (Hummels, Trotto & Lévy) explore comment le design peut faciliter cette transformation en s'appuyant sur les clés mineures du quotidien. Plutôt que de prescrire des comportements ou de développer des technologies disruptives, cette approche valorise les pratiques ordinaires, les gestes quotidiens et les formes d'appropriation comme leviers de changement. La transformation des pratiques passe par une attention phénoménologique à l'expérience vécue, une reconnaissance des savoirs situés et une conception qui accompagne plutôt qu'elle n'impose.
+
+**Références**
+- Hummels, C., Trotto, A., & Lévy, P. (2023). *Transforming practices: A minor key approach to everyday life transformation*. Design Research Society.
+- Irwin, T., Tonkinwise, C., & Kossoff, G. (2020). Transition design: An educational framework for advancing the study and design of sustainable transitions. *Cuadernos del Centro de Estudios de Diseño y Comunicación*, (105), 1–18. https://doi.org/10.18682/cdc.vi105.4188
+- Manzini, E. (2015). *Design, when everybody designs: An introduction to design for social innovation*. MIT Press. https://doi.org/10.7551/mitpress/9873.001.0001
+
+#### Recherche design post-coloniale et décoloniale
+
+La recherche en design a longtemps été dominée par des perspectives occidentales, considérées comme universelles. Les approches post-coloniales et décoloniales invitent à décentrer le design, à reconnaître la pluralité des épistémologies et à valoriser les savoirs marginalisés.
+
+**Critique du design occidental**
+Le design moderne s'est construit sur des présupposés occidentaux : universalisme, rationalisme, individualisme, progrès linéaire. Ces présupposés ont été imposés comme normes universelles, marginalisant d'autres traditions de conception (indigènes, asiatiques, africaines, latino-américaines).
+
+**Approches pluriverselles**
+Escobar (2018) propose le concept de *plurivers* — un monde où de nombreux mondes coexistent. Le design pluriversal reconnaît la diversité des formes de vie, des savoirs et des pratiques de conception. Il s'agit de concevoir *avec* les communautés, pas *pour* elles, en respectant leurs cosmologies et leurs pratiques.
+
+**Épistémologies du Sud**
+Les épistémologies du Sud (de Oliveira Martins, 2020) désignent les savoirs produits dans les marges du système-monde moderne/colonial. Elles incluent les savoirs indigènes, paysans, afro-descendants, féministes. La recherche en design décoloniale valorise ces savoirs et les intègre dans des processus de co-conception.
+
+**Enjeux pour la recherche en design**
+- **Décentrement culturel** — Comment concevoir au-delà des catégories occidentales (beauté, fonction, usage) ?
+- **Justice épistémique** — Comment reconnaître et valoriser les savoirs non-occidentaux dans la recherche ?
+- **Responsabilité historique** — Comment le design peut-il contribuer à réparer les violences coloniales ?
+- **Méthodologies situées** — Comment développer des méthodes de recherche ancrées dans des contextes spécifiques ?
+
+**Références**
+- de Oliveira Martins, L. (2020). Decolonizing design: A pluriversal approach. *Design Issues*, *36*(4), 6–18. https://doi.org/10.1162/desi_a_00615
+- Escobar, A. (2018). *Designs for the pluriverse: Radical interdependence, autonomy, and the making of worlds*. Duke University Press. https://doi.org/10.1215/9780822371816
+
+### Communautés et sociétés de recherche
+
+La recherche en design, art et création s'inscrit dans des communautés scientifiques structurées par des sociétés savantes, des conférences et des réseaux. Ces communautés définissent les standards de qualité, organisent la discussion scientifique et offrent des espaces de dissémination.
+
+**Principales sociétés savantes**
+- **Design Research Society (DRS)** — Société internationale de recherche en design, fondée en 1966. Organise la conférence biennale DRS et publie la revue *Design Science*. https://www.designresearchsociety.org
+- **SIGCHI** — Special Interest Group on Computer-Human Interaction de l'ACM. Organise la conférence CHI et structure la recherche en interaction humain-machine. https://sigchi.org
+- **European Academy of Design (EAD)** — Réseau européen des écoles de design. Organise la conférence biennale EAD. https://europeancademy.org
+- **Cumulus Association** — Réseau international des universités d'art et de design. https://cumulusassociation.org
+
+**Principales conférences en recherche design**
+- **DRS** (Design Research Society) — Biennale, couvre l'ensemble de la recherche en design
+- **DIS** (Designing Interactive Systems) — Conférence ACM annuelle sur le design interactif
+- **CHI** (Conference on Human Factors in Computing Systems) — Principale conférence en IHM
+- **EAD** (European Academy of Design) — Biennale européenne
+- **IASDR** (International Association of Societies of Design Research) — Conférence internationale
+
+Ces communautés sont des espaces essentiels pour la dissémination des résultats, le réseautage et la construction de collaborations. La participation à une ou plusieurs de ces communautés est recommandée pour tout chercheur en design.

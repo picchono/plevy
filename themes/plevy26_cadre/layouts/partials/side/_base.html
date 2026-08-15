@@ -2,10 +2,15 @@
 {{ $targ := add "side/" $tar ".html"}}
 {{ if eq $tar "title" }}
 {{ partial $targ . }}
-{{ else if in (slice "intervenants" "completename" "front_description" "subtitle") $tar }}
+{{ else if in (slice "intervenants" "completename" "front_description" "subtitle" "citation" "abstract") $tar }}
 <div class="sideBlockIn">{{ .Scratch.Set "par" $tar }}{{ partial $targ . }}</div>
-{{ else }}
+{{ else if eq $tar "front_links" }}
 <div class="sideBlock"><div class="cadreBlock">
+    <div class="sideBlockIn"><h3>{{ i18n  $tar | humanize }}</h3></div>
+    <div class="sideBlockIn">{{ partial $targ . }}</div>
+</div></div>
+{{ else }}
+<div class="sideBlock"><div class="noCadre">
     <div class="sideBlockIn"><h3>{{ i18n  $tar | humanize }}</h3></div>
     <div class="sideBlockIn">{{ partial $targ . }}</div>
 </div></div>

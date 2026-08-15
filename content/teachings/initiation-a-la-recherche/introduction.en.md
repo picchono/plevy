@@ -37,17 +37,9 @@ The teaching methods used for this course unit are:
 
 ### Deliverables
 
-- **Research proposal**
+**Research proposal**: The research proposal is a 3-4 page document that argues the relevance and structure of a potential doctoral research project. The objective for the learner is to write a document that can serve as an initial step in building a doctoral research project.
 
-  The research proposal is a 3-4 page document that argues the relevance and structure of a potential doctoral research project. The objective for the learner is to write a document that can serve as an initial step in building a doctoral research project.
-
-- **Reflection report**
-
-  The reflection report is a reflexive document on the content and exercise of the course. It should be a maximum of 1 page. Its purpose is not to describe what happened, but to express what one retains from it and what will potentially impact future practices.
-
-  Thus, this report should question what was learned, the difference between what was expected and what actually occurred, and finally what will remain once the details of the course are forgotten.
-
-  Consideration of the seminar is required.
+**Reflection report**: The reflection report is a reflexive document on the content and exercise of the course. It should be a maximum of 1 page. Its purpose is not to describe what happened, but to express what one retains from it and what will potentially impact future practices. Thus, this report should question what was learned, the difference between what was expected and what actually occurred, and finally what will remain once the details of the course are forgotten. Consideration of the seminar is required.
 
 ### References
 

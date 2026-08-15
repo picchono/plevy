@@ -484,11 +484,11 @@ th, td {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 main {
-    @apply bg-primary-bg flex flex-col md:flex-row justify-start w-full transition-all duration-700 ease-in-out;
+    @apply bg-primary-bg flex flex-col md:flex-row justify-start transition-all duration-700 ease-in-out;
 }
 
 main>div {
-    @apply w-full flex flex-col flex-nowrap grow-0 shrink-0 items-stretch place-content-stretch justify-stretch;
+    @apply flex flex-col flex-nowrap grow-0 shrink-0 items-stretch place-content-stretch justify-stretch;
     margin: calc(2 * var(--spacing-pad)) 0 calc(0.5 * var(--spacing-pad)) 0;
 }
 
@@ -646,63 +646,91 @@ pagefind-modal-trigger {
     @apply transition-all duration-700 ease-in-out;
     position: fixed !important;
     z-index: 100 !important;
-    top: calc(0.5 * var(--spacing-pad)) !important;
+    top: calc(0.4 * var(--spacing-pad)) !important;
     left: auto !important;
     right: calc(0.5 * var(--spacing-pad)) !important;
 }
 
 @media (min-width: 768px) {
     pagefind-modal-trigger {
-        top: calc(1.1 * var(--spacing-pad)) !important;
-        left: min(calc(33% - 180px), 460px) !important;
+        top: calc(0.4 * var(--spacing-pad)) !important;
+        left: min(calc(33% - 167px), 460px) !important;
         right: auto !important;
     }
 }
 
+span.pf-trigger-text {
+    display: inline-block !important;
+    width: 0 !important;
+    opacity: 0 !important;
+}
+
+/* Expand the input on focus */
+.pagefind-ui__search-input:focus {
+  width: 250px;
+}
+
+#content {
+    @apply mt-10;
+}
+
 /* menuBox */
 .menuBox {
-    @apply relative w-full flex flex-col justify-around flex-wrap mb-4 rounded-sm;
+    @apply relative w-full flex flex-col justify-around flex-wrap mt-4 rounded-sm;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.menuBox.more {
-    @apply pb-2;
+.menuSection {
+    @apply w-full rounded-sm px-8 py-1 m-0 self-end;
 }
 
 .menuBoxCount {
-    @apply text-xs font-normal px-1 text-epierrot transition-all duration-700 ease-in-out;
+    @apply h-auto text-xs font-normal py-0.5 px-1.5 text-epierrot bg-secondary-bg rounded-r-xs transition-all duration-700 ease-in-out;
+    writing-mode: vertical-rl; /* Turns text vertical */
+    transform: rotate(180deg); /* Flips it so it reads bottom-to-top */
+    text-align: left;
+    padding: 10px;
 }
 
 a.boxIso:hover .menuBoxCount {
-    @apply text-primary-bg;
+    @apply text-primary-bg bg-epierrot;
 }
 
 .menuBoxDesc {
-    @apply w-full h-full text-xs p-1 wrap-break-word;
+    @apply w-full text-xs p-1 wrap-break-word;
 }
 
+.mainMenu {
+    @apply block w-full mb-8;
+}
 /* boxIso */
 .boxIso {
-    @apply w-full h-full text-primary-text grow-0 shrink-0 flex flex-row justify-between items-start;
+    @apply w-full h-full text-primary-text grow-0 shrink-0;
+    box-sizing: border-box;
 }
-
+.boxIso .boxIsoIn {
+    @apply flex flex-row justify-between items-stretch rounded;
+    padding: calc(0.1 * var(--spacing-pad));
+}
 .menuBox.ended .boxIso {
     opacity:40% !important;
 }
 
-.boxIso>div {
-    @apply w-unit-1 grow-0;
+.boxIsoIn>div:not(:first-child):not(:last-child) {
+    padding: calc(0.25 * var(--spacing-pad)) calc(0.5 * var(--spacing-pad));
+    flex: 0 0 35%;
 }
 
-.boxIso>div:not(:last-child) {
-    padding: calc(0.5 * var(--spacing-pad));
+.boxIsoIn>div:first-child {
+    align-self: normal;
+    padding: calc(0.25 * var(--spacing-pad)) calc(0.125 * var(--spacing-pad)) var(--spacing-pad) calc(0.25 * var(--spacing-pad));
 }
 
-.boxIso>div>div {
-    @apply w-full border-0 border-solid border-borders transition-all duration-700 ease-in-out;
+.boxIsoIn>div {
+    @apply border-0 border-solid border-borders transition-all duration-700 ease-in-out;
 }
 
-.boxIso:hover>div {
+.boxIso:hover>div>div {
     border-color: transparent !important;
 }
 
@@ -715,49 +743,46 @@ a.boxIso:hover .menuBoxCount {
 }
 
 .boxIsoImg {
-    @apply block w-full;
-    background-position: center;
-    background-size: cover;
-    aspect-ratio: 1;
+    @apply block w-full h-full;
+    object-fit: cover;
 }
 
 #Slides .boxIso {
     @apply w-40 mb-4 mr-4;
 }
 
-#Slides .boxIso>div {
+#Slides .boxIsoIn {
     width: 100% !important;
 }
 
 .menuBoxPhoto {
     @apply flex flex-row justify-between items-end;
-    width: 0 !important;
-    flex-grow: 0 !important;
+    flex: 0 0 0;
 }
 
 @media (min-width: 768px) {
-.menuBoxPhoto {
-    width: 20% !important;
-}
+    .menuBoxPhoto {
+        flex: 0 0 20%;
+    }
 }
 
 /* duotone */
 .duotone {
-    @apply /*inline-block*/ relative rounded-r-sm transition-all duration-700 ease-in-out;
+    @apply /*inline-block*/ relative rounded-xs transition-all duration-700 ease-in-out;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .duotone::before {
-    @apply block w-full h-full absolute top-0 left-0 rounded-r-sm transition-all duration-700 ease-in-out;
+    @apply block w-full h-full absolute top-0 left-0 rounded-xs transition-all duration-700 ease-in-out;
     background-color: var(--color-tertiary-bg);
     content: '';
     mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
-    @apply block w-full h-full absolute top-0 left-0 rounded-r-sm transition-all duration-700 ease-in-out;
+    @apply block w-full h-full absolute top-0 left-0 rounded-xs transition-all duration-700 ease-in-out;
     background-color: var(--color-primary-bg);
     content: '';
     mix-blend-mode: var(--blend-mode-after);
@@ -799,12 +824,6 @@ section.home {
     height: 100vh;
     padding: calc(2 * var(--spacing-pad)) calc(2 * var(--spacing-pad));
     padding-bottom: var(--spacing-pad);
-}
-
-@media (min-width: 768px) {
-    .mainsection {
-        width: min(50%, 60rem) !important;
-    }
 }
 
 .imgAddons {
@@ -976,6 +995,10 @@ section.home {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.sideBlock>.noCadre {
+    @apply w-full  flex flex-row justify-start items-start rounded-sm;
+}
+
 .sideBlockIn {
     @apply w-full h-full;
     padding: calc(0.5 * var(--spacing-pad));
@@ -1005,7 +1028,7 @@ section.home {
 }
 
 .sectionBlock>a {
-    @apply text-primary-text bg-secondary-bg font-bold text-xl flex flex-col justify-center;
+    @apply text-primary-text font-bold flex flex-col justify-center items-end border-0;
 }
 
 .sectionBlock>a:hover {
@@ -1041,9 +1064,7 @@ section.home {
 }
 
 .linkBlock .linkBox .boxIsoImg {
-    @apply w-12 h-12;
-    aspect-ratio: 1;
-    min-height: auto;
+    @apply w-12 h-full;
 }
 
 .linkBlock .linkBox .boxIsoIcon svg {
@@ -1164,11 +1185,14 @@ img.lg-object {
 
 /* mainBlock */
 .mainBlock {
-    @apply w-full max-w-unit-3;
-    margin: calc(2 * var(--spacing-pad)) 0;
+    @apply max-w-unit-3 w-2/3 grow shrink;
+    margin: calc(2 * var(--spacing-pad)) 0 0 0;
     padding: 0 calc(0.5 * var(--spacing-pad));
 }
 
+.mainSide {
+    @apply w-1/6 shrink-0;
+}
 
 .mainBlockIn {
     @apply my-6 py-1 border border-solid border-borders;

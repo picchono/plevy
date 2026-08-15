@@ -36,18 +36,9 @@ Les méthodes d'enseignement mobilisées pour cette UE sont :
 - le suivi du [séminaire de méthodologie de recherche en design et création](/events/seminaire-de-recherche-en-design/).
 
 ### Livrables
+**Proposition de recherche** : La proposition de recherche est un document de 3-4 pages qui argumente la pertinence et la structure d'une recherche doctorale potentielle. L'objectif pour l'apprenant est d'écrire un document qui peut servir comme étape initiale de la construction d'un projet de recherche doctoral.
 
-- **Proposition de recherche**
-
-  La proposition de recherche est un document de 3-4 pages qui argumente la pertinence et la structure d'une recherche doctorale potentielle. L'objectif pour l'apprenant est d'écrire un document qui peut servir comme étape initiale de la construction d'un projet de recherche doctoral.
-
-- **Rapport d'étonnement**
-
-  Le rapport d'étonnement est un document réflexif sur le contenu et l'exercice du cours. Il doit faire 1 page maximum. Il n'a pas pour objet de décrire ce qui s'est passé, mais d'exprimer ce que l'on en retient et ce qui potentiellement impactera les pratiques futures.
-
-  Ainsi, ce rapport doit questionner ce qui a été appris, la différence entre ce qui était attendu et ce qui est advenu, et enfin ce qu'il restera une fois les détails du cours oubliés.
-
-  Une considération sur le séminaire est nécessaire.
+**Rapport d'étonnement** : Le rapport d'étonnement est un document réflexif sur le contenu et l'exercice du cours. Il doit faire 1 page maximum. Il n'a pas pour objet de décrire ce qui s'est passé, mais d'exprimer ce que l'on en retient et ce qui potentiellement impactera les pratiques futures. Ainsi, ce rapport doit questionner ce qui a été appris, la différence entre ce qui était attendu et ce qui est advenu, et enfin ce qu'il restera une fois les détails du cours oubliés. Une considération sur le séminaire est nécessaire.
 
 ### Bibliographie
 

@@ -10,7 +10,7 @@ searchWeight: 5
 ### Le format IMRaD
 Le format IMRAD est le format classique d'un article, à la fois le format le plus répandu et la base de tous les autres. Il se compose d'une **I**ntroduction, d'une **M**éthode, de **R**ésultats et (***a**nd*) d'une **D**iscussion.
 
-![Structure IMRaD](/teachings/initiation-a-la-recherche/imrad-structure.svg)
+![Structure IMRaD](https://drive.google.com/uc?export=view&id=TODO_imrad-structure)
 
 {{<linkBox "Wu, Jianguo. “Improving the writing of research papers: IMRAD and beyond.” Landscape Ecology 26, no. 10 (November 2011): 1345–1349. http://dx.doi.org/10.1007/s10980-011-9674-3" "http://dx.doi.org/10.1007/s10980-011-9674-3">}}
 

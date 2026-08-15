@@ -4,24 +4,23 @@
     aria-label="{{- .context.Title |safeHTML -}}" data-cat-sort="{{if .sort }}{{ .sort }}{{ else }}1{{ end }}"
     data-date="{{ .context.Date }}" data-section="{{ .context.Section  }}">
     <a class="boxIso {{ if .context.Section}}{{ .context.Section }}{{ else }}introduction{{ end }}"
-        href="{{ .context.Permalink }}">
-        <div class="h-full flex flex-col items-start justify-between">
+        href="{{ .context.Permalink }}"><div class="boxIsoIn">
             {{ if .sect }}
             {{ $sectio := strings.TrimSuffix "s" (i18n .context.Section) }}
-            <span class="menuBoxCount {{ $sectio }}"><b>
-                {{ if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}|{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }} ·
-                {{ $sectio | humanize }} ·
+            <div class="menuBoxCount {{ $sectio }}"><b class="text-base">{{ $sectio | humanize }}</b><br>
+                {{- if eq (( string .sect ) | len ) 1 }}0{{ end }}{{ .sect }}|{{ if eq (( string .pag ) | len ) 1 }}0{{ end }}{{ .pag }} ·
                 {{ if or ( eq .context.Section "events" ) ( eq .context.Section "writings" )}}{{ dateFormat "01 January 2006" .context.Date }}
                 {{ else if or ( eq .context.Section "projects" ) ( eq .context.Section "publications" )  ( eq .context.Section "presentations" )}}{{ dateFormat "2006" .context.Date }}
                 {{ else }}{{ dateFormat "2006" .context.Date }}/
                 {{- if .context.Params.end }}{{ .context.Params.end }} ({{ i18n "ended" -}})
                 {{ else }}...{{ end }}{{ end }}
-            </b></span>
+            </div>
             {{ else }}
-                <span class="menuBoxCount"></span>
+                <div class="menuBoxCount">&nbsp;</div>
             {{ end }}
-            <h2 class='boxTitle py-6 px-1'>{{- .context.Title |safeHTML }}</h2>
-            <div class="boxMeta">
+            <div class="h-full flex flex-col items-start justify-between">
+            <h2 class='boxTitle h-full pb-4'>{{- .context.Title |safeHTML }}</h2>
+            <div class="boxMeta pl-4">
                 {{ if eq .context.Section "publications" }}
                 {{ if .context.Params.shortConf }}{{ .context.Params.shortConf }}{{ end }}
                 {{ if .context.Params.shortBook }}{{ .context.Params.shortBook }}{{ end }}
@@ -69,11 +68,9 @@
             }}, {{ i18n "by" }} {{ .Params.projectby }}{{ end }}{{ end }}
         </div></div>
         <div class="menuBoxPhoto">
-            <div class="w-full h-full">
                 {{ if .context.Params.frontphoto }}<div class="boxIsoImg duotone" style="background-image: url('https://drive.google.com/thumbnail?id={{- .context.Params.frontphoto | safeHTML -}}&sz=w500');"></div>
                 {{ else }}<div class="boxIsoImg"></div>{{ end }}
-            </div>
-
+        </div>
         </div>
     </a>
 </div>

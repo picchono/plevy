@@ -12,6 +12,7 @@
     {{ else }}
     {{ if ne .Params.layout "list" }}
         {{ if .Params.subtitle }}{{ .Scratch.Set "part" "subtitle" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.citation}}{{ .Scratch.Set "part" "citation" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.authors }}{{ .Scratch.Set "part" "authors" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.completename }}{{ .Scratch.Set "part" "completename" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.collaboration }}{{ .Scratch.Set "part" "collaboration" }}{{ partial "side/_base.html" . }}
@@ -30,7 +31,6 @@
         {{ if .Params.intervenants }}{{ .Scratch.Set "part" "intervenants" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.redirectlecture}}{{ .Scratch.Set "part" "redirectlecture" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.updating}}{{ .Scratch.Set "part" "updating" }}{{ partial "side/_base.html" . }}{{ end }}
-        {{ if .Params.citation}}{{ .Scratch.Set "part" "citation" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.encapsulation}}{{ .Scratch.Set "part" "encapsulation" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.link}}{{ .Scratch.Set "part" "link" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if or .Params.place .Params.visio }}{{ .Scratch.Set "part" "place" }}{{ partial "side/_base.html" . }}{{ end }}

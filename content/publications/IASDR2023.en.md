@@ -16,7 +16,6 @@ institution:
     web: "https://www.cnam.fr"
     colo: "#c1002a"
 date: 2023-10-09T15:00:40+02:00
-frontpage: true
 shortConf: "IASDR 2023"
 citation:
     authors:

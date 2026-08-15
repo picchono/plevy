@@ -14,9 +14,7 @@ searchWeight: 2
 
 #### Research vs science
 
-{{< youtube JR1Ovv3B4FA >}}
-
-[**YouTube** - Science & research, what is the difference between these two forms of study?](https://www.youtube.com/watch?v=JR1Ovv3B4FA)
+{{< video "youtube" "JR1Ovv3B4FA" >}}
 
 [**Let's stop confusing science with scientific research, by Etienne Klein**](https://www.lexpress.fr/sciences-sante/arretons-de-confondre-les-sciences-avec-la-recherche-scientifique-par-etienne-klein-PZ7B7JEWYRHPRCMVQWCDNAHAQ4)
 
@@ -34,11 +32,8 @@ This explains the relevance of design research in both the academic and industri
 
 ### Research approaches in design
 
-![Research approaches in design](/teachings/initiation-a-la-recherche/5-recherche-design.png)
 
-![Fallman's Triangle](https://process.jacklynn.com/wp-content/uploads/2014/11/Thallmantriangle.png)
-
-![Fallman's Triangle - SVG version](/teachings/initiation-a-la-recherche/fallman-triangle.svg)
+{{< photo "Research approaches in design" "1L2Yoi4FIFwhR9o0Hfm5RCy6o2aza-Xxg" >}}
 
 #### 1. Research *on* design (*Design studies* - analytical approach)
 
@@ -245,8 +240,6 @@ To describe the relationships between the three poles of "Fallman's Triangle" (s
 
 ### Research programme
 
-![Research programme in design](/teachings/initiation-a-la-recherche/programme-recherche-cycle.svg)
-
 {{<linkBox "T Binder & J Redström - 2006 - Exemplary Design Research" "https://dl.designresearchsociety.org/drs-conference-papers/drs2006/researchpapers/51">}}
 
 This discussion aims not at an epistemological ambition (e.g. on the articulation of knowledge), but at a programmatic project, that is, on the organisation of research activity.
@@ -340,3 +333,159 @@ Koskinen, I., Zimmerman, J., Binder, T., Redström, J., & Wensveen, S. A. G. (20
 - **Laboratory** · A controlled environment to limit noise and ensure a certain experimental stability.
 - **Field** · An environment to account for the reality of usage, acceptability and acceptance, a form of appropriation.
 - **Exhibition** · An environment of attention allowing temporary experimentation, criticism, debate.
+
+The formulation of the programme follows a **strategic constraint**: it must both clarify the programme's overall objective and the specific "pragmatic" objective of the iteration, each of which must allow for discussion and critique from the research community.
+
+The implementation of a programme most often begins with a **critical question** concerning a practice, a state of the art, or a socio-ecological situation. Its object remains an improvement of a design practice: the goal is not, for example, to improve a social situation, but to improve a design practice that itself aims to improve that social situation.
+
+A tradition of the DQI research group at TU/e in the Netherlands was to begin the research programme question with "How to design for...". Note that the question engages the researcher and does not place them in a purely descriptive position.
+
+Being essentially situated, the programme is inscribed in time and space. It is therefore situated within a worldview that addresses a subject of study potentially relevant both to the state of the art in design practice and research, and to the contemporary industrial, societal and ecological context.
+
+One should always expect an experimental, formless beginning, which will gradually take on a more comprehensible and effective structure through reflexive practice. Moreover, a programme is very rarely first: it often follows an intuition, an experience, an experiment or a project that opens up reflection and curiosity. It most often requires some additional experimental and discursive effort to be formed and calibrated. These initial experiments therefore have an important normative effect, a norm that may over time be challenged by other experiments finding value in reflection and the unexpected. It remains the case that the primacy of the programme is a constant: without its elaboration, the entirety of the research is neither unified nor coherent. The programme may not be first in the unfolding of the research, but it is first in its formation.
+
+**Development**
+
+The openness of the programme, the multiplicity of experiments and the formation of the programme during research—carried out through experiments based on the perspectives, questioning, critiques and interpretations of the programme—mean that the researcher's own perspective is engaged: transformative and reflexive practice. This practice engages the researcher's intentions and overall project in the formation of the programme and in the implementation of experiments, and gives an overall direction to the research.
+
+**Evaluation**
+
+The question remains of what is evaluated for a research programme. The evaluation of a cycle seems more evident (but differs according to its nature); that of the programme can be assessed by a variety of criteria, and one will be particularly interested in three contributions: that for design practice, that for design research, and that, of course, for social and ecological contribution.
+
+#### Conclusion of a research programme
+
+The open and continuously progressing nature of a programme does not make its conclusion easy: it is not intrinsically structured to be concluded, as a hypothesis to which an experiment responds might be.
+
+The termination of a programme often depends on external and practical aspects (e.g. the end of funding or the exhaustion of other resources).
+
+A more programme-focused conclusion concerns the contribution of the experiments. If this contribution sufficiently addresses the programme's questions, if the whole seems properly aligned, if the knowledge acquired serves practice and advances it, and if further progression would be more a matter of practice (e.g. the acquisition of skills through training) than of research, then the programme can be, at least temporarily, concluded: it is "useful" and its result is ready to be used in practice in an informed and coherent manner.
+
+It also happens that from one programme emerges another programme that is potentially of greater value for research and practice, or more current. The first programme may then be stopped to transfer its resources to the second.
+
+Finally, it happens that the programme runs out of steam: the research question can no longer be reformulated to allow it to go further.
+
+In all these situations, the conclusion of a programme is a **decision by the researcher**, not an observation or an objective result. This decision is made based on external factors and in relation to other past or emerging programmes.
+
+### Interventions - experiments
+
+#### Interventions in research
+
+*The research programme is nourished by experiences, and therefore by interventions. One must therefore start somewhere (cf. Sennett).*
+
+Some considerations, largely after Redström (2011):
+- **Classical experiment** — In classical research, an experiment works with an a priori hypothesis. It most often allows one to confirm or invalidate the hypothesis, and sometimes to discuss and reformulate it.
+- **Intervention in design research** — The intervention allows one to advance work that may consist of clarifying or reformulating the programme, defining or qualifying components of the programme (e.g. the implementation of tools to improve the relevant design practice), progressing in reflection through the action carried out during the intervention. It is not a matter of confirming or invalidating an assertion, but of discussing the programme and determining what can serve design practice in the field defined by the programme. The intervention informs about what the programme holds to and what can contribute to an improvement of the relevant practice.
+- **One hypothesis, one experiment; one programme, a multitude of interventions** — While a hypothesis can most often be assessed by a single experiment, the programme is composed of a multitude of interventions that form, deform, reform, discuss, test... the programme and show the variety of perspectives and contributions it proposes.
+- **An inter-interventional logic** — This implies that a form of inter-interventional logic must develop during the research, a logic that rests on the structure of the programme and on our interpretations of it over time, as well as on our interpretations of the interventions and the results obtained.
+- **Interventions constitute the iterations of the programme** — This relationship between interventions and programme comes from the need for materialisation of the programme, which allows a situating of the worldview that can thus be 'tested', thought and criticised in a direct and concrete way. The experiment contributes to the programme because it is not *just a programme, but a programme for something, and it is this something that necessitates the materialisation of the experiment* (Redström 2011).
+- **The intervention needs an intention** — In classical science, it would allow one to confirm or invalidate a hypothesis. In the case of design research, it can directly respond to a methodological question: how to do something, with what resources. This question and the work that contributes to it must however retain the qualities necessary for their critique and thus contribute to a research discussion.
+- **The experiment, a moment of the programme** — The experiment is a moment of the programme through which the programme is interpreted, and following which it can be reinterpreted or changed. It opens a design space allowing this putting into perspective — Reunkrilerk (2024) explores this mediality through design practices that activate transformation processes through situated gestures and sensitive mediations — allowing the specification of certain elements useful for the formation and progress of the programme.
+
+#### Qualities of the intervention in design research
+
+- **It produces generative knowledge**;
+- **It is carried out in a situation of incompleteness**, and the result cannot be predicted at the outset;
+- **Its value is its fecundity**.
+
+#### Three experimental situations
+
+Koskinen, I., Zimmerman, J., Binder, T., Redström, J., & Wensveen, S. A. G. (2011). *Design Research through Practice: From the Lab, Field, and Showroom*. Elsevier.
+
+- **Laboratory** · A controlled environment to limit noise and ensure a certain experimental stability.
+- **Field** · An environment to account for the reality of use, acceptability and acceptance, a form of appropriation.
+- **Exhibition** · An attention environment allowing temporary experimentation, critique, debate.
+
+### Contemporary issues
+
+Design research is traversed by several contemporary issues that question and transform its practices, objects, and responsibilities.
+
+#### Artificial intelligence and design research
+The emergence of generative AI is profoundly transforming design research. AI tools (image, text, code, and 3D model generation) introduce new methodological possibilities but also raise fundamental challenges for design research.
+
+**Opportunities**
+- **New design methods** — AI allows rapid exploration of a large solution space, generation of variants, or combination of elements in novel ways.
+- **Rapid prototyping** — AI-assisted generation accelerates the production of prototypes and research artefacts.
+- **Augmented analysis** — AI tools facilitate the analysis of large corpora (images, texts, qualitative data) and can reveal patterns invisible to the human eye.
+
+**Research questions**
+- How is AI transforming the designer's creativity and design process?
+- What is the place of human intention in AI-generated design?
+- How can one evaluate the ethical and aesthetic quality of AI-produced designs?
+- What new roles are emerging for the designer in the AI era (curator, editor, critic)?
+
+**Ethical issues**
+- **Bias** — AI models reproduce and amplify the biases in their training data.
+- **Intellectual property** — Who is the author of an AI-generated design?
+- **Transparency** — How should one document and evaluate the use of AI in the research process?
+- **Environmental impact** — Training and using AI models has a considerable energy cost.
+
+**References**
+- Foth, M., & Paulos, E. (2023). AI and the future of design research. *She Ji: The Journal of Design, Business, & Society*, *9*(1), 1–12.
+- Koskinen, I. (2023). Design research in the age of AI. *Design Issues*, *39*(2), 5–17. https://doi.org/10.1162/desi_a_00698
+
+#### Design for sustainability and Transition Design
+
+Contemporary ecological and social crises invite design research to rethink its objects, methods and purposes. **Transition Design** proposes a framework for designing transitions towards more sustainable socio-technical systems.
+
+**Design for Sustainability**
+Design for sustainability research explores how design can contribute to the ecological transition: eco-design, circular design, regenerative design, sober design. It involves designing artefacts, services and systems that minimise their environmental impact and maximise their contribution to wellbeing.
+
+**Transition Design**
+Proposed by Irwin, Tonkinwise and Kossoff (2020), Transition Design is an approach that aims to facilitate transitions to sustainable societies. It is characterised by:
+- A **systemic vision** — Design is thought at the scale of systems (mobility, food, energy) and not only of artefacts.
+- A **long-term orientation** — Transitions unfold over decades, not months.
+- A **stakeholder-oriented approach** — All stakeholders are involved in the co-construction of transitions.
+- An **integration of knowledge** — Local, traditional and scientific knowledge are combined.
+
+**Design for Social Innovation**
+Manzini (2015) proposes a vision of design as a lever for social innovation, where citizens become co-designers of solutions to social and environmental problems. Makerspaces, fablabs and community gardens are spaces where this vision is realised.
+
+**Transforming Practices**
+The transition to sustainable ways of life involves a deep transformation of everyday practices. The research programme *Transforming Practices* (Hummels, Trotto & Lévy) explores how design can facilitate this transformation by drawing on the minor keys of everyday life. Rather than prescribing behaviours or developing disruptive technologies, this approach values ordinary practices, everyday gestures and forms of appropriation as levers for change. The transformation of practices proceeds through a phenomenological attention to lived experience, a recognition of situated knowledges and a design that accompanies rather than imposes.
+
+**References**
+- Hummels, C., Trotto, A., & Lévy, P. (2023). *Transforming practices: A minor key approach to everyday life transformation*. Design Research Society.
+- Irwin, T., Tonkinwise, C., & Kossoff, G. (2020). Transition design: An educational framework for advancing the study and design of sustainable transitions. *Cuadernos del Centro de Estudios de Diseño y Comunicación*, (105), 1–18. https://doi.org/10.18682/cdc.vi105.4188
+- Manzini, E. (2015). *Design, when everybody designs: An introduction to design for social innovation*. MIT Press. https://doi.org/10.7551/mitpress/9873.001.0001
+
+#### Post-colonial and decolonial design research
+
+Design research has long been dominated by Western perspectives, considered universal. Post-colonial and decolonial approaches invite us to decenter design, to recognise the plurality of epistemologies and to value marginalised knowledges.
+
+**Critique of Western design**
+Modern design was built on Western presuppositions: universalism, rationalism, individualism, linear progress. These presuppositions were imposed as universal norms, marginalising other design traditions (indigenous, Asian, African, Latin American).
+
+**Pluriversal approaches**
+Escobar (2018) proposes the concept of the *pluriverse*—a world where many worlds coexist. Pluriversal design recognises the diversity of forms of life, knowledges and design practices. It involves designing *with* communities, not *for* them, respecting their cosmologies and practices.
+
+**Epistemologies of the South**
+The epistemologies of the South (de Oliveira Martins, 2020) refer to knowledge produced in the margins of the modern/colonial world-system. They include indigenous, peasant, Afro-descendant, and feminist knowledges. Decolonial design research values these knowledges and integrates them into co-design processes.
+
+**Issues for design research**
+- **Cultural decentring** — How to design beyond Western categories (beauty, function, use)?
+- **Epistemic justice** — How to recognise and value non-Western knowledges in research?
+- **Historical responsibility** — How can design contribute to repairing colonial violence?
+- **Situated methodologies** — How to develop research methods rooted in specific contexts?
+
+**References**
+- de Oliveira Martins, L. (2020). Decolonizing design: A pluriversal approach. *Design Issues*, *36*(4), 6–18. https://doi.org/10.1162/desi_a_00615
+- Escobar, A. (2018). *Designs for the pluriverse: Radical interdependence, autonomy, and the making of worlds*. Duke University Press. https://doi.org/10.1215/9780822371816
+
+### Research communities and societies
+
+Design, art and creation research takes place within scientific communities structured by scholarly societies, conferences and networks. These communities define quality standards, organise scientific discussion and offer spaces for dissemination.
+
+**Main scholarly societies**
+- **Design Research Society (DRS)** — International design research society, founded in 1966. Organises the biennial DRS conference and publishes the journal *Design Science*. https://www.designresearchsociety.org
+- **SIGCHI** — Special Interest Group on Computer-Human Interaction of the ACM. Organises the CHI conference and structures human-computer interaction research. https://sigchi.org
+- **European Academy of Design (EAD)** — European network of design schools. Organises the biennial EAD conference. https://europeancademy.org
+- **Cumulus Association** — International network of art and design universities. https://cumulusassociation.org
+
+**Main conferences in design research**
+- **DRS** (Design Research Society) — Biennial, covering the entirety of design research
+- **DIS** (Designing Interactive Systems) — Annual ACM conference on interactive design
+- **CHI** (Conference on Human Factors in Computing Systems) — Main HCI conference
+- **EAD** (European Academy of Design) — European biennial
+- **IASDR** (International Association of Societies of Design Research) — International conference
+
+These communities are essential spaces for the dissemination of results, networking and building collaborations. Participation in one or more of these communities is recommended for any design researcher.
