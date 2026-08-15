@@ -680,10 +680,6 @@ span.pf-trigger-text {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.menuSection {
-    @apply w-full rounded-sm px-8 py-1 m-0 self-end;
-}
-
 .menuBoxCount {
     @apply h-auto text-xs font-normal py-0.5 px-1.5 text-epierrot bg-secondary-bg rounded-r-xs transition-all duration-700 ease-in-out;
     writing-mode: vertical-rl; /* Turns text vertical */
@@ -1000,7 +996,7 @@ section.home {
 }
 
 .sideBlockIn {
-    @apply w-full h-full;
+    @apply w-full;
     padding: calc(0.5 * var(--spacing-pad));
 }
 
@@ -1028,11 +1024,11 @@ section.home {
 }
 
 .sectionBlock>a {
-    @apply text-primary-text font-bold flex flex-col justify-center items-end border-0;
+    @apply text-primary-text font-bold flex flex-col justify-center items-end border-0 px-4 mt-1 mb-4;
 }
 
 .sectionBlock>a:hover {
-    @apply text-primary-bg bg-epierrot;
+    @apply text-epierrot bg-primary-bg;
 }
 
 .sectionBlock>a>span {
@@ -1191,7 +1187,7 @@ img.lg-object {
 }
 
 .mainSide {
-    @apply w-1/6 shrink-0;
+    @apply w-1/12 shrink-0;
 }
 
 .mainBlockIn {
