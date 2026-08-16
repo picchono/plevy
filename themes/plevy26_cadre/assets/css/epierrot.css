@@ -701,6 +701,10 @@ a.boxIso {
     box-sizing: border-box;
 }
 
+a.boxIso:hover {
+    @apply bg-transparent;
+}
+
 a.boxIso .boxIsoIn {
     @apply p-4 flex flex-row justify-between items-stretch rounded-md transition-all duration-700 ease-in-out;
     border: 1px solid rgba(0, 0, 0, 0.1);
