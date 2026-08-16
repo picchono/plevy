@@ -23,7 +23,7 @@
         "start": "2021",
         "end": "none",
         "title": "Researcher at <a href='https://www.dicen-idf.org' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen-IDF</a> laboratory (EA 7339)",
-        "titleshort": "<a href='https://www.dicen-idf.org' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen</a> laboratory",
+        "titleshort": "Researcher at <a href='https://www.dicen-idf.org' title='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France' data-tooltip='Dispositifs d’Information et de Communication à l’Ere Numérique – Paris, Ile-de-France'>Dicen</a> laboratory",
         "comment": "Laboratory Unit on Information and Communication Dispositives in the Digital Age",
         "main": true
       },
@@ -31,8 +31,8 @@
         "order": 3,
         "start": "2026",
         "end": "none",
-        "title": "Chercheur associé à <a href='https://sacre.psl.eu/' title='SACRe'>SACRe</a>",
-        "titleshort": "Chercheur associé à <a href='https://sacre.psl.eu' title='Département de Design'>SACRe</a>",
+        "title": "Associate researcher at <a href='https://sacre.psl.eu/' title='SACRe'>SACRe</a>",
+        "titleshort": "Associate researcher at <a href='https://sacre.psl.eu' title='Département de Design'>SACRe</a>",
         "main": true
       },
       "TUe2": {
