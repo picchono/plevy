@@ -677,24 +677,16 @@ span.pf-trigger-text {
 /* menuBox */
 .menuBox {
     @apply relative w-full flex flex-col justify-around flex-wrap mt-4 rounded-sm;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .menuBoxCount {
-    @apply h-auto text-xs font-normal py-0.5 px-1.5 text-epierrot bg-secondary-bg rounded-r-xs transition-all duration-700 ease-in-out;
+    @apply h-auto text-xs font-normal py-0.5 px-1.5 text-epierrot bg-secondary-bg rounded-md transition-all duration-700 ease-in-out;
     writing-mode: vertical-rl; /* Turns text vertical */
     transform: rotate(180deg); /* Flips it so it reads bottom-to-top */
     text-align: left;
     padding: 10px;
 }
 
-a.boxIso:hover .menuBoxCount {
-    @apply text-primary-bg bg-epierrot;
-}
-
-a.boxIso:hover {
-    @apply text-primary-bg;
-}
 
 .menuBoxDesc {
     @apply w-full text-xs p-1 wrap-break-word;
@@ -708,8 +700,14 @@ a.boxIso {
     @apply w-full h-full text-primary-text grow-0 shrink-0 ;
     box-sizing: border-box;
 }
+
 a.boxIso .boxIsoIn {
-    @apply p-4 flex flex-row justify-between items-stretch rounded transition-all duration-700 ease-in-out;
+    @apply p-4 flex flex-row justify-between items-stretch rounded-md transition-all duration-700 ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
+    @apply text-primary-bg bg-epierrot rounded-md;
 }
 
 .menuBox.ended .boxIso {
@@ -775,21 +773,21 @@ a.boxIso .boxIsoIn {
 
 /* duotone */
 .duotone {
-    @apply /*inline-block*/ relative rounded-xs transition-all duration-700 ease-in-out;
+    @apply /*inline-block*/ relative rounded-md transition-all duration-700 ease-in-out;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .duotone::before {
-    @apply block w-full h-full absolute top-0 left-0 rounded-xs transition-all duration-700 ease-in-out;
+    @apply block w-full h-full absolute top-0 left-0 rounded-md transition-all duration-700 ease-in-out;
     background-color: var(--color-tertiary-bg);
     content: '';
     mix-blend-mode: var(--blend-mode-before);
 }
 
 .duotone::after {
-    @apply block w-full h-full absolute top-0 left-0 rounded-xs transition-all duration-700 ease-in-out;
+    @apply block w-full h-full absolute top-0 left-0 rounded-md transition-all duration-700 ease-in-out;
     background-color: var(--color-primary-bg);
     content: '';
     mix-blend-mode: var(--blend-mode-after);
