@@ -50,9 +50,6 @@
 </section>
 {{ end }}
 <div class="mainBlock">
-    <div class="my-10 font-bold text-epierrot">{{ $page := $.Site.GetPage "page" "pierre-levy/" }}
-    {{ $page.Content }}</div>
-
     {{if false }}<div class="mainMenu">
         {{ $s := 1 }}
         {{ range .Sections }}{{ if ne .Slug "pl" }}

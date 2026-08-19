@@ -1,6 +1,7 @@
 <div class="sideSection">
     {{ .Scratch.Set "part" "title" }}{{ partial "side/_base.html" . }}
     {{ if eq .Params.layout "home" }}
+        {{ if eq .Params.layout "home" }}{{ .Scratch.Set "part" "front_description" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.subtitle }}{{ .Scratch.Set "part" "subtitle" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.completename }}{{ .Scratch.Set "part" "completename" }}{{ partial "side/_base.html" . }}
         {{ else if .Params.photogallery }}{{ .Scratch.Set "part" "photogallery" }}{{ partial "side/_base.html" . }}{{ end }}
