@@ -757,7 +757,8 @@ a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
 }
 
 #Slides a.boxIso {
-    @apply w-80 mb-4 mr-4;
+    @apply w-80 mb-4 mr-4 rounded-xl;
+    border:1ps solid rgba(0, 0, 0, 0.3);
 }
 
 #Slides .boxIsoImg {
