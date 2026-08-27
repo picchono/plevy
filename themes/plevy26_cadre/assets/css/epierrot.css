@@ -756,12 +756,13 @@ a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
     object-fit: cover;
 }
 
-#Slides .boxIso {
-    @apply w-40 mb-4 mr-4;
+#Slides a.boxIso {
+    @apply w-80 mb-4 mr-4;
 }
 
-#Slides .boxIsoIn {
-    width: 100% !important;
+#Slides .boxIsoImg {
+    @apply w-80;
+    aspect-ratio: 1.78;
 }
 
 .menuBoxPhoto {
