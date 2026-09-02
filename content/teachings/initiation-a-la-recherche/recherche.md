@@ -32,7 +32,7 @@ Cela explique la pertinence de la recherche en design à la fois dans le monde a
 
 ### Approches de recherche en design
 
-{{< photo "Approches de la recherche en design" "1L2Yoi4FIFwhR9o0Hfm5RCy6o2aza-Xxg" >}}
+{{< photo "Approches de la recherche en design" "1vur8TYdJWtcvtm9aGnXR2gAxRggfSaZB" >}}
 
 #### 1. Recherche sur le design (*Design studies* - approche analytique)
 

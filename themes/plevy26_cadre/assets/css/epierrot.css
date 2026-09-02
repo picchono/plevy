@@ -1299,3 +1299,12 @@ ul.toc__sublist {
 #cv pagefind-modal-trigger {
     @apply invisible;
 }
+
+@media print {
+    .menuSetting {
+        visibility: collapse;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+}

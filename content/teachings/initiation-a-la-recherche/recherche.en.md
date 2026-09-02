@@ -33,7 +33,7 @@ This explains the relevance of design research in both the academic and industri
 ### Research approaches in design
 
 
-{{< photo "Research approaches in design" "1L2Yoi4FIFwhR9o0Hfm5RCy6o2aza-Xxg" >}}
+{{< photo "Research approaches in design" "1vur8TYdJWtcvtm9aGnXR2gAxRggfSaZB" >}}
 
 #### 1. Research *on* design (*Design studies* - analytical approach)
 
