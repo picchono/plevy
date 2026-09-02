@@ -1,6 +1,6 @@
 <div class="menuSetting" data-pagefind-ignore>
         <div id="settingOptions">
-                {{ if not .IsHome }}<a class="block logohome" href='{{ absURL "" }}'>
+                {{ if not .IsHome }}<a class="block logohome" href="javascript:history.back()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square"
                                 viewBox="0 0 16 16">
                                 <path
@@ -37,5 +37,5 @@
                 {{ end }}
         </div>
         {{ end }}
-                
+
 </div>
