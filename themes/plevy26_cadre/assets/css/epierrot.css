@@ -471,6 +471,7 @@ h3 {
     @apply text-base font-bold;
 }
 
+
 table {
     @apply mt-2 mb-8;
 }
@@ -1287,8 +1288,8 @@ ul.toc__sublist {
     @apply text-xl font-bold pt-8 pb-4;
 }
 
-#content h1 {
-    @apply text-xl italic pt-4 pb-0;
+#content h4 {
+    @apply text-lg font-bold italic pt-4 pb-0;
 }
 
 /* cv */
