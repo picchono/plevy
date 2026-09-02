@@ -165,7 +165,7 @@ Ces questions ne visent pas à résoudre un problème. Elles utilisent le design
 
 Cette approche est donc proche du *design practice* : elle entend lui aussi être synthétique et proactive dans la réalisation d'un design de produit, de système ou de service. Il s'en différencie toutefois par les aspects suivants:
 - **La perspective par laquelle l'artefact est conçu**. La recherche en design exploration se pose la question « What if? ». Pelle Ehn nomme cette approche une transcendance, dans le sens où elle « explore les possibilités hors des paradigmes actuels, que ces paradigmes soient à propos d'un style, d'un usage, d'une technologie, d'une économie ».
-- **L'objectif de cette activité est la recherche elle-même.** Fallman indique que le client typique de cette activité est le programme de recherche du chercheur lui-même. Elle est souvent initiée par une réflexion intégrante à la recherche. Le but n'est donc pas de coller à un marché ou d'en développer un, mais plutôt de voir ce qui est possible, ce qui est désirable ou non, ce qui est idéal ou non, ou plus simplement de proposer des exemples et des alternatives. Cette approche peut donc servir à une discussion technologique, phénoménologique, sociale, politique... et lie le design à des disciplines en sciences humaines et sociales.
+- **L'objectif de cette activité est la recherche elle-même.** Ce type de recherche vise souvent une confrontation avec le programme de recherche lui-même. Elle est souvent initiée par une réflexion intégrante à la recherche. Le but n'est donc pas de coller à un marché ou d'en développer un, mais plutôt de voir ce qui est possible, ce qui est désirable ou non, ce qui est idéal ou non, ou plus simplement de proposer des exemples et des alternatives. Cette approche peut donc servir à une discussion technologique, phénoménologique, sociale, politique... et lie le design à des disciplines en sciences humaines et sociales.
 
 Dans les cas classiques de cette recherche en design exploration, on trouvera les travaux de Dunne et Raby sur le design spéculatif et critique, ainsi que ceux de James Auger sur les artefacts comme déclencheurs de questionnement.
 
@@ -221,7 +221,7 @@ Pelle Ehn, Liz Sanders, Pieter Jan Stappers, Erling Björgvinsson
 
 ### Transversalité
 
-Il ne faut toutefois pas voir ces trois approches comme des silos étanches. C'est leur association et le passage élaboré de l'un à l'autre qui constituent dans la structure et dans le temps une recherche en design. Ces mouvements invitent une variété de pratiques et de méthodes, mais aussi une variété de perspectives. Ces glissements entre perspectives invitent le sens critique sur la recherche et sur son objet. Ces trois types d'activité forment la recherche en design, et a fortiori en création.
+Il ne faut toutefois pas voir ces approches comme des silos étanches. C'est leur association et le passage élaboré de l'un à l'autre qui constituent dans la structure et dans le temps une recherche en design. Ces mouvements invitent une variété de pratiques et de méthodes, mais aussi une variété de perspectives. Ces glissements entre perspectives invitent le sens critique sur la recherche et sur son objet. Ces types d'activité forment la recherche en design, et a fortiori en création.
 
 Pour décrire les relations entre les trois pôles du « Triangle de Fallman » (cf. figure de la section « Approches de recherche en design ») — *design practice*, *design studies* et *design exploration* — Fallman (2008) distingue trois types de mouvements :
 - Une **trajectoire** indique les glissements subtils qui ont lieu au cours de la recherche, d'une activité vers une autre. Sa détermination est particulièrement utile pour évaluer les contraintes liées aux projets prenant part à la recherche.
@@ -234,12 +234,14 @@ Pour décrire les relations entre les trois pôles du « Triangle de Fallman » 
 - créer/changer - expliquer/comprendre - suggérer/provoquer
 - client - pair - critique
 
+Nous assumons ici que ces trois mouvements restent valables en considérant les cinq approches.
+
 ***Référence***
 - Fallman, D. (2008). The interaction design research triangle of design practice and design exploration. *Design Issues*, *24*(3), 4–18. [https://doi.org/10.1162/desi.2008.24.3.4](https://doi.org/10.1162/desi.2008.24.3.4)
 
 ### Programme de recherche
 
-{{<linkBox "T Binder & J Redström - 2006 - Exemplary Design Research" "https://dl.designresearchsociety.org/drs-conference-papers/drs2006/researchpapers/51">}}
+{{<linkBox "Binder, T., & Redström, J. (2006). Exemplary Design Research. Design Research Society Wonderground International Conference 2006." "https://dl.designresearchsociety.org/drs-conference-papers/drs2006/researchpapers/51">}}
 
 Cette discussion vise non pas une ambition épistémologique (p. ex. sur l'articulation de la connaissance, mais un projet programmatique, c'est-à-dire sur l'organisation de l'activité de recherche.
 
