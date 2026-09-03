@@ -7,7 +7,7 @@ searchFilter: Teaching
 searchWeight: 1
 ---
 
-## DSN201 - 1. Introduction
+## Introduction
 
 ### Introduction
 

@@ -8,7 +8,7 @@ searchFilter: Teaching
 searchWeight: 2
 ---
 
-## 2. La recherche
+## La recherche
 
 ### La recherche en design
 

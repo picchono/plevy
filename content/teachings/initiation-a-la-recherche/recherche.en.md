@@ -8,7 +8,7 @@ searchFilter: Teaching
 searchWeight: 2
 ---
 
-## 2. Research
+## Research
 
 ### Research in design
 

@@ -7,7 +7,7 @@ searchFilter: Teaching
 searchWeight: 3
 ---
 
-## DSN201 - 3. The research question
+## The research question
 
 ### The research question
 

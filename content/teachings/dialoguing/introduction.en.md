@@ -24,14 +24,35 @@ frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 ### A word
 Hi,
 I am Pierre Lévy and will teach the course USMC85 - Dialoguing this year.
-**Briefly about me –**  
+
+**Briefly about me**  
 I am interested in the way we deal with and transform the world at hand in everyday life. This constant effort of appropriation maintains a certain form of freedom and quietude. While I experiment a lot on my own everyday life, I also try to structure my design teachings and research activities so that I can explore and progress on these inquiries further.  
 I am a professor of design of Cnam since 2021. Previously, I have been educated in mechanical engineering (master level), design and neuroscience (during my PhD). My current research is situated in-between the fields of design, information sciences and humanities. I have worked a few years in the industry before entering the academic world. Although I was raised in France, I have lived a long time in Japan and in the Netherlands.
   
 **Briefly about the course**  
 This course intends to challenge learners on the way exposing their work can communicate their intent to either convince or create a dialog (by means of a rising curiosity and interest). Exploring tools and techniques for **writing, visualising and presenting**, this course provides the basics to improve communication skills in projects and research.
 
-### Objectives
+### Calendar
+
+| Date                       | Room     | Group   | Topic                            |
+| -------------------------- | -------- | ------- | -------------------------------- |
+| 2026-09-25 13:45-17:00     | 31.2.85  | all     | Intro - Rhetoric + Documentation |
+| 2026-10-02 13:45-17:00     | 31.2.87  | MECA1   | Writing                          |
+| 2026-10-09 13:45-17:00     | 30.-1.27 | IoT1    | Writing                          |
+| 2026-10-23 13:45-17:00     | 31.2.87  | TLC1    | Writing                          |
+| **2026-11-06 13:45-17:00** |          | **all** | **Documentation**                |
+| 2026-11-13 13:45-17:00     | 31.2.87  | MECA2   | Visualising                      |
+| 2026-11-20 13:45-17:00     | 31.2.87  | IoT2    | Visualising                      |
+| 2026-11-27 13:45-17:00     | 31.2.87  | MECA3   | Presenting                       |
+| 2026-12-04 13:45-17:00     | 31.2.87  | TLC2    | Visualising                      |
+| 2026-12-11 13:45-17:00     | 30.-1.27 | MECA4   | Reporting                        |
+| 2026-12-18 13:45-17:00     | 31.2.87  | IoT3    | Presenting                       |
+| 2027-01-08 13:45-17:00     | 31.2.87  | TLC3    | Presenting                       |
+| 2027-01-15 13:45-17:00     | 30.-1.27 | IoT4    | Reporting                        |
+| 2027-01-29 13:45-17:00     | 31.2.87  | TLC4    | Reporting                        |
+
+
+### Schedule 2026-2027
 **Starting considerations:**
 - **encoding ≠ decoding**. What you mean is not always what they understand. This gap is where rhetoric helps you bridge.
 - **Noise** can interfere at any stage (distractions, misunderstandings, language barriers)
@@ -40,18 +61,7 @@ This course intends to challenge learners on the way exposing their work can com
 - acquiring techniques for structuring and performing a presentation,
 - using and adapting different media for presenting,
 - using relevant resources to continue progressing independently. The development of these skills will be based on projects selected by the learners (their own or chosen projects)
-### Schedule 2026-2027 (expected)
-- 25 September 2026 · 13:45-17:00 (ALL) - Introduction / Rhetoric + Documentation
-- 02 October 2026 · 13:45-17:00 (MECA1) - Writing
-- 09 October 2026 · 13:45-17:00 (IoT1) - Writing
-- 23 October 2026 · 13:45-17:00 (TLC1) - Writing
-- 06 November 2026 · 13:45-17:00 (ALL) - Documentation
-- 13 November 2026 · 13:45-17:00 (MECA2) - Visualising
-- 20 November 2026 · 13:45-17:00 (IoT2) - Visualising
-- 27 November 2026 · 13:45-17:00 (MECA3) - Presenting
-- 04 December 2026 · 13:45-17:00 (TLC2) - Visualising
-- 18 December 2026 · 13:45-17:00 (IoT3) - Presenting
-- 08 January 2027 · 13:45-17:00 (TLC3) - Presenting
+
 ### Structure of the course
 - Each course will be composed of small lectures, exercises (not graded), discussions, and assignments (graded).
 - You are required to have pens or pencils (multiple colors) and some sheets of paper (A5~A4), a computer or a tablet.
