@@ -694,8 +694,15 @@ span.pf-trigger-text {
 }
 
 .mainMenu {
-    @apply block w-full mb-8;
+    @apply invisible h-0 block w-full;
 }
+
+@media (min-width: 768px) {
+    .mainMenu {
+        @apply visible h-auto mb-8 pb-4 border-b border-dotted border-primary-text;
+    }
+}
+
 /* boxIso */
 a.boxIso {
     @apply w-full h-full text-primary-text grow-0 shrink-0 ;
