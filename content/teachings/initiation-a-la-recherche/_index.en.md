@@ -43,10 +43,13 @@ lectures:
         order: 6
         link: "evaluation"
         title: "L'évaluation"
+    DSAA:
+        order: 7
+        link: "memoire_DSAA"
+        title: "Le mémoire en DSAA"
 link:
-    1: ["Leçons", "course", "https://plevy.craft.me/Initiation-recherche-design"]
-    3: ["page institutionelle", "institutional", "https://bedeo.cnam.fr/public/unite/view/DSN201/2024-11-24"]
-    2: ["Séminaire de recherche", "website", "/events/seminaire-de-recherche-en-design"]
+    2: ["page institutionelle", "institutional", "https://bedeo.cnam.fr/public/unite/view/DSN201/2024-11-24"]
+    1: ["Séminaire de recherche", "website", "/events/seminaire-de-recherche-en-design"]
 encapsulation:
     MR15001B: 
         page: "Master-ACTU.md"
