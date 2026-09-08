@@ -759,12 +759,16 @@ a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
 
 #Slides a.boxIso {
     @apply w-80 mb-4 mr-4 rounded-xl;
-    border:1ps solid rgba(0, 0, 0, 0.3);
 }
 
 #Slides .boxIsoImg {
-    @apply w-80;
+    @apply w-80 transition-all duration-700 ease-in-out;
     aspect-ratio: 1.78;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#Slides .boxIsoImg:hover {
+    border: 1px solid var(--color-epierrot);
 }
 
 .menuBoxPhoto {
