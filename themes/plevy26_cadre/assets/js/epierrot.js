@@ -27,6 +27,14 @@ function showPic() {
   }, 100);
 }
 
+function goBackOrHome() {
+  if (window.history.length > 1 && document.referrer.includes(window.location.hostname)) {
+    window.history.back();
+  } else {
+    window.location.href = '/';
+  }
+}
+
 //create a table of content if #toc exists
 function tableContent() {
   var tocContainer = document.getElementById("toc");

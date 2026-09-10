@@ -681,7 +681,7 @@ span.pf-trigger-text {
 }
 
 .menuBoxCount {
-    @apply h-auto text-xs font-normal py-0.5 px-1.5 text-epierrot bg-secondary-bg rounded-md transition-all duration-700 ease-in-out;
+    @apply h-auto text-xs font-normal py-0.5 px-1.5 text-epierrot rounded-md transition-all duration-700 ease-in-out;
     writing-mode: vertical-rl; /* Turns text vertical */
     transform: rotate(180deg); /* Flips it so it reads bottom-to-top */
     text-align: left;
@@ -714,7 +714,7 @@ a.boxIso:hover {
 }
 
 a.boxIso .boxIsoIn {
-    @apply p-4 flex flex-row justify-between items-stretch rounded-md transition-all duration-700 ease-in-out;
+    @apply p-2 flex flex-row justify-between items-stretch rounded-md transition-all duration-700 ease-in-out;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
