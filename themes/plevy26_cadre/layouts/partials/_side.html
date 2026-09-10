@@ -39,5 +39,6 @@
         {{ if eq .Params.layout "member" }}{{ .Scratch.Set "part" "member" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if eq .Params.layout "programme"}}{{ .Scratch.Set "part" "programme" }}{{ partial "side/_base.html" . }}{{ end }}
         {{ if .Params.license }}{{ .Scratch.Set "part" "license" }}{{ partial "side/_base.html" . }}{{ end }}
+        {{ if .Params.toc }}{{ .Scratch.Set "part" "toc" }}{{ partial "side/_base.html" . }}{{ end }}
     {{ end }}{{ end }}
 </div>

@@ -44,16 +44,17 @@ lectures:
         link: "evaluation"
         title: "L'évaluation"
     DSAA:
-        order: 7
+        order: 7.1
         link: "memoire_DSAA"
         title: "Le mémoire en DSAA"
+    CCE243:
+        order: 7.2
+        link: "CCE243"
+        title: "CCE243 - Ingénierie de la culture et de la création"
 link:
     2: ["page institutionelle", "institutional", "https://bedeo.cnam.fr/public/unite/view/DSN201/2024-11-24"]
     1: ["Séminaire de recherche", "website", "/events/seminaire-de-recherche-en-design"]
 encapsulation:
-    MR15001B: 
-        page: "Master-ACTU.md"
-        code: "MR15001B"
     ENSAAMADSAA:
         page: "DSAA-Master.md"
         code: "ENSAAMADSAA"

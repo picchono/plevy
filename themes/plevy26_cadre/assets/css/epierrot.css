@@ -1286,6 +1286,10 @@ ul.toc__sublist {
     @apply text-epierrot bg-primary-bg;
 }
 
+li.toc__item {
+    @apply mb-2;
+}
+
 /* content */
 #content h1 {
     @apply text-3xl font-bold pt-8 pb-3;
