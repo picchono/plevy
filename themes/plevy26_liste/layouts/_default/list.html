@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ $langu := .Site.Language.Lang }}
+{{ $lis := .Slug }}
+<div class="mainsection">
+        {{ $s := 1 }}
+        {{ range $.Site.Sections }}{{ if eq .Slug $lis }}
+        {{ $p := 1 }}
+        {{ range .Pages }}{{ if ne .Params.notListed true }}
+        {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
+        {{ $p = add $p 1 }}
+        {{ end }}{{ end }}
+        {{ $s = add $s 1 }}
+        {{ end }}{{ end }}
+    </div>
+{{ end }}

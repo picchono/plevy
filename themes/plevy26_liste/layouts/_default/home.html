@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="mainBlock">
+    <div class="mainMenu">
+        {{ $s := 1 }}
+        {{ $len := len .Sections }}
+        {{ range .Sections }}{{ if ne .Slug "pl" }}
+          <span class="section-{{- .Slug -}} flex flex-row flex-wrap justify-start items-center">
+            <a class="px-1 py-0.5 rounded-sm" href="{{ .Slug }}">
+                <div class="inline text-xs">0{{- $s }} ·</div>&nbsp;<div class="inline text-lg font-bold">{{ i18n .Slug  | humanize }}</div>
+            </a>&nbsp;
+            {{ if ne (add $s 1) $len }}/{{ end }}
+          </span>
+        {{ $s = add $s 1 }}{{ end }}{{ end }}
+    </div>
+    {{ $s := 1 }}
+    {{ range .Sections }}{{ if ne .Slug "pl" }}
+    {{ $p := 1 }}
+    <div class="flex flex-row justify-between items-start border-t border-dotted border-epierrot mt-8">
+        <div class="sectionBlock section-{{- .Slug -}}">
+            <a class="menuSection" href="{{ .Slug }}">
+                <div><span>{{ if eq (( string $s ) | len ) 1 }}0{{ end }}{{ $s }} · </span>
+                <span>{{ i18n .Slug  | humanize }}</span> / </div>
+            </a>
+        </div>
+        <div class="w-3/4">
+            {{ range .Pages }}{{ if ne .Params.notListed true }}{{ if .Params.frontpage }}
+            {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
+            {{ $p = add $p 1 }}
+            {{ end }}{{ end }}{{ end }}
+        </div>
+    </div>
+    {{ $s = add $s 1 }}
+    {{ end }}{{ end }}
+</div>
+{{ end }}
