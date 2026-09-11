@@ -460,7 +460,11 @@ ol {
 
 h1,
 h2 {
-    @apply text-lg font-bold;
+    @apply font-bold;
+}
+
+h1 {
+    @apply text-lg;
 }
 
 h2:not(:first-child) {
@@ -677,7 +681,7 @@ span.pf-trigger-text {
 
 /* menuBox */
 .menuBox {
-    @apply relative w-full flex flex-col justify-around flex-wrap;
+    @apply relative w-full py-1 flex flex-col justify-around flex-wrap border-b border-dotted border-primary-text;
 }
 
 .menuBoxCount {
@@ -690,7 +694,7 @@ span.pf-trigger-text {
 
 
 .menuBoxDesc {
-    @apply w-1/2 text-xs p-1 wrap-break-word;
+    @apply w-2/3 text-xs wrap-break-word;
 }
 
 .mainMenu {
@@ -699,26 +703,30 @@ span.pf-trigger-text {
 
 @media (min-width: 768px) {
     .mainMenu {
-        @apply visible h-auto mb-8 pb-4 border-b border-dotted border-primary-text;
+        @apply visible h-auto pb-4;
+    }
+
+    .boxTitle {
+        @apply w-5/6;
     }
 }
 
 /* boxIso */
 a.boxIso {
-    @apply w-full h-full text-primary-text grow-0 shrink-0 ;
+    @apply w-full h-full text-primary-text grow-0 shrink-0 px-2 rounded transition-all duration-700 ease-in-out;
     box-sizing: border-box;
 }
 
 a.boxIso:hover {
-    @apply bg-transparent;
+    @apply text-epierrot bg-primary-bg;
 }
 
 a.boxIso .boxIsoIn {
-    @apply p-2 flex flex-row justify-between items-stretch rounded-md transition-all duration-700 ease-in-out;
+    @apply flex flex-row justify-between items-stretch py-4 rounded-md;
 }
 
 a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
-    @apply text-primary-bg bg-epierrot rounded-md;
+    @apply text-epierrot;
 }
 
 .menuBox.ended .boxIso {
@@ -739,7 +747,6 @@ a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
 
 .boxIsoIn>div:first-child {
     align-self: normal;
-    padding: calc(0.25 * var(--spacing-pad)) calc(0.125 * var(--spacing-pad)) var(--spacing-pad) calc(0.25 * var(--spacing-pad));
 }
 
 .boxIsoIn>div {
@@ -755,7 +762,7 @@ a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
 }
 
 .boxMeta {
-    @apply w-full flex flex-col flex-wrap justify-start text-sm p-1;
+    @apply w-full flex flex-col flex-wrap justify-end items-end text-xs pl-4;
 }
 
 .boxIsoImg {

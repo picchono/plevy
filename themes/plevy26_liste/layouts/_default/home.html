@@ -15,11 +15,11 @@
     {{ $s := 1 }}
     {{ range .Sections }}{{ if ne .Slug "pl" }}
     {{ $p := 1 }}
-    <div class="flex flex-row justify-between items-start border-t border-dotted border-epierrot mt-8">
+    <div class="flex flex-row justify-between items-start border-t border-dotted border-primary-text mt-8">
         <div class="sectionBlock section-{{- .Slug -}}">
             <a class="menuSection" href="{{ .Slug }}">
                 <div><span>{{ if eq (( string $s ) | len ) 1 }}0{{ end }}{{ $s }} · </span>
-                <span>{{ i18n .Slug  | humanize }}</span> / </div>
+                <span>{{ i18n .Slug  | humanize }}</span> · </div>
             </a>
         </div>
         <div class="w-3/4">
