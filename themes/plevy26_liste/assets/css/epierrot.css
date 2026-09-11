@@ -762,7 +762,8 @@ a.boxIso:hover .boxIsoIn, a.boxIso:hover .menuBoxCount {
 }
 
 .boxMeta {
-    @apply w-full flex flex-col flex-wrap justify-end items-end text-xs pl-4;
+    @apply w-full flex flex-col flex-wrap justify-end items-end text-right
+ text-xs pl-4;
 }
 
 .boxIsoImg {
