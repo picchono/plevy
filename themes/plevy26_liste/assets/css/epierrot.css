@@ -681,7 +681,7 @@ span.pf-trigger-text {
 
 /* menuBox */
 .menuBox {
-    @apply relative w-full py-1 flex flex-col justify-around flex-wrap border-b border-dotted border-primary-text;
+    @apply relative w-full max-w-154 py-1 flex flex-col justify-around flex-wrap border-b border-dotted border-primary-text;
 }
 
 .menuBoxCount {
