@@ -1053,8 +1053,31 @@ section.home {
     @apply bg-epierrot text-primary-bg;
 }
 
+.mainMenuBlock {
+    @apply flex flex-col justify-between items-start border-t border-dotted border-primary-text mt-8;
+}
+
+
 .sectionBlock {
-    @apply w-1/4 flex flex-col justify-center;
+    @apply w-full flex flex-col justify-center;
+}
+
+.topicBlock {
+    @apply w-11/12 self-end;
+}
+
+@media (min-width: 768px) {
+    .mainMenuBlock {
+        flex-direction: row !important;
+    }
+
+    .sectionBlock {
+        @apply w-1/4;
+    }
+
+    .topicBlock {
+        @apply w-3/4;
+    }
 }
 
 .sectionBlock>a {
