@@ -1,86 +1,97 @@
 ---
-title: "The thesis in DSAA2"
-slug: "memoire_DSAA2"
+title: "Le mémoire en DSAA2"
+slug: "memoire_DSAA2_cours"
 date: 2026-09-05T17:29:24+01:00
 layout: single
+toc: true
 searchFilter: Teaching
 searchWeight: 4
 ---
-Lien slides
-## La revue de la littérature
-### Les éléments constitutifs d'une revue de littérature
-Une revue de littérature se compose de différents éléments qui permettent d'élaborer un sujet qui se matérialisera par un état de l'art.
+
+Ces 3 séances d'initiation à la recherche DSAA2 sont **distinctes des séances "Revue de mémoire DSAA"** (par atelier). L'objectif est de refonder les repères du cours de DSAA1 **et** d'amener chaque étudiant à formuler, par un travail actif et progressif, une première question de recherche pour son mémoire — en partant de la curiosité, pas de la solution.
+
+## Logique du parcours
+
+Ce cours propose un rappel théorico-pratique de la pratique de la recherche en design, et invite à l'élaboration progressive d'un carnet de recherche. Ce cours initie un effort qu'il serait judicieux de prolonger tout au long du travail sur le mémoire et le projet de diplôme.
 
 &nbsp;
 
-#### Explorer et organiser la littérature sur le sujet étudié
-La description du sujet fait l'objet d'un exercice préliminaire pour essayer de circonscrire le sujet. Il s'agit d'expliquer le sujet, sa position dans le monde de la recherche (s'inscrit dans la lignée ou est en rupture avec des travaux identifiés, pertinence éco-sociale ou industrielle, vise un champ nouveau, une contribution ou un débat dans un champ identifié...).
+| Séance | Date | Mouvement | Ce qui s'ajoute au carnet |
+|---|---|---|---|
+| 1 | 16/09/2026 | **Diverger** — repères théoriques + partir d'un étonnement réel, pas d'un projet | Partie A : terrain, étonnement, approche pressentie |
+| 2 | 30/09/2026 | **Converger** — transformer l'étonnement en question testable | Partie B : question, critères de pertinence, hypothèse |
+| 3 | 07/10/2026 | **Mettre à l'épreuve** — esquisser une stratégie, la confronter à un regard extérieur | Partie C : stratégie, retours reçus, prochaine étape |
 
-On recherche en priorité les articles référencés et les derniers écrits sur le sujet étudié.
+## Objectifs pédagogiques
 
-&nbsp;
+À l'issue des 3 séances, chaque étudiant·e devrait pouvoir :
+- **resituer** les repères du cours DSAA1 (les 5 approches de la recherche en design, les critères d'une question de recherche pertinente, la logique d'une hypothèse),
+- **identifier**, à partir de sa propre pratique ou de son terrain, un étonnement ou une curiosité authentique plutôt qu'un projet à réaliser — l'écueil central à travailler activement est que l'étudiant parte de ce qu'il veut fabriquer/résoudre (posture projet) plutôt que de ce qui l'intrigue ou le dérange (posture recherche),
+- **formuler** une première question de recherche restreinte, avec une hypothèse associée,
+- **esquisser** une première stratégie pour y répondre,
+- **recevoir et intégrer** un retour critique d'au moins deux origines différentes (pairs proches, pairs d'un autre atelier).
 
-#### Analyser les sources sélectionnées
-Il faut utiliser les outils qui permettent l'analyse et la classification des articles.
+## 1ère séance
+**Discussion collective — Retour sur le cours de DSAA1**  
+cf. [introduction à la recherche]({{< relref "/teachings/initiation-a-la-recherche/introduction.md" >}})  
+- Qu'est-ce que la recherche ?  
+- Qu'est-ce qui fait qu'une pratique devient une recherche ?  
+- **les 5 approches de la recherche en design** (sur / pour / à travers / spéculatif-critique / participatif).  
+- le rôle de l'étonnement/curiosité (pas de la solution!).  
+- la transversalité.
 
-Il s'agit:
-- de déterminer les arguments développés par chaque source et les conditions d'élaboration de ces arguments,
-- de discuter les limites et les contradictions possibles ou établis à ces arguments,
-- de pointer les questions de recherche qui peuvent émerger.
+**Écriture individuelle · 20min**  
+Partie A du carnet (terrain, étonnement, formulation profane, approche pressentie).
 
-&nbsp;
+**Petits groupes (3-4 personnes) · 30min**  
+Chacun présente son étonnement.  
+Les autres réagissent (« Est-ce que ça vous intrigue aussi ? Pourquoi ? Qu'est-ce que vous ne comprenez pas dans ce qu'il/elle vient de dire ? »).  
+Affiner la formulation par le choc des perspectives, pas la valider entre soi.  
 
-#### Organiser et discuter les résultats de l'analyse
-L'état de l'art doit comporter :
-- une introduction qui présentent l'objet et le contenu,
-- une explication sur sujet et de l'enjeu,
-- une revue qui montre les liens, les articulations, les tensions entre les différents éléments, collectés et sélectionnés pour la revue de la littérature,
-- une proposition qui ouvre sur une ou plusieurs problématiques liées au sujet,
-- une bibliographie qui réunit l'ensemble des ouvrages abordés (et parfois sur une autre série d'ouvrages trouvés mais non exploités).
+**Restitution collective (2-3 volontaires)**  
 
-### Les outils pour la littérature
-#### Assistance
-{{<linkBox "What Review is Right for You?" "https://whatreviewisrightforyou.knowledgetranslation.net/" "https://libapps-ca.s3.amazonaws.com/accounts/148721/images/arbre-decisions.PNG">}}
-{{<linkBox "Snyder, H. (2019). Literature review as a research methodology: An overview and guidelines. Journal of Business Research, 104, 333–339." "https://doi.org/10.1016/j.jbusres.2019.07.039">}}
-{{<linkBox "Zotero" "https://www.zotero.org" "https://www.zotero.org/support/_media/logo/zotero_512x512x32.png">}}
-#### Les sources de littérature
-{{<linkBox "La bibliothèque du Cnam" "https://www.lecnam.net" "https://idp.lecnam.net/assets/images/main-logo.png">}}
-{{<linkBox "Google scholar, l'origine" "https://scholar.google.com" "https://imgs.search.brave.com/HPTlZfOL4yCAaZKzUQhoT5PwnrJa8fdhqOWNwjBRm6Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2M3L0dvb2dsZV9T/Y2hvbGFyX2xvZ28u/c3Zn">}}
-{{<linkBox "ResearchGate, une communauté" "https://www.researchgate.net" "https://images.icon-icons.com/3914/PNG/512/researchgate_logo_icon_248656.png">}}
-{{<linkBox "Researchrabbit, visualisation des références" "https://www.researchrabbit.ai/" "https://images.squarespace-cdn.com/content/v1/5dee82c56fcd7b0290640db5/2d9c67bf-a7e9-4810-8948-45ce24546798/logo.png?format=500w">}}
-{{<linkBox "Open Alex" "https://openalex.org" "https://help.openalex.org/hc/theming_assets/01J2MEJVQS6HMJPSMNVKDBE7TR">}}
-{{<linkBox "Semantic scholar" "https://www.semanticscholar.org/ " "https://imgs.search.brave.com/SgPNRCUo4DMDSjLh-m00XtrYji4u_fuXalpv4Xi_h3Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy82/NmIzYTk3YzFhYTA0/NWE4YTc0OWQ5YWQu/cG5n">}}
-{{<linkBox "scispace" "https://scispace.com" "https://imgs.search.brave.com/YuqwNXKSOCVGjZ1Ncv5qoy30fd6NMaFDrHqp2Ch0MKQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zY2lz/cGFjZS5jb20vdnMv/b2ZmZXJzL2Fkcy9h/aS13cml0ZXIvc2Np/c3BhY2UtbG9nby5w/bmc">}}
-{{<linkBox "Elicit" "https://elicit.com/" "https://imgs.search.brave.com/qPbkSpolIN8Zl8Wmc-sRHV1a0ac1eNFWLy1rrg0Tc7E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmVsaWNpdC5jb20v/Y29udGVudC9pbWFn/ZXMvMjAyNS8wMi9m/YXZpY29uLnBuZw">}}
-#### Analyse / discussion
-{{<linkBox "Perplexity" "https://www.perplexity.ai" "https://1000logos.net/wp-content/uploads/2024/08/Perplexity-Emblem.png">}}
-{{<linkBox "NotebookLM" "https://notebooklm.google.com/" "https://notebooklm.google/_/static/branding/v4/light_mode/notebook-logo.svg">}}
-#### Rédaction
-{{<linkBox "Paperpal" "https://paperpal.com/" "https://aimojo.io/wp-content/uploads/2024/12/Paperpal-logo.webp">}}
+## 2ème séance
+**Discussion collective** — cf. [la question de recherche]({{< relref "/teachings/initiation-a-la-recherche/question.md" >}})
+- la question de recherche — définitions, ses 4 critères de pertinence (faisable / intéressante / éthique / à impact), l'enjeu de la question restreinte  
+- l'hypothèse — hypothèse nulle/alternative, critères de qualité, hypothèse physique (spécifique au design).  
 
-## Open Science et accès ouvert
+**Écriture individuelle** · 30min — Partie B du carnet (formuler la question, la challenger avec les 4 critères, la restreindre, formuler une hypothèse).
 
-La recherche contemporaine s'inscrit de plus en plus dans un mouvement de **science ouverte** (*Open Science*), qui transforme les pratiques de publication, de partage des données et d'évaluation par les pairs.
+**Petits groupes (3-4 personnes)** · 30min  — lecture croisée sur les questions de recherche : chacun applique les 4 critères à la question d'un pair (pas la sienne) et donne un retour bref. Exercice actif d'application directe du cadre théorique, pas de bienveillance!
 
-### Principes de la science ouverte
+**Restitution collective de 2-3 cas typiques** — une question qui a bien résisté, une qui a dû être restreinte...
 
-La science ouverte repose sur plusieurs piliers :
-- **Accès ouvert aux publications** — Les articles de recherche doivent être accessibles gratuitement. Deux voies principales : la voie dorée (publication dans des revues en accès ouvert) et la voie verte (auto-archivage dans des dépôts institutionnels comme HAL ou Zenodo).
-- **Partage des données** — Les données de recherche doivent être rendues disponibles autant que possible (principe FAIR : Findable, Accessible, Interoperable, Reusable). En design, cela concerne les corpus d'images, les transcriptions d'entretiens, les enregistrements vidéo, etc.
-- **Science reproductible** — La transparence des méthodes et des analyses permet la reproduction ou la vérification des résultats.
-- **Évaluation ouverte** — Certaines revues pratiquent l'évaluation ouverte, où les rapports de relecture sont publiés alongside l'article.
+## 3ème séance
 
-### Impact sur la recherche en design
+**Discussion collective** — cf. [la question de recherche]({{< relref "/teachings/initiation-a-la-recherche/question.md" >}})
+- Qu'est-ce qu'une stratégie de recherche (terrain, méthode, calendrier grossier)
+- la revue de littérature comme outil désormais pertinent, puisqu'un sujet existe.  
 
-La recherche en design est particulièrement concernée par la science ouverte :
-- Les **artefacts de recherche** (prototypes, designs, portfolios annotés) peuvent être partagés en accès ouvert via des plateformes comme Figshare ou Zenodo.
-- Les **méthodes qualitatives** (entretiens, observations) demandent une attention particulière à l'anonymisation et au consentement avant partage.
-- Les **revues en accès ouvert** en design sont nombreuses : *She Ji*, *Open Design Studies*, *Design Science*.
+**Écriture individuelle** · 30min — Partie C du carnet (stratégie, calendrier grossier).
 
-### Politiques des organismes de financement
+**Petits groupes (3-4 personnes)** · 30min — chacun présente sa question/stratégie à des pairs qui ne connaissent pas son terrain, pour tester si elle tient hors du cercle proche.
 
-La plupart des organismes de financement (ANR, Horizon Europe, ERC) exigent désormais un **plan de gestion des données** et une publication en accès ouvert des résultats. Le Plan S (2018) impose que toutes les recherches financées par des fonds publics soient publiées en accès ouvert.
+**Restitution collective (2-3 volontaires)**  
 
-**Références**
-- Mandel, A., & Rousso, A. (2022). Open science in design research. *She Ji: The Journal of Design, Business, & Society*, *8*(2), 1–15.
-- Open Access Scholarly Publishers Association. (2023). *Open access in the humanities and social sciences*. OASPA. https://oaspa.org
+## Le carnet de recherche
+
+Un seul document **évolutif** par étudiant·e, complété à chaque séance, puis progressivement tout au long du travail de recherche.
+
+**Partie A — Terrain et étonnement** (séance 1)  
+1. Quel terrain, quelle pratique, quel objet de votre parcours vous revient, vous travaille, ou vous a marqué (stage, atelier, projet, expérience personnelle) ?  
+2. Qu'est-ce qui vous étonne, vous intrigue ou vous dérange dedans — pas ce que vous voudriez améliorer ou fabriquer, mais ce que vous ne comprenez pas encore ?  
+3. Si vous deviez raconter cet étonnement et sa force à quelqu'un hors du champ du design, sans jargon, que diriez-vous ?  
+4. À quelle(s) approche(s) de la recherche en design (sur / pour / à travers / spéculatif / participatif) cet étonnement semble-t-il se rattacher, même comme intuition provisoire ?  
+
+**Partie B — Question et hypothèse** (séance 2, puis revenir régulièrement)  
+5. Formulez une première question de recherche à partir de cet étonnement.  
+6. Passez-la au crible des 4 critères (faisable / intéressante / éthique / à impact) — une phrase pour chaque chose qui la fragilise ou la conforte, pour chaque critère.  
+7. Reformulez-la en version restreinte si nécessaire. 
+8. Quelle hypothèse, ou intuition testable, accompagne cette question ?  
+
+**Partie C — Stratégie et mise à l'épreuve** (séance 3, puis itérativement)
+9. Quelle stratégie envisagez-vous pour y répondre (terrain, méthode, matériaux, calendrier grossier) ?  
+10. Quel retour avez-vous reçu (petit groupe, grand groupe), et qu'est-ce que ça change à votre question ?  
+11. Quelle est la prochaine étape concrète, avant la prochaine séance de revue de mémoire DSAA de votre atelier ?  
+
+---
