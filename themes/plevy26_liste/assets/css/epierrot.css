@@ -676,7 +676,7 @@ span.pf-trigger-text {
 }
 
 #content {
-    @apply mt-10;
+    @apply mt-10 pb-20;
 }
 
 /* menuBox */
@@ -713,7 +713,7 @@ span.pf-trigger-text {
 
 /* boxIso */
 a.boxIso {
-    @apply w-full h-full text-primary-text grow-0 shrink-0 px-2 rounded transition-all duration-700 ease-in-out;
+    @apply w-full h-full text-primary-text grow-0 shrink-0 rounded transition-all duration-700 ease-in-out;
     box-sizing: border-box;
 }
 
@@ -1300,6 +1300,9 @@ img.lg-object {
 }
 
 /* toc */
+#toc>h2 {
+    @apply pb-4;
+}
 ul#tocList {
     margin-left: 0 !important;
 }

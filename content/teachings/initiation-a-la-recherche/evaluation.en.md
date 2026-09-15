@@ -10,7 +10,7 @@ institution:
 date: 2025-12-14T17:29:28+01:00
 draft: false
 layout: single
-tablecontent: true
+toc: true
 searchFilter: Teaching
 searchWeight: 6
 notListed: true

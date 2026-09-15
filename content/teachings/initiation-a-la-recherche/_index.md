@@ -43,12 +43,16 @@ lectures:
         order: 6
         link: "evaluation"
         title: "L'évaluation"
-    DSAA:
+    DSAA2c:
         order: 7.1
-        link: "memoire_DSAA"
-        title: "Le mémoire en DSAA"
-    CCE243:
+        link: "memoire_DSAA2_cours"
+        title: "Le mémoire en DSAA2 - cours"
+    DSAA2a:
         order: 7.2
+        link: "memoire_DSAA2_atelier"
+        title: "Le mémoire en DSAA2 - atelier"
+    CCE243:
+        order: 7.3
         link: "CCE243"
         title: "CCE243 - Ingénierie de la culture et de la création"
 link:

@@ -10,7 +10,7 @@ institution:
 date: 2021-10-01T00:55:28+02:00
 draft: false
 layout: single
-tablecontent: true
+toc: true
 searchFilter: Teaching
 searchWeight: 1
 notListed: true
@@ -266,4 +266,3 @@ a:hover {
 {{<linkBox "Snippets in CSS" "https://css-tricks.com/snippets/css/" "https://css-tricks.com/wp-json/social-image-generator/v1/image/3222">}}
 
 {{<linkBox "Create a new pen" "https://codepen.io/pen/" "https://assets.codepen.io/internal/screenshots/pens/default.png">}}
- 

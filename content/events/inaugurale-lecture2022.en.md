@@ -7,7 +7,7 @@ publitype: presentation
 subsection: lecture
 transformpractices: true
 researchpage: true
-tablecontent: true
+toc: true
 tags: ['inaugural', 'Jean_Prouvé', 'appropriation', 'moment']
 institution:
     heig: 1

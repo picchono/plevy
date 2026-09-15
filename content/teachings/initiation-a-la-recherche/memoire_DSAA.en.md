@@ -1,6 +1,6 @@
 ---
-title: "The thesis in DSAA"
-slug: "memoire_DSAA"
+title: "The thesis in DSAA2"
+slug: "memoire_DSAA2"
 date: 2026-09-05T17:29:24+01:00
 layout: single
 searchFilter: Teaching

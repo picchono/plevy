@@ -11,7 +11,7 @@ date: 2021-10-01T00:55:28+02:00
 draft: false
 layout: single
 searchFilter: Teaching
-tablecontent: true
+toc: true
 searchWeight: 1
 notListed: true
 level: "bachelor"

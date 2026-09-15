@@ -1,6 +1,6 @@
 ---
-title: "Le mémoire en DSAA"
-slug: "memoire_DSAA"
+title: "Le mémoire en DSAA2"
+slug: "memoire_DSAA2_cours"
 date: 2026-09-05T17:29:24+01:00
 layout: single
 searchFilter: Teaching
