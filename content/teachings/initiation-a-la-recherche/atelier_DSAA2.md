@@ -21,6 +21,7 @@ Cette séance est formative, non évaluée. Vous pouvez toutefois **discuter et 
 L'ensemble du cours d'initiation à la recherche en design et création (mise à jour) est accessible à [https://plevy.fr/teachings/initiation-a-la-recherche/](https://plevy.fr/teachings/initiation-a-la-recherche/).
 
 
+
 ## Revue de mémoire DSAA
 
 Ce texte accompagne le déroulé de l'atelier.  
@@ -30,7 +31,7 @@ Mais ce moment reste un moment de dialogue et non de monologue.
 
 À la fin de cette année, deux choses sont demandées : un projet de diplôme, et un mémoire. Le projet est en quelque sorte un prolongement naturel des projets effectués depuis le début de la formation. Le mémoire, en revanche, est souvent la partie la moins claire : on sait qu'il faut « écrire quelque chose », on ne sait pas toujours pourquoi, ni ce qui le distingue réellement d'un travail préparatoire au projet.
 
-L'objectif de cet atelier n'est pas de donner une méthode de rédaction — cela se travaille plus tard dans l'année. L'objectif est plus simple et plus fondamental : comprendre **ce qu'on attend d'un mémoire de DSAA**, **en quoi il diffère du projet de diplôme**, et **ce qui les relie**. Sans cette compréhension, on écrit un mémoire à l'aveugle, souvent en le confondant avec autre chose — une réflexion ouverte, une note d'intention, un making-of du projet. Avec cette compréhension, même approximative à ce stade, on pourra commencer l'année avec une direction dès maintenant, plutôt qu'attendre que le sujet vienne.
+L'objectif de cet atelier n'est pas de donner une méthode de rédaction — cela se travaille plus tard dans l'année. L'objectif est plus simple et plus fondamental : comprendre **ce qu'on attend d'un mémoire de DSAA**, **en quoi il diffère du projet de diplôme**, et **ce qui les relie**. Sans cette compréhension, on écrit un mémoire à l'aveugle, souvent en le confondant avec autre chose — une réflexion ouverte, une note d'intention, un making-of du projet. Avec cette compréhension, même approximative à ce stade, on pourra commencer l'année avec une direction dès maintenant, plutôt que d'attendre que le sujet vienne.
 
 On va procéder ainsi : 
 - distinguer le mémoire et le projet, 
@@ -54,7 +55,7 @@ Ce n'est pas une différence de sujet — le mémoire et le projet portent très
 
 Le projet se donne à voir principalement en images, en objets, en dispositifs — le texte y est un support du processus (note d'intention, cahier des charges, argumentaire). Le mémoire, à l'inverse, est un texte de recherche : il est écrit, structuré (une introduction qui pose la question, un développement qui l'instruit à partir de références et d'une méthode, une conclusion qui ouvre), et il est jugé sur des critères académiques — clarté de la question de recherche posée, qualité de l'argumentation, usage des références, rigueur de la méthode. C'est un exercice de rédaction et de raisonnement autant qu'un exercice de conception.
 
-Ce point sera retravaillé au fil de l'année vos encadrants — ici, il suffit d'avoir en tête que la forme attendue n'est pas celle d'un rendu de projet.
+Ce point sera retravaillé au fil de l'année par vos encadrants — ici, il suffit d'avoir en tête que la forme attendue n'est pas celle d'un rendu de projet.
 
 #### 2.3 Axe relationnel — le mémoire nourrit le projet
 
@@ -68,9 +69,9 @@ Un mémoire de DSAA est une recherche "modeste", mais c'est une recherche — pa
 
 Trois éléments à avoir en tête dès maintenant :
 
-**La question de recherche est le pivot** (cf., [La question de recherche](../Initiation%20à%20la%20recherche/3.%20La%20question%20de%20recherche.md)). Une bonne question se reconnaît à ce qu'elle est ***faisable*** (vous pouvez y répondre avec les moyens et le temps dont vous disposez), ***restreinte*** (une question trop ouverte détériore la qualité de la recherche), et ***claire*** (on peut déterminer si elle a été traitée ou non). Un sujet de mémoire n'est pas encore une question de recherche — le travail de l'année consiste justement à faire passer de l'un à l'autre.
+**La question de recherche est le pivot** (cf. [La question de recherche](../Initiation%20à%20la%20recherche/3.%20La%20question%20de%20recherche.md)). Une bonne question se reconnaît à ce qu'elle est ***faisable*** (vous pouvez y répondre avec les moyens et le temps dont vous disposez), ***restreinte*** (une question trop ouverte détériore la qualité de la recherche), et ***claire*** (on peut déterminer si elle a été traitée ou non). Un sujet de mémoire n'est pas encore une question de recherche — le travail de l'année consiste justement à faire passer de l'un à l'autre.
 
-**La revue de littérature situe le sujet** (cf., [La revue de litérature](../Initiation%20à%20la%20recherche/4.%20La%20revue%20de%20litérature.md)). Un mémoire ne part pas de rien : il se positionne par rapport à ce qui a déjà été écrit, pensé, produit sur le sujet — que ce soit en design ou dans d'autres champs (sociologie, anthropologie, histoire de l'art, etc. selon votre terrain). Cela demande de chercher, lire, organiser, discuter des références dès le début de l'année, pas à la dernière minute.
+**La revue de littérature situe le sujet** (cf. [La revue de littérature](../Initiation%20à%20la%20recherche/4.%20La%20revue%20de%20litérature.md)). Un mémoire ne part pas de rien : il se positionne par rapport à ce qui a déjà été écrit, pensé, produit sur le sujet — que ce soit en design ou dans d'autres champs (sociologie, anthropologie, histoire de l'art, etc., selon votre terrain). Cela demande de chercher, lire, organiser, discuter des références dès le début de l'année, pas à la dernière minute.
 
 **La posture d'étonnement et de réflexivité est ce qui distingue le chercheur du praticien.** Faire une recherche, ce n'est pas seulement faire, c'est prendre du recul sur ce qu'on fait — se demander pourquoi on le fait ainsi, ce que cela présuppose, ce que d'autres en ont dit ou en diraient. C'est cette distance qui manque le plus souvent dans un premier mémoire, et qui s'apprend.
 
@@ -78,9 +79,9 @@ Trois éléments à avoir en tête dès maintenant :
 
 Sur la base des mémoires précédents, les écueils suivants méritent une attention particulière. Les nommer maintenant permet de les repérer chez soi avant qu'ils ne s'installent.
 
-**Confondre le mémoire avec un rapport de projet.** Le symptôme le plus fréquent : un texte qui raconte réflexion directement adressée au projet de diplôme (« j'ai considéré cet asect ci qui importe comme ça pour le projet, ce qui m'a aorienté vers telle proposition »), sans jamais poser traiter d'un étonnement ou d'une interrogation en interrogeant le monde académique. Ce n'est pas un défaut de qualité, c'est un défaut de nature : ce texte répond à *« que fais-je ? »*, pas à *« qu'est-ce que je cherche à comprendre ? »*.
+**Confondre le mémoire avec un rapport de projet.** Le symptôme le plus fréquent : un texte qui raconte une réflexion directement adressée au projet de diplôme (« j'ai considéré cet aspect-ci qui importe comme ça pour le projet, ce qui m'a orienté vers telle proposition »), sans jamais traiter d'un étonnement ou d'une interrogation en interrogeant le monde académique. Ce n'est pas un défaut de qualité, c'est un défaut de nature : ce texte répond à *« que fais-je ? »*, pas à *« qu'est-ce que je cherche à comprendre ? »*.
 
-**Un sujet trop vaste ou mal délimité.** Symétrique du précédent : un sujet ambitieux, souvent sincère, mais qui englobe trop (e.g., « le rapport de l'homme à la nature », « la mémoire dans l'espace urbain ») pour être traité sérieusement en un mémoire de DSAA. Le signe qui doit alerter : si vous ne parvenez pas à formuler votre sujet en une phrase, il est probablement encore trop large (e.g., « organisation de l'art dans dans l'espace urbain »).
+**Un sujet trop vaste ou mal délimité.** Symétrique du précédent : un sujet ambitieux, souvent sincère, mais qui englobe trop (e.g. « le rapport de l'homme à la nature », « la mémoire dans l'espace urbain ») pour être traité sérieusement dans un mémoire de DSAA. Le signe qui doit alerter : si vous ne parvenez pas à formuler votre sujet en une phrase, il est probablement encore trop large (e.g. « organisation de l'art dans l'espace urbain »).
 
 **L'absence de posture réflexive.** Un mémoire peut être bien écrit, bien référencé, et pourtant rester descriptif — il décrit un contexte, une pratique, un terrain, sans jamais interroger ce que cela implique, révèle ou pose comme problème. Le repère ici : un mémoire réflexif contient des phrases qui commencent par « cela pose la question de… », « on peut se demander si… », « cela contredit / confirme… » — pas seulement des phrases qui décrivent.
 
@@ -92,17 +93,17 @@ On ne part pas d'une question de recherche toute faite — on part de ce qui nou
 2. **Identifier ce qui, dans ce terrain, vous surprend ou résiste** — un décalage entre ce que vous observez et ce que vous attendiez, une tension, une contradiction. C'est souvent là que se cache la vraie question.
 3. **Formuler une première question, même provisoire et maladroite** — elle sera reformulée plusieurs fois dans l'année, ce n'est pas grave. L'essentiel est d'avoir un point de départ pour commencer à chercher des références et à en discuter.
 
-Les deux premiers points peuvent aussi être suivis dans l'autre sens: Cherche un terrain qui concrétise une questionnement ou un étonnement.
+Les deux premiers points peuvent aussi être suivis dans l'autre sens: Cherche un terrain qui concrétise un questionnement ou un étonnement.
 
-C'est précisément ce travail qui va être initié en fin d'atelier, individuellement, avec le questionnaire  (le point 7. questionnaire). Il faut le considérer comme un premier jet poru soi, non pas comme un formulaire à remplir parfaitement.
+C'est précisément ce travail qui va être initié en fin d'atelier, individuellement, avec le questionnaire  (le point 7. questionnaire). Il faut le considérer comme un premier jet pour soi, non pas comme un formulaire à remplir parfaitement.
 
 ### 6. Ressources et accompagnement pour l'année
 
 Cette séance n'est qu'un point de départ. Plusieurs relais existent pour la suite de l'année :
 
 - L'**atelier** reste le lieu naturel où mémoire et projet continuent à s'articuler au fil du travail.
-- Le **cours [Initiation à la recherche](../Initiation%20à%20la%20recherche/DSN201%20-%20ENSAAMA%202026-2027.md)** se poursuit en DSAA2, pour un approfondissent notamment la question, l'hypothèse et la stratégie de recherche.
-- Le suivi de l'écriture du mémoire est ensuite assuré **conjointement** par l'ensemble de vos encadrants. Rien ne vous empêche de consulté des personnes-ressources extérieures à l'établissement. N'hésitez pas à tous les solliciter — ils n'apportent pas le même regard.
+- Le **cours [Initiation à la recherche](../Initiation%20à%20la%20recherche/DSN201%20-%20ENSAAMA%202026-2027.md)** se poursuit en DSAA2, pour un approfondissement notamment de la question, de l'hypothèse et de la stratégie de recherche.
+- Le suivi de l'écriture du mémoire est ensuite assuré **conjointement** par l'ensemble de vos encadrants. Rien ne vous empêche de consulter des personnes-ressources extérieures à l'établissement. N'hésitez pas à tous les solliciter — ils n'apportent pas le même regard.
 
 ### 7. Questionnaire
 
