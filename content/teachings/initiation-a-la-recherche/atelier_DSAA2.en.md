@@ -13,12 +13,12 @@ L'objectif de ce cours est de permettre aux étudiants en 2e année de DSAA d'ac
 À l'issue du cours, les étudiants devraient être capables de :
 - **distinguer** le mémoire du projet de diplôme selon trois axes — épistémologique (posture de recherche vs posture de conception), formel (structure, méthodologie, exigences de rédaction) et relationnel (comment le mémoire nourrit et accompagne le projet) ;
 - **repérer** les écueils classiques d'un premier mémoire de DSAA (confusion avec un rapport de projet, sujet trop vaste ou mal délimité, absence de posture réflexive) à partir d'exemples concrets ;
-- **situer** le mémoire dans une démarche de recherche telle qu'introduite dans le cours d'[Initiation à la recherche](../Initiation%20à%20la%20recherche/1.%20Introduction.md) ;
+- **situer** le mémoire dans une démarche de recherche telle qu'introduite dans le cours d'[Initiation à la recherche]({{< relref "/teachings/initiation-a-la-recherche/" >}}) ;
 - **formuler** une première intention de sujet (piste de terrain, de motivation, de question) comme point de départ engageant pour l'année.
 
 Cette séance est formative, non évaluée. Vous pouvez toutefois **discuter et revoir** ce qui est dit aujourd'hui avec l'ensemble des personnes qui vous accompagnent au cours de cette année : les responsables d'atelier, les professeurs de sciences humaines et de philosophie, les référents de l'enseignement supérieur.
 
-L'ensemble du cours d'initiation à la recherche en design et création (mise à jour) est accessible à [https://plevy.fr/teachings/initiation-a-la-recherche/](https://plevy.fr/teachings/initiation-a-la-recherche/).
+L'ensemble du cours d'initiation à la recherche en design et création (mise à jour) est accessible à [https://plevy.fr/teachings/initiation-a-la-recherche/]({{< relref "/teachings/initiation-a-la-recherche/" >}}).
 
 
 
@@ -65,13 +65,13 @@ C'est aussi pour cette raison que cette séance a lieu **maintenant**, avant que
 
 ### 3. Ce qu'implique « faire une recherche » en DSAA
 
-Un mémoire de DSAA est une recherche "modeste", mais c'est une recherche — pas un texte réflexif libre. Cela veut dire qu'il obéit à une logique déjà présentée en détail dans le cours d'[initiation à la recherche](../Initiation%20à%20la%20recherche/1.%20Introduction.md) suivi en DSAA1, et rediscuté en DSAA2 (rappel puis approfondissement) — on s'appuie ici sur ce cours sans le reprendre en entier.
+Un mémoire de DSAA est une recherche "modeste", mais c'est une recherche — pas un texte réflexif libre. Cela veut dire qu'il obéit à une logique déjà présentée en détail dans le cours d'[initiation à la recherche]({{< relref "/teachings/initiation-a-la-recherche/" >}}) suivi en DSAA1, et rediscuté en DSAA2 (rappel puis approfondissement) — on s'appuie ici sur ce cours sans le reprendre en entier.
 
 Trois éléments à avoir en tête dès maintenant :
 
-**La question de recherche est le pivot** (cf. [La question de recherche](../Initiation%20à%20la%20recherche/3.%20La%20question%20de%20recherche.md)). Une bonne question se reconnaît à ce qu'elle est ***faisable*** (vous pouvez y répondre avec les moyens et le temps dont vous disposez), ***restreinte*** (une question trop ouverte détériore la qualité de la recherche), et ***claire*** (on peut déterminer si elle a été traitée ou non). Un sujet de mémoire n'est pas encore une question de recherche — le travail de l'année consiste justement à faire passer de l'un à l'autre.
+**La question de recherche est le pivot** (cf. [La question de recherche]({{< relref "/teachings/initiation-a-la-recherche/question.md" >}})). Une bonne question se reconnaît à ce qu'elle est ***faisable*** (vous pouvez y répondre avec les moyens et le temps dont vous disposez), ***restreinte*** (une question trop ouverte détériore la qualité de la recherche), et ***claire*** (on peut déterminer si elle a été traitée ou non). Un sujet de mémoire n'est pas encore une question de recherche — le travail de l'année consiste justement à faire passer de l'un à l'autre.
 
-**La revue de littérature situe le sujet** (cf. [La revue de littérature](../Initiation%20à%20la%20recherche/4.%20La%20revue%20de%20litérature.md)). Un mémoire ne part pas de rien : il se positionne par rapport à ce qui a déjà été écrit, pensé, produit sur le sujet — que ce soit en design ou dans d'autres champs (sociologie, anthropologie, histoire de l'art, etc., selon votre terrain). Cela demande de chercher, lire, organiser, discuter des références dès le début de l'année, pas à la dernière minute.
+**La revue de littérature situe le sujet** (cf. [La revue de littérature]({{< relref "/teachings/initiation-a-la-recherche/revue.md" >}})). Un mémoire ne part pas de rien : il se positionne par rapport à ce qui a déjà été écrit, pensé, produit sur le sujet — que ce soit en design ou dans d'autres champs (sociologie, anthropologie, histoire de l'art, etc., selon votre terrain). Cela demande de chercher, lire, organiser, discuter des références dès le début de l'année, pas à la dernière minute.
 
 **La posture d'étonnement et de réflexivité est ce qui distingue le chercheur du praticien.** Faire une recherche, ce n'est pas seulement faire, c'est prendre du recul sur ce qu'on fait — se demander pourquoi on le fait ainsi, ce que cela présuppose, ce que d'autres en ont dit ou en diraient. C'est cette distance qui manque le plus souvent dans un premier mémoire, et qui s'apprend.
 
@@ -102,7 +102,7 @@ C'est précisément ce travail qui va être initié en fin d'atelier, individuel
 Cette séance n'est qu'un point de départ. Plusieurs relais existent pour la suite de l'année :
 
 - L'**atelier** reste le lieu naturel où mémoire et projet continuent à s'articuler au fil du travail.
-- Le **cours [Initiation à la recherche](../Initiation%20à%20la%20recherche/DSN201%20-%20ENSAAMA%202026-2027.md)** se poursuit en DSAA2, pour un approfondissement notamment de la question, de l'hypothèse et de la stratégie de recherche.
+- Le **cours [Initiation à la recherche]({{< relref "/teachings/initiation-a-la-recherche/" >}})** se poursuit en DSAA2, pour un approfondissement notamment de la question, de l'hypothèse et de la stratégie de recherche.
 - Le suivi de l'écriture du mémoire est ensuite assuré **conjointement** par l'ensemble de vos encadrants. Rien ne vous empêche de consulter des personnes-ressources extérieures à l'établissement. N'hésitez pas à tous les solliciter — ils n'apportent pas le même regard.
 
 ### 7. Questionnaire
