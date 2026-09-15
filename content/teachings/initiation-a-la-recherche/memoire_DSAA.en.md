@@ -92,6 +92,4 @@ Un seul document **évolutif** par étudiant·e, complété à chaque séance, p
 **Partie C — Stratégie et mise à l'épreuve** (séance 3, puis itérativement)
 9. Quelle stratégie envisagez-vous pour y répondre (terrain, méthode, matériaux, calendrier grossier) ?  
 10. Quel retour avez-vous reçu (petit groupe, grand groupe), et qu'est-ce que ça change à votre question ?  
-11. Quelle est la prochaine étape concrète, avant la prochaine séance de revue de mémoire DSAA de votre atelier ?  
-
----
+11. Quelle est la prochaine étape concrète, avant la prochaine séance de revue de mémoire DSAA de votre atelier ?
