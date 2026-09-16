@@ -33,7 +33,7 @@ Ce cours propose un rappel théorico-pratique de la pratique de la recherche en 
 
 ## 1ère séance
 **Discussion collective — Retour sur le cours de DSAA1**  
-cf. [introduction à la recherche]({{< relref "/teachings/initiation-a-la-recherche/introduction.md" >}})  
+cf. [introduction à la recherche]({{< relref "/teachings/initiation-a-la-recherche/recherche.md" >}})  
 - Qu'est-ce que la recherche ?  
 - Qu'est-ce qui fait qu'une pratique devient une recherche ?  
 - **les 5 approches de la recherche en design** (sur / pour / à travers / spéculatif-critique / participatif).  
