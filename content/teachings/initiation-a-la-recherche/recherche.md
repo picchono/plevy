@@ -94,7 +94,7 @@ La recherche pour le design répond principalement aux questions suivantes :
 
 *Exemples de questions :*
 - Quels sont les principaux obstacles cognitifs et physiques rencontrés par les utilisateurs âgés qui tentent d'utiliser les plateformes numériques de télésanté ?
-- Comment l'agencement spatial d'un service de traumatologie influe-t-il sur la rapidité de la communication entre les infirmières chargées du triage et les chirurgiens ?
+- Comment l'agencement spatial d'un service de traumatologie influe-t-il sur la rapidité de la communication entre les infirmièr.e.s chargé.e.s du triage et les chirurgien.ne.s ?
 - Quels sont les modèles de retour haptique qui permettent d'obtenir les taux d'erreur les plus faibles chez les conducteurs utilisant des systèmes d'infodivertissement à grande vitesse ?
 
 **Méthodes**
