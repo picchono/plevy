@@ -33,8 +33,12 @@ frontphoto: "1ZeU0IdBIvdUPVRzcbOxLF2cv2go2ARU-"
 description: "Appropriation · Multistability · Irregularity in Transforming Practices"
 slides: [
     ["google", "1WFuvFt_q_ptjw3hJT0hcjKq-9j0a2gbb"],
+    ["google", "1JaNnd9BUkREcKW6mBXtVzwTSMBdyIvAI"],
     ["google", "1sTCM07zPSrctmMJxdc3iFpKiAy-GYX7D"],
     ["google", "19ZQjeNFxq9EeQH36IGf0eroNes5W1iMJ"],
+    ["google", "19hcsrJqJIuXDRlWsuq-VVzNG5JIdtIu5"],
+    ["google", "1d34PKPTZLjqdOgu6WYjPhYSm5xooEIQA"],
+    ["google", "1cYGDYUrkM1U4zEGi2mTe96CE7bXKj7eQ"],
     ["google", "15NvvmwNup5DyABftKqV3aWChYb5hekEO"],
     ["google", "1lSvac8Zvoi_u7pFxj-o_tk56QnCxUEkE"],
     ["google", "1i8AebXUL5ewm6JlafhY46AlsZbqu-Bsv"]
