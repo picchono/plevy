@@ -45,9 +45,8 @@
                     {{ $intitut := .context.Params.institution.name }}
                     {{ range .context.Params.collaboration }}
                     {{ if ne .name $intitut }}{{ .short -}}
-                    {{ $count = add $count 1 }}
-                    {{- if eq $count $len -}}, {{ end }}{{ end }}
-                    {{ end }}{{ else }} {{ .context.Params.institution.short }}{{ end }}
+                    {{ $count = add $count 1 }}, {{ end }}
+                    {{ end }}{{ .context.Params.institution.short }}{{ else }} {{ .context.Params.institution.short }}{{ end }}
                     {{ else if eq .context.Section "teaching" }}
                     {{ .context.Params.institution.short }}
                     {{ else if eq .context.Section "courses" }}

@@ -30,14 +30,13 @@ license:
     link: https://creativecommons.org/licenses/by-sa/4.0/
 frontpage: true
 frontphoto: "1ZeU0IdBIvdUPVRzcbOxLF2cv2go2ARU-"
-description: "Une brève introduction"
+description: "Appropriation · Multistability · Irregularity in Transforming Practices"
 slides: [
     ["google", "1WFuvFt_q_ptjw3hJT0hcjKq-9j0a2gbb"],
     ["google", "1sTCM07zPSrctmMJxdc3iFpKiAy-GYX7D"],
     ["google", "19ZQjeNFxq9EeQH36IGf0eroNes5W1iMJ"],
-    ["google", "1uIy62mMseBclS1U0S_ezN2P3uyITY_w0"],
-    ["google", "1FOZjIH1tQvwQ8wINJ-ZgN0hSR5UjqE1z"],
-    ["google", "12bUhmDNlrYQ_sjuj8XkiZdQ5si5t6jat"],
-    ["google", "1ZeU0IdBIvdUPVRzcbOxLF2cv2go2ARU-"]
+    ["google", "15NvvmwNup5DyABftKqV3aWChYb5hekEO"],
+    ["google", "1lSvac8Zvoi_u7pFxj-o_tk56QnCxUEkE"],
+    ["google", "1i8AebXUL5ewm6JlafhY46AlsZbqu-Bsv"]
 ]
 ---
