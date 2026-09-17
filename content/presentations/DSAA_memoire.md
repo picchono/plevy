@@ -25,6 +25,7 @@ collaboration:
         colo: "#c1002a"
         heig: 1
 date: 2026-09-05T16:27:15+02:00
+frontpage: true
 license: 
     type: cc_bysa
     link: https://creativecommons.org/licenses/by-sa/4.0/
