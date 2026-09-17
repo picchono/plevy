@@ -18,8 +18,8 @@
     <div class="mainMenuBlock">
         <div class="sectionBlock section-{{- .Slug -}}">
             <a class="menuSection" href="{{ .Slug }}">
-                <div class="w-full"><span class="inline-block w-1/12">{{ if eq (( string $s ) | len ) 1 }}0{{ end }}{{ $s }}&nbsp;·&nbsp;</span>
-                <span class="inline-block w-10/12">{{ i18n .Slug  | humanize }}</span></div>
+                <div class="w-full"><span class="inline-block w-1/12 md:w-auto">{{ if eq (( string $s ) | len ) 1 }}0{{ end }}{{ $s }} ·</span>
+                <span class="inline-block w-10/12 md:w-auto">{{- i18n .Slug  | humanize -}}</span></div>
             </a>
         </div>
         <div class="w-full"><span class="inline-block w-1/12">&nbsp;</span>
