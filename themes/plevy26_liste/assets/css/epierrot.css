@@ -420,7 +420,7 @@ a {
 
 a:hover,
 div.menuBox.foc>.boxIso {
-    @apply text-primary-bg bg-epierrot;
+    @apply text-epierrot;
 }
 
 a svg,
@@ -701,9 +701,21 @@ span.pf-trigger-text {
     @apply invisible h-0 block w-full;
 }
 
+.mainMenu {
+    @apply font-bold text-lg;
+}
+
+.mainMenu>span {
+    @apply cursor-pointer transition-all duration-700 ease-in-out;
+}
+
+.mainMenu>span:hover {
+    @apply text-epierrot;
+}
+
 @media (min-width: 768px) {
     .mainMenu {
-        @apply visible h-auto pb-4;
+        @apply visible h-auto pb-4 flex flex-row flex-wrap;
     }
 
     .boxTitle {
@@ -828,7 +840,7 @@ a.boxIso:hover .duotone::after,
 a.linkBox:hover .duotone::after,
 .foc .duotone::after,
 .foc .duotone::after {
-    background-color: var(--color-epierrot);
+    text-color: var(--color-epierrot);
     mix-blend-mode: var(--blend-mode-after);
     opacity: 1;
 }

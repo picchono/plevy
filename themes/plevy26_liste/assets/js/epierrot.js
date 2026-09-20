@@ -196,16 +196,16 @@ function toggleTheme() {
 })();
 
 function MenuToggle() {
-  document.querySelectorAll("h2[class^='section-']").forEach(function (el) {
+  document.querySelectorAll("span[class^='section-']").forEach(function (el) {
     el.addEventListener("click", function () {
-      secti = el.className;
+      secti = el.classList[0];
       console.log(secti);
       //scroll au premier bloc de cette section à droite
       let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
       if (vw > 768) {
-        document.querySelector('div.mainsection').scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 111, behavior: 'smooth' });
+        document.querySelector('div.mainBlock').scroll({ top: document.querySelector('div.' + secti + '.sectionBlock').offsetTop - 80, behavior: 'smooth' });
       } else {
-        window.scroll({ top: document.querySelector('div.' + secti + '.startSection').offsetTop - 111, behavior: 'smooth' });
+        window.scroll({ top: document.querySelector('div.' + secti + '.sectionBlock').offsetTop - 80, behavior: 'smooth' });
       }
       document.querySelectorAll("." + secti).forEach(function (to) {
         if (!to.classList.contains('ended')) to.classList.add('foc');
