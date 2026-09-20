@@ -18,12 +18,12 @@
     <div class="mainMenuBlock">
         <div class="sectionBlock section-{{- .Slug -}}">
             <a class="menuSection" href="{{ .Slug }}">
-                <div class="w-full"><span class="inline-block w-1/12 md:w-auto">{{ if eq (( string $s ) | len ) 1 }}0{{ end }}{{ $s }} ·</span>
-                <span class="inline-block w-auto md:w-auto">{{- i18n .Slug  | humanize -}}</span></div>
+                <div class="w-full"><span class="inline-block w-1/12 md:w-auto shrink-0 grow-0">{{ if eq (( string $s ) | len ) 1 }}0{{ end }}{{ $s }} ·</span>
+                <span class="inline-block w-auto md:w-full">{{- i18n .Slug  | humanize -}}</span></div>
             </a>
         </div>
-        <div class="w-full"><span class="inline-block w-1/12">&nbsp;</span>
-        <span class="inline-block w-auto">
+        <div class="w-full"><span class="inline-block w-1/12 shrink-0 grow-0">&nbsp;</span>
+        <span class="inline-block w-full">
         <div class="topicBlock">
             {{ range .Pages }}{{ if ne .Params.notListed true }}{{ if .Params.frontpage }}
             {{- partial "box.html" ( dict "context" . "sect" $s "pag" $p ) -}}
