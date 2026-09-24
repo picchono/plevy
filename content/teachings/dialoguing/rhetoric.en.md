@@ -23,11 +23,10 @@ teacher:
 frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 ---
 ## Introduction
-![test](https://preview.redd.it/qoigtaavsvc31.jpg?width=640&crop=smart&auto=webp&s=d853374a10705577314880525437ef6f5d09a2e2)
 
-![The Night Watch](https://ichef.bbci.co.uk/images/ic/1920xn/p070wbmx.jpg.webp)
-
-![teenagers at the museum](https://cdn.prod.www.spiegel.de/images/b65f336e-0002-0004-0000-0000d6642569_w823_r1_fpx44.96_fpy46.13.jpg)
+![Case one](https://drive.google.com/thumbnail?id=1vM032No9SY_SZNCqYDw1AuwvOwU4I90s&sz=w1500)
+![The night watch](https://drive.google.com/thumbnail?id=1oxanJSjoIgZc3JdkOingp989f4ahNf2J&sz=w1500)
+![Case two](https://drive.google.com/thumbnail?id=1zVvHEsH_CJDFwcIOVqANdbHVNNadmStz&sz=w1500)
 
 ## Rhetoric
 **The art of using language effectively**.
@@ -46,17 +45,37 @@ frontphoto: "1eSodJSQxhikEPtU3A3quyGNVlNzRnqo6"
 
 {{<video "youtube" "_aFo_BV-UzI" "How Donald Trump Answers A Question - 2016" >}}
 
-### Rhetorical triangle
-#### Audience-expertise matrix
+## Rhetorical triangle
+
+![rhetorical triangle](https://drive.google.com/thumbnail?id=1BI2kH8hYju3NTQuD6JVVH8cBqeso3eVB&sz=w1500)
+
+### Rhetorical appeals
+
+| **logos**           | **ethos**         | **pathos**          | **rhetorical appeals** |
+| ------------------- | ----------------- | ------------------- | ---------------------- |
+| *intellect*         | *credibility*     | *emotions*          | *aims of the speaker*  |
+| reasonable premises | being credible    | interests           |                        |
+| appropriate details | being good-willed | praise the audience |                        |
+| argumentation       | knowledgeable     |                     |                        |
+
+**Examples**
+- *Throughout my research, I have observed…*
+- *It is magnificent, isn’t it? I am sure you understand.*
+
+&nbsp;
+
+### Audience-expertise matrix
 
 Adapt your communication based on who you're addressing:
 
-|                                          | LOW EXPERTISE                                                                                                                      | HIGH EXPERTISE                                                                                                           |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| GENERIC AUDIENCE<br>(Public, media)      | - Simple language<br>- Analogies from everyday life<br>- Visuals over <br>- Avoid jargon                                           | - Technical but accessible<br>- Explain acronyms first use<br>- Focus on implications<br>- Can handle complexity         |
+|             | Low expertise | High expertise |
+| ----------- | ------------- | -------------- |
+| GENERIC AUDIENCE<br>(Public, media)      | - Simple language<br>- Analogies from everyday life<br>- Visuals over <br>- Avoid jargon    | - Technical but accessible<br>- Explain acronyms first use<br>- Focus on implications<br>- Can handle complexity         |
 | DECISION MAKERS<br>(Management, clients) | - Focus on impact, ROI<br>- Risks and benefits<br>- Clear recommendations<br>- Executive summary first<br>- "What's in it for me?" | - Technical details + business context<br>- Trade-offs and constraints<br>- Data-driven arguments<br>- Justify decisions |
-| PEERS<br>(same field)                    | - Simplify where possible<br>- Define terms<br>- Show your reasoning<br>- Invite discussion<br>                                    | - Technical depth OK<br>- Jargon acceptable<br>- Assume shared knowledge<br>- Detailed methods welcome<br>               |
+| PEERS<br>(same field)  | - Simplify where possible<br>- Define terms<br>- Show your reasoning<br>- Invite discussion<br>   | - Technical depth OK<br>- Jargon acceptable<br>- Assume shared knowledge<br>- Detailed methods welcome<br>               |
 
+
+&nbsp;
 
 
 **KEY QUESTION:** What does this audience ALREADY KNOW, and what do they NEED to know?
@@ -67,35 +86,23 @@ Adapt your communication based on who you're addressing:
 - **Managers**: "Our monitoring system reduces maintenance costs by 30% and prevents failures"
 - **Peers**: "We implemented a PID controller with adaptive gain scheduling to optimize thermal regulation"
 
-![[../../../../References/Attachements/rhetorical-triangle.svg]]
-#### Rhetorical appeals
-
-|                     |                   |                     |                        |
-| ------------------- | ----------------- | ------------------- | ---------------------- |
-| **logos**           | **ethos**         | **pathos**          |                        |
-| *intellect*         | *credibility*     | *emotions*          | **rhetorical appeals** |
-| reasonable premises | being credible    | interests           | *aims of the speaker*  |
-| appropriate details | being good-willed | praise the audience |                        |
-| argumentation       | knowledgeable     |                     |                        |
-
-**Examples**
-- *Interaction is about the in-between.*
-- *Throughout my research, I have observed…*
-- *It is magnificent, isn’t it? I am sure you understand.*
-
 &nbsp;
 
-##### Kairos
+#### Kairos
 The **right moment**: the same argument convinces or fails depending on when, where and to whom it is delivered.
 - adapt your appeal to the occasion, the audience and the context
 - an argument is only as strong as its timing (a proposal is more persuasive when the need is felt)
 
-##### Enthymeme and syllogism
+&nbsp;
+
+####  Syllogism and enthymeme
 - **syllogism** - a complete logical argument: *all A are B, all B are C, therefore all A are C* (see [Logic for debate](USMC85%20-%20extra%201.%20Logic%20for%20debate.md))
 - **enthymeme** - a syllogism with a premise left implicit; the audience supplies it, and is therefore engaged
   - *example:* "This sensor is reliable: it is calibrated to the same standard as aircraft instruments." (implied premise: that aircraft standard guarantees reliability)
 
-##### Stasis - locating the crux of the debate
+&nbsp;
+
+#### Stasis - locating the crux of the debate
 Four questions to find where an argument really stands:
 1. **fact** - did it happen? does it exist?
 2. **definition** - what is it? how should we name it?
@@ -104,35 +111,70 @@ Four questions to find where an argument really stands:
 
 &nbsp;
 
-##### The Toulmin model
-A practical layout of an argument - useful both to *build* an argument and to *attack* one (Toulmin, 1958).
-![[../../../../References/Attachements/toulmin-model.svg]]
+#### The Toulmin model
+A practical layout of an argument - useful both to *build* an argument and to *attack* one (Toulmin, 1958). The Toulmin model shows how reasoning moves from evidence (grounds) to a conclusion (claim), supported by a warrant and strengthened by backing, qualifiers, and rebuttals.
 
-#### Rhetorical canons
+
+![The Toulmin model](https://www.ciris.info/wp-content/uploads/2024/10/Toulmins-Model-of-Argumentation.png)
+
+
+**The bridge Metaphor:**
+Think of your argument as a bridge:
+- The grounds are one riverbank — the facts you start from.
+- The claim is the opposite bank — where you want your reader to arrive.
+- The warrant is the bridge that connects them.
+- The backing strengthens the bridge’s structure.
+- The qualifier shows how strong that bridge is — “probably,” “usually,” etc.
+- The rebuttal is the storm that tests your bridge, and your refutation repairs it.
+
+**Example: Should I Work Out Today?**
+- Claim: I should work out today.
+- Grounds: I’ve been sitting for hours and feel low on energy.
+- Warrant: Physical activity improves energy and mood.
+- Backing: Studies show even short daily workouts increase wellbeing.
+- Qualifier: It’s usually better for my health to stay active.
+- Rebuttal: Except when I’m exhausted or recovering from illness.
+
+(Source: https://www.ciris.info/learningcenter/toulmins-model/)
+
+&nbsp;
+
+### Rhetorical canons
 Canons are tools for the speaker. 
 1. **Invention** - pattern for one's purpose
 2. **Arrangement** - structure of the speech
 3. **Style** - *expression of an idea* - plain style | middle style | grand style
 4. **Memory** - make speech memorable
 5. **Delivery** - gesture | expression | pacing
-#### Figures of speech
+
+&nbsp;
+
+### Figures of speech
 - **trope** - *signification* - metaphor | personification | litotes | rhetorical question | oxymoron
 - **scheme** - *structure* - antithesis | ellipsis | chiasmus
-##### Examples
+
+&nbsp;
+
+#### Examples
 - "It was not bad." 
   Are you kidding me?
   A little pain never hurt anyone. 
   This was an eloquent silence.
 - "You are so…"
   "You forget what you want to remember, and you remember what you want to forget."
-#### Mode of discourses
+
+&nbsp;
+
+### Mode of discourses
 - **Description** - present information
 - **Narration** - sequence of events
 - **Exposition** - present ideas
 - **Argument** - persuade a viewpoint
 
-### Fallacies
-#### Rhetoric for engineers
+&nbsp;
+
+## Fallacies
+### Rhetoric for engineers
 Engineers often need to persuade non-technical audiences. Key situations:
 - **Defending a design choice** to stakeholders who don't understand the technical details
 - **Requesting budget or resources** from management focused on ROI
@@ -147,7 +189,9 @@ Engineers often need to persuade non-technical audiences. Key situations:
 
 **Example**: Instead of "We implemented a PID controller with tuned gains", say "We built a system that automatically adjusts to keep the temperature stable, like a thermostat but more precise."
 
-#### Ethical persuasion
+&nbsp;
+
+### Ethical persuasion
 Rhetoric can be used to manipulate. As engineers, you have a responsibility:
 - **Be honest about uncertainty** - don't present guesses as facts
 - **Acknowledge limitations** - every solution has trade-offs
@@ -164,10 +208,13 @@ Common ones to recognise - and to avoid:
 - **appeal to authority** - relying on an expert outside their field of expertise
 - **cherry picking** - selecting only the data that supports the claim
 
+&nbsp;
 
 {{<linkBox "List of fallacies" "https://en.wikipedia.org/wiki/List_of_fallacies">}}
 
-### References
+&nbsp;
+
+## References
 Markel, M., & Selber, S. A. (2022). *Technical communication* (13th ed.). Bedford/St. Martin's. https://www.macmillanlearning.com/college/us/product/technical-communication/p/1394117059
 
 Aristotle. (2004). *Rhetoric* (W. R. Roberts, Trans.). Dover Publications. (Original work published ca. 330 BCE). https://classics.mit.edu/Aristotle/rhetoric.html

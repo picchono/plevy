@@ -50,3 +50,6 @@ merge = "deep"
     label = "JP"
     locale = "ja-JP"
     weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files

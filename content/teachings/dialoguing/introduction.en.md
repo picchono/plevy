@@ -73,6 +73,9 @@ This course intends to challenge learners on the way exposing their work can com
 - Deliverables are always submitted on Moodle, be careful of deadlines.
 - Deadlines will vary between masters (MECA, IoT, TLC). Submit it at the proper place on Moodle, at the correct time.
 - Unless specified, deadlines out of course time will be 10 days after the last course.
+
+This year, the deliverable will be about Meshtatic. You will be ask to discuss technical, historical, sociological and ethical aspects about it.
+
 ### Using AI and other tools
 - You are authorized to use AI or other tools.
 - If you use such tools (whatever the output)
@@ -88,7 +91,7 @@ This course intends to challenge learners on the way exposing their work can com
 
 | Criteria             | Excellent (16-20)                                             | Good (13-16)                               | Satisfactory (10-13)           | Insufficient (0-9)                     |
 | -------------------- | ------------------------------------------------------------- | ------------------------------------------ | ------------------------------ | -------------------------------------- |
-| **Attendance**       | Present at all sessions (100%)                                | Present at all sessions (100%)             | Present at all sessions (100%) | One or more than 1 unjustified absence |
+| **Attendance**       | Present at all sessions (100%)                                | Present at all sessions (100%)             | Present at all sessions (100%) with minor delay  | One or more than 1 unjustified absence |
 | **Engagement**       | Asks relevant questions, contributes to discussions regularly | Participates when prompted, shows interest | Passive but attentive          | Disengaged, distracted                 |
 | **Peer interaction** | Provides constructive feedback to peers, engages respectfully | Interacts positively with peers            | Limited interaction            | Disruptive or absent from discussions  |
 
